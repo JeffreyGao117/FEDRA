@@ -1,0 +1,434 @@
+set links for libEdb ...
+set links for libEbase ...
+set links for libDataConversion ...
+set links for libEmath ...
+set links for libEGA ...
+set links for libEphys ...
+set links for libEdr ...
+set links for libEIO ...
+set links for libEdd ...
+set links for libEMC ...
+set links for libAlignment ...
+set links for libScan ...
+set links for libShower ...
+set links for libEOracle ...
+set links for libEmr ...
+set links for libEDA ...
+set links for libShowRec ...
+set links for libVt++ ...
+set dataIO link for libDataConversion ...
+PROJECT_ROOT=/home/administrator/Tools/FedraSVN
+
+BIN_DIR = $(PROJECT_ROOT)/bin
+LIB_DIR = $(PROJECT_ROOT)/lib
+INC_DIR = $(PROJECT_ROOT)/include
+
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbLog.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbCluster.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbView.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbRunHeader.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbRun.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbImage.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbFrame.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbSegment.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbStage.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbAffine.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbFiducial.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbVirtual.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbPrediction.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbOnline.cxx
+Generating dictionary EdbCint.cxx...
+rootcint   -f EdbCint.cxx -c -p -I/home/administrator/Tools/FedraSVN/include EdbLog.h EdbCluster.h EdbView.h EdbRunHeader.h EdbRun.h EdbImage.h EdbFrame.h EdbSegment.h EdbStage.h EdbAffine.h EdbFiducial.h EdbVirtual.h EdbPrediction.h EdbOnline.h EdbLinkDef.h
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbCint.cxx
+g++  -O -shared -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -o /home/administrator/Tools/FedraSVN/lib/libEdb.so EdbLog.o EdbCluster.o EdbView.o EdbRunHeader.o EdbRun.o EdbImage.o EdbFrame.o EdbSegment.o EdbStage.o EdbAffine.o EdbFiducial.o EdbVirtual.o EdbPrediction.o EdbOnline.o EdbCint.o
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbSegCorr.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbLayer.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbScanCond.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbBrick.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbScanSet.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbID.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbSegP.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbSigma.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbSEQ.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbCouplesTree.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbSegCouple.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbSegmentCut.cxx
+Generating dictionary EbaseCint.cxx...
+rootcint   -f EbaseCint.cxx -c -p -I/home/administrator/Tools/FedraSVN/include EdbSegCorr.h EdbLayer.h EdbScanCond.h EdbBrick.h EdbScanSet.h EdbID.h EdbSegP.h EdbSigma.h EdbSEQ.h EdbCouplesTree.h EdbSegCouple.h EdbSegmentCut.h EbaseLinkDef.h
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EbaseCint.cxx
+g++  -O -shared -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -o /home/administrator/Tools/FedraSVN/lib/libEbase.so EdbSegCorr.o EdbLayer.o EdbScanCond.o EdbBrick.o EdbScanSet.o EdbID.o EdbSegP.o EdbSigma.o EdbSEQ.o EdbCouplesTree.o EdbSegCouple.o EdbSegmentCut.o EbaseCint.o
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o libDataConversion.o libDataConversion.cpp
+Generating dictionary DataConversionCint.cxx...
+rootcint   -f DataConversionCint.cxx -c -p -I/home/administrator/Tools/FedraSVN/include libDataConversion.h DataConversionLinkDef.h
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c DataConversionCint.cxx
+g++  -O -shared -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -o /home/administrator/Tools/FedraSVN/lib/libDataConversion.so libDataConversion.o DataConversionCint.o
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbGA.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbIP.cxx
+Generating dictionary EGACint.cxx...
+rootcint   -f EGACint.cxx -c -p -I/home/administrator/Tools/FedraSVN/include EdbGA.h EdbIP.h EGALinkDef.h
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EGACint.cxx
+g++  -O -shared -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -o /home/administrator/Tools/FedraSVN/lib/libEGA.so EdbGA.o EdbIP.o EGACint.o
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o TIndexCell.o TIndexCell.cpp
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbMath.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o EdbCell2.o EdbCell2.cpp
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o EdbCell1.o EdbCell1.cpp
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbMask.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbCombGen.cxx
+Generating dictionary EmathCint.cxx...
+rootcint   -f EmathCint.cxx -c -p -I/home/administrator/Tools/FedraSVN/include TIndexCell.h EdbMath.h EdbCell2.h EdbCell1.h EdbMask.h EdbCombGen.h EmathLinkDef.h
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EmathCint.cxx
+g++  -O -shared -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -o /home/administrator/Tools/FedraSVN/lib/libEmath.so TIndexCell.o EdbMath.o EdbCell2.o EdbCell1.o EdbMask.o EdbCombGen.o EmathCint.o
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbPhys.cxx
+Generating dictionary EphysCint.cxx...
+rootcint   -f EphysCint.cxx -c -p -I/home/administrator/Tools/FedraSVN/include EdbPhys.h EphysLinkDef.h
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EphysCint.cxx
+g++  -O -shared -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -o /home/administrator/Tools/FedraSVN/lib/libEphys.so EdbPhys.o EphysCint.o
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbPattern.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbPVRec.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbVertex.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbVertexComb.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbVertexSpace.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbTrackFitter.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbMomentumEstimator.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbPlateTracking.cxx
+Generating dictionary EdrCint.cxx...
+rootcint   -f EdrCint.cxx -c -p -I/home/administrator/Tools/FedraSVN/include EdbPattern.h EdbPVRec.h EdbVertex.h EdbVertexComb.h EdbVertexSpace.h EdbTrackFitter.h EdbMomentumEstimator.h EdbPlateTracking.h EdrLinkDef.h
+Limitation: Reference member not accessible from the interpreter /home/administrator/Tools/FedraSVN/include/vt++/VtRelation.hh:72:
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdrCint.cxx
+g++  -O -shared -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -o /home/administrator/Tools/FedraSVN/lib/libEdr.so EdbPattern.o EdbPVRec.o EdbVertex.o EdbVertexComb.o EdbVertexSpace.o EdbTrackFitter.o EdbMomentumEstimator.o EdbPlateTracking.o EdrCint.o
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbDataSet.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbTraceBack.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbRunAccess.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbRunTracking.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbRunParent.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbViewMap.cxx
+Generating dictionary EIOCint.cxx...
+rootcint   -f EIOCint.cxx -c -p -I/home/administrator/Tools/FedraSVN/include EdbDataSet.h EdbTraceBack.h EdbRunAccess.h EdbRunTracking.h EdbRunParent.h EdbViewMap.h EIOLinkDef.h
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EIOCint.cxx
+g++  -O -shared -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -o /home/administrator/Tools/FedraSVN/lib/libEIO.so EdbDataSet.o EdbTraceBack.o EdbRunAccess.o EdbRunTracking.o EdbRunParent.o EdbViewMap.o EIOCint.o
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbPVGen.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbBrickGen.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbViewDef.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbViewGen.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbViewRec.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbViewMatch.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbDataStore.cxx
+Generating dictionary EMCCint.cxx...
+rootcint   -f EMCCint.cxx -c -p -I/home/administrator/Tools/FedraSVN/include EdbPVGen.h EdbBrickGen.h EdbViewDef.h EdbViewGen.h EdbViewRec.h EdbViewMatch.h EdbDataStore.h EMCLinkDef.h
+Limitation: Reference member not accessible from the interpreter /home/administrator/Tools/FedraSVN/include/vt++/VtRelation.hh:72:
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EMCCint.cxx
+g++  -O -shared -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -o /home/administrator/Tools/FedraSVN/lib/libEMC.so EdbPVGen.o EdbBrickGen.o EdbViewDef.o EdbViewGen.o EdbViewRec.o EdbViewMatch.o EdbDataStore.o EMCCint.o
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbDisplayBase.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbDisplay.cxx
+Generating dictionary EddCint.cxx...
+rootcint   -f EddCint.cxx -c -p -I/home/administrator/Tools/FedraSVN/include EdbDisplayBase.h EdbDisplay.h EddLinkDef.h
+Limitation: Reference member not accessible from the interpreter /home/administrator/Tools/FedraSVN/include/vt++/VtRelation.hh:72:
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EddCint.cxx
+g++  -O -shared -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -o /home/administrator/Tools/FedraSVN/lib/libEdd.so EdbDisplayBase.o EdbDisplay.o EddCint.o
+make[1]: Entering directory '/home/administrator/Tools/FedraSVN/src/libVt++/vt++'
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c VtVector.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c VtMatrix.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c VtNegMatrix.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c VtSqMatrix.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c VtSymMatrix.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c CMatrix.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c VtIni.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c VtTrack.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c VtRelation.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c VtKalman.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c VtMassC.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c VtRelationList.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c VtVertex.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c VtDistance.C
+Generating dictionary vtCint.cxx...
+rootcint -f vtCint.cxx -c -I/home/administrator/Tools/FedraSVN/include include/VtVector.hh      include/CMatrix.hh include/VtMatrix.hh      include/VtNegMatrix.hh include/VtSqMatrix.hh    include/VtSymMatrix.hh include/VtIni.hh 	    include/VtTrack.hh include/VtRelation.hh    include/VtKalman.hh include/VtMassC.hh       include/VtRelationList.hh include/VtVertex.hh      include/VtDistance.hh cintdict/LinkDef.hh
+Limitation: Reference member not accessible from the interpreter include/VtRelation.hh:72:
+compile cint vtCint.o...
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -DCINTOBJECT -c vtCint.cxx
+g++  -O -shared -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -o /home/administrator/Tools/FedraSVN/lib/libvt.so VtVector.o VtMatrix.o VtNegMatrix.o VtSqMatrix.o VtSymMatrix.o CMatrix.o VtIni.o VtTrack.o VtRelation.o VtKalman.o VtMassC.o VtRelationList.o VtVertex.o VtDistance.o vtCint.o
+make[1]: Leaving directory '/home/administrator/Tools/FedraSVN/src/libVt++/vt++'
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbPatCell2.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbPositionAlignment.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbAlignmentMap.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbPeakProb.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbTestAl.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbAlignmentV.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbPlateAlignment.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbLinking.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbCorrectionMapper.cxx
+Generating dictionary AlignmentCint.cxx...
+rootcint   -f AlignmentCint.cxx -c -p -I/home/administrator/Tools/FedraSVN/include EdbPatCell2.h EdbPositionAlignment.h EdbAlignmentMap.h EdbPeakProb.h EdbTestAl.h EdbAlignmentV.h EdbPlateAlignment.h EdbLinking.h EdbCorrectionMapper.h AlignmentLinkDef.h
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c AlignmentCint.cxx
+g++  -O -shared -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -o /home/administrator/Tools/FedraSVN/lib/libAlignment.so EdbPatCell2.o EdbPositionAlignment.o EdbAlignmentMap.o EdbPeakProb.o EdbTestAl.o EdbAlignmentV.o EdbPlateAlignment.o EdbLinking.o EdbCorrectionMapper.o AlignmentCint.o
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL -c EdbScanClient.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL -c EdbScanProc.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL -c EdbProcPars.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL -c EdbScanTracking.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL -c EdbScanClientBase.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL -c EdbScanClientPav.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL -c EdbScanClientSysal.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL  -c -o MessageManager.o MessageManager.cpp
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL  -c -o MessageReader.o MessageReader.cpp
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL  -c -o tinyxml.o tinyxml.cpp
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL  -c -o tinystr.o tinystr.cpp
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL  -c -o tinyxmlerror.o tinyxmlerror.cpp
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL  -c -o tinyxmlparser.o tinyxmlparser.cpp
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL  -c -o PAVProtocol.o PAVProtocol.cpp
+Generating dictionary ScanCint.cxx...
+rootcint   -f ScanCint.cxx -c -p -I/home/administrator/Tools/FedraSVN/include EdbScanClient.h EdbScanProc.h EdbProcPars.h EdbScanTracking.h EdbScanClientBase.h EdbScanClientPav.h EdbScanClientSysal.h MessageManager.h MessageReader.h tinyxml.h tinystr.h tinyxmlerror.h tinyxmlparser.h PAVProtocol.h ScanLinkDef.h
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -DTIXML_USE_STL -c ScanCint.cxx
+g++  -O -shared -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -o /home/administrator/Tools/FedraSVN/lib/libScan.so EdbScanClient.o EdbScanProc.o EdbProcPars.o EdbScanTracking.o EdbScanClientBase.o EdbScanClientPav.o EdbScanClientSysal.o MessageManager.o MessageReader.o tinyxml.o tinystr.o tinyxmlerror.o tinyxmlparser.o PAVProtocol.o ScanCint.o
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbShowerRec.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbShowerAlg.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbPVRQuality.cxx
+Generating dictionary ShowerCint.cxx...
+rootcint   -f ShowerCint.cxx -c -p -I/home/administrator/Tools/FedraSVN/include EdbShowerRec.h EdbShowerAlg.h EdbPVRQuality.h ShowerLinkDef.h
+Limitation: Reference member not accessible from the interpreter /home/administrator/Tools/FedraSVN/include/vt++/VtRelation.hh:72:
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c ShowerCint.cxx
+g++  -O -shared -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -lSpectrum -o /home/administrator/Tools/FedraSVN/lib/libShower.so EdbShowerRec.o EdbShowerAlg.o EdbPVRQuality.o ShowerCint.o
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbEmrIO.cxx
+Generating dictionary EmrCint.cxx...
+rootcint   -f EmrCint.cxx -c -p -I/home/administrator/Tools/FedraSVN/include EdbEmrIO.h EmrLinkDef.h
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EmrCint.cxx
+g++  -O -shared -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -o /home/administrator/Tools/FedraSVN/lib/libEmr.so EdbEmrIO.o EmrCint.o
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o EdbEDA.o EdbEDA.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o EdbEDAUtil.o EdbEDAUtil.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o EdbEDATrackSet.o EdbEDATrackSet.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o EdbEDASets.o EdbEDASets.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o EdbEDAMainTab.o EdbEDAMainTab.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o EdbEDATabs.o EdbEDATabs.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o EdbEDAPlotTab.o EdbEDAPlotTab.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o EdbEDADecaySearch.o EdbEDADecaySearch.C
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o EdbEDAShowerTab.o EdbEDAShowerTab.C
+Generating dictionary EDACint.cxx...
+rootcint   -f EDACint.cxx -c -p -I/home/administrator/Tools/FedraSVN/include EdbEDA.h EdbEDAUtil.h EdbEDATrackSet.h EdbEDASets.h EdbEDAMainTab.h EdbEDATabs.h EdbEDAPlotTab.h EdbEDADecaySearch.h EdbEDAShowerTab.h EDALinkDef.h
+Limitation: Reference member not accessible from the interpreter /home/administrator/Tools/FedraSVN/include/vt++/VtRelation.hh:72:
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EDACint.cxx
+g++  -O -shared -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -o /home/administrator/Tools/FedraSVN/lib/libEDA.so EdbEDA.o EdbEDAUtil.o EdbEDATrackSet.o EdbEDASets.o EdbEDAMainTab.o EdbEDATabs.o EdbEDAPlotTab.o EdbEDADecaySearch.o EdbEDAShowerTab.o EDACint.o
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbShowRec.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbShowerP.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbShowAlg.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbShowAlgE.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbShowAlg_NN.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbShowAlgE_Simple.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbShowAlg_GS.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbShowAlgClean.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbShowAlgID_E_G_Simple.cxx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c EdbShowPVRQuality.cxx
+Generating dictionary ShowRecCint.cxx...
+rootcint   -f ShowRecCint.cxx -c -p -I/home/administrator/Tools/FedraSVN/include EdbShowRec.h EdbShowerP.h EdbShowAlg.h EdbShowAlgE.h EdbShowAlg_NN.h EdbShowAlgE_Simple.h EdbShowAlg_GS.h EdbShowAlgClean.h EdbShowAlgID_E_G_Simple.h EdbShowPVRQuality.h ShowRecLinkDef.h
+Limitation: Reference member not accessible from the interpreter /home/administrator/Tools/FedraSVN/include/vt++/VtRelation.hh:72:
+Error: *** Datamember EdbShowAlgE::eInANN: no size indication!
+Error: *** Datamember EdbShowAlgE::eInANN: pointer to fundamental type (need manual intervention)
+Error: *** Datamember EdbShowAlgE::eInfoANN: no size indication!
+Error: *** Datamember EdbShowAlgE::eInfoANN: pointer to fundamental type (need manual intervention)
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c ShowRecCint.cxx
+g++  -O -shared -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -o /home/administrator/Tools/FedraSVN/lib/libShowRec.so EdbShowRec.o EdbShowerP.o EdbShowAlg.o EdbShowAlgE.o EdbShowAlg_NN.o EdbShowAlgE_Simple.o EdbShowAlg_GS.o EdbShowAlgClean.o EdbShowAlgID_E_G_Simple.o EdbShowPVRQuality.o ShowRecCint.o
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o EdbDecaySearch.o EdbDecaySearch.C
+Generating dictionary AnalysisCint.cxx...
+rootcint   -f AnalysisCint.cxx -c -p -I/home/administrator/Tools/FedraSVN/include EdbDecaySearch.h AnalysisLinkDef.h
+Limitation: Reference member not accessible from the interpreter /home/administrator/Tools/FedraSVN/include/vt++/VtRelation.hh:72:
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c AnalysisCint.cxx
+g++  -O -shared -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -o /home/administrator/Tools/FedraSVN/lib/libAnalysis.so EdbDecaySearch.o AnalysisCint.o
+
+make  in appl/recset ............
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o recset.o recset.cpp
+g++ recset.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lEdb -lEbase -lEdr -lScan -lAlignment -lEmath -lEphys -lvt -lEIO -lDataConversion -lEdb -lEbase -lEdr -lScan -lAlignment -lEmath -lEphys -lvt -lEIO -lDataConversion -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/recset
+rm recset.o
+
+make  in appl/rwc2edb ............
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o rwc2edb.o rwc2edb.cpp
+g++ rwc2edb.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lEdb -lEmath -lDataConversion -lEdb -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/rwc2edb
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o rwdread.o rwdread.cpp
+g++ rwdread.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lEdb -lEmath -lDataConversion -lEdb -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/rwdread
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o rwcread.o rwcread.cpp
+g++ rwcread.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lEdb -lEmath -lDataConversion -lEdb -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/rwcread
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o rwdcomp.o rwdcomp.cpp
+g++ rwdcomp.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lEdb -lEmath -lDataConversion -lEdb -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/rwdcomp
+rm rwc2edb.o rwdcomp.o rwdread.o rwcread.o
+
+make  in appl/macros ............
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o addRWC.o addRWC.C
+g++ addRWC.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lEdb -lEbase -lDataConversion -lEIO -lEdr -lEmath -lvt -lEphys -lAlignment -lEdb -lEbase -lDataConversion -lEIO -lEdr -lEmath -lvt -lEphys -lAlignment -lEIO -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/addRWC
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o addRWD.o addRWD.C
+g++ addRWD.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lEdb -lEbase -lDataConversion -lEIO -lEdr -lEmath -lvt -lEphys -lAlignment -lEdb -lEbase -lDataConversion -lEIO -lEdr -lEmath -lvt -lEphys -lAlignment -lEIO -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/addRWD
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o check_raw.o check_raw.C
+g++ check_raw.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lEdb -lEbase -lDataConversion -lEIO -lEdr -lEmath -lvt -lEphys -lAlignment -lEdb -lEbase -lDataConversion -lEIO -lEdr -lEmath -lvt -lEphys -lAlignment -lEIO -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/check_raw
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o check_cp.o check_cp.C
+g++ check_cp.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lEdb -lEbase -lDataConversion -lEIO -lEdr -lEmath -lvt -lEphys -lAlignment -lEdb -lEbase -lDataConversion -lEIO -lEdr -lEmath -lvt -lEphys -lAlignment -lEIO -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/check_cp
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o check_tr.o check_tr.C
+g++ check_tr.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lEdb -lEbase -lDataConversion -lEIO -lEdr -lEmath -lvt -lEphys -lAlignment -lEdb -lEbase -lDataConversion -lEIO -lEdr -lEmath -lvt -lEphys -lAlignment -lEIO -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/check_tr
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o edbtools.o edbtools.C
+g++ edbtools.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lEdb -lEbase -lDataConversion -lEIO -lEdr -lEmath -lvt -lEphys -lAlignment -lEdb -lEbase -lDataConversion -lEIO -lEdr -lEmath -lvt -lEphys -lAlignment -lEIO -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/edbtools
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o tracks2edb.o tracks2edb.C
+g++ tracks2edb.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lEdb -lEbase -lDataConversion -lEIO -lEdr -lEmath -lvt -lEphys -lAlignment -lEdb -lEbase -lDataConversion -lEIO -lEdr -lEmath -lvt -lEphys -lAlignment -lEIO -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/tracks2edb
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o tlg2couples.o tlg2couples.C
+g++ tlg2couples.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lEdb -lEbase -lDataConversion -lEIO -lEdr -lEmath -lvt -lEphys -lAlignment -lEdb -lEbase -lDataConversion -lEIO -lEdr -lEmath -lvt -lEphys -lAlignment -lEIO -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/tlg2couples
+/home/administrator/Tools/FedraSVN/lib/libEIO.so: undefined reference to `AddRWD(EdbRun*, char*, int, char const*)'
+/home/administrator/Tools/FedraSVN/lib/libEIO.so: undefined reference to `AddRWC(EdbRun*, char*, int, char const*)'
+collect2: error: ld returned 1 exit status
+../../config/TargetsDef.mk:79: recipe for target '/home/administrator/Tools/FedraSVN/bin/tlg2couples' failed
+make: *** [/home/administrator/Tools/FedraSVN/bin/tlg2couples] Error 1
+rm tlg2couples.o addRWD.o tracks2edb.o addRWC.o check_raw.o check_cp.o check_tr.o edbtools.o
+
+make  in appl/o2root ............
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include -I/sdk/include -DNOTROOTCINT -I/home/administrator/Tools/FedraSVN/include -I/sdk/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include -I/sdk/include -DNOTROOTCINT -I/home/administrator/Tools/FedraSVN/include -I/sdk/include   -c -o o2root.o o2root.cpp
+In file included from /home/administrator/Tools/FedraSVN/include/TOracleServerE2.h:4:0,
+                 from o2root.cpp:7:
+/home/administrator/Tools/FedraSVN/include/TOracleServer.h:24:18: fatal error: occi.h: No such file or directory
+compilation terminated.
+<builtin>: recipe for target 'o2root.o' failed
+make: *** [o2root.o] Error 1
+
+make  in appl/comptonmap ............
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o comptonmap.o comptonmap.cpp
+g++ comptonmap.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lEdb -lEbase -lEdr -lEbase -lEmath -lEphys -lvt -lEIO -lDataConversion -lAlignment -lScan -lEMC -lEdb -lEbase -lEdr -lEbase -lEmath -lEphys -lvt -lEIO -lDataConversion -lAlignment -lScan -lEMC -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/comptonmap
+rm comptonmap.o
+
+make  in appl/m2track ............
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o m2track.o m2track.cpp
+g++ m2track.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lEdb -lEdr -lEdr -lEmath -lEphys -lEbase -lvt -lEIO -lDataConversion -lAlignment -lEdb -lEdr -lEdr -lEmath -lEphys -lEbase -lvt -lEIO -lDataConversion -lAlignment -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/m2track
+rm m2track.o
+
+make  in appl/eda ............
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o eda.o eda.cpp
+g++ eda.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -lEmath -lEdb -lEbase -lEdr -lvt -lEphys -lEIO -lScan -lEDA -lEIO -lAlignment -lDataConversion -lShower -lEve -lGui -lGed -lGeom -lEG -lRGL -lTreePlayer -lMLP -lEmath -lEdb -lEbase -lEdr -lvt -lEphys -lEIO -lScan -lEDA -lEIO -lAlignment -lDataConversion -lShower -lEve -lGui -lGed -lGeom -lEG -lRGL -lTreePlayer -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lSpectrum -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/eda
+rm eda.o
+
+make  in appl/emrec ............
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o emlink.o emlink.cpp
+g++ emlink.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/emlink
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o emalign.o emalign.cpp
+g++ emalign.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/emalign
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o emaligns2s.o emaligns2s.cpp
+g++ emaligns2s.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/emaligns2s
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o emalignraw.o emalignraw.cpp
+g++ emalignraw.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/emalignraw
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o makescanset.o makescanset.cpp
+g++ makescanset.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/makescanset
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o emtra.o emtra.cpp
+g++ emtra.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/emtra
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o emshow.o emshow.cpp
+g++ emshow.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/emshow
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o emrec.o emrec.cpp
+g++ emrec.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/emrec
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o emvtx.o emvtx.cpp
+g++ emvtx.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/emvtx
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o emcheck.o emcheck.cpp
+g++ emcheck.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/emcheck
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o empred.o empred.cpp
+g++ empred.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/empred
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o emtrackan.o emtrackan.cpp
+g++ emtrackan.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/emtrackan
+rm emaligns2s.o emlink.o emalignraw.o makescanset.o emalign.o emtrackan.o emtra.o emshow.o emcheck.o emvtx.o empred.o emrec.o
+
+make  in appl/rwcToEdb ............
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o Catalog.o Catalog.cpp
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o Fragment.o Fragment.cpp
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o ProcessRawData.o ProcessRawData.cpp
+ProcessRawData.cpp: In member function ‘bool ProcessRawData::dumpFragmentInEdbStructure()’:
+ProcessRawData.cpp:819:40: error: variable ‘std::auto_ptr<EdbSegment> edbSegment’ has initializer but incomplete type
+    std::auto_ptr<EdbSegment> edbSegment( new EdbSegment(0,0,0,0,0,0,0,0) );
+                                        ^
+<builtin>: recipe for target 'ProcessRawData.o' failed
+make: *** [ProcessRawData.o] Error 1
+
+make  in appl/viewcorr ............
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include   -c -o viewdist.o viewdist.cpp
+g++ viewdist.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/home/administrator/Tools/FedraSVN/lib -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lShower -lTreePlayer -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lShower -lTreePlayer -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/viewdist
+rm viewdist.o
+
+make  in appl/mctools ............
+g++  -g -O -w -fPIC -DUSE_ROOT -pthread -std=c++11 -Wno-deprecated-declarations -m64 -I/usr/local/include/root -I/home/administrator/Tools/FedraSVN/include  -c mc2raw.cxx
+g++ mc2raw.o -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/usr/local/lib/root -lGui -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lGeom -L/home/administrator/Tools/FedraSVN/lib -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -lScan -lEdb -lEbase -lEmath -lEphys -lvt -lEdr -lScan -lEdr -lEIO -lEMC -lAlignment -lDataConversion -lEdd -lTreePlayer -L/usr/local/lib/root -lCore -lCint -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lTree -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -pthread -lm -ldl -rdynamic -lMLP -L/home/administrator/Tools/FedraSVN/lib -o /home/administrator/Tools/FedraSVN/bin/mc2raw
+rm mc2raw.o
+------------------------------------
+
+make check in libEdb .............
+libEdb...ok
+
+make check in libEbase .............
+libEbase...ok
+
+make check in libDataConversion .............
+libDataConversion...ok
+
+make check in libEGA .............
+libEGA...ok
+
+make check in libEmath .............
+libEmath...ok
+
+make check in libEphys .............
+libEphys...ok
+
+make check in libEdr .............
+libEdr...ok
+
+make check in libEIO .............
+libEIO...ok
+
+make check in libEMC .............
+libEMC...ok
+
+make check in libEdd .............
+libEdd...ok
+
+make check in libVt++ .............
+libvt...ok
+
+make check in libAlignment .............
+libAlignment...ok
+
+make check in libScan .............
+libScan...ok
+
+make check in libShower .............
+libShower...ok
+
+make check in libEmr .............
+libEmr...ok
+
+make check in libEDA .............
+libEDA...ok
+
+make check in libShowRec .............
+libShowRec...ok
+
+make check in libAnalysis .............
+libAnalysis...ok
+/home/administrator/Tools/FedraSVN/bin/recset...ok
+/home/administrator/Tools/FedraSVN/bin/rwc2edb...ok
+/home/administrator/Tools/FedraSVN/bin/rwdread...ok
+/home/administrator/Tools/FedraSVN/bin/rwcread...ok
+/home/administrator/Tools/FedraSVN/bin/rwdcomp...ok
+/home/administrator/Tools/FedraSVN/bin/addRWC...ok
+/home/administrator/Tools/FedraSVN/bin/addRWD...ok
+/home/administrator/Tools/FedraSVN/bin/check_raw...ok
+/home/administrator/Tools/FedraSVN/bin/check_cp...ok
+/home/administrator/Tools/FedraSVN/bin/check_tr...ok
+/home/administrator/Tools/FedraSVN/bin/edbtools...ok
+/home/administrator/Tools/FedraSVN/bin/tracks2edb...ok
+/home/administrator/Tools/FedraSVN/bin/tlg2couples...ERROR!
+/home/administrator/Tools/FedraSVN/bin/checkrun...ERROR!
+/home/administrator/Tools/FedraSVN/bin/o2root...ERROR!
+/home/administrator/Tools/FedraSVN/bin/fb2db...ERROR!
+/home/administrator/Tools/FedraSVN/bin/scan2db...ERROR!
+/home/administrator/Tools/FedraSVN/bin/comptonmap...ok
+/home/administrator/Tools/FedraSVN/bin/m2track...ok
+/home/administrator/Tools/FedraSVN/bin/eda...ok
+/home/administrator/Tools/FedraSVN/bin/emlink...ok
+/home/administrator/Tools/FedraSVN/bin/emalign...ok
+/home/administrator/Tools/FedraSVN/bin/emaligns2s...ok
+/home/administrator/Tools/FedraSVN/bin/emalignraw...ok
+/home/administrator/Tools/FedraSVN/bin/makescanset...ok
+/home/administrator/Tools/FedraSVN/bin/emtra...ok
+/home/administrator/Tools/FedraSVN/bin/emshow...ok
+/home/administrator/Tools/FedraSVN/bin/emrec...ok
+/home/administrator/Tools/FedraSVN/bin/emvtx...ok
+/home/administrator/Tools/FedraSVN/bin/emcheck...ok
+/home/administrator/Tools/FedraSVN/bin/empred...ok
+/home/administrator/Tools/FedraSVN/bin/emtrackan...ok
+/home/administrator/Tools/FedraSVN/bin/rwcToEdb...ERROR!
+/home/administrator/Tools/FedraSVN/bin/viewdist...ok
+/home/administrator/Tools/FedraSVN/bin/mc2raw...ok
