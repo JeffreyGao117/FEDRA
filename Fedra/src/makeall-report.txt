@@ -1,0 +1,4 @@
+compiled by DESKTOP-CEAV4T7\User on DESKTOP-CEAV4T7 (Tue 06/02/2020  9:22:14.78)
+   NMAKE options/macrodefs/targets: 
+   _NMAKE_VER = 12.00.21005.1
+   ROOT VERSION "5.34/38"

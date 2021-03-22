@@ -1,0 +1,550 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:32 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbShowerAlgESimple</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbShowerAlgESimple','','EdbShowerAlg.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbShowerAlgESimple.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbShowerAlgESimple.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbShowerAlgESimple_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbShowerAlgESimple:description">class description</a> 
+<a class="descrheadentry" href="#EdbShowerAlgESimple:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbShowerAlgESimple:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbShowerAlgESimple:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbShowerAlgESimple</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbShowerAlgESimple:description"></a>class EdbShowerAlgESimple: public TObject</h1>
+<div class="classdescr">
+<pre>
+ 		Transform eAli to eAli_Sub:
+ 		the lenght of eAli_Sub is not changed.
+ 		Only XY-size (and MC) cuts are applied.
+
+
+ --- Whereas in ShowRec.cpp the treebranch file is written directly after each
+ --- BT reconstruction, it was not a problem when the eAliSub was deleted each time.
+ --- But now situation is different, since the BTs of the showers have the adresses from
+ --- the eAli_Sub !each! so if one eAli_Sub is deleted the EdbShowerP object has lost its
+ --- BT adresses.
+ --- So if we do not delete the eAli_Sub, reconstrtuction is fast (compared to eAli) but
+ --- memory increases VERY fast.
+ --- If we do use eAli, then memory consumption will not increase fast, but
+ --- reconstruction is slow.
+
+ --- Possible workarounds:
+ ---	For few InBTs (EDA use for data...): 		use eAliSub and dont delete it.
+ ---	For many InBTs (parameterstudies):			use eAli---.
+ ---	Use always eAliSub, search BT correspond in eAli, add BT from eAli....May take also <a href="./ListOfTypes.html#long">long</a> time...
+
+
+ --- SEVERE warning:  IF gAli is in wrong order it can be that no showers
+ --- SEVERE warning:  are reconstructed since most implemented algorithms
+ --- SEVERE warning:  rely on the order that plate 2 comes directly behind
+ --- SEVERE warning:  the InBT.  THIS IS STILL ON BUGFIXING LIST!!!
+
+</pre></div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbShowerAlgESimple:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:EdbShowerAlgESimple">EdbShowerAlgESimple</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:EdbShowerAlgESimple@1">EdbShowerAlgESimple</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* track)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:EdbShowerAlgESimple@2">EdbShowerAlgESimple</a>(TObjArray* RecoShowerArray)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:EdbShowerAlgESimple@3">EdbShowerAlgESimple</a>(<span class="keyword">const</span> <a href="./EdbShowerAlgESimple.html">EdbShowerAlgESimple</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:_EdbShowerAlgESimple">~EdbShowerAlgESimple</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(TBrowser* b)</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Clear"><span class="baseclass">TObject::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:Clone"><span class="baseclass">TObject::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Compare"><span class="baseclass">TObject::</span>Compare</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Copy"><span class="baseclass">TObject::</span>Copy</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp; object) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:CreateANN">CreateANN</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:DoRun">DoRun</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:DoRun@1">DoRun</a>(TObjArray* trackarray)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:DoRun@2">DoRun</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* shower)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:DumpNeuralNetworkWeight">DumpNeuralNetworkWeight</a>(TString weight, <a href="./ListOfTypes.html#Int_t">Int_t</a> ANNType = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(TMethod* method, TObjArray* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:FindClosestEfficiencyParametrization">FindClosestEfficiencyParametrization</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> TestAngle, <a href="./ListOfTypes.html#Double_t">Double_t</a> ReferenceEff)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="func"><td class="funcret">TF1*</td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:GetEffFunc_all">GetEffFunc_all</a>()</td></tr>
+<tr class="func"><td class="funcret">TF1*</td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:GetEffFunc_edefault">GetEffFunc_edefault</a>()</td></tr>
+<tr class="func"><td class="funcret">TF1*</td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:GetEffFunc_elletroni">GetEffFunc_elletroni</a>()</td></tr>
+<tr class="func"><td class="funcret">TF1*</td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:GetEffFunc_LowEff">GetEffFunc_LowEff</a>()</td></tr>
+<tr class="func"><td class="funcret">TF1*</td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:GetEffFunc_MiddleFix">GetEffFunc_MiddleFix</a>()</td></tr>
+<tr class="func"><td class="funcret">TF1*</td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:GetEffFunc_neuchmicro">GetEffFunc_neuchmicro</a>()</td></tr>
+<tr class="func"><td class="funcret">TF1*</td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:GetEffFunc_UserEfficiency">GetEffFunc_UserEfficiency</a>()</td></tr>
+<tr class="func"><td class="funcret">TSpline3*</td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:GetEfficiencyParametrisation">GetEfficiencyParametrisation</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:GetEnergy">GetEnergy</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:GetEnergy@1">GetEnergy</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* track)</td></tr>
+<tr class="func"><td class="funcret">TArrayF*</td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:GetEnergyArray">GetEnergyArray</a>()</td></tr>
+<tr class="func"><td class="funcret">TArrayF*</td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:GetEnergyArrayUnCorrected">GetEnergyArrayUnCorrected</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetName"><span class="baseclass">TObject::</span>GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">TMultiLayerPerceptron*</td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:GetNeuralNetwork">GetNeuralNetwork</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> ANNType = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:GetNplIndexNr">GetNplIndexNr</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> sh_npl, <a href="./ListOfTypes.html#Int_t">Int_t</a>&amp; check_Npl_index, <a href="./ListOfTypes.html#Int_t">Int_t</a> <a href="./EdbShowerAlgESimple.html#EdbShowerAlgESimple:ePlateNumberType" title="Int_t EdbShowerAlgESimple::ePlateNumberType">ePlateNumberType</a>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:GetPara">GetPara</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* track)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:GetRecoShowerArrayN">GetRecoShowerArrayN</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:GetSpecifications">GetSpecifications</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:GetSpecType">GetSpecType</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> SpecificationType)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetTitle"><span class="baseclass">TObject::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(TTimer* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Hash"><span class="baseclass">TObject::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:Help">Help</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> TClass* cl) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:InitStrings">InitStrings</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsSortable"><span class="baseclass">TObject::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:LoadSpecificationWeightFile">LoadSpecificationWeightFile</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ls"><span class="baseclass">TObject::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbShowerAlgESimple.html">EdbShowerAlgESimple</a>&amp;</td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:operator_">operator=</a>(<span class="keyword">const</span> <a href="./EdbShowerAlgESimple.html">EdbShowerAlgESimple</a>&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:Print">Print</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:PrintEfficiencyParametrisation">PrintEfficiencyParametrisation</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:PrintSpecifications">PrintSpecifications</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:ReadCorrectionFactors">ReadCorrectionFactors</a>(TString weigthstring, <a href="./ListOfTypes.html#Float_t">Float_t</a>&amp; p0, <a href="./ListOfTypes.html#Float_t">Float_t</a>&amp; p1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:ReadTables">ReadTables</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:ReadTables_Energy">ReadTables_Energy</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:SetCalibrationOffset">SetCalibrationOffset</a>(<a href="./ListOfTypes.html#Float_t">Float_t</a> CalibrationOffset)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:SetCalibrationSlope">SetCalibrationSlope</a>(<a href="./ListOfTypes.html#Float_t">Float_t</a> CalibrationSlope)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:SetEfficiencyParametrisation">SetEfficiencyParametrisation</a>(TSpline3* EfficiencyParametrisation)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:SetEfficiencyParametrisationAngles">SetEfficiencyParametrisationAngles</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:SetEfficiencyParametrisationValues">SetEfficiencyParametrisationValues</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a>* Angles, <a href="./ListOfTypes.html#Double_t">Double_t</a>* EffValuesAtAngles)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:SetForceSpecificationReload">SetForceSpecificationReload</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:SetPlateNumber">SetPlateNumber</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> PlateNumber)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:SetPlateNumberType">SetPlateNumberType</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> PlateNumberType)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:SetRecoShowerArray">SetRecoShowerArray</a>(TObjArray* RecoShowerArray)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:SetRecoShowerArrayN">SetRecoShowerArrayN</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> RecoShowerArrayN)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:SetSpecifications">SetSpecifications</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> sp0, <a href="./ListOfTypes.html#Int_t">Int_t</a> sp1, <a href="./ListOfTypes.html#Int_t">Int_t</a> sp2, <a href="./ListOfTypes.html#Int_t">Int_t</a> sp3, <a href="./ListOfTypes.html#Int_t">Int_t</a> sp4, <a href="./ListOfTypes.html#Int_t">Int_t</a> sp5)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:SetSpecificationType">SetSpecificationType</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> SpecificationType, <a href="./ListOfTypes.html#Int_t">Int_t</a> SpecificationTypeVal)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:SetWeightFileString">SetWeightFileString</a>(TString weightstring)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:TrainNeuralNetwork">TrainNeuralNetwork</a>(TString weight, <a href="./ListOfTypes.html#Int_t">Int_t</a> ANNType = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:UnSetForceSpecificationReload">UnSetForceSpecificationReload</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:Update">Update</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:WriteNewRootFile">WriteNewRootFile</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:WriteNewRootFile@1">WriteNewRootFile</a>(TString sourcefilename)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:WriteNewRootFile@2">WriteNewRootFile</a>(TString sourcefilename, TString treename)</td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, va_list va) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:Init">Init</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbShowerAlgESimple:Set0">Set0</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbShowerAlgESimple:Data_Members"></a>Data Members</h2>
+<div class="access" id="enumpubl"><b>public:</b>
+<table class="data" id="tabenumpubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span>EStatusBits { </td><td class="dataname"><a href="#TObject:kCanDelete">kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kMustCleanup">kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kObjInCanvas">kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kIsReferenced">kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kHasUUID">kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kCannotPick">kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNoContextMenu">kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kInvalidObject">kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span><i>[unnamed]</i> { </td><td class="dataname"><a href="#TObject:kIsOnHeap">kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNotDeleted">kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kZombie">kZombie</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kBitMask">kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kSingleKey">kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kOverwrite">kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kWriteDelete">kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+
+</table></div>
+<div class="access" id="dataprot"><b>protected:</b>
+<table class="data" id="tabdataprot" cellspacing="0">
+<tr class="data"><td class="datatype">TTree*</td><td class="dataname"><a name="EdbShowerAlgESimple:ANNTree"></a>ANNTree</td><td></td></tr>
+<tr class="data"><td class="datatype">TString</td><td class="dataname"><a name="EdbShowerAlgESimple:ANN_Layout"></a>ANN_Layout</td><td></td></tr>
+<tr class="data"><td class="datatype">TMultiLayerPerceptron*</td><td class="dataname"><a name="EdbShowerAlgESimple:ANN_MLP"></a>ANN_MLP</td><td></td></tr>
+<tr class="data"><td class="datatype">TMultiLayerPerceptron*</td><td class="dataname"><a name="EdbShowerAlgESimple:ANN_MLP_ARRAY"></a>ANN_MLP_ARRAY[15]</td><td></td></tr>
+<tr class="data"><td class="datatype">TString</td><td class="dataname"><a name="EdbShowerAlgESimple:ANN_WeightFile_ARRAY"></a>ANN_WeightFile_ARRAY[15]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:ANN_nPlates_ARRAY"></a>ANN_nPlates_ARRAY[15]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:ANN_n_InputNeurons"></a>ANN_n_InputNeurons</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:ANN_n_InputNeurons_ARRAY"></a>ANN_n_InputNeurons_ARRAY[15]</td><td></td></tr>
+<tr class="data"><td class="datatype">TF1*</td><td class="dataname"><a name="EdbShowerAlgESimple:EffFunc_LowEff"></a>EffFunc_LowEff</td><td></td></tr>
+<tr class="data"><td class="datatype">TF1*</td><td class="dataname"><a name="EdbShowerAlgESimple:EffFunc_MiddleFix"></a>EffFunc_MiddleFix</td><td></td></tr>
+<tr class="data"><td class="datatype">TF1*</td><td class="dataname"><a name="EdbShowerAlgESimple:EffFunc_UserEfficiency"></a>EffFunc_UserEfficiency</td><td></td></tr>
+<tr class="data"><td class="datatype">TF1*</td><td class="dataname"><a name="EdbShowerAlgESimple:EffFunc_all"></a>EffFunc_all</td><td></td></tr>
+<tr class="data"><td class="datatype">TF1*</td><td class="dataname"><a name="EdbShowerAlgESimple:EffFunc_edefault"></a>EffFunc_edefault</td><td></td></tr>
+<tr class="data"><td class="datatype">TF1*</td><td class="dataname"><a name="EdbShowerAlgESimple:EffFunc_elletroni"></a>EffFunc_elletroni</td><td></td></tr>
+<tr class="data"><td class="datatype">TF1*</td><td class="dataname"><a name="EdbShowerAlgESimple:EffFunc_neuchmicro"></a>EffFunc_neuchmicro</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eANN_MLP_CORR_0"></a>eANN_MLP_CORR_0[15]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eANN_MLP_CORR_1"></a>eANN_MLP_CORR_1[15]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eCalibrationOffset"></a>eCalibrationOffset</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eCalibrationSlope"></a>eCalibrationSlope</td><td></td></tr>
+<tr class="data"><td class="datatype">TSpline3*</td><td class="dataname"><a name="EdbShowerAlgESimple:eEfficiencyParametrisation"></a>eEfficiencyParametrisation</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eEnergy"></a>eEnergy</td><td></td></tr>
+<tr class="data"><td class="datatype">TArrayF*</td><td class="dataname"><a name="EdbShowerAlgESimple:eEnergyArray"></a>eEnergyArray</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eEnergyArrayCount"></a>eEnergyArrayCount</td><td></td></tr>
+<tr class="data"><td class="datatype">TArrayF*</td><td class="dataname"><a name="EdbShowerAlgESimple:eEnergyArraySigmaCorrected"></a>eEnergyArraySigmaCorrected</td><td></td></tr>
+<tr class="data"><td class="datatype">TArrayF*</td><td class="dataname"><a name="EdbShowerAlgESimple:eEnergyArrayUnCorrected"></a>eEnergyArrayUnCorrected</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eEnergyCorr"></a>eEnergyCorr</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eEnergySigmaCorr"></a>eEnergySigmaCorr</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eEnergyUnCorr"></a>eEnergyUnCorr</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eForceSpecificationReload"></a>eForceSpecificationReload</td><td></td></tr>
+<tr class="data"><td class="datatype">TH1D*</td><td class="dataname"><a name="EdbShowerAlgESimple:eHisto_deltaR"></a>eHisto_deltaR</td><td></td></tr>
+<tr class="data"><td class="datatype">TH1D*</td><td class="dataname"><a name="EdbShowerAlgESimple:eHisto_deltaR_mean"></a>eHisto_deltaR_mean</td><td></td></tr>
+<tr class="data"><td class="datatype">TH1D*</td><td class="dataname"><a name="EdbShowerAlgESimple:eHisto_deltaR_rms"></a>eHisto_deltaR_rms</td><td></td></tr>
+<tr class="data"><td class="datatype">TH1D*</td><td class="dataname"><a name="EdbShowerAlgESimple:eHisto_deltaT"></a>eHisto_deltaT</td><td></td></tr>
+<tr class="data"><td class="datatype">TH1D*</td><td class="dataname"><a name="EdbShowerAlgESimple:eHisto_deltaT_mean"></a>eHisto_deltaT_mean</td><td></td></tr>
+<tr class="data"><td class="datatype">TH1D*</td><td class="dataname"><a name="EdbShowerAlgESimple:eHisto_deltaT_rms"></a>eHisto_deltaT_rms</td><td></td></tr>
+<tr class="data"><td class="datatype">TH1D*</td><td class="dataname"><a name="EdbShowerAlgESimple:eHisto_longprofile"></a>eHisto_longprofile</td><td></td></tr>
+<tr class="data"><td class="datatype">TH1D*</td><td class="dataname"><a name="EdbShowerAlgESimple:eHisto_longprofile_av"></a>eHisto_longprofile_av</td><td></td></tr>
+<tr class="data"><td class="datatype">TH1D*</td><td class="dataname"><a name="EdbShowerAlgESimple:eHisto_nbtk"></a>eHisto_nbtk</td><td></td></tr>
+<tr class="data"><td class="datatype">TH1D*</td><td class="dataname"><a name="EdbShowerAlgESimple:eHisto_nbtk_av"></a>eHisto_nbtk_av</td><td></td></tr>
+<tr class="data"><td class="datatype">TH1D*</td><td class="dataname"><a name="EdbShowerAlgESimple:eHisto_transprofile"></a>eHisto_transprofile</td><td></td></tr>
+<tr class="data"><td class="datatype">TH1D*</td><td class="dataname"><a name="EdbShowerAlgESimple:eHisto_transprofile_av"></a>eHisto_transprofile_av</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eParaBT_deltaR_mean"></a>eParaBT_deltaR_mean</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eParaBT_deltaR_rms"></a>eParaBT_deltaR_rms</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eParaBT_deltaT_mean"></a>eParaBT_deltaT_mean</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eParaBT_deltaT_rms"></a>eParaBT_deltaT_rms</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eParaName"></a>eParaName</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eParaShowerAxisAngle"></a>eParaShowerAxisAngle</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eParalongprofile"></a>eParalongprofile[57]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eParanseg"></a>eParanseg</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:ePlateBinning"></a>ePlateBinning[15]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:ePlateNumber"></a>ePlateNumber</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:ePlateNumberType"></a>ePlateNumberType</td><td></td></tr>
+<tr class="data"><td class="datatype">TObjArray*</td><td class="dataname"><a name="EdbShowerAlgESimple:eRecoShowerArray"></a>eRecoShowerArray</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eRecoShowerArrayN"></a>eRecoShowerArrayN</td><td class="datadesc">nothing...</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eSpecificationIsChanged"></a>eSpecificationIsChanged</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:eSpecificationType"></a>eSpecificationType[7]</td><td></td></tr>
+<tr class="data"><td class="datatype">TString</td><td class="dataname"><a name="EdbShowerAlgESimple:eSpecificationTypeString"></a>eSpecificationTypeString[7]</td><td></td></tr>
+<tr class="data"><td class="datatype">TString</td><td class="dataname"><a name="EdbShowerAlgESimple:eSpecificationTypeStringArray"></a>eSpecificationTypeStringArray[7][7]</td><td></td></tr>
+<tr class="data"><td class="datatype">TObjArray*</td><td class="dataname"><a name="EdbShowerAlgESimple:eSplineArray_Energy_Stat_Electron"></a>eSplineArray_Energy_Stat_Electron</td><td></td></tr>
+<tr class="data"><td class="datatype">TObjArray*</td><td class="dataname"><a name="EdbShowerAlgESimple:eSplineArray_Energy_Stat_Gamma"></a>eSplineArray_Energy_Stat_Gamma</td><td></td></tr>
+<tr class="data"><td class="datatype">TObjArray*</td><td class="dataname"><a name="EdbShowerAlgESimple:eSplineArray_Energy_Sys_Electron"></a>eSplineArray_Energy_Sys_Electron</td><td></td></tr>
+<tr class="data"><td class="datatype">TObjArray*</td><td class="dataname"><a name="EdbShowerAlgESimple:eSplineArray_Energy_Sys_Gamma"></a>eSplineArray_Energy_Sys_Gamma</td><td></td></tr>
+<tr class="data"><td class="datatype">TSpline3*</td><td class="dataname"><a name="EdbShowerAlgESimple:eSplineCurrent"></a>eSplineCurrent</td><td></td></tr>
+<tr class="data"><td class="datatype">TString</td><td class="dataname"><a name="EdbShowerAlgESimple:eWeightFileString"></a>eWeightFileString</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:inANN"></a>inANN[70]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="dataname"><a name="EdbShowerAlgESimple:outANN"></a>outANN</td><td></td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbShowerAlgESimple:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td><table><tr>
+<td bgcolor="#f7f7f7" align="right">
+<tt>TObject</tt></td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><big><b><tt><a name="EdbShowerAlgESimple" href="./EdbShowerAlgESimple.html">EdbShowerAlgESimple</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td>&larr;</td><td><table><tr>
+<td bgcolor="#f7f7f7"><table><tr><td>
+<center><tt><a name="EdbShowerAlgIDSimple" href="./EdbShowerAlgIDSimple.html">EdbShowerAlgIDSimple</a></tt></center></td>
+<td></td>
+</tr></table></td>
+</tr></table></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbShowerAlgESimple:EdbShowerAlgESimple" href="src/EdbShowerAlgESimple.cxx.html#ndsY2D">EdbShowerAlgESimple</a>()</span><br />
+<div class="funccomm"><pre> Default Constructor
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbShowerAlgESimple:EdbShowerAlgESimple@1" href="src/EdbShowerAlgESimple.cxx.html#P6adtC">EdbShowerAlgESimple</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* track)</span><br />
+<div class="funccomm"><pre> Default Constructor...
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbShowerAlgESimple:EdbShowerAlgESimple@2" href="src/EdbShowerAlgESimple.cxx.html#TFxQsC">EdbShowerAlgESimple</a>(TObjArray* RecoShowerArray)</span><br />
+<div class="funccomm"><pre> Default Constructor
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbShowerAlgESimple:_EdbShowerAlgESimple" href="src/EdbShowerAlgESimple.cxx.html#eYubrC">~EdbShowerAlgESimple</a>()</span><br />
+<div class="funccomm"><pre> Default Destructor
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:Set0" href="src/EdbShowerAlgESimple.cxx.html#AG5V1">Set0</a>()</span><br />
+<div class="funccomm"><pre> Reset Values
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:Init" href="src/EdbShowerAlgESimple.cxx.html#gFluYB">Init</a>()</span><br />
+<div class="funccomm"><pre> This Plate Binnning is the _final_binning and will not be refined furthermore!
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:InitStrings" href="src/EdbShowerAlgESimple.cxx.html#E33bxB">InitStrings</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:CreateANN" href="src/EdbShowerAlgESimple.cxx.html#g2HUs">CreateANN</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:DoRun" href="src/EdbShowerAlgESimple.cxx.html#MmsIl">DoRun</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:DoRun@1" href="src/EdbShowerAlgESimple.cxx.html#CVUvTE">DoRun</a>(TObjArray* trackarray)</span><br />
+<div class="funccomm"><pre> Runs over the object array of showers.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:DoRun@2" href="src/EdbShowerAlgESimple.cxx.html#cgtMZE">DoRun</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* shower)</span><br />
+<div class="funccomm"><pre> Basic run function for energy estimation.
+ Assumes, that Neural Networks are properly created, weightfiles correctly loaded,
+ and scanning efficiencies correctly evaluated.
+   * Takes a shower, gets its energy parametrisation (i.e. the shower profile)
+   * Takes the right ANN, run it with inputvariables from the shower.
+   * According to the energy output value, the systematic uncertainties are read from
+     a table and then those values are written in the shower storage, or in the
+     <span class="string">"treebranch tree"</span> root file.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbShowerAlgESimple:FindClosestEfficiencyParametrization" href="src/EdbShowerAlgESimple.cxx.html#R2aKGE">FindClosestEfficiencyParametrization</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a> TestAngle, <a href="./ListOfTypes.html#Double_t">Double_t</a> ReferenceEff)</span><br />
+<div class="funccomm"><pre> Returns the number of the closest EfficiencyParametrization to use. Supported are:
+ ((in this order numbering, different from the ordering, fwm used for his calculations!:))
+ 0:Neuch
+ 1:All
+ 2:MiddleFix
+ 3:Low
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:SetWeightFileString" href="src/EdbShowerAlgESimple.cxx.html#f79TXB">SetWeightFileString</a>(TString weightstring)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:GetNplIndexNr" href="src/EdbShowerAlgESimple.cxx.html#O.eOCC">GetNplIndexNr</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> sh_npl, <a href="./ListOfTypes.html#Int_t">Int_t</a>&amp; check_Npl_index, <a href="./ListOfTypes.html#Int_t">Int_t</a> <a href="./EdbShowerAlgESimple.html#EdbShowerAlgESimple:ePlateNumberType" title="Int_t EdbShowerAlgESimple::ePlateNumberType">ePlateNumberType</a>)</span><br />
+<div class="funccomm"><pre> ---	What is the sense of this?
+ ---  According to the shower it can have any different length between [1..57] plates.
+ ---  We cannot produce weights for each plate....
+ ---  So we have only some weights for different plates: acoording to the array set in plateBinning:
+ ---  10,12,14,16,18,20,23,26,29,32,35,40,45,50
+ ---  So what if a shower has npl() of 19? take the weight for 18 or for 20 plates?
+ ---  therefore, we introduced <a href="./EdbShowerAlgESimple.html#EdbShowerAlgESimple:ePlateNumberType" title="Int_t EdbShowerAlgESimple::ePlateNumberType">ePlateNumberType</a>. This will take the weight as like:
+ ---  In case <a href="./EdbShowerAlgESimple.html#EdbShowerAlgESimple:ePlateNumberType" title="Int_t EdbShowerAlgESimple::ePlateNumberType">ePlateNumberType</a> &gt; 0 the it will take he trained ANN file with Npl &gt;= shower-&gt;Npl();
+ ---  in such a way that |<a href="./EdbShowerAlgESimple.html#EdbShowerAlgESimple:ePlateNumberType" title="Int_t EdbShowerAlgESimple::ePlateNumberType">ePlateNumberType</a>| is the difference to the <a href="./EdbShowerAlgESimple.html#EdbShowerAlgESimple:ePlateBinning" title="Int_t EdbShowerAlgESimple::ePlateBinning">ePlateBinning</a>[].
+ ---  Example: <a href="./EdbShowerAlgESimple.html#EdbShowerAlgESimple:ePlateNumberType" title="Int_t EdbShowerAlgESimple::ePlateNumberType">ePlateNumberType</a>=1 -&gt; 1st next availible weight will be taken: (npl==19-&gt;nplANN==20);
+ ---  Example: <a href="./EdbShowerAlgESimple.html#EdbShowerAlgESimple:ePlateNumberType" title="Int_t EdbShowerAlgESimple::ePlateNumberType">ePlateNumberType</a>=2 -&gt; 2nd next availible weight will be taken: (npl==19-&gt;nplANN==23);
+ ---  Example: <a href="./EdbShowerAlgESimple.html#EdbShowerAlgESimple:ePlateNumberType" title="Int_t EdbShowerAlgESimple::ePlateNumberType">ePlateNumberType</a>=3 -&gt; 3rd next availible weight will be taken: (npl==19-&gt;nplANN==26);
+ ---  Example: <a href="./EdbShowerAlgESimple.html#EdbShowerAlgESimple:ePlateNumberType" title="Int_t EdbShowerAlgESimple::ePlateNumberType">ePlateNumberType</a>=-1-&gt; 1st befo availible weight will be taken: (npl==19-&gt;nplANN==18);
+ ---  Example: <a href="./EdbShowerAlgESimple.html#EdbShowerAlgESimple:ePlateNumberType" title="Int_t EdbShowerAlgESimple::ePlateNumberType">ePlateNumberType</a>=-2-&gt; 2nd befo availible weight will be taken: (npl==19-&gt;nplANN==16);
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:GetSpecifications" href="src/EdbShowerAlgESimple.cxx.html#kuPzZB">GetSpecifications</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:PrintSpecifications" href="src/EdbShowerAlgESimple.cxx.html#TYXCZ">PrintSpecifications</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:LoadSpecificationWeightFile" href="src/EdbShowerAlgESimple.cxx.html#hNCXcE">LoadSpecificationWeightFile</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:SetSpecifications" href="src/EdbShowerAlgESimple.cxx.html#u9vLvB">SetSpecifications</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> sp0, <a href="./ListOfTypes.html#Int_t">Int_t</a> sp1, <a href="./ListOfTypes.html#Int_t">Int_t</a> sp2, <a href="./ListOfTypes.html#Int_t">Int_t</a> sp3, <a href="./ListOfTypes.html#Int_t">Int_t</a> sp4, <a href="./ListOfTypes.html#Int_t">Int_t</a> sp5)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:SetSpecificationType" href="src/EdbShowerAlgESimple.cxx.html#BxRvsC">SetSpecificationType</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> SpecificationType, <a href="./ListOfTypes.html#Int_t">Int_t</a> SpecificationTypeVal)</span><br />
+<div class="funccomm"><pre>     if (<a href="./EdbShowerAlgESimple.html#EdbShowerAlgESimple:GetSpecType" title="Int_t EdbShowerAlgESimple::GetSpecType(Int_t SpecificationType)">GetSpecType</a>(SpecificationType)==SpecificationTypeVal) {
+ 	<a href="./ListOfTypes.html#ostream">cout</a> &lt;&lt; <span class="string">"dbShowerAlgESimple::SetSpecificationType()   The given value is the same value as before. So just set the eForceSpecificationReload to False."</span>&lt;&lt;endl;
+ 	<a href="./EdbShowerAlgESimple.html#EdbShowerAlgESimple:eForceSpecificationReload" title="Bool_t EdbShowerAlgESimple::eForceSpecificationReload">eForceSpecificationReload</a>=<a href="./ListOfTypes.html#Bool_t">kTRUE</a>;
+ 	return;
+     }
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:Update" href="src/EdbShowerAlgESimple.cxx.html#Q4FYgC">Update</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:GetPara" href="src/EdbShowerAlgESimple.cxx.html#hXDocD">GetPara</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* track)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:ReadCorrectionFactors" href="src/EdbShowerAlgESimple.cxx.html#c5fEGC">ReadCorrectionFactors</a>(TString weigthstring, <a href="./ListOfTypes.html#Float_t">Float_t</a>&amp; p0, <a href="./ListOfTypes.html#Float_t">Float_t</a>&amp; p1)</span><br />
+<div class="funccomm"><pre> <a href="./#TObject:Read" title="Int_t TObject::Read(const char* name)">Read</a> Linear Correction factors p0 p1 from this file.
+ Format: p0 p1
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:Print" href="src/EdbShowerAlgESimple.cxx.html#Cg2GfB">Print</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:WriteNewRootFile@2" href="src/EdbShowerAlgESimple.cxx.html#GgFoBE">WriteNewRootFile</a>(TString sourcefilename, TString treename)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:Help" href="src/EdbShowerAlgESimple.cxx.html#YK0fx">Help</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:PrintEfficiencyParametrisation" href="src/EdbShowerAlgESimple.cxx.html#kVPgsD">PrintEfficiencyParametrisation</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:ReadTables" href="src/EdbShowerAlgESimple.cxx.html#j6emQB">ReadTables</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:ReadTables_Energy" href="src/EdbShowerAlgESimple.cxx.html#Ydp6qE">ReadTables_Energy</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:SetEfficiencyParametrisationAngles" href="src/EdbShowerAlgESimple.cxx.html#n.TqXC">SetEfficiencyParametrisationAngles</a>()</span><br />
+<div class="funccomm"><pre><a href="./EdbShowerAlgESimple.html#EdbShowerAlgESimple:EffFunc_UserEfficiency" title="TF1* EdbShowerAlgESimple::EffFunc_UserEfficiency">EffFunc_UserEfficiency</a>-&gt;Set
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:SetEfficiencyParametrisationValues" href="src/EdbShowerAlgESimple.cxx.html#XhdmnB">SetEfficiencyParametrisationValues</a>(<a href="./ListOfTypes.html#Double_t">Double_t</a>* Angles, <a href="./ListOfTypes.html#Double_t">Double_t</a>* EffValuesAtAngles)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:SetRecoShowerArray" href="src/EdbShowerAlgESimple.h.html#m6Hp8B">SetRecoShowerArray</a>(TObjArray* RecoShowerArray)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:SetRecoShowerArrayN" href="src/EdbShowerAlgESimple.h.html#xEjTzE">SetRecoShowerArrayN</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> RecoShowerArrayN)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbShowerAlgESimple:GetRecoShowerArrayN" href="src/EdbShowerAlgESimple.h.html#VOsCJC">GetRecoShowerArrayN</a>() const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbShowerAlgESimple:EdbShowerAlgESimple" href="src/EdbShowerAlgESimple.h.html#WMQlQC">EdbShowerAlgESimple</a>()</span><br />
+<div class="funccomm"><pre>   EdbShowAlgE_Simple(EdbShowerP* shower); // in libShowRec
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname">TArrayF* <a class="funcname" name="EdbShowerAlgESimple:GetEnergyArray" href="src/EdbShowerAlgESimple.h.html#G9ytPB">GetEnergyArray</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TArrayF* <a class="funcname" name="EdbShowerAlgESimple:GetEnergyArrayUnCorrected" href="src/EdbShowerAlgESimple.h.html#AMfN4B">GetEnergyArrayUnCorrected</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a> <a class="funcname" name="EdbShowerAlgESimple:GetEnergy" href="src/EdbShowerAlgESimple.h.html#SUajME">GetEnergy</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a> <a class="funcname" name="EdbShowerAlgESimple:GetEnergy@1" href="src/EdbShowerAlgESimple.h.html#CspmaC">GetEnergy</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* track)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TF1* <a class="funcname" name="EdbShowerAlgESimple:GetEffFunc_all" href="src/EdbShowerAlgESimple.h.html#IdkSHC">GetEffFunc_all</a>()</span><br />
+<div class="funccomm"><pre> Get  Efficiency/Angle parametrisation functions
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname">TF1* <a class="funcname" name="EdbShowerAlgESimple:GetEffFunc_edefault" href="src/EdbShowerAlgESimple.h.html#SAbHrC">GetEffFunc_edefault</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TF1* <a class="funcname" name="EdbShowerAlgESimple:GetEffFunc_elletroni" href="src/EdbShowerAlgESimple.h.html#Zd18SE">GetEffFunc_elletroni</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TF1* <a class="funcname" name="EdbShowerAlgESimple:GetEffFunc_neuchmicro" href="src/EdbShowerAlgESimple.h.html#wZw1eD">GetEffFunc_neuchmicro</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TF1* <a class="funcname" name="EdbShowerAlgESimple:GetEffFunc_MiddleFix" href="src/EdbShowerAlgESimple.h.html#THfs1E">GetEffFunc_MiddleFix</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TF1* <a class="funcname" name="EdbShowerAlgESimple:GetEffFunc_LowEff" href="src/EdbShowerAlgESimple.h.html#Dn2sP">GetEffFunc_LowEff</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TF1* <a class="funcname" name="EdbShowerAlgESimple:GetEffFunc_UserEfficiency" href="src/EdbShowerAlgESimple.h.html#sFDHkD">GetEffFunc_UserEfficiency</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TMultiLayerPerceptron* <a class="funcname" name="EdbShowerAlgESimple:GetNeuralNetwork" href="src/EdbShowerAlgESimple.h.html#Wz87VB">GetNeuralNetwork</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> ANNType = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:TrainNeuralNetwork" href="src/EdbShowerAlgESimple.h.html#WDOlwE">TrainNeuralNetwork</a>(TString weight, <a href="./ListOfTypes.html#Int_t">Int_t</a> ANNType = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:DumpNeuralNetworkWeight" href="src/EdbShowerAlgESimple.h.html#qZ_pLE">DumpNeuralNetworkWeight</a>(TString weight, <a href="./ListOfTypes.html#Int_t">Int_t</a> ANNType = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:SetCalibrationOffset" href="src/EdbShowerAlgESimple.h.html#lBgC5D">SetCalibrationOffset</a>(<a href="./ListOfTypes.html#Float_t">Float_t</a> CalibrationOffset)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:SetCalibrationSlope" href="src/EdbShowerAlgESimple.h.html#Pk0QO">SetCalibrationSlope</a>(<a href="./ListOfTypes.html#Float_t">Float_t</a> CalibrationSlope)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:SetPlateNumberType" href="src/EdbShowerAlgESimple.h.html#ugnryE">SetPlateNumberType</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> PlateNumberType)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:SetPlateNumber" href="src/EdbShowerAlgESimple.h.html#ovPJ6C">SetPlateNumber</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> PlateNumber)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbShowerAlgESimple:GetSpecType" href="src/EdbShowerAlgESimple.h.html#QOxpVB">GetSpecType</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> SpecificationType)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:SetForceSpecificationReload" href="src/EdbShowerAlgESimple.h.html#VN3B9D">SetForceSpecificationReload</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:UnSetForceSpecificationReload" href="src/EdbShowerAlgESimple.h.html#bIQX1C">UnSetForceSpecificationReload</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:SetEfficiencyParametrisation" href="src/EdbShowerAlgESimple.h.html#cePPjE">SetEfficiencyParametrisation</a>(TSpline3* EfficiencyParametrisation)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TSpline3* <a class="funcname" name="EdbShowerAlgESimple:GetEfficiencyParametrisation" href="src/EdbShowerAlgESimple.h.html#kcEmaD">GetEfficiencyParametrisation</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbShowerAlgESimple:WriteNewRootFile" href="src/EdbShowerAlgESimple.h.html#CETJWE">WriteNewRootFile</a>()</span><br />
+<div class="funccomm"><pre><a href="./ListOfTypes.html#void">void</a> ReadTables_ID(); // to be implemented...
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbShowerAlgESimple:WriteNewRootFile@2" href="src/EdbShowerAlgESimple.h.html#B3HiqD">WriteNewRootFile</a>(TString sourcefilename, TString treename)</span><br />
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:32 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

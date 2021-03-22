@@ -1,0 +1,748 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:27 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbPVRQuality</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbPVRQuality','','EdbPVRQuality.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbPVRQuality.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbPVRQuality.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbPVRQuality_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbPVRQuality:description">class description</a> 
+<a class="descrheadentry" href="#EdbPVRQuality:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbPVRQuality:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbPVRQuality:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbPVRQuality</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbPVRQuality:description"></a>class EdbPVRQuality: public TObject</h1>
+<div class="classdescr">
+<pre>
+
+<a href="./EdbPVRQuality.html">EdbPVRQuality</a>
+
+ Base class for checks of the scanned data, especially for shower reconstruction.
+ The observed basetrack density can vary from brick to brick with a large
+ fluctuation.
+ The shower algorithm in its standard implementation is sensitive to the
+ level of tracks per unit area. In case there are too many of them, the purity
+ of shower reconstruction goes down and does not give reliable results anymore.
+ The <a href="./EdbPVRQuality.html">EdbPVRQuality</a> class basically equals the number of basetracks per unit area
+ to a maximum upper value (if necessary) by adapting the quality cut for a single
+ basetrack.
+
+
+</pre></div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbPVRQuality:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:EdbPVRQuality">EdbPVRQuality</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:EdbPVRQuality@1">EdbPVRQuality</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* ali)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:EdbPVRQuality@3">EdbPVRQuality</a>(<span class="keyword">const</span> <a href="./EdbPVRQuality.html">EdbPVRQuality</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:EdbPVRQuality@2">EdbPVRQuality</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* ali, <a href="./ListOfTypes.html#Float_t">Float_t</a> BTDensityTargetLevel)</td></tr>
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:_EdbPVRQuality">~EdbPVRQuality</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(TBrowser* b)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:CheckEdbPVRec">CheckEdbPVRec</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:CheckEdbPVRecThetaSpace">CheckEdbPVRecThetaSpace</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> AliType)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:CheckFilledXYSize">CheckFilledXYSize</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:CheckSegmentQualityInPattern_ConstBTDens">CheckSegmentQualityInPattern_ConstBTDens</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* ali, <a href="./ListOfTypes.html#Int_t">Int_t</a> PatternAtNr, <a href="./EdbSegP.html">EdbSegP</a>* seg)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:CheckSegmentQualityInPattern_ConstQual">CheckSegmentQualityInPattern_ConstQual</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* ali, <a href="./ListOfTypes.html#Int_t">Int_t</a> PatternAtNr, <a href="./EdbSegP.html">EdbSegP</a>* seg)</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Clear"><span class="baseclass">TObject::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:Clone"><span class="baseclass">TObject::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Compare"><span class="baseclass">TObject::</span>Compare</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Copy"><span class="baseclass">TObject::</span>Copy</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp; object) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:CreateEdbPVRec">CreateEdbPVRec</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Execute">Execute</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Execute@1">Execute</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> CutType)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Execute_ConstantBTDensity">Execute_ConstantBTDensity</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Execute_ConstantBTDensityInAngularBins">Execute_ConstantBTDensityInAngularBins</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Execute_ConstantBTQuality">Execute_ConstantBTQuality</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Execute_ConstantBTQualityInAngularBins">Execute_ConstantBTQualityInAngularBins</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Execute_ConstantBTX2Hat">Execute_ConstantBTX2Hat</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Execute_ConstantBTX2HatInAngularBins">Execute_ConstantBTX2HatInAngularBins</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Execute_EqualizeTanThetaSpace">Execute_EqualizeTanThetaSpace</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Execute_EqualizeTanThetaSpace_ConstantBTDensity">Execute_EqualizeTanThetaSpace_ConstantBTDensity</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Execute_EqualizeTanThetaSpace_ConstantBTQuality">Execute_EqualizeTanThetaSpace_ConstantBTQuality</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Execute_EqualizeTanThetaSpace_ConstantBTX2Hat">Execute_EqualizeTanThetaSpace_ConstantBTX2Hat</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Execute_EqualizeTanThetaSpace_RandomCut">Execute_EqualizeTanThetaSpace_RandomCut</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Execute_RandomCut">Execute_RandomCut</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Execute_RandomCutInAngularBins">Execute_RandomCutInAngularBins</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">TObjArray*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Find_DoubleBT">Find_DoubleBT</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* aliSource)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:FindFirstBinAbove">FindFirstBinAbove</a>(TH1* hist, <a href="./ListOfTypes.html#Double_t">Double_t</a> threshold, <a href="./ListOfTypes.html#Int_t">Int_t</a> axis)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:FindLastBinAbove">FindLastBinAbove</a>(TH1* hist, <a href="./ListOfTypes.html#Double_t">Double_t</a> threshold, <a href="./ListOfTypes.html#Int_t">Int_t</a> axis)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetagreementChi2Cut">GetagreementChi2Cut</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetagreementChi2Cut@1">GetagreementChi2Cut</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> patNR)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetagreementChi2CutMeanChi2">GetagreementChi2CutMeanChi2</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetagreementChi2CutMeanW">GetagreementChi2CutMeanW</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetagreementChi2CutRMSChi2">GetagreementChi2CutRMSChi2</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetagreementChi2CutRMSW">GetagreementChi2CutRMSW</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetAngularSpaceBin">GetAngularSpaceBin</a>(<a href="./EdbSegP.html">EdbSegP</a>* seg)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetBTDensityLevel">GetBTDensityLevel</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetBTDensityLevelCalcMethodMC">GetBTDensityLevelCalcMethodMC</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetBTDensityLevelCalcMethodMCConfirmation">GetBTDensityLevelCalcMethodMCConfirmation</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetCutMethod">GetCutMethod</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetCutMethodIsDone">GetCutMethodIsDone</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> type)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetCutp0">GetCutp0</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetCutp0@1">GetCutp0</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> patNR)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetCutp1">GetCutp1</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetCutp1@1">GetCutp1</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> patNR)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetEdbPVRec">GetEdbPVRec</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetEdbPVRec@1">GetEdbPVRec</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> EdbPVRecType)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetEdbPVRec@2">GetEdbPVRec</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> NeedModified)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetEdbPVRec_modified">GetEdbPVRec_modified</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetEdbPVRec_orig">GetEdbPVRec_orig</a>()</td></tr>
+<tr class="func"><td class="funcret">TH2F*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetHistChi2W">GetHistChi2W</a>()</td></tr>
+<tr class="func"><td class="funcret">TH2F*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetHistYX">GetHistYX</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetName"><span class="baseclass">TObject::</span>GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetTitle"><span class="baseclass">TObject::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">TObjArray*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:GetTracksFromLinkedTracksRootFile">GetTracksFromLinkedTracksRootFile</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(TTimer* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Hash"><span class="baseclass">TObject::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Help">Help</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> TClass* cl) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsSortable"><span class="baseclass">TObject::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ls"><span class="baseclass">TObject::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPVRQuality.html">EdbPVRQuality</a>&amp;</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:operator_">operator=</a>(<span class="keyword">const</span> <a href="./EdbPVRQuality.html">EdbPVRQuality</a>&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Print">Print</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:PrintCutType">PrintCutType</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:PrintCutType0">PrintCutType0</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:PrintCutType1">PrintCutType1</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:PrintCutType2">PrintCutType2</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:PrintCutType3">PrintCutType3</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:PrintCutType4">PrintCutType4</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:PrintCutType5">PrintCutType5</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:PrintCutType6">PrintCutType6</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:PrintCutType7">PrintCutType7</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:PrintCutValues">PrintCutValues</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> CutType)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Remove_DoubleBT">Remove_DoubleBT</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* aliSource)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Remove_Passing">Remove_Passing</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* aliSource)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Remove_Segment">Remove_Segment</a>(<a href="./EdbSegP.html">EdbSegP</a>* seg, <a href="./EdbPVRec.html">EdbPVRec</a>* aliSource = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> Option = 0)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Remove_SegmentArray">Remove_SegmentArray</a>(TObjArray* segarray, <a href="./EdbPVRec.html">EdbPVRec</a>* aliSource = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> Option = 0)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Remove_Track">Remove_Track</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* track, <a href="./EdbPVRec.html">EdbPVRec</a>* aliSource = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> Option = 0)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Remove_TrackArray">Remove_TrackArray</a>(TObjArray* trackArray, <a href="./EdbPVRec.html">EdbPVRec</a>* aliSource = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> Option = 0)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:SetBTDensityLevel">SetBTDensityLevel</a>(<a href="./ListOfTypes.html#Float_t">Float_t</a> BTDensityLevel)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:SetBTDensityLevelCalcMethodMC">SetBTDensityLevelCalcMethodMC</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> BTDensityLevelCalcMethodMC)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:SetBTDensityLevelCalcMethodMCConfirmation">SetBTDensityLevelCalcMethodMCConfirmation</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> BTDensityLevelCalcMethodMCConfirmationNumber)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:SetCutMethod">SetCutMethod</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> CutMethod)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:SetCutTTSqueezeFactor">SetCutTTSqueezeFactor</a>(<a href="./ListOfTypes.html#Float_t">Float_t</a> CutTTSqueezeFactor)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:SetEdbPVRec">SetEdbPVRec</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* Ali_orig)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:SetHistGeometry_MC">SetHistGeometry_MC</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:SetHistGeometry_OPERA">SetHistGeometry_OPERA</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:SetHistGeometry_OPERAandMC">SetHistGeometry_OPERAandMC</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:SetHistGeometry_OPERAandMCBinArea625">SetHistGeometry_OPERAandMCBinArea625</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">TObjArray*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:TrackArrayToSegmentArray">TrackArrayToSegmentArray</a>(TObjArray* trackArray)</td></tr>
+<tr class="func"><td class="funcret">TObjArray*</td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:TrackToSegmentArray">TrackToSegmentArray</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* track)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, va_list va) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Init">Init</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRQuality:Set0">Set0</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbPVRQuality:Data_Members"></a>Data Members</h2>
+<div class="access" id="enumpubl"><b>public:</b>
+<table class="data" id="tabenumpubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span>EStatusBits { </td><td class="dataname"><a href="#TObject:kCanDelete">kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kMustCleanup">kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kObjInCanvas">kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kIsReferenced">kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kHasUUID">kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kCannotPick">kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNoContextMenu">kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kInvalidObject">kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span><i>[unnamed]</i> { </td><td class="dataname"><a href="#TObject:kIsOnHeap">kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNotDeleted">kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kZombie">kZombie</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kBitMask">kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kSingleKey">kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kOverwrite">kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kWriteDelete">kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapriv"><b>private:</b>
+<table class="data" id="tabdatapriv" cellspacing="0">
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbPVRQuality:NbinsX"></a>NbinsX</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbPVRQuality:NbinsY"></a>NbinsY</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eAgreementChi2CutMeanChi2"></a>eAgreementChi2CutMeanChi2</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eAgreementChi2CutMeanW"></a>eAgreementChi2CutMeanW</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eAgreementChi2CutRMSChi2"></a>eAgreementChi2CutRMSChi2</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eAgreementChi2CutRMSW"></a>eAgreementChi2CutRMSW</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eAgreementChi2WDistCut"></a>eAgreementChi2WDistCut[114]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbPVRQuality:eAli_maxNpatterns"></a>eAli_maxNpatterns</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="dataname"><a name="EdbPVRQuality:eAli_modified"></a>eAli_modified</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="dataname"><a name="EdbPVRQuality:eAli_orig"></a>eAli_orig</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eBTDensityLevel"></a>eBTDensityLevel</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eBTDensityLevelAngularSpace"></a>eBTDensityLevelAngularSpace[20]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="dataname"><a name="EdbPVRQuality:eBTDensityLevelCalcMethodMC"></a>eBTDensityLevelCalcMethodMC</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbPVRQuality:eBTDensityLevelCalcMethodMCConfirmationNumber"></a>eBTDensityLevelCalcMethodMCConfirmationNumber</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eCutDistChi2"></a>eCutDistChi2[114]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eCutDistW"></a>eCutDistW[114]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbPVRQuality:eCutMethod"></a>eCutMethod</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="dataname"><a name="EdbPVRQuality:eCutMethodIsDone"></a>eCutMethodIsDone[7]</td><td></td></tr>
+<tr class="data"><td class="datatype">TString</td><td class="dataname"><a name="EdbPVRQuality:eCutMethodString"></a>eCutMethodString</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eCutTTSqueezeFactor"></a>eCutTTSqueezeFactor</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eCutTTp0"></a>eCutTTp0[114][20]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eCutTTp1"></a>eCutTTp1[114][20]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eCutp0"></a>eCutp0[114]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eCutp1"></a>eCutp1[114]</td><td></td></tr>
+<tr class="data"><td class="datatype">TH2F*</td><td class="dataname"><a name="EdbPVRQuality:eHistChi2W"></a>eHistChi2W</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbPVRQuality:eHistGeometry"></a>eHistGeometry</td><td></td></tr>
+<tr class="data"><td class="datatype">TH1F*</td><td class="dataname"><a name="EdbPVRQuality:eHistTT"></a>eHistTT</td><td></td></tr>
+<tr class="data"><td class="datatype">TH2F*</td><td class="dataname"><a name="EdbPVRQuality:eHistTYTX"></a>eHistTYTX</td><td></td></tr>
+<tr class="data"><td class="datatype">TH2F*</td><td class="dataname"><a name="EdbPVRQuality:eHistTanTheta"></a>eHistTanTheta</td><td></td></tr>
+<tr class="data"><td class="datatype">TH2F*</td><td class="dataname"><a name="EdbPVRQuality:eHistYX"></a>eHistYX</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="dataname"><a name="EdbPVRQuality:eIsSource"></a>eIsSource</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="dataname"><a name="EdbPVRQuality:eIsTarget"></a>eIsTarget</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="dataname"><a name="EdbPVRQuality:eNeedModified"></a>eNeedModified</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:ePatternBTDensity_modified"></a>ePatternBTDensity_modified[114]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:ePatternBTDensity_orig"></a>ePatternBTDensity_orig[114]</td><td></td></tr>
+<tr class="data"><td class="datatype">TProfile*</td><td class="dataname"><a name="EdbPVRQuality:eProfileBTdens_vs_PID_source"></a>eProfileBTdens_vs_PID_source</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eProfileBTdens_vs_PID_source_meanX"></a>eProfileBTdens_vs_PID_source_meanX</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eProfileBTdens_vs_PID_source_meanY"></a>eProfileBTdens_vs_PID_source_meanY</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eProfileBTdens_vs_PID_source_rmsX"></a>eProfileBTdens_vs_PID_source_rmsX</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eProfileBTdens_vs_PID_source_rmsY"></a>eProfileBTdens_vs_PID_source_rmsY</td><td></td></tr>
+<tr class="data"><td class="datatype">TProfile*</td><td class="dataname"><a name="EdbPVRQuality:eProfileBTdens_vs_PID_target"></a>eProfileBTdens_vs_PID_target</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eProfileBTdens_vs_PID_target_meanX"></a>eProfileBTdens_vs_PID_target_meanX</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eProfileBTdens_vs_PID_target_meanY"></a>eProfileBTdens_vs_PID_target_meanY</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eProfileBTdens_vs_PID_target_rmsX"></a>eProfileBTdens_vs_PID_target_rmsX</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eProfileBTdens_vs_PID_target_rmsY"></a>eProfileBTdens_vs_PID_target_rmsY</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eRandomCutThreshold"></a>eRandomCutThreshold</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eX2Hat"></a>eX2Hat</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eX2HatCut"></a>eX2HatCut[114]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eXi2HatTT_m_WTilde"></a>eXi2HatTT_m_WTilde[114][20]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eXi2HatTT_m_chi2"></a>eXi2HatTT_m_chi2[114][20]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eXi2HatTT_s_WTilde"></a>eXi2HatTT_s_WTilde[114][20]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eXi2HatTT_s_chi2"></a>eXi2HatTT_s_chi2[114][20]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eXi2Hat_m_WTilde"></a>eXi2Hat_m_WTilde[114]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eXi2Hat_m_chi2"></a>eXi2Hat_m_chi2[114]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eXi2Hat_s_WTilde"></a>eXi2Hat_s_WTilde[114]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:eXi2Hat_s_chi2"></a>eXi2Hat_s_chi2[114]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:maxX"></a>maxX</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:maxY"></a>maxY</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:minX"></a>minX</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPVRQuality:minY"></a>minY</td><td></td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbPVRQuality:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td><table><tr>
+<td bgcolor="#f7f7f7" align="right">
+<tt>TObject</tt></td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><big><b><tt><a name="EdbPVRQuality" href="./EdbPVRQuality.html">EdbPVRQuality</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbPVRQuality:EdbPVRQuality" href="src/EdbPVRQuality.cxx.html#fctxaD">EdbPVRQuality</a>()</span><br />
+<div class="funccomm"><pre> Default Constructor
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbPVRQuality:EdbPVRQuality@1" href="src/EdbPVRQuality.cxx.html#uJ3VlC">EdbPVRQuality</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* ali)</span><br />
+<div class="funccomm"><pre> Default Constructor with a <a href="./EdbPVRec.html">EdbPVRec</a> object.
+ (the <a href="./EdbPVRec.html">EdbPVRec</a> object corresponds to the collection of plates scanned with the collection
+ of basetracks (and additionally linked tracks)).
+ This constructor automatically checks the original data for background level and
+ creates a new <a href="./EdbPVRec.html">EdbPVRec</a> object that contains only segments that fulfill the quality
+ cut in accordance with the desired (predefined) background level.
+ If general basetrack density is lower than 20 BT/mm2 then no cleaning is done.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbPVRQuality:EdbPVRQuality@2" href="src/EdbPVRQuality.cxx.html#V.MEU">EdbPVRQuality</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* ali, <a href="./ListOfTypes.html#Float_t">Float_t</a> BTDensityTargetLevel)</span><br />
+<div class="funccomm"><pre> Default Constructor with a <a href="./EdbPVRec.html">EdbPVRec</a> object and the desired basetrack density target level.
+ Does same as constructor <a href="./EdbPVRQuality.html">EdbPVRQuality</a>::<a href="./EdbPVRQuality.html#EdbPVRQuality:EdbPVRQuality" title="EdbPVRQuality EdbPVRQuality::EdbPVRQuality() or overloads">EdbPVRQuality</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* ali) but now with adjustable
+ background level.
+ If general basetrack density is lower than BTDensityTargetLevel BT/mm2 then no cleaning is done.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbPVRQuality:_EdbPVRQuality" href="src/EdbPVRQuality.cxx.html#HoZzeC">~EdbPVRQuality</a>()</span><br />
+<div class="funccomm"><pre> Default Destructor
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:Set0" href="src/EdbPVRQuality.cxx.html#rq4uDC">Set0</a>()</span><br />
+<div class="funccomm"><pre> Reset Values
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:Init" href="src/EdbPVRQuality.cxx.html#D2dWeE">Init</a>()</span><br />
+<div class="funccomm"><pre> Basic <a href="./EdbPVRQuality.html#EdbPVRQuality:Init" title="void EdbPVRQuality::Init()">Init</a> function that creates objects in the memory which have
+ to be created only ONE time per class instance.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:SetCutMethod" href="src/EdbPVRQuality.cxx.html#y6qmJD">SetCutMethod</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> CutMethod)</span><br />
+<div class="funccomm"><pre> Set Cut Method of the background reduction:
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:CheckEdbPVRec" href="src/EdbPVRQuality.cxx.html#gCrsAD">CheckEdbPVRec</a>()</span><br />
+<div class="funccomm"><pre> Main function to check if the <a href="./EdbPVRec.html">EdbPVRec</a> object of the scanned data is of low/high background.
+ Following steps are carried out:
+  Get plate, count number of basetracks in the unit area (1x1cm^2).
+  Fill (draw if desired (like in EDA display)) histogram with the entries of the unit area.
+  Get mean of the histogram, compare this value with the reference value.
+ The histogram covers all the area of one emulsion. (for the record: the old ORFEO MC
+ simulation gives not the same position as data does. The area of the histogramm was largely
+ increased to cover both cases).
+ It gives a good estimation of the density. Spikes in some plates, or in some zones are not
+ checked for, this is on the todo list, but maybe not so important.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:CheckEdbPVRecThetaSpace" href="src/EdbPVRQuality.cxx.html#E9WXxB">CheckEdbPVRecThetaSpace</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> AliType)</span><br />
+<div class="funccomm"><pre> Alternative Implementation.
+ Following a suggestion to Akitaka Ariga when doing reco of a specified shower:
+
+ Main function to check if the <a href="./EdbPVRec.html">EdbPVRec</a> object of the scanned data is of low/high background.
+ But w.r.t. the TanTheta Space of scanned tracks.
+
+ AliType
+
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:SetHistGeometry_OPERA" href="src/EdbPVRQuality.cxx.html#jSKopD">SetHistGeometry_OPERA</a>()</span><br />
+<div class="funccomm"><pre> Set the geometry of the basetrack density evaluation using OPERA case,
+ European Scanning System size conventions: x=0..125000;y=0..100000).
+ BinArea is 1mmx1mm.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:SetHistGeometry_MC" href="src/EdbPVRQuality.cxx.html#J9KEIC">SetHistGeometry_MC</a>()</span><br />
+<div class="funccomm"><pre> Set the geometry of the basetrack density evaluation using simulation case,
+ MC ORFEO size conventions: x=-xmax..0..+xmax;y=-ymax..0..ymax).
+ BinArea is 1mmx1mm
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:SetHistGeometry_OPERAandMC" href="src/EdbPVRQuality.cxx.html#rPkAND">SetHistGeometry_OPERAandMC</a>()</span><br />
+<div class="funccomm"><pre> Set the geometry of the basetrack density evaluation covering MC and DATA case,
+ size conventions: x=-125000..0..+125000;y=-125000..0..125000).
+ BinArea is 1mmx1mm
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:SetHistGeometry_OPERAandMCBinArea625" href="src/EdbPVRQuality.cxx.html#vmTgjC">SetHistGeometry_OPERAandMCBinArea625</a>()</span><br />
+<div class="funccomm"><pre> Set the geometry of the basetrack density evaluation covering MC and DATA case,
+ size conventions: x=-125000..0..+125000;y=-125000..0..125000).
+ BinArea is 2.5mmx2.5mm
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:PrintCutType" href="src/EdbPVRQuality.cxx.html#S13BCE">PrintCutType</a>()</span><br />
+<div class="funccomm"><pre> <a href="./EdbPVRQuality.html#EdbPVRQuality:Print" title="void EdbPVRQuality::Print()">Print</a> <a href="./EdbPVRQuality.html#EdbPVRQuality:PrintCutType" title="void EdbPVRQuality::PrintCutType()">PrintCutType</a> data for this class.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:Print" href="src/EdbPVRQuality.cxx.html#kXs1PD">Print</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:PrintCutType0" href="src/EdbPVRQuality.cxx.html#yN.8BE">PrintCutType0</a>()</span><br />
+<div class="funccomm"><pre>     Prints quality cut values for each plate of the original <a href="./EdbPVRec.html">EdbPVRec</a> object that were
+     applied to achieve the basetrack density level, after application the specific cut
+     on the segments of the specific plate (=pattern).
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:PrintCutType1" href="src/EdbPVRQuality.cxx.html#O6S9BE">PrintCutType1</a>()</span><br />
+<div class="funccomm"><pre>     Prints quality cut values for each plate of the original <a href="./EdbPVRec.html">EdbPVRec</a> object that were
+     applied to achieve the basetrack density level, after application the specific cut
+     on the segments of the specific plate (=pattern).
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:PrintCutType2" href="src/EdbPVRQuality.cxx.html#S1X8BE">PrintCutType2</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:PrintCutType3" href="src/EdbPVRQuality.cxx.html#ihr8BE">PrintCutType3</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:PrintCutType4" href="src/EdbPVRQuality.cxx.html#mcw7BE">PrintCutType4</a>()</span><br />
+<div class="funccomm"><pre>     Prints quality cut values for each plate of the original <a href="./EdbPVRec.html">EdbPVRec</a> object that were
+     applied to achieve the basetrack density level, after application the specific cut
+     on the segments of the specific plate (=pattern).
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:PrintCutType5" href="src/EdbPVRQuality.cxx.html#CJE8BE">PrintCutType5</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:PrintCutType6" href="src/EdbPVRQuality.cxx.html#GEJ7BE">PrintCutType6</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:PrintCutType7" href="src/EdbPVRQuality.cxx.html#Wwc7BE">PrintCutType7</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:Execute" href="src/EdbPVRQuality.cxx.html#Jlsez">Execute</a>()</span><br />
+<div class="funccomm"><pre>
+ Main Execution Routine.
+ Does the following things:
+
+ a) Check <a href="./EdbPVRec.html">EdbPVRec</a> object of data.
+ b) Remove DoubleBasetracks
+ c) Remove passing tracks
+   (if any stored, either in .root file or in <a href="./EdbPVRec.html">EdbPVRec</a> object itself)
+ d) <a href="./EdbPVRQuality.html#EdbPVRQuality:Execute" title="void EdbPVRQuality::Execute() or overloads">Execute</a> quality cuts if necessary: default is Constant BT density
+ e) Store cleaned object. Can be retrieved via GetPVR().
+
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:Execute@1" href="src/EdbPVRQuality.cxx.html#oGSD.B">Execute</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> CutType)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:Execute_ConstantBTDensity" href="src/EdbPVRQuality.cxx.html#oRCbRB">Execute_ConstantBTDensity</a>()</span><br />
+<div class="funccomm"><pre> <a href="./EdbPVRQuality.html#EdbPVRQuality:Execute" title="void EdbPVRQuality::Execute() or overloads">Execute</a> the modified cut routines to achieve the basetrack density level,
+ after application the specific cut on the segments of the specific plate (pattern).
+ The Constant BT Density is defined by the number of BT/mm2 in the histogram.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:Execute_ConstantBTQuality" href="src/EdbPVRQuality.cxx.html#coEQb">Execute_ConstantBTQuality</a>()</span><br />
+<div class="funccomm"><pre> The cut method that compares the passing muon tracks with all scanned segments.
+ This may help to improve, since it takes into account the actual segment quality,
+ which varies from scan to scan anyway.
+ Works for tracks passing the volume to extract their mean chi2/W. Then a distance
+ measurement Sqrt{0.5*[ ((chi2-chi2mean)/chi2rms)^2 + ((W-Wmean)/Wrms)^2 )] } is
+ build and the value of single basetracks is compared to this variable. Starting from
+ dist_max = 3 going down until desired target level is achieved.
+ If eAli-&gt;Tracks is there we take them from there.
+ If not, we try if there is a file linked_tracks.root, and we take tracks from there.
+ If that doesnt work either, nothing is done.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:Execute_ConstantBTDensityInAngularBins" href="src/EdbPVRQuality.cxx.html#G9fmqC">Execute_ConstantBTDensityInAngularBins</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:Execute_ConstantBTX2Hat" href="src/EdbPVRQuality.cxx.html#ndSrzC">Execute_ConstantBTX2Hat</a>()</span><br />
+<div class="funccomm"><pre> <a href="./EdbPVRQuality.html#EdbPVRQuality:Execute" title="void EdbPVRQuality::Execute() or overloads">Execute</a> the modified cut routines to achieve the basetrack density level,
+ after application the specific cut on the segments of the specific plate (pattern).
+ The ConstantBTX2Hat is defined by the number of BT/mm2 in the histogram.
+ cut on the variable Xi2Hat!
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:Execute_ConstantBTX2HatInAngularBins" href="src/EdbPVRQuality.cxx.html#XEeSyC">Execute_ConstantBTX2HatInAngularBins</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:Execute_ConstantBTQualityInAngularBins" href="src/EdbPVRQuality.cxx.html#bkmhWC">Execute_ConstantBTQualityInAngularBins</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:Execute_RandomCutInAngularBins" href="src/EdbPVRQuality.cxx.html#kQewJE">Execute_RandomCutInAngularBins</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:Execute_RandomCut" href="src/EdbPVRQuality.cxx.html#FH_R0B">Execute_RandomCut</a>()</span><br />
+<div class="funccomm"><pre> <a href="./EdbPVRQuality.html">EdbPVRQuality</a>::<a href="./EdbPVRQuality.html#EdbPVRQuality:Execute_RandomCut" title="void EdbPVRQuality::Execute_RandomCut()">Execute_RandomCut</a>()
+ <a href="./EdbPVRQuality.html#EdbPVRQuality:Execute" title="void EdbPVRQuality::Execute() or overloads">Execute</a> the modified cut routines to achieve arbitrary basetrack density level.
+ Basically used for control curposes.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbPVRQuality:GetAngularSpaceBin" href="src/EdbPVRQuality.cxx.html#iiwyD">GetAngularSpaceBin</a>(<a href="./EdbSegP.html">EdbSegP</a>* seg)</span><br />
+<div class="funccomm"><pre> Returns the number of bin for which the Basetrack corresponds to in tangens theta space.
+ Goes from 0 to 20.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="EdbPVRQuality:CheckSegmentQualityInPattern_ConstBTDens" href="src/EdbPVRQuality.cxx.html#XMVY1C">CheckSegmentQualityInPattern_ConstBTDens</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* ali, <a href="./ListOfTypes.html#Int_t">Int_t</a> PatternAtNr, <a href="./EdbSegP.html">EdbSegP</a>* seg)</span><br />
+<div class="funccomm"><pre> Core function to check if a basetrack of the specific pattern matches the expectations
+ for the desired quality cut (calculated on the estimations in <a href="./EdbPVRQuality.html#EdbPVRQuality:CheckEdbPVRec" title="void EdbPVRQuality::CheckEdbPVRec()">CheckEdbPVRec</a>(). ).
+ Implementation for the Cuttype 0: Constant BT Density
+
+ Note: since the <a href="./EdbPVRQuality.html#EdbPVRQuality:eCutp1" title="Float_t EdbPVRQuality::eCutp1">eCutp1</a>[i] values are calculated with
+ this pattern-&gt;At() scheme labelling,
+ its not necessarily guaranteed that seg-&gt;PID gives correct this
+ number back. Thats why we have to give the PatternAtNr here again.
+
+ And: it is not checked here if seg is contained in this specific
+ pattern. It looks only for the quality cut!
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="EdbPVRQuality:CheckSegmentQualityInPattern_ConstQual" href="src/EdbPVRQuality.cxx.html#cCbuIE">CheckSegmentQualityInPattern_ConstQual</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* ali, <a href="./ListOfTypes.html#Int_t">Int_t</a> PatternAtNr, <a href="./EdbSegP.html">EdbSegP</a>* seg)</span><br />
+<div class="funccomm"><pre> Core function to check if a basetrack of the specific pattern matches the expectations
+ for the desired quality cut (calculated on the estimations in <a href="./EdbPVRQuality.html#EdbPVRQuality:CheckEdbPVRec" title="void EdbPVRQuality::CheckEdbPVRec()">CheckEdbPVRec</a>(). ).
+ Implementation for the Cuttype 1: Constant Quality.
+
+ See comments in <a href="./EdbPVRQuality.html#EdbPVRQuality:CheckSegmentQualityInPattern_ConstBTDens" title="Bool_t EdbPVRQuality::CheckSegmentQualityInPattern_ConstBTDens(EdbPVRec* ali,Int_t PatternAtNr,EdbSegP* seg)">CheckSegmentQualityInPattern_ConstBTDens</a>
+ Constant BT quality cut:
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPVRec.html">EdbPVRec</a>* <a class="funcname" name="EdbPVRQuality:CreateEdbPVRec" href="src/EdbPVRQuality.cxx.html#s4iKfD">CreateEdbPVRec</a>()</span><br />
+<div class="funccomm"><pre> Creates the cleaned <a href="./EdbPVRec.html">EdbPVRec</a> object, containing only segments that
+ satisfied the cutcriteria.
+ Attention: the couples structure and the tracking structure will be lost,
+ this <a href="./EdbPVRec.html">EdbPVRec</a> object is only useful for the list of segments (shower reco).
+ DO NOT USE THIS ROUTINE FOR GENERAL I/O and/or GENERAL <a href="./EdbPVRec.html">EdbPVRec</a> operations!
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbPVRQuality:CheckFilledXYSize" href="src/EdbPVRQuality.cxx.html#d6vATB">CheckFilledXYSize</a>()</span><br />
+<div class="funccomm"><pre>
+ Check the bins filled in the actual pattern.
+ The histogram of the XY distribution is analysed.
+ A warning is given if more than 10 percent of
+ the bins are empty. Becauseempty bins are NOT counted
+ in the BT density distribution.
+ In this case one should look closer at the specific
+ plate distribution, or ...
+ rebin the XY histogram to get a better statistics,
+ i.e. switch to larger bin areas (for example 1mm^2 to 2.5x2.5)
+
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:Help" href="src/EdbPVRQuality.cxx.html#DOlCAC">Help</a>()</span><br />
+<div class="funccomm"><pre> Basic <a href="./EdbPVRQuality.html#EdbPVRQuality:Help" title="void EdbPVRQuality::Help()">Help</a> Function. Of course to be extended from time to time.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname">TObjArray* <a class="funcname" name="EdbPVRQuality:Find_DoubleBT" href="src/EdbPVRQuality.cxx.html#AaoZUD">Find_DoubleBT</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* aliSource)</span><br />
+<div class="funccomm"><pre> Find <a href="./ListOfTypes.html#double">double</a> counted basetracks.
+ More explanation in <a href="./EdbPVRQuality.html#EdbPVRQuality:Remove_DoubleBT" title="EdbPVRec* EdbPVRQuality::Remove_DoubleBT(EdbPVRec* aliSource)">Remove_DoubleBT</a>() function.
+ Cutvalues used are the same.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPVRec.html">EdbPVRec</a>* <a class="funcname" name="EdbPVRQuality:Remove_DoubleBT" href="src/EdbPVRQuality.cxx.html#uHLLqB">Remove_DoubleBT</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* aliSource)</span><br />
+<div class="funccomm"><pre> Remove <a href="./ListOfTypes.html#double">double</a> counted basetracks. This is a scanning induced error, at the
+ edges of the objective field, corrections are different, thus one
+ basetrack is seen differently in two different views.
+ In Bern data, we do see clearly this <a href="./ListOfTypes.html#double">double</a> bump, that is characterized by
+ _very_ close values of two BTs in X,Y,TX,TY (and also Chi2 and W).
+ Separation threshold values are 2microns in postion and 10 mrad in angle.
+ (again obtained from Bern data).
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPVRec.html">EdbPVRec</a>* <a class="funcname" name="EdbPVRQuality:Remove_Passing" href="src/EdbPVRQuality.cxx.html#uEJBT">Remove_Passing</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* aliSource)</span><br />
+<div class="funccomm"><pre> Removes Passing Tracks from the <a href="./EdbPVRec.html">EdbPVRec</a> source object.
+ Unfortunately, there does Not Exist an easy function like
+ -&gt;RemoveSegment from <a href="./EdbPVRec.html">EdbPVRec</a> object. That makes implementation complicated.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPVRec.html">EdbPVRec</a>* <a class="funcname" name="EdbPVRQuality:Remove_SegmentArray" href="src/EdbPVRQuality.cxx.html#UC2L4E">Remove_SegmentArray</a>(TObjArray* segarray, <a href="./EdbPVRec.html">EdbPVRec</a>* aliSource = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> Option = 0)</span><br />
+<div class="funccomm"><pre> Every <span class="string">"Remove_XXY()"</span> function will call <a href="./EdbPVRQuality.html#EdbPVRQuality:Remove_SegmentArray" title="EdbPVRec* EdbPVRQuality::Remove_SegmentArray(TObjArray* segarray,EdbPVRec* aliSource=0,Int_t Option=0)">Remove_SegmentArray</a>() since the removal of
+ a segment array is easiest to implement. As said earlier, there is no easy function
+ to remove tracks from a <a href="./EdbPVRec.html">EdbPVRec</a> object directly. So instead we have to create a
+ new <a href="./EdbPVRec.html">EdbPVRec</a> object, fill with all basetracks from the old one, except where the
+ segments of the SegmentArray coincide with those which are in the source <a href="./EdbPVRec.html">EdbPVRec</a>.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPVRec.html">EdbPVRec</a>* <a class="funcname" name="EdbPVRQuality:Remove_TrackArray" href="src/EdbPVRQuality.cxx.html#RjapiB">Remove_TrackArray</a>(TObjArray* trackArray, <a href="./EdbPVRec.html">EdbPVRec</a>* aliSource = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> Option = 0)</span><br />
+<div class="funccomm"><pre> Remove a whole track array (Array of <a href="./EdbTrackP.html">EdbTrackP</a> type).
+ Return a new <a href="./EdbPVRec.html">EdbPVRec</a>* with previous element removed.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPVRec.html">EdbPVRec</a>* <a class="funcname" name="EdbPVRQuality:Remove_Segment" href="src/EdbPVRQuality.cxx.html#ku14WB">Remove_Segment</a>(<a href="./EdbSegP.html">EdbSegP</a>* seg, <a href="./EdbPVRec.html">EdbPVRec</a>* aliSource = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> Option = 0)</span><br />
+<div class="funccomm"><pre> Remove one segment (<a href="./EdbSegP.html">EdbSegP</a>* seg type).
+ Return a new <a href="./EdbPVRec.html">EdbPVRec</a>* with previous element removed.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPVRec.html">EdbPVRec</a>* <a class="funcname" name="EdbPVRQuality:Remove_Track" href="src/EdbPVRQuality.cxx.html#A3OS6B">Remove_Track</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* track, <a href="./EdbPVRec.html">EdbPVRec</a>* aliSource = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> Option = 0)</span><br />
+<div class="funccomm"><pre> Remove one track (<a href="./EdbTrackP.html">EdbTrackP</a>* track type).
+ Return a new <a href="./EdbPVRec.html">EdbPVRec</a>* with previous element removed.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname">TObjArray* <a class="funcname" name="EdbPVRQuality:TrackToSegmentArray" href="src/EdbPVRQuality.cxx.html#TVeSwE">TrackToSegmentArray</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* track)</span><br />
+<div class="funccomm"><pre> Convert segments of a track into an TObjArray containing segments.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname">TObjArray* <a class="funcname" name="EdbPVRQuality:TrackArrayToSegmentArray" href="src/EdbPVRQuality.cxx.html#YTY0ND">TrackArrayToSegmentArray</a>(TObjArray* trackArray)</span><br />
+<div class="funccomm"><pre> Convert segments of tracks of a track array into an TObjArray containing segments.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbPVRQuality:FindFirstBinAbove" href="src/EdbPVRQuality.cxx.html#nPFIQE">FindFirstBinAbove</a>(TH1* hist, <a href="./ListOfTypes.html#Double_t">Double_t</a> threshold, <a href="./ListOfTypes.html#Int_t">Int_t</a> axis)</span><br />
+<div class="funccomm"><pre> The TH1 function  <a href="./EdbPVRQuality.html#EdbPVRQuality:FindFirstBinAbove" title="Int_t EdbPVRQuality::FindFirstBinAbove(TH1* hist,Double_t threshold,Int_t axis)">FindFirstBinAbove</a>  is only implemented in
+ root version &gt;= 5.24. But since many scanning labs use old root
+ versions persistently, I had to copy the TH1 function as a
+ memberfunction of <a href="./EdbPVRQuality.html">EdbPVRQuality</a>
+ Code taken from
+ http://root.cern.ch/root/html/src/TH1.cxx.html#biA7FC
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbPVRQuality:FindLastBinAbove" href="src/EdbPVRQuality.cxx.html#nZeOyE">FindLastBinAbove</a>(TH1* hist, <a href="./ListOfTypes.html#Double_t">Double_t</a> threshold, <a href="./ListOfTypes.html#Int_t">Int_t</a> axis)</span><br />
+<div class="funccomm"><pre> The TH1 function  <a href="./EdbPVRQuality.html#EdbPVRQuality:FindFirstBinAbove" title="Int_t EdbPVRQuality::FindFirstBinAbove(TH1* hist,Double_t threshold,Int_t axis)">FindFirstBinAbove</a>  is only implemented in
+ root version &gt;= 5.24. But since many scanning labs use old root
+ versions persistently, I had to copy the TH1 function as a
+ memberfunction of <a href="./EdbPVRQuality.html">EdbPVRQuality</a>
+ Code taken from
+ http://root.cern.ch/root/html/src/TH1.cxx.html#biA7FC
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname">TObjArray* <a class="funcname" name="EdbPVRQuality:GetTracksFromLinkedTracksRootFile" href="src/EdbPVRQuality.cxx.html#skznUB">GetTracksFromLinkedTracksRootFile</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:PrintCutValues" href="src/EdbPVRQuality.cxx.html#LxY32">PrintCutValues</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> CutType)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:Execute_EqualizeTanThetaSpace" href="src/EdbPVRQuality.cxx.html#sL1UyD">Execute_EqualizeTanThetaSpace</a>()</span><br />
+<div class="funccomm"><pre> TODO !!! SWITCH HERE BETWEEN THE RIGHT SWITCH !!!
+   <a href="./EdbPVRQuality.html#EdbPVRQuality:Execute_EqualizeTanThetaSpace_ConstantBTDensity" title="void EdbPVRQuality::Execute_EqualizeTanThetaSpace_ConstantBTDensity()">Execute_EqualizeTanThetaSpace_ConstantBTDensity</a>();
+   <a href="./EdbPVRQuality.html#EdbPVRQuality:Execute_EqualizeTanThetaSpace_ConstantBTQuality" title="void EdbPVRQuality::Execute_EqualizeTanThetaSpace_ConstantBTQuality()">Execute_EqualizeTanThetaSpace_ConstantBTQuality</a>();
+   <a href="./EdbPVRQuality.html#EdbPVRQuality:Execute_EqualizeTanThetaSpace_ConstantBTX2Hat" title="void EdbPVRQuality::Execute_EqualizeTanThetaSpace_ConstantBTX2Hat()">Execute_EqualizeTanThetaSpace_ConstantBTX2Hat</a>();
+   <a href="./EdbPVRQuality.html#EdbPVRQuality:Execute_EqualizeTanThetaSpace_RandomCut" title="void EdbPVRQuality::Execute_EqualizeTanThetaSpace_RandomCut()">Execute_EqualizeTanThetaSpace_RandomCut</a>();
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:Execute_EqualizeTanThetaSpace_ConstantBTDensity" href="src/EdbPVRQuality.cxx.html#aZ5N1">Execute_EqualizeTanThetaSpace_ConstantBTDensity</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:Execute_EqualizeTanThetaSpace_ConstantBTQuality" href="src/EdbPVRQuality.cxx.html#Yizjm">Execute_EqualizeTanThetaSpace_ConstantBTQuality</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:Execute_EqualizeTanThetaSpace_ConstantBTX2Hat" href="src/EdbPVRQuality.cxx.html#Rla_iD">Execute_EqualizeTanThetaSpace_ConstantBTX2Hat</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:Execute_EqualizeTanThetaSpace_RandomCut" href="src/EdbPVRQuality.cxx.html#ljMbBE">Execute_EqualizeTanThetaSpace_RandomCut</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbPVRQuality:EdbPVRQuality" href="src/EdbPVRQuality.h.html#nv81sD">EdbPVRQuality</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:SetBTDensityLevel" href="src/EdbPVRQuality.h.html#Y10HVC">SetBTDensityLevel</a>(<a href="./ListOfTypes.html#Float_t">Float_t</a> BTDensityLevel)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:SetCutTTSqueezeFactor" href="src/EdbPVRQuality.h.html#uEhNiB">SetCutTTSqueezeFactor</a>(<a href="./ListOfTypes.html#Float_t">Float_t</a> CutTTSqueezeFactor)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:SetBTDensityLevelCalcMethodMC" href="src/EdbPVRQuality.h.html#ZBPhAE">SetBTDensityLevelCalcMethodMC</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> BTDensityLevelCalcMethodMC)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:SetBTDensityLevelCalcMethodMCConfirmation" href="src/EdbPVRQuality.h.html#vBX6vC">SetBTDensityLevelCalcMethodMCConfirmation</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> BTDensityLevelCalcMethodMCConfirmationNumber)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="EdbPVRQuality:GetBTDensityLevelCalcMethodMC" href="src/EdbPVRQuality.h.html#Nh6sSB">GetBTDensityLevelCalcMethodMC</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbPVRQuality:GetBTDensityLevelCalcMethodMCConfirmation" href="src/EdbPVRQuality.h.html#C0BQ3">GetBTDensityLevelCalcMethodMCConfirmation</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPVRec.html">EdbPVRec</a>* <a class="funcname" name="EdbPVRQuality:GetEdbPVRec" href="src/EdbPVRQuality.h.html#NCAYWC">GetEdbPVRec</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">return</span> <a class="funcname" name="EdbPVRQuality:GetEdbPVRec" href="src/EdbPVRQuality.h.html#EhCHaB">GetEdbPVRec</a>(<a href="./EdbPVRQuality.html#EdbPVRQuality:eNeedModified" title="Bool_t EdbPVRQuality::eNeedModified">eNeedModified</a>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPVRec.html">EdbPVRec</a>* <a class="funcname" name="EdbPVRQuality:GetEdbPVRec@1" href="src/EdbPVRQuality.h.html#IrzpNB">GetEdbPVRec</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> EdbPVRecType)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPVRec.html">EdbPVRec</a>* <a class="funcname" name="EdbPVRQuality:GetEdbPVRec_orig" href="src/EdbPVRQuality.h.html#GGUgsE">GetEdbPVRec_orig</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPVRec.html">EdbPVRec</a>* <a class="funcname" name="EdbPVRQuality:GetEdbPVRec_modified" href="src/EdbPVRQuality.h.html#imkrH">GetEdbPVRec_modified</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRQuality:SetEdbPVRec" href="src/EdbPVRQuality.h.html#MRzIEB">SetEdbPVRec</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* Ali_orig)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TH2F* <a class="funcname" name="EdbPVRQuality:GetHistChi2W" href="src/EdbPVRQuality.h.html#FTAWg">GetHistChi2W</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TH2F* <a class="funcname" name="EdbPVRQuality:GetHistYX" href="src/EdbPVRQuality.h.html#X3voeC">GetHistYX</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbPVRQuality:GetCutMethod" href="src/EdbPVRQuality.h.html#swxIZ">GetCutMethod</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="EdbPVRQuality:GetCutMethodIsDone" href="src/EdbPVRQuality.h.html#oCoMC">GetCutMethodIsDone</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> type)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a> <a class="funcname" name="EdbPVRQuality:GetBTDensityLevel" href="src/EdbPVRQuality.h.html#b.sa6D">GetBTDensityLevel</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a>* <a class="funcname" name="EdbPVRQuality:GetCutp0" href="src/EdbPVRQuality.h.html#hVJIx">GetCutp0</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a>* <a class="funcname" name="EdbPVRQuality:GetCutp1" href="src/EdbPVRQuality.h.html#F4GIx">GetCutp1</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a> <a class="funcname" name="EdbPVRQuality:GetCutp0@1" href="src/EdbPVRQuality.h.html#ov4oQ">GetCutp0</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> patNR)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a> <a class="funcname" name="EdbPVRQuality:GetCutp1@1" href="src/EdbPVRQuality.h.html#EcMVk">GetCutp1</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> patNR)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a> <a class="funcname" name="EdbPVRQuality:GetagreementChi2CutMeanChi2" href="src/EdbPVRQuality.h.html#nB8bcE">GetagreementChi2CutMeanChi2</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a> <a class="funcname" name="EdbPVRQuality:GetagreementChi2CutRMSChi2" href="src/EdbPVRQuality.h.html#YA6zsC">GetagreementChi2CutRMSChi2</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a> <a class="funcname" name="EdbPVRQuality:GetagreementChi2CutMeanW" href="src/EdbPVRQuality.h.html#p2fjSE">GetagreementChi2CutMeanW</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a> <a class="funcname" name="EdbPVRQuality:GetagreementChi2CutRMSW" href="src/EdbPVRQuality.h.html#IwQ7IC">GetagreementChi2CutRMSW</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a>* <a class="funcname" name="EdbPVRQuality:GetagreementChi2Cut" href="src/EdbPVRQuality.h.html#LdD1GE">GetagreementChi2Cut</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a> <a class="funcname" name="EdbPVRQuality:GetagreementChi2Cut@1" href="src/EdbPVRQuality.h.html#j9zUa">GetagreementChi2Cut</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> patNR)</span><br />
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:27 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:23 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbEDAOverlay</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbEDAOverlay','','EdbEDA.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbEDAOverlay.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbEDAOverlay.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbEDAOverlay_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbEDAOverlay:description">class description</a> 
+<a class="descrheadentry" href="#EdbEDAOverlay:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbEDAOverlay:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbEDAOverlay:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbEDAOverlay</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbEDAOverlay:description"></a>class EdbEDAOverlay: public TGLOverlayElement</h1>
+<div class="classdescr">
+</div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbEDAOverlay:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbEDAOverlay:EdbEDAOverlay">EdbEDAOverlay</a>()</td></tr>
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbEDAOverlay:_EdbEDAOverlay">~EdbEDAOverlay</a>()</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbEDAOverlay:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">TGLOverlayElement::ERole</td><td class="funcname"><a class="funcname" href="#TGLOverlayElement:GetRole"><span class="baseclass">TGLOverlayElement::</span>GetRole</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">TGLOverlayElement::EState</td><td class="funcname"><a class="funcname" href="#TGLOverlayElement:GetState"><span class="baseclass">TGLOverlayElement::</span>GetState</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TGLOverlayElement:Handle"><span class="baseclass">TGLOverlayElement::</span>Handle</a>(TGLRnrCtx&amp; rnrCtx, TGLOvlSelectRecord&amp; selRec, Event_t* event)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbEDAOverlay:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TGLOverlayElement:MouseEnter"><span class="baseclass">TGLOverlayElement::</span>MouseEnter</a>(TGLOvlSelectRecord&amp; selRec)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TGLOverlayElement:MouseLeave"><span class="baseclass">TGLOverlayElement::</span>MouseLeave</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TGLOverlayElement:MouseStillInside"><span class="baseclass">TGLOverlayElement::</span>MouseStillInside</a>(TGLOvlSelectRecord&amp; selRec)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAOverlay:Render">Render</a>(TGLRnrCtx&amp; ctx)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAOverlay:RenderAxes">RenderAxes</a>(TGLRnrCtx&amp; ctx)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAOverlay:RenderBar">RenderBar</a>(TGLRnrCtx&amp; ctx)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TGLOverlayElement:SetBinaryState"><span class="baseclass">TGLOverlayElement::</span>SetBinaryState</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> s)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAOverlay:SetDraw">SetDraw</a>(<span class="keyword">bool</span> b)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAOverlay:SetLength">SetLength</a>(<span class="keyword">int</span> pixel_length = 120)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TGLOverlayElement:SetRole"><span class="baseclass">TGLOverlayElement::</span>SetRole</a>(TGLOverlayElement::ERole r)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TGLOverlayElement:SetState"><span class="baseclass">TGLOverlayElement::</span>SetState</a>(TGLOverlayElement::EState s)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAOverlay:SetXY">SetXY</a>(<span class="keyword">int</span> pixel_x = 50, <span class="keyword">int</span> pixel_y = 30)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAOverlay:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAOverlay:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAOverlay:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TGLOverlayElement:ProjectionMatrixPushIdentity"><span class="baseclass">TGLOverlayElement::</span>ProjectionMatrixPushIdentity</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbEDAOverlay:Data_Members"></a>Data Members</h2>
+<div class="access" id="enumpubl"><b>public:</b>
+<table class="data" id="tabenumpubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TGLOverlayElement::</span>ERole { </td><td class="dataname"><a href="#TGLOverlayElement:kUser">kUser</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TGLOverlayElement:kViewer">kViewer</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TGLOverlayElement:kAnnotation">kAnnotation</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TGLOverlayElement:kAll">kAll</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TGLOverlayElement::</span>EState { </td><td class="dataname"><a href="#TGLOverlayElement:kInvisible">kInvisible</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TGLOverlayElement:kDisabled">kDisabled</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TGLOverlayElement:kActive">kActive</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TGLOverlayElement:kAllVisible">kAllVisible</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+
+</table></div>
+<div class="access" id="dataprot"><b>protected:</b>
+<table class="data" id="tabdataprot" cellspacing="0">
+<tr class="datainh"><td class="datatype">TGLOverlayElement::ERole</td><td class="dataname"><a href="#TGLOverlayElement:fRole"><span class="baseclass">TGLOverlayElement::</span>fRole</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">TGLOverlayElement::EState</td><td class="dataname"><a href="#TGLOverlayElement:fState"><span class="baseclass">TGLOverlayElement::</span>fState</a></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapriv"><b>private:</b>
+<table class="data" id="tabdatapriv" cellspacing="0">
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDAOverlay:eBarDirection"></a>eBarDirection</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">bool</span></td><td class="dataname"><a name="EdbEDAOverlay:eDraw"></a>eDraw</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDAOverlay:eLength"></a>eLength</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDAOverlay:eXa"></a>eXa</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDAOverlay:eXb"></a>eXb</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDAOverlay:eYa"></a>eYa</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDAOverlay:eYb"></a>eYb</td><td></td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbEDAOverlay:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td><table><tr>
+<td bgcolor="#f7f7f7" align="right">
+<tt>TGLOverlayElement</tt></td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><big><b><tt><a name="EdbEDAOverlay" href="./EdbEDAOverlay.html">EdbEDAOverlay</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbEDAOverlay:EdbEDAOverlay" href="src/EdbEDAOverlay.cxx.html#UC1LTD">EdbEDAOverlay</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAOverlay:SetXY" href="src/EdbEDAOverlay.cxx.html#r94MjC">SetXY</a>(<span class="keyword">int</span> pixel_x = 50, <span class="keyword">int</span> pixel_y = 30)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">if</span>(gEDA-&gt;GetScaleZ()==1.0) <a href="./EdbEDAOverlay.html#EdbEDAOverlay:eXb" title="int EdbEDAOverlay::eXb">eXb</a>=pixel_x, <a href="./EdbEDAOverlay.html#EdbEDAOverlay:eYb" title="int EdbEDAOverlay::eYb">eYb</a>=pixel_y; <span class="keyword">else</span> <a href="./EdbEDAOverlay.html#EdbEDAOverlay:eXa" title="int EdbEDAOverlay::eXa">eXa</a>=pixel_x, <a href="./EdbEDAOverlay.html#EdbEDAOverlay:eYa" title="int EdbEDAOverlay::eYa">eYa</a>=pixel_y;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAOverlay:SetLength" href="src/EdbEDAOverlay.cxx.html#qdCB_D">SetLength</a>(<span class="keyword">int</span> pixel_length = 120)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">if</span>(gEDA-&gt;GetScaleZ()==1.0) <a href="./EdbEDAOverlay.html#EdbEDAOverlay:eLength" title="int EdbEDAOverlay::eLength">eLength</a>=pixel_length; <span class="keyword">else</span> <a href="./EdbEDAOverlay.html#EdbEDAOverlay:eLength" title="int EdbEDAOverlay::eLength">eLength</a>=pixel_length;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAOverlay:Render" href="src/EdbEDAOverlay.cxx.html#luz0eD">Render</a>(TGLRnrCtx&amp; ctx)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAOverlay:RenderAxes" href="src/EdbEDAOverlay.cxx.html#b64n4D">RenderAxes</a>(TGLRnrCtx&amp; ctx)</span><br />
+<div class="funccomm"><pre> <a href="./EdbEDAOverlay.html#EdbEDAOverlay:Render" title="void EdbEDAOverlay::Render(TGLRnrCtx&amp; ctx)">Render</a> 3 scale axes.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAOverlay:RenderBar" href="src/EdbEDAOverlay.cxx.html#NROcHE">RenderBar</a>(TGLRnrCtx&amp; ctx)</span><br />
+<div class="funccomm"><pre> <a href="./EdbEDAOverlay.html#EdbEDAOverlay:Render" title="void EdbEDAOverlay::Render(TGLRnrCtx&amp; ctx)">Render</a> a scale bar.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAOverlay:SetDraw" href="src/EdbEDAOverlay.h.html#nsfUYB">SetDraw</a>(<span class="keyword">bool</span> b)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDAOverlay.html#EdbEDAOverlay:eDraw" title="bool EdbEDAOverlay::eDraw">eDraw</a>=b;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbEDAOverlay:_EdbEDAOverlay" href="src/EdbEDAOverlay.h.html#xT3hLB">~EdbEDAOverlay</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{}</code></div>
+<div style="clear:both;"></div>
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:23 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

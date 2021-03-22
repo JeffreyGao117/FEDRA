@@ -1,5 +1,16 @@
+#include "FnuG4.h"
+#include "TDatabasePDG.h"
+#include <TNtuple.h>
+#include <TGraph.h>
+//#include "../Fedra/include/EdbPattern.h"
+//#include "../Fedra/include/EdbSegP.h"
+//#include "../Fedra/include/EdbPVRec.h"
+//#include "../Fedra/include/EdbEDA.h"
+#include "TSeqCollection.h"
 
+FnuG4 *ev;
 EdbEDA *eda;
+/*
 class Particle: public TObject{
 	public:
 	
@@ -12,12 +23,11 @@ class Particle: public TObject{
 	
 	void Print();
 };
+*/
 
 void Particle::Print(){
 	printf("%6d %5d %4d -> %4d \n", id, ev->pdgid[index], t->GetSegmentFirst()->PID(), t->GetSegmentLast()->PID());
 }
-
-FnuG4 *ev;
 
 TObjArray *particles = new TObjArray;
 TObjArray *reachingParticles = new TObjArray;
@@ -118,7 +128,7 @@ void recTree(){
 		
 		if(ev->izsub[i]!=0) continue; // There are two hits for 1 emulsion film. Ignore one of them.
 		if(ev->pdgid[i]==-11 || ev->pdgid[i]==11 || ev->pdgid[i]==22) continue; // ignore electrons. 
-		if(ev->e1[i]<100) continue;
+		if(ev->e1[i]<100) continue; // 100 GeV
 		if(fabs(ev->charge[i])==0) continue;
 		
 //		printf("%6d %6d %5d %2d %7.1f %7.1f %7.3f %3d %2d %7.2f %7.2f %7.2f %7.2f\n", 
@@ -128,21 +138,25 @@ void recTree(){
 		nchargedhits++;
 		
 		
-		Particle *p = FindParticle(ev->id[i]);
+		Particle *p = FindParticle(ev->id[i]); // what is id[i]
 		if( p==NULL ) p = AddParticle(i);
 		
 		EdbSegP *s = new EdbSegP(i, ev->x[i]*1e3, ev->y[i]*1e3, ev->px[i]/ev->pz[i], ev->py[i]/ev->pz[i], ev->edep[i]*200+16, ev->pdgid[i]);
-			s->SetZ(ev->z[i]*1e3);
-			s->SetPID(ev->iz[i]);
-			s->SetPlate(ev->iz[i]);
+			s->SetZ(ev->z[i]*1e3); // Xin's simulation is in mm, we use um.
+			s->SetPID(ev->iz[i]); // Set pattern ID to data from film iz[i]. According to Aki, does not have meaning.
+			s->SetPlate(ev->iz[i]); // Set the emulsion plate to index iz[i].
 			s->SetFlag(ev->chamber[i]);
 		p->t->AddSegment(s);
 		
 	}
-	printf("ncharged hits %d\n", nchargedhits);
+	printf("ncharged hits %d\n", nchargedhits); // same muon in each layer or what? one particle multiple charged hits
+	// one original turns into multiple muons
 	
 	
 	printf("%d particles \n", particles->GetEntriesFast());
+	// single or multiple muons?
+// nhits what it looks like what are remaining hits charge pdgid xy and momentunm log file table and explain
+
 
 /*	for(int i=0; i<particles->GetEntriesFast(); i++){
 		
@@ -211,10 +225,12 @@ EdbPVRec *psuedRec(FnuG4 *ev){
 		if(slope>10) continue;
 
 		EdbSegP *s = new EdbSegP(i, ev->x[i]*1e3, ev->y[i]*1e3, ev->px[i]/ev->pz[i], ev->py[i]/ev->pz[i], ev->edep[i]*200+16, ev->pdgid[i]);
-		s->SetZ(ev->z[i]*1e3);
-		s->SetPID(ev->iz[i]);
-		s->SetPlate(ev->iz[i]);
-		s->SetP( sqrt(ev->px[i]*ev->px[i]+ev->py[i]*ev->py[i]+ev->pz[i]*ev->pz[i]));
+		// Emulsion scanning takes 16 frames each in top/bottom layer. Require at least 8 in each. 200 chosen arbitrarily so that
+		// minimum ionizing particles appear green and heavy ionizing particles appear red.
+		s->SetZ(ev->z[i]*1e3); // Xin's sim is in mm, we use um.
+		s->SetPID(ev->iz[i]); // Set pattern id to data from emulsion film iz[i]. Not really physical and is overwritten when running tracking algorithm.
+		s->SetPlate(ev->iz[i]); // Set plate to index iz[i].
+		s->SetP( sqrt(ev->px[i]*ev->px[i]+ev->py[i]*ev->py[i]+ev->pz[i]*ev->pz[i])); // Set magnitude of momentum.
 		
 		//if(sqrt(s->TX()**2+s->TY()**2)>1) continue;
 		
@@ -229,8 +245,10 @@ EdbPVRec *psuedRec(FnuG4 *ev){
 	
 }
 
+// Commented for debugging
+/*
 void display(EdbPVRec *pvr){
-	eda = new EdbEDA(pvr,0);
+	EdbEDA *eda = new EdbEDA(pvr,0);
 	eda->GetTrackSet("TS")->SetExtendMode(1);
 	eda->Run();
 }
@@ -244,10 +262,7 @@ void display(){
 	EdbPVRec *pvr = psuedRec(ev);
 	display(pvr);
 }
-
-
-
-
+*/
 
 
 
@@ -353,7 +368,8 @@ void virtualrec(){
 			grIFTY.Fit("pol1","Q");
 			
 			{
-				int idx = hitsFASERnu[hitsFASERnu.size()-1];
+				int idx = hitsFASERnu[hitsFASERnu.size()-1]; // Should not be used because this is the last plate in FASERnu,
+				// but we should be ignoring the last 10 plates???
 				double z = ev->z[idx];
 				double xF = ev->x[idx];
 				double yF = ev->y[idx];

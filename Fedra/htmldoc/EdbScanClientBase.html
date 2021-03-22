@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:30 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbScanClientBase</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbScanClientBase','','EdbScanClientBase.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbScanClientBase.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbScanClientBase.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbScanClientBase_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbScanClientBase:description">class description</a> 
+<a class="descrheadentry" href="#EdbScanClientBase:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbScanClientBase:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbScanClientBase:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbScanClientBase</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbScanClientBase:description"></a>class EdbScanClientBase</h1>
+<div class="classdescr">
+<pre>
+<a href="./ListOfTypes.html#int">int</a> <a href="./EdbScanClientCommon.html">EdbScanClientCommon</a>::ScanAreaS( <a href="./ListOfTypes.html#int">int</a> id1, <a href="./ListOfTypes.html#int">int</a> id2, <a href="./ListOfTypes.html#int">int</a> id3, <a href="./ListOfTypes.html#int">int</a> id4,
+						<a href="./ListOfTypes.html#float">float</a> x1, <a href="./ListOfTypes.html#float">float</a> y1, <a href="./ListOfTypes.html#float">float</a> x2, <a href="./ListOfTypes.html#float">float</a> y2,
+						const <a href="./ListOfTypes.html#char">char</a> *fname)
+{
+  // scan area and wait for the result
+  eMess1[0]=0;
+  for(<a href="./ListOfTypes.html#int">int</a> attempt=0; attempt&lt;eMAXSCANATTEMPTS; attempt++)
+    {
+	  printf(<span class="string">"attempt %d\n"</span>,attempt);
+	  <a href="./EdbScanClientBase.html#EdbScanClientBase:AsyncScanAreaS" title="void EdbScanClientBase::AsyncScanAreaS(int id1,int id2,int id3,int id4,float x1,float x2,float y1,float y2,const char* fname)">AsyncScanAreaS</a>(id1,id2,id3,id4,x1,y1,x2,y2,fname);
+      if(<a href="./EdbScanClientBase.html#EdbScanClientBase:AsyncWaitForScanResult" title="int EdbScanClientBase::AsyncWaitForScanResult()">AsyncWaitForScanResult</a>()==1)  return 1;
+    }
+  return 0;
+}
+
+
+<a href="./ListOfTypes.html#int">int</a> <a href="./EdbScanClientCommon.html">EdbScanClientCommon</a>::ScanAreasAsync(<a href="./ListOfTypes.html#int">int</a> id[4], <a href="./EdbPattern.html">EdbPattern</a> &amp;areas, <a href="./EdbRun.html">EdbRun</a> &amp;run, const <a href="./ListOfTypes.html#char">char</a>* options)
+{
+  // this function scan the list of areas and save into the same <a href="./EdbRun.html">EdbRun</a>
+  // the run should be already correctly opened, predictions are assumed to be in the stage coord
+  // prediction id will be used for the temporary file name construction
+  // return number of scanned areas
+
+  <a href="./ListOfTypes.html#int">int</a> n = areas.N();
+  printf(<span class="string">"ScanAreasAsync: %d \n"</span>,n);
+  if(n&lt;1) return 0;
+  <a href="./EdbSegP.html">EdbSegP</a> *s = 0, *s1=0;
+  <a href="./ListOfTypes.html#char">char</a> str[256];
+  <a href="./ListOfTypes.html#int">int</a> ic=0;
+  for(<a href="./ListOfTypes.html#int">int</a> i=0; i&lt;=n; i++) {
+    if(s) {
+      if(<a href="./EdbScanClientBase.html#EdbScanClientBase:AsyncWaitForScanResult" title="int EdbScanClientBase::AsyncWaitForScanResult()">AsyncWaitForScanResult</a>()==1) {
+	sprintf(str,<span class="string">"%s\\raw.%d.%d.%d.%d.rwc"</span>,eRawDirClient.Data(),<a href="./EdbScanClientBase.html#EdbScanClientBase:ShortBrick" title="Short_t EdbScanClientBase::ShortBrick(Int_t brick)">ShortBrick</a>(id[0]), id[1], id[2], s-&gt;ID());
+	run.GetHeader()-&gt;SetFlag(9, s-&gt;ID());
+	run.GetHeader()-&gt;SetFlag(8, s-&gt;MCEvt());
+	AddRWC(&amp;run,str,<a href="./ListOfTypes.html#bool">true</a>,options);
+      } else printf(<span class="string">"Error: ScanAreasAsync: result %s didn't receaved!\n"</span>,str);
+    }
+    if(i&gt;=n) break;
+    else {
+      s = areas.GetSegment(i);
+      if(i+1&lt;n) s1=areas.GetSegment(i+1);
+      else      s1=0;
+    }
+
+#ifdef WIN32
+    sprintf(str,<span class="string">"del %s/raw.%d.%d.%d.%d.*"</span>,eRawDirClient.Data(),<a href="./EdbScanClientBase.html#EdbScanClientBase:ShortBrick" title="Short_t EdbScanClientBase::ShortBrick(Int_t brick)">ShortBrick</a>(id[0]), id[1], id[2], s-&gt;ID()); // s-&gt;ID() must be unique!
+#else
+    sprintf(str,<span class="string">"rm -f %s/raw.%d.%d.%d.%d.*"</span>,eRawDirClient.Data(),<a href="./EdbScanClientBase.html#EdbScanClientBase:ShortBrick" title="Short_t EdbScanClientBase::ShortBrick(Int_t brick)">ShortBrick</a>(id[0]), id[1], id[2], s-&gt;ID()); // s-&gt;ID() must be unique!
+#endif
+
+    gSystem-&gt;Exec(str);
+    sprintf(str,<span class="string">"%s\\raw.%d.%d.%d.%d"</span>,eRawDirServer.Data(),<a href="./EdbScanClientBase.html#EdbScanClientBase:ShortBrick" title="Short_t EdbScanClientBase::ShortBrick(Int_t brick)">ShortBrick</a>(id[0]), id[1], id[2], s-&gt;ID());
+    if(s1) {
+      <a href="./EdbScanClientBase.html#EdbScanClientBase:AsyncScanPreloadAreaS" title="void EdbScanClientBase::AsyncScanPreloadAreaS(int id1,int id2,int id3,int id4,float x1,float x2,float y1,float y2,const char* fname,float x1n,float x2n,float y1n,float y2n)">AsyncScanPreloadAreaS</a>( id[0], id[1], id[2], s-&gt;ID(),
+			     s-&gt;X()-s-&gt;SX(), s-&gt;X()+s-&gt;SX(), s-&gt;Y()-s-&gt;SY(), s-&gt;Y()+s-&gt;SY(), str,
+			     s1-&gt;X()-s1-&gt;SX(), s1-&gt;X()+s1-&gt;SX(), s1-&gt;Y()-s1-&gt;SY(), s1-&gt;Y()+s1-&gt;SY());
+    } else {
+      <a href="./EdbScanClientBase.html#EdbScanClientBase:AsyncScanAreaS" title="void EdbScanClientBase::AsyncScanAreaS(int id1,int id2,int id3,int id4,float x1,float x2,float y1,float y2,const char* fname)">AsyncScanAreaS</a>( id[0], id[1], id[2], s-&gt;ID(),
+		      s-&gt;X()-s-&gt;SX(), s-&gt;X()+s-&gt;SX(), s-&gt;Y()-s-&gt;SY(), s-&gt;Y()+s-&gt;SY(),
+		      str );
+    }
+    ic++;
+  }
+  return ic;
+}
+
+
+</pre></div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbScanClientBase:Function_Members"></a>Function Members (Methods)</h2>
+&nbsp;<br /><b>&nbsp;&nbsp;&nbsp;&nbsp;This is an abstract class, constructors will not be documented.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Look at the <a href="EdbScanClientBase.h">header</a> to check for available constructors.</b><br />
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:_EdbScanClientBase">~EdbScanClientBase</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:AddRWC_">AddRWC_</a>(<a href="./EdbRun.html">EdbRun</a>* run, <span class="keyword">char</span>* rwcname, <span class="keyword">int</span> bAddRWD = <span class="keyword">true</span>, <span class="keyword">const</span> <span class="keyword">char</span>* options = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:AsyncScanAreaS">AsyncScanAreaS</a>(<span class="keyword">int</span> id1, <span class="keyword">int</span> id2, <span class="keyword">int</span> id3, <span class="keyword">int</span> id4, <span class="keyword">float</span> x1, <span class="keyword">float</span> x2, <span class="keyword">float</span> y1, <span class="keyword">float</span> y2, <span class="keyword">const</span> <span class="keyword">char</span>* fname)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:AsyncScanPreloadAreaS">AsyncScanPreloadAreaS</a>(<span class="keyword">int</span> id1, <span class="keyword">int</span> id2, <span class="keyword">int</span> id3, <span class="keyword">int</span> id4, <span class="keyword">float</span> x1, <span class="keyword">float</span> x2, <span class="keyword">float</span> y1, <span class="keyword">float</span> y2, <span class="keyword">const</span> <span class="keyword">char</span>* fname, <span class="keyword">float</span> x1n, <span class="keyword">float</span> x2n, <span class="keyword">float</span> y1n, <span class="keyword">float</span> y2n)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:AsyncWaitForScanResult">AsyncWaitForScanResult</a>()</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:Class">Class</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:ConvertAreas">ConvertAreas</a>(<span class="keyword">int</span>* id, <a href="./EdbPattern.html">EdbPattern</a>&amp; areas, <a href="./EdbRun.html">EdbRun</a>&amp; run, <span class="keyword">const</span> <span class="keyword">char</span>* options = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:InitializeSocket">InitializeSocket</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:LoadPlate">LoadPlate</a>(<span class="keyword">int</span> BRICK, <span class="keyword">int</span> PLATE, <span class="keyword">const</span> <span class="keyword">char</span>* mapext, <span class="keyword">int</span> nAttempts = 1)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbScanClientBase.html">EdbScanClientBase</a>&amp;</td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:operator_">operator=</a>(<span class="keyword">const</span> <a href="./EdbScanClientBase.html">EdbScanClientBase</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:Print">Print</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:ScanAreas">ScanAreas</a>(<a href="./EdbScanClientBase.html">EdbScanClientBase</a>::ScanType st, <span class="keyword">int</span>* id, <a href="./EdbPattern.html">EdbPattern</a>&amp; areas, <a href="./EdbRun.html">EdbRun</a>* run, <span class="keyword">const</span> <span class="keyword">char</span>* options = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:ScanPreloadAreaS">ScanPreloadAreaS</a>(<span class="keyword">int</span> id1, <span class="keyword">int</span> id2, <span class="keyword">int</span> id3, <span class="keyword">int</span> id4, <span class="keyword">float</span> x1, <span class="keyword">float</span> x2, <span class="keyword">float</span> y1, <span class="keyword">float</span> y2, <span class="keyword">const</span> <span class="keyword">char</span>* fname, <span class="keyword">float</span> x1n, <span class="keyword">float</span> x2n, <span class="keyword">float</span> y1n, <span class="keyword">float</span> y2n)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:SetClusterThresholds">SetClusterThresholds</a>(<span class="keyword">int</span> TOP, <span class="keyword">int</span> BOT)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:SetFragmentSize">SetFragmentSize</a>(<span class="keyword">int</span> X, <span class="keyword">int</span> Y)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:SetOdysseyThresholds">SetOdysseyThresholds</a>(<span class="keyword">int</span> itop, <span class="keyword">int</span> ibottom, <span class="keyword">int</span> size, <span class="keyword">int</span> TOP, <span class="keyword">int</span> BOT)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:SetParameter">SetParameter</a>(<span class="keyword">const</span> <span class="keyword">char</span>* Object, <span class="keyword">const</span> <span class="keyword">char</span>* Parameter, <span class="keyword">const</span> <span class="keyword">char</span>* Value)</td></tr>
+<tr class="func"><td class="funcret">virtual <a href="./ListOfTypes.html#Short_t">Short_t</a></td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:ShortBrick">ShortBrick</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> brick)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanClientBase:UnloadPlate">UnloadPlate</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbScanClientBase:Data_Members"></a>Data Members</h2>
+<div class="access" id="enumpubl"><b>public:</b>
+<table class="data" id="tabenumpubl" cellspacing="0">
+<tr class="data"><td class="datatype">enum ScanType { </td><td class="dataname"><a name="EdbScanClientBase:stPred"></a>stPred</td><td></td></tr>
+<tr class="data"><td class="datatype"></td><td class="dataname"><a name="EdbScanClientBase:stVolume"></a>stVolume</td><td></td></tr>
+<tr class="data"><td class="datatype">};</td><td></td><td></td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbScanClientBase:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td>
+<center><big><b><tt><a name="EdbScanClientBase" href="./EdbScanClientBase.html">EdbScanClientBase</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td>&larr;</td><td><table><tr>
+<td bgcolor="#f7f7f7"><table><tr><td>
+<center><tt><a name="EdbScanClient" href="./EdbScanClient.html">EdbScanClient</a></tt></center></td>
+<td></td>
+</tr></table></td>
+</tr><tr>
+<td bgcolor="#f7f7f7"><table><tr><td>
+<center><tt><a name="EdbScanClientCommon" href="./EdbScanClientCommon.html">EdbScanClientCommon</a></tt></center></td>
+<td>&larr;</td><td><table><tr>
+<td bgcolor="#efefef"><table><tr><td>
+<center><tt><a name="EdbScanClientPav" href="./EdbScanClientPav.html">EdbScanClientPav</a></tt></center></td>
+<td></td>
+</tr></table></td>
+</tr><tr>
+<td bgcolor="#efefef"><table><tr><td>
+<center><tt><a name="EdbScanClientSysal" href="./EdbScanClientSysal.html">EdbScanClientSysal</a></tt></center></td>
+<td></td>
+</tr></table></td>
+</tr></table></td>
+</tr></table></td>
+</tr></table></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"><span class="keyword">virtual</span> <a class="funcname" name="EdbScanClientBase:_EdbScanClientBase" href="src/EdbScanClientBase.h.html#h7mrjD">~EdbScanClientBase</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanClientBase:InitializeSocket" href="src/EdbScanClientBase.h.html#ovACCE">InitializeSocket</a>()</span><br />
+<div class="funccomm"><pre>common part
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanClientBase:ScanPreloadAreaS" href="src/EdbScanClientBase.h.html#H38FfD">ScanPreloadAreaS</a>(<span class="keyword">int</span> id1, <span class="keyword">int</span> id2, <span class="keyword">int</span> id3, <span class="keyword">int</span> id4, <span class="keyword">float</span> x1, <span class="keyword">float</span> x2, <span class="keyword">float</span> y1, <span class="keyword">float</span> y2, <span class="keyword">const</span> <span class="keyword">char</span>* fname, <span class="keyword">float</span> x1n, <span class="keyword">float</span> x2n, <span class="keyword">float</span> y1n, <span class="keyword">float</span> y2n)</span><br />
+<div class="funccomm"><pre>  virtual <a href="./ListOfTypes.html#int">int</a>    ScanAreaS( <a href="./ListOfTypes.html#int">int</a> id1, <a href="./ListOfTypes.html#int">int</a> id2, <a href="./ListOfTypes.html#int">int</a> id3, <a href="./ListOfTypes.html#int">int</a> id4,
+														<a href="./ListOfTypes.html#float">float</a> x1, <a href="./ListOfTypes.html#float">float</a> y1, <a href="./ListOfTypes.html#float">float</a> x2, <a href="./ListOfTypes.html#float">float</a> y2,	const <a href="./ListOfTypes.html#char">char</a> *fname);
+  virtual <a href="./ListOfTypes.html#int">int</a>   ScanAreasAsync(<a href="./ListOfTypes.html#int">int</a> id[4], <a href="./EdbPattern.html">EdbPattern</a> &amp;areas, <a href="./EdbRun.html">EdbRun</a> &amp;run, const <a href="./ListOfTypes.html#char">char</a>* options=<span class="string">""</span>);
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanClientBase:AddRWC_" href="src/EdbScanClientBase.h.html#Y6y8pC">AddRWC_</a>(<a href="./EdbRun.html">EdbRun</a>* run, <span class="keyword">char</span>* rwcname, <span class="keyword">int</span> bAddRWD = <span class="keyword">true</span>, <span class="keyword">const</span> <span class="keyword">char</span>* options = <span class="string">""</span>)</span><br />
+<div class="funccomm"><pre> <span class="string">"short"</span> version of brickID to be passed into sysal command line via BernScanDriver
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Short_t">Short_t</a> <a class="funcname" name="EdbScanClientBase:ShortBrick" href="src/EdbScanClientBase.h.html#g.MpO">ShortBrick</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> brick)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanClientBase:ConvertAreas" href="src/EdbScanClientBase.h.html#gC4XCE">ConvertAreas</a>(<span class="keyword">int</span>* id, <a href="./EdbPattern.html">EdbPattern</a>&amp; areas, <a href="./EdbRun.html">EdbRun</a>&amp; run, <span class="keyword">const</span> <span class="keyword">char</span>* options = <span class="string">""</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanClientBase:UnloadPlate" href="src/EdbScanClientBase.h.html#s07bf">UnloadPlate</a>()</span><br />
+<div class="funccomm"><pre>protocol-specific part
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanClientBase:LoadPlate" href="src/EdbScanClientBase.h.html#J6_YB">LoadPlate</a>(<span class="keyword">int</span> BRICK, <span class="keyword">int</span> PLATE, <span class="keyword">const</span> <span class="keyword">char</span>* mapext, <span class="keyword">int</span> nAttempts = 1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanClientBase:SetParameter" href="src/EdbScanClientBase.h.html#mv669C">SetParameter</a>(<span class="keyword">const</span> <span class="keyword">char</span>* Object, <span class="keyword">const</span> <span class="keyword">char</span>* Parameter, <span class="keyword">const</span> <span class="keyword">char</span>* Value)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanClientBase:SetClusterThresholds" href="src/EdbScanClientBase.h.html#vUeKQB">SetClusterThresholds</a>(<span class="keyword">int</span> TOP, <span class="keyword">int</span> BOT)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanClientBase:SetOdysseyThresholds" href="src/EdbScanClientBase.h.html#hcdNdC">SetOdysseyThresholds</a>(<span class="keyword">int</span> itop, <span class="keyword">int</span> ibottom, <span class="keyword">int</span> size, <span class="keyword">int</span> TOP, <span class="keyword">int</span> BOT)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanClientBase:SetFragmentSize" href="src/EdbScanClientBase.h.html#QQGe5C">SetFragmentSize</a>(<span class="keyword">int</span> X, <span class="keyword">int</span> Y)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanClientBase:AsyncScanAreaS" href="src/EdbScanClientBase.h.html#QuIX4E">AsyncScanAreaS</a>(<span class="keyword">int</span> id1, <span class="keyword">int</span> id2, <span class="keyword">int</span> id3, <span class="keyword">int</span> id4, <span class="keyword">float</span> x1, <span class="keyword">float</span> x2, <span class="keyword">float</span> y1, <span class="keyword">float</span> y2, <span class="keyword">const</span> <span class="keyword">char</span>* fname)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanClientBase:AsyncWaitForScanResult" href="src/EdbScanClientBase.h.html#YfW9hC">AsyncWaitForScanResult</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanClientBase:Print" href="src/EdbScanClientBase.h.html#lei04">Print</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanClientBase:ScanAreas" href="src/EdbScanClientBase.h.html#FKg4wC">ScanAreas</a>(<a href="./EdbScanClientBase.html">EdbScanClientBase</a>::ScanType st, <span class="keyword">int</span>* id, <a href="./EdbPattern.html">EdbPattern</a>&amp; areas, <a href="./EdbRun.html">EdbRun</a>* run, <span class="keyword">const</span> <span class="keyword">char</span>* options = <span class="string">""</span>)</span><br />
+<div class="funccomm"><pre>protocol-specific part
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanClientBase:AsyncScanPreloadAreaS" href="src/EdbScanClientBase.h.html#W9hZQ">AsyncScanPreloadAreaS</a>(<span class="keyword">int</span> id1, <span class="keyword">int</span> id2, <span class="keyword">int</span> id3, <span class="keyword">int</span> id4, <span class="keyword">float</span> x1, <span class="keyword">float</span> x2, <span class="keyword">float</span> y1, <span class="keyword">float</span> y2, <span class="keyword">const</span> <span class="keyword">char</span>* fname, <span class="keyword">float</span> x1n, <span class="keyword">float</span> x2n, <span class="keyword">float</span> y1n, <span class="keyword">float</span> y2n)</span><br />
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:30 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

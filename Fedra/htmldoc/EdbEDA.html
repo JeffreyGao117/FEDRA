@@ -1,0 +1,656 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:21 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbEDA</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbEDA','','EdbEDA.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbEDA.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbEDA.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbEDA_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbEDA:description">class description</a> 
+<a class="descrheadentry" href="#EdbEDA:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbEDA:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbEDA:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbEDA</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbEDA:description"></a>class EdbEDA: public <a href="./EdbEDACamera.html">EdbEDACamera</a>, public <a href="./EdbEDAIO.html">EdbEDAIO</a>, public <a href="./EdbEDABrickData.html">EdbEDABrickData</a>, public <a href="./EdbEDASelection.html">EdbEDASelection</a>, public TNamed</h1>
+<div class="classdescr">
+</div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbEDA:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbEDA:EdbEDA@3">EdbEDA</a>(<a href="./EdbDataProc.html">EdbDataProc</a>* dproc)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbEDA:EdbEDA@5">EdbEDA</a>(<span class="keyword">const</span> <a href="./EdbEDA.html">EdbEDA</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbEDA:EdbEDA@1">EdbEDA</a>(<a href="./EdbID.html">EdbID</a> IDCalib, <span class="keyword">char</span>* ProcDirClient = 0)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbEDA:EdbEDA@2">EdbEDA</a>(<a href="./EdbScanSet.html">EdbScanSet</a>* ss, <span class="keyword">char</span>* ProcDirClient = 0)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbEDA:EdbEDA@4">EdbEDA</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* pvr, <span class="keyword">bool</span> autorun = 1)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbEDA:EdbEDA">EdbEDA</a>(<span class="keyword">char</span>* filename = 0, <span class="keyword">int</span> datatype = 100, TCut rcut = <span class="string">"1"</span>, <span class="keyword">bool</span> auto_run = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbEDA:_EdbEDA">~EdbEDA</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:AddDrawObject">AddDrawObject</a>(<a href="./EdbEDAObject.html">EdbEDAObject</a>* o)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:Added"><span class="baseclass">EdbEDASelection::</span>Added</a>(TEveElement* el)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDATrackSet.html">EdbEDATrackSet</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDA:AddTrackSet">AddTrackSet</a>(<span class="keyword">char</span>* name)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:AddVertex">AddVertex</a>(<a href="./EdbVertex.html">EdbVertex</a>* v)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDACamera.html#EdbEDACamera:Animation"><span class="baseclass">EdbEDACamera::</span>Animation</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(TBrowser* b)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbTrackP.html">EdbTrackP</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDA:CheckScanback">CheckScanback</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbEDA:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:Clear"><span class="baseclass">TNamed::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:ClearDrawObjects">ClearDrawObjects</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:Cleared"><span class="baseclass">EdbEDASelection::</span>Cleared</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:ClearSelected"><span class="baseclass">EdbEDASelection::</span>ClearSelected</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:ClearSelectedVertex"><span class="baseclass">EdbEDASelection::</span>ClearSelectedVertex</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:ClearVertices">ClearVertices</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TNamed:Clone"><span class="baseclass">TNamed::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TNamed:Compare"><span class="baseclass">TNamed::</span>Compare</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:Copy"><span class="baseclass">TNamed::</span>Copy</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp; named) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDATrackSet.html">EdbEDATrackSet</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDA:CreateTrackSet">CreateTrackSet</a>(<span class="keyword">char</span>* name)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:Disable"><span class="baseclass">EdbEDASelection::</span>Disable</a>(<span class="keyword">int</span> force = <a href="./ListOfTypes.html#Bool_t">kFALSE</a>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:Draw">Draw</a>(<span class="keyword">int</span> redraw = <a href="./ListOfTypes.html#Bool_t">kFALSE</a>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:DrawVertices">DrawVertices</a>(<span class="keyword">int</span> redraw = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:Enable"><span class="baseclass">EdbEDASelection::</span>Enable</a>(<span class="keyword">int</span> force = <a href="./ListOfTypes.html#Bool_t">kFALSE</a>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(TMethod* method, TObjArray* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:FillBuffer"><span class="baseclass">TNamed::</span>FillBuffer</a>(<span class="keyword">char</span>*&amp; buffer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbAffine2D.html">EdbAffine2D</a>*</td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:GetAffine"><span class="baseclass">EdbEDABrickData::</span>GetAffine</a>(<span class="keyword">int</span> ipl)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:GetBeamTX"><span class="baseclass">EdbEDABrickData::</span>GetBeamTX</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:GetBeamTY"><span class="baseclass">EdbEDABrickData::</span>GetBeamTY</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:GetBrick"><span class="baseclass">EdbEDABrickData::</span>GetBrick</a>()</td></tr>
+<tr class="func"><td class="funcret">TObjArray*</td><td class="funcname"><a class="funcname" href="#EdbEDA:GetCurrentTracks">GetCurrentTracks</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbDataSet.html">EdbDataSet</a>*</td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:GetDataSet"><span class="baseclass">EdbEDABrickData::</span>GetDataSet</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:GetDataType"><span class="baseclass">EdbEDABrickData::</span>GetDataType</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDAObject.html">EdbEDAObject</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDA:GetDrawObject">GetDrawObject</a>(<span class="keyword">int</span> i)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDADecaySearchTab.html">EdbEDADecaySearchTab</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDA:GetDSTab">GetDSTab</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="func"><td class="funcret">TEveElement*</td><td class="funcname"><a class="funcname" href="#EdbEDA:GetEveElement">GetEveElement</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* t)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDAExtentionSet.html">EdbEDAExtentionSet</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDA:GetExtentionSet">GetExtentionSet</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:GetFirstPlate"><span class="baseclass">EdbEDABrickData::</span>GetFirstPlate</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">TGLViewer*</td><td class="funcname"><a class="funcname" href="./EdbEDACamera.html#EdbEDACamera:GetGLViewer"><span class="baseclass">EdbEDACamera::</span>GetGLViewer</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbID.html">EdbID</a></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:GetID"><span class="baseclass">EdbEDABrickData::</span>GetID</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:GetIPL"><span class="baseclass">EdbEDABrickData::</span>GetIPL</a>(<span class="keyword">int</span> PID)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:GetIPLZ"><span class="baseclass">EdbEDABrickData::</span>GetIPLZ</a>(<span class="keyword">float</span> z)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:GetLastPlate"><span class="baseclass">EdbEDABrickData::</span>GetLastPlate</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDAMainTab.html">EdbEDAMainTab</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDA:GetMainTab">GetMainTab</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TNamed:GetName"><span class="baseclass">TNamed::</span>GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:GetNPL"><span class="baseclass">EdbEDABrickData::</span>GetNPL</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDAOperationTab.html">EdbEDAOperationTab</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDA:GetOperationTab">GetOperationTab</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbEDAOverlay.html">EdbEDAOverlay</a>*</td><td class="funcname"><a class="funcname" href="./EdbEDACamera.html#EdbEDACamera:GetOverlay"><span class="baseclass">EdbEDACamera::</span>GetOverlay</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbPattern.html">EdbPattern</a>*</td><td class="funcname"><a class="funcname" href="./EdbEDAIO.html#EdbEDAIO:GetPatternIPL"><span class="baseclass">EdbEDAIO::</span>GetPatternIPL</a>(<span class="keyword">int</span> pid)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:GetPID"><span class="baseclass">EdbEDABrickData::</span>GetPID</a>(<span class="keyword">int</span> ipl)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:GetPlateDown"><span class="baseclass">EdbEDABrickData::</span>GetPlateDown</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:GetPlateUp"><span class="baseclass">EdbEDABrickData::</span>GetPlateUp</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDAPlotTab.html">EdbEDAPlotTab</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDA:GetPlotTab">GetPlotTab</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:GetPVR"><span class="baseclass">EdbEDABrickData::</span>GetPVR</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:GetScaleZ">GetScaleZ</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbScanSet.html">EdbScanSet</a>*</td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:GetScanSet"><span class="baseclass">EdbEDABrickData::</span>GetScanSet</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">TObjArray*</td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:GetSelected"><span class="baseclass">EdbEDASelection::</span>GetSelected</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbSegP.html">EdbSegP</a>*</td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:GetSelected@1"><span class="baseclass">EdbEDASelection::</span>GetSelected</a>(<span class="keyword">int</span> i)</td></tr>
+<tr class="funcinh"><td class="funcret">TEveElement*</td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:GetSelectedElement"><span class="baseclass">EdbEDASelection::</span>GetSelectedElement</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbSegP.html">EdbSegP</a>*</td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:GetSelectedSegment"><span class="baseclass">EdbEDASelection::</span>GetSelectedSegment</a>(<span class="keyword">int</span> i = -1)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbTrackP.html">EdbTrackP</a>*</td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:GetSelectedTrack"><span class="baseclass">EdbEDASelection::</span>GetSelectedTrack</a>(<span class="keyword">int</span> i = -1)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbTrackP.html">EdbTrackP</a>*</td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:GetSelectedTrack@1"><span class="baseclass">EdbEDASelection::</span>GetSelectedTrack</a>(<a href="./EdbSegP.html">EdbSegP</a>* s)</td></tr>
+<tr class="funcinh"><td class="funcret">TObjArray*</td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:GetSelectedTracks"><span class="baseclass">EdbEDASelection::</span>GetSelectedTracks</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:GetSelectedVertex"><span class="baseclass">EdbEDASelection::</span>GetSelectedVertex</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TNamed:GetTitle"><span class="baseclass">TNamed::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbTrackP.html">EdbTrackP</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDA:GetTrack">GetTrack</a>(<a href="./EdbSegP.html">EdbSegP</a>* s)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDATrackSet.html">EdbEDATrackSet</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDA:GetTrackSet">GetTrackSet</a>(<span class="keyword">int</span> i)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDATrackSet.html">EdbEDATrackSet</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDA:GetTrackSet@1">GetTrackSet</a>(<span class="keyword">char</span>* name)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDATrackSet.html">EdbEDATrackSet</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDA:GetTrackSet@2">GetTrackSet</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDATrackSet.html">EdbEDATrackSet</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDA:GetTrackSet@3">GetTrackSet</a>(<a href="./EdbID.html">EdbID</a>&amp; ID)</td></tr>
+<tr class="func"><td class="funcret">TObjArray*</td><td class="funcname"><a class="funcname" href="#EdbEDA:GetTrackSets">GetTrackSets</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDATrackSetTab.html">EdbEDATrackSetTab</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDA:GetTrackSetTab">GetTrackSetTab</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDAVertexSet.html">EdbEDAVertexSet</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDA:GetVertexSet">GetVertexSet</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDAVertexTab.html">EdbEDAVertexTab</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDA:GetVertexTab">GetVertexTab</a>()</td></tr>
+<tr class="func"><td class="funcret">TObjArray*</td><td class="funcname"><a class="funcname" href="#EdbEDA:GetVertices">GetVertices</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:GetZ"><span class="baseclass">EdbEDABrickData::</span>GetZ</a>(<span class="keyword">int</span> ipl)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:GetZPID"><span class="baseclass">EdbEDABrickData::</span>GetZPID</a>(<span class="keyword">int</span> pid)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(TTimer* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="#TNamed:Hash"><span class="baseclass">TNamed::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbEDAIO.html#EdbEDAIO:IdMuon"><span class="baseclass">EdbEDAIO::</span>IdMuon</a>(<span class="keyword">char</span>* filename = <span class="string">"../cs_info.txt"</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> TClass* cl) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:Init">Init</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:InitSelection"><span class="baseclass">EdbEDASelection::</span>InitSelection</a>(TEveSelection* sel)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbEDA:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TNamed:IsSortable"><span class="baseclass">TNamed::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:Japanese">Japanese</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:ls"><span class="baseclass">TNamed::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:NDrawObjects">NDrawObjects</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:NSelected"><span class="baseclass">EdbEDASelection::</span>NSelected</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:NSelectedTracks"><span class="baseclass">EdbEDASelection::</span>NSelectedTracks</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:NTrackSets">NTrackSets</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:OpenFile">OpenFile</a>(<span class="keyword">char</span>* filename = 0, <span class="keyword">int</span> datatype = 100, TCut rcut = <span class="string">"1"</span>)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDAIO.html#EdbEDAIO:OpenTextEditor"><span class="baseclass">EdbEDAIO::</span>OpenTextEditor</a>(<span class="keyword">char</span>* filename)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDA.html">EdbEDA</a>&amp;</td><td class="funcname"><a class="funcname" href="#EdbEDA:operator_">operator=</a>(<span class="keyword">const</span> <a href="./EdbEDA.html">EdbEDA</a>&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:Print"><span class="baseclass">TNamed::</span>Print</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbDataProc.html">EdbDataProc</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDA:PVRec2DataProc">PVRec2DataProc</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* pvr)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbPattern.html">EdbPattern</a>*</td><td class="funcname"><a class="funcname" href="./EdbEDAIO.html#EdbEDAIO:ReadCouples"><span class="baseclass">EdbEDAIO::</span>ReadCouples</a>(<span class="keyword">int</span> ipl, <a href="./EdbPattern.html">EdbPattern</a>* pat = 0)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbPattern.html">EdbPattern</a>*</td><td class="funcname"><a class="funcname" href="./EdbEDAIO.html#EdbEDAIO:ReadCouplesPID"><span class="baseclass">EdbEDAIO::</span>ReadCouplesPID</a>(<span class="keyword">int</span> pid, <a href="./EdbPattern.html">EdbPattern</a>* pat = 0)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDAIO.html#EdbEDAIO:ReadFeedbackFile"><span class="baseclass">EdbEDAIO::</span>ReadFeedbackFile</a>(<span class="keyword">char</span>* filename = 0)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="funcname"><a class="funcname" href="./EdbEDAIO.html#EdbEDAIO:ReadFeedbackFile2008"><span class="baseclass">EdbEDAIO::</span>ReadFeedbackFile2008</a>(<span class="keyword">char</span>* filename = 0)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="funcname"><a class="funcname" href="./EdbEDAIO.html#EdbEDAIO:ReadFilteredText"><span class="baseclass">EdbEDAIO::</span>ReadFilteredText</a>(<span class="keyword">char</span>* filename = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:Redraw">Redraw</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:Removed"><span class="baseclass">EdbEDASelection::</span>Removed</a>(TEveElement* el)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:RemoveDrawObject">RemoveDrawObject</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* o)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:RemoveSelected">RemoveSelected</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:RemoveTrack">RemoveTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:RemoveTrackBase">RemoveTrackBase</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:Reset">Reset</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:RestorePrevious">RestorePrevious</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:Run">Run</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDACamera.html#EdbEDACamera:SaveAnimation"><span class="baseclass">EdbEDACamera::</span>SaveAnimation</a>(<span class="keyword">char</span>* filename = 0, <span class="keyword">int</span> n = 100, <span class="keyword">int</span> interval = 10)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDACamera.html#EdbEDACamera:SavePictures"><span class="baseclass">EdbEDACamera::</span>SavePictures</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbScanProc.html">EdbScanProc</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDA:ScanProc">ScanProc</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:SelectAll"><span class="baseclass">EdbEDASelection::</span>SelectAll</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDACamera.html#EdbEDACamera:SetAnimationMode"><span class="baseclass">EdbEDACamera::</span>SetAnimationMode</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:SetBeamAngle"><span class="baseclass">EdbEDABrickData::</span>SetBeamAngle</a>(<span class="keyword">double</span> tx, <span class="keyword">double</span> ty)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:SetBrick">SetBrick</a>(<span class="keyword">int</span> ibrick)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDACamera.html#EdbEDACamera:SetCamera"><span class="baseclass">EdbEDACamera::</span>SetCamera</a>(<span class="keyword">int</span> projection = Y)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:SetColorMode">SetColorMode</a>(<span class="keyword">int</span> mode)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:SetDataType"><span class="baseclass">EdbEDABrickData::</span>SetDataType</a>(<span class="keyword">int</span> datatype)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:SetDrawAreaSet">SetDrawAreaSet</a>(<span class="keyword">bool</span> draw)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:SetDrawTrackAngle">SetDrawTrackAngle</a>(<span class="keyword">bool</span> draw)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:SetDrawTrackID">SetDrawTrackID</a>(<span class="keyword">bool</span> draw)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:SetID"><span class="baseclass">EdbEDABrickData::</span>SetID</a>(<a href="./EdbID.html">EdbID</a> id)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:SetIDSB"><span class="baseclass">EdbEDABrickData::</span>SetIDSB</a>(<a href="./EdbID.html">EdbID</a> id)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:SetIDSF"><span class="baseclass">EdbEDABrickData::</span>SetIDSF</a>(<a href="./EdbID.html">EdbID</a> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:SetJapanese">SetJapanese</a>(<span class="keyword">bool</span> b = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:SetLayerLength">SetLayerLength</a>(<span class="keyword">double</span> layer_length)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:SetName"><span class="baseclass">TNamed::</span>SetName</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:SetNameTitle"><span class="baseclass">TNamed::</span>SetNameTitle</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* title)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:SetOnlySelected">SetOnlySelected</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbEDAOverlay.html">EdbEDAOverlay</a>*</td><td class="funcname"><a class="funcname" href="./EdbEDACamera.html#EdbEDACamera:SetOverlay"><span class="baseclass">EdbEDACamera::</span>SetOverlay</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:SetPVR"><span class="baseclass">EdbEDABrickData::</span>SetPVR</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* pvr)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:SetScaleZ">SetScaleZ</a>(<span class="keyword">double</span> scale)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDABrickData.html#EdbEDABrickData:SetScanSet"><span class="baseclass">EdbEDABrickData::</span>SetScanSet</a>(<a href="./EdbScanSet.html">EdbScanSet</a>* ss)</td></tr>
+<tr class="funcinh"><td class="funcret">TObjArray*</td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:SetSelected"><span class="baseclass">EdbEDASelection::</span>SetSelected</a>(TObjArray* selected = 0)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:SetSelectedTracks"><span class="baseclass">EdbEDASelection::</span>SetSelectedTracks</a>(TObjArray* arr)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:SetSelectedVertex"><span class="baseclass">EdbEDASelection::</span>SetSelectedVertex</a>(<a href="./EdbVertex.html">EdbVertex</a>* v)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDASelection.html#EdbEDASelection:SetSelection"><span class="baseclass">EdbEDASelection::</span>SetSelection</a>(TObjArray* selected = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:SetTitle"><span class="baseclass">TNamed::</span>SetTitle</a>(<span class="keyword">const</span> <span class="keyword">char</span>* title = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TNamed:Sizeof"><span class="baseclass">TNamed::</span>Sizeof</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDACamera.html#EdbEDACamera:Snapshot"><span class="baseclass">EdbEDACamera::</span>Snapshot</a>(<span class="keyword">char</span>* filename = 0)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDACamera.html#EdbEDACamera:StartAnimation"><span class="baseclass">EdbEDACamera::</span>StartAnimation</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDACamera.html#EdbEDACamera:StopAnimation"><span class="baseclass">EdbEDACamera::</span>StopAnimation</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:StorePrevious">StorePrevious</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDA:UpdateScene">UpdateScene</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDAIO.html#EdbEDAIO:WriteFeedbackFile"><span class="baseclass">EdbEDAIO::</span>WriteFeedbackFile</a>(<span class="keyword">char</span>* filename = 0)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDAIO.html#EdbEDAIO:WriteFeedbackFile2008"><span class="baseclass">EdbEDAIO::</span>WriteFeedbackFile2008</a>(<a href="./EdbVertex.html">EdbVertex</a>* v = 0, <span class="keyword">char</span>* filename = 0)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbEDAIO.html#EdbEDAIO:WriteFilteredText"><span class="baseclass">EdbEDAIO::</span>WriteFilteredText</a>(<span class="keyword">char</span>* filename = 0)</td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, va_list va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbEDA:Data_Members"></a>Data Members</h2>
+<div class="access" id="enumpubl"><b>public:</b>
+<table class="data" id="tabenumpubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">EdbEDACamera::</span><i>[unnamed]</i> { </td><td class="dataname"><a href="./EdbEDACamera.html#EdbEDACamera:X">X</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="./EdbEDACamera.html#EdbEDACamera:Y">Y</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="./EdbEDACamera.html#EdbEDACamera:Z">Z</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="./EdbEDACamera.html#EdbEDACamera:B">B</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">EdbEDAIO::</span>OutputFileMode { </td><td class="dataname"><a href="./EdbEDAIO.html#EdbEDAIO:kBern">kBern</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="./EdbEDAIO.html#EdbEDAIO:kOtherLabs">kOtherLabs</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span>EStatusBits { </td><td class="dataname"><a href="#TObject:kCanDelete">kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kMustCleanup">kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kObjInCanvas">kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kIsReferenced">kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kHasUUID">kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kCannotPick">kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNoContextMenu">kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kInvalidObject">kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span><i>[unnamed]</i> { </td><td class="dataname"><a href="#TObject:kIsOnHeap">kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNotDeleted">kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kZombie">kZombie</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kBitMask">kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kSingleKey">kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kOverwrite">kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kWriteDelete">kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">TCut</td><td class="dataname"><a href="./EdbEDAIO.html#EdbEDAIO:eCutCP"><span class="baseclass">EdbEDAIO::</span>eCutCP</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><a href="./EdbDataSet.html">EdbDataSet</a>*</td><td class="dataname"><a href="./EdbEDABrickData.html#EdbEDABrickData:eDataSet"><span class="baseclass">EdbEDABrickData::</span>eDataSet</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a href="./EdbEDABrickData.html#EdbEDABrickData:eDataType"><span class="baseclass">EdbEDABrickData::</span>eDataType</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a href="./EdbEDABrickData.html#EdbEDABrickData:eFirstPlate"><span class="baseclass">EdbEDABrickData::</span>eFirstPlate</a></td><td class="datadesc">first plate of brick, 1</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./EdbID.html">EdbID</a></td><td class="dataname"><a href="./EdbEDABrickData.html#EdbEDABrickData:eID"><span class="baseclass">EdbEDABrickData::</span>eID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><a href="./EdbID.html">EdbID</a></td><td class="dataname"><a href="./EdbEDABrickData.html#EdbEDABrickData:eIDSB"><span class="baseclass">EdbEDABrickData::</span>eIDSB</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><a href="./EdbID.html">EdbID</a></td><td class="dataname"><a href="./EdbEDABrickData.html#EdbEDABrickData:eIDSF"><span class="baseclass">EdbEDABrickData::</span>eIDSF</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a href="./EdbEDABrickData.html#EdbEDABrickData:eLastPlate"><span class="baseclass">EdbEDABrickData::</span>eLastPlate</a></td><td class="datadesc">last plate of brick, 57</td></tr>
+<tr class="datainh"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a href="./EdbEDAIO.html#EdbEDAIO:eOutputFileMode"><span class="baseclass">EdbEDAIO::</span>eOutputFileMode</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="dataname"><a href="./EdbEDABrickData.html#EdbEDABrickData:ePVR"><span class="baseclass">EdbEDABrickData::</span>ePVR</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><a href="./EdbScanProc.html">EdbScanProc</a>*</td><td class="dataname"><a href="./EdbEDABrickData.html#EdbEDABrickData:eScanProc"><span class="baseclass">EdbEDABrickData::</span>eScanProc</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><a href="./EdbScanSet.html">EdbScanSet</a>*</td><td class="dataname"><a href="./EdbEDABrickData.html#EdbEDABrickData:eScanSet"><span class="baseclass">EdbEDABrickData::</span>eScanSet</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">TGLViewer*</td><td class="dataname"><a href="./EdbEDACamera.html#EdbEDACamera:eViewer"><span class="baseclass">EdbEDACamera::</span>eViewer</a></td><td></td></tr>
+
+</table></div>
+<div class="access" id="dataprot"><b>protected:</b>
+<table class="data" id="tabdataprot" cellspacing="0">
+<tr class="datainh"><td class="datatype">TString</td><td class="dataname"><a href="#TNamed:fName"><span class="baseclass">TNamed::</span>fName</a></td><td class="datadesc">object identifier</td></tr>
+<tr class="datainh"><td class="datatype">TString</td><td class="dataname"><a href="#TNamed:fTitle"><span class="baseclass">TNamed::</span>fTitle</a></td><td class="datadesc">object title</td></tr>
+
+</table></div>
+<div class="access" id="datapriv"><b>private:</b>
+<table class="data" id="tabdatapriv" cellspacing="0">
+<tr class="data"><td class="datatype"><a href="./EdbEDADecaySearchTab.html">EdbEDADecaySearchTab</a>*</td><td class="dataname"><a name="EdbEDA:eDSTab"></a>eDSTab</td><td></td></tr>
+<tr class="data"><td class="datatype">TObjArray*</td><td class="dataname"><a name="EdbEDA:eDrawObjects"></a>eDrawObjects</td><td></td></tr>
+<tr class="data"><td class="datatype">TEveEventManager*</td><td class="dataname"><a name="EdbEDA:eEvent"></a>eEvent</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbEDAExtentionSet.html">EdbEDAExtentionSet</a>*</td><td class="dataname"><a name="EdbEDA:eExt"></a>eExt</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">bool</span></td><td class="dataname"><a name="EdbEDA:eJapanese"></a>eJapanese</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbEDAMainTab.html">EdbEDAMainTab</a>*</td><td class="dataname"><a name="EdbEDA:eMainTab"></a>eMainTab</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbEDAOperationTab.html">EdbEDAOperationTab</a>*</td><td class="dataname"><a name="EdbEDA:eOperationTab"></a>eOperationTab</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbEDAPlotTab.html">EdbEDAPlotTab</a>*</td><td class="dataname"><a name="EdbEDA:ePlotTab"></a>ePlotTab</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="EdbEDA:eScaleZ"></a>eScaleZ</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbEDASelection.html">EdbEDASelection</a>*</td><td class="dataname"><a name="EdbEDA:eSel"></a>eSel</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbEDATrackSet.html">EdbEDATrackSet</a>*</td><td class="dataname"><a name="EdbEDA:eSetTracks"></a>eSetTracks</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbEDATrackSetTab.html">EdbEDATrackSetTab</a>*</td><td class="dataname"><a name="EdbEDA:eTrackSetTab"></a>eTrackSetTab</td><td></td></tr>
+<tr class="data"><td class="datatype">TObjArray*</td><td class="dataname"><a name="EdbEDA:eTrackSets"></a>eTrackSets</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbEDAVertexSet.html">EdbEDAVertexSet</a>*</td><td class="dataname"><a name="EdbEDA:eVertexSet"></a>eVertexSet</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbEDAVertexTab.html">EdbEDAVertexTab</a>*</td><td class="dataname"><a name="EdbEDA:eVertexTab"></a>eVertexTab</td><td></td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbEDA:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td><table><tr>
+<td bgcolor="#f7f7f7" align="right">
+<table><tr><td>
+<center><tt><a name="EdbEDACamera" href="./EdbEDACamera.html">EdbEDACamera</a></tt></center>
+</td>
+</tr></table>
+</td>
+</tr><tr>
+<td bgcolor="#f7f7f7" align="right">
+<table><tr><td>
+<center><tt><a name="EdbEDAIO" href="./EdbEDAIO.html">EdbEDAIO</a></tt></center>
+</td>
+</tr></table>
+</td>
+</tr><tr>
+<td bgcolor="#f7f7f7" align="right">
+<table><tr><td>
+<center><tt><a name="EdbEDABrickData" href="./EdbEDABrickData.html">EdbEDABrickData</a></tt></center>
+</td>
+</tr></table>
+</td>
+</tr><tr>
+<td bgcolor="#f7f7f7" align="right">
+<table><tr><td>
+<center><tt><a name="EdbEDASelection" href="./EdbEDASelection.html">EdbEDASelection</a></tt></center>
+</td>
+</tr></table>
+</td>
+</tr><tr>
+<td bgcolor="#f7f7f7" align="right">
+<tt>TNamed</tt></td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><big><b><tt><a name="EdbEDA" href="./EdbEDA.html">EdbEDA</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"><a href="./EdbDataProc.html">EdbDataProc</a> * <a class="funcname" name="EdbEDA:PVRec2DataProc" href="src/EdbEDA.cxx.html#CTWNrD">PVRec2DataProc</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* pvr)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:Init" href="src/EdbEDA.cxx.html#tESQ7">Init</a>(<span class="keyword">void</span>)</span><br />
+<div class="funccomm"><pre> Initialization of TrackSets and VertexSet.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:Run" href="src/EdbEDA.cxx.html#b4KaFB">Run</a>()</span><br />
+<div class="funccomm"><pre> Start Display.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:Draw" href="src/EdbEDA.cxx.html#zEl8RB">Draw</a>(<span class="keyword">int</span> redraw = <a href="./ListOfTypes.html#Bool_t">kFALSE</a>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:OpenFile" href="src/EdbEDA.cxx.html#YCV6KC">OpenFile</a>(<span class="keyword">char</span>* filename = 0, <span class="keyword">int</span> datatype = 100, TCut rcut = <span class="string">"1"</span>)</span><br />
+<div class="funccomm"><pre>  filename : filename for <span class="string">"LinkDef"</span> or <span class="string">"*.set.root(ScanSet)"</span> or <span class="string">"*.root(linked_track.root format)"</span>
+  datatype : only for <span class="string">"LinkDef"</span>. Data type for <a href="./EdbDataProc.html">EdbDataProc</a>::<a href="./EdbDataProc.html#EdbDataProc:InitVolume" title="int EdbDataProc::InitVolume(int datatype=0,const char* rcut=&quot;1&quot;) or overloads">InitVolume</a>(). put -1 for no InitVolume
+            if datatype= 100 or 1000. linked tracks will be registred to <span class="string">"TS"</span>.
+  rcut     : Track selection when read.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:SetColorMode" href="src/EdbEDA.h.html#pQScLB">SetColorMode</a>(<span class="keyword">int</span> mode)</span><br />
+
+<div class="code"><code class="inlinecode">{ printf(<span class="string">"override this.\n"</span>);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:SetBrick" href="src/EdbEDA.h.html#HcFOGD">SetBrick</a>(<span class="keyword">int</span> ibrick)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbTrackP.html">EdbTrackP</a> * <a class="funcname" name="EdbEDA:GetTrack" href="src/EdbEDA.h.html#Tq83DD">GetTrack</a>(<a href="./EdbSegP.html">EdbSegP</a>* s)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbEDA:EdbEDA" href="src/EdbEDA.h.html#Nyfe3D">EdbEDA</a>(<span class="keyword">char</span>* filename = 0, <span class="keyword">int</span> datatype = 100, TCut rcut = <span class="string">"1"</span>, <span class="keyword">bool</span> auto_run = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>)</span><br />
+<div class="funccomm"><pre> Constructor for EDA
+  filename : filename for <span class="string">"LinkDef"</span> or <span class="string">"*.set.root(ScanSet)"</span> or <span class="string">"*.root(linked_track.root format)"</span>
+  datatype : only for <span class="string">"LinkDef"</span>. Data type for <a href="./EdbDataProc.html">EdbDataProc</a>::<a href="./EdbDataProc.html#EdbDataProc:InitVolume" title="int EdbDataProc::InitVolume(int datatype=0,const char* rcut=&quot;1&quot;) or overloads">InitVolume</a>(). put -1 for no InitVolume
+             if datatype= 100 or 1000. linked tracks will be registred to <span class="string">"TS"</span>.
+  rcut     : Track selection when read.
+  auto_run : <a href="./EdbEDA.html#EdbEDA:Run" title="void EdbEDA::Run()">Run</a> automatically.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbEDA:EdbEDA@1" href="src/EdbEDA.h.html#k9Z81">EdbEDA</a>(<a href="./EdbID.html">EdbID</a> IDCalib, <span class="keyword">char</span>* ProcDirClient = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbEDA:EdbEDA@2" href="src/EdbEDA.h.html#A.jSM">EdbEDA</a>(<a href="./EdbScanSet.html">EdbScanSet</a>* ss, <span class="keyword">char</span>* ProcDirClient = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbEDA:EdbEDA@3" href="src/EdbEDA.h.html#VDyIdD">EdbEDA</a>(<a href="./EdbDataProc.html">EdbDataProc</a>* dproc)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbEDA:GetTrackSet" href="src/EdbEDA.h.html#q7WsgB">GetTrackSet</a>(<span class="string">"TS"</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbEDA:GetTrackSet" href="src/EdbEDA.h.html#BZxN5B">GetTrackSet</a>(<span class="string">"TS"</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbEDA:GetTrackSet" href="src/EdbEDA.h.html#s96O5">GetTrackSet</a>(<span class="string">"TS"</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbEDA:EdbEDA@4" href="src/EdbEDA.h.html#tXioKD">EdbEDA</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* pvr, <span class="keyword">bool</span> autorun = 1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbEDA:GetTrackSet" href="src/EdbEDA.h.html#yUZHbE">GetTrackSet</a>(<span class="string">"TS"</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbEDA:GetVertexSet" href="src/EdbEDA.h.html#I6QUC">GetVertexSet</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbEDATrackSet.html">EdbEDATrackSet</a> * <a class="funcname" name="EdbEDA:AddTrackSet" href="src/EdbEDA.h.html#tIydZE">AddTrackSet</a>(<span class="keyword">char</span>* name)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDATrackSet.html#EdbEDATrackSet:EdbEDATrackSet" title="EdbEDATrackSet EdbEDATrackSet::EdbEDATrackSet(char* title,TObjArray* EdbTrackPArray=0) or overloads">EdbEDATrackSet</a> *set = <span class="keyword">new</span> <a href="./EdbEDATrackSet.html">EdbEDATrackSet</a>(name); eTrackSets-&gt;Add(set); <span class="keyword">return</span> set;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:AddDrawObject" href="src/EdbEDA.h.html#WVdugD">AddDrawObject</a>(<a href="./EdbEDAObject.html">EdbEDAObject</a>* o)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDA.html#EdbEDA:eDrawObjects" title="TObjArray* EdbEDA::eDrawObjects">eDrawObjects</a>-&gt;Add(o);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:RemoveDrawObject" href="src/EdbEDA.h.html#w.zDwE">RemoveDrawObject</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* o)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDA.html#EdbEDA:eDrawObjects" title="TObjArray* EdbEDA::eDrawObjects">eDrawObjects</a>-&gt;Remove(o); <a href="./EdbEDA.html#EdbEDA:eDrawObjects" title="TObjArray* EdbEDA::eDrawObjects">eDrawObjects</a>-&gt;Sort();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:ClearDrawObjects" href="src/EdbEDA.h.html#ShyDXB">ClearDrawObjects</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDA.html#EdbEDA:eDrawObjects" title="TObjArray* EdbEDA::eDrawObjects">eDrawObjects</a>-&gt;<a href="./#TNamed:Clear" title="void TNamed::Clear(Option_t* option=&quot;&quot;)">Clear</a>();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDA:NDrawObjects" href="src/EdbEDA.h.html#nVOU5C">NDrawObjects</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDA.html#EdbEDA:eDrawObjects" title="TObjArray* EdbEDA::eDrawObjects">eDrawObjects</a>-&gt;GetEntries();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbEDAObject.html">EdbEDAObject</a> * <a class="funcname" name="EdbEDA:GetDrawObject" href="src/EdbEDA.h.html#Rp4JvD">GetDrawObject</a>(<span class="keyword">int</span> i)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> (<a href="./EdbEDAObject.html">EdbEDAObject</a>*) <a href="./EdbEDA.html#EdbEDA:eDrawObjects" title="TObjArray* EdbEDA::eDrawObjects">eDrawObjects</a>-&gt;At(i);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname">TObjArray * <a class="funcname" name="EdbEDA:GetCurrentTracks" href="src/EdbEDA.h.html#DAFy9">GetCurrentTracks</a>(<span class="keyword">void</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TEveElement * <a class="funcname" name="EdbEDA:GetEveElement" href="src/EdbEDA.h.html#BoByAE">GetEveElement</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* t)</span><br />
+<div class="funccomm"><pre> return TEveElement of the track, vertex. if element is not in the Event, return NULL.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDA:NTrackSets" href="src/EdbEDA.h.html#OUhggD">NTrackSets</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDA.html#EdbEDA:eTrackSets" title="TObjArray* EdbEDA::eTrackSets">eTrackSets</a>-&gt;GetEntries();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbEDATrackSet.html">EdbEDATrackSet</a> * <a class="funcname" name="EdbEDA:CreateTrackSet" href="src/EdbEDA.h.html#H.HZaC">CreateTrackSet</a>(<span class="keyword">char</span>* name)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TObjArray * <a class="funcname" name="EdbEDA:GetTrackSets" href="src/EdbEDA.h.html#cVBtk">GetTrackSets</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDA.html#EdbEDA:eTrackSets" title="TObjArray* EdbEDA::eTrackSets">eTrackSets</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:RemoveTrackBase" href="src/EdbEDA.h.html#dHEPRE">RemoveTrackBase</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">for</span>(<span class="keyword">int</span> i=0;i&lt;<a href="./EdbEDA.html#EdbEDA:NTrackSets" title="int EdbEDA::NTrackSets()">NTrackSets</a>();i++) <a href="./EdbEDA.html#EdbEDA:GetTrackSet" title="EdbEDATrackSet* EdbEDA::GetTrackSet(int i) or overloads">GetTrackSet</a>(i)-><a href="./EdbEDATrackSet.html#EdbEDATrackSet:RemoveTrackBase" title="void EdbEDATrackSet::RemoveTrackBase(EdbTrackP* t)">RemoveTrackBase</a>(t);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:RemoveTrack" href="src/EdbEDA.h.html#ySL83">RemoveTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">for</span>(<span class="keyword">int</span> i=0;i&lt;<a href="./EdbEDA.html#EdbEDA:NTrackSets" title="int EdbEDA::NTrackSets()">NTrackSets</a>();i++) <a href="./EdbEDA.html#EdbEDA:GetTrackSet" title="EdbEDATrackSet* EdbEDA::GetTrackSet(int i) or overloads">GetTrackSet</a>(i)-><a href="./EdbEDATrackSet.html#EdbEDATrackSet:RemoveTrack" title="void EdbEDATrackSet::RemoveTrack(EdbTrackP* t)">RemoveTrack</a>(t);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:RemoveSelected" href="src/EdbEDA.h.html#LVn3FC">RemoveSelected</a>()</span><br />
+<div class="funccomm"><pre> remove selected tracks or vertices.
+ to remove vertex, select vertex but not select tracks.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:SetOnlySelected" href="src/EdbEDA.h.html#WN20Z">SetOnlySelected</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbEDA.html#EdbEDA:eVertexSet" title="EdbEDAVertexSet* EdbEDA::eVertexSet">eVertexSet</a>-> <a class="funcname" name="EdbEDA:ClearVertices" href="src/EdbEDA.h.html#Y6hiWB">ClearVertices</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:AddVertex" href="src/EdbEDA.h.html#g_owoD">AddVertex</a>(<a href="./EdbVertex.html">EdbVertex</a>* v)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDA.html#EdbEDA:eVertexSet" title="EdbEDAVertexSet* EdbEDA::eVertexSet">eVertexSet</a>-><a href="./EdbEDAVertexSet.html#EdbEDAVertexSet:AddVertex" title="void EdbEDAVertexSet::AddVertex(EdbVertex* v)">AddVertex</a>(v);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname">TObjArray * <a class="funcname" name="EdbEDA:GetVertices" href="src/EdbEDA.h.html#MJzxpE">GetVertices</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbEDA.html#EdbEDA:eVertexSet" title="EdbEDAVertexSet* EdbEDA::eVertexSet">eVertexSet</a>-><a href="./EdbEDAVertexSet.html#EdbEDAVertexSet:GetVertices" title="TObjArray* EdbEDAVertexSet::GetVertices()">GetVertices</a>();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:DrawVertices" href="src/EdbEDA.h.html#uighoE">DrawVertices</a>(<span class="keyword">int</span> redraw = 0)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDA.html#EdbEDA:eVertexSet" title="EdbEDAVertexSet* EdbEDA::eVertexSet">eVertexSet</a>-><a href="./EdbEDAVertexSet.html#EdbEDAVertexSet:Draw" title="void EdbEDAVertexSet::Draw(int redraw=0)">Draw</a>(redraw);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:SetDrawTrackID" href="src/EdbEDA.h.html#Ns1_sB">SetDrawTrackID</a>(<span class="keyword">bool</span> draw)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">for</span>(<span class="keyword">int</span> i=0;i&lt;<a href="./EdbEDA.html#EdbEDA:NTrackSets" title="int EdbEDA::NTrackSets()">NTrackSets</a>();i++) <a href="./EdbEDA.html#EdbEDA:GetTrackSet" title="EdbEDATrackSet* EdbEDA::GetTrackSet(int i) or overloads">GetTrackSet</a>(i)-><a href="./EdbEDATrackSet.html#EdbEDATrackSet:SetDrawTrackIDG" title="void EdbEDATrackSet::SetDrawTrackIDG(bool draw)">SetDrawTrackIDG</a>(draw);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:SetDrawTrackAngle" href="src/EdbEDA.h.html#EegJQB">SetDrawTrackAngle</a>(<span class="keyword">bool</span> draw)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">for</span>(<span class="keyword">int</span> i=0;i&lt;<a href="./EdbEDA.html#EdbEDA:NTrackSets" title="int EdbEDA::NTrackSets()">NTrackSets</a>();i++) <a href="./EdbEDA.html#EdbEDA:GetTrackSet" title="EdbEDATrackSet* EdbEDA::GetTrackSet(int i) or overloads">GetTrackSet</a>(i)-><a href="./EdbEDATrackSet.html#EdbEDATrackSet:SetDrawTrackAngleG" title="void EdbEDATrackSet::SetDrawTrackAngleG(bool draw)">SetDrawTrackAngleG</a>(draw);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:SetDrawAreaSet" href="src/EdbEDA.h.html#k7IVkD">SetDrawAreaSet</a>(<span class="keyword">bool</span> draw)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">for</span>(<span class="keyword">int</span> i=0;i&lt;<a href="./EdbEDA.html#EdbEDA:NTrackSets" title="int EdbEDA::NTrackSets()">NTrackSets</a>();i++) <a href="./EdbEDA.html#EdbEDA:GetTrackSet" title="EdbEDATrackSet* EdbEDA::GetTrackSet(int i) or overloads">GetTrackSet</a>(i)-><a href="./EdbEDATrackSet.html#EdbEDATrackSet:GetAreaSet" title="EdbEDAAreaSet* EdbEDATrackSet::GetAreaSet()">GetAreaSet</a>()-><a href="./EdbEDAAreaSet.html#EdbEDAAreaSet:SetDrawG" title="void EdbEDAAreaSet::SetDrawG(bool draw)">SetDrawG</a>(draw);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:Redraw" href="src/EdbEDA.h.html#qI4kUC">Redraw</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">if</span>(gEve)<a href="./EdbEDA.html#EdbEDA:Draw" title="void EdbEDA::Draw(int redraw=kFALSE)">Draw</a>(<a href="./ListOfTypes.html#Bool_t">kTRUE</a>);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:UpdateScene" href="src/EdbEDA.h.html#i8iTJC">UpdateScene</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">if</span>(gEve) gEve-&gt;GetDefaultGLViewer()-&gt;<a href="./EdbEDA.html#EdbEDA:UpdateScene" title="void EdbEDA::UpdateScene()">UpdateScene</a>();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:Reset" href="src/EdbEDA.h.html#HoT1I">Reset</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:StorePrevious" href="src/EdbEDA.h.html#dmAPjE">StorePrevious</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:RestorePrevious" href="src/EdbEDA.h.html#PTQKVC">RestorePrevious</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbEDAExtentionSet.html">EdbEDAExtentionSet</a> * <a class="funcname" name="EdbEDA:GetExtentionSet" href="src/EdbEDA.h.html#BhFqgC">GetExtentionSet</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDA.html#EdbEDA:eExt" title="EdbEDAExtentionSet* EdbEDA::eExt">eExt</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:SetLayerLength" href="src/EdbEDA.h.html#vTNZtB">SetLayerLength</a>(<span class="keyword">double</span> layer_length)</span><br />
+<div class="funccomm"><pre> Set LayerLength for all TrackSet.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbEDAMainTab.html">EdbEDAMainTab</a>     * <a class="funcname" name="EdbEDA:GetMainTab" href="src/EdbEDA.h.html#KQzZ9B">GetMainTab</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbEDA.html#EdbEDA:eMainTab" title="EdbEDAMainTab* EdbEDA::eMainTab">eMainTab</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbEDATrackSetTab.html">EdbEDATrackSetTab</a> * <a class="funcname" name="EdbEDA:GetTrackSetTab" href="src/EdbEDA.h.html#NbMumC">GetTrackSetTab</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbEDA.html#EdbEDA:eTrackSetTab" title="EdbEDATrackSetTab* EdbEDA::eTrackSetTab">eTrackSetTab</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbEDAPlotTab.html">EdbEDAPlotTab</a>     * <a class="funcname" name="EdbEDA:GetPlotTab" href="src/EdbEDA.h.html#OZkkhB">GetPlotTab</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbEDA.html#EdbEDA:ePlotTab" title="EdbEDAPlotTab* EdbEDA::ePlotTab">ePlotTab</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbEDAVertexTab.html">EdbEDAVertexTab</a>   * <a class="funcname" name="EdbEDA:GetVertexTab" href="src/EdbEDA.h.html#VJjrdC">GetVertexTab</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbEDA.html#EdbEDA:eVertexTab" title="EdbEDAVertexTab* EdbEDA::eVertexTab">eVertexTab</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbEDAOperationTab.html">EdbEDAOperationTab</a>   * <a class="funcname" name="EdbEDA:GetOperationTab" href="src/EdbEDA.h.html#jiIgOC">GetOperationTab</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbEDA.html#EdbEDA:eOperationTab" title="EdbEDAOperationTab* EdbEDA::eOperationTab">eOperationTab</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbEDADecaySearchTab.html">EdbEDADecaySearchTab</a> * <a class="funcname" name="EdbEDA:GetDSTab" href="src/EdbEDA.h.html#NGWNqB">GetDSTab</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbEDA.html#EdbEDA:eDSTab" title="EdbEDADecaySearchTab* EdbEDA::eDSTab">eDSTab</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbTrackP.html">EdbTrackP</a> * <a class="funcname" name="EdbEDA:CheckScanback" href="src/EdbEDA.h.html#GAYoeB">CheckScanback</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbEDA.html#EdbEDA:GetTrackSet" title="EdbEDATrackSet* EdbEDA::GetTrackSet(int i) or overloads">GetTrackSet</a>(<span class="string">"SB"</span>)-><a href="./EdbEDATrackSet.html#EdbEDATrackSet:FindTrackLast" title="EdbTrackP* EdbEDATrackSet::FindTrackLast(EdbSegP* s,double dx=20,double dt=0.03)">FindTrackLast</a>(t-&gt;GetSegmentLast());}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDA:GetScaleZ" href="src/EdbEDA.h.html#va18FC">GetScaleZ</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDA.html#EdbEDA:eScaleZ" title="double EdbEDA::eScaleZ">eScaleZ</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:SetScaleZ" href="src/EdbEDA.h.html#QqCQaD">SetScaleZ</a>(<span class="keyword">double</span> scale)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDA.html#EdbEDA:eScaleZ" title="double EdbEDA::eScaleZ">eScaleZ</a>=scale;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbEDA:Japanese" href="src/EdbEDA.h.html#xZH5QC">Japanese</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbEDA.html#EdbEDA:eJapanese" title="bool EdbEDA::eJapanese">eJapanese</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDA:SetJapanese" href="src/EdbEDA.h.html#t0YcVC">SetJapanese</a>(<span class="keyword">bool</span> b = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbEDA.html#EdbEDA:eJapanese" title="bool EdbEDA::eJapanese">eJapanese</a> = b;}</code></div>
+<div style="clear:both;"></div>
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:21 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

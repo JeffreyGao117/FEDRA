@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:24 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbEDATrackSelection</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbEDATrackSelection','','EdbEDATrackSet.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbEDATrackSelection.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbEDATrackSelection.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbEDATrackSelection_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbEDATrackSelection:description">class description</a> 
+<a class="descrheadentry" href="#EdbEDATrackSelection:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbEDATrackSelection:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbEDATrackSelection:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbEDATrackSelection</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbEDATrackSelection:description"></a>class EdbEDATrackSelection</h1>
+<div class="classdescr">
+</div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbEDATrackSelection:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:EdbEDATrackSelection">EdbEDATrackSelection</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:EdbEDATrackSelection@1">EdbEDATrackSelection</a>(<span class="keyword">const</span> <a href="./EdbEDATrackSelection.html">EdbEDATrackSelection</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:_EdbEDATrackSelection">~EdbEDATrackSelection</a>()</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:Class">Class</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:DoSelection">DoSelection</a>(TObjArray* tracksbase, TObjArray* tracks)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:GetImpactSearch">GetImpactSearch</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:GetNsegCut">GetNsegCut</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:GetPHCut">GetPHCut</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:GetPHDTRMS">GetPHDTRMS</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbRunTracking.html">EdbRunTracking</a>&amp;</td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:GetRunTracking">GetRunTracking</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:GetSideOutPlate">GetSideOutPlate</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:GetUpstreamPlate">GetUpstreamPlate</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:ImpactSearch">ImpactSearch</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:Neighborhood">Neighborhood</a>(<a href="./EdbSegP.html">EdbSegP</a>* s, <span class="keyword">double</span>* dmin = 0)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDATrackSelection.html">EdbEDATrackSelection</a>&amp;</td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:operator_">operator=</a>(<span class="keyword">const</span> <a href="./EdbEDATrackSelection.html">EdbEDATrackSelection</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:Reset">Reset</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:SetAngle">SetAngle</a>(<span class="keyword">double</span> tx, <span class="keyword">double</span> ty)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:SetAngularCut">SetAngularCut</a>(<span class="keyword">bool</span> b = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:SetClearPrevious">SetClearPrevious</a>(<span class="keyword">bool</span> b = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:SetCondBTDefault">SetCondBTDefault</a>(<a href="./EdbScanCond.html">EdbScanCond</a>&amp; cond)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:SetCondMTDefault">SetCondMTDefault</a>(<a href="./EdbScanCond.html">EdbScanCond</a>&amp; cond)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:SetCondTrackingDefault">SetCondTrackingDefault</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:SetDT">SetDT</a>(<span class="keyword">double</span> dtx, <span class="keyword">double</span> dty = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:SetDX">SetDX</a>(<span class="keyword">double</span> dx)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:SetImpactSearch">SetImpactSearch</a>(<span class="keyword">bool</span> b = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>, <a href="./EdbVertex.html">EdbVertex</a>* v = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:SetNeighborSearch">SetNeighborSearch</a>(<span class="keyword">bool</span> b = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>, TObjArray* selected = 0, <span class="keyword">double</span> dzup = -1, <span class="keyword">double</span> dzdown = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:SetNsegCut">SetNsegCut</a>(<span class="keyword">int</span> nseg)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:SetPHCut">SetPHCut</a>(<span class="keyword">double</span> phcut = 0.0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:SetPHDTRMS">SetPHDTRMS</a>(<span class="keyword">double</span> slope)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:SetRunTracking">SetRunTracking</a>(<a href="./EdbRunTracking.html">EdbRunTracking</a>&amp; rt)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:SetSideOut">SetSideOut</a>(<span class="keyword">bool</span> b = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:SetSideOutPlate">SetSideOutPlate</a>(<span class="keyword">int</span> npl)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:SetUpstreamPlate">SetUpstreamPlate</a>(<span class="keyword">int</span> ipl)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:SideOut">SideOut</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDATrackSelection:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbEDATrackSelection:Data_Members"></a>Data Members</h2>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="data"><td class="datatype"><a href="./EdbRunTracking.html">EdbRunTracking</a></td><td class="dataname"><a name="EdbEDATrackSelection:eRunTracking"></a>eRunTracking</td><td class="datadesc">Run Tracking for microtrack search</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="dataname"><a name="EdbEDATrackSelection:eVertex"></a>eVertex</td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapriv"><b>private:</b>
+<table class="data" id="tabdatapriv" cellspacing="0">
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDATrackSelection:eAngularCut"></a>eAngularCut</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDATrackSelection:eClearPrevious"></a>eClearPrevious</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDATrackSelection:eImpactSearch"></a>eImpactSearch</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="EdbEDATrackSelection:eNeighborDzDown"></a>eNeighborDzDown</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="EdbEDATrackSelection:eNeighborDzUp"></a>eNeighborDzUp</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDATrackSelection:eNeighborSearch"></a>eNeighborSearch</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDATrackSelection:eNsegCut"></a>eNsegCut</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="EdbEDATrackSelection:ePHCut"></a>ePHCut</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="EdbEDATrackSelection:ePHDTRMS"></a>ePHDTRMS</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDATrackSelection:ePlateDown"></a>ePlateDown</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDATrackSelection:ePlateUp"></a>ePlateUp</td><td></td></tr>
+<tr class="data"><td class="datatype">TObjArray*</td><td class="dataname"><a name="EdbEDATrackSelection:eSelected"></a>eSelected</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDATrackSelection:eSideOut"></a>eSideOut</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDATrackSelection:eSideOutPlate"></a>eSideOutPlate</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="EdbEDATrackSelection:eTX"></a>eTX</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="EdbEDATrackSelection:eTY"></a>eTY</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="EdbEDATrackSelection:eTolDTX"></a>eTolDTX</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="EdbEDATrackSelection:eTolDTY"></a>eTolDTY</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="EdbEDATrackSelection:eTolDX"></a>eTolDX</td><td></td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbEDATrackSelection:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td>
+<center><big><b><tt><a name="EdbEDATrackSelection" href="./EdbEDATrackSelection.html">EdbEDATrackSelection</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td>&larr;</td><td><table><tr>
+<td bgcolor="#f7f7f7"><table><tr><td>
+<center><tt><a name="EdbEDATrackSet" href="./EdbEDATrackSet.html">EdbEDATrackSet</a></tt></center></td>
+<td></td>
+</tr></table></td>
+</tr></table></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDATrackSelection:ImpactSearch" href="src/EdbEDATrackSelection.cxx.html#H3Oy2C">ImpactSearch</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</span><br />
+<div class="funccomm"><pre> select nearer segment. vertex or decay (2ry vertex)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDATrackSelection:Neighborhood" href="src/EdbEDATrackSelection.cxx.html#YJJv7">Neighborhood</a>(<a href="./EdbSegP.html">EdbSegP</a>* s, <span class="keyword">double</span>* dmin = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDATrackSelection:SideOut" href="src/EdbEDATrackSelection.cxx.html#RS5ZZB">SideOut</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</span><br />
+<div class="funccomm"><pre> Return 1, if the track goes side-out.
+ - if require 3 scanning area upstream from the 1st segment.
+<a href="./EdbPVRec.html">EdbPVRec</a> *pvr = gEDA-&gt;GetPVR();
+if(pvr==NULL) return 0;
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDATrackSelection:DoSelection" href="src/EdbEDATrackSelection.cxx.html#j9.7VD">DoSelection</a>(TObjArray* tracksbase, TObjArray* tracks)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbEDATrackSelection:EdbEDATrackSelection" href="src/EdbEDATrackSelection.h.html#ScjXzD">EdbEDATrackSelection</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:Reset" title="void EdbEDATrackSelection::Reset()">Reset</a>(); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">virtual</span> <a class="funcname" name="EdbEDATrackSelection:_EdbEDATrackSelection" href="src/EdbEDATrackSelection.h.html#tuFQlC">~EdbEDATrackSelection</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDATrackSelection:Reset" href="src/EdbEDATrackSelection.h.html#HoT1I">Reset</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbEDATrackSelection:SetCondTrackingDefault" href="src/EdbEDATrackSelection.h.html#aZ4YS">SetCondTrackingDefault</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDATrackSelection:SetNsegCut" href="src/EdbEDATrackSelection.h.html#e6yAQE">SetNsegCut</a>(<span class="keyword">int</span> nseg)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eNsegCut" title="int EdbEDATrackSelection::eNsegCut">eNsegCut</a> = nseg;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDATrackSelection:SetUpstreamPlate" href="src/EdbEDATrackSelection.h.html#UOlclB">SetUpstreamPlate</a>(<span class="keyword">int</span> ipl)</span><br />
+<div class="funccomm"><pre><a href="./ListOfTypes.html#void">void</a> SetDownstreamPlate(<a href="./ListOfTypes.html#int">int</a> ipl)    { <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:ePlateUp" title="int EdbEDATrackSelection::ePlateUp">ePlateUp</a> = ipl;}
+</pre></div>
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:ePlateUp" title="int EdbEDATrackSelection::ePlateUp">ePlateUp</a> = ipl;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDATrackSelection:SetImpactSearch" href="src/EdbEDATrackSelection.h.html#hmAHqD">SetImpactSearch</a>(<span class="keyword">bool</span> b = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>, <a href="./EdbVertex.html">EdbVertex</a>* v = 0)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eImpactSearch" title="int EdbEDATrackSelection::eImpactSearch">eImpactSearch</a> = b; <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eVertex" title="EdbVertex* EdbEDATrackSelection::eVertex">eVertex</a> = v;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDATrackSelection:SetNeighborSearch" href="src/EdbEDATrackSelection.h.html#KHtduD">SetNeighborSearch</a>(<span class="keyword">bool</span> b = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>, TObjArray* selected = 0, <span class="keyword">double</span> dzup = -1, <span class="keyword">double</span> dzdown = -1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDATrackSelection:SetSideOut" href="src/EdbEDATrackSelection.h.html#dIrHH">SetSideOut</a>(<span class="keyword">bool</span> b = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eSideOut" title="int EdbEDATrackSelection::eSideOut">eSideOut</a> = b;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDATrackSelection:SetSideOutPlate" href="src/EdbEDATrackSelection.h.html#g8a0BC">SetSideOutPlate</a>(<span class="keyword">int</span> npl)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eSideOutPlate" title="int EdbEDATrackSelection::eSideOutPlate">eSideOutPlate</a> = npl;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDATrackSelection:SetAngularCut" href="src/EdbEDATrackSelection.h.html#dIXXlE">SetAngularCut</a>(<span class="keyword">bool</span> b = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eAngularCut" title="int EdbEDATrackSelection::eAngularCut">eAngularCut</a> = b;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDATrackSelection:SetDX" href="src/EdbEDATrackSelection.h.html#TTCPjB">SetDX</a>(<span class="keyword">double</span> dx)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eTolDX" title="double EdbEDATrackSelection::eTolDX">eTolDX</a>=dx;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDATrackSelection:SetDT" href="src/EdbEDATrackSelection.h.html#uUFRU">SetDT</a>(<span class="keyword">double</span> dtx, <span class="keyword">double</span> dty = -1)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eTolDTX" title="double EdbEDATrackSelection::eTolDTX">eTolDTX</a>=dtx; <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eTolDTY" title="double EdbEDATrackSelection::eTolDTY">eTolDTY</a>=dty; <span class="keyword">if</span>(<a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eTolDTY" title="double EdbEDATrackSelection::eTolDTY">eTolDTY</a>&lt;0) <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eTolDTY" title="double EdbEDATrackSelection::eTolDTY">eTolDTY</a>=<a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eTolDTX" title="double EdbEDATrackSelection::eTolDTX">eTolDTX</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDATrackSelection:SetAngle" href="src/EdbEDATrackSelection.h.html#eya8sD">SetAngle</a>(<span class="keyword">double</span> tx, <span class="keyword">double</span> ty)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eTX" title="double EdbEDATrackSelection::eTX">eTX</a>=tx; <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eTY" title="double EdbEDATrackSelection::eTY">eTY</a>=ty;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDATrackSelection:SetClearPrevious" href="src/EdbEDATrackSelection.h.html#shRWvB">SetClearPrevious</a>(<span class="keyword">bool</span> b = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eClearPrevious" title="int EdbEDATrackSelection::eClearPrevious">eClearPrevious</a> = b;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDATrackSelection:SetPHCut" href="src/EdbEDATrackSelection.h.html#zAiXc">SetPHCut</a>(<span class="keyword">double</span> phcut = 0.0)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:ePHCut" title="double EdbEDATrackSelection::ePHCut">ePHCut</a>=phcut;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDATrackSelection:SetPHDTRMS" href="src/EdbEDATrackSelection.h.html#IhkOsE">SetPHDTRMS</a>(<span class="keyword">double</span> slope)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:ePHDTRMS" title="double EdbEDATrackSelection::ePHDTRMS">ePHDTRMS</a>=slope;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbEDATrackSelection:GetImpactSearch" href="src/EdbEDATrackSelection.h.html#yVKfd">GetImpactSearch</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eImpactSearch" title="int EdbEDATrackSelection::eImpactSearch">eImpactSearch</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDATrackSelection:GetUpstreamPlate" href="src/EdbEDATrackSelection.h.html#oUC2MB">GetUpstreamPlate</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:ePlateUp" title="int EdbEDATrackSelection::ePlateUp">ePlateUp</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDATrackSelection:GetNsegCut" href="src/EdbEDATrackSelection.h.html#TNwxYD">GetNsegCut</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eNsegCut" title="int EdbEDATrackSelection::eNsegCut">eNsegCut</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDATrackSelection:GetPHCut" href="src/EdbEDATrackSelection.h.html#cAbjfC">GetPHCut</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:ePHCut" title="double EdbEDATrackSelection::ePHCut">ePHCut</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDATrackSelection:GetPHDTRMS" href="src/EdbEDATrackSelection.h.html#ESftTD">GetPHDTRMS</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:ePHDTRMS" title="double EdbEDATrackSelection::ePHDTRMS">ePHDTRMS</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDATrackSelection:GetSideOutPlate" href="src/EdbEDATrackSelection.h.html#Z09N5E">GetSideOutPlate</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eSideOutPlate" title="int EdbEDATrackSelection::eSideOutPlate">eSideOutPlate</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDATrackSelection:SetRunTracking" href="src/EdbEDATrackSelection.h.html#GPNgrD">SetRunTracking</a>(<a href="./EdbRunTracking.html">EdbRunTracking</a>&amp; rt)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eRunTracking" title="EdbRunTracking EdbEDATrackSelection::eRunTracking">eRunTracking</a>=rt;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbRunTracking.html">EdbRunTracking</a> &amp; <a class="funcname" name="EdbEDATrackSelection:GetRunTracking" href="src/EdbEDATrackSelection.h.html#ePlwiB">GetRunTracking</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDATrackSelection.html#EdbEDATrackSelection:eRunTracking" title="EdbRunTracking EdbEDATrackSelection::eRunTracking">eRunTracking</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbEDATrackSelection:SetCondMTDefault" href="src/EdbEDATrackSelection.h.html#ewRiwC">SetCondMTDefault</a>(<a href="./EdbScanCond.html">EdbScanCond</a>&amp; cond)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbEDATrackSelection:SetCondBTDefault" href="src/EdbEDATrackSelection.h.html#ewRiwC">SetCondBTDefault</a>(<a href="./EdbScanCond.html">EdbScanCond</a>&amp; cond)</span><br />
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:24 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

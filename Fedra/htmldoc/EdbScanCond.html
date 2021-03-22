@@ -1,0 +1,526 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:31 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbScanCond</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbScanCond','','EdbScanCond.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbScanCond.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbScanCond.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbScanCond_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbScanCond:description">class description</a> 
+<a class="descrheadentry" href="#EdbScanCond:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbScanCond:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbScanCond:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbScanCond</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbScanCond:description"></a>class EdbScanCond: public TNamed</h1>
+<div class="classdescr">
+</div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbScanCond:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbScanCond:EdbScanCond">EdbScanCond</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbScanCond:EdbScanCond@1">EdbScanCond</a>(<span class="keyword">const</span> <a href="./EdbScanCond.html">EdbScanCond</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbScanCond:_EdbScanCond">~EdbScanCond</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:BinTX">BinTX</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:BinTY">BinTY</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:BinX">BinX</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:BinY">BinY</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(TBrowser* b)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:Chi2Max">Chi2Max</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:Chi2Mode">Chi2Mode</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:Chi2PMax">Chi2PMax</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbScanCond:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:Clear"><span class="baseclass">TNamed::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TNamed:Clone"><span class="baseclass">TNamed::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TNamed:Compare"><span class="baseclass">TNamed::</span>Compare</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:Copy"><span class="baseclass">TNamed::</span>Copy</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp; named) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:DefineLLFunction">DefineLLFunction</a>(<span class="keyword">const</span> <span class="keyword">char</span>* str)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:Degrad">Degrad</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(TMethod* method, TObjArray* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:FillBuffer"><span class="baseclass">TNamed::</span>FillBuffer</a>(<span class="keyword">char</span>*&amp; buffer)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:FillErrorsCov">FillErrorsCov</a>(<span class="keyword">float</span> tx, <span class="keyword">float</span> ty, <a href="./ListOfTypes.html#TMatrixD">TMatrixD</a>&amp; cov)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TNamed:GetName"><span class="baseclass">TNamed::</span>GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TNamed:GetTitle"><span class="baseclass">TNamed::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(TTimer* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="#TNamed:Hash"><span class="baseclass">TNamed::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> TClass* cl) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbScanCond:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TNamed:IsSortable"><span class="baseclass">TNamed::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:ls"><span class="baseclass">TNamed::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:OffX">OffX</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:OffY">OffY</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbScanCond.html">EdbScanCond</a>&amp;</td><td class="funcname"><a class="funcname" href="#EdbScanCond:operator_">operator=</a>(<span class="keyword">const</span> <a href="./EdbScanCond.html">EdbScanCond</a>&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:Print">Print</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:ProbLL@1">ProbLL</a>(<span class="keyword">float</span> t, <span class="keyword">float</span> puls) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:ProbLL">ProbLL</a>(<span class="keyword">float</span> tx, <span class="keyword">float</span> ty, <span class="keyword">float</span> puls) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:ProbSeg@1">ProbSeg</a>(<span class="keyword">float</span> t, <span class="keyword">float</span> puls) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:ProbSeg">ProbSeg</a>(<span class="keyword">float</span> tx, <span class="keyword">float</span> ty, <span class="keyword">float</span> puls) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:RadX0">RadX0</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:Ramp">Ramp</a>(<span class="keyword">float</span> x, <span class="keyword">float</span> x1, <span class="keyword">float</span> x2) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SetBins">SetBins</a>(<span class="keyword">float</span> bx, <span class="keyword">float</span> by, <span class="keyword">float</span> btx, <span class="keyword">float</span> bty)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SetChi2Max">SetChi2Max</a>(<span class="keyword">float</span> chi2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SetChi2Mode">SetChi2Mode</a>(<span class="keyword">int</span> mode)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SetChi2PMax">SetChi2PMax</a>(<span class="keyword">float</span> chi2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SetDefault">SetDefault</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SetDegrad">SetDegrad</a>(<span class="keyword">float</span> d)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:SetName"><span class="baseclass">TNamed::</span>SetName</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:SetNameTitle"><span class="baseclass">TNamed::</span>SetNameTitle</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* title)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SetOffset">SetOffset</a>(<span class="keyword">float</span> x, <span class="keyword">float</span> y)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SetPulsRamp0@1">SetPulsRamp0</a>(<span class="keyword">const</span> <span class="keyword">char</span>* str)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SetPulsRamp0">SetPulsRamp0</a>(<span class="keyword">float</span> p1, <span class="keyword">float</span> p2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SetPulsRamp04@1">SetPulsRamp04</a>(<span class="keyword">const</span> <span class="keyword">char</span>* str)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SetPulsRamp04">SetPulsRamp04</a>(<span class="keyword">float</span> p1, <span class="keyword">float</span> p2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SetRadX0">SetRadX0</a>(<span class="keyword">float</span> x0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SetSigma0@1">SetSigma0</a>(<span class="keyword">const</span> <span class="keyword">char</span>* str)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SetSigma0">SetSigma0</a>(<span class="keyword">float</span> x, <span class="keyword">float</span> y, <span class="keyword">float</span> tx, <span class="keyword">float</span> ty)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SetSigmaGR">SetSigmaGR</a>(<span class="keyword">float</span> sx, <span class="keyword">float</span> sy, <span class="keyword">float</span> sz)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SetSigmaZ0">SetSigmaZ0</a>(<span class="keyword">float</span> z)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:SetTitle"><span class="baseclass">TNamed::</span>SetTitle</a>(<span class="keyword">const</span> <span class="keyword">char</span>* title = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SigmaTX">SigmaTX</a>(<span class="keyword">float</span> ax) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SigmaTXf">SigmaTXf</a>(<span class="keyword">float</span> ax) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SigmaTY">SigmaTY</a>(<span class="keyword">float</span> ay) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SigmaTYf">SigmaTYf</a>(<span class="keyword">float</span> ay) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SigmaX">SigmaX</a>(<span class="keyword">float</span> ax) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SigmaXgr">SigmaXgr</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SigmaY">SigmaY</a>(<span class="keyword">float</span> ay) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SigmaYgr">SigmaYgr</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SigmaZ">SigmaZ</a>(<span class="keyword">float</span> ax, <span class="keyword">float</span> ay) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:SigmaZgr">SigmaZgr</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TNamed:Sizeof"><span class="baseclass">TNamed::</span>Sizeof</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:StepTX">StepTX</a>(<span class="keyword">float</span> tx) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:StepTY">StepTY</a>(<span class="keyword">float</span> ty) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:StepX">StepX</a>(<span class="keyword">float</span> dz) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:StepY">StepY</a>(<span class="keyword">float</span> dz) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanCond:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, va_list va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbScanCond:Data_Members"></a>Data Members</h2>
+<div class="access" id="enumpubl"><b>public:</b>
+<table class="data" id="tabenumpubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span>EStatusBits { </td><td class="dataname"><a href="#TObject:kCanDelete">kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kMustCleanup">kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kObjInCanvas">kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kIsReferenced">kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kHasUUID">kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kCannotPick">kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNoContextMenu">kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kInvalidObject">kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span><i>[unnamed]</i> { </td><td class="dataname"><a href="#TObject:kIsOnHeap">kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNotDeleted">kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kZombie">kZombie</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kBitMask">kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kSingleKey">kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kOverwrite">kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kWriteDelete">kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="data"><td class="datatype">TF1*</td><td class="dataname"><a name="EdbScanCond:eLikelihoodMT"></a>eLikelihoodMT</td><td class="datadesc">the likelihood function used for microtrack probablility estimation</td></tr>
+
+</table></div>
+<div class="access" id="dataprot"><b>protected:</b>
+<table class="data" id="tabdataprot" cellspacing="0">
+<tr class="datainh"><td class="datatype">TString</td><td class="dataname"><a href="#TNamed:fName"><span class="baseclass">TNamed::</span>fName</a></td><td class="datadesc">object identifier</td></tr>
+<tr class="datainh"><td class="datatype">TString</td><td class="dataname"><a href="#TNamed:fTitle"><span class="baseclass">TNamed::</span>fTitle</a></td><td class="datadesc">object title</td></tr>
+
+</table></div>
+<div class="access" id="datapriv"><b>private:</b>
+<table class="data" id="tabdatapriv" cellspacing="0">
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:eBinTX"></a>eBinTX</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:eBinTY"></a>eBinTY</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:eBinX"></a>eBinX</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:eBinY"></a>eBinY</td><td class="datadesc">bins [normalized to Sigma()]</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:eChi2Max"></a>eChi2Max</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbScanCond:eChi2Mode"></a>eChi2Mode</td><td class="datadesc">mode of coupling chi2 calculation (default is 0)</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:eChi2PMax"></a>eChi2PMax</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:eDegrad"></a>eDegrad</td><td class="datadesc">angular degradation of parameters: S = S0*(1 + eDegrad*Ang)</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:eOffX"></a>eOffX</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:eOffY"></a>eOffY</td><td class="datadesc">maximal offsets in x and y - the accuracy of pattern </td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:ePuls0"></a>ePuls0[2]</td><td class="datadesc">signal/all is parametrised as linear in range Pmin,Pmax</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:ePuls04"></a>ePuls04[2]</td><td class="datadesc">- at angle .4 rad</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:eRadX0"></a>eRadX0</td><td class="datadesc">radiation length for ECC media [microns]</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:eSigmaTX0"></a>eSigmaTX0</td><td class="datadesc">["rad"]</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:eSigmaTY0"></a>eSigmaTY0</td><td class="datadesc">["rad"]</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:eSigmaX0"></a>eSigmaX0</td><td class="datadesc">[microns]  Parameters at 0 angle</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:eSigmaXgr"></a>eSigmaXgr</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:eSigmaY0"></a>eSigmaY0</td><td class="datadesc">[microns]  SigmaX = S0*(1+eDegrad*Ax)</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:eSigmaYgr"></a>eSigmaYgr</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:eSigmaZ0"></a>eSigmaZ0</td><td class="datadesc">z - uncertancy</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbScanCond:eSigmaZgr"></a>eSigmaZgr</td><td></td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbScanCond:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td><table><tr>
+<td bgcolor="#f7f7f7" align="right">
+<tt>TNamed</tt></td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><big><b><tt><a name="EdbScanCond" href="./EdbScanCond.html">EdbScanCond</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbScanCond:EdbScanCond" href="src/EdbScanCond.cxx.html#Hl4O0B">EdbScanCond</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanCond:SetDefault" href="src/EdbScanCond.cxx.html#k68WjE">SetDefault</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanCond:Print" href="src/EdbScanCond.cxx.html#bsVkaB">Print</a>() const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanCond:SetPulsRamp0@1" href="src/EdbScanCond.cxx.html#aNbVqD">SetPulsRamp0</a>(<span class="keyword">const</span> <span class="keyword">char</span>* str)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanCond:SetPulsRamp04@1" href="src/EdbScanCond.cxx.html#kw2BiE">SetPulsRamp04</a>(<span class="keyword">const</span> <span class="keyword">char</span>* str)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanCond:SetSigma0@1" href="src/EdbScanCond.cxx.html#aOdgAE">SetSigma0</a>(<span class="keyword">const</span> <span class="keyword">char</span>* str)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:StepX" href="src/EdbScanCond.cxx.html#u6IOH">StepX</a>(<span class="keyword">float</span> dz) const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:StepY" href="src/EdbScanCond.cxx.html#GsHOH">StepY</a>(<span class="keyword">float</span> dz) const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:Ramp" href="src/EdbScanCond.cxx.html#qt88SB">Ramp</a>(<span class="keyword">float</span> x, <span class="keyword">float</span> x1, <span class="keyword">float</span> x2) const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:ProbSeg" href="src/EdbScanCond.cxx.html#cK3.ID">ProbSeg</a>(<span class="keyword">float</span> tx, <span class="keyword">float</span> ty, <span class="keyword">float</span> puls) const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:ProbSeg@1" href="src/EdbScanCond.cxx.html#P2EMJC">ProbSeg</a>(<span class="keyword">float</span> t, <span class="keyword">float</span> puls) const</span><br />
+<div class="funccomm"><pre> use linear puls ramp approximation
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanCond:DefineLLFunction" href="src/EdbScanCond.cxx.html#VkjBuC">DefineLLFunction</a>(<span class="keyword">const</span> <span class="keyword">char</span>* str)</span><br />
+<div class="funccomm"><pre>get polinomial function parameters
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:ProbLL" href="src/EdbScanCond.cxx.html#qmFg1E">ProbLL</a>(<span class="keyword">float</span> tx, <span class="keyword">float</span> ty, <span class="keyword">float</span> puls) const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:ProbLL@1" href="src/EdbScanCond.cxx.html#fMcXBC">ProbLL</a>(<span class="keyword">float</span> t, <span class="keyword">float</span> puls) const</span><br />
+<div class="funccomm"><pre> use <a href="./EdbScanCond.html#EdbScanCond:eLikelihoodMT" title="TF1* EdbScanCond::eLikelihoodMT">eLikelihoodMT</a> function
+ TODO: to make this function statistically correct
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanCond:FillErrorsCov" href="src/EdbScanCond.cxx.html#Tbc8tD">FillErrorsCov</a>(<span class="keyword">float</span> tx, <span class="keyword">float</span> ty, <a href="./ListOfTypes.html#TMatrixD">TMatrixD</a>&amp; cov)</span><br />
+<div class="funccomm"><pre> Fill the non-diagonal covariance matrix of errors for the segment with angles tx,ty
+ considering the input sigma being in the track plane (Y - is transversal axis)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbScanCond:EdbScanCond" href="src/EdbScanCond.h.html#GzOInC">EdbScanCond</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">virtual</span> <a class="funcname" name="EdbScanCond:_EdbScanCond" href="src/EdbScanCond.h.html#R.f.TD">~EdbScanCond</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanCond:SetRadX0" href="src/EdbScanCond.h.html#ZA320D">SetRadX0</a>(<span class="keyword">float</span> x0)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbScanCond.html#EdbScanCond:eRadX0" title="Float_t EdbScanCond::eRadX0">eRadX0</a>=x0;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:RadX0" href="src/EdbScanCond.h.html#Tq45zE">RadX0</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eRadX0" title="Float_t EdbScanCond::eRadX0">eRadX0</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanCond:SetSigmaGR" href="src/EdbScanCond.h.html#YfWZjE">SetSigmaGR</a>(<span class="keyword">float</span> sx, <span class="keyword">float</span> sy, <span class="keyword">float</span> sz)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbScanCond.html#EdbScanCond:eSigmaXgr" title="Float_t EdbScanCond::eSigmaXgr">eSigmaXgr</a>=sx;  <a href="./EdbScanCond.html#EdbScanCond:eSigmaYgr" title="Float_t EdbScanCond::eSigmaYgr">eSigmaYgr</a>=sy;  <a href="./EdbScanCond.html#EdbScanCond:eSigmaZgr" title="Float_t EdbScanCond::eSigmaZgr">eSigmaZgr</a>=sz; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanCond:SetSigma0" href="src/EdbScanCond.h.html#fkOdTD">SetSigma0</a>(<span class="keyword">float</span> x, <span class="keyword">float</span> y, <span class="keyword">float</span> tx, <span class="keyword">float</span> ty)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbScanCond.html#EdbScanCond:eSigmaX0" title="Float_t EdbScanCond::eSigmaX0">eSigmaX0</a>=x;  <a href="./EdbScanCond.html#EdbScanCond:eSigmaY0" title="Float_t EdbScanCond::eSigmaY0">eSigmaY0</a>=y;  <a href="./EdbScanCond.html#EdbScanCond:eSigmaTX0" title="Float_t EdbScanCond::eSigmaTX0">eSigmaTX0</a>=tx;  <a href="./EdbScanCond.html#EdbScanCond:eSigmaTY0" title="Float_t EdbScanCond::eSigmaTY0">eSigmaTY0</a>=ty;  }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanCond:SetBins" href="src/EdbScanCond.h.html#BnYTYC">SetBins</a>(<span class="keyword">float</span> bx, <span class="keyword">float</span> by, <span class="keyword">float</span> btx, <span class="keyword">float</span> bty)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbScanCond.html#EdbScanCond:eBinX" title="Float_t EdbScanCond::eBinX">eBinX</a>=bx; <a href="./EdbScanCond.html#EdbScanCond:eBinY" title="Float_t EdbScanCond::eBinY">eBinY</a>=by; <a href="./EdbScanCond.html#EdbScanCond:eBinTX" title="Float_t EdbScanCond::eBinTX">eBinTX</a>=btx; <a href="./EdbScanCond.html#EdbScanCond:eBinTY" title="Float_t EdbScanCond::eBinTY">eBinTY</a>=bty; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanCond:SetOffset" href="src/EdbScanCond.h.html#vajrIB">SetOffset</a>(<span class="keyword">float</span> x, <span class="keyword">float</span> y)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbScanCond.html#EdbScanCond:eOffX" title="Float_t EdbScanCond::eOffX">eOffX</a>=x; <a href="./EdbScanCond.html#EdbScanCond:eOffY" title="Float_t EdbScanCond::eOffY">eOffY</a>=y;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:OffX" href="src/EdbScanCond.h.html#WvpNJC">OffX</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eOffX" title="Float_t EdbScanCond::eOffX">eOffX</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:OffY" href="src/EdbScanCond.h.html#CYC1hB">OffY</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eOffY" title="Float_t EdbScanCond::eOffY">eOffY</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanCond:SetDegrad" href="src/EdbScanCond.h.html#VCfWDE">SetDegrad</a>(<span class="keyword">float</span> d)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbScanCond.html#EdbScanCond:eDegrad" title="Float_t EdbScanCond::eDegrad">eDegrad</a>=d;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanCond:SetSigmaZ0" href="src/EdbScanCond.h.html#rbwHPD">SetSigmaZ0</a>(<span class="keyword">float</span> z)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbScanCond.html#EdbScanCond:eSigmaZ0" title="Float_t EdbScanCond::eSigmaZ0">eSigmaZ0</a>=z;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanCond:SetPulsRamp0" href="src/EdbScanCond.h.html#GoUPaB">SetPulsRamp0</a>(<span class="keyword">float</span> p1, <span class="keyword">float</span> p2)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbScanCond.html#EdbScanCond:ePuls0" title="Float_t EdbScanCond::ePuls0">ePuls0</a>[0]=p1; <a href="./EdbScanCond.html#EdbScanCond:ePuls0" title="Float_t EdbScanCond::ePuls0">ePuls0</a>[1]=p2;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanCond:SetPulsRamp04" href="src/EdbScanCond.h.html#OFc.cB">SetPulsRamp04</a>(<span class="keyword">float</span> p1, <span class="keyword">float</span> p2)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbScanCond.html#EdbScanCond:ePuls04" title="Float_t EdbScanCond::ePuls04">ePuls04</a>[0]=p1; <a href="./EdbScanCond.html#EdbScanCond:ePuls04" title="Float_t EdbScanCond::ePuls04">ePuls04</a>[1]=p2;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:BinX" href="src/EdbScanCond.h.html#JhZSZ">BinX</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eBinX" title="Float_t EdbScanCond::eBinX">eBinX</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:BinY" href="src/EdbScanCond.h.html#F2FSZ">BinY</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eBinY" title="Float_t EdbScanCond::eBinY">eBinY</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:BinTX" href="src/EdbScanCond.h.html#E0FQYC">BinTX</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eBinTX" title="Float_t EdbScanCond::eBinTX">eBinTX</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:BinTY" href="src/EdbScanCond.h.html#E0AQYC">BinTY</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eBinTY" title="Float_t EdbScanCond::eBinTY">eBinTY</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanCond:SetChi2Max" href="src/EdbScanCond.h.html#RL9GxB">SetChi2Max</a>(<span class="keyword">float</span> chi2)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbScanCond.html#EdbScanCond:eChi2Max" title="Float_t EdbScanCond::eChi2Max">eChi2Max</a>=chi2;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanCond:SetChi2PMax" href="src/EdbScanCond.h.html#Ca793E">SetChi2PMax</a>(<span class="keyword">float</span> chi2)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbScanCond.html#EdbScanCond:eChi2PMax" title="Float_t EdbScanCond::eChi2PMax">eChi2PMax</a>=chi2;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:Chi2Max" href="src/EdbScanCond.h.html#D3Q_bE">Chi2Max</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eChi2Max" title="Float_t EdbScanCond::eChi2Max">eChi2Max</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:Chi2PMax" href="src/EdbScanCond.h.html#O1GBhB">Chi2PMax</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eChi2PMax" title="Float_t EdbScanCond::eChi2PMax">eChi2PMax</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanCond:SetChi2Mode" href="src/EdbScanCond.h.html#GIswJD">SetChi2Mode</a>(<span class="keyword">int</span> mode)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbScanCond.html#EdbScanCond:eChi2Mode" title="Int_t EdbScanCond::eChi2Mode">eChi2Mode</a>=mode;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanCond:Chi2Mode" href="src/EdbScanCond.h.html#LEETjE">Chi2Mode</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eChi2Mode" title="Int_t EdbScanCond::eChi2Mode">eChi2Mode</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:StepTX" href="src/EdbScanCond.h.html#PegxZ">StepTX</a>(<span class="keyword">float</span> tx) const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:BinTX" title="float EdbScanCond::BinTX()">BinTX</a>()*<a href="./EdbScanCond.html#EdbScanCond:SigmaTX" title="float EdbScanCond::SigmaTX(float ax)">SigmaTX</a>(tx); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:StepTY" href="src/EdbScanCond.h.html#rTqPc">StepTY</a>(<span class="keyword">float</span> ty) const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:BinTY" title="float EdbScanCond::BinTY()">BinTY</a>()*<a href="./EdbScanCond.html#EdbScanCond:SigmaTY" title="float EdbScanCond::SigmaTY(float ay)">SigmaTY</a>(ty); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:SigmaXgr" href="src/EdbScanCond.h.html#fZgXH">SigmaXgr</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eSigmaXgr" title="Float_t EdbScanCond::eSigmaXgr">eSigmaXgr</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:SigmaYgr" href="src/EdbScanCond.h.html#DZgXH">SigmaYgr</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eSigmaYgr" title="Float_t EdbScanCond::eSigmaYgr">eSigmaYgr</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:SigmaZgr" href="src/EdbScanCond.h.html#zagXH">SigmaZgr</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eSigmaZgr" title="Float_t EdbScanCond::eSigmaZgr">eSigmaZgr</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:Degrad" href="src/EdbScanCond.h.html#OYmHwC">Degrad</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eDegrad" title="Float_t EdbScanCond::eDegrad">eDegrad</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:SigmaX" href="src/EdbScanCond.h.html#Vul5qC">SigmaX</a>(<span class="keyword">float</span> ax) const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eSigmaX0" title="Float_t EdbScanCond::eSigmaX0">eSigmaX0</a>*(1. + TMath::Abs(ax)*<a href="./EdbScanCond.html#EdbScanCond:eDegrad" title="Float_t EdbScanCond::eDegrad">eDegrad</a>); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:SigmaY" href="src/EdbScanCond.h.html#tAyWN">SigmaY</a>(<span class="keyword">float</span> ay) const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eSigmaY0" title="Float_t EdbScanCond::eSigmaY0">eSigmaY0</a>*(1. + TMath::Abs(ay)*<a href="./EdbScanCond.html#EdbScanCond:eDegrad" title="Float_t EdbScanCond::eDegrad">eDegrad</a>); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:SigmaZ" href="src/EdbScanCond.h.html#aOvD9D">SigmaZ</a>(<span class="keyword">float</span> ax, <span class="keyword">float</span> ay) const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eSigmaZ0" title="Float_t EdbScanCond::eSigmaZ0">eSigmaZ0</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:SigmaTX" href="src/EdbScanCond.h.html#VtGFMC">SigmaTX</a>(<span class="keyword">float</span> ax) const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eSigmaTX0" title="Float_t EdbScanCond::eSigmaTX0">eSigmaTX0</a>*(1. + TMath::Abs(ax)*<a href="./EdbScanCond.html#EdbScanCond:eDegrad" title="Float_t EdbScanCond::eDegrad">eDegrad</a>); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:SigmaTY" href="src/EdbScanCond.h.html#xiQRMC">SigmaTY</a>(<span class="keyword">float</span> ay) const</span><br />
+<div class="funccomm"><pre> full functions for sigmaTX(TX) - use them for simulation
+</pre></div>
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eSigmaTY0" title="Float_t EdbScanCond::eSigmaTY0">eSigmaTY0</a>*(1. + TMath::Abs(ay)*<a href="./EdbScanCond.html#EdbScanCond:eDegrad" title="Float_t EdbScanCond::eDegrad">eDegrad</a>); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:SigmaTXf" href="src/EdbScanCond.h.html#CknaE">SigmaTXf</a>(<span class="keyword">float</span> ax) const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eSigmaTX0" title="Float_t EdbScanCond::eSigmaTX0">eSigmaTX0</a>*TMath::Sqrt(1. + ax*ax*<a href="./EdbScanCond.html#EdbScanCond:eDegrad" title="Float_t EdbScanCond::eDegrad">eDegrad</a>*<a href="./EdbScanCond.html#EdbScanCond:eDegrad" title="Float_t EdbScanCond::eDegrad">eDegrad</a>); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbScanCond:SigmaTYf" href="src/EdbScanCond.h.html#qaxefC">SigmaTYf</a>(<span class="keyword">float</span> ay) const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbScanCond.html#EdbScanCond:eSigmaTY0" title="Float_t EdbScanCond::eSigmaTY0">eSigmaTY0</a>*TMath::Sqrt(1. + ay*ay*<a href="./EdbScanCond.html#EdbScanCond:eDegrad" title="Float_t EdbScanCond::eDegrad">eDegrad</a>*<a href="./EdbScanCond.html#EdbScanCond:eDegrad" title="Float_t EdbScanCond::eDegrad">eDegrad</a>); }</code></div>
+<div style="clear:both;"></div>
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:31 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

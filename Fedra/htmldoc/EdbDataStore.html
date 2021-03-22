@@ -1,0 +1,440 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:20 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbDataStore</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbDataStore','','EdbDataStore.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbDataStore.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbDataStore.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbDataStore_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbDataStore:description">class description</a> 
+<a class="descrheadentry" href="#EdbDataStore:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbDataStore:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbDataStore:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbDataStore</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbDataStore:description"></a>class EdbDataStore: public TObject</h1>
+<div class="classdescr">
+</div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbDataStore:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbDataStore:EdbDataStore">EdbDataStore</a>()</td></tr>
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbDataStore:_EdbDataStore">~EdbDataStore</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:AddPattern">AddPattern</a>(<a href="./EdbPattern.html">EdbPattern</a>* pat)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbSegP.html">EdbSegP</a>*</td><td class="funcname"><a class="funcname" href="#EdbDataStore:AddSegment">AddSegment</a>(<a href="./EdbSegP.html">EdbSegP</a>* seg, <a href="./EdbSegmentCut.html">EdbSegmentCut</a>* cut = 0, <span class="keyword">int</span> Plt0 = 0, <span class="keyword">int</span> Plt1 = 100)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:AddTrack">AddTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* tr)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:AddVertex">AddVertex</a>(<a href="./EdbVertex.html">EdbVertex</a>* v)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(TBrowser* b)</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbDataStore:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:Clear">Clear</a>(<span class="keyword">bool</span> hard = <span class="keyword">false</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:ClearGeom">ClearGeom</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:ClearRaw">ClearRaw</a>(<span class="keyword">bool</span> hard = <span class="keyword">false</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:ClearSeg">ClearSeg</a>(<span class="keyword">bool</span> hard = <span class="keyword">false</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:ClearTracks">ClearTracks</a>(<span class="keyword">bool</span> hard = <span class="keyword">false</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:ClearVTX">ClearVTX</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:Clone"><span class="baseclass">TObject::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Compare"><span class="baseclass">TObject::</span>Compare</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Copy"><span class="baseclass">TObject::</span>Copy</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp; object) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:DoEfficiency">DoEfficiency</a>(TF1* eff_seg, TF1* eff_mtk)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:DoSmearing">DoSmearing</a>(<a href="./EdbScanCond.html">EdbScanCond</a>* cond_btk, <a href="./EdbScanCond.html">EdbScanCond</a>* cond_mtk = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(TMethod* method, TObjArray* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbLayer.html">EdbLayer</a>*</td><td class="funcname"><a class="funcname" href="#EdbDataStore:FindLayer">FindLayer</a>(<span class="keyword">int</span> plate, <span class="keyword">int</span> side = 0)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbTrackP.html">EdbTrackP</a>*</td><td class="funcname"><a class="funcname" href="#EdbDataStore:FindLongTrk">FindLongTrk</a>(<span class="keyword">int</span> nsmin = 8)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPattern.html">EdbPattern</a>*</td><td class="funcname"><a class="funcname" href="#EdbDataStore:FindPattern">FindPattern</a>(<span class="keyword">int</span> plate, <span class="keyword">int</span> side = 0)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="funcname"><a class="funcname" href="#EdbDataStore:FindPrimVtx">FindPrimVtx</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbTrackP.html">EdbTrackP</a>*</td><td class="funcname"><a class="funcname" href="#EdbDataStore:FindTrack">FindTrack</a>(<span class="keyword">int</span> id)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="funcname"><a class="funcname" href="#EdbDataStore:FindVertex">FindVertex</a>(<span class="keyword">int</span> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">long</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:Gen_mtk_BG">Gen_mtk_BG</a>(<span class="keyword">long</span> NBG, <span class="keyword">int</span> Plate, <span class="keyword">int</span> Side, TH2* pdf_Ang, TH2* pdf_WT = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetName"><span class="baseclass">TObject::</span>GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPattern.html">EdbPattern</a>*</td><td class="funcname"><a class="funcname" href="#EdbDataStore:GetPattern">GetPattern</a>(<span class="keyword">int</span> n, <span class="keyword">bool</span> btk = <span class="keyword">true</span>)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPatternsVolume.html">EdbPatternsVolume</a>*</td><td class="funcname"><a class="funcname" href="#EdbDataStore:GetPV">GetPV</a>(<span class="keyword">bool</span> btk = <span class="keyword">true</span>)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPattern.html">EdbPattern</a>*</td><td class="funcname"><a class="funcname" href="#EdbDataStore:GetRawPat">GetRawPat</a>(<span class="keyword">int</span> n)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPattern.html">EdbPattern</a>*</td><td class="funcname"><a class="funcname" href="#EdbDataStore:GetSegPat">GetSegPat</a>(<span class="keyword">int</span> n)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetTitle"><span class="baseclass">TObject::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbTrackP.html">EdbTrackP</a>*</td><td class="funcname"><a class="funcname" href="#EdbDataStore:GetTrack">GetTrack</a>(<span class="keyword">int</span> n)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="funcname"><a class="funcname" href="#EdbDataStore:GetVertex">GetVertex</a>(<span class="keyword">int</span> n)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(TTimer* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Hash"><span class="baseclass">TObject::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> TClass* cl) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbDataStore:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsSortable"><span class="baseclass">TObject::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:LoadMCVertices">LoadMCVertices</a>(TObjArray* vtx)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ls"><span class="baseclass">TObject::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:MakePattern">MakePattern</a>(<span class="keyword">double</span> z, <span class="keyword">int</span> plate, <span class="keyword">int</span> side)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:Nplt">Nplt</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:Nt">Nt</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:Nv">Nv</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp;</td><td class="funcname"><a class="funcname" href="#TObject:operator_"><span class="baseclass">TObject::</span>operator=</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp; rhs)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Print"><span class="baseclass">TObject::</span>Print</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:PrintBrief">PrintBrief</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:PrintPatterns">PrintPatterns</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:PrintTracks">PrintTracks</a>(<span class="keyword">int</span> vlev = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:Restore_PatFromGeom">Restore_PatFromGeom</a>(<span class="keyword">int</span> np0 = 0, <span class="keyword">int</span> np1 = 1000)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:Restore_PIDFromID">Restore_PIDFromID</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:Restore_SegFromTrx">Restore_SegFromTrx</a>(<a href="./EdbSegmentCut.html">EdbSegmentCut</a>* cut = 0, <span class="keyword">int</span> Plt0 = 0, <span class="keyword">int</span> Plt1 = 1000)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:Restore_TrxFromVtx">Restore_TrxFromVtx</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:SavePlateToRaw">SavePlateToRaw</a>(<span class="keyword">const</span> <span class="keyword">char</span>* fname, <span class="keyword">int</span> PID, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">"RECREATE"</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:SaveToRaw">SaveToRaw</a>(<span class="keyword">const</span> <span class="keyword">char</span>* dir = <span class="string">"./"</span>, <span class="keyword">const</span> <a href="./EdbID.html">EdbID</a>&amp; idset = <span class="string">"0.0.0.0"</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">"RECREATE"</span>, <span class="keyword">bool</span> doaff = <span class="keyword">true</span>)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:SetOwnTracks">SetOwnTracks</a>(<span class="keyword">bool</span> own = <span class="keyword">true</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:SetOwnTrkSegs">SetOwnTrkSegs</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:SetOwnVertices">SetOwnVertices</a>(<span class="keyword">bool</span> own = <span class="keyword">true</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:TransferGeometry">TransferGeometry</a>(<a href="./EdbDataStore.html">EdbDataStore</a>* ds)</td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:TransferSegs">TransferSegs</a>(<a href="./EdbPatternsVolume.html">EdbPatternsVolume</a>* pv0, <a href="./EdbPatternsVolume.html">EdbPatternsVolume</a>* pv1, <a href="./EdbSegmentCut.html">EdbSegmentCut</a>* cut = 0, <span class="keyword">int</span> FromPlate = 0, <span class="keyword">int</span> ToPlate = 57)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbDataStore:TransferTo">TransferTo</a>(<a href="./EdbDataStore.html">EdbDataStore</a>* ds, <span class="keyword">char</span> level, <a href="./EdbSegmentCut.html">EdbSegmentCut</a>* cut = 0, <span class="keyword">int</span> FromPlate = 0, <span class="keyword">int</span> ToPlate = 57)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, va_list va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbDataStore:Data_Members"></a>Data Members</h2>
+<div class="access" id="enumpubl"><b>public:</b>
+<table class="data" id="tabenumpubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span>EStatusBits { </td><td class="dataname"><a href="#TObject:kCanDelete">kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kMustCleanup">kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kObjInCanvas">kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kIsReferenced">kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kHasUUID">kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kCannotPick">kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNoContextMenu">kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kInvalidObject">kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span><i>[unnamed]</i> { </td><td class="dataname"><a href="#TObject:kIsOnHeap">kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNotDeleted">kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kZombie">kZombie</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kBitMask">kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kSingleKey">kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kOverwrite">kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kWriteDelete">kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="data"><td class="datatype"><a href="./EdbBrickP.html">EdbBrickP</a>*</td><td class="dataname"><a name="EdbDataStore:eBrick"></a>eBrick</td><td class="datadesc">/geometry</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbPatternsVolume.html">EdbPatternsVolume</a></td><td class="dataname"><a name="EdbDataStore:eRawPV"></a>eRawPV</td><td class="datadesc">/</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbPatternsVolume.html">EdbPatternsVolume</a></td><td class="dataname"><a name="EdbDataStore:eSegPV"></a>eSegPV</td><td></td></tr>
+<tr class="data"><td class="datatype">TObjArray</td><td class="dataname"><a name="EdbDataStore:eTracks"></a>eTracks</td><td></td></tr>
+<tr class="data"><td class="datatype">TObjArray</td><td class="dataname"><a name="EdbDataStore:eVTX"></a>eVTX</td><td></td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbDataStore:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td><table><tr>
+<td bgcolor="#f7f7f7" align="right">
+<tt>TObject</tt></td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><big><b><tt><a name="EdbDataStore" href="./EdbDataStore.html">EdbDataStore</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td>&larr;</td><td><table><tr>
+<td bgcolor="#f7f7f7"><table><tr><td>
+<center><tt><a name="EdbDSRec" href="./EdbDSRec.html">EdbDSRec</a></tt></center></td>
+<td></td>
+</tr></table></td>
+</tr></table></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbDataStore:EdbDataStore" href="src/EdbDataStore.cxx.html#ki8fDC">EdbDataStore</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbDataStore:_EdbDataStore" href="src/EdbDataStore.cxx.html#nPQbJB">~EdbDataStore</a>()</span><br />
+<div class="funccomm"><pre>------------------------------------------------
+</pre></div>
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbDataStore.html#EdbDataStore:Clear" title="void EdbDataStore::Clear(bool hard=false)">Clear</a>();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:LoadMCVertices" href="src/EdbDataStore.cxx.html#a.Lbp">LoadMCVertices</a>(TObjArray* vtx)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:TransferGeometry" href="src/EdbDataStore.cxx.html#GWIZVB">TransferGeometry</a>(<a href="./EdbDataStore.html">EdbDataStore</a>* ds)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:TransferTo" href="src/EdbDataStore.cxx.html#u3.ZhC">TransferTo</a>(<a href="./EdbDataStore.html">EdbDataStore</a>* ds, <span class="keyword">char</span> level, <a href="./EdbSegmentCut.html">EdbSegmentCut</a>* cut = 0, <span class="keyword">int</span> FromPlate = 0, <span class="keyword">int</span> ToPlate = 57)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:TransferSegs" href="src/EdbDataStore.cxx.html#OZcqdC">TransferSegs</a>(<a href="./EdbPatternsVolume.html">EdbPatternsVolume</a>* pv0, <a href="./EdbPatternsVolume.html">EdbPatternsVolume</a>* pv1, <a href="./EdbSegmentCut.html">EdbSegmentCut</a>* cut = 0, <span class="keyword">int</span> FromPlate = 0, <span class="keyword">int</span> ToPlate = 57)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:Restore_PIDFromID" href="src/EdbDataStore.cxx.html#G_5JPB">Restore_PIDFromID</a>()</span><br />
+<div class="funccomm"><pre>restore patterns' <span class="string">"plate"</span> and <span class="string">"side"</span> from their ID
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbSegP.html">EdbSegP</a>* <a class="funcname" name="EdbDataStore:AddSegment" href="src/EdbDataStore.cxx.html#Xpc8FE">AddSegment</a>(<a href="./EdbSegP.html">EdbSegP</a>* seg, <a href="./EdbSegmentCut.html">EdbSegmentCut</a>* cut = 0, <span class="keyword">int</span> Plt0 = 0, <span class="keyword">int</span> Plt1 = 100)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:Restore_PatFromGeom" href="src/EdbDataStore.cxx.html#VMoMfD">Restore_PatFromGeom</a>(<span class="keyword">int</span> np0 = 0, <span class="keyword">int</span> np1 = 1000)</span><br />
+<div class="funccomm"><pre>fill patterns array from <a href="./EdbDataStore.html#EdbDataStore:eBrick" title="EdbBrickP* EdbDataStore::eBrick">eBrick</a> plates
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:Restore_TrxFromVtx" href="src/EdbDataStore.cxx.html#XlzhFB">Restore_TrxFromVtx</a>()</span><br />
+<div class="funccomm"><pre>restore tracks from vertex
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:Restore_SegFromTrx" href="src/EdbDataStore.cxx.html#Sl8T9B">Restore_SegFromTrx</a>(<a href="./EdbSegmentCut.html">EdbSegmentCut</a>* cut = 0, <span class="keyword">int</span> Plt0 = 0, <span class="keyword">int</span> Plt1 = 1000)</span><br />
+<div class="funccomm"><pre>restore segments from tracks
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbTrackP.html">EdbTrackP</a>* <a class="funcname" name="EdbDataStore:FindTrack" href="src/EdbDataStore.cxx.html#pTm78D">FindTrack</a>(<span class="keyword">int</span> id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbVertex.html">EdbVertex</a>* <a class="funcname" name="EdbDataStore:FindVertex" href="src/EdbDataStore.cxx.html#i0gGoD">FindVertex</a>(<span class="keyword">int</span> id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbLayer.html">EdbLayer</a>* <a class="funcname" name="EdbDataStore:FindLayer" href="src/EdbDataStore.cxx.html#GCxxHB">FindLayer</a>(<span class="keyword">int</span> plate, <span class="keyword">int</span> side = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPattern.html">EdbPattern</a>* <a class="funcname" name="EdbDataStore:FindPattern" href="src/EdbDataStore.cxx.html#llJYdB">FindPattern</a>(<span class="keyword">int</span> plate, <span class="keyword">int</span> side = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbTrackP.html">EdbTrackP</a>* <a class="funcname" name="EdbDataStore:FindLongTrk" href="src/EdbDataStore.cxx.html#Zj_EbC">FindLongTrk</a>(<span class="keyword">int</span> nsmin = 8)</span><br />
+<div class="funccomm"><pre>find longest track
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbVertex.html">EdbVertex</a>* <a class="funcname" name="EdbDataStore:FindPrimVtx" href="src/EdbDataStore.cxx.html#m7ioJD">FindPrimVtx</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:AddPattern" href="src/EdbDataStore.cxx.html#nyzNtC">AddPattern</a>(<a href="./EdbPattern.html">EdbPattern</a>* pat)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:MakePattern" href="src/EdbDataStore.cxx.html#o8kyU">MakePattern</a>(<span class="keyword">double</span> z, <span class="keyword">int</span> plate, <span class="keyword">int</span> side)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:ClearGeom" href="src/EdbDataStore.cxx.html#wT_UwD">ClearGeom</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:ClearVTX" href="src/EdbDataStore.cxx.html#IjK_8B">ClearVTX</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:ClearTracks" href="src/EdbDataStore.cxx.html#NSZTFC">ClearTracks</a>(<span class="keyword">bool</span> hard = <span class="keyword">false</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:ClearSeg" href="src/EdbDataStore.cxx.html#ZB9FQB">ClearSeg</a>(<span class="keyword">bool</span> hard = <span class="keyword">false</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:ClearRaw" href="src/EdbDataStore.cxx.html#BVpjSB">ClearRaw</a>(<span class="keyword">bool</span> hard = <span class="keyword">false</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:PrintBrief" href="src/EdbDataStore.cxx.html#UZAWjC">PrintBrief</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:PrintTracks" href="src/EdbDataStore.cxx.html#NsTnzD">PrintTracks</a>(<span class="keyword">int</span> vlev = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:PrintPatterns" href="src/EdbDataStore.cxx.html#CfWngE">PrintPatterns</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:DoSmearing" href="src/EdbDataStore.cxx.html#zSJfAC">DoSmearing</a>(<a href="./EdbScanCond.html">EdbScanCond</a>* cond_btk, <a href="./EdbScanCond.html">EdbScanCond</a>* cond_mtk = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:DoEfficiency" href="src/EdbDataStore.cxx.html#w05IvE">DoEfficiency</a>(TF1* eff_seg, TF1* eff_mtk)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">long</span> <a class="funcname" name="EdbDataStore:Gen_mtk_BG" href="src/EdbDataStore.cxx.html#PE2TcC">Gen_mtk_BG</a>(<span class="keyword">long</span> NBG, <span class="keyword">int</span> Plate, <span class="keyword">int</span> Side, TH2* pdf_Ang, TH2* pdf_WT = 0)</span><br />
+<div class="funccomm"><pre> Generate background microtracks, using distributions:
+   1)from pdf_Ang(TY:TX) - should be normalized so that its maximum bin content = 1
+   2)from pdb_WT (W:tan(Theta)) - each row with fixed X(i.e. slope) should have maximum content = 1
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:SavePlateToRaw" href="src/EdbDataStore.cxx.html#JH_E2B">SavePlateToRaw</a>(<span class="keyword">const</span> <span class="keyword">char</span>* fname, <span class="keyword">int</span> PID, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">"RECREATE"</span>)</span><br />
+<div class="funccomm"><pre>Convert this event to RAW data format!
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:SaveToRaw" href="src/EdbDataStore.cxx.html#Ch8EVD">SaveToRaw</a>(<span class="keyword">const</span> <span class="keyword">char</span>* dir = <span class="string">"./"</span>, <span class="keyword">const</span> <a href="./EdbID.html">EdbID</a>&amp; idset = <span class="string">"0.0.0.0"</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">"RECREATE"</span>, <span class="keyword">bool</span> doaff = <span class="keyword">true</span>)</span><br />
+<div class="funccomm"><pre> Save the raw data to FEDRA brick structure
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:Clear" href="src/EdbDataStore.h.html#WUlGGE">Clear</a>(<span class="keyword">bool</span> hard = <span class="keyword">false</span>)</span><br />
+<div class="funccomm"><pre>clear methods
+</pre></div>
+
+<div class="code"><code class="inlinecode">{<a href="./EdbDataStore.html#EdbDataStore:ClearTracks" title="void EdbDataStore::ClearTracks(bool hard=false)">ClearTracks</a>(hard);<a href="./EdbDataStore.html#EdbDataStore:ClearVTX" title="void EdbDataStore::ClearVTX()">ClearVTX</a>();<a href="./EdbDataStore.html#EdbDataStore:ClearRaw" title="void EdbDataStore::ClearRaw(bool hard=false)">ClearRaw</a>(hard);<a href="./EdbDataStore.html#EdbDataStore:ClearSeg" title="void EdbDataStore::ClearSeg(bool hard=false)">ClearSeg</a>(hard);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbDataStore:Nt" href="src/EdbDataStore.h.html#kZ5NjE">Nt</a>()</span><br />
+<div class="funccomm"><pre> count methods:
+</pre></div>
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbDataStore.html#EdbDataStore:eTracks" title="TObjArray EdbDataStore::eTracks">eTracks</a>.GetEntries();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbDataStore:Nv" href="src/EdbDataStore.h.html#lSUEU">Nv</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbDataStore.html#EdbDataStore:eVTX" title="TObjArray EdbDataStore::eVTX">eVTX</a>.GetEntries();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbDataStore:Nplt" href="src/EdbDataStore.h.html#MsDhHC">Nplt</a>()</span><br />
+<div class="funccomm"><pre>setown methods:
+</pre></div>
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbDataStore.html#EdbDataStore:eRawPV" title="EdbPatternsVolume EdbDataStore::eRawPV">eRawPV</a>.<a href="./EdbPatternsVolume.html#EdbPatternsVolume:Npatterns" title="Int_t EdbPatternsVolume::Npatterns()">Npatterns</a>()/2;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:SetOwnTracks" href="src/EdbDataStore.h.html#LnesXE">SetOwnTracks</a>(<span class="keyword">bool</span> own = <span class="keyword">true</span>)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbDataStore.html#EdbDataStore:eTracks" title="TObjArray EdbDataStore::eTracks">eTracks</a>.SetOwner(own);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:SetOwnVertices" href="src/EdbDataStore.h.html#e8EoDC">SetOwnVertices</a>(<span class="keyword">bool</span> own = <span class="keyword">true</span>)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbDataStore.html#EdbDataStore:eVTX" title="TObjArray EdbDataStore::eVTX">eVTX</a>.SetOwner(own);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:SetOwnTrkSegs" href="src/EdbDataStore.h.html#Yrlu9">SetOwnTrkSegs</a>()</span><br />
+<div class="funccomm"><pre>get methods
+</pre></div>
+
+<div class="code"><code class="inlinecode">{<span class="keyword">for</span>(<span class="keyword">int</span> nt=0;nt&lt;<a href="./EdbDataStore.html#EdbDataStore:Nt" title="int EdbDataStore::Nt()">Nt</a>();++nt)<a href="./EdbDataStore.html#EdbDataStore:GetTrack" title="EdbTrackP* EdbDataStore::GetTrack(int n)">GetTrack</a>(nt)-><a href="./EdbTrackP.html#EdbTrackP:SetOwner" title="void EdbTrackP::SetOwner()">SetOwner</a>();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbTrackP.html">EdbTrackP</a>* <a class="funcname" name="EdbDataStore:GetTrack" href="src/EdbDataStore.h.html#DaQqvC">GetTrack</a>(<span class="keyword">int</span> n)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> (n&lt;<a href="./EdbDataStore.html#EdbDataStore:eTracks" title="TObjArray EdbDataStore::eTracks">eTracks</a>.GetEntries())?(<a href="./EdbTrackP.html">EdbTrackP</a>*)<a href="./EdbDataStore.html#EdbDataStore:eTracks" title="TObjArray EdbDataStore::eTracks">eTracks</a>.At(n):0;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbVertex.html">EdbVertex</a>* <a class="funcname" name="EdbDataStore:GetVertex" href="src/EdbDataStore.h.html#y1mSd">GetVertex</a>(<span class="keyword">int</span> n)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> (n&lt;<a href="./EdbDataStore.html#EdbDataStore:eVTX" title="TObjArray EdbDataStore::eVTX">eVTX</a>.GetEntries())?(<a href="./EdbVertex.html">EdbVertex</a>*)<a href="./EdbDataStore.html#EdbDataStore:eVTX" title="TObjArray EdbDataStore::eVTX">eVTX</a>.At(n):0;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPattern.html">EdbPattern</a>* <a class="funcname" name="EdbDataStore:GetSegPat" href="src/EdbDataStore.h.html#KxsBrB">GetSegPat</a>(<span class="keyword">int</span> n)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> (n&lt;<a href="./EdbDataStore.html#EdbDataStore:eSegPV" title="EdbPatternsVolume EdbDataStore::eSegPV">eSegPV</a>.<a href="./EdbPatternsVolume.html#EdbPatternsVolume:Npatterns" title="Int_t EdbPatternsVolume::Npatterns()">Npatterns</a>())?<a href="./EdbDataStore.html#EdbDataStore:eSegPV" title="EdbPatternsVolume EdbDataStore::eSegPV">eSegPV</a>.<a href="./EdbPatternsVolume.html#EdbPatternsVolume:GetPattern" title="EdbPattern* EdbPatternsVolume::GetPattern(int id)">GetPattern</a>(n):0;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPattern.html">EdbPattern</a>* <a class="funcname" name="EdbDataStore:GetRawPat" href="src/EdbDataStore.h.html#OSKkoB">GetRawPat</a>(<span class="keyword">int</span> n)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> (n&lt;<a href="./EdbDataStore.html#EdbDataStore:eRawPV" title="EdbPatternsVolume EdbDataStore::eRawPV">eRawPV</a>.<a href="./EdbPatternsVolume.html#EdbPatternsVolume:Npatterns" title="Int_t EdbPatternsVolume::Npatterns()">Npatterns</a>())?<a href="./EdbDataStore.html#EdbDataStore:eRawPV" title="EdbPatternsVolume EdbDataStore::eRawPV">eRawPV</a>.<a href="./EdbPatternsVolume.html#EdbPatternsVolume:GetPattern" title="EdbPattern* EdbPatternsVolume::GetPattern(int id)">GetPattern</a>(n):0;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPattern.html">EdbPattern</a>* <a class="funcname" name="EdbDataStore:GetPattern" href="src/EdbDataStore.h.html#LoRumE">GetPattern</a>(<span class="keyword">int</span> n, <span class="keyword">bool</span> btk = <span class="keyword">true</span>)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbDataStore.html#EdbDataStore:GetPV" title="EdbPatternsVolume* EdbDataStore::GetPV(bool btk=true)">GetPV</a>(btk)-><a href="./EdbPatternsVolume.html#EdbPatternsVolume:GetPattern" title="EdbPattern* EdbPatternsVolume::GetPattern(int id)">GetPattern</a>(n);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPatternsVolume.html">EdbPatternsVolume</a>* <a class="funcname" name="EdbDataStore:GetPV" href="src/EdbDataStore.h.html#Fe5nZD">GetPV</a>(<span class="keyword">bool</span> btk = <span class="keyword">true</span>)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> btk?(&amp;<a href="./EdbDataStore.html#EdbDataStore:eSegPV" title="EdbPatternsVolume EdbDataStore::eSegPV">eSegPV</a>):(&amp;<a href="./EdbDataStore.html#EdbDataStore:eRawPV" title="EdbPatternsVolume EdbDataStore::eRawPV">eRawPV</a>);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:AddTrack" href="src/EdbDataStore.h.html#Hb3WPD">AddTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* tr)</span><br />
+
+<div class="code"><code class="inlinecode">{assert(tr!=0); <a href="./EdbDataStore.html#EdbDataStore:eTracks" title="TObjArray EdbDataStore::eTracks">eTracks</a>.Add(tr);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbDataStore:AddVertex" href="src/EdbDataStore.h.html#OASGlC">AddVertex</a>(<a href="./EdbVertex.html">EdbVertex</a>* v)</span><br />
+
+<div class="code"><code class="inlinecode">{assert(v!=0);  <a href="./EdbDataStore.html#EdbDataStore:eVTX" title="TObjArray EdbDataStore::eVTX">eVTX</a>.Add(v);}</code></div>
+<div style="clear:both;"></div>
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:20 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

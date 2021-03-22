@@ -1,0 +1,565 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:26 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbLayer</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbLayer','','EdbLayer.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbLayer.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbLayer.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbLayer_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbLayer:description">class description</a> 
+<a class="descrheadentry" href="#EdbLayer:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbLayer:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbLayer:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbLayer</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbLayer:description"></a>class EdbLayer: public TObject</h1>
+<div class="classdescr">
+</div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbLayer:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbLayer:EdbLayer">EdbLayer</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbLayer:EdbLayer@1">EdbLayer</a>(<span class="keyword">const</span> <a href="./EdbLayer.html">EdbLayer</a>&amp; l)</td></tr>
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbLayer:_EdbLayer">~EdbLayer</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">const</span> <a href="./EdbAffine2D.html">EdbAffine2D</a>*</td><td class="funcname"><a class="funcname" href="#EdbLayer:AffineTXTY">AffineTXTY</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">const</span> <a href="./EdbAffine2D.html">EdbAffine2D</a>*</td><td class="funcname"><a class="funcname" href="#EdbLayer:AffineXY">AffineXY</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:ApplyCorrections">ApplyCorrections</a>(<a href="./EdbLayer.html">EdbLayer</a>&amp; la)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:ApplyCorrections@1">ApplyCorrections</a>(<span class="keyword">float</span> shr, <span class="keyword">float</span> zcorr, <span class="keyword">const</span> <a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; affxy, <span class="keyword">const</span> <a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; afftxty)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:ApplyCorrectionsLocal">ApplyCorrectionsLocal</a>(<a href="./EdbCorrectionMap.html">EdbCorrectionMap</a>&amp; map)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(TBrowser* b)</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbLayer:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Clear"><span class="baseclass">TObject::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:Clone"><span class="baseclass">TObject::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Compare"><span class="baseclass">TObject::</span>Compare</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Copy">Copy</a>(<span class="keyword">const</span> <a href="./EdbLayer.html">EdbLayer</a>&amp; l)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:CopyCorr">CopyCorr</a>(<span class="keyword">const</span> <a href="./EdbLayer.html">EdbLayer</a>&amp; l)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:CorrectSeg">CorrectSeg</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:CorrectSegLocal">CorrectSegLocal</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:DX">DX</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:DY">DY</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:DZ">DZ</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(TMethod* method, TObjArray* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbAffine2D.html">EdbAffine2D</a>*</td><td class="funcname"><a class="funcname" href="#EdbLayer:GetAffineTXTY">GetAffineTXTY</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbAffine2D.html">EdbAffine2D</a>*</td><td class="funcname"><a class="funcname" href="#EdbLayer:GetAffineXY">GetAffineXY</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetName"><span class="baseclass">TObject::</span>GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetTitle"><span class="baseclass">TObject::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(TTimer* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Hash"><span class="baseclass">TObject::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:ID">ID</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> TClass* cl) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Invert">Invert</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbLayer:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:IsInside@1">IsInside</a>(<span class="keyword">float</span> x, <span class="keyword">float</span> y)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:IsInside">IsInside</a>(<span class="keyword">float</span> x, <span class="keyword">float</span> y, <span class="keyword">float</span> z)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsSortable"><span class="baseclass">TObject::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ls"><span class="baseclass">TObject::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbCorrectionMap.html">EdbCorrectionMap</a>&amp;</td><td class="funcname"><a class="funcname" href="#EdbLayer:Map">Map</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Ncp">Ncp</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbLayer.html">EdbLayer</a>&amp;</td><td class="funcname"><a class="funcname" href="#EdbLayer:operator_">operator=</a>(<span class="keyword">const</span> <a href="./EdbLayer.html">EdbLayer</a>&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Print">Print</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:ResetAffTXTY">ResetAffTXTY</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:ResetAffXY">ResetAffXY</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:ResetCorr">ResetCorr</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Set0">Set0</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:SetAffTXTY">SetAffTXTY</a>(<span class="keyword">float</span> a11, <span class="keyword">float</span> a12, <span class="keyword">float</span> a21, <span class="keyword">float</span> a22, <span class="keyword">float</span> b1, <span class="keyword">float</span> b2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:SetAffXY">SetAffXY</a>(<span class="keyword">float</span> a11, <span class="keyword">float</span> a12, <span class="keyword">float</span> a21, <span class="keyword">float</span> a22, <span class="keyword">float</span> b1, <span class="keyword">float</span> b2)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:SetDXDY">SetDXDY</a>(<span class="keyword">float</span> dx, <span class="keyword">float</span> dy)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:SetID">SetID</a>(<span class="keyword">int</span> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:SetNcp">SetNcp</a>(<span class="keyword">int</span> n)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:SetShrinkage">SetShrinkage</a>(<span class="keyword">float</span> shr)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:SetTXTY">SetTXTY</a>(<span class="keyword">float</span> tx, <span class="keyword">float</span> ty)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:SetXY">SetXY</a>(<span class="keyword">float</span> x, <span class="keyword">float</span> y)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:SetZ">SetZ</a>(<span class="keyword">float</span> z)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:SetZcorr">SetZcorr</a>(<span class="keyword">float</span> zcorr)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:SetZlayer">SetZlayer</a>(<span class="keyword">float</span> z, <span class="keyword">float</span> zmin, <span class="keyword">float</span> zmax)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:ShiftZ">ShiftZ</a>(<span class="keyword">float</span> dz)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Shr">Shr</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:SubstructCorrections">SubstructCorrections</a>(<a href="./EdbLayer.html">EdbLayer</a>&amp; la)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:TX">TX</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:TX@1">TX</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:TXp">TXp</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:TY">TY</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:TY@1">TY</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:TYp">TYp</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:X">X</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:X@1">X</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Xmax">Xmax</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Xmin">Xmin</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Xp">Xp</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Y">Y</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Y@1">Y</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Ymax">Ymax</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Ymin">Ymin</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Yp">Yp</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Z">Z</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Zcorr">Zcorr</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Zmax">Zmax</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Zmin">Zmin</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbLayer:Zxy">Zxy</a>()</td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, va_list va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbLayer:Data_Members"></a>Data Members</h2>
+<div class="access" id="enumpubl"><b>public:</b>
+<table class="data" id="tabenumpubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span>EStatusBits { </td><td class="dataname"><a href="#TObject:kCanDelete">kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kMustCleanup">kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kObjInCanvas">kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kIsReferenced">kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kHasUUID">kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kCannotPick">kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNoContextMenu">kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kInvalidObject">kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span><i>[unnamed]</i> { </td><td class="dataname"><a href="#TObject:kIsOnHeap">kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNotDeleted">kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kZombie">kZombie</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kBitMask">kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kSingleKey">kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kOverwrite">kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kWriteDelete">kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapriv"><b>private:</b>
+<table class="data" id="tabdatapriv" cellspacing="0">
+<tr class="data"><td class="datatype"><a href="./EdbAffine2D.html">EdbAffine2D</a></td><td class="dataname"><a name="EdbLayer:eAffTXTY"></a>eAffTXTY</td><td class="datadesc">tangents affine transformation</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbAffine2D.html">EdbAffine2D</a></td><td class="dataname"><a name="EdbLayer:eAffXY"></a>eAffXY</td><td class="datadesc">coordinate (XY) affine transformation</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbLayer:eDX"></a>eDX</td><td class="datadesc">acceptance in x:y</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbLayer:eDY"></a>eDY</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbLayer:eID"></a>eID</td><td class="datadesc">emulsion layer id (11,12 21,22, ...)</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbCorrectionMap.html">EdbCorrectionMap</a></td><td class="dataname"><a name="EdbLayer:eMap"></a>eMap</td><td class="datadesc">local corrections (if any)</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbLayer:eNcp"></a>eNcp</td><td class="datadesc">number of coincidences used for corrections calculation</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbLayer:eShr"></a>eShr</td><td class="datadesc">shrinkage along axis z</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbLayer:eTX"></a>eTX</td><td class="datadesc">direction</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbLayer:eTY"></a>eTY</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbLayer:eX"></a>eX</td><td class="datadesc">the center (0) of the layer's data</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbLayer:eY"></a>eY</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbLayer:eZ"></a>eZ</td><td class="datadesc">the z-coord where X and Y are calculated</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbLayer:eZcorr"></a>eZcorr</td><td class="datadesc">z-correction </td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbLayer:eZmax"></a>eZmax</td><td class="datadesc">begin and the end of layer</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbLayer:eZmin"></a>eZmin</td><td></td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbLayer:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td><table><tr>
+<td bgcolor="#f7f7f7" align="right">
+<tt>TObject</tt></td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><big><b><tt><a name="EdbLayer" href="./EdbLayer.html">EdbLayer</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td>&larr;</td><td><table><tr>
+<td bgcolor="#f7f7f7"><table><tr><td>
+<center><tt><a name="EdbBrickP" href="./EdbBrickP.html">EdbBrickP</a></tt></center></td>
+<td></td>
+</tr></table></td>
+</tr><tr>
+<td bgcolor="#f7f7f7"><table><tr><td>
+<center><tt><a name="EdbPlateP" href="./EdbPlateP.html">EdbPlateP</a></tt></center></td>
+<td></td>
+</tr></table></td>
+</tr></table></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbLayer:EdbLayer" href="src/EdbLayer.cxx.html#rllmtD">EdbLayer</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbLayer:EdbLayer@1" href="src/EdbLayer.cxx.html#kAf30E">EdbLayer</a>(<span class="keyword">const</span> <a href="./EdbLayer.html">EdbLayer</a>&amp; l)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:Set0" href="src/EdbLayer.cxx.html#TEPnFD">Set0</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:Copy" href="src/EdbLayer.cxx.html#s8X8N">Copy</a>(<span class="keyword">const</span> <a href="./EdbLayer.html">EdbLayer</a>&amp; l)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:CopyCorr" href="src/EdbLayer.cxx.html#NQkxBC">CopyCorr</a>(<span class="keyword">const</span> <a href="./EdbLayer.html">EdbLayer</a>&amp; l)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:Invert" href="src/EdbLayer.cxx.html#sh05CC">Invert</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:CorrectSeg" href="src/EdbLayer.cxx.html#P7tlwE">CorrectSeg</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:CorrectSegLocal" href="src/EdbLayer.cxx.html#ZBkV2">CorrectSegLocal</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:ApplyCorrections" href="src/EdbLayer.cxx.html#sq3IKE">ApplyCorrections</a>(<a href="./EdbLayer.html">EdbLayer</a>&amp; la)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:ApplyCorrections@1" href="src/EdbLayer.cxx.html#YMl.eC">ApplyCorrections</a>(<span class="keyword">float</span> shr, <span class="keyword">float</span> zcorr, <span class="keyword">const</span> <a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; affxy, <span class="keyword">const</span> <a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; afftxty)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:SubstructCorrections" href="src/EdbLayer.cxx.html#c5SGGC">SubstructCorrections</a>(<a href="./EdbLayer.html">EdbLayer</a>&amp; la)</span><br />
+<div class="funccomm"><pre> apply inverse corrections of layer l
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:ResetCorr" href="src/EdbLayer.cxx.html#qMOUO">ResetCorr</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:ShiftZ" href="src/EdbLayer.cxx.html#R1_OND">ShiftZ</a>(<span class="keyword">float</span> dz)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbLayer:IsInside" href="src/EdbLayer.cxx.html#rU3UdE">IsInside</a>(<span class="keyword">float</span> x, <span class="keyword">float</span> y, <span class="keyword">float</span> z)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbLayer:IsInside@1" href="src/EdbLayer.cxx.html#PJOrxB">IsInside</a>(<span class="keyword">float</span> x, <span class="keyword">float</span> y)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:Print" href="src/EdbLayer.cxx.html#ciKmhE">Print</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">virtual</span> <a class="funcname" name="EdbLayer:_EdbLayer" href="src/EdbLayer.h.html#UMSkf">~EdbLayer</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbLayer:ID" href="src/EdbLayer.h.html#R5YwRB">ID</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:eID" title="Int_t EdbLayer::eID">eID</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbLayer:Ncp" href="src/EdbLayer.h.html#efmkoD">Ncp</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:eNcp" title="Int_t EdbLayer::eNcp">eNcp</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:X" href="src/EdbLayer.h.html#IdGo5">X</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:eX" title="Float_t EdbLayer::eX">eX</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:Y" href="src/EdbLayer.h.html#UOVo5">Y</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:eY" title="Float_t EdbLayer::eY">eY</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:Z" href="src/EdbLayer.h.html#k6on5">Z</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:eZ" title="Float_t EdbLayer::eZ">eZ</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:TX" href="src/EdbLayer.h.html#zNBofB">TX</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:eTX" title="Float_t EdbLayer::eTX">eTX</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:TY" href="src/EdbLayer.h.html#nct7fB">TY</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:eTY" title="Float_t EdbLayer::eTY">eTY</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:Zmin" href="src/EdbLayer.h.html#j95tCB">Zmin</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:eZmin" title="Float_t EdbLayer::eZmin">eZmin</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:Zmax" href="src/EdbLayer.h.html#XsXQwE">Zmax</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:eZmax" title="Float_t EdbLayer::eZmax">eZmax</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:DX" href="src/EdbLayer.h.html#v_PpfB">DX</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:eDX" title="Float_t EdbLayer::eDX">eDX</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:DY" href="src/EdbLayer.h.html#jN88fB">DY</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:eDY" title="Float_t EdbLayer::eDY">eDY</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:DZ" href="src/EdbLayer.h.html#RJhc_B">DZ</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:eZmax" title="Float_t EdbLayer::eZmax">eZmax</a>-<a href="./EdbLayer.html#EdbLayer:eZmin" title="Float_t EdbLayer::eZmin">eZmin</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:Xmin" href="src/EdbLayer.h.html#xdsRZD">Xmin</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:X" title="float EdbLayer::X() or overloads">X</a>()-<a href="./EdbLayer.html#EdbLayer:DX" title="float EdbLayer::DX()">DX</a>();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:Xmax" href="src/EdbLayer.h.html#JfcbPD">Xmax</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:X" title="float EdbLayer::X() or overloads">X</a>()+<a href="./EdbLayer.html#EdbLayer:DX" title="float EdbLayer::DX()">DX</a>();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:Ymin" href="src/EdbLayer.h.html#pvdgaD">Ymin</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:Y" title="float EdbLayer::Y() or overloads">Y</a>()-<a href="./EdbLayer.html#EdbLayer:DY" title="float EdbLayer::DY()">DY</a>();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:Ymax" href="src/EdbLayer.h.html#BxNqQD">Ymax</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:Y" title="float EdbLayer::Y() or overloads">Y</a>()+<a href="./EdbLayer.html#EdbLayer:DY" title="float EdbLayer::DY()">DY</a>();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:Shr" href="src/EdbLayer.h.html#PjfwcC">Shr</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:eShr" title="Float_t EdbLayer::eShr">eShr</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:Zcorr" href="src/EdbLayer.h.html#wmqh4E">Zcorr</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:eZcorr" title="Float_t EdbLayer::eZcorr">eZcorr</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:SetID" href="src/EdbLayer.h.html#dIHYqE">SetID</a>(<span class="keyword">int</span> id)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbLayer.html#EdbLayer:eID" title="Int_t EdbLayer::eID">eID</a>=id;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:SetNcp" href="src/EdbLayer.h.html#mKNHfE">SetNcp</a>(<span class="keyword">int</span> n)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbLayer.html#EdbLayer:eNcp" title="Int_t EdbLayer::eNcp">eNcp</a>=n;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:SetXY" href="src/EdbLayer.h.html#hw9SzD">SetXY</a>(<span class="keyword">float</span> x, <span class="keyword">float</span> y)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbLayer.html#EdbLayer:eX" title="Float_t EdbLayer::eX">eX</a>=x; <a href="./EdbLayer.html#EdbLayer:eY" title="Float_t EdbLayer::eY">eY</a>=y;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:SetDXDY" href="src/EdbLayer.h.html#dDwS5E">SetDXDY</a>(<span class="keyword">float</span> dx, <span class="keyword">float</span> dy)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbLayer.html#EdbLayer:eDX" title="Float_t EdbLayer::eDX">eDX</a>=dx; <a href="./EdbLayer.html#EdbLayer:eDY" title="Float_t EdbLayer::eDY">eDY</a>=dy;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:SetTXTY" href="src/EdbLayer.h.html#fXO94E">SetTXTY</a>(<span class="keyword">float</span> tx, <span class="keyword">float</span> ty)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbLayer.html#EdbLayer:eTX" title="Float_t EdbLayer::eTX">eTX</a>=tx; <a href="./EdbLayer.html#EdbLayer:eTY" title="Float_t EdbLayer::eTY">eTY</a>=ty;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:SetShrinkage" href="src/EdbLayer.h.html#Rqv7NC">SetShrinkage</a>(<span class="keyword">float</span> shr)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbLayer.html#EdbLayer:eShr" title="Float_t EdbLayer::eShr">eShr</a>=shr;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:SetZ" href="src/EdbLayer.h.html#dckmTD">SetZ</a>(<span class="keyword">float</span> z)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbLayer.html#EdbLayer:eZ" title="Float_t EdbLayer::eZ">eZ</a>=z;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:SetZlayer" href="src/EdbLayer.h.html#odnC8D">SetZlayer</a>(<span class="keyword">float</span> z, <span class="keyword">float</span> zmin, <span class="keyword">float</span> zmax)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbLayer.html#EdbLayer:eZ" title="Float_t EdbLayer::eZ">eZ</a>=z;<a href="./EdbLayer.html#EdbLayer:eZmin" title="Float_t EdbLayer::eZmin">eZmin</a>=zmin;<a href="./EdbLayer.html#EdbLayer:eZmax" title="Float_t EdbLayer::eZmax">eZmax</a>=zmax; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:SetAffXY" href="src/EdbLayer.h.html#xqOkV">SetAffXY</a>(<span class="keyword">float</span> a11, <span class="keyword">float</span> a12, <span class="keyword">float</span> a21, <span class="keyword">float</span> a22, <span class="keyword">float</span> b1, <span class="keyword">float</span> b2)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbLayer.html#EdbLayer:eAffXY" title="EdbAffine2D EdbLayer::eAffXY">eAffXY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:Set" title="void EdbAffine2D::Set(EdbAffine2D&amp; a) or overloads">Set</a>(a11,a12,a21,a22,b1,b2);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:SetAffTXTY" href="src/EdbLayer.h.html#FFIpqC">SetAffTXTY</a>(<span class="keyword">float</span> a11, <span class="keyword">float</span> a12, <span class="keyword">float</span> a21, <span class="keyword">float</span> a22, <span class="keyword">float</span> b1, <span class="keyword">float</span> b2)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbLayer.html#EdbLayer:eAffTXTY" title="EdbAffine2D EdbLayer::eAffTXTY">eAffTXTY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:Set" title="void EdbAffine2D::Set(EdbAffine2D&amp; a) or overloads">Set</a>(a11,a12,a21,a22,b1,b2);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:SetZcorr" href="src/EdbLayer.h.html#FCn.h">SetZcorr</a>(<span class="keyword">float</span> zcorr)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbLayer.html#EdbLayer:eZcorr" title="Float_t EdbLayer::eZcorr">eZcorr</a> = zcorr;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:ApplyCorrectionsLocal" href="src/EdbLayer.h.html#o29UXD">ApplyCorrectionsLocal</a>(<a href="./EdbCorrectionMap.html">EdbCorrectionMap</a>&amp; map)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbLayer.html#EdbLayer:eMap" title="EdbCorrectionMap EdbLayer::eMap">eMap</a>.<a href="./EdbCorrectionMap.html#EdbCorrectionMap:ApplyCorrections" title="void EdbCorrectionMap::ApplyCorrections(EdbCorrectionMap&amp; map)">ApplyCorrections</a>(map); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:ResetAffXY" href="src/EdbLayer.h.html#HktfM">ResetAffXY</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbLayer.html#EdbLayer:eAffXY" title="EdbAffine2D EdbLayer::eAffXY">eAffXY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:Reset" title="void EdbAffine2D::Reset()">Reset</a>(); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbLayer:ResetAffTXTY" href="src/EdbLayer.h.html#qKPQlC">ResetAffTXTY</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbLayer.html#EdbLayer:eAffTXTY" title="EdbAffine2D EdbLayer::eAffTXTY">eAffTXTY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:Reset" title="void EdbAffine2D::Reset()">Reset</a>(); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">const</span> <a href="./EdbAffine2D.html">EdbAffine2D</a> * <a class="funcname" name="EdbLayer:AffineXY" href="src/EdbLayer.h.html#ktBV2B">AffineXY</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> &amp;<a href="./EdbLayer.html#EdbLayer:eAffXY" title="EdbAffine2D EdbLayer::eAffXY">eAffXY</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">const</span> <a href="./EdbAffine2D.html">EdbAffine2D</a> * <a class="funcname" name="EdbLayer:AffineTXTY" href="src/EdbLayer.h.html#unuP9B">AffineTXTY</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> &amp;<a href="./EdbLayer.html#EdbLayer:eAffTXTY" title="EdbAffine2D EdbLayer::eAffTXTY">eAffTXTY</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbAffine2D.html">EdbAffine2D</a> * <a class="funcname" name="EdbLayer:GetAffineXY" href="src/EdbLayer.h.html#yZOxC">GetAffineXY</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> &amp;<a href="./EdbLayer.html#EdbLayer:eAffXY" title="EdbAffine2D EdbLayer::eAffXY">eAffXY</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbAffine2D.html">EdbAffine2D</a> * <a class="funcname" name="EdbLayer:GetAffineTXTY" href="src/EdbLayer.h.html#eMjLXB">GetAffineTXTY</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> &amp;<a href="./EdbLayer.html#EdbLayer:eAffTXTY" title="EdbAffine2D EdbLayer::eAffTXTY">eAffTXTY</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:TXp" href="src/EdbLayer.h.html#GqxcOD">TXp</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> (<a href="./EdbLayer.html#EdbLayer:eAffXY" title="EdbAffine2D EdbLayer::eAffXY">eAffXY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:A11" title="Float_t EdbAffine2D::A11()">A11</a>()*s.<a href="./EdbLayer.html#EdbLayer:eTX" title="Float_t EdbLayer::eTX">eTX</a> + <a href="./EdbLayer.html#EdbLayer:eAffXY" title="EdbAffine2D EdbLayer::eAffXY">eAffXY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:A12" title="Float_t EdbAffine2D::A12()">A12</a>()*s.<a href="./EdbLayer.html#EdbLayer:eTY" title="Float_t EdbLayer::eTY">eTY</a>) / <a href="./EdbLayer.html#EdbLayer:eShr" title="Float_t EdbLayer::eShr">eShr</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:TYp" href="src/EdbLayer.h.html#Xegan">TYp</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> (<a href="./EdbLayer.html#EdbLayer:eAffXY" title="EdbAffine2D EdbLayer::eAffXY">eAffXY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:A21" title="Float_t EdbAffine2D::A21()">A21</a>()*s.<a href="./EdbLayer.html#EdbLayer:eTX" title="Float_t EdbLayer::eTX">eTX</a> + <a href="./EdbLayer.html#EdbLayer:eAffXY" title="EdbAffine2D EdbLayer::eAffXY">eAffXY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:A22" title="Float_t EdbAffine2D::A22()">A22</a>()*s.<a href="./EdbLayer.html#EdbLayer:eTY" title="Float_t EdbLayer::eTY">eTY</a>) / <a href="./EdbLayer.html#EdbLayer:eShr" title="Float_t EdbLayer::eShr">eShr</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:TX@1" href="src/EdbLayer.h.html#Sn6FzE">TX</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:eAffTXTY" title="EdbAffine2D EdbLayer::eAffTXTY">eAffTXTY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:A11" title="Float_t EdbAffine2D::A11()">A11</a>()*<a href="./EdbLayer.html#EdbLayer:TXp" title="float EdbLayer::TXp(EdbSegP&amp; s)">TXp</a>(s) + <a href="./EdbLayer.html#EdbLayer:eAffTXTY" title="EdbAffine2D EdbLayer::eAffTXTY">eAffTXTY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:A12" title="Float_t EdbAffine2D::A12()">A12</a>()*<a href="./EdbLayer.html#EdbLayer:TYp" title="float EdbLayer::TYp(EdbSegP&amp; s)">TYp</a>(s) + <a href="./EdbLayer.html#EdbLayer:eAffTXTY" title="EdbAffine2D EdbLayer::eAffTXTY">eAffTXTY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:B1" title="Float_t EdbAffine2D::B1()">B1</a>(); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:TY@1" href="src/EdbLayer.h.html#Cr7FzE">TY</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:eAffTXTY" title="EdbAffine2D EdbLayer::eAffTXTY">eAffTXTY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:A21" title="Float_t EdbAffine2D::A21()">A21</a>()*<a href="./EdbLayer.html#EdbLayer:TXp" title="float EdbLayer::TXp(EdbSegP&amp; s)">TXp</a>(s) + <a href="./EdbLayer.html#EdbLayer:eAffTXTY" title="EdbAffine2D EdbLayer::eAffTXTY">eAffTXTY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:A22" title="Float_t EdbAffine2D::A22()">A22</a>()*<a href="./EdbLayer.html#EdbLayer:TYp" title="float EdbLayer::TYp(EdbSegP&amp; s)">TYp</a>(s) + <a href="./EdbLayer.html#EdbLayer:eAffTXTY" title="EdbAffine2D EdbLayer::eAffTXTY">eAffTXTY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:B2" title="Float_t EdbAffine2D::B2()">B2</a>(); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:Xp" href="src/EdbLayer.h.html#PKCjLC">Xp</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:eAffXY" title="EdbAffine2D EdbLayer::eAffXY">eAffXY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:A11" title="Float_t EdbAffine2D::A11()">A11</a>()*s.<a href="./EdbLayer.html#EdbLayer:eX" title="Float_t EdbLayer::eX">eX</a> + <a href="./EdbLayer.html#EdbLayer:eAffXY" title="EdbAffine2D EdbLayer::eAffXY">eAffXY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:A12" title="Float_t EdbAffine2D::A12()">A12</a>()*s.<a href="./EdbLayer.html#EdbLayer:eY" title="Float_t EdbLayer::eY">eY</a> + <a href="./EdbLayer.html#EdbLayer:eAffXY" title="EdbAffine2D EdbLayer::eAffXY">eAffXY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:B1" title="Float_t EdbAffine2D::B1()">B1</a>(); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:Yp" href="src/EdbLayer.h.html#KoudGB">Yp</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:eAffXY" title="EdbAffine2D EdbLayer::eAffXY">eAffXY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:A21" title="Float_t EdbAffine2D::A21()">A21</a>()*s.<a href="./EdbLayer.html#EdbLayer:eX" title="Float_t EdbLayer::eX">eX</a> + <a href="./EdbLayer.html#EdbLayer:eAffXY" title="EdbAffine2D EdbLayer::eAffXY">eAffXY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:A22" title="Float_t EdbAffine2D::A22()">A22</a>()*s.<a href="./EdbLayer.html#EdbLayer:eY" title="Float_t EdbLayer::eY">eY</a> + <a href="./EdbLayer.html#EdbLayer:eAffXY" title="EdbAffine2D EdbLayer::eAffXY">eAffXY</a>.<a href="./EdbAffine2D.html#EdbAffine2D:B2" title="Float_t EdbAffine2D::B2()">B2</a>(); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:X@1" href="src/EdbLayer.h.html#Q5i24B">X</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:Xp" title="float EdbLayer::Xp(EdbSegP&amp; s)">Xp</a>(s) + <a href="./EdbLayer.html#EdbLayer:TX" title="float EdbLayer::TX() or overloads">TX</a>(s)*<a href="./EdbLayer.html#EdbLayer:eZcorr" title="Float_t EdbLayer::eZcorr">eZcorr</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:Y@1" href="src/EdbLayer.h.html#OYfH5C">Y</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:Yp" title="float EdbLayer::Yp(EdbSegP&amp; s)">Yp</a>(s) + <a href="./EdbLayer.html#EdbLayer:TY" title="float EdbLayer::TY() or overloads">TY</a>(s)*<a href="./EdbLayer.html#EdbLayer:eZcorr" title="Float_t EdbLayer::eZcorr">eZcorr</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbLayer:Zxy" href="src/EdbLayer.h.html#DMyPIB">Zxy</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbLayer.html#EdbLayer:eZ" title="Float_t EdbLayer::eZ">eZ</a>+<a href="./EdbLayer.html#EdbLayer:eZcorr" title="Float_t EdbLayer::eZcorr">eZcorr</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:26 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

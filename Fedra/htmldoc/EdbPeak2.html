@@ -1,0 +1,389 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:28 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbPeak2</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbPeak2','','EdbCell2.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbPeak2.h.html">header file</a>
+<a class="descrheadentry"> </a>
+<a class="descrheadentry" href="EdbPeak2_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbPeak2:description">class description</a> 
+<a class="descrheadentry" href="#EdbPeak2:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbPeak2:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbPeak2:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbPeak2</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbPeak2:description"></a>class EdbPeak2: public <a href="./EdbH2.html">EdbH2</a></h1>
+<div class="classdescr">
+<pre>
+
+<a href="./EdbCell2.html">EdbCell2</a>
+
+class to group 2-dim objects for the fast access
+
+
+</pre></div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbPeak2:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbPeak2:EdbPeak2">EdbPeak2</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbPeak2:EdbPeak2@1">EdbPeak2</a>(<span class="keyword">const</span> <a href="./EdbH2.html">EdbH2</a>&amp; h)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbPeak2:EdbPeak2@2">EdbPeak2</a>(<span class="keyword">const</span> <a href="./EdbPeak2.html">EdbPeak2</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbPeak2:_EdbPeak2">~EdbPeak2</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:AddBin"><span class="baseclass">EdbH2::</span>AddBin</a>(<span class="keyword">int</span> jcell, <span class="keyword">int</span> n)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Bin@2"><span class="baseclass">EdbH2::</span>Bin</a>(<span class="keyword">int</span>* iv) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Bin@3"><span class="baseclass">EdbH2::</span>Bin</a>(<span class="keyword">int</span> j) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Bin"><span class="baseclass">EdbH2::</span>Bin</a>(<span class="keyword">float</span> x, <span class="keyword">float</span> y) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Bin@1"><span class="baseclass">EdbH2::</span>Bin</a>(<span class="keyword">int</span> ix, <span class="keyword">int</span> iy) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(TBrowser* b)</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbPeak2:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:CleanCells"><span class="baseclass">EdbH2::</span>CleanCells</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Clear"><span class="baseclass">TObject::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:Clone"><span class="baseclass">TObject::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Compare"><span class="baseclass">TObject::</span>Compare</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Copy"><span class="baseclass">EdbH2::</span>Copy</a>(<span class="keyword">const</span> <a href="./EdbH2.html">EdbH2</a>&amp; h)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:Delete">Delete</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:DiscardHighCells"><span class="baseclass">EdbH2::</span>DiscardHighCells</a>(<span class="keyword">int</span> nmax)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">TH2F*</td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:DrawH2"><span class="baseclass">EdbH2::</span>DrawH2</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = <span class="string">"plot2d"</span>, <span class="keyword">const</span> <span class="keyword">char</span>* title = <span class="string">"EdbH2plot2D"</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">TH1I*</td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:DrawSpectrum"><span class="baseclass">EdbH2::</span>DrawSpectrum</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = <span class="string">"plot1d"</span>, <span class="keyword">const</span> <span class="keyword">char</span>* title = <span class="string">"EdbH2 DrawSpectrun"</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:EstimatePeakMeanPosition">EstimatePeakMeanPosition</a>(<span class="keyword">int</span>* iv, <span class="keyword">int</span>* ir, <span class="keyword">float</span>&amp; x, <span class="keyword">float</span>&amp; y)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:EstimatePeakVolume">EstimatePeakVolume</a>(<span class="keyword">int</span> ipeak)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:EstimatePeakVolumeSafe">EstimatePeakVolumeSafe</a>(<span class="keyword">int</span> ipeak)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(TMethod* method, TObjArray* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Fill"><span class="baseclass">EdbH2::</span>Fill</a>(<span class="keyword">float</span> x, <span class="keyword">float</span> y)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Fill@1"><span class="baseclass">EdbH2::</span>Fill</a>(<span class="keyword">float</span> x, <span class="keyword">float</span> y, <span class="keyword">int</span> n)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:FindGlobalPeak">FindGlobalPeak</a>(<span class="keyword">float</span>&amp; x, <span class="keyword">float</span>&amp; y, <span class="keyword">float</span> ratio = 0.1)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:FindPeak">FindPeak</a>(<span class="keyword">int</span>* iv)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:FindPeak@1">FindPeak</a>(<span class="keyword">float</span>* v)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:FindPeak@2">FindPeak</a>(<span class="keyword">float</span>&amp; x, <span class="keyword">float</span>&amp; y)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:FindPeak9">FindPeak9</a>(<span class="keyword">float</span>&amp; x, <span class="keyword">float</span>&amp; y)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetName"><span class="baseclass">TObject::</span>GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetTitle"><span class="baseclass">TObject::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(TTimer* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Hash"><span class="baseclass">TObject::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> TClass* cl) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:Init">Init</a>(<span class="keyword">const</span> <a href="./EdbH2.html">EdbH2</a>&amp; h, <span class="keyword">int</span> npeaks = 10)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:InitH2"><span class="baseclass">EdbH2::</span>InitH2</a>(<span class="keyword">const</span> <a href="./EdbH2.html">EdbH2</a>&amp; h)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:InitH2@1"><span class="baseclass">EdbH2::</span>InitH2</a>(<span class="keyword">int</span>* n, <span class="keyword">float</span>* min, <span class="keyword">float</span>* max)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:InitH2@2"><span class="baseclass">EdbH2::</span>InitH2</a>(<span class="keyword">int</span> nx, <span class="keyword">float</span> minx, <span class="keyword">float</span> maxx, <span class="keyword">int</span> ny, <span class="keyword">float</span> miny, <span class="keyword">float</span> maxy)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:InitPeaks">InitPeaks</a>(<span class="keyword">int</span> npeaks)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Integral"><span class="baseclass">EdbH2::</span>Integral</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Integral@1"><span class="baseclass">EdbH2::</span>Integral</a>(<span class="keyword">int</span>* iv, <span class="keyword">int</span>* ir)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbPeak2:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsSortable"><span class="baseclass">TObject::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:IX"><span class="baseclass">EdbH2::</span>IX</a>(<span class="keyword">float</span> x) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:IX@1"><span class="baseclass">EdbH2::</span>IX</a>(<span class="keyword">int</span> jcell) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:IY"><span class="baseclass">EdbH2::</span>IY</a>(<span class="keyword">float</span> y) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:IY@1"><span class="baseclass">EdbH2::</span>IY</a>(<span class="keyword">int</span> jcell) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Jcell@2"><span class="baseclass">EdbH2::</span>Jcell</a>(<span class="keyword">float</span>* v) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Jcell"><span class="baseclass">EdbH2::</span>Jcell</a>(<span class="keyword">int</span> ix, <span class="keyword">int</span> iy) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Jcell@1"><span class="baseclass">EdbH2::</span>Jcell</a>(<span class="keyword">float</span> x, <span class="keyword">float</span> y) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ls"><span class="baseclass">TObject::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:MaxBin"><span class="baseclass">EdbH2::</span>MaxBin</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:Mean">Mean</a>(<span class="keyword">int</span> i = 0) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:Mean3">Mean3</a>(<span class="keyword">int</span> i = 0) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Ncell"><span class="baseclass">EdbH2::</span>Ncell</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:NX"><span class="baseclass">EdbH2::</span>NX</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:NY"><span class="baseclass">EdbH2::</span>NY</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPeak2.html">EdbPeak2</a>&amp;</td><td class="funcname"><a class="funcname" href="#EdbPeak2:operator_">operator=</a>(<span class="keyword">const</span> <a href="./EdbPeak2.html">EdbPeak2</a>&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:Peak">Peak</a>(<span class="keyword">int</span> i = 0) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:Print">Print</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:PrintStat"><span class="baseclass">EdbH2::</span>PrintStat</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:ProbPeak">ProbPeak</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:ProbPeak@1">ProbPeak</a>(<span class="keyword">float</span>&amp; x, <span class="keyword">float</span>&amp; y)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:ProbPeak@2">ProbPeak</a>(<span class="keyword">int</span>* iv, <span class="keyword">int</span>* ir)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:ProbPeaks">ProbPeaks</a>(<span class="keyword">int</span> npeak)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:ProbPeaks@1">ProbPeaks</a>(<span class="keyword">int</span> npeak, <span class="keyword">int</span>* ir)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbH1.html">EdbH1</a>*</td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:ProjectionX"><span class="baseclass">EdbH2::</span>ProjectionX</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbH1.html">EdbH1</a>*</td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:ProjectionY"><span class="baseclass">EdbH2::</span>ProjectionY</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Set0"><span class="baseclass">EdbH2::</span>Set0</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:SetBin@1"><span class="baseclass">EdbH2::</span>SetBin</a>(<span class="keyword">int</span> j, <span class="keyword">int</span> n)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:SetBin"><span class="baseclass">EdbH2::</span>SetBin</a>(<span class="keyword">int</span> ix, <span class="keyword">int</span> iy, <span class="keyword">int</span> n)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:Smooth">Smooth</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">"k5a"</span>)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:WipePeak">WipePeak</a>(<span class="keyword">int</span>* iv, <span class="keyword">int</span>* ir)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:X"><span class="baseclass">EdbH2::</span>X</a>(<span class="keyword">int</span> ix) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Xbin"><span class="baseclass">EdbH2::</span>Xbin</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Xj"><span class="baseclass">EdbH2::</span>Xj</a>(<span class="keyword">int</span> j) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Xmax"><span class="baseclass">EdbH2::</span>Xmax</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:XmaxA"><span class="baseclass">EdbH2::</span>XmaxA</a>(<span class="keyword">float</span> level = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:Xmean">Xmean</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Xmin"><span class="baseclass">EdbH2::</span>Xmin</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:XminA"><span class="baseclass">EdbH2::</span>XminA</a>(<span class="keyword">float</span> level = 0)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Y"><span class="baseclass">EdbH2::</span>Y</a>(<span class="keyword">int</span> iy) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Ybin"><span class="baseclass">EdbH2::</span>Ybin</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Yj"><span class="baseclass">EdbH2::</span>Yj</a>(<span class="keyword">int</span> j) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Ymax"><span class="baseclass">EdbH2::</span>Ymax</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:YmaxA"><span class="baseclass">EdbH2::</span>YmaxA</a>(<span class="keyword">float</span> level = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPeak2:Ymean">Ymean</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:Ymin"><span class="baseclass">EdbH2::</span>Ymin</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbH2.html#EdbH2:YminA"><span class="baseclass">EdbH2::</span>YminA</a>(<span class="keyword">float</span> level = 0)</td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, va_list va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbPeak2:Data_Members"></a>Data Members</h2>
+<div class="access" id="enumpubl"><b>public:</b>
+<table class="data" id="tabenumpubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span>EStatusBits { </td><td class="dataname"><a href="#TObject:kCanDelete">kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kMustCleanup">kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kObjInCanvas">kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kIsReferenced">kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kHasUUID">kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kCannotPick">kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNoContextMenu">kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kInvalidObject">kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span><i>[unnamed]</i> { </td><td class="dataname"><a href="#TObject:kIsOnHeap">kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNotDeleted">kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kZombie">kZombie</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kBitMask">kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kSingleKey">kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kOverwrite">kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kWriteDelete">kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="data"><td class="datatype">TArrayF</td><td class="dataname"><a name="EdbPeak2:eMean"></a>eMean</td><td></td></tr>
+<tr class="data"><td class="datatype">TArrayF</td><td class="dataname"><a name="EdbPeak2:eMean3"></a>eMean3</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPeak2:eNorm"></a>eNorm</td><td class="datadesc">the norm-factor in case of the smoothing applied</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbPeak2:eNpeaks"></a>eNpeaks</td><td class="datadesc">number of found peaks</td></tr>
+<tr class="data"><td class="datatype">TArrayF</td><td class="dataname"><a name="EdbPeak2:ePeak"></a>ePeak</td><td></td></tr>
+
+</table></div>
+<div class="access" id="dataprot"><b>protected:</b>
+<table class="data" id="tabdataprot" cellspacing="0">
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbH2.html#EdbH2:eBin"><span class="baseclass">EdbH2::</span>eBin[2]</a></td><td class="datadesc">bin size</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbH2.html#EdbH2:eMax"><span class="baseclass">EdbH2::</span>eMax[2]</a></td><td class="datadesc">max</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbH2.html#EdbH2:eMin"><span class="baseclass">EdbH2::</span>eMin[2]</a></td><td class="datadesc">min</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a href="./EdbH2.html#EdbH2:eN"><span class="baseclass">EdbH2::</span>eN[2]</a></td><td class="datadesc">divisions</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a>*</td><td class="dataname"><a href="./EdbH2.html#EdbH2:eNC"><span class="baseclass">EdbH2::</span>eNC</a></td><td class="datadesc">[eNcell] number of objects/cell</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a href="./EdbH2.html#EdbH2:eNcell"><span class="baseclass">EdbH2::</span>eNcell</a></td><td class="datadesc">eNx*eNy</td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbPeak2:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td><table><tr>
+<td bgcolor="#f7f7f7" align="right">
+<table><tr><td><table><tr>
+<td bgcolor="#efefef" align="right">
+<tt>TObject</tt></td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><tt><a name="EdbH2" href="./EdbH2.html">EdbH2</a></tt></center>
+</td>
+</tr></table>
+</td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><big><b><tt><a name="EdbPeak2" href="./EdbPeak2.html">EdbPeak2</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPeak2:Delete" href="src/EdbPeak2.h.html#OKJnL">Delete</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a> <a class="funcname" name="EdbPeak2:Mean" href="src/EdbPeak2.h.html#o8paUB">Mean</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> 1.*<a href="./EdbH2.html#EdbH2:Integral" title="Long_t EdbH2::Integral() or overloads">Integral</a>()/eNcell; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbPeak2:EdbPeak2" href="src/EdbPeak2.h.html#qIy0E">EdbPeak2</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbPeak2.html#EdbPeak2:InitPeaks" title="void EdbPeak2::InitPeaks(int npeaks)">InitPeaks</a>(10); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbPeak2:EdbPeak2@1" href="src/EdbPeak2.h.html#K2dt_B">EdbPeak2</a>(<span class="keyword">const</span> <a href="./EdbH2.html">EdbH2</a>&amp; h)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbPeak2.html#EdbPeak2:InitPeaks" title="void EdbPeak2::InitPeaks(int npeaks)">InitPeaks</a>(10); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbPeak2:_EdbPeak2" href="src/EdbPeak2.h.html#S5KiID">~EdbPeak2</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPeak2:Init" href="src/EdbPeak2.h.html#czb0WD">Init</a>(<span class="keyword">const</span> <a href="./EdbH2.html">EdbH2</a>&amp; h, <span class="keyword">int</span> npeaks = 10)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPeak2:Print" href="src/EdbPeak2.h.html#F6ZmsD">Print</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPeak2:InitPeaks" href="src/EdbPeak2.h.html#P4T_Z">InitPeaks</a>(<span class="keyword">int</span> npeaks)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPeak2:FindPeak" href="src/EdbPeak2.h.html#dts_aE">FindPeak</a>(  <span class="keyword">int</span> iv[2])</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPeak2:FindPeak" href="src/EdbPeak2.h.html#dzz.P">FindPeak</a>(  <span class="keyword">float</span> v[2])</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPeak2:FindPeak@2" href="src/EdbPeak2.h.html#d9zmnB">FindPeak</a>(<span class="keyword">float</span>&amp; x, <span class="keyword">float</span>&amp; y)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbPeak2:FindPeak9" href="src/EdbPeak2.h.html#ONRnb">FindPeak9</a>(<span class="keyword">float</span>&amp; x, <span class="keyword">float</span>&amp; y)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbPeak2:FindGlobalPeak" href="src/EdbPeak2.h.html#kFLZoE">FindGlobalPeak</a>(<span class="keyword">float</span>&amp; x, <span class="keyword">float</span>&amp; y, <span class="keyword">float</span> ratio = 0.1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbPeak2:ProbPeak" href="src/EdbPeak2.h.html#hGPUp">ProbPeak</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbPeak2:ProbPeak@1" href="src/EdbPeak2.h.html#i.PjIC">ProbPeak</a>(<span class="keyword">float</span>&amp; x, <span class="keyword">float</span>&amp; y)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbPeak2:ProbPeak@2" href="src/EdbPeak2.h.html#Y.smbD">ProbPeak</a>(<span class="keyword">int</span>* iv, <span class="keyword">int</span>* ir)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPeak2:WipePeak" href="src/EdbPeak2.h.html#vEcBhE">WipePeak</a>(<span class="keyword">int</span>* iv, <span class="keyword">int</span>* ir)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPeak2:ProbPeaks" href="src/EdbPeak2.h.html#M.Yw6E">ProbPeaks</a>(<span class="keyword">int</span> npeak)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPeak2:ProbPeaks@1" href="src/EdbPeak2.h.html#Oqhze">ProbPeaks</a>(<span class="keyword">int</span> npeak, <span class="keyword">int</span>* ir)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbPeak2:EstimatePeakVolume" href="src/EdbPeak2.h.html#jpM2oB">EstimatePeakVolume</a>(<span class="keyword">int</span> ipeak)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbPeak2:EstimatePeakVolumeSafe" href="src/EdbPeak2.h.html#dd3ctD">EstimatePeakVolumeSafe</a>(<span class="keyword">int</span> ipeak)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbPeak2:EstimatePeakMeanPosition" href="src/EdbPeak2.h.html#mJuc1B">EstimatePeakMeanPosition</a>(<span class="keyword">int</span>* iv, <span class="keyword">int</span>* ir, <span class="keyword">float</span>&amp; x, <span class="keyword">float</span>&amp; y)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbPeak2:Smooth" href="src/EdbPeak2.h.html#wHBXh">Smooth</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">"k5a"</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbPeak2:Xmean" href="src/EdbPeak2.h.html#NaWpn">Xmean</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbPeak2:Ymean" href="src/EdbPeak2.h.html#taWpn">Ymean</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbPeak2:Peak" href="src/EdbPeak2.h.html#vajaM">Peak</a>(<span class="keyword">int</span> i = 0) const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">if</span>(i&gt;=0&amp;&amp;i&lt;<a href="./EdbPeak2.html#EdbPeak2:eNpeaks" title="Int_t EdbPeak2::eNpeaks">eNpeaks</a>) <span class="keyword">return</span> <a href="./EdbPeak2.html#EdbPeak2:ePeak" title="TArrayF EdbPeak2::ePeak">ePeak</a>[i];  <span class="keyword">else</span> <span class="keyword">return</span> -1; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbPeak2:Mean3" href="src/EdbPeak2.h.html#E_XFkB">Mean3</a>(<span class="keyword">int</span> i = 0) const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">if</span>(i&gt;=0&amp;&amp;i&lt;<a href="./EdbPeak2.html#EdbPeak2:eNpeaks" title="Int_t EdbPeak2::eNpeaks">eNpeaks</a>) <span class="keyword">return</span> <a href="./EdbPeak2.html#EdbPeak2:eMean3" title="TArrayF EdbPeak2::eMean3">eMean3</a>[i]; <span class="keyword">else</span> <span class="keyword">return</span> -1; }</code></div>
+<div style="clear:both;"></div>
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:28 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:21 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbEDADecaySearch</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbEDADecaySearch','','EdbEDADecaySearch.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbEDADecaySearch.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbEDADecaySearch.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbEDADecaySearch_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbEDADecaySearch:description">class description</a> 
+<a class="descrheadentry" href="#EdbEDADecaySearch:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbEDADecaySearch:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbEDADecaySearch:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbEDADecaySearch</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbEDADecaySearch:description"></a>class EdbEDADecaySearch</h1>
+<div class="classdescr">
+</div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbEDADecaySearch:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:EdbEDADecaySearch">EdbEDADecaySearch</a>(<span class="keyword">int</span> DSversion = 2)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:EdbEDADecaySearch@1">EdbEDADecaySearch</a>(<span class="keyword">const</span> <a href="./EdbEDADecaySearch.html">EdbEDADecaySearch</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:_EdbEDADecaySearch">~EdbEDADecaySearch</a>()</td></tr>
+<tr class="func"><td class="funcret">TObjArray*</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:CheckInTrackKink">CheckInTrackKink</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* trk)</td></tr>
+<tr class="func"><td class="funcret">TObjArray*</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:CheckInTrackKinks">CheckInTrackKinks</a>(TObjArray* tracks = 0)</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:Class">Class</a>()</td></tr>
+<tr class="func"><td class="funcret">TObjArray*</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:DoSearch">DoSearch</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:FindPrimaryVertex">FindPrimaryVertex</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDATrackP.html">EdbEDATrackP</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:FindTrack">FindTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</td></tr>
+<tr class="func"><td class="funcret">TObjArray*</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:FindUpstreamVertices">FindUpstreamVertices</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDADecayVertex.html">EdbEDADecayVertex</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:GetDecayVertex">GetDecayVertex</a>(<span class="keyword">int</span> i)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:GetIPCut">GetIPCut</a>(<a href="./EdbVertex.html">EdbVertex</a>* v, <a href="./EdbSegP.html">EdbSegP</a>* s)</td></tr>
+<tr class="func"><td class="funcret">TObjArray*</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:GetKinks">GetKinks</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:GetPrimaryVertex">GetPrimaryVertex</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:GetPVR">GetPVR</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDATrackP.html">EdbEDATrackP</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:GetTrack">GetTrack</a>(<span class="keyword">int</span> i)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDATrackSet.html">EdbEDATrackSet</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:GetTrackSet">GetTrackSet</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:GetTSDauIP1">GetTSDauIP1</a>(<span class="keyword">double</span> dz)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:GetTSDauIP2">GetTSDauIP2</a>(<span class="keyword">double</span> dz)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:KinkSearch">KinkSearch</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:MakeFakeVertex">MakeFakeVertex</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t, <span class="keyword">double</span> dz = 1150)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:MTSearch2seg">MTSearch2seg</a>(TObjArray* tracks)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:MTSearchAll">MTSearchAll</a>(TObjArray* tracks)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:NDecayVertices">NDecayVertices</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:Ntracks">Ntracks</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDADecaySearch.html">EdbEDADecaySearch</a>&amp;</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:operator_">operator=</a>(<span class="keyword">const</span> <a href="./EdbEDADecaySearch.html">EdbEDADecaySearch</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:PrintRunTracking">PrintRunTracking</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:PrintTracks">PrintTracks</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:SetBTSearch">SetBTSearch</a>(<span class="keyword">int</span> do_search = 1, <span class="keyword">int</span> npl_up = 0, <span class="keyword">int</span> npl_down = 2, <span class="keyword">float</span> ipcut = 20, <span class="keyword">float</span> phcut = 17)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:SetIPHist1">SetIPHist1</a>(TH1F* h)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:SetIPHist2">SetIPHist2</a>(TH1F* h)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:SetParentSearch">SetParentSearch</a>(<span class="keyword">int</span> do_search = 1, <span class="keyword">int</span> npl = 2, <span class="keyword">float</span> ipcut = 20, <span class="keyword">float</span> phcut = 17)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:SetPVR">SetPVR</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* pvr)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:SetSmallKinkSearch">SetSmallKinkSearch</a>(<span class="keyword">int</span> do_search = 1, <span class="keyword">int</span> npl_down = 5, <span class="keyword">float</span> Rmin = 5.)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:SetTracks">SetTracks</a>(TObjArray* array)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:SetTrackSet">SetTrackSet</a>(<a href="./EdbEDATrackSet.html">EdbEDATrackSet</a>* set)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:SetVertex">SetVertex</a>(<a href="./EdbVertex.html">EdbVertex</a>* v)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:ShortDecaySearch">ShortDecaySearch</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:SmallKinkSearch">SmallKinkSearch</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="func"><td class="funcret">TObjArray*</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:TSBaseTracks">TSBaseTracks</a>(<span class="keyword">int</span> ipl)</td></tr>
+<tr class="func"><td class="funcret">TObjArray*</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:TSDaughterTracks">TSDaughterTracks</a>(TObjArray* base)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:TSDaughterTracks2">TSDaughterTracks2</a>()</td></tr>
+<tr class="func"><td class="funcret">TObjArray*</td><td class="funcname"><a class="funcname" href="#EdbEDADecaySearch:TSParentTracks">TSParentTracks</a>(TObjArray* base)</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbEDADecaySearch:Data_Members"></a>Data Members</h2>
+<div class="access" id="enumpubl"><b>public:</b>
+<table class="data" id="tabenumpubl" cellspacing="0">
+<tr class="data"><td class="datatype">enum  { </td><td class="dataname"><a name="EdbEDADecaySearch:kParentSearch"></a>kParentSearch</td><td></td></tr>
+<tr class="data"><td class="datatype"></td><td class="dataname"><a name="EdbEDADecaySearch:kBaseTrackSearch"></a>kBaseTrackSearch</td><td></td></tr>
+<tr class="data"><td class="datatype"></td><td class="dataname"><a name="EdbEDADecaySearch:kDaughterSearch"></a>kDaughterSearch</td><td></td></tr>
+<tr class="data"><td class="datatype">};</td><td></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDADecaySearch:eBT"></a>eBT</td><td class="datadesc">Basetrack search</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="EdbEDADecaySearch:eBTIP"></a>eBTIP</td><td class="datadesc">IP cut for Basetrack</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="EdbEDADecaySearch:eBTPH"></a>eBTPH</td><td class="datadesc">PH cut for Basetrack</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDADecaySearch:eBTPlateDown"></a>eBTPlateDown</td><td class="datadesc">nplates downstream for Basetrack Search</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDADecaySearch:eBTPlateUp"></a>eBTPlateUp</td><td class="datadesc">nplates upstream or Basetrack search</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDADecaySearch:eDSVer"></a>eDSVer</td><td></td></tr>
+<tr class="data"><td class="datatype">TObjArray*</td><td class="dataname"><a name="EdbEDADecaySearch:eDecayVertices"></a>eDecayVertices</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="EdbEDADecaySearch:eKinkSigma"></a>eKinkSigma</td><td></td></tr>
+<tr class="data"><td class="datatype">TObjArray*</td><td class="dataname"><a name="EdbEDADecaySearch:eKinks"></a>eKinks</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDADecaySearch:eMT2seg"></a>eMT2seg</td><td class="datadesc">Microtrack search for 2 segment.</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDADecaySearch:eMTAll"></a>eMTAll</td><td class="datadesc">Microtrack search to fill holes and upstream, downstream.</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="dataname"><a name="EdbEDADecaySearch:ePVR"></a>ePVR</td><td></td></tr>
+<tr class="data"><td class="datatype">TObjArray*</td><td class="dataname"><a name="EdbEDADecaySearch:eSegments"></a>eSegments</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbEDATrackSet.html">EdbEDATrackSet</a>*</td><td class="dataname"><a name="EdbEDADecaySearch:eSet"></a>eSet</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDADecaySearch:eSmallKink"></a>eSmallKink</td><td class="datadesc">Small-Kink search</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDADecaySearch:eSmallKinkNpl"></a>eSmallKinkNpl</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">float</span></td><td class="dataname"><a name="EdbEDADecaySearch:eSmallKinkRmin"></a>eSmallKinkRmin</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDADecaySearch:eTSDau"></a>eTSDau</td><td class="datadesc">Daughter track search</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDADecaySearch:eTSDau2"></a>eTSDau2</td><td class="datadesc">Daughter track search. 2nd (after microtrack search)</td></tr>
+<tr class="data"><td class="datatype">TH1F*</td><td class="dataname"><a name="EdbEDADecaySearch:eTSDauIPHist1"></a>eTSDauIPHist1</td><td class="datadesc">Histgram for IP function along dz.</td></tr>
+<tr class="data"><td class="datatype">TH1F*</td><td class="dataname"><a name="EdbEDADecaySearch:eTSDauIPHist2"></a>eTSDauIPHist2</td><td class="datadesc">Histgram for IP function along dz.</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDADecaySearch:eTSDauNseg"></a>eTSDauNseg</td><td class="datadesc">Nseg cut for Daughter tracks</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDADecaySearch:eTSDauNseg2"></a>eTSDauNseg2</td><td class="datadesc">Nseg cut for Daughter tracks. 2nd.</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="EdbEDADecaySearch:eTSDauPH"></a>eTSDauPH</td><td class="datadesc">PH cut   for Daughter tracks</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDADecaySearch:eTSPar"></a>eTSPar</td><td class="datadesc">Parent track search</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="EdbEDADecaySearch:eTSParIP"></a>eTSParIP</td><td class="datadesc">IP cut   for Parent tracks</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDADecaySearch:eTSParNseg"></a>eTSParNseg</td><td class="datadesc">Nseg cut for Parent tracks</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a name="EdbEDADecaySearch:eTSParPH"></a>eTSParPH</td><td class="datadesc">PH cut   for Parent tracks</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDADecaySearch:eTSParPlate"></a>eTSParPlate</td><td class="datadesc">nPlate to be searched for Parent tracks. eTSParPlate==1:vertex-plate only. eTSParPlate==2:vertex-plate+1plate...</td></tr>
+<tr class="data"><td class="datatype">TObjArray*</td><td class="dataname"><a name="EdbEDADecaySearch:eTracks"></a>eTracks</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="dataname"><a name="EdbEDADecaySearch:eVertex"></a>eVertex</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDADecaySearch:eVertexPlatePID"></a>eVertexPlatePID</td><td class="datadesc">vertex plate. 1st stream plate from vertex</td></tr>
+<tr class="data"><td class="datatype">TObjArray*</td><td class="dataname"><a name="EdbEDADecaySearch:eVertices"></a>eVertices</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDADecaySearch:eVtxUp"></a>eVtxUp</td><td class="datadesc">Search Upstream vertex if the ntrk of selected vertex &lt;=3.</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDADecaySearch:eVtxUpDZ"></a>eVtxUpDZ</td><td class="datadesc">dz from selected vertex and upstream vertex to be searched.</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbEDADecaySearch:eVtxUpIP"></a>eVtxUpIP</td><td class="datadesc">Ip cut from the tracks belong to the selected vertex.</td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbEDADecaySearch:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td>
+<center><big><b><tt><a name="EdbEDADecaySearch" href="./EdbEDADecaySearch.html">EdbEDADecaySearch</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td>&larr;</td><td><table><tr>
+<td bgcolor="#f7f7f7"><table><tr><td>
+<center><tt><a name="EdbEDADecaySearchTab" href="./EdbEDADecaySearchTab.html">EdbEDADecaySearchTab</a></tt></center></td>
+<td></td>
+</tr></table></td>
+</tr></table></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDADecaySearch:GetTSDauIP1" href="src/EdbEDADecaySearch.cxx.html#t3YdFC">GetTSDauIP1</a>(<span class="keyword">double</span> dz)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDADecaySearch:GetTSDauIP2" href="src/EdbEDADecaySearch.cxx.html#VV7cFC">GetTSDauIP2</a>(<span class="keyword">double</span> dz)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDADecaySearch:SmallKinkSearch" href="src/EdbEDADecaySearch.cxx.html#TqhdsB">SmallKinkSearch</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TObjArray * <a class="funcname" name="EdbEDADecaySearch:CheckInTrackKink" href="src/EdbEDADecaySearch.cxx.html#XZt5f">CheckInTrackKink</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* trk)</span><br />
+<div class="funccomm"><pre> Search kink. return TObjArray of <a href="./EdbEDASmallKink.html">EdbEDASmallKink</a>
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDADecaySearch:PrintTracks" href="src/EdbEDADecaySearch.cxx.html#zXQeEC">PrintTracks</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDADecaySearch:MTSearch2seg" href="src/EdbEDADecaySearch.cxx.html#huPm6C">MTSearch2seg</a>(TObjArray* tracks)</span><br />
+<div class="funccomm"><pre> Microtrack search for 2 segment track.
+ if <a href="./EdbEDADecaySearch.html#EdbEDADecaySearch:eSet" title="EdbEDATrackSet* EdbEDADecaySearch::eSet">eSet</a> is not set, do nothing.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDADecaySearch:MTSearchAll" href="src/EdbEDADecaySearch.cxx.html#HWtvtC">MTSearchAll</a>(TObjArray* tracks)</span><br />
+<div class="funccomm"><pre> Microtrack search for all tracks.
+ if <a href="./EdbEDADecaySearch.html#EdbEDADecaySearch:eSet" title="EdbEDATrackSet* EdbEDADecaySearch::eSet">eSet</a> is not set, do nothing.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname">TObjArray * <a class="funcname" name="EdbEDADecaySearch:DoSearch" href="src/EdbEDADecaySearch.cxx.html#iDfJ2">DoSearch</a>()</span><br />
+<div class="funccomm"><pre> Do track search
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDADecaySearch:SetVertex" href="src/EdbEDADecaySearch.cxx.html#ZT.IfE">SetVertex</a>(<a href="./EdbVertex.html">EdbVertex</a>* v)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TObjArray * <a class="funcname" name="EdbEDADecaySearch:FindUpstreamVertices" href="src/EdbEDADecaySearch.cxx.html#qyAyUC">FindUpstreamVertices</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TObjArray * <a class="funcname" name="EdbEDADecaySearch:TSDaughterTracks" href="src/EdbEDADecaySearch.cxx.html#aR1SLB">TSDaughterTracks</a>(TObjArray* base)</span><br />
+<div class="funccomm"><pre> Search Tracks and set <a href="./EdbEDADecaySearch.html#EdbEDADecaySearch:eTracks" title="TObjArray* EdbEDADecaySearch::eTracks">eTracks</a>. return TObjArray filled with selected tracks.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDADecaySearch:TSDaughterTracks2" href="src/EdbEDADecaySearch.cxx.html#mg3rqE">TSDaughterTracks2</a>()</span><br />
+<div class="funccomm"><pre> Filter 2segment tracks after microtrack search.
+ sevior dz cut will be applied.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname">TObjArray * <a class="funcname" name="EdbEDADecaySearch:TSParentTracks" href="src/EdbEDADecaySearch.cxx.html#sy7R0C">TSParentTracks</a>(TObjArray* base)</span><br />
+<div class="funccomm"><pre> Search Tracks and set <a href="./EdbEDADecaySearch.html#EdbEDADecaySearch:eTracks" title="TObjArray* EdbEDADecaySearch::eTracks">eTracks</a>. return TObjArray filled with selected tracks.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname">TObjArray * <a class="funcname" name="EdbEDADecaySearch:TSBaseTracks" href="src/EdbEDADecaySearch.cxx.html#ERazFB">TSBaseTracks</a>(<span class="keyword">int</span> ipl)</span><br />
+<div class="funccomm"><pre> Search Tracks and set <a href="./EdbEDADecaySearch.html#EdbEDADecaySearch:eTracks" title="TObjArray* EdbEDADecaySearch::eTracks">eTracks</a>. return TObjArray filled with selected segments.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbVertex.html">EdbVertex</a> * <a class="funcname" name="EdbEDADecaySearch:MakeFakeVertex" href="src/EdbEDADecaySearch.cxx.html#kRP34C">MakeFakeVertex</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t, <span class="keyword">double</span> dz = 1150)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbVertex.html">EdbVertex</a> * <a class="funcname" name="EdbEDADecaySearch:FindPrimaryVertex" href="src/EdbEDADecaySearch.cxx.html#UKB5zE">FindPrimaryVertex</a>()</span><br />
+<div class="funccomm"><pre> Find Best Vertex.
+ select best one from pvr-&gt;<a href="./EdbEDADecaySearch.html#EdbEDADecaySearch:eVertex" title="EdbVertex* EdbEDADecaySearch::eVertex">eVertex</a>
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDADecaySearch:KinkSearch" href="src/EdbEDADecaySearch.cxx.html#sdxafC">KinkSearch</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbEDADecaySearch:GetIPCut" href="src/EdbEDADecaySearch.cxx.html#Vb_UDE">GetIPCut</a>(<a href="./EdbVertex.html">EdbVertex</a>* v, <a href="./EdbSegP.html">EdbSegP</a>* s)</span><br />
+<div class="funccomm"><pre> calculate IP cut for given 1ry vertex and segment.
+ if segment is BT, Z of segment is assumed Z=s-&gt;Z()-150;
+ otherwise, use s-&gt;Z();
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDADecaySearch:ShortDecaySearch" href="src/EdbEDADecaySearch.cxx.html#FgfiIE">ShortDecaySearch</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbTrackP.html">EdbTrackP</a> * <a class="funcname" name="EdbEDADecaySearch:GetTrack" href="src/EdbEDADecaySearch.h.html#t8jTJC">GetTrack</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> eOriginal;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbVertex.html">EdbVertex</a> * <a class="funcname" name="EdbEDADecaySearch:GetPrimaryVertex" href="src/EdbEDADecaySearch.h.html#f9QpGC">GetPrimaryVertex</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> ePrimaryVertex;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbEDADecaySearch:EdbEDADecaySearch" href="src/EdbEDADecaySearch.h.html#oxThKD">EdbEDADecaySearch</a>(<span class="keyword">int</span> DSversion = 2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">virtual</span> <a class="funcname" name="EdbEDADecaySearch:_EdbEDADecaySearch" href="src/EdbEDADecaySearch.h.html#BUPeRB">~EdbEDADecaySearch</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbEDATrackP.html">EdbEDATrackP</a> * <a class="funcname" name="EdbEDADecaySearch:FindTrack" href="src/EdbEDADecaySearch.h.html#nNVEkB">FindTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDADecaySearch:Ntracks" href="src/EdbEDADecaySearch.h.html#FGU7DB">Ntracks</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDADecaySearch.html#EdbEDADecaySearch:eTracks" title="TObjArray* EdbEDADecaySearch::eTracks">eTracks</a>-&gt;GetEntries();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDADecaySearch:NDecayVertices" href="src/EdbEDADecaySearch.h.html#LSLLU">NDecayVertices</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDADecaySearch.html#EdbEDADecaySearch:eDecayVertices" title="TObjArray* EdbEDADecaySearch::eDecayVertices">eDecayVertices</a>-&gt;GetEntries();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbEDADecayVertex.html">EdbEDADecayVertex</a> * <a class="funcname" name="EdbEDADecaySearch:GetDecayVertex" href="src/EdbEDADecaySearch.h.html#bDBU4C">GetDecayVertex</a>(<span class="keyword">int</span> i)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> (<a href="./EdbEDADecayVertex.html">EdbEDADecayVertex</a> *)<a href="./EdbEDADecaySearch.html#EdbEDADecaySearch:eDecayVertices" title="TObjArray* EdbEDADecaySearch::eDecayVertices">eDecayVertices</a>-&gt;At(i);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDADecaySearch:SetPVR" href="src/EdbEDADecaySearch.h.html#qUKfBB">SetPVR</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* pvr)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDADecaySearch.html#EdbEDADecaySearch:ePVR" title="EdbPVRec* EdbEDADecaySearch::ePVR">ePVR</a> = pvr;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPVRec.html">EdbPVRec</a> * <a class="funcname" name="EdbEDADecaySearch:GetPVR" href="src/EdbEDADecaySearch.h.html#NI9qiB">GetPVR</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDADecaySearch.html#EdbEDADecaySearch:ePVR" title="EdbPVRec* EdbEDADecaySearch::ePVR">ePVR</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDADecaySearch:SetTrackSet" href="src/EdbEDADecaySearch.h.html#rsyoSC">SetTrackSet</a>(<a href="./EdbEDATrackSet.html">EdbEDATrackSet</a>* set)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbEDATrackSet.html">EdbEDATrackSet</a> * <a class="funcname" name="EdbEDADecaySearch:GetTrackSet" href="src/EdbEDADecaySearch.h.html#CeGYPD">GetTrackSet</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDADecaySearch.html#EdbEDADecaySearch:eSet" title="EdbEDATrackSet* EdbEDADecaySearch::eSet">eSet</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDADecaySearch:SetIPHist1" href="src/EdbEDADecaySearch.h.html#XssoAE">SetIPHist1</a>(TH1F* h)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDADecaySearch.html#EdbEDADecaySearch:eTSDauIPHist1" title="TH1F* EdbEDADecaySearch::eTSDauIPHist1">eTSDauIPHist1</a>=h;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDADecaySearch:SetIPHist2" href="src/EdbEDADecaySearch.h.html#L7dXZD">SetIPHist2</a>(TH1F* h)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDADecaySearch.html#EdbEDADecaySearch:eTSDauIPHist2" title="TH1F* EdbEDADecaySearch::eTSDauIPHist2">eTSDauIPHist2</a>=h;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDADecaySearch:SetTracks" href="src/EdbEDADecaySearch.h.html#pqrafC">SetTracks</a>(TObjArray* array)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbEDADecaySearch.html#EdbEDADecaySearch:eTracks" title="TObjArray* EdbEDADecaySearch::eTracks">eTracks</a>=array;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname">TObjArray * <a class="funcname" name="EdbEDADecaySearch:CheckInTrackKinks" href="src/EdbEDADecaySearch.h.html#pX89jC">CheckInTrackKinks</a>(TObjArray* tracks = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TObjArray * <a class="funcname" name="EdbEDADecaySearch:GetKinks" href="src/EdbEDADecaySearch.h.html#hHKszC">GetKinks</a>(<span class="keyword">void</span>)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDADecaySearch.html#EdbEDADecaySearch:eKinks" title="TObjArray* EdbEDADecaySearch::eKinks">eKinks</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDADecaySearch:SetBTSearch" href="src/EdbEDADecaySearch.h.html#j9_tb">SetBTSearch</a>(<span class="keyword">int</span> do_search = 1, <span class="keyword">int</span> npl_up = 0, <span class="keyword">int</span> npl_down = 2, <span class="keyword">float</span> ipcut = 20, <span class="keyword">float</span> phcut = 17)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDADecaySearch:SetParentSearch" href="src/EdbEDADecaySearch.h.html#qo_B0B">SetParentSearch</a>(<span class="keyword">int</span> do_search = 1, <span class="keyword">int</span> npl = 2, <span class="keyword">float</span> ipcut = 20, <span class="keyword">float</span> phcut = 17)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDADecaySearch:SetSmallKinkSearch" href="src/EdbEDADecaySearch.h.html#qQn5yC">SetSmallKinkSearch</a>(<span class="keyword">int</span> do_search = 1, <span class="keyword">int</span> npl_down = 5, <span class="keyword">float</span> Rmin = 5.)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDADecaySearch:PrintRunTracking" href="src/EdbEDADecaySearch.h.html#jmnSTD">PrintRunTracking</a>()</span><br />
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:22 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

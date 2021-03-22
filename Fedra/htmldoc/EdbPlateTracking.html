@@ -1,0 +1,465 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:29 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbPlateTracking</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbPlateTracking','','EdbPlateTracking.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbPlateTracking.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbPlateTracking.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbPlateTracking_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbPlateTracking:description">class description</a> 
+<a class="descrheadentry" href="#EdbPlateTracking:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbPlateTracking:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbPlateTracking:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbPlateTracking</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbPlateTracking:description"></a>class EdbPlateTracking: public TObject</h1>
+<div class="classdescr">
+<pre>
+
+<a href="./EdbPlateTracking.html">EdbPlateTracking</a>
+
+Prediction search in preselected raw data of one plate
+No any input-output functions in this class
+
+
+</pre></div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbPlateTracking:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:EdbPlateTracking">EdbPlateTracking</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:EdbPlateTracking@2">EdbPlateTracking</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; S1, <a href="./EdbPattern.html">EdbPattern</a>&amp; S2, <a href="./EdbSegP.html">EdbSegP</a>&amp; prediction)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:EdbPlateTracking@1">EdbPlateTracking</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; S1, <a href="./EdbPattern.html">EdbPattern</a>&amp; S2, <a href="./EdbSegP.html">EdbSegP</a>&amp; prediction, <a href="./EdbPlateP.html">EdbPlateP</a>&amp; plate)</td></tr>
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:_EdbPlateTracking">~EdbPlateTracking</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(TBrowser* b)</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Clear"><span class="baseclass">TObject::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:Clone"><span class="baseclass">TObject::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:CloseSBtree">CloseSBtree</a>(TTree* tree)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Compare"><span class="baseclass">TObject::</span>Compare</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Copy"><span class="baseclass">TObject::</span>Copy</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp; object) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(TMethod* method, TObjArray* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:ExtrapolateCond">ExtrapolateCond</a>(<a href="./EdbScanCond.html">EdbScanCond</a>&amp; inputcond, <span class="keyword">int</span> flag, <a href="./EdbScanCond.html">EdbScanCond</a>&amp; outputcond)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:FindBestCandidate">FindBestCandidate</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; fndbt, <a href="./EdbSegP.html">EdbSegP</a>&amp; fnd, <a href="./EdbPattern.html">EdbPattern</a>&amp; cnd, <span class="keyword">float</span> wmin, <span class="keyword">float</span> wmindegrad, <span class="keyword">float</span> chi2max)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:FindBestCandidateDS">FindBestCandidateDS</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; fndbt, <a href="./EdbSegP.html">EdbSegP</a>&amp; fnd, <a href="./EdbPattern.html">EdbPattern</a>&amp; cnd, <span class="keyword">float</span> wmin, <span class="keyword">float</span> wmindegrad, <span class="keyword">float</span> chi2max, <a href="./EdbSegP.html">EdbSegP</a>&amp; spred, <span class="keyword">float</span> maxdmin)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:FindCandidateMT">FindCandidateMT</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; fnds1, <a href="./EdbPattern.html">EdbPattern</a>&amp; fnds2, <a href="./EdbSegP.html">EdbSegP</a>&amp; fnd)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:FindCandidateMTDS">FindCandidateMTDS</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; fnds1, <a href="./EdbPattern.html">EdbPattern</a>&amp; fnds2, <a href="./EdbSegP.html">EdbSegP</a>&amp; fnd, <a href="./EdbSegP.html">EdbSegP</a>&amp; spred, <span class="keyword">float</span> maxdmin)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:FindCandidates">FindCandidates</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; spred, <a href="./EdbPattern.html">EdbPattern</a>&amp; fndbt, <a href="./EdbPattern.html">EdbPattern</a>&amp; fnds1, <a href="./EdbPattern.html">EdbPattern</a>&amp; fnds2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:FindCompliments">FindCompliments</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s, <a href="./EdbPattern.html">EdbPattern</a>&amp; pat, TObjArray&amp; found, <span class="keyword">float</span> chi2max, TArrayF&amp; chiarr)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:FindPrediction">FindPrediction</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; spred, <a href="./EdbSegP.html">EdbSegP</a>&amp; fndbt, <a href="./EdbSegP.html">EdbSegP</a>&amp; fnds1, <a href="./EdbSegP.html">EdbSegP</a>&amp; fnds2, <a href="./EdbSegP.html">EdbSegP</a>&amp; snewpred)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:FindPredictionDS">FindPredictionDS</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; spred, <a href="./EdbSegP.html">EdbSegP</a>&amp; fndbt, <a href="./EdbSegP.html">EdbSegP</a>&amp; fnds1, <a href="./EdbSegP.html">EdbSegP</a>&amp; fnds2, <a href="./EdbSegP.html">EdbSegP</a>&amp; snewpred, <span class="keyword">float</span> maxdmin)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:FindTrack">FindTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; pred, <a href="./EdbTrackP.html">EdbTrackP</a>&amp; found, <a href="./EdbPlateP.html">EdbPlateP</a>&amp; plate)</td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:GetBTHoles">GetBTHoles</a>(<span class="keyword">int</span> flag)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:GetMTHoles">GetMTHoles</a>(<span class="keyword">int</span> flag)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetName"><span class="baseclass">TObject::</span>GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:GetSBtreeEntry">GetSBtreeEntry</a>(<span class="keyword">int</span> entry, TTree&amp; tsbt)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetTitle"><span class="baseclass">TObject::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(TTimer* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Hash"><span class="baseclass">TObject::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> TClass* cl) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">static TTree*</td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:InitSBtree">InitSBtree</a>(<span class="keyword">const</span> <span class="keyword">char</span>* file_name = <span class="string">"sbt.root"</span>, <span class="keyword">const</span> <span class="keyword">char</span>* mode = <span class="string">"RECREATE"</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsSortable"><span class="baseclass">TObject::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ls"><span class="baseclass">TObject::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp;</td><td class="funcname"><a class="funcname" href="#TObject:operator_"><span class="baseclass">TObject::</span>operator=</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp; rhs)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:Print">Print</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:Set0">Set0</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:SetCondBT">SetCondBT</a>(<a href="./EdbScanCond.html">EdbScanCond</a>&amp; cond)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:SetCondMT">SetCondMT</a>(<a href="./EdbScanCond.html">EdbScanCond</a>&amp; cond)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:SetPred">SetPred</a>(<span class="keyword">const</span> <a href="./EdbSegP.html">EdbSegP</a>&amp; pred)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:TransformFromPlateRS">TransformFromPlateRS</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:UpdateFlag">UpdateFlag</a>(<span class="keyword">int</span> flag, <span class="keyword">int</span> status)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbPlateTracking:UpdateSBtree">UpdateSBtree</a>(TTree&amp; tsbt, <span class="keyword">int</span>* idp, <span class="keyword">int</span>* idf)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, va_list va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbPlateTracking:Data_Members"></a>Data Members</h2>
+<div class="access" id="enumpubl"><b>public:</b>
+<table class="data" id="tabenumpubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span>EStatusBits { </td><td class="dataname"><a href="#TObject:kCanDelete">kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kMustCleanup">kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kObjInCanvas">kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kIsReferenced">kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kHasUUID">kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kCannotPick">kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNoContextMenu">kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kInvalidObject">kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span><i>[unnamed]</i> { </td><td class="dataname"><a href="#TObject:kIsOnHeap">kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNotDeleted">kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kZombie">kZombie</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kBitMask">kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kSingleKey">kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kOverwrite">kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kWriteDelete">kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPlateTracking:eChi2MaxBT"></a>eChi2MaxBT</td><td class="datadesc">(1.5) maximum chi2 accepted between prediction and basetrack candidates</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPlateTracking:eChi2MaxMT"></a>eChi2MaxMT</td><td class="datadesc">(1.6) maximum chi2 accepted between prediction and microtrack candidates</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbScanCond.html">EdbScanCond</a></td><td class="dataname"><a name="EdbPlateTracking:eCondBT"></a>eCondBT</td><td class="datadesc">conditions for basetracks</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbScanCond.html">EdbScanCond</a></td><td class="dataname"><a name="EdbPlateTracking:eCondMT"></a>eCondMT</td><td class="datadesc">conditions for microtracks</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPlateTracking:eDegradPos"></a>eDegradPos</td><td class="datadesc">SigmaX  = SigmaX(0)  + degradPos   * mth</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPlateTracking:eDegradSlope"></a>eDegradSlope</td><td class="datadesc">SigmaTX = SigmaTX(0) + degradSlope * bth</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPlateTracking:eDeltaR"></a>eDeltaR</td><td class="datadesc">(20) </td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbPlateTracking:eIdf"></a>eIdf[4]</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbPlateTracking:eIdp"></a>eIdp[4]</td><td class="datadesc">to read from sbt </td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbSegP.html">EdbSegP</a></td><td class="dataname"><a name="EdbPlateTracking:eNext"></a>eNext</td><td class="datadesc">next prediction</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbPlateP.html">EdbPlateP</a></td><td class="dataname"><a name="EdbPlateTracking:ePlate"></a>ePlate</td><td class="datadesc">plate geometry and correction parameters to be applied to prediction</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbSegP.html">EdbSegP</a></td><td class="dataname"><a name="EdbPlateTracking:ePred"></a>ePred</td><td class="datadesc">prediction to be found in this plate in Brick reference system</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">bool</span></td><td class="dataname"><a name="EdbPlateTracking:ePredictionScan"></a>ePredictionScan</td><td class="datadesc">if true use GetPatternDataForPrediction( spred.ID(), side, pat ); in FindCandidates (default is false)</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPlateTracking:ePreliminaryChi2MaxMT"></a>ePreliminaryChi2MaxMT</td><td class="datadesc">(1.6) /  microtracks and basetracks selection</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPlateTracking:ePulsMinBT"></a>ePulsMinBT</td><td class="datadesc">(18)</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPlateTracking:ePulsMinDegradBT"></a>ePulsMinDegradBT</td><td class="datadesc">(0)</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPlateTracking:ePulsMinDegradMT"></a>ePulsMinDegradMT</td><td class="datadesc">(0)</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbPlateTracking:ePulsMinMT"></a>ePulsMinMT</td><td class="datadesc">(10) mimimal number of grains accepted to select microtracks</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbSegP.html">EdbSegP</a></td><td class="dataname"><a name="EdbPlateTracking:eS"></a>eS</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbSegP.html">EdbSegP</a></td><td class="dataname"><a name="EdbPlateTracking:eS1"></a>eS1</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbPattern.html">EdbPattern</a></td><td class="dataname"><a name="EdbPlateTracking:eS1cnd"></a>eS1cnd</td><td class="datadesc">microtrack candidates passed all cuts</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbPattern.html">EdbPattern</a></td><td class="dataname"><a name="EdbPlateTracking:eS1pre"></a>eS1pre</td><td class="datadesc">the result of the selection of microtracks ordered by chi square</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbSegP.html">EdbSegP</a></td><td class="dataname"><a name="EdbPlateTracking:eS2"></a>eS2</td><td class="datadesc">found segments</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbPattern.html">EdbPattern</a></td><td class="dataname"><a name="EdbPlateTracking:eS2cnd"></a>eS2cnd</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbPattern.html">EdbPattern</a></td><td class="dataname"><a name="EdbPlateTracking:eS2pre"></a>eS2pre</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbPattern.html">EdbPattern</a></td><td class="dataname"><a name="EdbPlateTracking:eScnd"></a>eScnd</td><td class="datadesc">basetracks candidates passed all cuts</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbPattern.html">EdbPattern</a></td><td class="dataname"><a name="EdbPlateTracking:eSide1"></a>eSide1</td><td class="datadesc">side 1 microtracks in plate reference system </td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbPattern.html">EdbPattern</a></td><td class="dataname"><a name="EdbPlateTracking:eSide2"></a>eSide2</td><td class="datadesc">side 2 microtracks in plate reference system </td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbPattern.html">EdbPattern</a></td><td class="dataname"><a name="EdbPlateTracking:eSpre"></a>eSpre</td><td class="datadesc">the result of the selection of basetracks ordered by chi square</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbPlateTracking:eStatus"></a>eStatus</td><td class="datadesc">-1-nothing, 0-bt, 1-mt1, 2-mt2</td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbPlateTracking:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td><table><tr>
+<td bgcolor="#f7f7f7" align="right">
+<tt>TObject</tt></td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><big><b><tt><a name="EdbPlateTracking" href="./EdbPlateTracking.html">EdbPlateTracking</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbPlateTracking:_EdbPlateTracking" href="src/EdbPlateTracking.cxx.html#xQuM1C">~EdbPlateTracking</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPlateTracking:Set0" href="src/EdbPlateTracking.cxx.html#Od7MlC">Set0</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPlateTracking:SetPred" href="src/EdbPlateTracking.cxx.html#z..iZC">SetPred</a>(<span class="keyword">const</span> <a href="./EdbSegP.html">EdbSegP</a>&amp; pred)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPlateTracking:Print" href="src/EdbPlateTracking.cxx.html#JPyMR">Print</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPlateTracking:UpdateFlag" href="src/EdbPlateTracking.cxx.html#rmpxcB">UpdateFlag</a>(<span class="keyword">int</span> flag, <span class="keyword">int</span> status)</span><br />
+<div class="funccomm"><pre> status: -1 -found nothing, 0-bt, 1-mt1, 2-mt2
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPlateTracking:ExtrapolateCond" href="src/EdbPlateTracking.cxx.html#swgaKE">ExtrapolateCond</a>(<a href="./EdbScanCond.html">EdbScanCond</a>&amp; inputcond, <span class="keyword">int</span> flag, <a href="./EdbScanCond.html">EdbScanCond</a>&amp; outputcond)</span><br />
+<div class="funccomm"><pre> TODO: tuning the dependency of sigma
+ NOTED by Artem: when we do jumping we have no <span class="string">"holes"</span> stored in the flag, so this function do not
+                 extrapolate errors correctly so one had to encrease the acceptance manually,
+                 possible solution can be to add total plates number before the last found
+                 track into the flag and use it only for extrapolation
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPlateTracking:FindCompliments" href="src/EdbPlateTracking.cxx.html#ofQwaC">FindCompliments</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s, <a href="./EdbPattern.html">EdbPattern</a>&amp; pat, TObjArray&amp; found, <span class="keyword">float</span> chi2max, TArrayF&amp; chiarr)</span><br />
+<div class="funccomm"><pre> return found sorted by increasing chi2
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPlateTracking:FindCandidates" href="src/EdbPlateTracking.cxx.html#qCgkiE">FindCandidates</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; spred, <a href="./EdbPattern.html">EdbPattern</a>&amp; fndbt, <a href="./EdbPattern.html">EdbPattern</a>&amp; fnds1, <a href="./EdbPattern.html">EdbPattern</a>&amp; fnds2)</span><br />
+<div class="funccomm"><pre> Find microtracks and basetracks for the prediction segment <span class="string">"spred"</span>
+ Selection criteria:
+  1) select all microtracks with (puls &gt;= ePreliminaryPulsMinMT) (6) and (chi2 &lt; <a href="./EdbPlateTracking.html#EdbPlateTracking:ePreliminaryChi2MaxMT" title="Float_t EdbPlateTracking::ePreliminaryChi2MaxMT">ePreliminaryChi2MaxMT</a>) for both side
+  2) select all basetracks by using the selected microtracks, with (chi2_bt &lt; <a href="./EdbPlateTracking.html#EdbPlateTracking:eChi2MaxBT" title="Float_t EdbPlateTracking::eChi2MaxBT">eChi2MaxBT</a>)
+ Microtracks and basetracks in output are sorted according to chi2 (ascending order = the first one is the best one)
+
+ Input:
+   spred - track prediction
+ Output:
+   fnds1 - microtracks having puls&gt;=ePreliminaryPulsMinMT and chi2&lt;<a href="./EdbPlateTracking.html#EdbPlateTracking:ePreliminaryChi2MaxMT" title="Float_t EdbPlateTracking::ePreliminaryChi2MaxMT">ePreliminaryChi2MaxMT</a>
+           in the top side of the emulsion plate
+   fnds2 - microtracks having puls&gt;=ePreliminaryPulsMinMT and chi2&lt;<a href="./EdbPlateTracking.html#EdbPlateTracking:ePreliminaryChi2MaxMT" title="Float_t EdbPlateTracking::ePreliminaryChi2MaxMT">ePreliminaryChi2MaxMT</a>
+           in the bottom side of the emulsion plate
+   fndbt - basetracks built from the microtracks and (chi2_bt &lt; <a href="./EdbPlateTracking.html#EdbPlateTracking:eChi2MaxBT" title="Float_t EdbPlateTracking::eChi2MaxBT">eChi2MaxBT</a>)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPlateTracking:FindCandidateMT" href="src/EdbPlateTracking.cxx.html#cWNvxD">FindCandidateMT</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; fnds1, <a href="./EdbPattern.html">EdbPattern</a>&amp; fnds2, <a href="./EdbSegP.html">EdbSegP</a>&amp; fnd)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPlateTracking:FindBestCandidate" href="src/EdbPlateTracking.cxx.html#yZcZmB">FindBestCandidate</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; fndbt, <a href="./EdbSegP.html">EdbSegP</a>&amp; fnd, <a href="./EdbPattern.html">EdbPattern</a>&amp; cnd, <span class="keyword">float</span> wmin, <span class="keyword">float</span> wmindegrad, <span class="keyword">float</span> chi2max)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPlateTracking:FindPrediction" href="src/EdbPlateTracking.cxx.html#kVL5FE">FindPrediction</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; spred, <a href="./EdbSegP.html">EdbSegP</a>&amp; fndbt, <a href="./EdbSegP.html">EdbSegP</a>&amp; fnds1, <a href="./EdbSegP.html">EdbSegP</a>&amp; fnds2, <a href="./EdbSegP.html">EdbSegP</a>&amp; snewpred)</span><br />
+<div class="funccomm"><pre> Select the best (micro or base) track matching with the prediction
+ and prepare for a new search.
+
+ Selection criteria:
+  1) Call <a href="./EdbPlateTracking.html#EdbPlateTracking:FindCandidates" title="int EdbPlateTracking::FindCandidates(EdbSegP&amp; spred,EdbPattern&amp; fndbt,EdbPattern&amp; fnds1,EdbPattern&amp; fnds2)">FindCandidates</a> having the list of basetrack and microtrack candidates
+  2) Call FindCandidateBT which looks for the best basetrack, if any
+  3) If no basetrack is found, call <a href="./EdbPlateTracking.html#EdbPlateTracking:FindCandidateMT" title="int EdbPlateTracking::FindCandidateMT(EdbPattern&amp; fnds1,EdbPattern&amp; fnds2,EdbSegP&amp; fnd)">FindCandidateMT</a> which looks fot the best microtrack, if any.
+     Microtracks accepted shold satisfy the following cut: (puls &gt;= <a href="./EdbPlateTracking.html#EdbPlateTracking:ePulsMinMT" title="Float_t EdbPlateTracking::ePulsMinMT">ePulsMinMT</a>) (10) and (chi2 &lt; <a href="./EdbPlateTracking.html#EdbPlateTracking:eChi2MaxMT" title="Float_t EdbPlateTracking::eChi2MaxMT">eChi2MaxMT</a>)
+
+ Input:
+   spred - track prediction
+ Output:
+   - if a basetrack is found (status 0):
+       fndbt - basetrack found
+       fnds1 - microtrack top contained in the found basetrack
+       fnds2 - microtrack bottom contained in the found basetrack
+       snewpred - fndbt with flag equal to 0
+
+   - if a microtrack top is found (status 1):
+       fndbt - dummy
+       fnds1 - microtrack top found
+       fnds2 - dummy
+       snewpred - a track with slopes from the prediction spred and positions
+                  from an extrapolation of fnds1. The flag is updated by <a href="./EdbPlateTracking.html#EdbPlateTracking:UpdateFlag" title="int EdbPlateTracking::UpdateFlag(int flag,int status)">UpdateFlag</a>
+
+   - if a microtrack bottom is found (status 2):
+       fndbt - dummy
+       fnds1 - dummy
+       fnds2 - microtrack bottom found
+       snewpred - a track with slopes from the prediction spred and positions
+                  from an extrapolation of fnds2. The flag is updated by <a href="./EdbPlateTracking.html#EdbPlateTracking:UpdateFlag" title="int EdbPlateTracking::UpdateFlag(int flag,int status)">UpdateFlag</a>
+
+   - if nothing is found (status -1):
+       fndbt - dummy
+       fnds1 - dummy
+       fnds2 - dummy
+       snewpred - the prediction spred. The flag is updated by <a href="./EdbPlateTracking.html#EdbPlateTracking:UpdateFlag" title="int EdbPlateTracking::UpdateFlag(int flag,int status)">UpdateFlag</a>
+
+ Return:
+   -1: no track found
+    0: basetrack found
+    1: microtrack top found
+    2: microtrack bottom found
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPlateTracking:FindCandidateMTDS" href="src/EdbPlateTracking.cxx.html#cPSEXB">FindCandidateMTDS</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; fnds1, <a href="./EdbPattern.html">EdbPattern</a>&amp; fnds2, <a href="./EdbSegP.html">EdbSegP</a>&amp; fnd, <a href="./EdbSegP.html">EdbSegP</a>&amp; spred, <span class="keyword">float</span> maxdmin)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPlateTracking:FindBestCandidateDS" href="src/EdbPlateTracking.cxx.html#zoeWSD">FindBestCandidateDS</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; fndbt, <a href="./EdbSegP.html">EdbSegP</a>&amp; fnd, <a href="./EdbPattern.html">EdbPattern</a>&amp; cnd, <span class="keyword">float</span> wmin, <span class="keyword">float</span> wmindegrad, <span class="keyword">float</span> chi2max, <a href="./EdbSegP.html">EdbSegP</a>&amp; spred, <span class="keyword">float</span> maxdmin)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPlateTracking:FindPredictionDS" href="src/EdbPlateTracking.cxx.html#UM.S4">FindPredictionDS</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; spred, <a href="./EdbSegP.html">EdbSegP</a>&amp; fndbt, <a href="./EdbSegP.html">EdbSegP</a>&amp; fnds1, <a href="./EdbSegP.html">EdbSegP</a>&amp; fnds2, <a href="./EdbSegP.html">EdbSegP</a>&amp; snewpred, <span class="keyword">float</span> maxdmin)</span><br />
+<div class="funccomm"><pre> Select the best (micro or base) track matching with the prediction
+ and prepare for a new search.
+
+ Selection criteria:
+  1) Call <a href="./EdbPlateTracking.html#EdbPlateTracking:FindCandidates" title="int EdbPlateTracking::FindCandidates(EdbSegP&amp; spred,EdbPattern&amp; fndbt,EdbPattern&amp; fnds1,EdbPattern&amp; fnds2)">FindCandidates</a> having the list of basetrack and microtrack candidates
+  2) Call FindCandidateBT which looks for the best basetrack, if any
+  3) If no basetrack is found, call <a href="./EdbPlateTracking.html#EdbPlateTracking:FindCandidateMT" title="int EdbPlateTracking::FindCandidateMT(EdbPattern&amp; fnds1,EdbPattern&amp; fnds2,EdbSegP&amp; fnd)">FindCandidateMT</a> which looks fot the best microtrack, if any.
+     Microtracks accepted shold satisfy the following cut: (puls &gt;= <a href="./EdbPlateTracking.html#EdbPlateTracking:ePulsMinMT" title="Float_t EdbPlateTracking::ePulsMinMT">ePulsMinMT</a>) (10) and (chi2 &lt; <a href="./EdbPlateTracking.html#EdbPlateTracking:eChi2MaxMT" title="Float_t EdbPlateTracking::eChi2MaxMT">eChi2MaxMT</a>)
+
+ Input:
+   spred - track prediction
+ Output:
+   - if a basetrack is found (status 0):
+       fndbt - basetrack found
+       fnds1 - microtrack top contained in the found basetrack
+       fnds2 - microtrack bottom contained in the found basetrack
+       snewpred - fndbt with flag equal to 0
+
+   - if a microtrack top is found (status 1):
+       fndbt - dummy
+       fnds1 - microtrack top found
+       fnds2 - dummy
+       snewpred - a track with slopes from the prediction spred and positions
+                  from an extrapolation of fnds1. The flag is updated by <a href="./EdbPlateTracking.html#EdbPlateTracking:UpdateFlag" title="int EdbPlateTracking::UpdateFlag(int flag,int status)">UpdateFlag</a>
+
+   - if a microtrack bottom is found (status 2):
+       fndbt - dummy
+       fnds1 - dummy
+       fnds2 - microtrack bottom found
+       snewpred - a track with slopes from the prediction spred and positions
+                  from an extrapolation of fnds2. The flag is updated by <a href="./EdbPlateTracking.html#EdbPlateTracking:UpdateFlag" title="int EdbPlateTracking::UpdateFlag(int flag,int status)">UpdateFlag</a>
+
+   - if nothing is found (status -1):
+       fndbt - dummy
+       fnds1 - dummy
+       fnds2 - dummy
+       snewpred - the prediction spred. The flag is updated by <a href="./EdbPlateTracking.html#EdbPlateTracking:UpdateFlag" title="int EdbPlateTracking::UpdateFlag(int flag,int status)">UpdateFlag</a>
+
+ Return:
+   -1: no track found
+    0: basetrack found
+    1: microtrack top found
+    2: microtrack bottom found
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname">TTree * <a class="funcname" name="EdbPlateTracking:InitSBtree" href="src/EdbPlateTracking.cxx.html#qqk0eD">InitSBtree</a>(<span class="keyword">const</span> <span class="keyword">char</span>* file_name = <span class="string">"sbt.root"</span>, <span class="keyword">const</span> <span class="keyword">char</span>* mode = <span class="string">"RECREATE"</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbPlateTracking:UpdateSBtree" href="src/EdbPlateTracking.cxx.html#GotEwB">UpdateSBtree</a>(TTree&amp; tsbt, <span class="keyword">int</span>* idp, <span class="keyword">int</span>* idf)</span><br />
+<div class="funccomm"><pre> <a href="./ListOfTypes.html#int">int</a> stat,
+			    <a href="./EdbSegP.html">EdbSegP</a> &amp;ps, <a href="./EdbSegP.html">EdbSegP</a> &amp;fndbt, <a href="./EdbSegP.html">EdbSegP</a> &amp;fnds1, <a href="./EdbSegP.html">EdbSegP</a> &amp;fnds2, <a href="./EdbSegP.html">EdbSegP</a> &amp;nextpred,
+			    <a href="./EdbPattern.html">EdbPattern</a> *scnd, <a href="./EdbPattern.html">EdbPattern</a> *s1cnd, <a href="./EdbPattern.html">EdbPattern</a> *s2cnd )
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbPlateTracking:GetSBtreeEntry" href="src/EdbPlateTracking.cxx.html#dOT.9D">GetSBtreeEntry</a>(<span class="keyword">int</span> entry, TTree&amp; tsbt)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPlateTracking:CloseSBtree" href="src/EdbPlateTracking.cxx.html#vaf6hD">CloseSBtree</a>(TTree* tree)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPlateTracking:FindTrack" href="src/EdbPlateTracking.cxx.html#ruWS6C">FindTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; pred, <a href="./EdbTrackP.html">EdbTrackP</a>&amp; found, <a href="./EdbPlateP.html">EdbPlateP</a>&amp; plate)</span><br />
+<div class="funccomm"><pre> look for tracks in this plate
+ track - input track in brick RS - will be updated on output
+ plate  - all plate parameters including affine transformation plate-to-brick
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPlateTracking:TransformFromPlateRS" href="src/EdbPlateTracking.cxx.html#htSxHD">TransformFromPlateRS</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbPlateTracking:EdbPlateTracking" href="src/EdbPlateTracking.h.html#UQRCGB">EdbPlateTracking</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbPlateTracking:EdbPlateTracking@1" href="src/EdbPlateTracking.h.html#mpL8FD">EdbPlateTracking</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; S1, <a href="./EdbPattern.html">EdbPattern</a>&amp; S2, <a href="./EdbSegP.html">EdbSegP</a>&amp; prediction, <a href="./EdbPlateP.html">EdbPlateP</a>&amp; plate)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbPlateTracking:EdbPlateTracking@2" href="src/EdbPlateTracking.h.html#Wzmzs">EdbPlateTracking</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; S1, <a href="./EdbPattern.html">EdbPattern</a>&amp; S2, <a href="./EdbSegP.html">EdbSegP</a>&amp; prediction)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPlateTracking:SetCondMT" href="src/EdbPlateTracking.h.html#O8sx8">SetCondMT</a>(<a href="./EdbScanCond.html">EdbScanCond</a>&amp; cond)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbPlateTracking.html#EdbPlateTracking:eCondMT" title="EdbScanCond EdbPlateTracking::eCondMT">eCondMT</a> = cond; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPlateTracking:SetCondBT" href="src/EdbPlateTracking.h.html#O8shDB">SetCondBT</a>(<a href="./EdbScanCond.html">EdbScanCond</a>&amp; cond)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbPlateTracking.html#EdbPlateTracking:eCondBT" title="EdbScanCond EdbPlateTracking::eCondBT">eCondBT</a> = cond; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPlateTracking:GetBTHoles" href="src/EdbPlateTracking.h.html#NsGZYE">GetBTHoles</a>(<span class="keyword">int</span> flag)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span>(flag/10000);     }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPlateTracking:GetMTHoles" href="src/EdbPlateTracking.h.html#v2JX4B">GetMTHoles</a>(<span class="keyword">int</span> flag)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span>((flag/100)%100); }</code></div>
+<div style="clear:both;"></div>
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:29 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,983 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:31 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbScanProc</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbScanProc','','EdbScanProc.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbScanProc.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbScanProc.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbScanProc_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbScanProc:description">class description</a> 
+<a class="descrheadentry" href="#EdbScanProc:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbScanProc:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbScanProc:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbScanProc</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbScanProc:description"></a>class EdbScanProc: public TNamed</h1>
+<div class="classdescr">
+</div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbScanProc:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbScanProc:EdbScanProc">EdbScanProc</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbScanProc:EdbScanProc@1">EdbScanProc</a>(<span class="keyword">const</span> <a href="./EdbScanProc.html">EdbScanProc</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbScanProc:_EdbScanProc">~EdbScanProc</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:AddAFFtoScanSet">AddAFFtoScanSet</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, <a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:AddAFFtoScanSet@1">AddAFFtoScanSet</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, <span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:AddAFFtoScanSet@2">AddAFFtoScanSet</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, <span class="keyword">int</span> b1, <span class="keyword">int</span> p1, <span class="keyword">int</span> s1, <span class="keyword">int</span> e1, <span class="keyword">int</span> b2, <span class="keyword">int</span> p2, <span class="keyword">int</span> s2, <span class="keyword">int</span> e2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:AddParLine">AddParLine</a>(<span class="keyword">const</span> <span class="keyword">char</span>* file, <span class="keyword">const</span> <span class="keyword">char</span>* line, <span class="keyword">bool</span> recreate = <span class="keyword">false</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:Align">Align</a>(<a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2, <span class="keyword">const</span> <span class="keyword">char</span>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:Align@1">Align</a>(<span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2, <span class="keyword">const</span> <span class="keyword">char</span>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:AlignAll">AlignAll</a>(<span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2, <span class="keyword">int</span> npre = 1, <span class="keyword">int</span> nfull = 3, <span class="keyword">const</span> <span class="keyword">char</span>* opt = <span class="string">"-z"</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:AlignAll@1">AlignAll</a>(<a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2, <span class="keyword">int</span> npre = 1, <span class="keyword">int</span> nfull = 3, <span class="keyword">const</span> <span class="keyword">char</span>* opt = <span class="string">"-z"</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:AlignNewNopar">AlignNewNopar</a>(<a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2, TEnv&amp; cenv, <a href="./EdbAffine2D.html">EdbAffine2D</a>* aff = 0, <span class="keyword">float</span> dz = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:AlignOverlaps">AlignOverlaps</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbPattern.html">EdbPattern</a>&amp; p1, <a href="./EdbPattern.html">EdbPattern</a>&amp; p2, TEnv&amp; cenv, <span class="keyword">const</span> <span class="keyword">char</span>* suff)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:AlignRaw">AlignRaw</a>(<a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2, TEnv&amp; cenv, <a href="./EdbAffine2D.html">EdbAffine2D</a>* applyAff = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:AlignRawSet">AlignRawSet</a>(<a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2, TEnv&amp; cenv)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:AlignSet">AlignSet</a>(<a href="./EdbID.html">EdbID</a> id, <span class="keyword">int</span> npre, <span class="keyword">int</span> nfull, <span class="keyword">const</span> <span class="keyword">char</span>* opt = <span class="string">"-z"</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:AlignSet@1">AlignSet</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, <span class="keyword">int</span> npre = 1, <span class="keyword">int</span> nfull = 3, <span class="keyword">const</span> <span class="keyword">char</span>* opt = <span class="string">"-z"</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:AlignSetNewNopar">AlignSetNewNopar</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, TEnv&amp; cenv)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:AlignSetNewNopar@1">AlignSetNewNopar</a>(<a href="./EdbID.html">EdbID</a> id, TEnv&amp; cenv)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ApplyAffZ">ApplyAffZ</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pat, <span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:AssembleScanSet">AssembleScanSet</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#EdbScanProc:BrickDir">BrickDir</a>(<span class="keyword">int</span> brick)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(TBrowser* b)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CheckAFFDir">CheckAFFDir</a>(<span class="keyword">int</span> brick, <span class="keyword">bool</span> create = <span class="keyword">true</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CheckBrickDir">CheckBrickDir</a>(<a href="./EdbID.html">EdbID</a> id, <span class="keyword">bool</span> create = <span class="keyword">true</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CheckDir">CheckDir</a>(<span class="keyword">const</span> <span class="keyword">char</span>* dir, <span class="keyword">bool</span> create = <span class="keyword">true</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CheckDirWritable">CheckDirWritable</a>(<span class="keyword">const</span> <span class="keyword">char</span>* dir)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CheckFiles">CheckFiles</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, <span class="keyword">const</span> <span class="keyword">char</span>* suffix)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CheckPlateDir">CheckPlateDir</a>(<a href="./EdbID.html">EdbID</a> id, <span class="keyword">bool</span> create = <span class="keyword">true</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CheckProcDir">CheckProcDir</a>(<span class="keyword">int</span>* id, <span class="keyword">bool</span> create = <span class="keyword">true</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CheckProcDir@1">CheckProcDir</a>(<a href="./EdbID.html">EdbID</a> id, <span class="keyword">bool</span> create = <span class="keyword">true</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CheckRunQualityRaw">CheckRunQualityRaw</a>(<a href="./EdbID.html">EdbID</a> idss)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CheckSetQualityRaw">CheckSetQualityRaw</a>(<a href="./EdbID.html">EdbID</a> idss)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CheckViewOverlaps">CheckViewOverlaps</a>(<a href="./EdbID.html">EdbID</a> id, TEnv&amp; cenv)</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbScanProc:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:Clear"><span class="baseclass">TNamed::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TNamed:Clone"><span class="baseclass">TNamed::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TNamed:Compare"><span class="baseclass">TNamed::</span>Compare</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ConvertAreas">ConvertAreas</a>(<a href="./EdbScanClient.html">EdbScanClient</a>&amp; scan, <span class="keyword">int</span>* id, <span class="keyword">int</span> flag = -1, <span class="keyword">const</span> <span class="keyword">char</span>* opt = <span class="string">"NOCLCLFRAMESUM"</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:Copy"><span class="baseclass">TNamed::</span>Copy</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp; named) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CopyAFFPar">CopyAFFPar</a>(<span class="keyword">int</span>* id1c, <span class="keyword">int</span>* id2c, <span class="keyword">int</span>* id1p, <span class="keyword">int</span>* id2p, <span class="keyword">bool</span> overwrite = <span class="keyword">true</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CopyFile">CopyFile</a>(<span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2, <span class="keyword">const</span> <span class="keyword">char</span>* suffix, <span class="keyword">bool</span> overwrite)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CopyPar">CopyPar</a>(<a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2, <span class="keyword">bool</span> overwrite = <span class="keyword">true</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CopyPar@1">CopyPar</a>(<span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2, <span class="keyword">bool</span> overwrite = <span class="keyword">true</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CopyParSet">CopyParSet</a>(<a href="./EdbID.html">EdbID</a> idset1, <a href="./EdbID.html">EdbID</a> idset2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CopyPred">CopyPred</a>(<span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2, <span class="keyword">bool</span> overwrite = <span class="keyword">true</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CorrectAffWithPred">CorrectAffWithPred</a>(<span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2, <span class="keyword">const</span> <span class="keyword">char</span>* opt = <span class="string">"-z"</span>, <span class="keyword">int</span> patmin = 6, <span class="keyword">const</span> <span class="keyword">char</span>* parfile = <span class="string">"fullalignment"</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CorrectAngles">CorrectAngles</a>(<span class="keyword">int</span>* id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:CorrectPredWithFound">CorrectPredWithFound</a>(<span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2, <span class="keyword">const</span> <span class="keyword">char</span>* opt = <span class="string">"-z"</span>, <span class="keyword">int</span> patmin = 6)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(TMethod* method, TObjArray* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ExtractRawVolume@1">ExtractRawVolume</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss, <a href="./EdbScanSet.html">EdbScanSet</a>&amp; ssnew, <a href="./EdbSegP.html">EdbSegP</a>&amp; pred, <span class="keyword">float</span> dR)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ExtractRawVolume">ExtractRawVolume</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbID.html">EdbID</a> idnew, <a href="./EdbSegP.html">EdbSegP</a> pred, <span class="keyword">int</span> plate, TEnv&amp; cenv)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:FillBuffer"><span class="baseclass">TNamed::</span>FillBuffer</a>(<span class="keyword">char</span>*&amp; buffer)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:FindCompliments">FindCompliments</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s, <a href="./EdbPattern.html">EdbPattern</a>&amp; pat, TObjArray&amp; found, <span class="keyword">float</span> chi2max, TArrayF&amp; chiarr)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:FindPredictions@1">FindPredictions</a>(<span class="keyword">int</span>* id, <span class="keyword">int</span> flag = -1, <span class="keyword">int</span> maxholes = 3)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:FindPredictions">FindPredictions</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <span class="keyword">int</span>* id, <a href="./EdbPattern.html">EdbPattern</a>&amp; found, <span class="keyword">int</span> maxholes = 3)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:FindPredictionsRaw">FindPredictionsRaw</a>(<a href="./EdbID.html">EdbID</a> idp, <a href="./EdbID.html">EdbID</a> idr)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:FindPredictionsRaw@1">FindPredictionsRaw</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <a href="./EdbPattern.html">EdbPattern</a>&amp; found, <a href="./EdbRunAccess.html">EdbRunAccess</a>&amp; ra, <a href="./EdbScanCond.html">EdbScanCond</a>&amp; condBT, <a href="./EdbScanCond.html">EdbScanCond</a>&amp; condMT, <span class="keyword">float</span> delta_theta = 0.1, <span class="keyword">float</span> puls_min = 5., <span class="keyword">float</span> puls_mt = 9., <span class="keyword">float</span> chi2max = 1.6, <a href="./ListOfTypes.html#FILE">FILE</a>* out = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:FindPredictionsRawSet">FindPredictionsRawSet</a>(<a href="./EdbID.html">EdbID</a> idp, <a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss, <span class="keyword">int</span> npl)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:FindRawTrack@1">FindRawTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; pred, <a href="./EdbTrackP.html">EdbTrackP</a>&amp; found, <a href="./EdbID.html">EdbID</a> idset, <span class="keyword">int</span> plate)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:FindRawTrack">FindRawTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; pred, <a href="./EdbTrackP.html">EdbTrackP</a>&amp; found, <a href="./EdbID.html">EdbID</a> idset, <span class="keyword">int</span> plate, TEnv&amp; cenv)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:FlashRawDir">FlashRawDir</a>(<a href="./EdbScanClient.html">EdbScanClient</a>&amp; scan, <span class="keyword">int</span>* id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:GetAffZ">GetAffZ</a>(<a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; aff, <span class="keyword">float</span>&amp; z, <span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:GetMap">GetMap</a>(<span class="keyword">int</span> brick, TString&amp; map)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TNamed:GetName"><span class="baseclass">TNamed::</span>GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:GetPatternSide">GetPatternSide</a>(<a href="./EdbID.html">EdbID</a> id, <span class="keyword">int</span> side, <a href="./EdbLayer.html">EdbLayer</a>&amp; la, <span class="keyword">const</span> <span class="keyword">char</span>* segcut, <span class="keyword">int</span> afid, <a href="./EdbPattern.html">EdbPattern</a>&amp; p)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#EdbScanProc:GetServerRunName">GetServerRunName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TNamed:GetTitle"><span class="baseclass">TNamed::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(TTimer* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="#TNamed:Hash"><span class="baseclass">TNamed::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> TClass* cl) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:InitPiece">InitPiece</a>(<a href="./EdbDataPiece.html">EdbDataPiece</a>&amp; piece, <span class="keyword">int</span>* id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:InitPiece@1">InitPiece</a>(<a href="./EdbDataPiece.html">EdbDataPiece</a>&amp; piece, <a href="./EdbID.html">EdbID</a> id)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbRun.html">EdbRun</a>*</td><td class="funcname"><a class="funcname" href="#EdbScanProc:InitRun">InitRun</a>(<span class="keyword">int</span>* id, <span class="keyword">char</span>* runname_ = 0, <span class="keyword">char</span>* runnamesrv_ = 0, <span class="keyword">bool</span> createrun_ = <span class="keyword">true</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:InitRunAccess">InitRunAccess</a>(<a href="./EdbRunAccess.html">EdbRunAccess</a>&amp; ra, <span class="keyword">int</span>* id, <span class="keyword">bool</span> do_update = <span class="keyword">false</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:InitRunAccess@1">InitRunAccess</a>(<a href="./EdbRunAccess.html">EdbRunAccess</a>&amp; ra, <a href="./EdbID.html">EdbID</a> id, <span class="keyword">bool</span> do_update = <span class="keyword">false</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:InitRunAccessNew">InitRunAccessNew</a>(<a href="./EdbRunAccess.html">EdbRunAccess</a>&amp; ra, <a href="./EdbID.html">EdbID</a> id, <a href="./EdbPlateP.html">EdbPlateP</a>&amp; plate, <span class="keyword">bool</span> do_update = <span class="keyword">false</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:InitRunAccessNew@1">InitRunAccessNew</a>(<a href="./EdbRunAccess.html">EdbRunAccess</a>&amp; ra, <a href="./EdbID.html">EdbID</a> idset, <span class="keyword">int</span> idplate, <span class="keyword">bool</span> do_update = <span class="keyword">false</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbScanProc:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TNamed:IsSortable"><span class="baseclass">TNamed::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:LinkRun">LinkRun</a>(<span class="keyword">int</span>* id, <span class="keyword">int</span> noUpdate = 1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:LinkRunAll">LinkRunAll</a>(<span class="keyword">int</span>* id, <span class="keyword">int</span> npre = 3, <span class="keyword">int</span> nfull = 1, <span class="keyword">int</span> correct_ang = 1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:LinkRunAll@1">LinkRunAll</a>(<a href="./EdbID.html">EdbID</a> id, <span class="keyword">int</span> npre = 3, <span class="keyword">int</span> nfull = 1, <span class="keyword">int</span> correct_ang = 1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:LinkRunNew">LinkRunNew</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbPlateP.html">EdbPlateP</a>&amp; plate, TEnv&amp; cenv)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:LinkRunTest">LinkRunTest</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbPlateP.html">EdbPlateP</a>&amp; plate, TEnv&amp; cenv)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:LinkSet">LinkSet</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, <span class="keyword">int</span> npre = 3, <span class="keyword">int</span> nfull = 1, <span class="keyword">int</span> correct_ang = 1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:LinkSetNew">LinkSetNew</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, TEnv&amp; cenv)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:LinkSetNewTest">LinkSetNewTest</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, TEnv&amp; cenv)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:LoadPlate">LoadPlate</a>(<a href="./EdbScanClient.html">EdbScanClient</a>&amp; scan, <span class="keyword">int</span>* id, <span class="keyword">int</span> attempts = 1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:LogPrint">LogPrint</a>(<span class="keyword">int</span> brick, <span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* rout, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:ls"><span class="baseclass">TNamed::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:MakeAffName">MakeAffName</a>(TString&amp; s, <span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2, <span class="keyword">const</span> <span class="keyword">char</span>* suffix = <span class="string">"aff.par"</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:MakeAffName@1">MakeAffName</a>(TString&amp; s, <a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2, <span class="keyword">const</span> <span class="keyword">char</span>* suffix = <span class="string">"aff.par"</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:MakeAFFSet">MakeAFFSet</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:MakeAlignSetSummary">MakeAlignSetSummary</a>(<a href="./EdbID.html">EdbID</a> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:MakeAlignSetSummary@1">MakeAlignSetSummary</a>(<a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2, <span class="keyword">const</span> <span class="keyword">char</span>* fout, <span class="keyword">const</span> <span class="keyword">char</span>* opt = <span class="string">"UPDATE"</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:MakeEraseFile">MakeEraseFile</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbPattern.html">EdbPattern</a>&amp; pat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:MakeFileName">MakeFileName</a>(TString&amp; s, <span class="keyword">int</span>* id, <span class="keyword">const</span> <span class="keyword">char</span>* suffix, <span class="keyword">bool</span> inplate = <span class="keyword">true</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:MakeFileName@1">MakeFileName</a>(TString&amp; s, <a href="./EdbID.html">EdbID</a> id, <span class="keyword">const</span> <span class="keyword">char</span>* suffix, <span class="keyword">bool</span> inplate = <span class="keyword">true</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:MakeFileNameSrv">MakeFileNameSrv</a>(TString&amp; s, <span class="keyword">int</span>* id, <span class="keyword">const</span> <span class="keyword">char</span>* suffix, <span class="keyword">bool</span> inplate = <span class="keyword">true</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:MakeFileNameSrv@1">MakeFileNameSrv</a>(TString&amp; s, <a href="./EdbID.html">EdbID</a> id, <span class="keyword">const</span> <span class="keyword">char</span>* suffix, <span class="keyword">bool</span> inplate = <span class="keyword">true</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:MakeInPar">MakeInPar</a>(<span class="keyword">int</span>* id, <span class="keyword">const</span> <span class="keyword">char</span>* option)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:MakeInPar@1">MakeInPar</a>(<a href="./EdbID.html">EdbID</a> id, <span class="keyword">const</span> <span class="keyword">char</span>* option)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:MakeInParSet">MakeInParSet</a>(<a href="./EdbID.html">EdbID</a> id, <span class="keyword">const</span> <span class="keyword">char</span>* option)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:MakeLinkSetSummary">MakeLinkSetSummary</a>(<a href="./EdbID.html">EdbID</a> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:MakeParSet">MakeParSet</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:MakeScannedIDList">MakeScannedIDList</a>(<a href="./EdbID.html">EdbID</a> id0, <a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, <span class="keyword">int</span> pl_from, <span class="keyword">int</span> pl_to, <span class="keyword">const</span> <span class="keyword">char</span>* suffix)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:MakeTracksPred">MakeTracksPred</a>(TObjArray&amp; tracks, <a href="./EdbID.html">EdbID</a> id, <a href="./EdbLayer.html">EdbLayer</a>&amp; layer)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:MergeSetSBT@1">MergeSetSBT</a>(<a href="./EdbID.html">EdbID</a> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:MergeSetSBT">MergeSetSBT</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbScanProc.html">EdbScanProc</a>&amp;</td><td class="funcname"><a class="funcname" href="#EdbScanProc:operator_">operator=</a>(<span class="keyword">const</span> <a href="./EdbScanProc.html">EdbScanProc</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:OptimizeScanPath">OptimizeScanPath</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pin, <a href="./EdbPattern.html">EdbPattern</a>&amp; pout, <span class="keyword">int</span> brick)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:PrepareSetStructure">PrepareSetStructure</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:PrepareVolumesPred">PrepareVolumesPred</a>(<span class="keyword">int</span>* id, <a href="./EdbPattern.html">EdbPattern</a>&amp; points, <span class="keyword">int</span> before = 5, <span class="keyword">int</span> after = 5, <span class="keyword">int</span> pmin = 1, <span class="keyword">int</span> pmax = 57, <a href="./EdbScanSet.html">EdbScanSet</a>* sc = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:Print">Print</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ProjectFound">ProjectFound</a>(<span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ProjectFound@1">ProjectFound</a>(<a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadAffToLayer">ReadAffToLayer</a>(<a href="./EdbLayer.html">EdbLayer</a>&amp; la, <a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbMask.html">EdbMask</a>*</td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadEraseMask">ReadEraseMask</a>(<a href="./EdbID.html">EdbID</a> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadFound">ReadFound</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <span class="keyword">int</span>* id, <span class="keyword">int</span> flag = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadFound@1">ReadFound</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <a href="./EdbID.html">EdbID</a> id, <span class="keyword">int</span> flag = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadFoundSegment">ReadFoundSegment</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbSegP.html">EdbSegP</a>&amp; s, <span class="keyword">int</span> flag = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadFoundTrack">ReadFoundTrack</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss, <a href="./EdbTrackP.html">EdbTrackP</a>&amp; track, <span class="keyword">int</span> flag = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadFoundTracks">ReadFoundTracks</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss, <a href="./EdbPVRec.html">EdbPVRec</a>&amp; ali, <span class="keyword">int</span> flag = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadManFoundTracks">ReadManFoundTracks</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss, <a href="./EdbPVRec.html">EdbPVRec</a>&amp; ali, <span class="keyword">int</span> flag = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadMarksSet">ReadMarksSet</a>(<a href="./EdbMarksSet.html">EdbMarksSet</a>&amp; ms, <span class="keyword">int</span> brick, <span class="keyword">const</span> <span class="keyword">char</span>* filename, <span class="keyword">char</span> spacer = <span class="string">'_'</span>, <span class="keyword">char</span> shape = <span class="string">'S'</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadPatCP">ReadPatCP</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pat, <span class="keyword">int</span>* id, TCut c = <span class="string">"1"</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadPatCP@1">ReadPatCP</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pat, <a href="./EdbID.html">EdbID</a> id, TCut c = <span class="string">"1"</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadPatCPnopar">ReadPatCPnopar</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pat, <a href="./EdbID.html">EdbID</a> id, TCut cut = <span class="string">"1"</span>, <span class="keyword">bool</span> do_erase = <span class="keyword">false</span>, <span class="keyword">bool</span> read_mt = <span class="keyword">false</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadPatCPnopar@1">ReadPatCPnopar</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pat, <span class="keyword">const</span> <span class="keyword">char</span>* file, TCut cut = <span class="string">"1"</span>, <a href="./EdbMask.html">EdbMask</a>* erase_mask = 0, <span class="keyword">bool</span> read_mt = <span class="keyword">false</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadPatRoot">ReadPatRoot</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <span class="keyword">int</span>* id, <span class="keyword">const</span> <span class="keyword">char</span>* suffix, <span class="keyword">int</span> flag = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadPatTXT@2">ReadPatTXT</a>(<span class="keyword">const</span> <span class="keyword">char</span>* file, <a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <span class="keyword">int</span> flag = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadPatTXT">ReadPatTXT</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <a href="./EdbID.html">EdbID</a> id, <span class="keyword">const</span> <span class="keyword">char</span>* suffix, <span class="keyword">int</span> flag = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadPatTXT@1">ReadPatTXT</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <span class="keyword">int</span>* id, <span class="keyword">const</span> <span class="keyword">char</span>* suffix, <span class="keyword">int</span> flag = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadPiece">ReadPiece</a>(<a href="./EdbDataPiece.html">EdbDataPiece</a>&amp; piece, <a href="./EdbPattern.html">EdbPattern</a>&amp; pat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadPiecePar">ReadPiecePar</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbPlateP.html">EdbPlateP</a>&amp; plate)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadPred">ReadPred</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <span class="keyword">int</span>* id, <span class="keyword">int</span> flag = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadPred@1">ReadPred</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <a href="./EdbID.html">EdbID</a> id, <span class="keyword">int</span> flag = -1)</td></tr>
+<tr class="func"><td class="funcret">TObjArray*</td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadSBTracks">ReadSBTracks</a>(<a href="./EdbID.html">EdbID</a> id)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbScanSet.html">EdbScanSet</a>*</td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadScanSet">ReadScanSet</a>(<a href="./EdbID.html">EdbID</a> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadScanSetCP">ReadScanSetCP</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss, <a href="./EdbPVRec.html">EdbPVRec</a>&amp; ali, TCut c = <span class="string">"1"</span>, <span class="keyword">bool</span> do_erase = <span class="keyword">true</span>, <span class="keyword">int</span> minplate = -1000, <span class="keyword">int</span> maxplate = -1000)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadScanSetCP@1">ReadScanSetCP</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbPVRec.html">EdbPVRec</a>&amp; ali, TCut c = <span class="string">"1"</span>, <span class="keyword">bool</span> do_erase = <span class="keyword">true</span>, <span class="keyword">bool</span> do_assemble = <span class="keyword">true</span>, <span class="keyword">int</span> minplate = -1000, <span class="keyword">int</span> maxplate = -1000)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadTracksTree">ReadTracksTree</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbPVRec.html">EdbPVRec</a>&amp; ali, TCut cut = <span class="string">"1"</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ReadTracksTree@1">ReadTracksTree</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <a href="./EdbPVRec.html">EdbPVRec</a>&amp; ali, TCut cut = <span class="string">"1"</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:RemoveDublets">RemoveDublets</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pin, <a href="./EdbPattern.html">EdbPattern</a>&amp; pout, <span class="keyword">int</span> brick)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:RemoveFile">RemoveFile</a>(<a href="./EdbID.html">EdbID</a> id, <span class="keyword">const</span> <span class="keyword">char</span>* suffix)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ScanAreas">ScanAreas</a>(<a href="./EdbScanClientBase.html">EdbScanClientBase</a>::ScanType st, <a href="./EdbScanClient.html">EdbScanClient</a>&amp; scan, <span class="keyword">int</span>* id, <span class="keyword">int</span> flag = -1, <span class="keyword">const</span> <span class="keyword">char</span>* opt = <span class="string">"NOCLCLFRAMESUM"</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ScanAreas@1">ScanAreas</a>(<a href="./EdbScanClientBase.html">EdbScanClientBase</a>::ScanType st, <a href="./EdbScanClient.html">EdbScanClient</a>&amp; scan, <a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <span class="keyword">int</span>* id, <span class="keyword">const</span> <span class="keyword">char</span>* opt = <span class="string">"NOCLCLFRAMESUM"</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:SetAFF0">SetAFF0</a>(<span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:SetAFFDZ">SetAFFDZ</a>(<span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2, <span class="keyword">float</span> dz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:SetDefaultCondBT">SetDefaultCondBT</a>(<a href="./EdbScanCond.html">EdbScanCond</a>&amp; cond)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:SetDefaultCondMT">SetDefaultCondMT</a>(<a href="./EdbScanCond.html">EdbScanCond</a>&amp; cond)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:SetName"><span class="baseclass">TNamed::</span>SetName</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:SetNameTitle"><span class="baseclass">TNamed::</span>SetNameTitle</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* title)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:SetServerRunName">SetServerRunName</a>(<span class="keyword">const</span> <span class="keyword">char</span>* fname_)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:SetTitle"><span class="baseclass">TNamed::</span>SetTitle</a>(<span class="keyword">const</span> <span class="keyword">char</span>* title = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TNamed:Sizeof"><span class="baseclass">TNamed::</span>Sizeof</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:TestAl">TestAl</a>(<span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:TestAl@1">TestAl</a>(<a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:TestAl@2">TestAl</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; p1, <a href="./EdbPattern.html">EdbPattern</a>&amp; p2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:TestAl@3">TestAl</a>(<span class="keyword">const</span> <span class="keyword">char</span>* cpfile1, <span class="keyword">const</span> <span class="keyword">char</span>* cpfile2, TCut&amp; cut, <span class="keyword">float</span> dz, <a href="./EdbAffine2D.html">EdbAffine2D</a>* aff = 0)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:TrackSetBT">TrackSetBT</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, TEnv&amp; cenv)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:UpdateAFFPar">UpdateAFFPar</a>(<a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2, <a href="./EdbLayer.html">EdbLayer</a>&amp; l, <a href="./EdbAffine2D.html">EdbAffine2D</a>* aff0 = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:UpdateAlignSummaryTree">UpdateAlignSummaryTree</a>(<a href="./EdbID.html">EdbID</a> idset1, <a href="./EdbID.html">EdbID</a> idset2, TTree&amp; tree)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:UpdatePlatePar">UpdatePlatePar</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbLayer.html">EdbLayer</a>&amp; l)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:UpdateSetWithAff">UpdateSetWithAff</a>(<a href="./EdbID.html">EdbID</a> idset, <a href="./EdbAffine2D.html">EdbAffine2D</a> aff)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:UpdateSetWithAff@2">UpdateSetWithAff</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbID.html">EdbID</a> idu)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:UpdateSetWithAff@1">UpdateSetWithAff</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:UpdateSetWithPlatePar">UpdateSetWithPlatePar</a>(<a href="./EdbID.html">EdbID</a> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:UpdateSetWithPlatePar@1">UpdateSetWithPlatePar</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:WaitFileReady">WaitFileReady</a>(<span class="keyword">const</span> <span class="keyword">char</span>* fname_)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:WriteFound">WriteFound</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <span class="keyword">int</span>* id, <span class="keyword">int</span> flag = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:WriteFound@1">WriteFound</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; found, <a href="./EdbID.html">EdbID</a> id, <span class="keyword">int</span> flag = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:WriteMarksSet">WriteMarksSet</a>(<a href="./EdbMarksSet.html">EdbMarksSet</a>&amp; ms, <span class="keyword">int</span> brick, <span class="keyword">const</span> <span class="keyword">char</span>* filename, <span class="keyword">char</span> spacer = <span class="string">'_'</span>, <span class="keyword">char</span> shape = <span class="string">'S'</span>, <span class="keyword">int</span> plate = 1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:WritePatRoot">WritePatRoot</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <span class="keyword">int</span>* id, <span class="keyword">const</span> <span class="keyword">char</span>* suffix, <span class="keyword">int</span> flag = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:WritePatTXT">WritePatTXT</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <span class="keyword">int</span>* id, <span class="keyword">const</span> <span class="keyword">char</span>* suffix, <span class="keyword">int</span> flag = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:WritePatTXT@1">WritePatTXT</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <a href="./EdbID.html">EdbID</a> id, <span class="keyword">const</span> <span class="keyword">char</span>* suffix, <span class="keyword">int</span> flag = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:WritePred">WritePred</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <span class="keyword">int</span>* id, <span class="keyword">int</span> flag = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:WritePred@1">WritePred</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <a href="./EdbID.html">EdbID</a> id, <span class="keyword">int</span> flag = -1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:WriteSBcndTXT">WriteSBcndTXT</a>(<span class="keyword">int</span>* id, <span class="keyword">const</span> <span class="keyword">char</span>* suffix = <span class="string">"man.sbt.txt"</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:WriteSBTrack">WriteSBTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; t, <span class="keyword">int</span> path, <a href="./EdbID.html">EdbID</a> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:WriteSBTracks">WriteSBTracks</a>(TObjArray&amp; tracks, <a href="./EdbID.html">EdbID</a> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbScanProc:WriteScanSet">WriteScanSet</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss)</td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, va_list va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbScanProc:Data_Members"></a>Data Members</h2>
+<div class="access" id="enumpubl"><b>public:</b>
+<table class="data" id="tabenumpubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span>EStatusBits { </td><td class="dataname"><a href="#TObject:kCanDelete">kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kMustCleanup">kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kObjInCanvas">kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kIsReferenced">kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kHasUUID">kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kCannotPick">kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNoContextMenu">kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kInvalidObject">kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span><i>[unnamed]</i> { </td><td class="dataname"><a href="#TObject:kIsOnHeap">kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNotDeleted">kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kZombie">kZombie</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kBitMask">kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kSingleKey">kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kOverwrite">kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kWriteDelete">kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="data"><td class="datatype">TString</td><td class="dataname"><a name="EdbScanProc:eParDir"></a>eParDir</td><td class="datadesc">directory path for off-line processing parameters</td></tr>
+<tr class="data"><td class="datatype">TString</td><td class="dataname"><a name="EdbScanProc:eProcDirClient"></a>eProcDirClient</td><td class="datadesc">directory path for root data</td></tr>
+<tr class="data"><td class="datatype">TString</td><td class="dataname"><a name="EdbScanProc:eProcDirServer"></a>eProcDirServer</td><td class="datadesc">directory path for root data</td></tr>
+
+</table></div>
+<div class="access" id="dataprot"><b>protected:</b>
+<table class="data" id="tabdataprot" cellspacing="0">
+<tr class="datainh"><td class="datatype">TString</td><td class="dataname"><a href="#TNamed:fName"><span class="baseclass">TNamed::</span>fName</a></td><td class="datadesc">object identifier</td></tr>
+<tr class="datainh"><td class="datatype">TString</td><td class="dataname"><a href="#TNamed:fTitle"><span class="baseclass">TNamed::</span>fTitle</a></td><td class="datadesc">object title</td></tr>
+
+</table></div>
+<div class="access" id="datapriv"><b>private:</b>
+<table class="data" id="tabdatapriv" cellspacing="0">
+<tr class="data"><td class="datatype">TString</td><td class="dataname"><a name="EdbScanProc:eServerCreatedRunName"></a>eServerCreatedRunName</td><td class="datadesc">EdbRun file name that is created by scanserver side</td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbScanProc:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td><table><tr>
+<td bgcolor="#f7f7f7" align="right">
+<tt>TNamed</tt></td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><big><b><tt><a name="EdbScanProc" href="./EdbScanProc.html">EdbScanProc</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbScanProc:EdbScanProc" href="src/EdbScanProc.cxx.html#vHsLYD">EdbScanProc</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:Print" href="src/EdbScanProc.cxx.html#z6pBi">Print</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:ReadAffToLayer" href="src/EdbScanProc.cxx.html#aoUcSB">ReadAffToLayer</a>(<a href="./EdbLayer.html">EdbLayer</a>&amp; la, <a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2)</span><br />
+<div class="funccomm"><pre> read affine tranformation from file, into layer
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:ReadPiecePar" href="src/EdbScanProc.cxx.html#Dnz4BE">ReadPiecePar</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbPlateP.html">EdbPlateP</a>&amp; plate)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:AssembleScanSet" href="src/EdbScanProc.cxx.html#yKuugD">AssembleScanSet</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:CopyParSet" href="src/EdbScanProc.cxx.html#dwBYKE">CopyParSet</a>(<a href="./EdbID.html">EdbID</a> idset1, <a href="./EdbID.html">EdbID</a> idset2)</span><br />
+<div class="funccomm"><pre> assuming that exist the scan sets for idset1 and idset2
+ copy the plate par files with shrinkage corrections from 1 to 2
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadFoundSegment" href="src/EdbScanProc.cxx.html#AgULYD">ReadFoundSegment</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbSegP.html">EdbSegP</a>&amp; s, <span class="keyword">int</span> flag = -1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadFoundTrack" href="src/EdbScanProc.cxx.html#LlG5TD">ReadFoundTrack</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss, <a href="./EdbTrackP.html">EdbTrackP</a>&amp; track, <span class="keyword">int</span> flag = -1)</span><br />
+<div class="funccomm"><pre> read track.ID() from pieces in sc.IDS .found.root and apply transformations from sc
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadFoundTracks" href="src/EdbScanProc.cxx.html#Ed86nB">ReadFoundTracks</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss, <a href="./EdbPVRec.html">EdbPVRec</a>&amp; ali, <span class="keyword">int</span> flag = -1)</span><br />
+<div class="funccomm"><pre> read all tracks  from found.root listed in sc.IDS and apply transformations from sc.eB
+ return the total number of segments added
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadManFoundTracks" href="src/EdbScanProc.cxx.html#SKF.2C">ReadManFoundTracks</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss, <a href="./EdbPVRec.html">EdbPVRec</a>&amp; ali, <span class="keyword">int</span> flag = -1)</span><br />
+<div class="funccomm"><pre> read all tracks  from *man.found.txt listed in sc.IDS and apply transformations from sc.eB
+ return the total number of segments added
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:MakeEraseFile" href="src/EdbScanProc.cxx.html#Ds2qME">MakeEraseFile</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbPattern.html">EdbPattern</a>&amp; pat)</span><br />
+<div class="funccomm"><pre> input: pat with the segments to be erased - assumed that s.eVid[1] is the entry number in the couples tree
+ ouput: file id.er.root with the <a href="./EdbMask.html">EdbMask</a> object <span class="string">"mask"</span> inside
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadScanSetCP@1" href="src/EdbScanProc.cxx.html#m9ZueE">ReadScanSetCP</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbPVRec.html">EdbPVRec</a>&amp; ali, TCut c = <span class="string">"1"</span>, <span class="keyword">bool</span> do_erase = <span class="keyword">true</span>, <span class="keyword">bool</span> do_assemble = <span class="keyword">true</span>, <span class="keyword">int</span> minplate = -1000, <span class="keyword">int</span> maxplate = -1000)</span><br />
+<div class="funccomm"><pre> read data for scanset defined with id  apply cut c and fill ali
+ if(do_erase)    - exclude segmets from the erase mask if it is exist (default is <a href="./ListOfTypes.html#bool">true</a>)
+ if(do_assemble) - read affine parfiles (default is <a href="./ListOfTypes.html#bool">true</a>)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadScanSetCP" href="src/EdbScanProc.cxx.html#Tzu54D">ReadScanSetCP</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss, <a href="./EdbPVRec.html">EdbPVRec</a>&amp; ali, TCut c = <span class="string">"1"</span>, <span class="keyword">bool</span> do_erase = <span class="keyword">true</span>, <span class="keyword">int</span> minplate = -1000, <span class="keyword">int</span> maxplate = -1000)</span><br />
+<div class="funccomm"><pre> read data from scanset sc with cut c and fill ali
+ sc.eIDS is used as an id list
+ sc.eB   is used to get the brick geometry and affine transformations - must be filled before
+ if(do_erase) - exclude segmets from the erase mask if it is exist (default is <a href="./ListOfTypes.html#bool">true</a>)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:MakeAFFSet" href="src/EdbScanProc.cxx.html#gNVNJD">MakeAFFSet</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc)</span><br />
+<div class="funccomm"><pre> create AFF dir if do not exist
+ put all affine transformations inside for each plates couple
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:MakeParSet" href="src/EdbScanProc.cxx.html#jcRHEE">MakeParSet</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:PrepareSetStructure" href="src/EdbScanProc.cxx.html#ZrFON">PrepareSetStructure</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc)</span><br />
+<div class="funccomm"><pre> input: sc with brick and all id's defined
+ function -check or create the directory structure for this brick,
+          -create par-files for all plates
+          -create aff.par files for all couples in the defined order
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:AlignSetNewNopar@1" href="src/EdbScanProc.cxx.html#bwQ8l">AlignSetNewNopar</a>(<a href="./EdbID.html">EdbID</a> id, TEnv&amp; cenv)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:AlignSetNewNopar" href="src/EdbScanProc.cxx.html#QjcvyB">AlignSetNewNopar</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, TEnv&amp; cenv)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:AlignNewNopar" href="src/EdbScanProc.cxx.html#QUnViE">AlignNewNopar</a>(<a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2, TEnv&amp; cenv, <a href="./EdbAffine2D.html">EdbAffine2D</a>* aff = 0, <span class="keyword">float</span> dz = 0)</span><br />
+<div class="funccomm"><pre> <a href="./EdbScanProc.html#EdbScanProc:Align" title="int EdbScanProc::Align(EdbID id1,EdbID id2,const char* option=&quot;&quot;) or overloads">Align</a> 2 patterns. All necessary information should be in the envfile
+ Convension about Z(setted while process): the z of id2 is 0, the z of id1 is (-deltaZ) where
+ deltaZ readed from aff.par file in a way that pattern of id1 projected
+ to deltaZ correspond to pattern of id2
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:CheckSetQualityRaw" href="src/EdbScanProc.cxx.html#ja9fg">CheckSetQualityRaw</a>(<a href="./EdbID.html">EdbID</a> idss)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:AlignSet" href="src/EdbScanProc.cxx.html#gmydx">AlignSet</a>(<a href="./EdbID.html">EdbID</a> id, <span class="keyword">int</span> npre, <span class="keyword">int</span> nfull, <span class="keyword">const</span> <span class="keyword">char</span>* opt = <span class="string">"-z"</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:AlignSet@1" href="src/EdbScanProc.cxx.html#awP2pE">AlignSet</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, <span class="keyword">int</span> npre = 1, <span class="keyword">int</span> nfull = 3, <span class="keyword">const</span> <span class="keyword">char</span>* opt = <span class="string">"-z"</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:TrackSetBT" href="src/EdbScanProc.cxx.html#jjiqbD">TrackSetBT</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, TEnv&amp; cenv)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadTracksTree" href="src/EdbScanProc.cxx.html#SlVT_">ReadTracksTree</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbPVRec.html">EdbPVRec</a>&amp; ali, TCut cut = <span class="string">"1"</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadTracksTree@1" href="src/EdbScanProc.cxx.html#S3kbJC">ReadTracksTree</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <a href="./EdbPVRec.html">EdbPVRec</a>&amp; ali, TCut cut = <span class="string">"1"</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:LinkSet" href="src/EdbScanProc.cxx.html#d57CDC">LinkSet</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, <span class="keyword">int</span> npre = 3, <span class="keyword">int</span> nfull = 1, <span class="keyword">int</span> correct_ang = 1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:CheckFiles" href="src/EdbScanProc.cxx.html#IqhULE">CheckFiles</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, <span class="keyword">const</span> <span class="keyword">char</span>* suffix)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:MakeScannedIDList" href="src/EdbScanProc.cxx.html#EanZY">MakeScannedIDList</a>(<a href="./EdbID.html">EdbID</a> id0, <a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, <span class="keyword">int</span> pl_from, <span class="keyword">int</span> pl_to, <span class="keyword">const</span> <span class="keyword">char</span>* suffix)</span><br />
+<div class="funccomm"><pre> check in all directories from pl_from to pl_to for a files with versions defined in id0 and the given suffix
+ if found - add <a href="./EdbID.html">EdbID</a> the scan set
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbMask.html">EdbMask</a> * <a class="funcname" name="EdbScanProc:ReadEraseMask" href="src/EdbScanProc.cxx.html#gWq.j">ReadEraseMask</a>(<a href="./EdbID.html">EdbID</a> id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadPatCPnopar" href="src/EdbScanProc.cxx.html#ofnv4B">ReadPatCPnopar</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pat, <a href="./EdbID.html">EdbID</a> id, TCut cut = <span class="string">"1"</span>, <span class="keyword">bool</span> do_erase = <span class="keyword">false</span>, <span class="keyword">bool</span> read_mt = <span class="keyword">false</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadPatCPnopar@1" href="src/EdbScanProc.cxx.html#HA6OzB">ReadPatCPnopar</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pat, <span class="keyword">const</span> <span class="keyword">char</span>* file, TCut cut = <span class="string">"1"</span>, <a href="./EdbMask.html">EdbMask</a>* erase_mask = 0, <span class="keyword">bool</span> read_mt = <span class="keyword">false</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:PrepareVolumesPred" href="src/EdbScanProc.cxx.html#yIZn8D">PrepareVolumesPred</a>(<span class="keyword">int</span>* id, <a href="./EdbPattern.html">EdbPattern</a>&amp; points, <span class="keyword">int</span> before = 5, <span class="keyword">int</span> after = 5, <span class="keyword">int</span> pmin = 1, <span class="keyword">int</span> pmax = 57, <a href="./EdbScanSet.html">EdbScanSet</a>* sc = 0)</span><br />
+<div class="funccomm"><pre> Create prediction patterns for the stopping points in the segments of the pattern <span class="string">"points"</span>.
+ For each point should be correctly defined  (eID ePID eX eY eSX eSY).
+ Input: idIN   - identifier for predictions to be created
+        points - stopping points in form of the segments (last found segment)
+        before,after - number of plates before and after stopping point
+        pmin,pmax    - brick limits (normally 1-57)
+        sc           - <a href="./EdbScanSet.html">EdbScanSet</a> with affine transformations
+ Output: x.x.x.x.pred.root for all necessary plates
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:FlashRawDir" href="src/EdbScanProc.cxx.html#xvKdYC">FlashRawDir</a>(<a href="./EdbScanClient.html">EdbScanClient</a>&amp; scan, <span class="keyword">int</span>* id)</span><br />
+<div class="funccomm"><pre> move all rwc and rwd files from the raw scanning directory into the new subdir
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:LoadPlate" href="src/EdbScanProc.cxx.html#WxlsD">LoadPlate</a>(<a href="./EdbScanClient.html">EdbScanClient</a>&amp; scan, <span class="keyword">int</span>* id, <span class="keyword">int</span> attempts = 1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:RemoveDublets" href="src/EdbScanProc.cxx.html#iDmhAE">RemoveDublets</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pin, <a href="./EdbPattern.html">EdbPattern</a>&amp; pout, <span class="keyword">int</span> brick)</span><br />
+<div class="funccomm"><pre> input:  pin  - predictions pattern
+ output: pout - predictions pattern with dublets removed
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:OptimizeScanPath" href="src/EdbScanProc.cxx.html#lOTP7B">OptimizeScanPath</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pin, <a href="./EdbPattern.html">EdbPattern</a>&amp; pout, <span class="keyword">int</span> brick)</span><br />
+<div class="funccomm"><pre> input:  pin  - predictions pattern
+ output: pout - predictions pattern with optimized path (should be empty at the beginning)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ConvertAreas" href="src/EdbScanProc.cxx.html#X0I_wD">ConvertAreas</a>(<a href="./EdbScanClient.html">EdbScanClient</a>&amp; scan, <span class="keyword">int</span>* id, <span class="keyword">int</span> flag = -1, <span class="keyword">const</span> <span class="keyword">char</span>* opt = <span class="string">"NOCLCLFRAMESUM"</span>)</span><br />
+<div class="funccomm"><pre> can be called separately in case of missed conversion
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ScanAreas" href="src/EdbScanProc.cxx.html#QupObE">ScanAreas</a>(<a href="./EdbScanClientBase.html">EdbScanClientBase</a>::ScanType st, <a href="./EdbScanClient.html">EdbScanClient</a>&amp; scan, <span class="keyword">int</span>* id, <span class="keyword">int</span> flag = -1, <span class="keyword">const</span> <span class="keyword">char</span>* opt = <span class="string">"NOCLCLFRAMESUM"</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ScanAreas@1" href="src/EdbScanProc.cxx.html#s1oHnE">ScanAreas</a>(<a href="./EdbScanClientBase.html">EdbScanClientBase</a>::ScanType st, <a href="./EdbScanClient.html">EdbScanClient</a>&amp; scan, <a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <span class="keyword">int</span>* id, <span class="keyword">const</span> <span class="keyword">char</span>* opt = <span class="string">"NOCLCLFRAMESUM"</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:CopyFile" href="src/EdbScanProc.cxx.html#KQfncE">CopyFile</a>(<span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2, <span class="keyword">const</span> <span class="keyword">char</span>* suffix, <span class="keyword">bool</span> overwrite)</span><br />
+<div class="funccomm"><pre> copy piece file from id1 to id2
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:RemoveFile" href="src/EdbScanProc.cxx.html#dUqc3E">RemoveFile</a>(<a href="./EdbID.html">EdbID</a> id, <span class="keyword">const</span> <span class="keyword">char</span>* suffix)</span><br />
+<div class="funccomm"><pre> remove file
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:CopyAFFPar" href="src/EdbScanProc.cxx.html#nOUAdE">CopyAFFPar</a>(<span class="keyword">int</span>* id1c, <span class="keyword">int</span>* id2c, <span class="keyword">int</span>* id1p, <span class="keyword">int</span>* id2p, <span class="keyword">bool</span> overwrite = <span class="keyword">true</span>)</span><br />
+<div class="funccomm"><pre> copy AFF/xc_yc.par to AFF/xp_yp.par
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:UpdateAFFPar" href="src/EdbScanProc.cxx.html#yhpFtB">UpdateAFFPar</a>(<a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2, <a href="./EdbLayer.html">EdbLayer</a>&amp; l, <a href="./EdbAffine2D.html">EdbAffine2D</a>* aff0 = 0)</span><br />
+<div class="funccomm"><pre> update the aff par file with the values defined in the <a href="./EdbLayer.html">EdbLayer</a>
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:UpdatePlatePar" href="src/EdbScanProc.cxx.html#S8IHqC">UpdatePlatePar</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbLayer.html">EdbLayer</a>&amp; l)</span><br />
+<div class="funccomm"><pre> update the plate par file with the values defined in the <a href="./EdbLayer.html">EdbLayer</a>
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:SetAFF0" href="src/EdbScanProc.cxx.html#fGyU_B">SetAFF0</a>(<span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:SetAFFDZ" href="src/EdbScanProc.cxx.html#kc8I9D">SetAFFDZ</a>(<span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2, <span class="keyword">float</span> dz)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:LinkRunAll" href="src/EdbScanProc.cxx.html#Qgx_rB">LinkRunAll</a>(<span class="keyword">int</span> id[4], <span class="keyword">int</span> npre, <span class="keyword">int</span> nfull, <span class="keyword">int</span> correct_ang )</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:ProjectFound" href="src/EdbScanProc.cxx.html#HE0GdD">ProjectFound</a>(<span class="keyword">int</span> id1[4],<span class="keyword">int</span> id2[4])</span><br />
+<div class="funccomm"><pre>take xp.xp.xp.xp.found.root and produce yp.yp.yp.yp.pred.root using the AFF/xp_yp.par
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:CorrectPredWithFound" href="src/EdbScanProc.cxx.html#zwra0">CorrectPredWithFound</a>(<span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2, <span class="keyword">const</span> <span class="keyword">char</span>* opt = <span class="string">"-z"</span>, <span class="keyword">int</span> patmin = 6)</span><br />
+<div class="funccomm"><pre> take p1.found.root, apply AFF/p1_p2.par, read p2.found.root, align and update AFF/p1_p2.par
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:CorrectAffWithPred" href="src/EdbScanProc.cxx.html#RZfgIB">CorrectAffWithPred</a>(<span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2, <span class="keyword">const</span> <span class="keyword">char</span>* opt = <span class="string">"-z"</span>, <span class="keyword">int</span> patmin = 6, <span class="keyword">const</span> <span class="keyword">char</span>* parfile = <span class="string">"fullalignment"</span>)</span><br />
+<div class="funccomm"><pre> take p1.found.root, apply AFF/p1_p2.par, align to p2 and update AFF/p1_p2.par
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:FindPredictions@1" href="src/EdbScanProc.cxx.html#gsv3bE">FindPredictions</a>(<span class="keyword">int</span>* id, <span class="keyword">int</span> flag = -1, <span class="keyword">int</span> maxholes = 3)</span><br />
+<div class="funccomm"><pre>find predictions of yp.yp.yp.yp.pred.root in yp.yp.yp.yp.cp.root and produce yp.yp.yp.yp.found.root
+ flag: -1 - all predictions
+        0 - only found in the previous plate (no holes)
+        1 - 1 holes before
+        2 - 2 holes before
+        3 - 3 holes before
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:TestAl" href="src/EdbScanProc.cxx.html#Gp9H_B">TestAl</a>(<span class="keyword">int</span> id1[4], <span class="keyword">int</span> id2[4])</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:TestAl@3" href="src/EdbScanProc.cxx.html#SlQb8B">TestAl</a>(<span class="keyword">const</span> <span class="keyword">char</span>* cpfile1, <span class="keyword">const</span> <span class="keyword">char</span>* cpfile2, TCut&amp; cut, <span class="keyword">float</span> dz, <a href="./EdbAffine2D.html">EdbAffine2D</a>* aff = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:TestAl@2" href="src/EdbScanProc.cxx.html#LQsaCE">TestAl</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; p1, <a href="./EdbPattern.html">EdbPattern</a>&amp; p2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:MergeSetSBT@1" href="src/EdbScanProc.cxx.html#TFxvmC">MergeSetSBT</a>(<a href="./EdbID.html">EdbID</a> id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:MergeSetSBT" href="src/EdbScanProc.cxx.html#eRNASD">MergeSetSBT</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss)</span><br />
+<div class="funccomm"><pre> merge all sbt files for a given scan set into bxxxxx.x.x.x.sbt.root
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:WriteSBTrack" href="src/EdbScanProc.cxx.html#f86al">WriteSBTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; t, <span class="keyword">int</span> path, <a href="./EdbID.html">EdbID</a> id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:WriteSBTracks" href="src/EdbScanProc.cxx.html#FIF1KB">WriteSBTracks</a>(TObjArray&amp; tracks, <a href="./EdbID.html">EdbID</a> id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TObjArray * <a class="funcname" name="EdbScanProc:ReadSBTracks" href="src/EdbScanProc.cxx.html#c8JyeB">ReadSBTracks</a>(<a href="./EdbID.html">EdbID</a> id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:WriteScanSet" href="src/EdbScanProc.cxx.html#Zb.h5E">WriteScanSet</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbScanSet.html">EdbScanSet</a> * <a class="funcname" name="EdbScanProc:ReadScanSet" href="src/EdbScanProc.cxx.html#KH5uTC">ReadScanSet</a>(<a href="./EdbID.html">EdbID</a> id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:WritePatTXT" href="src/EdbScanProc.cxx.html#NgX2aB">WritePatTXT</a>(<a href="./EdbPattern.html">EdbPattern</a> &amp;pred, <span class="keyword">int</span> id[4], <span class="keyword">const</span> <span class="keyword">char</span> *suffix, <span class="keyword">int</span> flag)</span><br />
+<div class="funccomm"><pre> write ascii predictions file as .../bXXXXXX/pYYY/a.a.a.a.suffix
+        man      - for manual check by sysal
+                 - overvise complete format
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:WriteSBcndTXT" href="src/EdbScanProc.cxx.html#XBmzT">WriteSBcndTXT</a>(<span class="keyword">int</span>* id, <span class="keyword">const</span> <span class="keyword">char</span>* suffix = <span class="string">"man.sbt.txt"</span>)</span><br />
+<div class="funccomm"><pre> write ascii found candidates file as .../bXXXXXX/pYYY/a.a.a.a.suffix
+                 - new id = 1000*id + 100* [BT:0; MT1:1; MT2:2]+ #
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadPatTXT" href="src/EdbScanProc.cxx.html#fAKnEE">ReadPatTXT</a>(<a href="./EdbPattern.html">EdbPattern</a> &amp;pred, <span class="keyword">int</span> id[4], <span class="keyword">const</span> <span class="keyword">char</span> *suffix, <span class="keyword">int</span> flag)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadPatTXT@2" href="src/EdbScanProc.cxx.html#HT9d8D">ReadPatTXT</a>(<span class="keyword">const</span> <span class="keyword">char</span>* file, <a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <span class="keyword">int</span> flag = -1)</span><br />
+<div class="funccomm"><pre> read ascii predictions file as .../bXXXXXX/pYYY/a.a.a.a.suffix
+        man      - for manual check by sysal
+                 - overvise complete format
+ flag convention:
+     -1 read all: basetracks, microtracks and holes (extrapolated predictions)
+    &gt;=0 read only segments with this flag
+    -11 read basetracks or microtracks, skip holes (expected behaviour for display users)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:WritePatRoot" href="src/EdbScanProc.cxx.html#NrPqOC">WritePatRoot</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <span class="keyword">int</span>* id, <span class="keyword">const</span> <span class="keyword">char</span>* suffix, <span class="keyword">int</span> flag = -1)</span><br />
+<div class="funccomm"><pre> write root predictions file as .../bXXXXXX/pYYY/a.a.a.a.suffix
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadPatRoot" href="src/EdbScanProc.cxx.html#NkQb8B">ReadPatRoot</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <span class="keyword">int</span>* id, <span class="keyword">const</span> <span class="keyword">char</span>* suffix, <span class="keyword">int</span> flag = -1)</span><br />
+<div class="funccomm"><pre> read root predictions file as .../bXXXXXX/pYYY/a.a.a.a.suffix
+ flag convention:
+     -1 read all: basetracks, microtracks and holes (extrapolated predictions)
+    &gt;=0 read only segments with this flag
+    -11 read basetracks or microtracks, skip holes (expected behaviour for display users)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:CheckDirWritable" href="src/EdbScanProc.cxx.html#J3wT5E">CheckDirWritable</a>(<span class="keyword">const</span> <span class="keyword">char</span>* dir)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:CheckDir" href="src/EdbScanProc.cxx.html#gqyx9">CheckDir</a>(<span class="keyword">const</span> <span class="keyword">char</span>* dir, <span class="keyword">bool</span> create = <span class="keyword">true</span>)</span><br />
+<div class="funccomm"><pre> check the existance of the directory dir
+ if do not exist and create==<a href="./ListOfTypes.html#bool">true</a> (default) - create it
+ return <a href="./ListOfTypes.html#bool">true</a> if the directory exists or succesfully created
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:CheckAFFDir" href="src/EdbScanProc.cxx.html#NNQ05">CheckAFFDir</a>(<span class="keyword">int</span> brick, <span class="keyword">bool</span> create = <span class="keyword">true</span>)</span><br />
+<div class="funccomm"><pre>return <a href="./ListOfTypes.html#bool">true</a> if dir ../bXXXXXX/AFF is exists, if create==<a href="./ListOfTypes.html#bool">true</a> (default) create it if necessary
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:CheckBrickDir" href="src/EdbScanProc.cxx.html#ls5hVB">CheckBrickDir</a>(<a href="./EdbID.html">EdbID</a> id, <span class="keyword">bool</span> create = <span class="keyword">true</span>)</span><br />
+<div class="funccomm"><pre>return <a href="./ListOfTypes.html#bool">true</a> if dir ../bXXXXXX exist, if create==<a href="./ListOfTypes.html#bool">true</a> (default) create it if necessary
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:CheckPlateDir" href="src/EdbScanProc.cxx.html#z10LCB">CheckPlateDir</a>(<a href="./EdbID.html">EdbID</a> id, <span class="keyword">bool</span> create = <span class="keyword">true</span>)</span><br />
+<div class="funccomm"><pre>return <a href="./ListOfTypes.html#bool">true</a> if dir ../bXXXXXX/pXXX exist, if create==<a href="./ListOfTypes.html#bool">true</a> (default) create it if necessary
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:CheckProcDir" href="src/EdbScanProc.cxx.html#IXIe0D">CheckProcDir</a>( <span class="keyword">int</span> id[4], <span class="keyword">bool</span> create)</span><br />
+<div class="funccomm"><pre>return <a href="./ListOfTypes.html#bool">true</a> if dir ../bXXXXXX/pXXX exist, if create==<a href="./ListOfTypes.html#bool">true</a> (default) create it if necessary
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">char</span> * <a class="funcname" name="EdbScanProc:BrickDir" href="src/EdbScanProc.cxx.html#or1ur">BrickDir</a>(<span class="keyword">int</span> brick)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:MakeFileName" href="src/EdbScanProc.cxx.html#VcrO2">MakeFileName</a>(TString &amp;s, <span class="keyword">int</span> ID[4], <span class="keyword">const</span> <span class="keyword">char</span> *suffix, <span class="keyword">bool</span> inplate)</span><br />
+<div class="funccomm"><pre>make file pathname as .../bXXXXXX/pYYY/a.a.a.a.suffix if inplate==<a href="./ListOfTypes.html#bool">true</a>
+otherwise as .../bXXXXXX/a.a.a.a.suffix
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:MakeFileNameSrv" href="src/EdbScanProc.cxx.html#vHKF5C">MakeFileNameSrv</a>(TString &amp;s, <span class="keyword">int</span> ID[4], <span class="keyword">const</span> <span class="keyword">char</span> *suffix, <span class="keyword">bool</span> inplate)</span><br />
+<div class="funccomm"><pre>make file pathname as .../bXXXXXX/pYYY/a.a.a.a.suffix if inplate==<a href="./ListOfTypes.html#bool">true</a>
+otherwise as .../bXXXXXX/a.a.a.a.suffix
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:MakeAffName" href="src/EdbScanProc.cxx.html#mi8ivC">MakeAffName</a>(TString &amp;s, <span class="keyword">int</span> id1[4], <span class="keyword">int</span> id2[4], <span class="keyword">const</span> <span class="keyword">char</span> *suffix)</span><br />
+<div class="funccomm"><pre>make affine file name as ../bXXXXXX/AFF/a.a.a.a_b.b.b.b.aff.par
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:GetMap" href="src/EdbScanProc.cxx.html#MgbQRB">GetMap</a>(<span class="keyword">int</span> brick, TString&amp; map)</span><br />
+<div class="funccomm"><pre> get map string from the map file of this brick : .../bXXXXXX/bXXXXXX.map
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:WaitFileReady" href="src/EdbScanProc.cxx.html#uDbvOC">WaitFileReady</a>(<span class="keyword">const</span> <span class="keyword">char</span>* fname_)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbRun.html">EdbRun</a> * <a class="funcname" name="EdbScanProc:InitRun" href="src/EdbScanProc.cxx.html#klVAjB">InitRun</a>(<span class="keyword">int</span>* id, <span class="keyword">char</span>* runname_ = 0, <span class="keyword">char</span>* runnamesrv_ = 0, <span class="keyword">bool</span> createrun_ = <span class="keyword">true</span>)</span><br />
+<div class="funccomm"><pre> create new run file as <a href="./EdbScanProc.html#EdbScanProc:eProcDirClient" title="TString EdbScanProc::eProcDirClient">eProcDirClient</a>/bXXXXXX/pYYY/x.y.s.p.raw.root
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:AddParLine" href="src/EdbScanProc.cxx.html#ZVoo4">AddParLine</a>(<span class="keyword">const</span> <span class="keyword">char</span>* file, <span class="keyword">const</span> <span class="keyword">char</span>* line, <span class="keyword">bool</span> recreate = <span class="keyword">false</span>)</span><br />
+<div class="funccomm"><pre> add string to par file
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:MakeInParSet" href="src/EdbScanProc.cxx.html#iGb2AC">MakeInParSet</a>(<a href="./EdbID.html">EdbID</a> id, <span class="keyword">const</span> <span class="keyword">char</span>* option)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:MakeInPar" href="src/EdbScanProc.cxx.html#PlIXV">MakeInPar</a>(<span class="keyword">int</span> id[4], <span class="keyword">const</span> <span class="keyword">char</span> *option)</span><br />
+<div class="funccomm"><pre> prepare x.x.x.x.in.par file for the process defined in the option string
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:CorrectAngles" href="src/EdbScanProc.cxx.html#oR7qRE">CorrectAngles</a>(<span class="keyword">int</span>* id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:LinkRun" href="src/EdbScanProc.cxx.html#hpZ7">LinkRun</a>(<span class="keyword">int</span>* id, <span class="keyword">int</span> noUpdate = 1)</span><br />
+<div class="funccomm"><pre> the x.x.x.x.in.par file must be prepared before
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:FindPredictionsRawSet" href="src/EdbScanProc.cxx.html#fp7WMD">FindPredictionsRawSet</a>(<a href="./EdbID.html">EdbID</a> idp, <a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss, <span class="keyword">int</span> npl)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:FindPredictionsRaw" href="src/EdbScanProc.cxx.html#Xi0EcE">FindPredictionsRaw</a>(<a href="./EdbID.html">EdbID</a> idp, <a href="./EdbID.html">EdbID</a> idr)</span><br />
+<div class="funccomm"><pre> find raw microtracks for the predictions of idp in raw data of idr
+ Input:  idp.pred.root, idr.raw.root
+ Output: idp.found.root, idp.found.raw.txt
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:FindPredictionsRaw@1" href="src/EdbScanProc.cxx.html#ck5llC">FindPredictionsRaw</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <a href="./EdbPattern.html">EdbPattern</a>&amp; found, <a href="./EdbRunAccess.html">EdbRunAccess</a>&amp; ra, <a href="./EdbScanCond.html">EdbScanCond</a>&amp; condBT, <a href="./EdbScanCond.html">EdbScanCond</a>&amp; condMT, <span class="keyword">float</span> delta_theta = 0.1, <span class="keyword">float</span> puls_min = 5., <span class="keyword">float</span> puls_mt = 9., <span class="keyword">float</span> chi2max = 1.6, <a href="./ListOfTypes.html#FILE">FILE</a>* out = 0)</span><br />
+<div class="funccomm"><pre> find raw microtracks for the predictions <span class="string">"pred"</span> in run <span class="string">"ra"</span>
+ Input:  pred,ra
+ Output: fnd - basetracks with position taken from the best microtrack (if any) and the angle of the predicted basetrack
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:FindCompliments" href="src/EdbScanProc.cxx.html#VQza4C">FindCompliments</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s, <a href="./EdbPattern.html">EdbPattern</a>&amp; pat, TObjArray&amp; found, <span class="keyword">float</span> chi2max, TArrayF&amp; chiarr)</span><br />
+<div class="funccomm"><pre> return found sorted by increasing chi2
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:SetDefaultCondBT" href="src/EdbScanProc.cxx.html#bnM0.D">SetDefaultCondBT</a>(<a href="./EdbScanCond.html">EdbScanCond</a>&amp; cond)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:SetDefaultCondMT" href="src/EdbScanProc.cxx.html#DFvRCE">SetDefaultCondMT</a>(<a href="./EdbScanCond.html">EdbScanCond</a>&amp; cond)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:InitRunAccess" href="src/EdbScanProc.cxx.html#Vn2sjE">InitRunAccess</a>(<a href="./EdbRunAccess.html">EdbRunAccess</a> &amp;ra, <span class="keyword">int</span> id[4], <span class="keyword">bool</span> do_update)</span><br />
+<div class="funccomm"><pre> initialize the <a href="./EdbRunAccess.html">EdbRunAccess</a> object useful for the raw data handling
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:InitPiece" href="src/EdbScanProc.cxx.html#yekvVE">InitPiece</a>(<a href="./EdbDataPiece.html">EdbDataPiece</a> &amp;piece, <span class="keyword">int</span> id[4])</span><br />
+<div class="funccomm"><pre> set raw, cp and par for the piece according to id
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadPatCP" href="src/EdbScanProc.cxx.html#SEZBtD">ReadPatCP</a>(<a href="./EdbPattern.html">EdbPattern</a> &amp;pat, <span class="keyword">int</span> id[4], TCut cut)</span><br />
+<div class="funccomm"><pre> read CP file (<span class="string">"base"</span> segments) applying all cuts and transformations from x.x.x.x.in.par
+ the Z of the pat and all segments will be z of layer 0 defined in the par file(s)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadPiece" href="src/EdbScanProc.cxx.html#iQPH0E">ReadPiece</a>(<a href="./EdbDataPiece.html">EdbDataPiece</a>&amp; piece, <a href="./EdbPattern.html">EdbPattern</a>&amp; pat)</span><br />
+<div class="funccomm"><pre>assuming that piece was initialised correctly
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:FindPredictions" href="src/EdbScanProc.cxx.html#f9Joi">FindPredictions</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <span class="keyword">int</span>* id, <a href="./EdbPattern.html">EdbPattern</a>&amp; found, <span class="keyword">int</span> maxholes = 3)</span><br />
+<div class="funccomm"><pre> find predictions pred in couples tree of id and prepare pattern <span class="string">"found"</span>
+ assumed that pred are transformed and projected into the coord system of id
+ Input:   pred - pattern with predictions
+            id - the data piece to be processed
+      maxholes - the maximum number of holes (missed segments) for doing extrapolation
+ Output: found - pattern with found tracks
+         x.x.x.x.found.txt summary file with all candidats
+
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:GetAffZ" href="src/EdbScanProc.cxx.html#mXVEtC">GetAffZ</a>(<a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; aff, <span class="keyword">float</span>&amp; z, <span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2)</span><br />
+<div class="funccomm"><pre> read affine transformations and deltaZ from x.x.x.x_y.y.y.y.aff.par
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:ApplyAffZ" href="src/EdbScanProc.cxx.html#bZ3sKE">ApplyAffZ</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pat, <span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2)</span><br />
+<div class="funccomm"><pre> read affine transformations and deltaZ from x.x.x.x_y.y.y.y.aff.par and apply it to pat
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:AlignAll" href="src/EdbScanProc.cxx.html#jeC77B">AlignAll</a>(<span class="keyword">int</span> id1[4], <span class="keyword">int</span> id2[4], <span class="keyword">int</span> npre, <span class="keyword">int</span> nfull, <span class="keyword">const</span> <span class="keyword">char</span> *opt)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:Align" href="src/EdbScanProc.cxx.html#cZBzPC">Align</a>(<span class="keyword">int</span> id1[4], <span class="keyword">int</span> id2[4], <span class="keyword">const</span> <span class="keyword">char</span> *option)</span><br />
+<div class="funccomm"><pre> <a href="./EdbScanProc.html#EdbScanProc:Align" title="int EdbScanProc::Align(EdbID id1,EdbID id2,const char* option=&quot;&quot;) or overloads">Align</a> 2 patterns, assumed that already exists file x.x.x.x_y.y.y.y.aff.par with deltaZ inside.
+ Convension about Z(setted while process): the z of id2 is 0, the z of id1 is (-deltaZ) where
+ deltaZ readed from aff.par file in a way that pattern of id1 projected
+ to deltaZ correspond to pattern of id2
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:UpdateSetWithAff@1" href="src/EdbScanProc.cxx.html#Gv.baB">UpdateSetWithAff</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2)</span><br />
+<div class="funccomm"><pre> in this function the geometry of the brick of idset is updated with the affine transformations
+ found for the couple idset1 idset2 (same plate rescanning transformations)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:UpdateSetWithAff" href="src/EdbScanProc.cxx.html#gKKR2E">UpdateSetWithAff</a>(<a href="./EdbID.html">EdbID</a> idset, <a href="./EdbAffine2D.html">EdbAffine2D</a> aff)</span><br />
+<div class="funccomm"><pre> in this function the geometry of the brick of idset is updated with the given affine transformations
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:UpdateSetWithAff@2" href="src/EdbScanProc.cxx.html#yk5cMC">UpdateSetWithAff</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbID.html">EdbID</a> idu)</span><br />
+<div class="funccomm"><pre> in this function the geometry of the brick of idset is updated with the affine transformations
+ found for plate-to-plate alignment of idset
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:UpdateSetWithPlatePar" href="src/EdbScanProc.cxx.html#PUGmcE">UpdateSetWithPlatePar</a>(<a href="./EdbID.html">EdbID</a> id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:UpdateSetWithPlatePar@1" href="src/EdbScanProc.cxx.html#UxdYU">UpdateSetWithPlatePar</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:MakeAlignSetSummary@1" href="src/EdbScanProc.cxx.html#zU44g">MakeAlignSetSummary</a>(<a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2, <span class="keyword">const</span> <span class="keyword">char</span>* fout, <span class="keyword">const</span> <span class="keyword">char</span>* opt = <span class="string">"UPDATE"</span>)</span><br />
+<div class="funccomm"><pre> assuming that exist the scan sets for idset1 and idset2
+ read id1_id2.aff.par and make a summary tree
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:MakeAlignSetSummary" href="src/EdbScanProc.cxx.html#FTzFME">MakeAlignSetSummary</a>(<a href="./EdbID.html">EdbID</a> id)</span><br />
+<div class="funccomm"><pre> assuming that exist the scan sets for idset
+ read id.n_id.n+1.aff.par and make a summary tree
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:UpdateAlignSummaryTree" href="src/EdbScanProc.cxx.html#iBRNBC">UpdateAlignSummaryTree</a>(<a href="./EdbID.html">EdbID</a> idset1, <a href="./EdbID.html">EdbID</a> idset2, TTree&amp; tree)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:MakeLinkSetSummary" href="src/EdbScanProc.cxx.html#rd9vME">MakeLinkSetSummary</a>(<a href="./EdbID.html">EdbID</a> id)</span><br />
+<div class="funccomm"><pre> assuming that exist the scan sets for idset
+ read id.n_id.n+1.aff.par and make a summary tree
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:AlignRawSet" href="src/EdbScanProc.cxx.html#gAOQf">AlignRawSet</a>(<a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2, TEnv&amp; cenv)</span><br />
+<div class="funccomm"><pre> assuming that exist the scan sets for idset1 and idset2
+ for each plate do the alignment raw from 1 to 2 and write id1_id2.aff.par
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:AlignRaw" href="src/EdbScanProc.cxx.html#dem_gE">AlignRaw</a>(<a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2, TEnv&amp; cenv, <a href="./EdbAffine2D.html">EdbAffine2D</a>* applyAff = 0)</span><br />
+<div class="funccomm"><pre> <a href="./EdbScanProc.html#EdbScanProc:Align" title="int EdbScanProc::Align(EdbID id1,EdbID id2,const char* option=&quot;&quot;) or overloads">Align</a> raw segments patterns. Typical application: align 2 different scannings of the same emulsion plate.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadMarksSet" href="src/EdbScanProc.cxx.html#aEkufE">ReadMarksSet</a>(<a href="./EdbMarksSet.html">EdbMarksSet</a>&amp; ms, <span class="keyword">int</span> brick, <span class="keyword">const</span> <span class="keyword">char</span>* filename, <span class="keyword">char</span> spacer = <span class="string">'_'</span>, <span class="keyword">char</span> shape = <span class="string">'S'</span>)</span><br />
+<div class="funccomm"><pre> Reads map file and copy its informations into an <a href="./EdbMarksSet.html">EdbMarksSet</a> object
+ With <span class="string">"spacer"</span> you can choose the character which is assumed to be
+ between the words in the map file. Default is <span class="string">'_'</span>
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:WriteMarksSet" href="src/EdbScanProc.cxx.html#lcgJNC">WriteMarksSet</a>(<a href="./EdbMarksSet.html">EdbMarksSet</a>&amp; ms, <span class="keyword">int</span> brick, <span class="keyword">const</span> <span class="keyword">char</span>* filename, <span class="keyword">char</span> spacer = <span class="string">'_'</span>, <span class="keyword">char</span> shape = <span class="string">'S'</span>, <span class="keyword">int</span> plate = 1)</span><br />
+<div class="funccomm"><pre> Reads an <a href="./EdbMarksSet.html">EdbMarksSet</a> object and uses its content to write a map file
+ With <span class="string">"spacer"</span> you can choose the character that you want to insert
+ between the words in the map file. Default is <span class="string">'_'</span>
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:LogPrint" href="src/EdbScanProc.cxx.html#HM1IyB">LogPrint</a>(<span class="keyword">int</span> brick, <span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span> *location, <span class="keyword">const</span> <span class="keyword">char</span> *va_(fmt), ...)</span><br />
+<div class="funccomm"><pre> <a href="./EdbScanProc.html#EdbScanProc:Print" title="void EdbScanProc::Print()">Print</a> message to the logfile and to <a href="./ListOfTypes.html#FILE">stdout</a>.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:GetPatternSide" href="src/EdbScanProc.cxx.html#wZ8Sv">GetPatternSide</a>(<a href="./EdbID.html">EdbID</a> id, <span class="keyword">int</span> side, <a href="./EdbLayer.html">EdbLayer</a>&amp; la, <span class="keyword">const</span> <span class="keyword">char</span>* segcut, <span class="keyword">int</span> afid, <a href="./EdbPattern.html">EdbPattern</a>&amp; p)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:InitRunAccessNew@1" href="src/EdbScanProc.cxx.html#z.WWRC">InitRunAccessNew</a>(<a href="./EdbRunAccess.html">EdbRunAccess</a>&amp; ra, <a href="./EdbID.html">EdbID</a> idset, <span class="keyword">int</span> idplate, <span class="keyword">bool</span> do_update = <span class="keyword">false</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:InitRunAccessNew" href="src/EdbScanProc.cxx.html#Pw2JnB">InitRunAccessNew</a>(<a href="./EdbRunAccess.html">EdbRunAccess</a>&amp; ra, <a href="./EdbID.html">EdbID</a> id, <a href="./EdbPlateP.html">EdbPlateP</a>&amp; plate, <span class="keyword">bool</span> do_update = <span class="keyword">false</span>)</span><br />
+<div class="funccomm"><pre> use only scanset file (no *.par)
+ before this function one should define variables:
+             r.eInvertSides (default is 0 - no invert)
+ after:
+             r.eAFID        (default is 1 - use view aff)
+             r.AddSegmentCut(...) , etc
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:LinkRunTest" href="src/EdbScanProc.cxx.html#i_4_nC">LinkRunTest</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbPlateP.html">EdbPlateP</a>&amp; plate, TEnv&amp; cenv)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:AlignOverlaps" href="src/EdbScanProc.cxx.html#bL.xCC">AlignOverlaps</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbPattern.html">EdbPattern</a>&amp; p1, <a href="./EdbPattern.html">EdbPattern</a>&amp; p2, TEnv&amp; cenv, <span class="keyword">const</span> <span class="keyword">char</span>* suff)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:CheckViewOverlaps" href="src/EdbScanProc.cxx.html#HuuX3D">CheckViewOverlaps</a>(<a href="./EdbID.html">EdbID</a> id, TEnv&amp; cenv)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:LinkRunNew" href="src/EdbScanProc.cxx.html#IMNYFB">LinkRunNew</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbPlateP.html">EdbPlateP</a>&amp; plate, TEnv&amp; cenv)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:LinkSetNewTest" href="src/EdbScanProc.cxx.html#VtpxC">LinkSetNewTest</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, TEnv&amp; cenv)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:LinkSetNew" href="src/EdbScanProc.cxx.html#l.aIPB">LinkSetNew</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, TEnv&amp; cenv)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:MakeTracksPred" href="src/EdbScanProc.cxx.html#T1.k7C">MakeTracksPred</a>(TObjArray&amp; tracks, <a href="./EdbID.html">EdbID</a> id, <a href="./EdbLayer.html">EdbLayer</a>&amp; layer)</span><br />
+<div class="funccomm"><pre> Extrapolate each track of array tracks to layer.Z(), apply layer.Aff() and prepare
+ id.pred.root
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:ExtractRawVolume" href="src/EdbScanProc.cxx.html#iWd.wD">ExtractRawVolume</a>(<a href="./EdbID.html">EdbID</a> id, <a href="./EdbID.html">EdbID</a> idnew, <a href="./EdbSegP.html">EdbSegP</a> pred, <span class="keyword">int</span> plate, TEnv&amp; cenv)</span><br />
+<div class="funccomm"><pre> from <a href="./EdbScanSet.html">EdbScanSet</a> id extract volume around pred and save into idnew
+ Note: the z of pred is assumed to be the z of plate in this function
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:FindRawTrack@1" href="src/EdbScanProc.cxx.html#QsEEpB">FindRawTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; pred, <a href="./EdbTrackP.html">EdbTrackP</a>&amp; found, <a href="./EdbID.html">EdbID</a> idset, <span class="keyword">int</span> plate)</span><br />
+<div class="funccomm"><pre> found segments will be added to track tr
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:FindRawTrack" href="src/EdbScanProc.cxx.html#EtjjWD">FindRawTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; pred, <a href="./EdbTrackP.html">EdbTrackP</a>&amp; found, <a href="./EdbID.html">EdbID</a> idset, <span class="keyword">int</span> plate, TEnv&amp; cenv)</span><br />
+<div class="funccomm"><pre> found segments will be added to track tr
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:ExtractRawVolume@1" href="src/EdbScanProc.cxx.html#WjUqpC">ExtractRawVolume</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; ss, <a href="./EdbScanSet.html">EdbScanSet</a>&amp; ssnew, <a href="./EdbSegP.html">EdbSegP</a>&amp; pred, <span class="keyword">float</span> dR)</span><br />
+<div class="funccomm"><pre> from <a href="./EdbScanSet.html">EdbScanSet</a> ss extract volume for plates defined in ssnew around pred with dR
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:SetServerRunName" href="src/EdbScanProc.cxx.html#OJjmXB">SetServerRunName</a>(<span class="keyword">const</span> <span class="keyword">char</span>* fname_)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">const</span> <span class="keyword">char</span>* <a class="funcname" name="EdbScanProc:GetServerRunName" href="src/EdbScanProc.cxx.html#Kg5SLD">GetServerRunName</a>() const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbScanProc:EdbScanProc" href="src/EdbScanProc.h.html#CvCXmC">EdbScanProc</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">virtual</span> <a class="funcname" name="EdbScanProc:_EdbScanProc" href="src/EdbScanProc.h.html#dIsrdB">~EdbScanProc</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:CheckProcDir" href="src/EdbScanProc.h.html#rPOP4C">CheckProcDir</a>(<span class="keyword">int</span> id[4], <span class="keyword">bool</span> create=<span class="keyword">true</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:MakeFileName" href="src/EdbScanProc.h.html#qxUg9C">MakeFileName</a>(TString &amp;s, <span class="keyword">int</span> id[4], <span class="keyword">const</span> <span class="keyword">char</span> *suffix, <span class="keyword">bool</span> inplate=<span class="keyword">true</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:MakeFileNameSrv" href="src/EdbScanProc.h.html#ZLfc">MakeFileNameSrv</a>(TString &amp;s, <span class="keyword">int</span> id[4], <span class="keyword">const</span> <span class="keyword">char</span> *suffix, <span class="keyword">bool</span> inplate=<span class="keyword">true</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:MakeAffName" href="src/EdbScanProc.h.html#XgOrQB">MakeAffName</a>(TString &amp;s, <span class="keyword">int</span> id1[4], <span class="keyword">int</span> id2[4], <span class="keyword">const</span> <span class="keyword">char</span> *suffix=<span class="string">"aff.par"</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:MakeInPar" href="src/EdbScanProc.h.html#bJCLZE">MakeInPar</a>(<span class="keyword">int</span> id[4], <span class="keyword">const</span> <span class="keyword">char</span> *option)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:CopyPar" href="src/EdbScanProc.h.html#moOtBE">CopyPar</a>(<a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2, <span class="keyword">bool</span> overwrite = <span class="keyword">true</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">return</span> <a class="funcname" name="EdbScanProc:CopyPar@1" href="src/EdbScanProc.h.html#X_Vv2B">CopyPar</a>(<span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2, <span class="keyword">bool</span> overwrite = <span class="keyword">true</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:CopyPred" href="src/EdbScanProc.h.html#y0RW4B">CopyPred</a>(<span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2, <span class="keyword">bool</span> overwrite = <span class="keyword">true</span>)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbScanProc.html#EdbScanProc:CopyFile" title="int EdbScanProc::CopyFile(int* id1,int* id2,const char* suffix,bool overwrite)">CopyFile</a>(id1,id2,<span class="string">"pred.root"</span>,overwrite);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadPatTXT" href="src/EdbScanProc.h.html#rOUNzE">ReadPatTXT</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <a href="./EdbID.html">EdbID</a> id, <span class="keyword">const</span> <span class="keyword">char</span>* suffix, <span class="keyword">int</span> flag = -1)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">int</span> id4[4]; id.Get(id4); <span class="keyword">return</span> <a href="./EdbScanProc.html#EdbScanProc:ReadPatTXT" title="int EdbScanProc::ReadPatTXT(EdbPattern&amp; pred,EdbID id,const char* suffix,int flag=-1) or overloads">ReadPatTXT</a>(pred,id4,suffix,flag);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:WritePatTXT" href="src/EdbScanProc.h.html#beMGEB">WritePatTXT</a>(<a href="./EdbPattern.html">EdbPattern</a> &amp;pred, <span class="keyword">int</span> id[4], <span class="keyword">const</span> <span class="keyword">char</span> *suffix, <span class="keyword">int</span> flag=-1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadPred" href="src/EdbScanProc.h.html#P1A5HE">ReadPred</a>(<a href="./EdbPattern.html">EdbPattern</a> &amp;pred, <span class="keyword">int</span> id[4], <span class="keyword">int</span> flag=-1)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbScanProc.html#EdbScanProc:ReadPatRoot" title="int EdbScanProc::ReadPatRoot(EdbPattern&amp; pred,int* id,const char* suffix,int flag=-1)">ReadPatRoot</a>(pred,id,<span class="string">"pred.root"</span>,flag);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:WritePred" href="src/EdbScanProc.h.html#JxruSB">WritePred</a>(<a href="./EdbPattern.html">EdbPattern</a> &amp;pred, <span class="keyword">int</span> id[4], <span class="keyword">int</span> flag=-1)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbScanProc.html#EdbScanProc:WritePatRoot" title="int EdbScanProc::WritePatRoot(EdbPattern&amp; pred,int* id,const char* suffix,int flag=-1)">WritePatRoot</a>(pred,id,<span class="string">"pred.root"</span>,flag);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadFound" href="src/EdbScanProc.h.html#y13G7C">ReadFound</a>(<a href="./EdbPattern.html">EdbPattern</a> &amp;pred, <span class="keyword">int</span> id[4], <span class="keyword">int</span> flag=-1)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbScanProc.html#EdbScanProc:ReadPatRoot" title="int EdbScanProc::ReadPatRoot(EdbPattern&amp; pred,int* id,const char* suffix,int flag=-1)">ReadPatRoot</a>(pred,id,<span class="string">"found.root"</span>,flag);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:WriteFound" href="src/EdbScanProc.h.html#KWIesE">WriteFound</a>(<a href="./EdbPattern.html">EdbPattern</a> &amp;pred, <span class="keyword">int</span> id[4], <span class="keyword">int</span> flag=-1)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbScanProc.html#EdbScanProc:WritePatRoot" title="int EdbScanProc::WritePatRoot(EdbPattern&amp; pred,int* id,const char* suffix,int flag=-1)">WritePatRoot</a>(pred,id,<span class="string">"found.root"</span>,flag);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadFound@1" href="src/EdbScanProc.h.html#g2b7CE">ReadFound</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <a href="./EdbID.html">EdbID</a> id, <span class="keyword">int</span> flag = -1)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">int</span> id4[4]; id.Get(id4); <span class="keyword">return</span> <a href="./EdbScanProc.html#EdbScanProc:ReadFound" title="int EdbScanProc::ReadFound(EdbPattern&amp; pred,int* id,int flag=-1) or overloads">ReadFound</a>(pred,id4,flag);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadPred@1" href="src/EdbScanProc.h.html#eeriqB">ReadPred</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <a href="./EdbID.html">EdbID</a> id, <span class="keyword">int</span> flag = -1)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">int</span> id4[4]; id.Get(id4); <span class="keyword">return</span> <a href="./EdbScanProc.html#EdbScanProc:ReadPred" title="int EdbScanProc::ReadPred(EdbPattern&amp; pred,int* id,int flag=-1) or overloads">ReadPred</a>(pred,id4,flag);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:WritePred@1" href="src/EdbScanProc.h.html#nbCtxE">WritePred</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pred, <a href="./EdbID.html">EdbID</a> id, <span class="keyword">int</span> flag = -1)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">int</span> id4[4]; id.Get(id4); <span class="keyword">return</span> <a href="./EdbScanProc.html#EdbScanProc:WritePred" title="int EdbScanProc::WritePred(EdbPattern&amp; pred,int* id,int flag=-1) or overloads">WritePred</a>(pred,id4,flag);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:WriteFound@1" href="src/EdbScanProc.h.html#aOfSvC">WriteFound</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; found, <a href="./EdbID.html">EdbID</a> id, <span class="keyword">int</span> flag = -1)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">int</span> id4[4]; id.Get(id4); <span class="keyword">return</span> <a href="./EdbScanProc.html#EdbScanProc:WriteFound" title="int EdbScanProc::WriteFound(EdbPattern&amp; pred,int* id,int flag=-1) or overloads">WriteFound</a>(found,id4,flag);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:InitPiece" href="src/EdbScanProc.h.html#Q38A4E">InitPiece</a>(<a href="./EdbDataPiece.html">EdbDataPiece</a> &amp;piece, <span class="keyword">int</span> id[4])</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:ReadPatCP" href="src/EdbScanProc.h.html#pC2ulC">ReadPatCP</a>(<a href="./EdbPattern.html">EdbPattern</a> &amp;pat, <span class="keyword">int</span> id[4], TCut c=<span class="string">"1"</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:LinkRunAll" href="src/EdbScanProc.h.html#MgGRS">LinkRunAll</a>(<span class="keyword">int</span> id[4], <span class="keyword">int</span> npre=3, <span class="keyword">int</span> nfull=1, <span class="keyword">int</span> correct_ang=1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:Align" href="src/EdbScanProc.h.html#Oqm_7B">Align</a>(<a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2, <span class="keyword">const</span> <span class="keyword">char</span>* option = <span class="string">""</span>)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">int</span> id14[4]; id1.Get(id14); <span class="keyword">int</span> id24[4]; id2.Get(id24); <span class="keyword">return</span> <a href="./EdbScanProc.html#EdbScanProc:Align" title="int EdbScanProc::Align(EdbID id1,EdbID id2,const char* option=&quot;&quot;) or overloads">Align</a>(id14,id24,option);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:AlignAll" href="src/EdbScanProc.h.html#ig9.hD">AlignAll</a>(<span class="keyword">int</span> id1[4], <span class="keyword">int</span> id2[4], <span class="keyword">int</span> npre=1, <span class="keyword">int</span> nfull=3, <span class="keyword">const</span> <span class="keyword">char</span> *opt=<span class="string">"-z"</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:ProjectFound" href="src/EdbScanProc.h.html#qzFE5E">ProjectFound</a>(<span class="keyword">int</span> id1[4],<span class="keyword">int</span> id2[4])</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:InitRunAccess" href="src/EdbScanProc.h.html#XRWD_B">InitRunAccess</a>(<a href="./EdbRunAccess.html">EdbRunAccess</a> &amp;ra, <span class="keyword">int</span> id[4], <span class="keyword">bool</span> do_update=<span class="keyword">false</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:AddAFFtoScanSet" href="src/EdbScanProc.h.html#p_sifC">AddAFFtoScanSet</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, <a href="./EdbID.html">EdbID</a> id1, <a href="./EdbID.html">EdbID</a> id2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:AddAFFtoScanSet@1" href="src/EdbScanProc.h.html#xB3yWB">AddAFFtoScanSet</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, <span class="keyword">int</span>* id1, <span class="keyword">int</span>* id2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbScanProc:AddAFFtoScanSet@2" href="src/EdbScanProc.h.html#BL9cUE">AddAFFtoScanSet</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sc, <span class="keyword">int</span> b1, <span class="keyword">int</span> p1, <span class="keyword">int</span> s1, <span class="keyword">int</span> e1, <span class="keyword">int</span> b2, <span class="keyword">int</span> p2, <span class="keyword">int</span> s2, <span class="keyword">int</span> e2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbScanProc:CheckRunQualityRaw" href="src/EdbScanProc.h.html#Ov75wE">CheckRunQualityRaw</a>(<a href="./EdbID.html">EdbID</a> idss)</span><br />
+
+<div class="code"><code class="inlinecode">{}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbScanProc:TestAl" href="src/EdbScanProc.h.html#HafLhC">TestAl</a>(<span class="keyword">int</span> id1[4], <span class="keyword">int</span> id2[4])</span><br />
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:31 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

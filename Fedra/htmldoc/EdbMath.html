@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:27 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbMath</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbMath','','EdbMath.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbMath.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbMath.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbMath_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbMath:description">class description</a> 
+<a class="descrheadentry" href="#EdbMath:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbMath:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbMath:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbMath</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbMath:description"></a>class EdbMath</h1>
+<div class="classdescr">
+<pre>
+
+<a href="./EdbMath.html">EdbMath</a>
+
+collection of general-purpose mathematical algorithms
+
+
+</pre></div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbMath:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbMath:EdbMath">EdbMath</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbMath:EdbMath@1">EdbMath</a>(<span class="keyword">const</span> <a href="./EdbMath.html">EdbMath</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbMath:_EdbMath">~EdbMath</a>()</td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbMath:Angle3">Angle3</a>(<span class="keyword">float</span> tx1, <span class="keyword">float</span> ty1, <span class="keyword">float</span> tx2, <span class="keyword">float</span> ty2)</td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbMath:ArrStat">ArrStat</a>(<span class="keyword">int</span> n, <span class="keyword">float</span>* x, <span class="keyword">float</span>* par)</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbMath:Class">Class</a>()</td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbMath:DistancePointLine3">DistancePointLine3</a>(<span class="keyword">float</span>* Point, <span class="keyword">float</span>* LineStart, <span class="keyword">float</span>* LineEnd, <span class="keyword">bool</span> inside)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbMath:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbMath:LFIT3">LFIT3</a>(<span class="keyword">float</span>* X, <span class="keyword">float</span>* Y, <span class="keyword">float</span>* Z, <span class="keyword">float</span>* W, <span class="keyword">int</span> L, <span class="keyword">float</span>&amp; X0, <span class="keyword">float</span>&amp; Y0, <span class="keyword">float</span>&amp; Z0, <span class="keyword">float</span>&amp; TX, <span class="keyword">float</span>&amp; TY, <span class="keyword">float</span>&amp; EX, <span class="keyword">float</span>&amp; EY)</td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbMath:LFITW">LFITW</a>(<span class="keyword">float</span>* X, <span class="keyword">float</span>* Y, <span class="keyword">float</span>* W, <span class="keyword">int</span> L, <span class="keyword">int</span> KEY, <span class="keyword">float</span>&amp; A, <span class="keyword">float</span>&amp; B, <span class="keyword">float</span>&amp; E)</td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbMath:LineLineIntersect">LineLineIntersect</a>(<span class="keyword">float</span>* p1, <span class="keyword">float</span>* p2, <span class="keyword">float</span>* p3, <span class="keyword">float</span>* p4, <span class="keyword">float</span>* pa, <span class="keyword">float</span>* pb, <span class="keyword">double</span>&amp; mua, <span class="keyword">double</span>&amp; mub)</td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbMath:LinFitCOV">LinFitCOV</a>(<span class="keyword">int</span> n, <span class="keyword">float</span>* x, <span class="keyword">float</span>* y, <span class="keyword">double</span>* c, <span class="keyword">float</span>* p, <span class="keyword">float</span>* d, <span class="keyword">float</span>* chi2)</td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbMath:LinFitDiag">LinFitDiag</a>(<span class="keyword">int</span> n, <span class="keyword">float</span>* x, <span class="keyword">float</span>* y, <span class="keyword">float</span>* e, <span class="keyword">float</span>* p, <span class="keyword">float</span>** d, <span class="keyword">float</span>* chi2)</td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbMath:Magnitude3">Magnitude3</a>(<span class="keyword">float</span>* Point1, <span class="keyword">float</span>* Point2)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbMath.html">EdbMath</a>&amp;</td><td class="funcname"><a class="funcname" href="#EdbMath:operator_">operator=</a>(<span class="keyword">const</span> <a href="./EdbMath.html">EdbMath</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbMath:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbMath:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbMath:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbMath:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td>
+<center><big><b><tt><a name="EdbMath" href="./EdbMath.html">EdbMath</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbMath:ArrStat" href="src/EdbMath.cxx.html#MNKbr">ArrStat</a>(<span class="keyword">int</span> n, <span class="keyword">float</span>* x, <span class="keyword">float</span>* par)</span><br />
+<div class="funccomm"><pre> calculate array statistics:
+ output: par (mean, rms, xmin, xmax);
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbMath:Angle3" href="src/EdbMath.cxx.html#OPV..">Angle3</a>(<span class="keyword">float</span> tx1, <span class="keyword">float</span> ty1, <span class="keyword">float</span> tx2, <span class="keyword">float</span> ty2)</span><br />
+<div class="funccomm"><pre> calculate space angle between two vectors defined by the direction tangents
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbMath:Magnitude3" href="src/EdbMath.cxx.html#uaYNmD">Magnitude3</a>(<span class="keyword">float</span>* Point1, <span class="keyword">float</span>* Point2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbMath:DistancePointLine3" href="src/EdbMath.cxx.html#U3E55">DistancePointLine3</a>(<span class="keyword">float</span>* Point, <span class="keyword">float</span>* LineStart, <span class="keyword">float</span>* LineEnd, <span class="keyword">bool</span> inside)</span><br />
+<div class="funccomm"><pre> Disclamer: This is a modified code from site of Paul Bourke
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbMath:LineLineIntersect" href="src/EdbMath.cxx.html#IfaJaE">LineLineIntersect</a>(<span class="keyword">float</span>* p1, <span class="keyword">float</span>* p2, <span class="keyword">float</span>* p3, <span class="keyword">float</span>* p4, <span class="keyword">float</span>* pa, <span class="keyword">float</span>* pb, <span class="keyword">double</span>&amp; mua, <span class="keyword">double</span>&amp; mub)</span><br />
+<div class="funccomm"><pre> Disclamer: This is a modified code from site of Paul Bourke
+
+     Calculate the line segment PaPb that is the shortest route between
+     two lines P1P2 and P3P4. Calculate also the values of mua and mub where
+        Pa = P1 + mua (P2 - P1)
+        Pb = P3 + mub (P4 - P3)
+     Return FALSE if no solution exists (the lines are parallel)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbMath:LinFitDiag" href="src/EdbMath.cxx.html#LfpTn">LinFitDiag</a>(<span class="keyword">int</span> n, <span class="keyword">float</span>* x, <span class="keyword">float</span>* y, <span class="keyword">float</span>* e, <span class="keyword">float</span>* p, <span class="keyword">float</span>** d, <span class="keyword">float</span>* chi2)</span><br />
+<div class="funccomm"><pre> linear fit by YP:  y = p[0] + p[1]*x , d[2][2] is error matrix for p[2]
+ Input : n     - number of points
+         x,y,e - data arrays of the length n
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbMath:LinFitCOV" href="src/EdbMath.cxx.html#aUTvwB">LinFitCOV</a>(<span class="keyword">int</span> n, <span class="keyword">float</span>* x, <span class="keyword">float</span>* y, <span class="keyword">double</span>* c, <span class="keyword">float</span>* p, <span class="keyword">float</span>* d, <span class="keyword">float</span>* chi2)</span><br />
+<div class="funccomm"><pre> linear fit by YP with using full covariance matrix of measurements :
+                  y = p[0] + p[1]*x , d[2][2] is error matrix for p[2]
+ Input : n     - number of points
+         x,y - data arrays of the length n
+         c   - full covariance matrix c[n][n]
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbMath:LFITW" href="src/EdbMath.cxx.html#AFeNOE">LFITW</a>(<span class="keyword">float</span>* X, <span class="keyword">float</span>* Y, <span class="keyword">float</span>* W, <span class="keyword">int</span> L, <span class="keyword">int</span> KEY, <span class="keyword">float</span>&amp; A, <span class="keyword">float</span>&amp; B, <span class="keyword">float</span>&amp; E)</span><br />
+<div class="funccomm"><pre> E250:
+     TO PERFORM A WEIGHTED STRAIGHT LINE FIT
+
+     FOR FORMULAE USED SEE MENZEL, FORMULAS OF PHYSICS P.116
+
+     FIT IS OF Y=AX+B , WITH S**2 ESTIMATOR E. WEIGHTS ARE IN W.
+     IF KEY=0, POINTS WITH Y=0 ARE IGNORED
+     L IS NO. OF POINTS
+
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbMath:LFIT3" href="src/EdbMath.cxx.html#KMPxtD">LFIT3</a>(<span class="keyword">float</span>* X, <span class="keyword">float</span>* Y, <span class="keyword">float</span>* Z, <span class="keyword">float</span>* W, <span class="keyword">int</span> L, <span class="keyword">float</span>&amp; X0, <span class="keyword">float</span>&amp; Y0, <span class="keyword">float</span>&amp; Z0, <span class="keyword">float</span>&amp; TX, <span class="keyword">float</span>&amp; TY, <span class="keyword">float</span>&amp; EX, <span class="keyword">float</span>&amp; EY)</span><br />
+<div class="funccomm"><pre> Linar fit in 3-d case (microtrack-like)
+ Input: X,Y,Z - coords, W -weight - arrays of the lengh &gt;=L
+        Note that X,Y,Z modified by function
+ Output: X0,Y0,Z0 - center of gravity of segment
+         TX,TY : tangents in respect to Z axis
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbMath:EdbMath" href="src/EdbMath.h.html#J9uUjC">EdbMath</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">virtual</span> <a class="funcname" name="EdbMath:_EdbMath" href="src/EdbMath.h.html#MUSdGC">~EdbMath</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{}</code></div>
+<div style="clear:both;"></div>
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:27 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

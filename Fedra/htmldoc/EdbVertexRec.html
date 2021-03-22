@@ -1,0 +1,543 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:36 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbVertexRec</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbVertexRec','','EdbVertex.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbVertexRec.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbVertexRec.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbVertexRec_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbVertexRec:description">class description</a> 
+<a class="descrheadentry" href="#EdbVertexRec:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbVertexRec:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbVertexRec:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbVertexRec</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbVertexRec:description"></a>class EdbVertexRec: public <a href="./EdbVertexPar.html">EdbVertexPar</a></h1>
+<div class="classdescr">
+<pre>
+
+<a href="./EdbVertex.html">EdbVertex</a>
+
+<a href="./EdbVertexRec.html#EdbVertexRec:Class" title="TClass* EdbVertexRec::Class()">Class</a> for vertex reconstruction
+
+
+</pre></div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbVertexRec:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:EdbVertexRec">EdbVertexRec</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:EdbVertexRec@1">EdbVertexRec</a>(<a href="./EdbVertexPar.html">EdbVertexPar</a>&amp; vpar)</td></tr>
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbVertexRec:_EdbVertexRec">~EdbVertexRec</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:AcceptModifiedVTX">AcceptModifiedVTX</a>(<a href="./EdbVertex.html">EdbVertex</a>* <a href="./EdbVertexRec.html#EdbVertexRec:eVertex" title="EdbVertex* EdbVertexRec::eVertex">eVertex</a>, <a href="./EdbVertex.html">EdbVertex</a>* <a href="./EdbVertexRec.html#EdbVertexRec:eWorking" title="EdbVertex* EdbVertexRec::eWorking">eWorking</a>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:AcceptPolish">AcceptPolish</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:AddSegmentToVertex">AddSegmentToVertex</a>(<a href="./EdbSegP.html">EdbSegP</a>* s, <span class="keyword">float</span> ImpMax = 25., <span class="keyword">float</span> ProbMin = 0.01, <span class="keyword">float</span> Mom = 0.3)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbVTA.html">EdbVTA</a>*</td><td class="funcname"><a class="funcname" href="#EdbVertexRec:AddTrack">AddTrack</a>(<a href="./EdbVertex.html">EdbVertex</a>&amp; edbv, <a href="./EdbTrackP.html">EdbTrackP</a>* track, <span class="keyword">int</span> zpos)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="funcname"><a class="funcname" href="#EdbVertexRec:AddTrackToVertex">AddTrackToVertex</a>(<a href="./EdbVertex.html">EdbVertex</a>* <a href="./EdbVertexRec.html#EdbVertexRec:eVertex" title="EdbVertex* EdbVertexRec::eVertex">eVertex</a>, <a href="./EdbTrackP.html">EdbTrackP</a>* eTr, <span class="keyword">int</span> zpos)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:AddVertex">AddVertex</a>(<a href="./EdbVertex.html">EdbVertex</a>* vtx)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:AddVTA">AddVTA</a>(<a href="./EdbVTA.html">EdbVTA</a>* vta)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(TBrowser* b)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:CancelModifiedVTX">CancelModifiedVTX</a>(<a href="./EdbVertex.html">EdbVertex</a>* <a href="./EdbVertexRec.html#EdbVertexRec:eVertex" title="EdbVertex* EdbVertexRec::eVertex">eVertex</a>, <a href="./EdbVertex.html">EdbVertex</a>* <a href="./EdbVertexRec.html#EdbVertexRec:eWorking" title="EdbVertex* EdbVertexRec::eWorking">eWorking</a>)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:CheckDZ2">CheckDZ2</a>(<span class="keyword">float</span> z1, <span class="keyword">float</span> z2, <span class="keyword">int</span> zpos1, <span class="keyword">int</span> zpos2, <span class="keyword">float</span> z)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:CheckImpact">CheckImpact</a>(<a href="./EdbSegP.html">EdbSegP</a>* s1, <a href="./EdbSegP.html">EdbSegP</a>* s2, <span class="keyword">int</span> zpos1, <span class="keyword">int</span> zpos2, <span class="keyword">float</span>* pv)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:CheckImpactN">CheckImpactN</a>(<a href="./EdbSegP.html">EdbSegP</a>* s1, <a href="./EdbSegP.html">EdbSegP</a>* s2, <span class="keyword">float</span>* pv, <span class="keyword">bool</span>&amp; parallel, <span class="keyword">float</span> dzMax = 6000.)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:CheckTrack">CheckTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; track, <span class="keyword">int</span> zpos)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:CheckVTX">CheckVTX</a>()</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbVertexRec:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Clear"><span class="baseclass">TObject::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:Clone"><span class="baseclass">TObject::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Compare"><span class="baseclass">TObject::</span>Compare</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:CompatibleSegments">CompatibleSegments</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; spred, <a href="./EdbSegP.html">EdbSegP</a>&amp; stest, <span class="keyword">float</span> impact, <span class="keyword">float</span> dthetaMax, <span class="keyword">float</span> dxy, <span class="keyword">float</span> zminT, <span class="keyword">float</span> zmaxT, <span class="keyword">float</span> zminV, <span class="keyword">float</span> zmaxV)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Copy"><span class="baseclass">TObject::</span>Copy</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp; object) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:EstimateVertexFlag">EstimateVertexFlag</a>(<span class="keyword">int</span> zpos1, <span class="keyword">int</span> zpos2)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:EstimateVertexPosition">EstimateVertexPosition</a>(<a href="./EdbVertex.html">EdbVertex</a>&amp; v)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:EstimateVertexQuality">EstimateVertexQuality</a>(<a href="./EdbVertex.html">EdbVertex</a>&amp; v)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(TMethod* method, TObjArray* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:FillTracksStartEnd">FillTracksStartEnd</a>(<a href="./TIndexCell.html">TIndexCell</a>&amp; starts, <a href="./TIndexCell.html">TIndexCell</a>&amp; ends)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:FindSimilarSegments">FindSimilarSegments</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; spred, TObjArray&amp; found, <a href="./EdbPattern.html">EdbPattern</a>&amp; pat, <span class="keyword">float</span> impact, <span class="keyword">float</span> dthetaMax, <span class="keyword">float</span> dxy, <span class="keyword">float</span> zminT, <span class="keyword">float</span> zmaxT, <span class="keyword">float</span> zminV, <span class="keyword">float</span> zmaxV)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:FindSimilarTracks">FindSimilarTracks</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; t, TObjArray&amp; found, <span class="keyword">int</span> nsegmin = 2, <span class="keyword">float</span> dMax = 100., <span class="keyword">float</span> dTheta = 0.01, <span class="keyword">float</span> dZmax = 50000.)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:FindSimilarTracksE">FindSimilarTracksE</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; spred, TObjArray&amp; found, <span class="keyword">bool</span> startend, <span class="keyword">float</span> impact, <span class="keyword">float</span> dthetaMax, <span class="keyword">float</span> dxy, <span class="keyword">float</span> zminT, <span class="keyword">float</span> zmaxT, <span class="keyword">float</span> zminV, <span class="keyword">float</span> zmaxV)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:FindVertex">FindVertex</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbTrackP.html">EdbTrackP</a>*</td><td class="funcname"><a class="funcname" href="#EdbVertexRec:GetEdbTrack">GetEdbTrack</a>(<span class="keyword">const</span> <span class="keyword">int</span> index)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetName"><span class="baseclass">TObject::</span>GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetTitle"><span class="baseclass">TObject::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="funcname"><a class="funcname" href="#EdbVertexRec:GetVertex">GetVertex</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a>&amp; i)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(TTimer* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Hash"><span class="baseclass">TObject::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> TClass* cl) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbVertexRec:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:IsInsideLimits">IsInsideLimits</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsSortable"><span class="baseclass">TObject::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:LinkedVertexes">LinkedVertexes</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:LoopVertex">LoopVertex</a>(<a href="./TIndexCell.html">TIndexCell</a>&amp; list1, <a href="./TIndexCell.html">TIndexCell</a>&amp; list2, <span class="keyword">int</span> zpos1, <span class="keyword">int</span> zpos2)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ls"><span class="baseclass">TObject::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="funcname"><a class="funcname" href="#EdbVertexRec:Make1Vertex">Make1Vertex</a>(TObjArray&amp; tracks, <span class="keyword">float</span> zexpected)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:MakeV">MakeV</a>(<a href="./EdbVertex.html">EdbVertex</a>&amp; edbv, <span class="keyword">bool</span> isRefit = <span class="keyword">false</span>)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:MoveTrackToOtherVertex">MoveTrackToOtherVertex</a>(<a href="./EdbVertex.html">EdbVertex</a>* v2, <span class="keyword">int</span> it2max, <a href="./EdbVertex.html">EdbVertex</a>* v1, <span class="keyword">int</span> seltype, <a href="./EdbVertex.html">EdbVertex</a>** v2n, <a href="./EdbVertex.html">EdbVertex</a>** v1n)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:Nvtx">Nvtx</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbVertexPar.html">EdbVertexPar</a>&amp;</td><td class="funcname"><a class="funcname" href="./EdbVertexPar.html#EdbVertexPar:operator_"><span class="baseclass">EdbVertexPar::</span>operator=</a>(<span class="keyword">const</span> <a href="./EdbVertexPar.html">EdbVertexPar</a>&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Print"><span class="baseclass">TObject::</span>Print</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="funcname"><a class="funcname" href="#EdbVertexRec:ProbVertex2">ProbVertex2</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* tr1, <a href="./EdbTrackP.html">EdbTrackP</a>* tr2, <span class="keyword">int</span> zpos1, <span class="keyword">int</span> zpos2)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:ProbVertexN">ProbVertexN</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:ProbVertexN_old">ProbVertexN_old</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:ProbVertexNpos">ProbVertexNpos</a>(<span class="keyword">int</span> zpos)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:RefitAll">RefitAll</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:RejectPolish">RejectPolish</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="funcname"><a class="funcname" href="#EdbVertexRec:RemoveTrackFromVertex">RemoveTrackFromVertex</a>(<a href="./EdbVertex.html">EdbVertex</a>* <a href="./EdbVertexRec.html#EdbVertexRec:eVertex" title="EdbVertex* EdbVertexRec::eVertex">eVertex</a>, <span class="keyword">int</span> itr)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="funcname"><a class="funcname" href="#EdbVertexRec:RemoveVTAFromVertex">RemoveVTAFromVertex</a>(<a href="./EdbVertex.html">EdbVertex</a>&amp; vtx, <a href="./EdbVTA.html">EdbVTA</a>&amp; vta)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:Reset">Reset</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:SegmentNeighbor">SegmentNeighbor</a>(<a href="./EdbSegP.html">EdbSegP</a>* s, <span class="keyword">float</span> RadMax = 1000., <span class="keyword">int</span> Dpat = 1, <span class="keyword">float</span> ImpMax = 1000000., <span class="keyword">float</span> SegWmin = 9, TObjArray* aseg = 0, TObjArray* atr = 0, TObjArray* arv = 0)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:SelSegNeighbor">SelSegNeighbor</a>(<a href="./EdbSegP.html">EdbSegP</a>* s, <span class="keyword">int</span> seltype, <span class="keyword">float</span> RadMax, <span class="keyword">int</span> Dpat, TObjArray* ao)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:SelVertNeighbor">SelVertNeighbor</a>(<a href="./EdbVertex.html">EdbVertex</a>* v, <span class="keyword">int</span> seltype, <span class="keyword">float</span> RadMax, <span class="keyword">int</span> Dpat, TObjArray* ao)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:Set0">Set0</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:SetPVRec">SetPVRec</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* pvr)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:StatVertexN">StatVertexN</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="funcname"><a class="funcname" href="#EdbVertexRec:StripBadTracks">StripBadTracks</a>(<a href="./EdbVertex.html">EdbVertex</a>&amp; v, <span class="keyword">float</span> impMax, <span class="keyword">int</span> ntrMin)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:Tdistance">Tdistance</a>(<span class="keyword">const</span> VERTEX::Track&amp; t1, <span class="keyword">const</span> VERTEX::Track&amp; t2)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:Tdistance@1">Tdistance</a>(<span class="keyword">const</span> <a href="./EdbSegP.html">EdbSegP</a>&amp; s1, <span class="keyword">const</span> <a href="./EdbSegP.html">EdbSegP</a>&amp; s2)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:TdistanceChi2">TdistanceChi2</a>(<span class="keyword">const</span> <a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr1, <span class="keyword">const</span> <a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr2)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:TdistanceChi2@1">TdistanceChi2</a>(<span class="keyword">const</span> <a href="./EdbSegP.html">EdbSegP</a>&amp; s1, <span class="keyword">const</span> <a href="./EdbSegP.html">EdbSegP</a>&amp; s2, <span class="keyword">float</span> m)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="funcname"><a class="funcname" href="#EdbVertexRec:TestVTAGroup">TestVTAGroup</a>(TObjArray&amp; arrvta)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:VertexNeighbor">VertexNeighbor</a>(<span class="keyword">float</span> RadMax = 1000., <span class="keyword">int</span> Dpat = 1, <span class="keyword">float</span> ImpMax = 1000000.)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:VertexNeighbor@1">VertexNeighbor</a>(<a href="./EdbVertex.html">EdbVertex</a>* v, <span class="keyword">float</span> RadMax = 1000., <span class="keyword">int</span> Dpat = 1, <span class="keyword">float</span> ImpMax = 1000000.)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:VertexPolish">VertexPolish</a>(<a href="./EdbVertex.html">EdbVertex</a>* v, <span class="keyword">int</span> refill = 0, <span class="keyword">float</span> RadMax = 1000., <span class="keyword">int</span> Dpat = 2, <span class="keyword">float</span> ImpMax = 25., <span class="keyword">float</span> ProbMin = 0.01, <span class="keyword">float</span> Mom = 0.3)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbVertexRec:VertexTuning">VertexTuning</a>(<span class="keyword">int</span> seltype = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">const</span> TVector3*</td><td class="funcname"><a class="funcname" href="#EdbVertexRec:Vmax">Vmax</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">const</span> TVector3*</td><td class="funcname"><a class="funcname" href="#EdbVertexRec:Vmin">Vmin</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, va_list va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbVertexRec:Data_Members"></a>Data Members</h2>
+<div class="access" id="enumpubl"><b>public:</b>
+<table class="data" id="tabenumpubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span>EStatusBits { </td><td class="dataname"><a href="#TObject:kCanDelete">kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kMustCleanup">kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kObjInCanvas">kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kIsReferenced">kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kHasUUID">kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kCannotPick">kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNoContextMenu">kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kInvalidObject">kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span><i>[unnamed]</i> { </td><td class="dataname"><a href="#TObject:kIsOnHeap">kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNotDeleted">kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kZombie">kZombie</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kBitMask">kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kSingleKey">kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kOverwrite">kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kWriteDelete">kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbVertexPar.html#EdbVertexPar:eAbin"><span class="baseclass">EdbVertexPar::</span>eAbin</a></td><td class="datadesc">safety margin for angular aperture of vertex products</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbVertexPar.html#EdbVertexPar:eDZmax"><span class="baseclass">EdbVertexPar::</span>eDZmax</a></td><td class="datadesc">maximum z-gap in the track-vertex group</td></tr>
+<tr class="data"><td class="datatype">TObjArray*</td><td class="dataname"><a name="EdbVertexRec:eEdbTracks"></a>eEdbTracks</td><td></td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbVertexPar.html#EdbVertexPar:eImpMax"><span class="baseclass">EdbVertexPar::</span>eImpMax</a></td><td class="datadesc">maximal acceptable impact parameter (preliminary check)</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbVertexPar.html#EdbVertexPar:eImpMaxV"><span class="baseclass">EdbVertexPar::</span>eImpMaxV</a></td><td class="datadesc">if the impact is &lt;= eImpMaxV the 2-vertex is accepted disregard to it's probability</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="dataname"><a name="EdbVertexRec:ePVR"></a>ePVR</td><td class="datadesc">patterns volume (optional)</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbVertexPar.html#EdbVertexPar:eProbMin"><span class="baseclass">EdbVertexPar::</span>eProbMin</a></td><td class="datadesc">minimum acceptable probability for chi2-distance between tracks</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a href="./EdbVertexPar.html#EdbVertexPar:eQualityMode"><span class="baseclass">EdbVertexPar::</span>eQualityMode</a></td><td class="datadesc">vertex quality estimation method (0:=Prob/(sigVX^2+sigVY^2); 1:= inverse average track-vertex distance)</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="dataname"><a href="./EdbVertexPar.html#EdbVertexPar:eUseKalman"><span class="baseclass">EdbVertexPar::</span>eUseKalman</a></td><td class="datadesc">use or not Kalman for the vertex fit. Default is true</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="dataname"><a href="./EdbVertexPar.html#EdbVertexPar:eUseLimits"><span class="baseclass">EdbVertexPar::</span>eUseLimits</a></td><td class="datadesc">if true - look for the vertex only inside limits defined by eVmin:eVmax, default is false</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="dataname"><a href="./EdbVertexPar.html#EdbVertexPar:eUseMom"><span class="baseclass">EdbVertexPar::</span>eUseMom</a></td><td class="datadesc">use or not track momentum for vertex calculations</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="dataname"><a href="./EdbVertexPar.html#EdbVertexPar:eUseSegPar"><span class="baseclass">EdbVertexPar::</span>eUseSegPar</a></td><td class="datadesc">use only the nearest measured segments for vertex fit (as Neuchatel)</td></tr>
+<tr class="data"><td class="datatype">TList</td><td class="dataname"><a name="EdbVertexRec:eVTA"></a>eVTA</td><td class="datadesc">vertex-track associations</td></tr>
+<tr class="data"><td class="datatype">TObjArray*</td><td class="dataname"><a name="EdbVertexRec:eVTX"></a>eVTX</td><td class="datadesc">array of vertex</td></tr>
+<tr class="datainh"><td class="datatype">TVector3</td><td class="dataname"><a href="./EdbVertexPar.html#EdbVertexPar:eVmax"><span class="baseclass">EdbVertexPar::</span>eVmax</a></td><td class="datadesc">limits for the vertex search</td></tr>
+<tr class="datainh"><td class="datatype">TVector3</td><td class="dataname"><a href="./EdbVertexPar.html#EdbVertexPar:eVmin"><span class="baseclass">EdbVertexPar::</span>eVmin</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbVertexPar.html#EdbVertexPar:eZbin"><span class="baseclass">EdbVertexPar::</span>eZbin</a></td><td class="datadesc">z- granularity (default is 100 microns)</td></tr>
+
+</table></div>
+<div class="access" id="datapriv"><b>private:</b>
+<table class="data" id="tabdatapriv" cellspacing="0">
+<tr class="data"><td class="datatype"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="dataname"><a name="EdbVertexRec:eVertex"></a>eVertex</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="dataname"><a name="EdbVertexRec:eWorking"></a>eWorking</td><td></td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbVertexRec:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td><table><tr>
+<td bgcolor="#f7f7f7" align="right">
+<table><tr><td><table><tr>
+<td bgcolor="#efefef" align="right">
+<tt>TObject</tt></td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><tt><a name="EdbVertexPar" href="./EdbVertexPar.html">EdbVertexPar</a></tt></center>
+</td>
+</tr></table>
+</td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><big><b><tt><a name="EdbVertexRec" href="./EdbVertexRec.html">EdbVertexRec</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td>&larr;</td><td><table><tr>
+<td bgcolor="#f7f7f7"><table><tr><td>
+<center><tt><a name="EdbEDAVertexTab" href="./EdbEDAVertexTab.html">EdbEDAVertexTab</a></tt></center></td>
+<td></td>
+</tr></table></td>
+</tr></table></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbVertexRec:Set0" href="src/EdbVertexRec.cxx.html#gcqN0B">Set0</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbVertexRec:_EdbVertexRec" href="src/EdbVertexRec.cxx.html#uNhtV">~EdbVertexRec</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbVertexRec:Reset" href="src/EdbVertexRec.cxx.html#LrD6FE">Reset</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="EdbVertexRec:EstimateVertexQuality" href="src/EdbVertexRec.cxx.html#jAnqlC">EstimateVertexQuality</a>(<a href="./EdbVertex.html">EdbVertex</a>&amp; v)</span><br />
+<div class="funccomm"><pre> TODO! razobratsia s etimi qualitiami!!
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="EdbVertexRec:EstimateVertexPosition" href="src/EdbVertexRec.cxx.html#GEALqE">EstimateVertexPosition</a>(<a href="./EdbVertex.html">EdbVertex</a>&amp; v)</span><br />
+<div class="funccomm"><pre> make approximate (without matrix) estimation of the vertex and set the reference point of
+ the vertex XYZ in the estimated position
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbVertexRec:MakeV" href="src/EdbVertexRec.cxx.html#fvd9fE">MakeV</a>(<a href="./EdbVertex.html">EdbVertex</a>&amp; edbv, <span class="keyword">bool</span> isRefit = <span class="keyword">false</span>)</span><br />
+<div class="funccomm"><pre> create new VtVertex and add tracks to this one
+ if isRefit - use input vertex position to improve the fit (default is <a href="./ListOfTypes.html#bool">false</a>)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbVertex.html">EdbVertex</a> * <a class="funcname" name="EdbVertexRec:StripBadTracks" href="src/EdbVertexRec.cxx.html#y4qcxD">StripBadTracks</a>(<a href="./EdbVertex.html">EdbVertex</a>&amp; v, <span class="keyword">float</span> impMax, <span class="keyword">int</span> ntrMin)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbVertex.html">EdbVertex</a> * <a class="funcname" name="EdbVertexRec:Make1Vertex" href="src/EdbVertexRec.cxx.html#WVc3SD">Make1Vertex</a>(TObjArray&amp; tracks, <span class="keyword">float</span> zexpected)</span><br />
+<div class="funccomm"><pre> make a single vertex using tracks array
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbVTA.html">EdbVTA</a> * <a class="funcname" name="EdbVertexRec:AddTrack" href="src/EdbVertexRec.cxx.html#MotEpE">AddTrack</a>(<a href="./EdbVertex.html">EdbVertex</a>&amp; edbv, <a href="./EdbTrackP.html">EdbTrackP</a>* track, <span class="keyword">int</span> zpos)</span><br />
+<div class="funccomm"><pre> add track to already existing vertex if prob &gt; eProbMin
+ if vertex do not exist yet - calculate medium x,y,z
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbVertexRec:FindSimilarTracks" href="src/EdbVertexRec.cxx.html#cOmm_">FindSimilarTracks</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; t, TObjArray&amp; found, <span class="keyword">int</span> nsegmin = 2, <span class="keyword">float</span> dMax = 100., <span class="keyword">float</span> dTheta = 0.01, <span class="keyword">float</span> dZmax = 50000.)</span><br />
+<div class="funccomm"><pre> find all tracks close to the <span class="string">"track"</span> and return them in <span class="string">"found"</span>
+ nsegmin - min number of segments for the interesting tracks
+ gMax    - max 3-d distance between track lines
+ dTheta  - max spatial angle between track lines
+ dZmax   - max distance in z between track lines
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbVertexRec:CompatibleSegments" href="src/EdbVertexRec.cxx.html#v3ocYD">CompatibleSegments</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; spred, <a href="./EdbSegP.html">EdbSegP</a>&amp; stest, <span class="keyword">float</span> impact, <span class="keyword">float</span> dthetaMax, <span class="keyword">float</span> dxy, <span class="keyword">float</span> zminT, <span class="keyword">float</span> zmaxT, <span class="keyword">float</span> zminV, <span class="keyword">float</span> zmaxV)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbVertexRec:FindSimilarSegments" href="src/EdbVertexRec.cxx.html#ZZGUpB">FindSimilarSegments</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; spred, TObjArray&amp; found, <a href="./EdbPattern.html">EdbPattern</a>&amp; pat, <span class="keyword">float</span> impact, <span class="keyword">float</span> dthetaMax, <span class="keyword">float</span> dxy, <span class="keyword">float</span> zminT, <span class="keyword">float</span> zmaxT, <span class="keyword">float</span> zminV, <span class="keyword">float</span> zmaxV)</span><br />
+<div class="funccomm"><pre> Find all segments from path compatible with the pred segment and add them to found array
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbVertexRec:FindSimilarTracksE" href="src/EdbVertexRec.cxx.html#QbKtEE">FindSimilarTracksE</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; spred, TObjArray&amp; found, <span class="keyword">bool</span> startend, <span class="keyword">float</span> impact, <span class="keyword">float</span> dthetaMax, <span class="keyword">float</span> dxy, <span class="keyword">float</span> zminT, <span class="keyword">float</span> zmaxT, <span class="keyword">float</span> zminV, <span class="keyword">float</span> zmaxV)</span><br />
+<div class="funccomm"><pre> Find all tracks with the requested extremity close to the pred segment and add them to found array
+
+   startend     - selecting tracks extremity to be used: 0-tracks starts (zmin)  1-tracks ends (zmax)
+   impact       - max 3D distance between segment lines
+   dthetaMax    - max spatial angle between track lines
+   dxy          - preliminary distance cut between segments
+   zminT,zmaxT  - limits in Z for the tracks extremity
+   zminV,zmaxV  - limits in Z for the estimated vertex position
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbVertexRec:FindVertex" href="src/EdbVertexRec.cxx.html#dDFfrE">FindVertex</a>()</span><br />
+<div class="funccomm"><pre> Note: in this function is assumed that all tracks selections are already done
+ ProbMin - minimal probability for chi2-distance between tracks
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbVertexRec:FillTracksStartEnd" href="src/EdbVertexRec.cxx.html#yrEowB">FillTracksStartEnd</a>(<a href="./TIndexCell.html">TIndexCell</a>&amp; starts, <a href="./TIndexCell.html">TIndexCell</a>&amp; ends)</span><br />
+<div class="funccomm"><pre> fill tracks starts and ends lookup tables <span class="string">"z:entry"</span>
+ inside sorted tracks: starts - minimal Z; ends - maximal Z
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbVertexRec:LoopVertex" href="src/EdbVertexRec.cxx.html#H7.1YC">LoopVertex</a>(<a href="./TIndexCell.html">TIndexCell</a>&amp; list1, <a href="./TIndexCell.html">TIndexCell</a>&amp; list2, <span class="keyword">int</span> zpos1, <span class="keyword">int</span> zpos2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbVertexRec:CheckImpact" href="src/EdbVertexRec.cxx.html#Lc1bJD">CheckImpact</a>(<a href="./EdbSegP.html">EdbSegP</a>* s1, <a href="./EdbSegP.html">EdbSegP</a>* s2, <span class="keyword">int</span> zpos1, <span class="keyword">int</span> zpos2, <span class="keyword">float</span>* pv)</span><br />
+<div class="funccomm"><pre> Return: the distance between 2 lines defined by s1 and s2
+ Input: s1,s2,zpos1,zpos2, where
+        zpos1, zpos2: 0 - end   of the track (to be propagated forward in z)
+        zpos1, zpos2: 1 - start of the track (to be propagated backward in z)
+ Output: pv - <span class="string">"vertex position"</span> - the nearest point to the both lines
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbVertexRec:CheckImpactN" href="src/EdbVertexRec.cxx.html#yhCe2">CheckImpactN</a>(<a href="./EdbSegP.html">EdbSegP</a>* s1, <a href="./EdbSegP.html">EdbSegP</a>* s2, <span class="keyword">float</span>* pv, <span class="keyword">bool</span>&amp; parallel, <span class="keyword">float</span> dzMax = 6000.)</span><br />
+<div class="funccomm"><pre> Return: the distance between 2 lines defined by s1 and s2
+ Output: pv - <span class="string">"vertex position"</span> - the nearest point to the both lines
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbVertex.html">EdbVertex</a> * <a class="funcname" name="EdbVertexRec:ProbVertex2" href="src/EdbVertexRec.cxx.html#xTGqjC">ProbVertex2</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* tr1, <a href="./EdbTrackP.html">EdbTrackP</a>* tr2, <span class="keyword">int</span> zpos1, <span class="keyword">int</span> zpos2)</span><br />
+<div class="funccomm"><pre> Check if 2 tracks can form the vertex. If yes - return the pointer to the new <a href="./EdbVertex.html">EdbVertex</a> object
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbVertexRec:EstimateVertexFlag" href="src/EdbVertexRec.cxx.html#OSpWyD">EstimateVertexFlag</a>(<span class="keyword">int</span> zpos1, <span class="keyword">int</span> zpos2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="EdbVertexRec:IsInsideLimits" href="src/EdbVertexRec.cxx.html#i0JfcB">IsInsideLimits</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</span><br />
+<div class="funccomm"><pre> return 1 if the segment position (x,y,z) is inside the limits defined by eVmin,eVmax
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="EdbVertexRec:CheckDZ2" href="src/EdbVertexRec.cxx.html#Zr8h1D">CheckDZ2</a>(<span class="keyword">float</span> z1, <span class="keyword">float</span> z2, <span class="keyword">int</span> zpos1, <span class="keyword">int</span> zpos2, <span class="keyword">float</span> z)</span><br />
+<div class="funccomm"><pre> return 1 if the vertex position (z) is in agreement with limits defined by  eZbin and eDZmax
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbVertexRec:ProbVertexN" href="src/EdbVertexRec.cxx.html#G32FrE">ProbVertexN</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbVertexRec:ProbVertexNpos" href="src/EdbVertexRec.cxx.html#ITf78B">ProbVertexNpos</a>(<span class="keyword">int</span> zpos)</span><br />
+<div class="funccomm"><pre> cycle by all vertices, check if it is possible to join some of them by common track, do it
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbVertexRec:CheckVTX" href="src/EdbVertexRec.cxx.html#vZwFJ">CheckVTX</a>()</span><br />
+<div class="funccomm"><pre> rank the vertices and reassign tracks according to the major vertex weight
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbVertex.html">EdbVertex</a> * <a class="funcname" name="EdbVertexRec:TestVTAGroup" href="src/EdbVertexRec.cxx.html#aKgoEB">TestVTAGroup</a>(TObjArray&amp; arrvta)</span><br />
+<div class="funccomm"><pre> Try to create  N-prong vertex from vta's group
+ Input: array of preselected vta's
+ return the new vertex if successful
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbVertexRec:ProbVertexN_old" href="src/EdbVertexRec.cxx.html#SqC1YE">ProbVertexN_old</a>()</span><br />
+<div class="funccomm"><pre> deprecated function (VT: 7/05/2008. Keeped for back-compatibility tests.
+ After the complete testing of the new <a href="./EdbVertexRec.html#EdbVertexRec:ProbVertexN" title="Int_t EdbVertexRec::ProbVertexN()">ProbVertexN</a> this function can be removed
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbVertexRec:StatVertexN" href="src/EdbVertexRec.cxx.html#K7JYvB">StatVertexN</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbVertexRec:LinkedVertexes" href="src/EdbVertexRec.cxx.html#Iq29QE">LinkedVertexes</a>()</span><br />
+<div class="funccomm"><pre> calculate the number of linked vertices (with Nv()&gt;0) and set flag+3 for them
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbVertexRec:SelVertNeighbor" href="src/EdbVertexRec.cxx.html#sNjMNC">SelVertNeighbor</a>(<a href="./EdbVertex.html">EdbVertex</a>* v, <span class="keyword">int</span> seltype, <span class="keyword">float</span> RadMax, <span class="keyword">int</span> Dpat, TObjArray* ao)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbVertexRec:SelSegNeighbor" href="src/EdbVertexRec.cxx.html#IvlwGE">SelSegNeighbor</a>(<a href="./EdbSegP.html">EdbSegP</a>* s, <span class="keyword">int</span> seltype, <span class="keyword">float</span> RadMax, <span class="keyword">int</span> Dpat, TObjArray* ao)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbVertexRec:AddSegmentToVertex" href="src/EdbVertexRec.cxx.html#wyevZE">AddSegmentToVertex</a>(<a href="./EdbSegP.html">EdbSegP</a>* s, <span class="keyword">float</span> ImpMax = 25., <span class="keyword">float</span> ProbMin = 0.01, <span class="keyword">float</span> Mom = 0.3)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbVertexRec:VertexPolish" href="src/EdbVertexRec.cxx.html#jWc2VC">VertexPolish</a>(<a href="./EdbVertex.html">EdbVertex</a>* v, <span class="keyword">int</span> refill = 0, <span class="keyword">float</span> RadMax = 1000., <span class="keyword">int</span> Dpat = 2, <span class="keyword">float</span> ImpMax = 25., <span class="keyword">float</span> ProbMin = 0.01, <span class="keyword">float</span> Mom = 0.3)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbVertexRec:AcceptPolish" href="src/EdbVertexRec.cxx.html#STaQqC">AcceptPolish</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbVertexRec:RejectPolish" href="src/EdbVertexRec.cxx.html#K9gzvC">RejectPolish</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbVertexRec:VertexTuning" href="src/EdbVertexRec.cxx.html#g1lSJB">VertexTuning</a>(<span class="keyword">int</span> seltype = 0)</span><br />
+<div class="funccomm"><pre>if(!<a href="./EdbVertexRec.html#EdbVertexRec:ePVR" title="EdbPVRec* EdbVertexRec::ePVR">ePVR</a>) <a href="./EdbVertexRec.html#EdbVertexRec:ePVR" title="EdbPVRec* EdbVertexRec::ePVR">ePVR</a> = ((<a href="./EdbPVRec.html">EdbPVRec</a> *)(gROOT-&gt;GetListOfSpecials()-&gt;<a href="./#TObject:FindObject" title="TObject* TObject::FindObject(const char* name) or overloads">FindObject</a>(<span class="string">"EdbPVRec"</span>)));
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbVertexRec:MoveTrackToOtherVertex" href="src/EdbVertexRec.cxx.html#JxcwaB">MoveTrackToOtherVertex</a>(<a href="./EdbVertex.html">EdbVertex</a>* v2, <span class="keyword">int</span> it2max, <a href="./EdbVertex.html">EdbVertex</a>* v1, <span class="keyword">int</span> seltype, <a href="./EdbVertex.html">EdbVertex</a>** v2n, <a href="./EdbVertex.html">EdbVertex</a>** v1n)</span><br />
+<div class="funccomm"><pre>    printf(<span class="string">"Rearrange vertexies %d and %d\n"</span>,v1-&gt;ID(),v2-&gt;ID());
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbVertexRec:RefitAll" href="src/EdbVertexRec.cxx.html#mktLD">RefitAll</a>()</span><br />
+<div class="funccomm"><pre> use already found vertex position to improve the fit
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbVertex.html">EdbVertex</a> * <a class="funcname" name="EdbVertexRec:AddTrackToVertex" href="src/EdbVertexRec.cxx.html#o2JizD">AddTrackToVertex</a>(<a href="./EdbVertex.html">EdbVertex</a>* <a href="./EdbVertexRec.html#EdbVertexRec:eVertex" title="EdbVertex* EdbVertexRec::eVertex">eVertex</a>, <a href="./EdbTrackP.html">EdbTrackP</a>* eTr, <span class="keyword">int</span> zpos)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbVertex.html">EdbVertex</a> * <a class="funcname" name="EdbVertexRec:RemoveVTAFromVertex" href="src/EdbVertexRec.cxx.html#LMeJW">RemoveVTAFromVertex</a>(<a href="./EdbVertex.html">EdbVertex</a>&amp; vtx, <a href="./EdbVTA.html">EdbVTA</a>&amp; vta)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbVertex.html">EdbVertex</a> * <a class="funcname" name="EdbVertexRec:RemoveTrackFromVertex" href="src/EdbVertexRec.cxx.html#zPCWUB">RemoveTrackFromVertex</a>(<a href="./EdbVertex.html">EdbVertex</a>* <a href="./EdbVertexRec.html#EdbVertexRec:eVertex" title="EdbVertex* EdbVertexRec::eVertex">eVertex</a>, <span class="keyword">int</span> itr)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbVertexRec:AcceptModifiedVTX" href="src/EdbVertexRec.cxx.html#Ku21xB">AcceptModifiedVTX</a>(<a href="./EdbVertex.html">EdbVertex</a>* <a href="./EdbVertexRec.html#EdbVertexRec:eVertex" title="EdbVertex* EdbVertexRec::eVertex">eVertex</a>, <a href="./EdbVertex.html">EdbVertex</a>* <a href="./EdbVertexRec.html#EdbVertexRec:eWorking" title="EdbVertex* EdbVertexRec::eWorking">eWorking</a>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbVertexRec:CancelModifiedVTX" href="src/EdbVertexRec.cxx.html#Lr75k">CancelModifiedVTX</a>(<a href="./EdbVertex.html">EdbVertex</a>* <a href="./EdbVertexRec.html#EdbVertexRec:eVertex" title="EdbVertex* EdbVertexRec::eVertex">eVertex</a>, <a href="./EdbVertex.html">EdbVertex</a>* <a href="./EdbVertexRec.html#EdbVertexRec:eWorking" title="EdbVertex* EdbVertexRec::eWorking">eWorking</a>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbVertexRec:VertexNeighbor" href="src/EdbVertexRec.cxx.html#Od6HZE">VertexNeighbor</a>(<span class="keyword">float</span> RadMax = 1000., <span class="keyword">int</span> Dpat = 1, <span class="keyword">float</span> ImpMax = 1000000.)</span><br />
+<div class="funccomm"><pre>if(!<a href="./EdbVertexRec.html#EdbVertexRec:ePVR" title="EdbPVRec* EdbVertexRec::ePVR">ePVR</a>) <a href="./EdbVertexRec.html#EdbVertexRec:ePVR" title="EdbPVRec* EdbVertexRec::ePVR">ePVR</a> = ((<a href="./EdbPVRec.html">EdbPVRec</a> *)(gROOT-&gt;GetListOfSpecials()-&gt;<a href="./#TObject:FindObject" title="TObject* TObject::FindObject(const char* name) or overloads">FindObject</a>(<span class="string">"EdbPVRec"</span>)));
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbVertexRec:VertexNeighbor@1" href="src/EdbVertexRec.cxx.html#mBQa2">VertexNeighbor</a>(<a href="./EdbVertex.html">EdbVertex</a>* v, <span class="keyword">float</span> RadMax = 1000., <span class="keyword">int</span> Dpat = 1, <span class="keyword">float</span> ImpMax = 1000000.)</span><br />
+<div class="funccomm"><pre>if(!<a href="./EdbVertexRec.html#EdbVertexRec:ePVR" title="EdbPVRec* EdbVertexRec::ePVR">ePVR</a>) <a href="./EdbVertexRec.html#EdbVertexRec:ePVR" title="EdbPVRec* EdbVertexRec::ePVR">ePVR</a> = ((<a href="./EdbPVRec.html">EdbPVRec</a> *)(gROOT-&gt;GetListOfSpecials()-&gt;<a href="./#TObject:FindObject" title="TObject* TObject::FindObject(const char* name) or overloads">FindObject</a>(<span class="string">"EdbPVRec"</span>)));
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbVertexRec:SegmentNeighbor" href="src/EdbVertexRec.cxx.html#MzhSYE">SegmentNeighbor</a>(<a href="./EdbSegP.html">EdbSegP</a>* s, <span class="keyword">float</span> RadMax = 1000., <span class="keyword">int</span> Dpat = 1, <span class="keyword">float</span> ImpMax = 1000000., <span class="keyword">float</span> SegWmin = 9, TObjArray* aseg = 0, TObjArray* atr = 0, TObjArray* arv = 0)</span><br />
+<div class="funccomm"><pre>if(!<a href="./EdbVertexRec.html#EdbVertexRec:ePVR" title="EdbPVRec* EdbVertexRec::ePVR">ePVR</a>) <a href="./EdbVertexRec.html#EdbVertexRec:ePVR" title="EdbPVRec* EdbVertexRec::ePVR">ePVR</a> = ((<a href="./EdbPVRec.html">EdbPVRec</a> *)(gROOT-&gt;GetListOfSpecials()-&gt;<a href="./#TObject:FindObject" title="TObject* TObject::FindObject(const char* name) or overloads">FindObject</a>(<span class="string">"EdbPVRec"</span>)));
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbVertexRec:Tdistance" href="src/EdbVertexRec.cxx.html#IEPVd">Tdistance</a>(<span class="keyword">const</span> Track&amp; t1, <span class="keyword">const</span> Track&amp; t2)</span><br />
+<div class="funccomm"><pre>
+ geometrical distance between 2 track lines in the space XYZ
+
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbVertexRec:Tdistance@1" href="src/EdbVertexRec.cxx.html#y9NCYB">Tdistance</a>(<span class="keyword">const</span> <a href="./EdbSegP.html">EdbSegP</a>&amp; s1, <span class="keyword">const</span> <a href="./EdbSegP.html">EdbSegP</a>&amp; s2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbVertexRec:TdistanceChi2" href="src/EdbVertexRec.cxx.html#p79m.C">TdistanceChi2</a>(<span class="keyword">const</span> <a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr1, <span class="keyword">const</span> <a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbVertexRec:TdistanceChi2@1" href="src/EdbVertexRec.cxx.html#xOryi">TdistanceChi2</a>(<span class="keyword">const</span> <a href="./EdbSegP.html">EdbSegP</a>&amp; s1, <span class="keyword">const</span> <a href="./EdbSegP.html">EdbSegP</a>&amp; s2, <span class="keyword">float</span> m)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbTrackP.html">EdbTrackP</a> * <a class="funcname" name="EdbVertexRec:GetEdbTrack" href="src/EdbVertexRec.cxx.html#yp_DQC">GetEdbTrack</a>(<span class="keyword">const</span> <span class="keyword">int</span> index)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbVertexRec:CheckTrack" href="src/EdbVertexRec.cxx.html#JnIvOE">CheckTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; track, <span class="keyword">int</span> zpos)</span><br />
+<div class="funccomm"><pre> loop for all tracks and check if some of them can form the vertex with tr
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbVertex.html">EdbVertex</a> * <a class="funcname" name="EdbVertexRec:GetVertex" href="src/EdbVertexRec.h.html#UkL1uC">GetVertex</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbVertexRec.html#EdbVertexRec:eVertex" title="EdbVertex* EdbVertexRec::eVertex">eVertex</a>;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbVertexRec:AddVTA" href="src/EdbVertexRec.h.html#nC799B">AddVTA</a>(<a href="./EdbVTA.html">EdbVTA</a>* vta)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbVertexRec:EdbVertexRec" href="src/EdbVertexRec.h.html#ropbxB">EdbVertexRec</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbVertexRec.html#EdbVertexRec:Set0" title="void EdbVertexRec::Set0()">Set0</a>(); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbVertexRec:EdbVertexRec@1" href="src/EdbVertexRec.h.html#fAYj6C">EdbVertexRec</a>(<a href="./EdbVertexPar.html">EdbVertexPar</a>&amp; vpar)</span><br />
+
+<div class="code"><code class="inlinecode">{ Set0(); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">const</span> TVector3  * <a class="funcname" name="EdbVertexRec:Vmin" href="src/EdbVertexRec.h.html#B0u9yC">Vmin</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> &amp;eVmin;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">const</span> TVector3  * <a class="funcname" name="EdbVertexRec:Vmax" href="src/EdbVertexRec.h.html#Sl9uxC">Vmax</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> &amp;eVmax;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbVertexRec:SetPVRec" href="src/EdbVertexRec.h.html#JWTLSB">SetPVRec</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* pvr)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbVertexRec.html#EdbVertexRec:ePVR" title="EdbPVRec* EdbVertexRec::ePVR">ePVR</a> = pvr;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbVertexRec:Nvtx" href="src/EdbVertexRec.h.html#rWdfRD">Nvtx</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbVertexRec.html#EdbVertexRec:eVTX" title="TObjArray* EdbVertexRec::eVTX">eVTX</a> ? <a href="./EdbVertexRec.html#EdbVertexRec:eVTX" title="TObjArray* EdbVertexRec::eVTX">eVTX</a>-&gt;GetEntries() : 0;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbVertexRec:AddVertex" href="src/EdbVertexRec.h.html#q4gHRB">AddVertex</a>(<a href="./EdbVertex.html">EdbVertex</a>* vtx)</span><br />
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:36 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:23 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbEDAMainTab</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbEDAMainTab','','EdbEDAMainTab.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbEDAMainTab.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbEDAMainTab.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbEDAMainTab_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbEDAMainTab:description">class description</a> 
+<a class="descrheadentry" href="#EdbEDAMainTab:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbEDAMainTab:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbEDAMainTab:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbEDAMainTab</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbEDAMainTab:description"></a>class EdbEDAMainTab</h1>
+<div class="classdescr">
+</div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbEDAMainTab:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:EdbEDAMainTab">EdbEDAMainTab</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:EdbEDAMainTab@1">EdbEDAMainTab</a>(<span class="keyword">const</span> <a href="./EdbEDAMainTab.html">EdbEDAMainTab</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:_EdbEDAMainTab">~EdbEDAMainTab</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:ApplyParams">ApplyParams</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:CalcIP">CalcIP</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:CalcMinimumDistance">CalcMinimumDistance</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:CalcPSelected">CalcPSelected</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:CalcVertex">CalcVertex</a>(<span class="keyword">int</span> clear_previous_local = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:CalcVertexPlus">CalcVertexPlus</a>()</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:Class">Class</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:ClearTracks">ClearTracks</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:ClearVertices">ClearVertices</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:DrawExtentionResolution">DrawExtentionResolution</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:DrawOnlySelected">DrawOnlySelected</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:ExecCuts">ExecCuts</a>(<span class="keyword">int</span> redraw = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:ExecSegmentSearch">ExecSegmentSearch</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:ExecTrackSearch">ExecTrackSearch</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:GetDT">GetDT</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:GetNsegCut">GetNsegCut</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:GetPHCut">GetPHCut</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:GetPHDTRMS">GetPHDTRMS</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:GetTX">GetTX</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:GetTY">GetTY</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:MakeGUICuts">MakeGUICuts</a>(TGGroupFrame* fGroupFrame1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:MakeGUIIDSearch">MakeGUIIDSearch</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:MakeGUIMain">MakeGUIMain</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:MicroTrackSearch">MicroTrackSearch</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbEDAMainTab.html">EdbEDAMainTab</a>&amp;</td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:operator_">operator=</a>(<span class="keyword">const</span> <a href="./EdbEDAMainTab.html">EdbEDAMainTab</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:PickCenter">PickCenter</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:ReadFeedback">ReadFeedback</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:ReadFilteredText">ReadFilteredText</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:ReadListFile">ReadListFile</a>(<span class="keyword">char</span>* filename = 0, <span class="keyword">bool</span> clear_previous = <a href="./ListOfTypes.html#Bool_t">kFALSE</a>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:Redo">Redo</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:RemoveSelected">RemoveSelected</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:SearchCouplesDmin@1">SearchCouplesDmin</a>(TObjArray* segsarr = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:SearchCouplesDmin">SearchCouplesDmin</a>(TObjArray* segsarr, <span class="keyword">int</span> ipl)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:SearchCouplesIP@2">SearchCouplesIP</a>(TObjArray* segsarr = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:SearchCouplesIP@1">SearchCouplesIP</a>(<span class="keyword">int</span> ipl, <a href="./EdbVertex.html">EdbVertex</a>* v, <span class="keyword">double</span> ipcut = 50, TObjArray* cps = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:SearchCouplesIP">SearchCouplesIP</a>(<span class="keyword">int</span> ipl, <span class="keyword">double</span> x, <span class="keyword">double</span> y, <span class="keyword">double</span> z, <span class="keyword">double</span> ipcut = 50, TObjArray* cps = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:SelectAll">SelectAll</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:SetAnimation">SetAnimation</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:SetColorMode">SetColorMode</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:SetDrawAreas">SetDrawAreas</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:SetDrawCheckBox">SetDrawCheckBox</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:SetDrawText">SetDrawText</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:SetDrawTrackSets">SetDrawTrackSets</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> on)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:SetExtention">SetExtention</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:SetExtentionZNumber">SetExtentionZNumber</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:SetExtentionZSlider">SetExtentionZSlider</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:SetOutputFileModeButton">SetOutputFileModeButton</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:SetPickSegment">SetPickSegment</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:SetPickTrack">SetPickTrack</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:SetProjection">SetProjection</a>()</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:WriteFeedback">WriteFeedback</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:WriteFilteredText">WriteFilteredText</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:WriteListFile">WriteListFile</a>(<span class="keyword">char</span>* filename = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAMainTab:WriteMxxFile">WriteMxxFile</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbEDAMainTab:Data_Members"></a>Data Members</h2>
+<div class="access" id="enumpubl"><b>public:</b>
+<table class="data" id="tabenumpubl" cellspacing="0">
+<tr class="data"><td class="datatype">enum  { </td><td class="dataname"><a name="EdbEDAMainTab:kSelSeg"></a>kSelSeg</td><td></td></tr>
+<tr class="data"><td class="datatype"></td><td class="dataname"><a name="EdbEDAMainTab:kSelTrack"></a>kSelTrack</td><td></td></tr>
+<tr class="data"><td class="datatype">};</td><td></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="data"><td class="datatype">TObjArray*</td><td class="dataname"><a name="EdbEDAMainTab:eDrawChecks"></a>eDrawChecks</td><td></td></tr>
+<tr class="data"><td class="datatype">TGCheckButton*</td><td class="dataname"><a name="EdbEDAMainTab:eGCBAngleCut"></a>eGCBAngleCut</td><td></td></tr>
+<tr class="data"><td class="datatype">TGCheckButton*</td><td class="dataname"><a name="EdbEDAMainTab:eGCBAnimation"></a>eGCBAnimation</td><td></td></tr>
+<tr class="data"><td class="datatype">TGCheckButton*</td><td class="dataname"><a name="EdbEDAMainTab:eGCBDrawArea"></a>eGCBDrawArea</td><td></td></tr>
+<tr class="data"><td class="datatype">TGCheckButton*</td><td class="dataname"><a name="EdbEDAMainTab:eGCBExtention"></a>eGCBExtention</td><td></td></tr>
+<tr class="data"><td class="datatype">TGCheckButton*</td><td class="dataname"><a name="EdbEDAMainTab:eGCBExtention_res"></a>eGCBExtention_res</td><td></td></tr>
+<tr class="data"><td class="datatype">TGCheckButton*</td><td class="dataname"><a name="EdbEDAMainTab:eGCBIpCut"></a>eGCBIpCut</td><td></td></tr>
+<tr class="data"><td class="datatype">TGCheckButton*</td><td class="dataname"><a name="EdbEDAMainTab:eGCBNeighbor"></a>eGCBNeighbor</td><td></td></tr>
+<tr class="data"><td class="datatype">TGCheckButton*</td><td class="dataname"><a name="EdbEDAMainTab:eGClearPrevious"></a>eGClearPrevious</td><td></td></tr>
+<tr class="data"><td class="datatype">TGNumberEntryField*</td><td class="dataname"><a name="EdbEDAMainTab:eGNEAX"></a>eGNEAX</td><td></td></tr>
+<tr class="data"><td class="datatype">TGNumberEntryField*</td><td class="dataname"><a name="EdbEDAMainTab:eGNEAY"></a>eGNEAY</td><td></td></tr>
+<tr class="data"><td class="datatype">TGNumberEntryField*</td><td class="dataname"><a name="EdbEDAMainTab:eGNEExtentionZ"></a>eGNEExtentionZ</td><td></td></tr>
+<tr class="data"><td class="datatype">TGNumberEntry*</td><td class="dataname"><a name="EdbEDAMainTab:eGNEMaxPlate"></a>eGNEMaxPlate</td><td></td></tr>
+<tr class="data"><td class="datatype">TGNumberEntryField*</td><td class="dataname"><a name="EdbEDAMainTab:eGNENeighborDzDown"></a>eGNENeighborDzDown</td><td></td></tr>
+<tr class="data"><td class="datatype">TGNumberEntryField*</td><td class="dataname"><a name="EdbEDAMainTab:eGNENeighborDzUp"></a>eGNENeighborDzUp</td><td></td></tr>
+<tr class="data"><td class="datatype">TGNumberEntry*</td><td class="dataname"><a name="EdbEDAMainTab:eGNENseg"></a>eGNENseg</td><td></td></tr>
+<tr class="data"><td class="datatype">TGNumberEntryField*</td><td class="dataname"><a name="EdbEDAMainTab:eGNEPHDTRMS"></a>eGNEPHDTRMS</td><td></td></tr>
+<tr class="data"><td class="datatype">TGNumberEntry*</td><td class="dataname"><a name="EdbEDAMainTab:eGNESearchBTIPL"></a>eGNESearchBTIPL</td><td></td></tr>
+<tr class="data"><td class="datatype">TGNumberEntryField*</td><td class="dataname"><a name="EdbEDAMainTab:eGNESearchSegmentIPL"></a>eGNESearchSegmentIPL</td><td></td></tr>
+<tr class="data"><td class="datatype">TGNumberEntryField*</td><td class="dataname"><a name="EdbEDAMainTab:eGNESearchSegmentISeg"></a>eGNESearchSegmentISeg</td><td></td></tr>
+<tr class="data"><td class="datatype">TGNumberEntryField*</td><td class="dataname"><a name="EdbEDAMainTab:eGNESearchTrack"></a>eGNESearchTrack</td><td></td></tr>
+<tr class="data"><td class="datatype">TGNumberEntry*</td><td class="dataname"><a name="EdbEDAMainTab:eGNETolDT"></a>eGNETolDT</td><td></td></tr>
+<tr class="data"><td class="datatype">TGNumberEntry*</td><td class="dataname"><a name="EdbEDAMainTab:eGNETolDX"></a>eGNETolDX</td><td></td></tr>
+<tr class="data"><td class="datatype">TGNumberEntryField*</td><td class="dataname"><a name="EdbEDAMainTab:eGNEWCut"></a>eGNEWCut</td><td></td></tr>
+<tr class="data"><td class="datatype">TGRadioButton*</td><td class="dataname"><a name="EdbEDAMainTab:eGRBColorBK"></a>eGRBColorBK</td><td></td></tr>
+<tr class="data"><td class="datatype">TGRadioButton*</td><td class="dataname"><a name="EdbEDAMainTab:eGRBColorPH"></a>eGRBColorPH</td><td></td></tr>
+<tr class="data"><td class="datatype">TGRadioButton*</td><td class="dataname"><a name="EdbEDAMainTab:eGRBColorPL"></a>eGRBColorPL</td><td></td></tr>
+<tr class="data"><td class="datatype">TGCheckButton*</td><td class="dataname"><a name="EdbEDAMainTab:eGSideOut"></a>eGSideOut</td><td></td></tr>
+<tr class="data"><td class="datatype">TGNumberEntry*</td><td class="dataname"><a name="EdbEDAMainTab:eGSideOutPlate"></a>eGSideOutPlate</td><td></td></tr>
+<tr class="data"><td class="datatype">TGHSlider*</td><td class="dataname"><a name="EdbEDAMainTab:eGSliderExtentionZ"></a>eGSliderExtentionZ</td><td></td></tr>
+<tr class="data"><td class="datatype">TGMainFrame*</td><td class="dataname"><a name="EdbEDAMainTab:eIDWindow"></a>eIDWindow</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbEDATrackSet.html">EdbEDATrackSet</a>*</td><td class="dataname"><a name="EdbEDAMainTab:eTrackSet"></a>eTrackSet</td><td class="datadesc">TrackSet for the search.</td></tr>
+<tr class="data"><td class="datatype">TGCheckButton*</td><td class="dataname"><a name="EdbEDAMainTab:fTextButton_scanback"></a>fTextButton_scanback</td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapriv"><b>private:</b>
+<table class="data" id="tabdatapriv" cellspacing="0">
+<tr class="data"><td class="datatype">TGCheckButton*</td><td class="dataname"><a name="EdbEDAMainTab:eGCBTrackAngle"></a>eGCBTrackAngle</td><td></td></tr>
+<tr class="data"><td class="datatype">TGCheckButton*</td><td class="dataname"><a name="EdbEDAMainTab:eGCBTrackID"></a>eGCBTrackID</td><td></td></tr>
+<tr class="data"><td class="datatype">TGRadioButton*</td><td class="dataname"><a name="EdbEDAMainTab:eGRBSelSeg"></a>eGRBSelSeg</td><td></td></tr>
+<tr class="data"><td class="datatype">TGRadioButton*</td><td class="dataname"><a name="EdbEDAMainTab:eGRBSelTrack"></a>eGRBSelTrack</td><td></td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbEDAMainTab:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td>
+<center><big><b><tt><a name="EdbEDAMainTab" href="./EdbEDAMainTab.html">EdbEDAMainTab</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:ApplyParams" href="src/EdbEDAMainTab.cxx.html#BXv6bC">ApplyParams</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:ExecCuts" href="src/EdbEDAMainTab.cxx.html#h24yOE">ExecCuts</a>(<span class="keyword">int</span> redraw = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:Redo" href="src/EdbEDAMainTab.cxx.html#GVwjEB">Redo</a>(<span class="keyword">void</span>)</span><br />
+
+<div class="code"><code class="inlinecode">{ gEDA-&gt;RestorePrevious(); gEDA-&gt;Redraw();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:SearchCouplesIP@1" href="src/EdbEDAMainTab.cxx.html#chHHX">SearchCouplesIP</a>(<span class="keyword">int</span> ipl, <a href="./EdbVertex.html">EdbVertex</a>* v, <span class="keyword">double</span> ipcut = 50, TObjArray* cps = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:SearchCouplesIP@2" href="src/EdbEDAMainTab.cxx.html#n9TmxC">SearchCouplesIP</a>(TObjArray* segsarr = 0)</span><br />
+<div class="funccomm"><pre> This will be called from Main tab.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:SearchCouplesIP" href="src/EdbEDAMainTab.cxx.html#aQYjkD">SearchCouplesIP</a>(<span class="keyword">int</span> ipl, <span class="keyword">double</span> x, <span class="keyword">double</span> y, <span class="keyword">double</span> z, <span class="keyword">double</span> ipcut = 50, TObjArray* cps = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:SearchCouplesDmin" href="src/EdbEDAMainTab.cxx.html#gDqbjE">SearchCouplesDmin</a>(TObjArray* segsarr, <span class="keyword">int</span> ipl)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:SearchCouplesDmin@1" href="src/EdbEDAMainTab.cxx.html#Ct47JB">SearchCouplesDmin</a>(TObjArray* segsarr = 0)</span><br />
+<div class="funccomm"><pre> this is called from MainTab.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:MicroTrackSearch" href="src/EdbEDAMainTab.cxx.html#NKMvcB">MicroTrackSearch</a>()</span><br />
+<div class="funccomm"><pre> Micro-track search
+ search +- 1 plate from end of track.
+ fill holes by microtrack.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:ExecTrackSearch" href="src/EdbEDAMainTab.cxx.html#RxPcV">ExecTrackSearch</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:ClearTracks" href="src/EdbEDAMainTab.cxx.html#AQfQKE">ClearTracks</a>(<span class="keyword">void</span>)</span><br />
+
+<div class="code"><code class="inlinecode">{ gEDA-&gt;StorePrevious(); <a href="./EdbEDAMainTab.html#EdbEDAMainTab:eTrackSet" title="EdbEDATrackSet* EdbEDAMainTab::eTrackSet">eTrackSet</a>-><a href="./EdbEDATrackSet.html#EdbEDATrackSet:ClearTracks" title="void EdbEDATrackSet::ClearTracks()">ClearTracks</a>(), gEDA-&gt;Redraw();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:ClearVertices" href="src/EdbEDAMainTab.cxx.html#LlrM7">ClearVertices</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ gEDA-&gt;StorePrevious(); gEDA-&gt;<a href="./EdbEDAMainTab.html#EdbEDAMainTab:ClearVertices" title="void EdbEDAMainTab::ClearVertices()">ClearVertices</a>(); gEDA-&gt;Redraw();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:ExecSegmentSearch" href="src/EdbEDAMainTab.cxx.html#oPmhWB">ExecSegmentSearch</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:MakeGUIIDSearch" href="src/EdbEDAMainTab.cxx.html#wwnK0C">MakeGUIIDSearch</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:MakeGUICuts" href="src/EdbEDAMainTab.cxx.html#I3Jdc">MakeGUICuts</a>(TGGroupFrame* fGroupFrame1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:MakeGUIMain" href="src/EdbEDAMainTab.cxx.html#kmkXpB">MakeGUIMain</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:CalcMinimumDistance" href="src/EdbEDAMainTab.cxx.html#w2gCkE">CalcMinimumDistance</a>(<span class="keyword">void</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:CalcVertexPlus" href="src/EdbEDAMainTab.cxx.html#yZwp5">CalcVertexPlus</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbEDAMainTab.html#EdbEDAMainTab:CalcVertex" title="void EdbEDAMainTab::CalcVertex(int clear_previous_local=kTRUE)">CalcVertex</a>(<a href="./ListOfTypes.html#Bool_t">kFALSE</a>);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:CalcVertex" href="src/EdbEDAMainTab.cxx.html#kHxaCC">CalcVertex</a>(<span class="keyword">int</span> clear_previous_local = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>)</span><br />
+<div class="funccomm"><pre> calculate a vertex with the selected tracks (segments).
+ use the data of (the selected object)-&gt;X(), Y(), Z(), TX(), TY().
+ means, if the selected object == segment, use the data of the segment. or it == track, the use the fitted data.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:CalcPSelected" href="src/EdbEDAMainTab.cxx.html#RrxvpD">CalcPSelected</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:CalcIP" href="src/EdbEDAMainTab.cxx.html#DulFhC">CalcIP</a>()</span><br />
+<div class="funccomm"><pre> calculate IP for the selected tracks wrt the given vertex.
+ if the vertex is not given, use the selected vertex.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:DrawOnlySelected" href="src/EdbEDAMainTab.cxx.html#JoiBVE">DrawOnlySelected</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:RemoveSelected" href="src/EdbEDAMainTab.cxx.html#FtQY1E">RemoveSelected</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:SelectAll" href="src/EdbEDAMainTab.cxx.html#UKYnoB">SelectAll</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:SetExtention" href="src/EdbEDAMainTab.cxx.html#LnGsND">SetExtention</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:SetDrawText" href="src/EdbEDAMainTab.cxx.html#DhQW2">SetDrawText</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:SetDrawTrackSets" href="src/EdbEDAMainTab.cxx.html#eEf44B">SetDrawTrackSets</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> on)</span><br />
+<div class="funccomm"><pre> Control Draw option for each Track sets.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:SetDrawCheckBox" href="src/EdbEDAMainTab.cxx.html#DB_AEE">SetDrawCheckBox</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:SetExtentionZSlider" href="src/EdbEDAMainTab.cxx.html#fSHG_B">SetExtentionZSlider</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:SetExtentionZNumber" href="src/EdbEDAMainTab.cxx.html#DZ9fC">SetExtentionZNumber</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:DrawExtentionResolution" href="src/EdbEDAMainTab.cxx.html#KUg.TC">DrawExtentionResolution</a>()</span><br />
+<div class="funccomm"><pre> Draw Extention with resolution
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:SetProjection" href="src/EdbEDAMainTab.cxx.html#a5NKtD">SetProjection</a>()</span><br />
+<div class="funccomm"><pre> Set Camera Projection
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:SetDrawAreas" href="src/EdbEDAMainTab.cxx.html#Pfz2BB">SetDrawAreas</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:SetPickSegment" href="src/EdbEDAMainTab.cxx.html#puBqsD">SetPickSegment</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:SetPickTrack" href="src/EdbEDAMainTab.cxx.html#IFi5VB">SetPickTrack</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:PickCenter" href="src/EdbEDAMainTab.cxx.html#cI0iaE">PickCenter</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:SetAnimation" href="src/EdbEDAMainTab.cxx.html#bcyqmC">SetAnimation</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:SetColorMode" href="src/EdbEDAMainTab.cxx.html#CN3ElE">SetColorMode</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:ReadListFile" href="src/EdbEDAMainTab.cxx.html#CbaX3B">ReadListFile</a>(<span class="keyword">char</span>* filename = 0, <span class="keyword">bool</span> clear_previous = <a href="./ListOfTypes.html#Bool_t">kFALSE</a>)</span><br />
+<div class="funccomm"><pre> Read list file.
+ search tracks with plateID and segmentID of BT.
+ if corresponding track is not found in TS, it search in BT (couples file).
+
+ previously <a href="./EdbEDATrackSet.html">EdbEDATrackSet</a>::<a href="./EdbEDATrackSet.html#EdbEDATrackSet:ReadListFile" title="void EdbEDATrackSet::ReadListFile(char* filename=0,bool clear_previous=kTRUE)">ReadListFile</a> is used.
+ however, in order to allow to read BT, this has changed.
+ and now this func play a real role.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">char</span> * <a class="funcname" name="EdbEDAMainTab:WriteListFile" href="src/EdbEDAMainTab.cxx.html#tgAraB">WriteListFile</a>(<span class="keyword">char</span>* filename = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:WriteFilteredText" href="src/EdbEDAMainTab.cxx.html#gRqmsC">WriteFilteredText</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:ReadFilteredText" href="src/EdbEDAMainTab.cxx.html#xnKD.D">ReadFilteredText</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:SetOutputFileModeButton" href="src/EdbEDAMainTab.cxx.html#FTO4xE">SetOutputFileModeButton</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:WriteFeedback" href="src/EdbEDAMainTab.cxx.html#kWuTYB">WriteFeedback</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{gEDA-&gt;WriteFeedbackFile();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:ReadFeedback" href="src/EdbEDAMainTab.cxx.html#IbiuUE">ReadFeedback</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{gEDA-&gt;ReadFeedbackFile();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAMainTab:WriteMxxFile" href="src/EdbEDAMainTab.cxx.html#oG2CFB">WriteMxxFile</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbEDAMainTab:EdbEDAMainTab@1" href="src/EdbEDAMainTab.h.html#p2goK">EdbEDAMainTab</a>(<span class="keyword">const</span> <a href="./EdbEDAMainTab.html">EdbEDAMainTab</a>&amp; )</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">virtual</span> <a class="funcname" name="EdbEDAMainTab:_EdbEDAMainTab" href="src/EdbEDAMainTab.h.html#igSKl">~EdbEDAMainTab</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDAMainTab:GetNsegCut" href="src/EdbEDAMainTab.h.html#ljKfdD">GetNsegCut</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDAMainTab.html#EdbEDAMainTab:eGNENseg" title="TGNumberEntry* EdbEDAMainTab::eGNENseg">eGNENseg</a>-&gt;GetIntNumber();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAMainTab:GetPHCut" href="src/EdbEDAMainTab.h.html#YdUOTE">GetPHCut</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDAMainTab.html#EdbEDAMainTab:eGNEWCut" title="TGNumberEntryField* EdbEDAMainTab::eGNEWCut">eGNEWCut</a>-&gt;GetNumber();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAMainTab:GetPHDTRMS" href="src/EdbEDAMainTab.h.html#bcDmEB">GetPHDTRMS</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDAMainTab.html#EdbEDAMainTab:eGNEPHDTRMS" title="TGNumberEntryField* EdbEDAMainTab::eGNEPHDTRMS">eGNEPHDTRMS</a>-&gt;GetNumber();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAMainTab:GetTX" href="src/EdbEDAMainTab.h.html#YecROC">GetTX</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDAMainTab.html#EdbEDAMainTab:eGNEAX" title="TGNumberEntryField* EdbEDAMainTab::eGNEAX">eGNEAX</a>-&gt;GetNumber();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAMainTab:GetTY" href="src/EdbEDAMainTab.h.html#RoSROC">GetTY</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDAMainTab.html#EdbEDAMainTab:eGNEAY" title="TGNumberEntryField* EdbEDAMainTab::eGNEAY">eGNEAY</a>-&gt;GetNumber();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAMainTab:GetDT" href="src/EdbEDAMainTab.h.html#vGhgj">GetDT</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbEDAMainTab.html#EdbEDAMainTab:eGNETolDT" title="TGNumberEntry* EdbEDAMainTab::eGNETolDT">eGNETolDT</a>-&gt;GetNumber();}</code></div>
+<div style="clear:both;"></div>
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:23 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

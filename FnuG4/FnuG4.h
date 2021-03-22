@@ -11,9 +11,13 @@
 #include <TROOT.h>
 #include <TChain.h>
 #include <TFile.h>
-#include<TLeaf.h>
-#include<EdbPattern.h>
-#include<EdbSegP.h>
+#include <TLeaf.h>
+#include <TTree.h>
+#include <TObject.h>
+#include <TObjArray.h>
+#include "../Fedra/include/EdbPattern.h"
+#include "../Fedra/include/EdbSegP.h"
+#include "../Fedra/include/EdbTrackP.h"
 // Header file for the classes stored in the TTree if any.
 
 // Fixed size dimensions of array or collections stored in the TTree if any.

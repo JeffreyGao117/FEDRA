@@ -1,0 +1,657 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:27 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbPVRec</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbPVRec','','EdbPVRec.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbPVRec.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbPVRec.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbPVRec_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbPVRec:description">class description</a> 
+<a class="descrheadentry" href="#EdbPVRec:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbPVRec:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbPVRec:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbPVRec</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbPVRec:description"></a>class EdbPVRec: public <a href="./EdbPatternsVolume.html">EdbPatternsVolume</a></h1>
+<div class="classdescr">
+<pre>
+
+<a href="./EdbPVRec.html">EdbPVRec</a>
+
+patterns volume reconstruction
+
+
+</pre></div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbPVRec:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbPVRec:EdbPVRec">EdbPVRec</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbPVRec:EdbPVRec@1">EdbPVRec</a>(<span class="keyword">const</span> <a href="./EdbPVRec.html">EdbPVRec</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbPVRec:_EdbPVRec">~EdbPVRec</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:AddCouple@1">AddCouple</a>(<a href="./EdbPatCouple.html">EdbPatCouple</a>* c)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPatCouple.html">EdbPatCouple</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRec:AddCouple">AddCouple</a>(<span class="keyword">int</span> id1, <span class="keyword">int</span> id2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:AddCouplesToTracks">AddCouplesToTracks</a>(<a href="./EdbPatCouple.html">EdbPatCouple</a>* pc, <a href="./TIndex2.html">TIndex2</a>&amp; itracks)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:AddCouplesToTracksM">AddCouplesToTracksM</a>(<a href="./EdbPatCouple.html">EdbPatCouple</a>* pc, <a href="./TIndex2.html">TIndex2</a>&amp; itracks)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:AddPattern"><span class="baseclass">EdbPatternsVolume::</span>AddPattern</a>(<a href="./EdbPattern.html">EdbPattern</a>* pat)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:AddPatternAt"><span class="baseclass">EdbPatternsVolume::</span>AddPatternAt</a>(<a href="./EdbPattern.html">EdbPattern</a>* pat, <span class="keyword">int</span> id)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbSegP.html">EdbSegP</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRec:AddSegment">AddSegment</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:AddSegments">AddSegments</a>(<a href="./EdbPVRec.html">EdbPVRec</a>&amp; ali)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:AddSegments@1">AddSegments</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; track)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:AddTrack">AddTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* track)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:AddVertex">AddVertex</a>(<a href="./EdbVertex.html">EdbVertex</a>* vtx)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:Align">Align</a>(<span class="keyword">int</span> alignFlag)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:AlignOld">AlignOld</a>(<span class="keyword">int</span> alignFlag)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:AlignPlates">AlignPlates</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sci, <a href="./EdbScanSet.html">EdbScanSet</a>&amp; sca, <span class="keyword">const</span> <span class="keyword">char</span>* reportdir = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:AttachSeg">AttachSeg</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr, <a href="./EdbSegP.html">EdbSegP</a>* s, <span class="keyword">const</span> <span class="keyword">float</span> X0, <span class="keyword">const</span> <span class="keyword">float</span> ProbMin, <span class="keyword">float</span>&amp; prob)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(TBrowser* b)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:Centralize"><span class="baseclass">EdbPatternsVolume::</span>Centralize</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:Centralize@1"><span class="baseclass">EdbPatternsVolume::</span>Centralize</a>(<span class="keyword">float</span> xc, <span class="keyword">float</span> yc)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:Chi2Fast">Chi2Fast</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s1, <a href="./EdbSegP.html">EdbSegP</a>&amp; s2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:Chi2Max">Chi2Max</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbPVRec:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Clear"><span class="baseclass">TObject::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:Clone"><span class="baseclass">TObject::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:CollectSegment">CollectSegment</a>(<a href="./TIndexCell.html">TIndexCell</a>* ct, <a href="./TIndexCell.html">TIndexCell</a>* cross)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:CollectSegment1">CollectSegment1</a>(<a href="./TIndexCell.html">TIndexCell</a>* ct, THashList* cross)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:CombTracks">CombTracks</a>(<span class="keyword">int</span> nplmin, <span class="keyword">int</span> ngapMax, <span class="keyword">float</span> probMin = 0.01)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Compare"><span class="baseclass">TObject::</span>Compare</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Copy"><span class="baseclass">TObject::</span>Copy</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp; object) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:DeleteCouples">DeleteCouples</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:DropCell"><span class="baseclass">EdbPatternsVolume::</span>DropCell</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:DropCouples"><span class="baseclass">EdbPatternsVolume::</span>DropCouples</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:DummyCycle">DummyCycle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(TMethod* method, TObjArray* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:ExtractDataVolumeSeg">ExtractDataVolumeSeg</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr, TObjArray&amp; arr, <span class="keyword">float</span> binx, <span class="keyword">float</span> bint)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:ExtractDataVolumeSegAll">ExtractDataVolumeSegAll</a>(TObjArray&amp; arr)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:FillCell">FillCell</a>(<span class="keyword">float</span> stepx, <span class="keyword">float</span> stepy, <span class="keyword">float</span> steptx, <span class="keyword">float</span> stepty)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:FillTracksCell">FillTracksCell</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:FillTracksCell1">FillTracksCell1</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:FillTracksCell2">FillTracksCell2</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:FillTracksCellFast">FillTracksCellFast</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:FindComplimentsVol"><span class="baseclass">EdbPatternsVolume::</span>FindComplimentsVol</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s, TObjArray&amp; arr, <span class="keyword">float</span> nsig, <span class="keyword">float</span> nsigt, <span class="keyword">int</span> dpat)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbSegP.html">EdbSegP</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRec:FindSegment">FindSegment</a>(<span class="keyword">int</span> PlateID, <span class="keyword">int</span> SegmentID) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbTrackP.html">EdbTrackP</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRec:FindTrack">FindTrack</a>(<span class="keyword">int</span> id) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:FineCorrF">FineCorrF</a>(<span class="keyword">int</span> ipat, <a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; aff, <a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; afft)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:FineCorrShr">FineCorrShr</a>(<span class="keyword">int</span> ipat, <span class="keyword">float</span>&amp; shr)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:FineCorrTXTY">FineCorrTXTY</a>(<span class="keyword">int</span> ipat, <a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; aff)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:FineCorrXY">FineCorrXY</a>(<span class="keyword">int</span> ipat, <a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; aff, <span class="keyword">int</span> flag)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:FineCorrZ">FineCorrZ</a>(<span class="keyword">int</span> ipat, <span class="keyword">float</span>&amp; dz)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:FineCorrZnew">FineCorrZnew</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:FitTracks">FitTracks</a>(<span class="keyword">float</span> p = 10., <span class="keyword">float</span> mass = 0.139, TObjArray* gener = 0, <span class="keyword">int</span> design = 0)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPatCouple.html">EdbPatCouple</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRec:GetCouple">GetCouple</a>(<span class="keyword">int</span> i) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetName"><span class="baseclass">TObject::</span>GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbPattern.html">EdbPattern</a>*</td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:GetPattern"><span class="baseclass">EdbPatternsVolume::</span>GetPattern</a>(<span class="keyword">int</span> id) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPattern.html">EdbPattern</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRec:GetPatternByPID">GetPatternByPID</a>(<span class="keyword">int</span> pid)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbPattern.html">EdbPattern</a>*</td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:GetPatternByPlate"><span class="baseclass">EdbPatternsVolume::</span>GetPatternByPlate</a>(<span class="keyword">int</span> plate, <span class="keyword">int</span> side)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbPattern.html">EdbPattern</a>*</td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:GetPatternByZ"><span class="baseclass">EdbPatternsVolume::</span>GetPatternByZ</a>(<span class="keyword">float</span> z) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbPattern.html">EdbPattern</a>*</td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:GetPatternNext"><span class="baseclass">EdbPatternsVolume::</span>GetPatternNext</a>(<span class="keyword">float</span> z, <span class="keyword">int</span> dir) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbPattern.html">EdbPattern</a>*</td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:GetPatternPreceding"><span class="baseclass">EdbPatternsVolume::</span>GetPatternPreceding</a>(<a href="./EdbPattern.html">EdbPattern</a>* pat) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbPattern.html">EdbPattern</a>*</td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:GetPatternSucceding"><span class="baseclass">EdbPatternsVolume::</span>GetPatternSucceding</a>(<a href="./EdbPattern.html">EdbPattern</a>* pat) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbPattern.html">EdbPattern</a>*</td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:GetPatternZLowestHighest"><span class="baseclass">EdbPatternsVolume::</span>GetPatternZLowestHighest</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> lowestZ = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">const</span> <a href="./EdbScanCond.html">EdbScanCond</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRec:GetScanCond">GetScanCond</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbSegP.html">EdbSegP</a>*</td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:GetSegment"><span class="baseclass">EdbPatternsVolume::</span>GetSegment</a>(<a href="./ListOfTypes.html#Long_t">Long_t</a> vid) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetTitle"><span class="baseclass">TObject::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbTrackP.html">EdbTrackP</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRec:GetTrack">GetTrack</a>(<span class="keyword">int</span> i) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./TIndexCell.html">TIndexCell</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRec:GetTracksCell">GetTracksCell</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="funcname"><a class="funcname" href="#EdbPVRec:GetVertex">GetVertex</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a>&amp; i)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(TTimer* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Hash"><span class="baseclass">TObject::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> TClass* cl) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:InsertHole">InsertHole</a>(<span class="keyword">const</span> <a href="./EdbSegP.html">EdbSegP</a>* s1, <span class="keyword">const</span> <a href="./EdbSegP.html">EdbSegP</a>* s2, <span class="keyword">int</span> pid)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbPattern.html">EdbPattern</a>*</td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:InsertPattern"><span class="baseclass">EdbPatternsVolume::</span>InsertPattern</a>(<a href="./EdbPattern.html">EdbPattern</a>* pat, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> descendingZ = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbPVRec:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsSortable"><span class="baseclass">TObject::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:Link">Link</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:LinkSlow">LinkSlow</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ls"><span class="baseclass">TObject::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:MakeHoles">MakeHoles</a>(<span class="keyword">int</span> ort)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:MakeSummaryTracks">MakeSummaryTracks</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:MakeTracks">MakeTracks</a>(<span class="keyword">int</span> nsegments = 2, <span class="keyword">int</span> flag = 0)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:MergeTracks">MergeTracks</a>(<span class="keyword">int</span> maxgap = 2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:MergeTracks1">MergeTracks1</a>(<span class="keyword">int</span> maxgap)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRec:Ncouples">Ncouples</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbPattern.html">EdbPattern</a>*</td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:NextPattern"><span class="baseclass">EdbPatternsVolume::</span>NextPattern</a>(<span class="keyword">float</span> z, <span class="keyword">int</span> dir) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:Npatterns"><span class="baseclass">EdbPatternsVolume::</span>Npatterns</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRec:NSeg">NSeg</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRec:Ntracks">Ntracks</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbPVRec:Nvtx">Nvtx</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPVRec.html">EdbPVRec</a>&amp;</td><td class="funcname"><a class="funcname" href="#EdbPVRec:operator_">operator=</a>(<span class="keyword">const</span> <a href="./EdbPVRec.html">EdbPVRec</a>&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:PassProperties"><span class="baseclass">EdbPatternsVolume::</span>PassProperties</a>(<a href="./EdbPatternsVolume.html">EdbPatternsVolume</a>&amp; pvol)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:Pid"><span class="baseclass">EdbPatternsVolume::</span>Pid</a>(<a href="./ListOfTypes.html#Long_t">Long_t</a> vid) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:Print"><span class="baseclass">EdbPatternsVolume::</span>Print</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:PrintAff"><span class="baseclass">EdbPatternsVolume::</span>PrintAff</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:PrintStat"><span class="baseclass">EdbPatternsVolume::</span>PrintStat</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* opt = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:PrintStat@1"><span class="baseclass">EdbPatternsVolume::</span>PrintStat</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pat) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:PrintSummary">PrintSummary</a>()</td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:ProbeSeg">ProbeSeg</a>(<span class="keyword">const</span> <a href="./EdbTrackP.html">EdbTrackP</a>* s1, <a href="./EdbTrackP.html">EdbTrackP</a>* s2, <span class="keyword">const</span> <span class="keyword">float</span> X0 = 5810.)</td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:ProbeSeg@1">ProbeSeg</a>(<span class="keyword">const</span> <a href="./EdbTrackP.html">EdbTrackP</a>* s1, <a href="./EdbSegP.html">EdbSegP</a>* s2, <span class="keyword">const</span> <span class="keyword">float</span> X0 = 5810.)</td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:ProbeSeg@2">ProbeSeg</a>(<span class="keyword">const</span> <a href="./EdbSegP.html">EdbSegP</a>* s1, <a href="./EdbSegP.html">EdbSegP</a>* s2, <span class="keyword">const</span> <span class="keyword">float</span> X0 = 5810., <span class="keyword">const</span> <span class="keyword">float</span> mass = 0.1396)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:PropagateTrack">PropagateTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr, <span class="keyword">bool</span> followZ, <span class="keyword">float</span> probMin = 0.05, <span class="keyword">int</span> ngapMax = 3, <span class="keyword">int</span> design = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:PropagateTracks">PropagateTracks</a>(<span class="keyword">int</span> nplmax, <span class="keyword">int</span> nplmin, <span class="keyword">float</span> probMin = 0.05, <span class="keyword">int</span> ngapMax = 3, <span class="keyword">int</span> design = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:ResetCouples">ResetCouples</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:ResetTracks">ResetTracks</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:SelectLongTracks">SelectLongTracks</a>(<span class="keyword">int</span> nsegments)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:Set0"><span class="baseclass">EdbPatternsVolume::</span>Set0</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:SetBinsCheck">SetBinsCheck</a>(<span class="keyword">int</span> nx, <span class="keyword">int</span> ny, <span class="keyword">int</span> ntx, <span class="keyword">int</span> nty)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:SetChi2Max">SetChi2Max</a>(<span class="keyword">float</span> chi)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:SetCouples">SetCouples</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:SetCouplesAll">SetCouplesAll</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:SetCouplesExclude">SetCouplesExclude</a>(TArrayI&amp; exclude)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:SetCouplesPeriodic">SetCouplesPeriodic</a>(<span class="keyword">int</span> istart, <span class="keyword">int</span> iperiod)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:SetOffsetsMax">SetOffsetsMax</a>(<span class="keyword">float</span> ox, <span class="keyword">float</span> oy)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:SetPatternsID"><span class="baseclass">EdbPatternsVolume::</span>SetPatternsID</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:SetScanCond">SetScanCond</a>(<a href="./EdbScanCond.html">EdbScanCond</a>* scan)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:SetScanIDPatSeg">SetScanIDPatSeg</a>(<a href="./EdbID.html">EdbID</a> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:SetScanIDTrackSeg">SetScanIDTrackSeg</a>(<a href="./EdbID.html">EdbID</a> id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:SetSegmentErrors">SetSegmentErrors</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; seg)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:SetSegmentProbability">SetSegmentProbability</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; seg)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:SetSegmentsErrors">SetSegmentsErrors</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:SetSegmentsTracks">SetSegmentsTracks</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:SetXYZ"><span class="baseclass">EdbPatternsVolume::</span>SetXYZ</a>(<span class="keyword">float</span> x, <span class="keyword">float</span> y, <span class="keyword">float</span> z)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:Shift"><span class="baseclass">EdbPatternsVolume::</span>Shift</a>(<span class="keyword">float</span> x, <span class="keyword">float</span> y)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:Sid"><span class="baseclass">EdbPatternsVolume::</span>Sid</a>(<a href="./ListOfTypes.html#Long_t">Long_t</a> vid) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:SortPatternsByZ"><span class="baseclass">EdbPatternsVolume::</span>SortPatternsByZ</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> descendingZ = 0)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:Transform"><span class="baseclass">EdbPatternsVolume::</span>Transform</a>(<span class="keyword">const</span> <a href="./EdbAffine2D.html">EdbAffine2D</a>* aff)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:Vid"><span class="baseclass">EdbPatternsVolume::</span>Vid</a>(<span class="keyword">int</span> pid, <span class="keyword">int</span> sid) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:X"><span class="baseclass">EdbPatternsVolume::</span>X</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:Xmax">Xmax</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:Xmean"><span class="baseclass">EdbPatternsVolume::</span>Xmean</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:Xmin">Xmin</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:Y"><span class="baseclass">EdbPatternsVolume::</span>Y</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:Ymax">Ymax</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:Ymean"><span class="baseclass">EdbPatternsVolume::</span>Ymean</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbPVRec:Ymin">Ymin</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="./EdbPatternsVolume.html#EdbPatternsVolume:Z"><span class="baseclass">EdbPatternsVolume::</span>Z</a>() <span class="keyword">const</span></td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, va_list va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbPVRec:Data_Members"></a>Data Members</h2>
+<div class="access" id="enumpubl"><b>public:</b>
+<table class="data" id="tabenumpubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span>EStatusBits { </td><td class="dataname"><a href="#TObject:kCanDelete">kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kMustCleanup">kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kObjInCanvas">kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kIsReferenced">kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kHasUUID">kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kCannotPick">kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNoContextMenu">kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kInvalidObject">kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span><i>[unnamed]</i> { </td><td class="dataname"><a href="#TObject:kIsOnHeap">kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNotDeleted">kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kZombie">kZombie</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kBitMask">kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kSingleKey">kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kOverwrite">kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kWriteDelete">kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="dataname"><a href="./EdbPatternsVolume.html#EdbPatternsVolume:eDescendingZ"><span class="baseclass">EdbPatternsVolume::</span>eDescendingZ</a></td><td class="datadesc">if =0 - z increase in the pattrens array; if =1 - decrease </td></tr>
+<tr class="datainh"><td class="datatype">TObjArray*</td><td class="dataname"><a href="./EdbPatternsVolume.html#EdbPatternsVolume:ePatterns"><span class="baseclass">EdbPatternsVolume::</span>ePatterns</a></td><td class="datadesc">collection of patterns</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./TIndexCell.html">TIndexCell</a>*</td><td class="dataname"><a href="./EdbPatternsVolume.html#EdbPatternsVolume:ePatternsCell"><span class="baseclass">EdbPatternsVolume::</span>ePatternsCell</a></td><td class="datadesc">! "pid:id1:chi2:id2" - all found couples</td></tr>
+<tr class="data"><td class="datatype">TObjArray*</td><td class="dataname"><a name="EdbPVRec:eTracks"></a>eTracks</td><td></td></tr>
+<tr class="datainh"><td class="datatype"><a href="./TIndexCell.html">TIndexCell</a>*</td><td class="dataname"><a href="./EdbPatternsVolume.html#EdbPatternsVolume:eTracksCell"><span class="baseclass">EdbPatternsVolume::</span>eTracksCell</a></td><td class="datadesc">! "vidt:vids" - connected segments cell</td></tr>
+<tr class="data"><td class="datatype">TObjArray*</td><td class="dataname"><a name="EdbPVRec:eVTX"></a>eVTX</td><td class="datadesc">array of vertex</td></tr>
+
+</table></div>
+<div class="access" id="datapriv"><b>private:</b>
+<table class="data" id="tabdatapriv" cellspacing="0">
+<tr class="data"><td class="datatype"><span class="keyword">float</span></td><td class="dataname"><a name="EdbPVRec:eChi2Max"></a>eChi2Max</td><td></td></tr>
+<tr class="data"><td class="datatype">TObjArray*</td><td class="dataname"><a name="EdbPVRec:ePatCouples"></a>ePatCouples</td><td class="datadesc">patterns couples</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbScanCond.html">EdbScanCond</a>*</td><td class="dataname"><a name="EdbPVRec:eScanCond"></a>eScanCond</td><td class="datadesc">scanning conditions (sigma, puls, etc)</td></tr>
+<tr class="data"><td class="datatype"><a href="./TIndexCell.html">TIndexCell</a>*</td><td class="dataname"><a name="EdbPVRec:eTracksCell"></a>eTracksCell</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="dataname"><a name="EdbPVRec:eVdiff"></a>eVdiff[4]</td><td class="datadesc">how many ajenced bins should be taken into account</td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbPVRec:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td><table><tr>
+<td bgcolor="#f7f7f7" align="right">
+<table><tr><td><table><tr>
+<td bgcolor="#efefef" align="right">
+<tt>TObject</tt></td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><tt><a name="EdbPatternsVolume" href="./EdbPatternsVolume.html">EdbPatternsVolume</a></tt></center>
+</td>
+</tr></table>
+</td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><big><b><tt><a name="EdbPVRec" href="./EdbPVRec.html">EdbPVRec</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbPVRec:EdbPVRec" href="src/EdbPVRec.cxx.html#qA1obD">EdbPVRec</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbPVRec:_EdbPVRec" href="src/EdbPVRec.cxx.html#OFSYrD">~EdbPVRec</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbTrackP.html">EdbTrackP</a>* <a class="funcname" name="EdbPVRec:FindTrack" href="src/EdbPVRec.cxx.html#MI3B4B">FindTrack</a>(<span class="keyword">int</span> id) const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbSegP.html">EdbSegP</a>* <a class="funcname" name="EdbPVRec:FindSegment" href="src/EdbPVRec.cxx.html#SjoFIE">FindSegment</a>(<span class="keyword">int</span> PlateID, <span class="keyword">int</span> SegmentID) const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPatCouple.html">EdbPatCouple</a> * <a class="funcname" name="EdbPVRec:AddCouple" href="src/EdbPVRec.cxx.html#ShSBlD">AddCouple</a>(<span class="keyword">int</span> id1, <span class="keyword">int</span> id2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:SetOffsetsMax" href="src/EdbPVRec.cxx.html#EEB3hE">SetOffsetsMax</a>(<span class="keyword">float</span> ox, <span class="keyword">float</span> oy)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:SetCouples" href="src/EdbPVRec.cxx.html#nipLC">SetCouples</a>()</span><br />
+<div class="funccomm"><pre> using already setted ID's of couples attach the patterns
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:ResetCouples" href="src/EdbPVRec.cxx.html#T_WT1B">ResetCouples</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:ResetTracks" href="src/EdbPVRec.cxx.html#xqnPLC">ResetTracks</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:SetCouplesAll" href="src/EdbPVRec.cxx.html#YHekmD">SetCouplesAll</a>()</span><br />
+<div class="funccomm"><pre> form couples array for all available patterns ID's
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:SetCouplesPeriodic" href="src/EdbPVRec.cxx.html#nU.U8B">SetCouplesPeriodic</a>(<span class="keyword">int</span> istart, <span class="keyword">int</span> iperiod)</span><br />
+<div class="funccomm"><pre> istart:   start from pattern
+ iperiod:  distance between patterns
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:SetCouplesExclude" href="src/EdbPVRec.cxx.html#Y6FjAC">SetCouplesExclude</a>(TArrayI&amp; exclude)</span><br />
+<div class="funccomm"><pre> by Alessandra Pastore
+ TArray exclude[npat]={0,1,1,0,...,0} where
+           0 = plate to be excluded from the volume pattern;
+           1 = plate to be included into the volume pattern
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbPVRec:Xmin" href="src/EdbPVRec.cxx.html#YkRfXB">Xmin</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbPVRec:Xmax" href="src/EdbPVRec.cxx.html#yGvBlC">Xmax</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbPVRec:Ymin" href="src/EdbPVRec.cxx.html#sjRfXB">Ymin</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbPVRec:Ymax" href="src/EdbPVRec.cxx.html#SGvBlC">Ymax</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:FillCell" href="src/EdbPVRec.cxx.html#WY86sE">FillCell</a>(<span class="keyword">float</span> stepx, <span class="keyword">float</span> stepy, <span class="keyword">float</span> steptx, <span class="keyword">float</span> stepty)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:SetSegmentErrors" href="src/EdbPVRec.cxx.html#wZ8nB">SetSegmentErrors</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; seg)</span><br />
+<div class="funccomm"><pre> segment errors are depends on the scanning conditions and segment
+ parameters (angles).
+ Puls height is represents segments probability (not accuracy) and should
+ be taken into account separately
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:SetSegmentProbability" href="src/EdbPVRec.cxx.html#ounx3D">SetSegmentProbability</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; seg)</span><br />
+<div class="funccomm"><pre> segment probability is depends on:
+ puls height
+ signal puls distribution
+ noise  puls distribution
+ angles
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:SetSegmentsErrors" href="src/EdbPVRec.cxx.html#kKtr5">SetSegmentsErrors</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:LinkSlow" href="src/EdbPVRec.cxx.html#d3lZUD">LinkSlow</a>()</span><br />
+<div class="funccomm"><pre> link tracks in aligned volume
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:DummyCycle" href="src/EdbPVRec.cxx.html#KPmf7C">DummyCycle</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:Link" href="src/EdbPVRec.cxx.html#hmfpBC">Link</a>()</span><br />
+<div class="funccomm"><pre> link tracks in aligned volume
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:Align" href="src/EdbPVRec.cxx.html#f84kDE">Align</a>(<span class="keyword">int</span> alignFlag)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:AlignPlates" href="src/EdbPVRec.cxx.html#t2wvj">AlignPlates</a>(<a href="./EdbScanSet.html">EdbScanSet</a>&amp; sci, <a href="./EdbScanSet.html">EdbScanSet</a>&amp; sca, <span class="keyword">const</span> <span class="keyword">char</span>* reportdir = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:AlignOld" href="src/EdbPVRec.cxx.html#b.msZD">AlignOld</a>(<span class="keyword">int</span> alignFlag)</span><br />
+<div class="funccomm"><pre> align patterns in volume
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:FillTracksCell" href="src/EdbPVRec.cxx.html#PjQvM">FillTracksCell</a>()</span><br />
+<div class="funccomm"><pre> TODO: speed-up this algorithm
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:FillTracksCellFast" href="src/EdbPVRec.cxx.html#GYF10">FillTracksCellFast</a>()</span><br />
+<div class="funccomm"><pre> fill tracks cell <span class="string">"vid1:vid2"</span>
+ second segment is considered as leading one
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:AddCouplesToTracks" href="src/EdbPVRec.cxx.html#riQeYE">AddCouplesToTracks</a>(<a href="./EdbPatCouple.html">EdbPatCouple</a>* pc, <a href="./TIndex2.html">TIndex2</a>&amp; itracks)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:AddCouplesToTracksM" href="src/EdbPVRec.cxx.html#BTupaB">AddCouplesToTracksM</a>(<a href="./EdbPatCouple.html">EdbPatCouple</a>* pc, <a href="./TIndex2.html">TIndex2</a>&amp; itracks)</span><br />
+<div class="funccomm"><pre> merge segments into clusters
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:FillTracksCell1" href="src/EdbPVRec.cxx.html#SzDOr">FillTracksCell1</a>()</span><br />
+<div class="funccomm"><pre> TODO: speed-up this algorithm
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:FillTracksCell2" href="src/EdbPVRec.cxx.html#O4DOr">FillTracksCell2</a>()</span><br />
+<div class="funccomm"><pre> TODO: speed-up this algorithm
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:CollectSegment" href="src/EdbPVRec.cxx.html#QuAUF">CollectSegment</a>(<a href="./TIndexCell.html">TIndexCell</a>* ct, <a href="./TIndexCell.html">TIndexCell</a>* cross)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:CollectSegment1" href="src/EdbPVRec.cxx.html#Ui.1XC">CollectSegment1</a>(<a href="./TIndexCell.html">TIndexCell</a>* ct, THashList* cross)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:MakeHoles" href="src/EdbPVRec.cxx.html#lLSjdC">MakeHoles</a>(<span class="keyword">int</span> ort)</span><br />
+<div class="funccomm"><pre> holes attached only from the one side corresponding to ort
+ only tracks with nseg&gt;= abs(ort) are extrapolated
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:InsertHole" href="src/EdbPVRec.cxx.html#TC2anB">InsertHole</a>(<span class="keyword">const</span> <a href="./EdbSegP.html">EdbSegP</a>* s1, <span class="keyword">const</span> <a href="./EdbSegP.html">EdbSegP</a>* s2, <span class="keyword">int</span> pid)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:MergeTracks" href="src/EdbPVRec.cxx.html#ds7hbD">MergeTracks</a>(<span class="keyword">int</span> maxgap = 2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:MergeTracks1" href="src/EdbPVRec.cxx.html#KhSP1">MergeTracks1</a>(<span class="keyword">int</span> maxgap)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbPVRec:Chi2Fast" href="src/EdbPVRec.cxx.html#bnwfv">Chi2Fast</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s1, <a href="./EdbSegP.html">EdbSegP</a>&amp; s2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:FitTracks" href="src/EdbPVRec.cxx.html#tY4dRC">FitTracks</a>(<span class="keyword">float</span> p = 10., <span class="keyword">float</span> mass = 0.139, TObjArray* gener = 0, <span class="keyword">int</span> design = 0)</span><br />
+<div class="funccomm"><pre> measurement errors: TODO
+ TODO: move gener logic out from <a href="./EdbPVRec.html">EdbPVRec</a>; i voobshe polnyi bardak v etoi funkzii
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:MakeTracks" href="src/EdbPVRec.cxx.html#x0C9k">MakeTracks</a>(<span class="keyword">int</span> nsegments = 2, <span class="keyword">int</span> flag = 0)</span><br />
+<div class="funccomm"><pre> extract from index_table tracks longer then nsegments
+ and form tracks array
+ assign the flag to the newly created tracks
+ return the number of created tracks
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:FineCorrF" href="src/EdbPVRec.cxx.html#N1Nh.">FineCorrF</a>(<span class="keyword">int</span> ipat, <a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; aff, <a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; afft)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:FineCorrXY" href="src/EdbPVRec.cxx.html#h3db">FineCorrXY</a>(<span class="keyword">int</span> ipat, <a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; aff, <span class="keyword">int</span> flag)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:FineCorrTXTY" href="src/EdbPVRec.cxx.html#PII6jD">FineCorrTXTY</a>(<span class="keyword">int</span> ipat, <a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; aff)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:FineCorrZ" href="src/EdbPVRec.cxx.html#fmxElB">FineCorrZ</a>(<span class="keyword">int</span> ipat, <span class="keyword">float</span>&amp; dz)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:FineCorrZnew" href="src/EdbPVRec.cxx.html#RwkGa">FineCorrZnew</a>()</span><br />
+<div class="funccomm"><pre> calculate z-correction for all patterns based on linked tracks of any length
+ gaps to be ignored...
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:FineCorrShr" href="src/EdbPVRec.cxx.html#EDH6tB">FineCorrShr</a>(<span class="keyword">int</span> ipat, <span class="keyword">float</span>&amp; shr)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:MakeSummaryTracks" href="src/EdbPVRec.cxx.html#QZnTKB">MakeSummaryTracks</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:SelectLongTracks" href="src/EdbPVRec.cxx.html#cyV53B">SelectLongTracks</a>(<span class="keyword">int</span> nsegments)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:CombTracks" href="src/EdbPVRec.cxx.html#atsrYE">CombTracks</a>(<span class="keyword">int</span> nplmin, <span class="keyword">int</span> ngapMax, <span class="keyword">float</span> probMin = 0.01)</span><br />
+<div class="funccomm"><pre> eliminate crossing&amp;overlapping tracks with multiple segments usage
+ discard tracks with probability &lt; probMin
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:SetSegmentsTracks" href="src/EdbPVRec.cxx.html#IVZdCC">SetSegmentsTracks</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:PropagateTracks" href="src/EdbPVRec.cxx.html#KEGKI">PropagateTracks</a>(<span class="keyword">int</span> nplmax, <span class="keyword">int</span> nplmin, <span class="keyword">float</span> probMin = 0.05, <span class="keyword">int</span> ngapMax = 3, <span class="keyword">int</span> design = 0)</span><br />
+<div class="funccomm"><pre>  extrapolate incomplete tracks and update them with new segments
+
+  input: nplmax - the maximal length of the track to be continued
+  input: nplmin - the minimal length of the track to be continued
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:PropagateTrack" href="src/EdbPVRec.cxx.html#zaivQE">PropagateTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr, <span class="keyword">bool</span> followZ, <span class="keyword">float</span> probMin = 0.05, <span class="keyword">int</span> ngapMax = 3, <span class="keyword">int</span> design = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbPVRec:ProbeSeg" href="src/EdbPVRec.cxx.html#ClgPiC">ProbeSeg</a>(<span class="keyword">const</span> <a href="./EdbTrackP.html">EdbTrackP</a>* s1, <a href="./EdbTrackP.html">EdbTrackP</a>* s2, <span class="keyword">const</span> <span class="keyword">float</span> X0 = 5810.)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbPVRec:ProbeSeg@1" href="src/EdbPVRec.cxx.html#w9Mij">ProbeSeg</a>(<span class="keyword">const</span> <a href="./EdbTrackP.html">EdbTrackP</a>* s1, <a href="./EdbSegP.html">EdbSegP</a>* s2, <span class="keyword">const</span> <span class="keyword">float</span> X0 = 5810.)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbPVRec:ProbeSeg@2" href="src/EdbPVRec.cxx.html#d4_aIB">ProbeSeg</a>(<span class="keyword">const</span> <a href="./EdbSegP.html">EdbSegP</a>* s1, <a href="./EdbSegP.html">EdbSegP</a>* s2, <span class="keyword">const</span> <span class="keyword">float</span> X0 = 5810., <span class="keyword">const</span> <span class="keyword">float</span> mass = 0.1396)</span><br />
+<div class="funccomm"><pre> Return value:        Prob: is Chi2 probability (area of the tail of Chi2-distribution)
+                      If we accept couples with Prob &gt;= ProbMin then ProbMin is the
+                      probability to reject the good couple
+
+ The mass and momentum of the tr are used for multiple scattering estimation
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbPVRec:AttachSeg" href="src/EdbPVRec.cxx.html#sgKOX">AttachSeg</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr, <a href="./EdbSegP.html">EdbSegP</a>* s, <span class="keyword">const</span> <span class="keyword">float</span> X0, <span class="keyword">const</span> <span class="keyword">float</span> ProbMin, <span class="keyword">float</span>&amp; prob)</span><br />
+<div class="funccomm"><pre> Return value:        Prob: is Chi2 probability (area of the tail of Chi2-distribution)
+                      If we accept couples with Prob &gt;= ProbMinP then ProbMinP is the
+                      probability to reject the good couple
+
+ The mass and momentum of the tr are used for multiple scattering estimation
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:ExtractDataVolumeSeg" href="src/EdbPVRec.cxx.html#hKzMvB">ExtractDataVolumeSeg</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr, TObjArray&amp; arr, <span class="keyword">float</span> binx, <span class="keyword">float</span> bint)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:ExtractDataVolumeSegAll" href="src/EdbPVRec.cxx.html#OUJSg">ExtractDataVolumeSegAll</a>(TObjArray&amp; arr)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPattern.html">EdbPattern</a>  * <a class="funcname" name="EdbPVRec:GetPatternByPID" href="src/EdbPVRec.cxx.html#w3t1d">GetPatternByPID</a>(<span class="keyword">int</span> pid)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbPVRec:NSeg" href="src/EdbPVRec.cxx.html#THJ3SB">NSeg</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbSegP.html">EdbSegP</a> * <a class="funcname" name="EdbPVRec:AddSegment" href="src/EdbPVRec.cxx.html#UioEGC">AddSegment</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</span><br />
+<div class="funccomm"><pre> add new segment to this
+ create and insert new pattern if needed
+ plate, side and <a href="./EdbPatternsVolume.html#EdbPatternsVolume:Z" title="Float_t EdbPatternsVolume::Z()">Z</a> for the segment should be correctly defined
+ Note: slow function - use for additional segments only as <span class="string">"manual check"</span> etc
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:AddSegments" href="src/EdbPVRec.cxx.html#TOeiT">AddSegments</a>(<a href="./EdbPVRec.html">EdbPVRec</a>&amp; ali)</span><br />
+<div class="funccomm"><pre> copy the segments from ali and add them to this
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:AddSegments@1" href="src/EdbPVRec.cxx.html#K_o5_B">AddSegments</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; track)</span><br />
+<div class="funccomm"><pre> copy the segments from track and add them to this
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:SetScanIDPatSeg" href="src/EdbPVRec.cxx.html#G4vq0">SetScanIDPatSeg</a>(<a href="./EdbID.html">EdbID</a> id)</span><br />
+<div class="funccomm"><pre> set eBrick,eMajor and eMinor for all segments of all volume patterns
+ leave ePlate as is
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:SetScanIDTrackSeg" href="src/EdbPVRec.cxx.html#UDV9OC">SetScanIDTrackSeg</a>(<a href="./EdbID.html">EdbID</a> id)</span><br />
+<div class="funccomm"><pre> set eBrick,eMajor and eMinor for all segments of all volume patterns
+ leave ePlate as is
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:PrintSummary" href="src/EdbPVRec.cxx.html#aIAfqC">PrintSummary</a>()</span><br />
+<div class="funccomm"><pre> <a href="./EdbPatternsVolume.html#EdbPatternsVolume:Print" title="void EdbPatternsVolume::Print()">Print</a> Summary Information of relevant data of this object.
+ Useful for debugging purposes.
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbPVRec:Ncouples" href="src/EdbPVRec.h.html#bxkQL">Ncouples</a>() const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbPVRec:EdbPVRec" href="src/EdbPVRec.h.html#aDO9ZE">EdbPVRec</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:SetScanCond" href="src/EdbPVRec.h.html#rhdi4E">SetScanCond</a>(<a href="./EdbScanCond.html">EdbScanCond</a>* scan)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbPVRec.html#EdbPVRec:eScanCond" title="EdbScanCond* EdbPVRec::eScanCond">eScanCond</a>=scan; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbScanCond.html">EdbScanCond</a> <span class="keyword">const</span> * <a class="funcname" name="EdbPVRec:GetScanCond" href="src/EdbPVRec.h.html#MR6unD">GetScanCond</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbPVRec.html#EdbPVRec:eScanCond" title="EdbScanCond* EdbPVRec::eScanCond">eScanCond</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:SetBinsCheck" href="src/EdbPVRec.h.html#nPS3hC">SetBinsCheck</a>(<span class="keyword">int</span> nx, <span class="keyword">int</span> ny, <span class="keyword">int</span> ntx, <span class="keyword">int</span> nty)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbPVRec.html#EdbPVRec:eVdiff" title="Long_t EdbPVRec::eVdiff">eVdiff</a>[0]=nx; <a href="./EdbPVRec.html#EdbPVRec:eVdiff" title="Long_t EdbPVRec::eVdiff">eVdiff</a>[1]=ny; <a href="./EdbPVRec.html#EdbPVRec:eVdiff" title="Long_t EdbPVRec::eVdiff">eVdiff</a>[2]=ntx; <a href="./EdbPVRec.html#EdbPVRec:eVdiff" title="Long_t EdbPVRec::eVdiff">eVdiff</a>[3]=nty; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPatCouple.html">EdbPatCouple</a> * <a class="funcname" name="EdbPVRec:AddCouple" href="src/EdbPVRec.h.html#wlotxE">AddCouple</a>(<span class="keyword">int</span> id1, <span class="keyword">int</span> id2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:DeleteCouples" href="src/EdbPVRec.h.html#SHo6gE">DeleteCouples</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">if</span>(<a href="./EdbPVRec.html#EdbPVRec:ePatCouples" title="TObjArray* EdbPVRec::ePatCouples">ePatCouples</a>) <a href="./EdbPVRec.html#EdbPVRec:ePatCouples" title="TObjArray* EdbPVRec::ePatCouples">ePatCouples</a>-&gt;<a href="./#TObject:Delete" title="void TObject::Delete(Option_t* option=&quot;&quot;)">Delete</a>(); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbPVRec:Chi2Max" href="src/EdbPVRec.h.html#u5EhwC">Chi2Max</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbPVRec.html#EdbPVRec:eChi2Max" title="float EdbPVRec::eChi2Max">eChi2Max</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:SetChi2Max" href="src/EdbPVRec.h.html#PPpzZD">SetChi2Max</a>(<span class="keyword">float</span> chi)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbPVRec.html#EdbPVRec:eChi2Max" title="float EdbPVRec::eChi2Max">eChi2Max</a>=chi; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPatCouple.html">EdbPatCouple</a>  * <a class="funcname" name="EdbPVRec:GetCouple" href="src/EdbPVRec.h.html#bUlCL">GetCouple</a>(<span class="keyword">int</span> i) const</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./TIndexCell.html">TIndexCell</a> * <a class="funcname" name="EdbPVRec:GetTracksCell" href="src/EdbPVRec.h.html#oiWv6C">GetTracksCell</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbPVRec.html#EdbPVRec:eTracksCell" title="TIndexCell* EdbPVRec::eTracksCell">eTracksCell</a>; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbPVRec:Ntracks" href="src/EdbPVRec.h.html#wOWC9C">Ntracks</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbPVRec.html#EdbPVRec:eTracks" title="TObjArray* EdbPVRec::eTracks">eTracks</a> ? <a href="./EdbPVRec.html#EdbPVRec:eTracks" title="TObjArray* EdbPVRec::eTracks">eTracks</a>-&gt;GetEntriesFast() : 0;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbTrackP.html">EdbTrackP</a>* <a class="funcname" name="EdbPVRec:GetTrack" href="src/EdbPVRec.h.html#akQYUE">GetTrack</a>(<span class="keyword">int</span> i) const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbPVRec.html#EdbPVRec:eTracks" title="TObjArray* EdbPVRec::eTracks">eTracks</a> ? (<a href="./EdbTrackP.html">EdbTrackP</a>*)(<a href="./EdbPVRec.html#EdbPVRec:eTracks" title="TObjArray* EdbPVRec::eTracks">eTracks</a>-&gt;At(i)) : 0;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:AddTrack" href="src/EdbPVRec.h.html#ZjU3IB">AddTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* track)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbPVRec:AddVertex" href="src/EdbPVRec.h.html#q4gHRB">AddVertex</a>(<a href="./EdbVertex.html">EdbVertex</a>* vtx)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbPVRec:Nvtx" href="src/EdbPVRec.h.html#eoSAMD">Nvtx</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbPVRec.html#EdbPVRec:eVTX" title="TObjArray* EdbPVRec::eVTX">eVTX</a> ? <a href="./EdbPVRec.html#EdbPVRec:eVTX" title="TObjArray* EdbPVRec::eVTX">eVTX</a>-&gt;GetEntriesFast() : 0;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbVertex.html">EdbVertex</a> * <a class="funcname" name="EdbPVRec:GetVertex" href="src/EdbPVRec.h.html#q_AOMC">GetVertex</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a>&amp; i)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbPVRec.html#EdbPVRec:eVTX" title="TObjArray* EdbPVRec::eVTX">eVTX</a> ? (<a href="./EdbVertex.html">EdbVertex</a>*)<a href="./EdbPVRec.html#EdbPVRec:eVTX" title="TObjArray* EdbPVRec::eVTX">eVTX</a>-&gt;At(i) : 0;}</code></div>
+<div style="clear:both;"></div>
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:27 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

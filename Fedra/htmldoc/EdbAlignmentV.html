@@ -1,0 +1,568 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:18 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbAlignmentV</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbAlignmentV','','EdbAlignmentV.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbAlignmentV.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbAlignmentV.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbAlignmentV_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbAlignmentV:description">class description</a> 
+<a class="descrheadentry" href="#EdbAlignmentV:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbAlignmentV:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbAlignmentV:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbAlignmentV</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbAlignmentV:description"></a>class EdbAlignmentV: public TObject</h1>
+<div class="classdescr">
+</div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbAlignmentV:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:EdbAlignmentV">EdbAlignmentV</a>()</td></tr>
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:_EdbAlignmentV">~EdbAlignmentV</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:AddSegCouple">AddSegCouple</a>(<a href="./EdbSegP.html">EdbSegP</a>* s1, <a href="./EdbSegP.html">EdbSegP</a>* s2)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:ApplyLimitsOffset">ApplyLimitsOffset</a>(<span class="keyword">float</span>&amp; xmin1, <span class="keyword">float</span>&amp; xmax1, <span class="keyword">float</span>&amp; xmin2, <span class="keyword">float</span>&amp; xmax2, <span class="keyword">float</span> offsetMax)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(TBrowser* b)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:CalcApplyFractMeanDiff">CalcApplyFractMeanDiff</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:CalcApplyMeanDiff">CalcApplyMeanDiff</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:CalcFractMeanDiff">CalcFractMeanDiff</a>(<span class="keyword">int</span> ivar, <span class="keyword">float</span> fraction)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:CalcMeanDiff">CalcMeanDiff</a>(<span class="keyword">int</span> ivar)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:CalcMeanDZ">CalcMeanDZ</a>(<span class="keyword">float</span> tmin = 0.1, <span class="keyword">float</span> tmax = 2.)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:CalcMeanShr">CalcMeanShr</a>(<span class="keyword">float</span> tmin = 0.1, <span class="keyword">float</span> tmax = 2.)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:CalculateAffTXTY">CalculateAffTXTY</a>(<a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; aff)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:CalculateAffTXTY@1">CalculateAffTXTY</a>(TObjArray&amp; arr1, TObjArray&amp; arr2, <a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; aff)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:CalculateAffXY">CalculateAffXY</a>(<a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; aff)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:CalculateAffXY@1">CalculateAffXY</a>(TObjArray&amp; arr1, TObjArray&amp; arr2, <a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; aff)</td></tr>
+<tr class="func"><td class="funcret">static <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:CheckEqualArr">CheckEqualArr</a>(TObjArray&amp; arr1, TObjArray&amp; arr2)</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Clear"><span class="baseclass">TObject::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:Clone"><span class="baseclass">TObject::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:CloseOutputFile">CloseOutputFile</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Compare"><span class="baseclass">TObject::</span>Compare</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Copy"><span class="baseclass">TObject::</span>Copy</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp; object) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:Corr2Aff">Corr2Aff</a>(<a href="./EdbLayer.html">EdbLayer</a>&amp; layer)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:Corr2Aff@1">Corr2Aff</a>(<a href="./EdbSegCorr.html">EdbSegCorr</a>&amp; corr, <a href="./EdbLayer.html">EdbLayer</a>&amp; layer)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:CorrToCoG">CorrToCoG</a>(<span class="keyword">int</span> side, <a href="./EdbPattern.html">EdbPattern</a>&amp; p)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:CorrToCoG@1">CorrToCoG</a>(<span class="keyword">int</span> side, TObjArray&amp; p)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:CoupleQuality">CoupleQuality</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s1, <a href="./EdbSegP.html">EdbSegP</a>&amp; s2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:DefineGuessCell">DefineGuessCell</a>(<span class="keyword">float</span> xmin1, <span class="keyword">float</span> xmax1, <span class="keyword">float</span> ymin1, <span class="keyword">float</span> ymax1, <span class="keyword">float</span> xmin2, <span class="keyword">float</span> xmax2, <span class="keyword">float</span> ymin2, <span class="keyword">float</span> ymax2, <span class="keyword">int</span> np1, <span class="keyword">int</span> np2, <span class="keyword">float</span> binOK)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:DoubletsFilterOut">DoubletsFilterOut</a>(<span class="keyword">int</span> checkview, TH2F* hxy = 0, TH2F* htxty = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(TMethod* method, TObjArray* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:FillCell">FillCell</a>(<span class="keyword">int</span> side, <a href="./EdbPattern.html">EdbPattern</a>&amp; pat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:FillCell@1">FillCell</a>(<span class="keyword">int</span> side, TObjArray&amp; pat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:FillCombinations">FillCombinations</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:FillCombinations@1">FillCombinations</a>(<span class="keyword">float</span>* dv, <span class="keyword">float</span> dxMax, <span class="keyword">float</span> dyMax, <span class="keyword">bool</span> doFill)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:FillGuessCell">FillGuessCell</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; p1, <a href="./EdbPattern.html">EdbPattern</a>&amp; p2, <span class="keyword">float</span> binOK = 1., <span class="keyword">float</span> offsetMax = 2000.)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:FillGuessCell@1">FillGuessCell</a>(TObjArray&amp; p1, TObjArray&amp; p2, <span class="keyword">float</span> binOK = 1., <span class="keyword">float</span> offsetMax = 2000.)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:FillThetaHist">FillThetaHist</a>(<span class="keyword">int</span> side, <a href="./EdbH2.html">EdbH2</a>&amp; htxy)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:FindCorrDiff">FindCorrDiff</a>(<span class="keyword">float</span>* dvsame, <span class="keyword">int</span> side = 0, <span class="keyword">int</span> nlim = 10)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:FindDensityPeak">FindDensityPeak</a>(TArrayF&amp; arr, <span class="keyword">float</span> fraction)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:FindDiff">FindDiff</a>(TObjArray&amp; arr1, TObjArray&amp; arr2, <span class="keyword">float</span>* dvlim, <span class="keyword">float</span>* dvfound)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:FineCorrPhi">FineCorrPhi</a>(TObjArray&amp; sel1, TObjArray&amp; sel2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:FineCorrZ">FineCorrZ</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:FineCorrZ@1">FineCorrZ</a>(TObjArray&amp; sel1, TObjArray&amp; sel2)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetName"><span class="baseclass">TObject::</span>GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetTitle"><span class="baseclass">TObject::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(TTimer* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Hash"><span class="baseclass">TObject::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:HDistance">HDistance</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; p1, <a href="./EdbPattern.html">EdbPattern</a>&amp; p2, <span class="keyword">float</span> dxMax, <span class="keyword">float</span> dyMax)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> TClass* cl) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:InitHphi">InitHphi</a>(<span class="keyword">int</span> n, <span class="keyword">float</span> min, <span class="keyword">float</span> max)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:InitHshr0">InitHshr0</a>(<span class="keyword">int</span> n, <span class="keyword">float</span> min, <span class="keyword">float</span> max)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:InitHshr1">InitHshr1</a>(<span class="keyword">int</span> n, <span class="keyword">float</span> min, <span class="keyword">float</span> max)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:InitHx">InitHx</a>(<span class="keyword">int</span> n, <span class="keyword">float</span> min, <span class="keyword">float</span> max)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:InitHy">InitHy</a>(<span class="keyword">int</span> n, <span class="keyword">float</span> min, <span class="keyword">float</span> max)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:InitHz">InitHz</a>(<span class="keyword">int</span> n, <span class="keyword">float</span> min, <span class="keyword">float</span> max)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:InitOutputFile">InitOutputFile</a>(<span class="keyword">const</span> <span class="keyword">char</span>* file = <span class="string">"report_al.root"</span>, <span class="keyword">const</span> <span class="keyword">char</span>* option = <span class="string">"RECREATE"</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:InitPatCellBin">InitPatCellBin</a>(<span class="keyword">int</span> side, <a href="./EdbPattern.html">EdbPattern</a>&amp; pat, <span class="keyword">float</span> binx, <span class="keyword">float</span> biny)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:InitPatCellN">InitPatCellN</a>(<a href="./EdbCell2.html">EdbCell2</a>&amp; cell, <a href="./EdbPattern.html">EdbPattern</a>&amp; pat, <span class="keyword">int</span> nx, <span class="keyword">int</span> ny)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:IsInsideDVsame">IsInsideDVsame</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s1, <a href="./EdbSegP.html">EdbSegP</a>&amp; s2)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsSortable"><span class="baseclass">TObject::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ls"><span class="baseclass">TObject::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:Ncoins">Ncoins</a>(<span class="keyword">float</span>* dvlim, <a href="./EdbH2.html">EdbH2</a>* hdxy = 0, <a href="./EdbH2.html">EdbH2</a>* hdtxty = 0, TObjArray* sel1 = 0, TObjArray* sel2 = 0)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:Ncp">Ncp</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp;</td><td class="funcname"><a class="funcname" href="#TObject:operator_"><span class="baseclass">TObject::</span>operator=</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp; rhs)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:OptimiseVar1">OptimiseVar1</a>(<span class="keyword">int</span> side, <span class="keyword">int</span> ivar, <a href="./EdbH2.html">EdbH2</a>* hdxy = 0, <a href="./EdbH2.html">EdbH2</a>* hdtxy = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:OptimiseVar2">OptimiseVar2</a>(<span class="keyword">int</span> side1, <span class="keyword">int</span> ivar1, <span class="keyword">int</span> side2, <span class="keyword">int</span> ivar2, <a href="./EdbH2.html">EdbH2</a>&amp; h12, <a href="./EdbH2.html">EdbH2</a>* hdxy = 0, <a href="./EdbH2.html">EdbH2</a>* hdtxty = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Print"><span class="baseclass">TObject::</span>Print</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:SelectBestCouple">SelectBestCouple</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:SelectIsolated">SelectIsolated</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:SideOK">SideOK</a>(<span class="keyword">int</span> side)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:StrDVsame">StrDVsame</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:TX">TX</a>(<span class="keyword">int</span> side, <a href="./EdbSegP.html">EdbSegP</a>&amp; s)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:TY">TY</a>(<span class="keyword">int</span> side, <a href="./EdbSegP.html">EdbSegP</a>&amp; s)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="func"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:ValidCoinsidence">ValidCoinsidence</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s1, <a href="./EdbSegP.html">EdbSegP</a>&amp; s2, <span class="keyword">float</span>* dvlim, <span class="keyword">float</span>* dvfound)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:Var">Var</a>(<span class="keyword">int</span> side, <a href="./EdbSegP.html">EdbSegP</a>&amp; s, <span class="keyword">int</span> ivar)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:Var@1">Var</a>(<span class="keyword">int</span> side, <span class="keyword">int</span> iseg, <span class="keyword">int</span> ivar)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:X">X</a>(<span class="keyword">int</span> side, <a href="./EdbSegP.html">EdbSegP</a>&amp; s)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:Xmax">Xmax</a>(<span class="keyword">int</span> side, <a href="./EdbPattern.html">EdbPattern</a>&amp; p)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:Xmax@1">Xmax</a>(<span class="keyword">int</span> side, TObjArray&amp; p)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:Xmin">Xmin</a>(<span class="keyword">int</span> side, <a href="./EdbPattern.html">EdbPattern</a>&amp; p)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:Xmin@1">Xmin</a>(<span class="keyword">int</span> side, TObjArray&amp; p)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:Y">Y</a>(<span class="keyword">int</span> side, <a href="./EdbSegP.html">EdbSegP</a>&amp; s)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:Ymax">Ymax</a>(<span class="keyword">int</span> side, <a href="./EdbPattern.html">EdbPattern</a>&amp; p)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:Ymax@1">Ymax</a>(<span class="keyword">int</span> side, TObjArray&amp; p)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:Ymin">Ymin</a>(<span class="keyword">int</span> side, <a href="./EdbPattern.html">EdbPattern</a>&amp; p)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbAlignmentV:Ymin@1">Ymin</a>(<span class="keyword">int</span> side, TObjArray&amp; p)</td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, va_list va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbAlignmentV:Data_Members"></a>Data Members</h2>
+<div class="access" id="enumpubl"><b>public:</b>
+<table class="data" id="tabenumpubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span>EStatusBits { </td><td class="dataname"><a href="#TObject:kCanDelete">kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kMustCleanup">kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kObjInCanvas">kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kIsReferenced">kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kHasUUID">kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kCannotPick">kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNoContextMenu">kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kInvalidObject">kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span><i>[unnamed]</i> { </td><td class="dataname"><a href="#TObject:kIsOnHeap">kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNotDeleted">kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kZombie">kZombie</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kBitMask">kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kSingleKey">kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kOverwrite">kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kWriteDelete">kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="data"><td class="datatype"><a href="./EdbSegCorr.html">EdbSegCorr</a></td><td class="dataname"><a name="EdbAlignmentV:eCorr"></a>eCorr[2]</td><td class="datadesc">corrections for side 1 and 2 (v[7]) - the result of the alignment</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbLayer.html">EdbLayer</a></td><td class="dataname"><a name="EdbAlignmentV:eCorrL"></a>eCorrL[2]</td><td class="datadesc">corrections in form of affine transformations - the final output</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbAlignmentV:eDVsame"></a>eDVsame[4]</td><td class="datadesc">(dx,dy,dtx,dty) condition for the coinsidence</td></tr>
+<tr class="data"><td class="datatype">TH1I*</td><td class="dataname"><a name="EdbAlignmentV:eDoubletsRate"></a>eDoubletsRate</td><td class="datadesc">can be filled in FillCombinations()</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbH1.html">EdbH1</a></td><td class="dataname"><a name="EdbAlignmentV:eH"></a>eH[2][7]</td><td class="datadesc">conditions for the selection procedure for each var of each side</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbH2.html">EdbH2</a></td><td class="dataname"><a name="EdbAlignmentV:eHxy"></a>eHxy</td><td class="datadesc">position 2d histo to be used in OptimiseVar2</td></tr>
+<tr class="data"><td class="datatype">TFile*</td><td class="dataname"><a name="EdbAlignmentV:eOutputFile"></a>eOutputFile</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbCell2.html">EdbCell2</a></td><td class="dataname"><a name="EdbAlignmentV:ePC"></a>ePC[2]</td><td class="datadesc">2-d position cells with patterns segments</td></tr>
+<tr class="data"><td class="datatype">TObjArray</td><td class="dataname"><a name="EdbAlignmentV:eS"></a>eS[2]</td><td class="datadesc">"parallel" arrays with the selected combinations of segments</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="dataname"><a name="EdbAlignmentV:eUseAffCorr"></a>eUseAffCorr</td><td class="datadesc">if "true" - use eCorrL for corrections</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbAlignmentV:eXmarg"></a>eXmarg</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbAlignmentV:eYmarg"></a>eYmarg</td><td class="datadesc">margins for the cell definition</td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbAlignmentV:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td><table><tr>
+<td bgcolor="#f7f7f7" align="right">
+<tt>TObject</tt></td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><big><b><tt><a name="EdbAlignmentV" href="./EdbAlignmentV.html">EdbAlignmentV</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td>&larr;</td><td><table><tr>
+<td bgcolor="#f7f7f7"><table><tr><td>
+<center><tt><a name="EdbLinking" href="./EdbLinking.html">EdbLinking</a></tt></center></td>
+<td></td>
+</tr></table></td>
+</tr><tr>
+<td bgcolor="#f7f7f7"><table><tr><td>
+<center><tt><a name="EdbPlateAlignment" href="./EdbPlateAlignment.html">EdbPlateAlignment</a></tt></center></td>
+<td></td>
+</tr></table></td>
+</tr></table></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbAlignmentV:EdbAlignmentV" href="src/EdbAlignmentV.cxx.html#CPHLQD">EdbAlignmentV</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbAlignmentV:_EdbAlignmentV" href="src/EdbAlignmentV.cxx.html#jRt4eB">~EdbAlignmentV</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:InitOutputFile" href="src/EdbAlignmentV.cxx.html#pSMZ3C">InitOutputFile</a>(<span class="keyword">const</span> <span class="keyword">char</span>* file = <span class="string">"report_al.root"</span>, <span class="keyword">const</span> <span class="keyword">char</span>* option = <span class="string">"RECREATE"</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:CloseOutputFile" href="src/EdbAlignmentV.cxx.html#G1zjrD">CloseOutputFile</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="EdbAlignmentV:IsInsideDVsame" href="src/EdbAlignmentV.cxx.html#qXkwd">IsInsideDVsame</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s1, <a href="./EdbSegP.html">EdbSegP</a>&amp; s2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbAlignmentV:DoubletsFilterOut" href="src/EdbAlignmentV.cxx.html#rVvBFB">DoubletsFilterOut</a>(<span class="keyword">int</span> checkview, TH2F* hxy = 0, TH2F* htxty = 0)</span><br />
+<div class="funccomm"><pre> assumed the same pattern's segments in <a href="./EdbAlignmentV.html#EdbAlignmentV:eS" title="TObjArray EdbAlignmentV::eS">eS</a>[0] and <a href="./EdbAlignmentV.html#EdbAlignmentV:eS" title="TObjArray EdbAlignmentV::eS">eS</a>[1]
+ checkview = 0 do not check if close tracks belongs to different views
+ checkview = 1 check views, select best and cancel the worst candidate
+ checkview = 2 check views but do not cancell worst candidate (debug option)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbAlignmentV:SelectIsolated" href="src/EdbAlignmentV.cxx.html#mHiP_D">SelectIsolated</a>()</span><br />
+<div class="funccomm"><pre> assume the different pattern's segments in <a href="./EdbAlignmentV.html#EdbAlignmentV:eS" title="TObjArray EdbAlignmentV::eS">eS</a>[0] and <a href="./EdbAlignmentV.html#EdbAlignmentV:eS" title="TObjArray EdbAlignmentV::eS">eS</a>[1]
+ assume that the selection method in <a href="./EdbAlignmentV.html#EdbAlignmentV:FillCombinations" title="int EdbAlignmentV::FillCombinations() or overloads">FillCombinations</a> - <span class="string">"first s1 then s2"</span>
+ remove all duplicated combs
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbAlignmentV:SelectBestCouple" href="src/EdbAlignmentV.cxx.html#WKpumD">SelectBestCouple</a>()</span><br />
+<div class="funccomm"><pre> assume the different pattern's segments in <a href="./EdbAlignmentV.html#EdbAlignmentV:eS" title="TObjArray EdbAlignmentV::eS">eS</a>[0] and <a href="./EdbAlignmentV.html#EdbAlignmentV:eS" title="TObjArray EdbAlignmentV::eS">eS</a>[1]
+ assume that the selection method in <a href="./EdbAlignmentV.html#EdbAlignmentV:FillCombinations" title="int EdbAlignmentV::FillCombinations() or overloads">FillCombinations</a> - <span class="string">"first s1 then s2"</span>
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbAlignmentV:CoupleQuality" href="src/EdbAlignmentV.cxx.html#fSLbAC">CoupleQuality</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s1, <a href="./EdbSegP.html">EdbSegP</a>&amp; s2)</span><br />
+<div class="funccomm"><pre> TODO
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:FillThetaHist" href="src/EdbAlignmentV.cxx.html#pGJw1E">FillThetaHist</a>(<span class="keyword">int</span> side, <a href="./EdbH2.html">EdbH2</a>&amp; htxy)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbAlignmentV:FillCombinations" href="src/EdbAlignmentV.cxx.html#NUhqRB">FillCombinations</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbAlignmentV:FillCombinations@1" href="src/EdbAlignmentV.cxx.html#gcvXXC">FillCombinations</a>(<span class="keyword">float</span>* dv, <span class="keyword">float</span> dxMax, <span class="keyword">float</span> dyMax, <span class="keyword">bool</span> doFill)</span><br />
+<div class="funccomm"><pre> input:  dv = coinsidence condition (dx,dy,dtx,dty)
+         dxMax, dyMax - the area around each segment for the combinations
+         selection, it can be selected bigger then coinsidence condition due to
+         corrections displacements
+
+ the cells must be already filled
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbAlignmentV:OptimiseVar1" href="src/EdbAlignmentV.cxx.html#fjV_MB">OptimiseVar1</a>(<span class="keyword">int</span> side, <span class="keyword">int</span> ivar, <a href="./EdbH2.html">EdbH2</a>* hdxy = 0, <a href="./EdbH2.html">EdbH2</a>* hdtxy = 0)</span><br />
+<div class="funccomm"><pre> use already preselected <span class="string">"couples"</span> - useful to test small variations of parameters
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:OptimiseVar2" href="src/EdbAlignmentV.cxx.html#a3AqjD">OptimiseVar2</a>(<span class="keyword">int</span> side1, <span class="keyword">int</span> ivar1, <span class="keyword">int</span> side2, <span class="keyword">int</span> ivar2, <a href="./EdbH2.html">EdbH2</a>&amp; h12, <a href="./EdbH2.html">EdbH2</a>* hdxy = 0, <a href="./EdbH2.html">EdbH2</a>* hdtxty = 0)</span><br />
+<div class="funccomm"><pre> use already preselected <span class="string">"couples"</span> - useful to test small variations of parameters
+ especially after Hdistance preselection
+ Input:    2 variables defoned as side1/ivar1 and side1/ivar1
+ Output:   h12 - filled selections histo
+ Optional: hdxy, hdtxy - 2d- histograms defined outside and used for the peak selection
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbAlignmentV:SideOK" href="src/EdbAlignmentV.cxx.html#tl4PXB">SideOK</a>(<span class="keyword">int</span> side)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbAlignmentV:CheckEqualArr" href="src/EdbAlignmentV.cxx.html#SW.hnC">CheckEqualArr</a>(TObjArray&amp; arr1, TObjArray&amp; arr2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a> <a class="funcname" name="EdbAlignmentV:FineCorrZ@1" href="src/EdbAlignmentV.cxx.html#x.tuC">FineCorrZ</a>(TObjArray&amp; sel1, TObjArray&amp; sel2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:CorrToCoG" href="src/EdbAlignmentV.cxx.html#R1L2wB">CorrToCoG</a>(<span class="keyword">int</span> side, <a href="./EdbPattern.html">EdbPattern</a>&amp; p)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:CorrToCoG@1" href="src/EdbAlignmentV.cxx.html#P4Sv5C">CorrToCoG</a>(<span class="keyword">int</span> side, TObjArray&amp; p)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a> <a class="funcname" name="EdbAlignmentV:FineCorrPhi" href="src/EdbAlignmentV.cxx.html#f1SzPB">FineCorrPhi</a>(TObjArray&amp; sel1, TObjArray&amp; sel2)</span><br />
+<div class="funccomm"><pre> for the correct answer the O,O should be in the CoG of the second pattern
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a> <a class="funcname" name="EdbAlignmentV:CalcMeanShr" href="src/EdbAlignmentV.cxx.html#CfNylE">CalcMeanShr</a>(<span class="keyword">float</span> tmin = 0.1, <span class="keyword">float</span> tmax = 2.)</span><br />
+<div class="funccomm"><pre>  Calculate mean shrinkage (to be applied to side 0 to get side 1)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a> <a class="funcname" name="EdbAlignmentV:CalcMeanDZ" href="src/EdbAlignmentV.cxx.html#zLbZAB">CalcMeanDZ</a>(<span class="keyword">float</span> tmin = 0.1, <span class="keyword">float</span> tmax = 2.)</span><br />
+<div class="funccomm"><pre>  Calculate mean shrinkage (to be applied to side 0 to get side 1)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a> <a class="funcname" name="EdbAlignmentV:CalcMeanDiff" href="src/EdbAlignmentV.cxx.html#Ka5djE">CalcMeanDiff</a>(<span class="keyword">int</span> ivar)</span><br />
+<div class="funccomm"><pre>  Calculate mean difference for the given variable taking into account corrections
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a> <a class="funcname" name="EdbAlignmentV:CalcFractMeanDiff" href="src/EdbAlignmentV.cxx.html#gC56FB">CalcFractMeanDiff</a>(<span class="keyword">int</span> ivar, <span class="keyword">float</span> fraction)</span><br />
+<div class="funccomm"><pre>  Calculate mean difference for the highest density region
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Float_t">Float_t</a> <a class="funcname" name="EdbAlignmentV:FindDensityPeak" href="src/EdbAlignmentV.cxx.html#lydw">FindDensityPeak</a>(TArrayF&amp; arr, <span class="keyword">float</span> fraction)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbAlignmentV:CalcApplyFractMeanDiff" href="src/EdbAlignmentV.cxx.html#w9sWQ">CalcApplyFractMeanDiff</a>()</span><br />
+<div class="funccomm"><pre> by default apply it to side 0
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbAlignmentV:CalcApplyMeanDiff" href="src/EdbAlignmentV.cxx.html#i2njGD">CalcApplyMeanDiff</a>()</span><br />
+<div class="funccomm"><pre> by default apply it to side 0
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbAlignmentV:FindCorrDiff" href="src/EdbAlignmentV.cxx.html#g2cj0C">FindCorrDiff</a>(<span class="keyword">float</span>* dvsame, <span class="keyword">int</span> side = 0, <span class="keyword">int</span> nlim = 10)</span><br />
+<div class="funccomm"><pre>find diffs with the default settings and correct requested side
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbAlignmentV:FindDiff" href="src/EdbAlignmentV.cxx.html#o1kevC">FindDiff</a>(TObjArray&amp; arr1, TObjArray&amp; arr2, <span class="keyword">float</span>* dvlim, <span class="keyword">float</span>* dvfound)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Bool_t">Bool_t</a> <a class="funcname" name="EdbAlignmentV:ValidCoinsidence" href="src/EdbAlignmentV.cxx.html#AkaUJC">ValidCoinsidence</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s1, <a href="./EdbSegP.html">EdbSegP</a>&amp; s2, <span class="keyword">float</span>* dvlim, <span class="keyword">float</span>* dvfound)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbAlignmentV:Ncoins" href="src/EdbAlignmentV.cxx.html#dZhfcD">Ncoins</a>(<span class="keyword">float</span>* dvlim, <a href="./EdbH2.html">EdbH2</a>* hdxy = 0, <a href="./EdbH2.html">EdbH2</a>* hdtxty = 0, TObjArray* sel1 = 0, TObjArray* sel2 = 0)</span><br />
+<div class="funccomm"><pre> calculate all coinsidences inside dv:(dx,dy, dtx,dty)
+ fill position and angular 2-d plots if requested
+ fill arrays with selected segments sel1, sel2 if requested
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:HDistance" href="src/EdbAlignmentV.cxx.html#SIs5AD">HDistance</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; p1, <a href="./EdbPattern.html">EdbPattern</a>&amp; p2, <span class="keyword">float</span> dxMax, <span class="keyword">float</span> dyMax)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:InitPatCellN" href="src/EdbAlignmentV.cxx.html#AVGjVE">InitPatCellN</a>(<a href="./EdbCell2.html">EdbCell2</a>&amp; cell, <a href="./EdbPattern.html">EdbPattern</a>&amp; pat, <span class="keyword">int</span> nx, <span class="keyword">int</span> ny)</span><br />
+<div class="funccomm"><pre> note: no correction (do we need tis function?)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:InitPatCellBin" href="src/EdbAlignmentV.cxx.html#mkQD6B">InitPatCellBin</a>(<span class="keyword">int</span> side, <a href="./EdbPattern.html">EdbPattern</a>&amp; pat, <span class="keyword">float</span> binx, <span class="keyword">float</span> biny)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:ApplyLimitsOffset" href="src/EdbAlignmentV.cxx.html#blX44C">ApplyLimitsOffset</a>(<span class="keyword">float</span>&amp; xmin1, <span class="keyword">float</span>&amp; xmax1, <span class="keyword">float</span>&amp; xmin2, <span class="keyword">float</span>&amp; xmax2, <span class="keyword">float</span> offsetMax)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:DefineGuessCell" href="src/EdbAlignmentV.cxx.html#YGSDcB">DefineGuessCell</a>(<span class="keyword">float</span> xmin1, <span class="keyword">float</span> xmax1, <span class="keyword">float</span> ymin1, <span class="keyword">float</span> ymax1, <span class="keyword">float</span> xmin2, <span class="keyword">float</span> xmax2, <span class="keyword">float</span> ymin2, <span class="keyword">float</span> ymax2, <span class="keyword">int</span> np1, <span class="keyword">int</span> np2, <span class="keyword">float</span> binOK)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:FillGuessCell" href="src/EdbAlignmentV.cxx.html#RRGLJB">FillGuessCell</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; p1, <a href="./EdbPattern.html">EdbPattern</a>&amp; p2, <span class="keyword">float</span> binOK = 1., <span class="keyword">float</span> offsetMax = 2000.)</span><br />
+<div class="funccomm"><pre> binOK - is the mean number of entries requested per bin
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:FillGuessCell@1" href="src/EdbAlignmentV.cxx.html#YnexWE">FillGuessCell</a>(TObjArray&amp; p1, TObjArray&amp; p2, <span class="keyword">float</span> binOK = 1., <span class="keyword">float</span> offsetMax = 2000.)</span><br />
+<div class="funccomm"><pre> binOK - is the mean number of entries requested per bin
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:FillCell" href="src/EdbAlignmentV.cxx.html#YkonN">FillCell</a>(<span class="keyword">int</span> side, <a href="./EdbPattern.html">EdbPattern</a>&amp; pat)</span><br />
+<div class="funccomm"><pre> assume that the cell is already initialized
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:FillCell@1" href="src/EdbAlignmentV.cxx.html#hAWcP">FillCell</a>(<span class="keyword">int</span> side, TObjArray&amp; pat)</span><br />
+<div class="funccomm"><pre> assume that the cell is already initialized
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbAlignmentV:CalculateAffXY@1" href="src/EdbAlignmentV.cxx.html#t.gKs">CalculateAffXY</a>(TObjArray&amp; arr1, TObjArray&amp; arr2, <a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; aff)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbAlignmentV:CalculateAffTXTY@1" href="src/EdbAlignmentV.cxx.html#izMiIC">CalculateAffTXTY</a>(TObjArray&amp; arr1, TObjArray&amp; arr2, <a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; aff)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:Corr2Aff@1" href="src/EdbAlignmentV.cxx.html#PezlyB">Corr2Aff</a>(<a href="./EdbSegCorr.html">EdbSegCorr</a>&amp; corr, <a href="./EdbLayer.html">EdbLayer</a>&amp; layer)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:Corr2Aff" href="src/EdbAlignmentV.cxx.html#f7WDBC">Corr2Aff</a>(<a href="./EdbLayer.html">EdbLayer</a>&amp; layer)</span><br />
+<div class="funccomm"><pre>  <a href="./EdbAffine2D.html">EdbAffine2D</a> &amp;a0 = *(layer.GetAffineXY());
+  a0.Reset();
+  a0.ShiftX(  <a href="./EdbAlignmentV.html#EdbAlignmentV:eCorr" title="EdbSegCorr EdbAlignmentV::eCorr">eCorr</a>[0].<a href="./EdbSegCorr.html#EdbSegCorr:V" title="float EdbSegCorr::V(int i)">V</a>(0) );  a0.ShiftY( <a href="./EdbAlignmentV.html#EdbAlignmentV:eCorr" title="EdbSegCorr EdbAlignmentV::eCorr">eCorr</a>[0].<a href="./EdbSegCorr.html#EdbSegCorr:V" title="float EdbSegCorr::V(int i)">V</a>(1) );
+  a0.Rotate(  <a href="./EdbAlignmentV.html#EdbAlignmentV:eCorr" title="EdbSegCorr EdbAlignmentV::eCorr">eCorr</a>[0].<a href="./EdbSegCorr.html#EdbSegCorr:V" title="float EdbSegCorr::V(int i)">V</a>(6) );
+  a0.ShiftX( -<a href="./EdbAlignmentV.html#EdbAlignmentV:eCorr" title="EdbSegCorr EdbAlignmentV::eCorr">eCorr</a>[1].<a href="./EdbSegCorr.html#EdbSegCorr:V" title="float EdbSegCorr::V(int i)">V</a>(0) );  a0.ShiftY( -<a href="./EdbAlignmentV.html#EdbAlignmentV:eCorr" title="EdbSegCorr EdbAlignmentV::eCorr">eCorr</a>[1].<a href="./EdbSegCorr.html#EdbSegCorr:V" title="float EdbSegCorr::V(int i)">V</a>(1) );
+  layer.SetShrinkage( <a href="./EdbAlignmentV.html#EdbAlignmentV:eCorr" title="EdbSegCorr EdbAlignmentV::eCorr">eCorr</a>[0].<a href="./EdbSegCorr.html#EdbSegCorr:V" title="float EdbSegCorr::V(int i)">V</a>(5) );
+layer.SetZcorr(     <a href="./EdbAlignmentV.html#EdbAlignmentV:eCorr" title="EdbSegCorr EdbAlignmentV::eCorr">eCorr</a>[0].<a href="./EdbSegCorr.html#EdbSegCorr:V" title="float EdbSegCorr::V(int i)">V</a>(2) );
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbAlignmentV:Xmin" href="src/EdbAlignmentV.cxx.html#epY4TE">Xmin</a>(<span class="keyword">int</span> side, <a href="./EdbPattern.html">EdbPattern</a>&amp; p)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbAlignmentV:Xmax" href="src/EdbAlignmentV.cxx.html#gEZ4TE">Xmax</a>(<span class="keyword">int</span> side, <a href="./EdbPattern.html">EdbPattern</a>&amp; p)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbAlignmentV:Ymin" href="src/EdbAlignmentV.cxx.html#CM26TE">Ymin</a>(<span class="keyword">int</span> side, <a href="./EdbPattern.html">EdbPattern</a>&amp; p)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbAlignmentV:Ymax" href="src/EdbAlignmentV.cxx.html#En26TE">Ymax</a>(<span class="keyword">int</span> side, <a href="./EdbPattern.html">EdbPattern</a>&amp; p)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbAlignmentV:Xmin@1" href="src/EdbAlignmentV.cxx.html#axq.3">Xmin</a>(<span class="keyword">int</span> side, TObjArray&amp; p)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbAlignmentV:Xmax@1" href="src/EdbAlignmentV.cxx.html#Ilq.3">Xmax</a>(<span class="keyword">int</span> side, TObjArray&amp; p)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbAlignmentV:Ymin@1" href="src/EdbAlignmentV.cxx.html#CPN93">Ymin</a>(<span class="keyword">int</span> side, TObjArray&amp; p)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbAlignmentV:Ymax@1" href="src/EdbAlignmentV.cxx.html#kCN93">Ymax</a>(<span class="keyword">int</span> side, TObjArray&amp; p)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:InitHx" href="src/EdbAlignmentV.h.html#bGWw6D">InitHx</a>(<span class="keyword">int</span> n, <span class="keyword">float</span> min, <span class="keyword">float</span> max)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbAlignmentV.html#EdbAlignmentV:eH" title="EdbH1 EdbAlignmentV::eH">eH</a>[0][0].<a href="./EdbH1.html#EdbH1:InitH1" title="int EdbH1::InitH1(const EdbH1&amp; h) or overloads">InitH1</a>(n, min, max); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:InitHy" href="src/EdbAlignmentV.h.html#vtuXTD">InitHy</a>(<span class="keyword">int</span> n, <span class="keyword">float</span> min, <span class="keyword">float</span> max)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbAlignmentV.html#EdbAlignmentV:eH" title="EdbH1 EdbAlignmentV::eH">eH</a>[0][1].<a href="./EdbH1.html#EdbH1:InitH1" title="int EdbH1::InitH1(const EdbH1&amp; h) or overloads">InitH1</a>(n, min, max); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:InitHz" href="src/EdbAlignmentV.h.html#rypcO">InitHz</a>(<span class="keyword">int</span> n, <span class="keyword">float</span> min, <span class="keyword">float</span> max)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbAlignmentV.html#EdbAlignmentV:eH" title="EdbH1 EdbAlignmentV::eH">eH</a>[0][2].<a href="./EdbH1.html#EdbH1:InitH1" title="int EdbH1::InitH1(const EdbH1&amp; h) or overloads">InitH1</a>(n, min, max); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:InitHphi" href="src/EdbAlignmentV.h.html#vtmNdB">InitHphi</a>(<span class="keyword">int</span> n, <span class="keyword">float</span> min, <span class="keyword">float</span> max)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbAlignmentV.html#EdbAlignmentV:eH" title="EdbH1 EdbAlignmentV::eH">eH</a>[0][6].<a href="./EdbH1.html#EdbH1:InitH1" title="int EdbH1::InitH1(const EdbH1&amp; h) or overloads">InitH1</a>(n, min, max); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:InitHshr0" href="src/EdbAlignmentV.h.html#vtGMYE">InitHshr0</a>(<span class="keyword">int</span> n, <span class="keyword">float</span> min, <span class="keyword">float</span> max)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbAlignmentV.html#EdbAlignmentV:eH" title="EdbH1 EdbAlignmentV::eH">eH</a>[0][5].<a href="./EdbH1.html#EdbH1:InitH1" title="int EdbH1::InitH1(const EdbH1&amp; h) or overloads">InitH1</a>(n, min, max); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:InitHshr1" href="src/EdbAlignmentV.h.html#zozLYE">InitHshr1</a>(<span class="keyword">int</span> n, <span class="keyword">float</span> min, <span class="keyword">float</span> max)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbAlignmentV.html#EdbAlignmentV:eH" title="EdbH1 EdbAlignmentV::eH">eH</a>[1][5].<a href="./EdbH1.html#EdbH1:InitH1" title="int EdbH1::InitH1(const EdbH1&amp; h) or overloads">InitH1</a>(n, min, max); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">char</span>   * <a class="funcname" name="EdbAlignmentV:StrDVsame" href="src/EdbAlignmentV.h.html#yVBnO">StrDVsame</a>() const</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> Form(<span class="string">"%7.2f %7.2f %8.5f %8.5f"</span>,<a href="./EdbAlignmentV.html#EdbAlignmentV:eDVsame" title="Float_t EdbAlignmentV::eDVsame">eDVsame</a>[0],<a href="./EdbAlignmentV.html#EdbAlignmentV:eDVsame" title="Float_t EdbAlignmentV::eDVsame">eDVsame</a>[1],<a href="./EdbAlignmentV.html#EdbAlignmentV:eDVsame" title="Float_t EdbAlignmentV::eDVsame">eDVsame</a>[2],<a href="./EdbAlignmentV.html#EdbAlignmentV:eDVsame" title="Float_t EdbAlignmentV::eDVsame">eDVsame</a>[3]); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbAlignmentV:Ncp" href="src/EdbAlignmentV.h.html#WNGTz">Ncp</a>()</span><br />
+<div class="funccomm"><pre>  Functions applied to the selected parallel arrays
+</pre></div>
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span>  <a href="./EdbAlignmentV.html#EdbAlignmentV:CheckEqualArr" title="Int_t EdbAlignmentV::CheckEqualArr(TObjArray&amp; arr1,TObjArray&amp; arr2)">CheckEqualArr</a>( <a href="./EdbAlignmentV.html#EdbAlignmentV:eS" title="TObjArray EdbAlignmentV::eS">eS</a>[0], <a href="./EdbAlignmentV.html#EdbAlignmentV:eS" title="TObjArray EdbAlignmentV::eS">eS</a>[1]); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbAlignmentV:AddSegCouple" href="src/EdbAlignmentV.h.html#qxeh0D">AddSegCouple</a>(<a href="./EdbSegP.html">EdbSegP</a>* s1, <a href="./EdbSegP.html">EdbSegP</a>* s2)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbAlignmentV.html#EdbAlignmentV:eS" title="TObjArray EdbAlignmentV::eS">eS</a>[0].Add(s1); <a href="./EdbAlignmentV.html#EdbAlignmentV:eS" title="TObjArray EdbAlignmentV::eS">eS</a>[1].Add(s2); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbAlignmentV:FineCorrZ" href="src/EdbAlignmentV.h.html#RyZwmE">FineCorrZ</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbAlignmentV.html#EdbAlignmentV:FineCorrZ" title="float EdbAlignmentV::FineCorrZ() or overloads">FineCorrZ</a>(<a href="./EdbAlignmentV.html#EdbAlignmentV:eS" title="TObjArray EdbAlignmentV::eS">eS</a>[0], <a href="./EdbAlignmentV.html#EdbAlignmentV:eS" title="TObjArray EdbAlignmentV::eS">eS</a>[1]); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbAlignmentV:CalculateAffXY" href="src/EdbAlignmentV.h.html#dF5ThE">CalculateAffXY</a>(<a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; aff)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbAlignmentV.html#EdbAlignmentV:CalculateAffXY" title="Int_t EdbAlignmentV::CalculateAffXY(EdbAffine2D&amp; aff) or overloads">CalculateAffXY</a>( <a href="./EdbAlignmentV.html#EdbAlignmentV:eS" title="TObjArray EdbAlignmentV::eS">eS</a>[0], <a href="./EdbAlignmentV.html#EdbAlignmentV:eS" title="TObjArray EdbAlignmentV::eS">eS</a>[1], aff);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./ListOfTypes.html#Int_t">Int_t</a> <a class="funcname" name="EdbAlignmentV:CalculateAffTXTY" href="src/EdbAlignmentV.h.html#cD18JB">CalculateAffTXTY</a>(<a href="./EdbAffine2D.html">EdbAffine2D</a>&amp; aff)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbAlignmentV.html#EdbAlignmentV:CalculateAffTXTY" title="Int_t EdbAlignmentV::CalculateAffTXTY(EdbAffine2D&amp; aff) or overloads">CalculateAffTXTY</a>( <a href="./EdbAlignmentV.html#EdbAlignmentV:eS" title="TObjArray EdbAlignmentV::eS">eS</a>[0], <a href="./EdbAlignmentV.html#EdbAlignmentV:eS" title="TObjArray EdbAlignmentV::eS">eS</a>[1], aff);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbAlignmentV:X" href="src/EdbAlignmentV.h.html#uVOeXD">X</a>(<span class="keyword">int</span> side, <a href="./EdbSegP.html">EdbSegP</a>&amp; s)</span><br />
+<div class="funccomm"><pre>  Correction parameters handling
+</pre></div>
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbAlignmentV.html#EdbAlignmentV:eUseAffCorr" title="Bool_t EdbAlignmentV::eUseAffCorr">eUseAffCorr</a>? <a href="./EdbAlignmentV.html#EdbAlignmentV:eCorrL" title="EdbLayer EdbAlignmentV::eCorrL">eCorrL</a>[side].<a href="./EdbAlignmentV.html#EdbAlignmentV:X" title="float EdbAlignmentV::X(int side,EdbSegP&amp; s)">X</a>(s)  : <a href="./EdbAlignmentV.html#EdbAlignmentV:eCorr" title="EdbSegCorr EdbAlignmentV::eCorr">eCorr</a>[side].<a href="./EdbAlignmentV.html#EdbAlignmentV:X" title="float EdbAlignmentV::X(int side,EdbSegP&amp; s)">X</a>(s);  }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbAlignmentV:Y" href="src/EdbAlignmentV.h.html#OFdPmE">Y</a>(<span class="keyword">int</span> side, <a href="./EdbSegP.html">EdbSegP</a>&amp; s)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbAlignmentV.html#EdbAlignmentV:eUseAffCorr" title="Bool_t EdbAlignmentV::eUseAffCorr">eUseAffCorr</a>? <a href="./EdbAlignmentV.html#EdbAlignmentV:eCorrL" title="EdbLayer EdbAlignmentV::eCorrL">eCorrL</a>[side].<a href="./EdbAlignmentV.html#EdbAlignmentV:Y" title="float EdbAlignmentV::Y(int side,EdbSegP&amp; s)">Y</a>(s)  : <a href="./EdbAlignmentV.html#EdbAlignmentV:eCorr" title="EdbSegCorr EdbAlignmentV::eCorr">eCorr</a>[side].<a href="./EdbAlignmentV.html#EdbAlignmentV:Y" title="float EdbAlignmentV::Y(int side,EdbSegP&amp; s)">Y</a>(s);  }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbAlignmentV:TX" href="src/EdbAlignmentV.h.html#QOR5UE">TX</a>(<span class="keyword">int</span> side, <a href="./EdbSegP.html">EdbSegP</a>&amp; s)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbAlignmentV.html#EdbAlignmentV:eUseAffCorr" title="Bool_t EdbAlignmentV::eUseAffCorr">eUseAffCorr</a>? <a href="./EdbAlignmentV.html#EdbAlignmentV:eCorrL" title="EdbLayer EdbAlignmentV::eCorrL">eCorrL</a>[side].<a href="./EdbAlignmentV.html#EdbAlignmentV:TX" title="float EdbAlignmentV::TX(int side,EdbSegP&amp; s)">TX</a>(s) : <a href="./EdbAlignmentV.html#EdbAlignmentV:eCorr" title="EdbSegCorr EdbAlignmentV::eCorr">eCorr</a>[side].<a href="./EdbAlignmentV.html#EdbAlignmentV:TX" title="float EdbAlignmentV::TX(int side,EdbSegP&amp; s)">TX</a>(s); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbAlignmentV:TY" href="src/EdbAlignmentV.h.html#ogT5UE">TY</a>(<span class="keyword">int</span> side, <a href="./EdbSegP.html">EdbSegP</a>&amp; s)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbAlignmentV.html#EdbAlignmentV:eUseAffCorr" title="Bool_t EdbAlignmentV::eUseAffCorr">eUseAffCorr</a>? <a href="./EdbAlignmentV.html#EdbAlignmentV:eCorrL" title="EdbLayer EdbAlignmentV::eCorrL">eCorrL</a>[side].<a href="./EdbAlignmentV.html#EdbAlignmentV:TY" title="float EdbAlignmentV::TY(int side,EdbSegP&amp; s)">TY</a>(s) : <a href="./EdbAlignmentV.html#EdbAlignmentV:eCorr" title="EdbSegCorr EdbAlignmentV::eCorr">eCorr</a>[side].<a href="./EdbAlignmentV.html#EdbAlignmentV:TY" title="float EdbAlignmentV::TY(int side,EdbSegP&amp; s)">TY</a>(s); }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbAlignmentV:Var" href="src/EdbAlignmentV.h.html#I71YE">Var</a>(<span class="keyword">int</span> side, <a href="./EdbSegP.html">EdbSegP</a>&amp; s, <span class="keyword">int</span> ivar)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbAlignmentV:Var@1" href="src/EdbAlignmentV.h.html#C9YW5C">Var</a>(<span class="keyword">int</span> side, <span class="keyword">int</span> iseg, <span class="keyword">int</span> ivar)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> <a href="./EdbAlignmentV.html#EdbAlignmentV:Var" title="float EdbAlignmentV::Var(int side,EdbSegP&amp; s,int ivar) or overloads">Var</a>(side,*((<a href="./EdbSegP.html">EdbSegP</a>*)<a href="./EdbAlignmentV.html#EdbAlignmentV:eS" title="TObjArray EdbAlignmentV::eS">eS</a>[side].UncheckedAt(iseg)),ivar); }</code></div>
+<div style="clear:both;"></div>
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:18 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

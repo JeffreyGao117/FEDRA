@@ -1,0 +1,475 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:27 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbMomentumEstimator</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbMomentumEstimator','','EdbMomentumEstimator.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbMomentumEstimator.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbMomentumEstimator.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbMomentumEstimator_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbMomentumEstimator:description">class description</a> 
+<a class="descrheadentry" href="#EdbMomentumEstimator:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbMomentumEstimator:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbMomentumEstimator:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbMomentumEstimator</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbMomentumEstimator:description"></a>class EdbMomentumEstimator: public <a href="./EdbTrackFitter.html">EdbTrackFitter</a></h1>
+<div class="classdescr">
+<pre>
+
+Track momentum estimation algorithms
+
+
+</pre></div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbMomentumEstimator:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:EdbMomentumEstimator">EdbMomentumEstimator</a>()</td></tr>
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:_EdbMomentumEstimator">~EdbMomentumEstimator</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">TString</td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:AlgStr">AlgStr</a>(<span class="keyword">int</span> alg)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(TBrowser* b)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:CellWeight">CellWeight</a>(<span class="keyword">int</span> npl, <span class="keyword">int</span> m)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:Chi2ACP"><span class="baseclass">EdbTrackFitter::</span>Chi2ACP</a>(<a href="./EdbSegP.html">EdbSegP</a> s1, <a href="./EdbSegP.html">EdbSegP</a> s2, <a href="./EdbScanCond.html">EdbScanCond</a>&amp; cond)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:Chi2ASeg"><span class="baseclass">EdbTrackFitter::</span>Chi2ASeg</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s1, <a href="./EdbSegP.html">EdbSegP</a>&amp; s2, <a href="./EdbSegP.html">EdbSegP</a>&amp; s, <a href="./EdbScanCond.html">EdbScanCond</a>&amp; cond1, <a href="./EdbScanCond.html">EdbScanCond</a>&amp; cond2)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:Chi2ASegLL"><span class="baseclass">EdbTrackFitter::</span>Chi2ASegLL</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s1, <a href="./EdbSegP.html">EdbSegP</a>&amp; s2, <a href="./EdbSegP.html">EdbSegP</a>&amp; s, <a href="./EdbScanCond.html">EdbScanCond</a>&amp; cond1, <a href="./EdbScanCond.html">EdbScanCond</a>&amp; cond2)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:Chi2Seg"><span class="baseclass">EdbTrackFitter::</span>Chi2Seg</a>(<a href="./EdbSegP.html">EdbSegP</a>* s1, <a href="./EdbSegP.html">EdbSegP</a>* s2)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:Chi2SegM"><span class="baseclass">EdbTrackFitter::</span>Chi2SegM</a>(<a href="./EdbSegP.html">EdbSegP</a> s1, <a href="./EdbSegP.html">EdbSegP</a> s2, <a href="./EdbSegP.html">EdbSegP</a>&amp; s, <a href="./EdbScanCond.html">EdbScanCond</a>&amp; cond1, <a href="./EdbScanCond.html">EdbScanCond</a>&amp; cond2)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:Chi2SegMCS"><span class="baseclass">EdbTrackFitter::</span>Chi2SegMCS</a>(<span class="keyword">const</span> <a href="./EdbSegP.html">EdbSegP</a>&amp; s1, <span class="keyword">const</span> <a href="./EdbSegP.html">EdbSegP</a>&amp; s2)</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:Clear"><span class="baseclass">TNamed::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TNamed:Clone"><span class="baseclass">TNamed::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TNamed:Compare"><span class="baseclass">TNamed::</span>Compare</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:Copy"><span class="baseclass">TNamed::</span>Copy</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp; named) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:DrawPlots">DrawPlots</a>(TCanvas* c1 = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:EstimateMomentumError">EstimateMomentumError</a>(<span class="keyword">float</span> P, <span class="keyword">int</span> npl, <span class="keyword">float</span> ang, <span class="keyword">float</span>&amp; pmin, <span class="keyword">float</span>&amp; pmax)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(TMethod* method, TObjArray* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:FillBuffer"><span class="baseclass">TNamed::</span>FillBuffer</a>(<span class="keyword">char</span>*&amp; buffer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:FitTrackLine"><span class="baseclass">EdbTrackFitter::</span>FitTrackLine</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:FitTrackLine@1"><span class="baseclass">EdbTrackFitter::</span>FitTrackLine</a>(<span class="keyword">const</span> <a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr, <span class="keyword">float</span>&amp; x, <span class="keyword">float</span>&amp; y, <span class="keyword">float</span>&amp; z, <span class="keyword">float</span>&amp; tx, <span class="keyword">float</span>&amp; ty, <span class="keyword">float</span>&amp; w)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:GetDTs">GetDTs</a>(<span class="keyword">double</span> Ts)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:GetDTx">GetDTx</a>(<span class="keyword">double</span> Tx)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:GetDTy">GetDTy</a>(<span class="keyword">double</span> Ty)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TNamed:GetName"><span class="baseclass">TNamed::</span>GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TNamed:GetTitle"><span class="baseclass">TNamed::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(TTimer* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="#TNamed:Hash"><span class="baseclass">TNamed::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> TClass* cl) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TNamed:IsSortable"><span class="baseclass">TNamed::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:ls"><span class="baseclass">TNamed::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:Mat">Mat</a>(<span class="keyword">float</span> P, <span class="keyword">int</span> npl, <span class="keyword">float</span> ang)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:MaxChi2Seg"><span class="baseclass">EdbTrackFitter::</span>MaxChi2Seg</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:MaxKink"><span class="baseclass">EdbTrackFitter::</span>MaxKink</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">TF1*</td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:MCSCoordErrorFunction">MCSCoordErrorFunction</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">float</span> tmean, <span class="keyword">float</span> x0)</td></tr>
+<tr class="func"><td class="funcret">TF1*</td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:MCSErrorFunction">MCSErrorFunction</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">float</span> x0, <span class="keyword">float</span> dtx)</td></tr>
+<tr class="func"><td class="funcret">TF1*</td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:MCSErrorFunction_base">MCSErrorFunction_base</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">float</span> x0, <span class="keyword">float</span> dtx)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:MeanChi2Seg"><span class="baseclass">EdbTrackFitter::</span>MeanChi2Seg</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:MeanKink"><span class="baseclass">EdbTrackFitter::</span>MeanKink</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbTrackFitter.html">EdbTrackFitter</a>&amp;</td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:operator_"><span class="baseclass">EdbTrackFitter::</span>operator=</a>(<span class="keyword">const</span> <a href="./EdbTrackFitter.html">EdbTrackFitter</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:P_MS">P_MS</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:PMS">PMS</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:PMS_KF"><span class="baseclass">EdbTrackFitter::</span>PMS_KF</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; t, <span class="keyword">float</span> p0 = 10., <span class="keyword">float</span> probbest = 0.5)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:PMSang">PMSang</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:PMSang_base">PMSang_base</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:PMSang_base_A">PMSang_base_A</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:PMSang_corr">PMSang_corr</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:PMScoordinate">PMScoordinate</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:Print">Print</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:ProbSegMCS"><span class="baseclass">EdbTrackFitter::</span>ProbSegMCS</a>(<a href="./EdbSegP.html">EdbSegP</a>* s1, <a href="./EdbSegP.html">EdbSegP</a>* s2)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:Set0">Set0</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:SetDefaultBrick"><span class="baseclass">EdbTrackFitter::</span>SetDefaultBrick</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:SetDTsErrorFunction">SetDTsErrorFunction</a>(TF1&amp; f)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:SetDTxErrorFunction">SetDTxErrorFunction</a>(TF1&amp; f)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:SetDTyErrorFunction">SetDTyErrorFunction</a>(TF1&amp; f)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:SetName"><span class="baseclass">TNamed::</span>SetName</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:SetNameTitle"><span class="baseclass">TNamed::</span>SetNameTitle</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">const</span> <span class="keyword">char</span>* title)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:SetNsegMax"><span class="baseclass">EdbTrackFitter::</span>SetNsegMax</a>(<span class="keyword">int</span> nseg)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:SetParPMS_Mag">SetParPMS_Mag</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:SetParPMS_Mag@1">SetParPMS_Mag</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> type, <a href="./ListOfTypes.html#Int_t">Int_t</a> parNumber, <a href="./ListOfTypes.html#Double_t">Double_t</a> parvalue)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TNamed:SetTitle"><span class="baseclass">TNamed::</span>SetTitle</a>(<span class="keyword">const</span> <span class="keyword">char</span>* title = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TNamed:Sizeof"><span class="baseclass">TNamed::</span>Sizeof</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:SplitTrack"><span class="baseclass">EdbTrackFitter::</span>SplitTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; t, <a href="./EdbTrackP.html">EdbTrackP</a>&amp; t1, <span class="keyword">int</span> isplit)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:SplitTrackByKink"><span class="baseclass">EdbTrackFitter::</span>SplitTrackByKink</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t, TObjArray&amp; tracks, <span class="keyword">float</span> maxkink)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbMomentumEstimator:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="./EdbTrackFitter.html#EdbTrackFitter:Theta"><span class="baseclass">EdbTrackFitter::</span>Theta</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s, <a href="./EdbSegP.html">EdbSegP</a>&amp; s1)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, va_list va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbMomentumEstimator:Data_Members"></a>Data Members</h2>
+<div class="access" id="enumpubl"><b>public:</b>
+<table class="data" id="tabenumpubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span>EStatusBits { </td><td class="dataname"><a href="#TObject:kCanDelete">kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kMustCleanup">kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kObjInCanvas">kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kIsReferenced">kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kHasUUID">kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kCannotPick">kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNoContextMenu">kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kInvalidObject">kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span><i>[unnamed]</i> { </td><td class="dataname"><a href="#TObject:kIsOnHeap">kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNotDeleted">kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kZombie">kZombie</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kBitMask">kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kSingleKey">kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kOverwrite">kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kWriteDelete">kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbMomentumEstimator:eAlg"></a>eAlg</td><td class="datadesc">select the algorithm for PMS estimation</td></tr>
+<tr class="datainh"><td class="datatype"><span class="keyword">bool</span></td><td class="dataname"><a href="./EdbTrackFitter.html#EdbTrackFitter:eDE_correction"><span class="baseclass">EdbTrackFitter::</span>eDE_correction</a></td><td class="datadesc">take into account the energy loss or not</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">float</span></td><td class="dataname"><a name="EdbMomentumEstimator:eDP"></a>eDP</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">float</span></td><td class="dataname"><a name="EdbMomentumEstimator:eDPx"></a>eDPx</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">float</span></td><td class="dataname"><a name="EdbMomentumEstimator:eDPy"></a>eDPy</td><td class="datadesc">the fit error</td></tr>
+<tr class="data"><td class="datatype">TF1</td><td class="dataname"><a name="EdbMomentumEstimator:eDTsErrorFun"></a>eDTsErrorFun</td><td></td></tr>
+<tr class="data"><td class="datatype">TF1</td><td class="dataname"><a name="EdbMomentumEstimator:eDTxErrorFun"></a>eDTxErrorFun</td><td></td></tr>
+<tr class="data"><td class="datatype">TF1</td><td class="dataname"><a name="EdbMomentumEstimator:eDTyErrorFun"></a>eDTyErrorFun</td><td></td></tr>
+<tr class="data"><td class="datatype">TF1*</td><td class="dataname"><a name="EdbMomentumEstimator:eF1"></a>eF1</td><td class="datadesc">!</td></tr>
+<tr class="data"><td class="datatype">TF1*</td><td class="dataname"><a name="EdbMomentumEstimator:eF1X"></a>eF1X</td><td class="datadesc">! fit function</td></tr>
+<tr class="data"><td class="datatype">TF1*</td><td class="dataname"><a name="EdbMomentumEstimator:eF1Y"></a>eF1Y</td><td class="datadesc">!</td></tr>
+<tr class="data"><td class="datatype">TGraphErrors*</td><td class="dataname"><a name="EdbMomentumEstimator:eG"></a>eG</td><td class="datadesc">! 3D component of the momentum</td></tr>
+<tr class="data"><td class="datatype">TGraphAsymmErrors*</td><td class="dataname"><a name="EdbMomentumEstimator:eGA"></a>eGA</td><td class="datadesc">! 3D component of the momentum</td></tr>
+<tr class="data"><td class="datatype">TGraphAsymmErrors*</td><td class="dataname"><a name="EdbMomentumEstimator:eGAX"></a>eGAX</td><td class="datadesc">! longitudianl component of the momentum</td></tr>
+<tr class="data"><td class="datatype">TGraphAsymmErrors*</td><td class="dataname"><a name="EdbMomentumEstimator:eGAY"></a>eGAY</td><td class="datadesc">! transverse   component of the momentum</td></tr>
+<tr class="data"><td class="datatype">TGraphErrors*</td><td class="dataname"><a name="EdbMomentumEstimator:eGX"></a>eGX</td><td class="datadesc">! longitudianl component of the momentum</td></tr>
+<tr class="data"><td class="datatype">TGraphErrors*</td><td class="dataname"><a name="EdbMomentumEstimator:eGY"></a>eGY</td><td class="datadesc">! transverse   component of the momentum</td></tr>
+<tr class="datainh"><td class="datatype"><span class="keyword">float</span></td><td class="dataname"><a href="./EdbTrackFitter.html#EdbTrackFitter:eM"><span class="baseclass">EdbTrackFitter::</span>eM</a></td><td class="datadesc">mass of the particle (if negative - use the mass setted in the track)</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbMomentumEstimator:eMinEntr"></a>eMinEntr</td><td class="datadesc">min number of entries in the cell to accept it for fitting (def=1)</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">float</span></td><td class="dataname"><a name="EdbMomentumEstimator:eP"></a>eP</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">float</span></td><td class="dataname"><a name="EdbMomentumEstimator:ePXmax"></a>ePXmax</td><td class="datadesc">momentum 90% errors range</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">float</span></td><td class="dataname"><a name="EdbMomentumEstimator:ePXmin"></a>ePXmin</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">float</span></td><td class="dataname"><a name="EdbMomentumEstimator:ePYmax"></a>ePYmax</td><td class="datadesc">momentum 90% errors range</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">float</span></td><td class="dataname"><a name="EdbMomentumEstimator:ePYmin"></a>ePYmin</td><td></td></tr>
+<tr class="datainh"><td class="datatype"><span class="keyword">float</span></td><td class="dataname"><a href="./EdbTrackFitter.html#EdbTrackFitter:ePcut"><span class="baseclass">EdbTrackFitter::</span>ePcut</a></td><td class="datadesc">minimal momentum?</td></tr>
+<tr class="datainh"><td class="datatype"><span class="keyword">float</span></td><td class="dataname"><a href="./EdbTrackFitter.html#EdbTrackFitter:ePdef"><span class="baseclass">EdbTrackFitter::</span>ePdef</a></td><td class="datadesc">default momentum</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">float</span></td><td class="dataname"><a name="EdbMomentumEstimator:ePmax"></a>ePmax</td><td class="datadesc">momentum 90% errors range</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">float</span></td><td class="dataname"><a name="EdbMomentumEstimator:ePmin"></a>ePmin</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">float</span></td><td class="dataname"><a name="EdbMomentumEstimator:ePx"></a>ePx</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">float</span></td><td class="dataname"><a name="EdbMomentumEstimator:ePy"></a>ePy</td><td class="datadesc">the estimated momentum</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbMomentumEstimator:eStatus"></a>eStatus</td><td class="datadesc">status of the estimation (-1 nothing was done)</td></tr>
+<tr class="datainh"><td class="datatype"><span class="keyword">float</span></td><td class="dataname"><a href="./EdbTrackFitter.html#EdbTrackFitter:eTPb"><span class="baseclass">EdbTrackFitter::</span>eTPb</a></td><td class="datadesc">?</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbTrackP.html">EdbTrackP</a></td><td class="dataname"><a name="EdbMomentumEstimator:eTrack"></a>eTrack</td><td class="datadesc">the copy of the track to be used for plots</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">bool</span></td><td class="dataname"><a name="EdbMomentumEstimator:eVerbose"></a>eVerbose</td><td></td></tr>
+<tr class="datainh"><td class="datatype"><span class="keyword">float</span></td><td class="dataname"><a href="./EdbTrackFitter.html#EdbTrackFitter:eX0"><span class="baseclass">EdbTrackFitter::</span>eX0</a></td><td class="datadesc">rad length of the media [microns]</td></tr>
+
+</table></div>
+<div class="access" id="dataprot"><b>protected:</b>
+<table class="data" id="tabdataprot" cellspacing="0">
+<tr class="datainh"><td class="datatype">TString</td><td class="dataname"><a href="#TNamed:fName"><span class="baseclass">TNamed::</span>fName</a></td><td class="datadesc">object identifier</td></tr>
+<tr class="datainh"><td class="datatype">TString</td><td class="dataname"><a href="#TNamed:fTitle"><span class="baseclass">TNamed::</span>fTitle</a></td><td class="datadesc">object title</td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbMomentumEstimator:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td><table><tr>
+<td bgcolor="#f7f7f7" align="right">
+<table><tr><td><table><tr>
+<td bgcolor="#efefef" align="right">
+<tt>TNamed</tt></td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><tt><a name="EdbTrackFitter" href="./EdbTrackFitter.html">EdbTrackFitter</a></tt></center>
+</td>
+</tr></table>
+</td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><big><b><tt><a name="EdbMomentumEstimator" href="./EdbMomentumEstimator.html">EdbMomentumEstimator</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbMomentumEstimator:EdbMomentumEstimator" href="src/EdbMomentumEstimator.cxx.html#Re4iuC">EdbMomentumEstimator</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbMomentumEstimator:_EdbMomentumEstimator" href="src/EdbMomentumEstimator.cxx.html#pos1V">~EdbMomentumEstimator</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbMomentumEstimator:Set0" href="src/EdbMomentumEstimator.cxx.html#dVD2a">Set0</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbMomentumEstimator:SetParPMS_Mag" href="src/EdbMomentumEstimator.cxx.html#L9KfWE">SetParPMS_Mag</a>()</span><br />
+<div class="funccomm"><pre> set the default values for parameters used in PMS_Mag
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbMomentumEstimator:SetParPMS_Mag@1" href="src/EdbMomentumEstimator.cxx.html#N8STa">SetParPMS_Mag</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> type, <a href="./ListOfTypes.html#Int_t">Int_t</a> parNumber, <a href="./ListOfTypes.html#Double_t">Double_t</a> parvalue)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbMomentumEstimator:Print" href="src/EdbMomentumEstimator.cxx.html#qzThCD">Print</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TString <a class="funcname" name="EdbMomentumEstimator:AlgStr" href="src/EdbMomentumEstimator.cxx.html#bdIFI">AlgStr</a>(<span class="keyword">int</span> alg)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbMomentumEstimator:PMS" href="src/EdbMomentumEstimator.cxx.html#WPVGC">PMS</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr)</span><br />
+<div class="funccomm"><pre> according to <a href="./EdbMomentumEstimator.html#EdbMomentumEstimator:eAlg" title="int EdbMomentumEstimator::eAlg">eAlg</a> the algorithm will be selected to estimate the momentum
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbMomentumEstimator:PMSang_corr" href="src/EdbMomentumEstimator.cxx.html#l5JvtC">PMSang_corr</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr)</span><br />
+<div class="funccomm"><pre>  !Corrections by ASh!
+ Version rewised by VT 13/05/2008 (see <a href="./EdbMomentumEstimator.html#EdbMomentumEstimator:PMSang_base" title="int EdbMomentumEstimator::PMSang_base(EdbTrackP&amp; tr)">PMSang_base</a>) and further modified by Magali at the end of 2008
+ Momentum estimation by multiple scattering (Annecy implementation Oct-2007)
+
+ Input: tr  - can be modified by the function
+
+ calculate momentum in transverse and in longitudinal projections using the different
+ measurements errors parametrisation
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbMomentumEstimator:PMSang" href="src/EdbMomentumEstimator.cxx.html#fhfh5E">PMSang</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr)</span><br />
+<div class="funccomm"><pre> Version rewised by VT 13/05/2008 (see <a href="./EdbMomentumEstimator.html#EdbMomentumEstimator:PMSang_base" title="int EdbMomentumEstimator::PMSang_base(EdbTrackP&amp; tr)">PMSang_base</a>) and further modified by Magali at the end of 2008
+
+ Momentum estimation by multiple scattering (Annecy implementation Oct-2007)
+
+ Input: tr  - can be modified by the function
+
+ calculate momentum in transverse and in longitudinal projections using the different
+ measurements errors parametrisation
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbMomentumEstimator:PMScoordinate" href="src/EdbMomentumEstimator.cxx.html#yZHON">PMScoordinate</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr)</span><br />
+<div class="funccomm"><pre> Momentum estimation by coordinate method
+
+ April 2010
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbMomentumEstimator:CellWeight" href="src/EdbMomentumEstimator.cxx.html#XyJtWE">CellWeight</a>(<span class="keyword">int</span> npl, <span class="keyword">int</span> m)</span><br />
+<div class="funccomm"><pre> TO BE IMPLEMENTED
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname">TF1 * <a class="funcname" name="EdbMomentumEstimator:MCSErrorFunction" href="src/EdbMomentumEstimator.cxx.html#yULImB">MCSErrorFunction</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">float</span> x0, <span class="keyword">float</span> dtx)</span><br />
+<div class="funccomm"><pre>        dtx - the plane angle measurement error
+ return the function of the expected angular deviation vs range
+
+ use the Highland-Lynch-Dahl formula for theta_rms_plane = 13.6 MeV/bcp*z*sqrt(x/x0)*(1+0.038*log(x/x0))  (PDG)
+ so the expected measured angle is sqrt( theta_rms_plane**2 + dtx**2)
+
+ The constant term im the scattering formula is not 13.6 but 14.64, which
+ is the right reevaluated number, due to a calculation with the moliere
+ distribution. 13.6 is an approximation. See Geant3 or 4 references for more explanations.???????
+
+ err(x) = sqrt(k*x*(1+0.038*log(x/x0))/p**2 + dtx)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname">TF1 * <a class="funcname" name="EdbMomentumEstimator:MCSCoordErrorFunction" href="src/EdbMomentumEstimator.cxx.html#csPP0">MCSCoordErrorFunction</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">float</span> tmean, <span class="keyword">float</span> x0)</span><br />
+<div class="funccomm"><pre> return the function of the expected position deviation as function of range
+
+ use the Highland-Lynch-Dahl formula for theta_rms_plane = 13.6 MeV/bcp*z*sqrt(x/x0)  (PDG)
+ so the expected measured position deviation is (1/sqrt(3))*theta_rms_plane + measurement error
+ log term in HLD formula is neglected
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbMomentumEstimator:EstimateMomentumError" href="src/EdbMomentumEstimator.cxx.html#vmYIEE">EstimateMomentumError</a>(<span class="keyword">float</span> P, <span class="keyword">int</span> npl, <span class="keyword">float</span> ang, <span class="keyword">float</span>&amp; pmin, <span class="keyword">float</span>&amp; pmax)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbMomentumEstimator:Mat" href="src/EdbMomentumEstimator.cxx.html#MXC2JE">Mat</a>(<span class="keyword">float</span> P, <span class="keyword">int</span> npl, <span class="keyword">float</span> ang)</span><br />
+<div class="funccomm"><pre> These parametrisations at low and large angles are parametrised with MC
+ See Magali's thesis for more informations
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbMomentumEstimator:DrawPlots" href="src/EdbMomentumEstimator.cxx.html#ZT5hDC">DrawPlots</a>(TCanvas* c1 = 0)</span><br />
+<div class="funccomm"><pre> example of the plots available after <a href="./EdbMomentumEstimator.html#EdbMomentumEstimator:PMSang" title="float EdbMomentumEstimator::PMSang(EdbTrackP&amp; tr)">PMSang</a>
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbMomentumEstimator:PMSang_base" href="src/EdbMomentumEstimator.cxx.html#x3ehOB">PMSang_base</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr)</span><br />
+<div class="funccomm"><pre> Version rewised by VT 13/05/2008
+
+ Momentum estimation by multiple scattering (Annecy algorithm Oct-2007)
+
+ Input: tr  - can be modified by the function
+
+ calculate momentum in transverse and in longitudinal projections using the different
+ measurements errors parametrisation
+ return value:  -99 - estimation impossible;
+                  0 - fit is not successful;
+                  1 - only one momentum component is fitted well
+                  2 - both components are successfully fitted
+ <span class="string">"base"</span> is stay for the original version - to be tested in comparison to the <span class="string">"final"</span> version
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname">TF1 * <a class="funcname" name="EdbMomentumEstimator:MCSErrorFunction_base" href="src/EdbMomentumEstimator.cxx.html#ESz1tC">MCSErrorFunction_base</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name, <span class="keyword">float</span> x0, <span class="keyword">float</span> dtx)</span><br />
+<div class="funccomm"><pre>        dtx - the plane angle measurement error
+ return the function of the expected angular deviation vs range
+
+ use the Highland-Lynch-Dahl formula for theta_rms_plane = 13.6 MeV/bcp*z*sqrt(x/x0)*(1+0.038*log(x/x0))  (PDG)
+ so the expected measured angle is sqrt( theta_rms_plane**2 + dtx**2)
+
+ The constant term im the scattering formula is not 13.6 but 14.64, which
+ is the right reevaluated number, due to a calculation with the moliere
+ distribution. 13.6 is an approximation. See Geant3 or 4 references for more explanations.???????
+
+ err(x) = sqrt(k*x*(1+0.038*log(x/x0))/p**2 + dtx)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbMomentumEstimator:P_MS" href="src/EdbMomentumEstimator.cxx.html#iClZCC">P_MS</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr)</span><br />
+<div class="funccomm"><pre> momentum estimation by multiple scattering (first test version (VT))
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbMomentumEstimator:PMSang_base_A" href="src/EdbMomentumEstimator.cxx.html#q7sOwE">PMSang_base_A</a>(<a href="./EdbTrackP.html">EdbTrackP</a>&amp; tr)</span><br />
+<div class="funccomm"><pre> Version revised by Andrea Russo 13/03/2009 based on <a href="./EdbMomentumEstimator.html#EdbMomentumEstimator:PMSang_base" title="int EdbMomentumEstimator::PMSang_base(EdbTrackP&amp; tr)">PMSang_base</a>() by VT
+
+ include asymmetrical errors in scattering VS ncell graphs, based on ChiSquare distribution
+
+ improved check on correctness of fit result, based on chisquare cut (FitProbability &gt; 0.05)
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbMomentumEstimator:SetDTxErrorFunction" href="src/EdbMomentumEstimator.h.html#gryXVB">SetDTxErrorFunction</a>(TF1&amp; f)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbMomentumEstimator.html#EdbMomentumEstimator:eDTxErrorFun" title="TF1 EdbMomentumEstimator::eDTxErrorFun">eDTxErrorFun</a>=f;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbMomentumEstimator:SetDTyErrorFunction" href="src/EdbMomentumEstimator.h.html#r6ANYD">SetDTyErrorFunction</a>(TF1&amp; f)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbMomentumEstimator.html#EdbMomentumEstimator:eDTyErrorFun" title="TF1 EdbMomentumEstimator::eDTyErrorFun">eDTyErrorFun</a>=f;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbMomentumEstimator:SetDTsErrorFunction" href="src/EdbMomentumEstimator.h.html#n.b_mC">SetDTsErrorFunction</a>(TF1&amp; f)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbMomentumEstimator.html#EdbMomentumEstimator:eDTsErrorFun" title="TF1 EdbMomentumEstimator::eDTsErrorFun">eDTsErrorFun</a>=f;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbMomentumEstimator:GetDTx" href="src/EdbMomentumEstimator.h.html#Jo1wTD">GetDTx</a>(<span class="keyword">double</span> Tx)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbMomentumEstimator.html#EdbMomentumEstimator:eDTxErrorFun" title="TF1 EdbMomentumEstimator::eDTxErrorFun">eDTxErrorFun</a>.Eval(Tx);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbMomentumEstimator:GetDTy" href="src/EdbMomentumEstimator.h.html#Byr6OD">GetDTy</a>(<span class="keyword">double</span> Ty)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbMomentumEstimator.html#EdbMomentumEstimator:eDTyErrorFun" title="TF1 EdbMomentumEstimator::eDTyErrorFun">eDTyErrorFun</a>.Eval(Ty);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbMomentumEstimator:GetDTs" href="src/EdbMomentumEstimator.h.html#ZUJdeC">GetDTs</a>(<span class="keyword">double</span> Ts)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbMomentumEstimator.html#EdbMomentumEstimator:eDTsErrorFun" title="TF1 EdbMomentumEstimator::eDTsErrorFun">eDTsErrorFun</a>.Eval(Ts);}</code></div>
+<div style="clear:both;"></div>
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:27 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

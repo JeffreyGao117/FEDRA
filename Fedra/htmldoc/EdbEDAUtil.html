@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:25 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbEDAUtil</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('namespace EdbEDAUtil','','EdbEDAUtil.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbEDAUtil.h.html">header file</a>
+<a class="descrheadentry"> </a>
+
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbEDAUtil:description">namespace description</a> 
+<a class="descrheadentry" href="#EdbEDAUtil:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbEDAUtil:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbEDAUtil:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbEDAUtil</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbEDAUtil:description"></a>namespace EdbEDAUtil</h1>
+<div class="classdescr">
+</div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbEDAUtil:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:AskYesNo">AskYesNo</a>(<span class="keyword">char</span>* message)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CalcDistance">CalcDistance</a>(<a href="./EdbSegP.html">EdbSegP</a>* s1, <a href="./EdbSegP.html">EdbSegP</a>* s2, <span class="keyword">double</span> z)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CalcDmin">CalcDmin</a>(<a href="./EdbSegP.html">EdbSegP</a>* seg1, <a href="./EdbSegP.html">EdbSegP</a>* seg2, <span class="keyword">double</span>* dminz = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CalcDTTransLongi">CalcDTTransLongi</a>(<a href="./EdbSegP.html">EdbSegP</a>* s1, <a href="./EdbSegP.html">EdbSegP</a>* s2, <span class="keyword">double</span>* dtTransverse, <span class="keyword">double</span>* dtLongitudinal)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CalcDTTransLongi@1">CalcDTTransLongi</a>(<span class="keyword">double</span> tx1, <span class="keyword">double</span> ty1, <span class="keyword">double</span> tx2, <span class="keyword">double</span> ty2, <span class="keyword">double</span>* dtTransverse, <span class="keyword">double</span>* dtLongitudinal)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CalcDXTransLongi">CalcDXTransLongi</a>(<a href="./EdbSegP.html">EdbSegP</a>* s1, <a href="./EdbSegP.html">EdbSegP</a>* s2, <span class="keyword">double</span>* dxt, <span class="keyword">double</span>* dxl)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CalcEMCSelectron">CalcEMCSelectron</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CalcIP@1">CalcIP</a>(<a href="./EdbSegP.html">EdbSegP</a>* s, <a href="./EdbVertex.html">EdbVertex</a>* v)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CalcIP">CalcIP</a>(<a href="./EdbSegP.html">EdbSegP</a>* s, <span class="keyword">double</span> x, <span class="keyword">double</span> y, <span class="keyword">double</span> z)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CalcKinkAngle">CalcKinkAngle</a>(<a href="./EdbSegP.html">EdbSegP</a>* tparent, <a href="./EdbSegP.html">EdbSegP</a>* tdaughter)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CalcMinimumKinkAngle">CalcMinimumKinkAngle</a>(TVector3 vertex, TVector3 daupos, TVector3 daumom)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CalcMinimumKinkAngle@1">CalcMinimumKinkAngle</a>(<a href="./EdbVertex.html">EdbVertex</a>* v1ry, <a href="./EdbSegP.html">EdbSegP</a>* tdaughter, <span class="keyword">int</span> z_is_middle_of_base = 1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CalcMinimumKinkAngle@2">CalcMinimumKinkAngle</a>(<a href="./EdbSegP.html">EdbSegP</a>* t1ry, <a href="./EdbSegP.html">EdbSegP</a>* tdaughter, <span class="keyword">int</span> z_is_middle_of_base = 1)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbMomentumEstimator.html">EdbMomentumEstimator</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CalcP">CalcP</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t, <span class="keyword">double</span>&amp; p, <span class="keyword">double</span>&amp; pmin, <span class="keyword">double</span>&amp; pmax, <span class="keyword">bool</span> print = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CalcPPartial">CalcPPartial</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t, <a href="./EdbSegP.html">EdbSegP</a>* s1st, <a href="./EdbSegP.html">EdbSegP</a>* slast, <span class="keyword">double</span>&amp; p, <span class="keyword">double</span>&amp; pmin, <span class="keyword">double</span>&amp; pmax, <span class="keyword">bool</span> print = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CalcPt">CalcPt</a>(<a href="./EdbSegP.html">EdbSegP</a>* tparent, <a href="./EdbSegP.html">EdbSegP</a>* tdaughter)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CalcPtmin">CalcPtmin</a>(TVector3 vertex, TVector3 daupos, TVector3 daumom)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CalcPtmin@1">CalcPtmin</a>(<a href="./EdbVertex.html">EdbVertex</a>* v1ry, <a href="./EdbSegP.html">EdbSegP</a>* tdaughter, <span class="keyword">int</span> z_is_middle_of_base = 1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CalcPtmin@2">CalcPtmin</a>(<a href="./EdbSegP.html">EdbSegP</a>* t1ry, <a href="./EdbSegP.html">EdbSegP</a>* tdaughter, <span class="keyword">int</span> z_is_middle_of_base = 1)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbVertex.html">EdbVertex</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CalcVertex">CalcVertex</a>(TObjArray* segments)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbTrackP.html">EdbTrackP</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:CleanTrack">CleanTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:DTRMS">DTRMS</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:DTRMS1Kink">DTRMS1Kink</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t, <span class="keyword">int</span>* NKinkAngleUsed = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:DTRMSelectron">DTRMSelectron</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:DTRMSTL">DTRMSTL</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t, <span class="keyword">double</span>* rmsspace, <span class="keyword">double</span>* rmstransverse, <span class="keyword">double</span>* rmslongitudinal, <span class="keyword">int</span>* ndata = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:DTRMSTL1Kink">DTRMSTL1Kink</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t, <span class="keyword">double</span>* rmsspace, <span class="keyword">double</span>* rmstransverse, <span class="keyword">double</span>* rmslongitudinal, <span class="keyword">int</span>* NKinkAngleUsed = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:DTRMSTLGiven1Kink">DTRMSTLGiven1Kink</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t, <span class="keyword">int</span> iKink, <span class="keyword">double</span>* rmsspace, <span class="keyword">double</span>* rmstransverse, <span class="keyword">double</span>* rmslongitudinal, <span class="keyword">int</span>* NKinkAngleUsed = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:ErrorMessage@1">ErrorMessage</a>(<span class="keyword">char</span>* message)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:ErrorMessage">ErrorMessage</a>(<span class="keyword">char</span>* title, <span class="keyword">char</span>* message)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:FillTracksFromPatterns">FillTracksFromPatterns</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* pvr)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:FindBrickIDFromPath">FindBrickIDFromPath</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:FindProcDirClient">FindProcDirClient</a>()</td></tr>
+<tr class="func"><td class="funcret">TEveCompound*</td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:GetTrackElement">GetTrackElement</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</td></tr>
+<tr class="func"><td class="funcret">TEvePointSet*</td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:GetVertexElement">GetVertexElement</a>(<a href="./EdbVertex.html">EdbVertex</a>* v)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:InputID">InputID</a>(<span class="keyword">char</span>* message, <a href="./EdbID.html">EdbID</a>&amp; id)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:InputNumberInteger">InputNumberInteger</a>(<span class="keyword">char</span>* message, <span class="keyword">int</span> idefault = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:InputNumberReal">InputNumberReal</a>(<span class="keyword">char</span>* message, <span class="keyword">double</span> default_num = 0.0, TGNumberFormat::EStyle es = TGNumberFormat::kNESReal)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:IsIncludeCouples">IsIncludeCouples</a>(<a href="./EdbPattern.html">EdbPattern</a>* pat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:IsSegment">IsSegment</a>(TObject* o)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:IsSegment@1">IsSegment</a>(TEveElement* e)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:IsTrack">IsTrack</a>(TObject* o)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:IsTrack@1">IsTrack</a>(TEveElement* e)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:IsVertex">IsVertex</a>(TObject* o)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:IsVertex@1">IsVertex</a>(TEveElement* e)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:MakePVRFromTracksArray">MakePVRFromTracksArray</a>(TObjArray* tracks_or_segments, <a href="./EdbPVRec.html">EdbPVRec</a>&amp; pvr)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:ReadFeedbackPVR">ReadFeedbackPVR</a>(<span class="keyword">char</span>* filename = 0)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbPVRec.html">EdbPVRec</a>*</td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:ReadMxxPVR">ReadMxxPVR</a>(<span class="keyword">char</span>* filename = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:WritePVRMxx">WritePVRMxx</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* pvr, <span class="keyword">char</span>* filename = 0)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbEDAUtil:WriteTracksMxx">WriteTracksMxx</a>(TObjArray* pvr, <span class="keyword">char</span>* filename = 0)</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbEDAUtil:Data_Members"></a>Data Members</h2>
+</div>
+<h2><a id="EdbEDAUtil:Class_Charts"></a>Class Charts</h2>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDAUtil:IsVertex" href="src/EdbEDAUtil.h.html#Pj_j6C">IsVertex</a>(TObject* o)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDAUtil:IsVertex@1" href="src/EdbEDAUtil.h.html#jzpUcB">IsVertex</a>(TEveElement* e)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDAUtil:IsTrack" href="src/EdbEDAUtil.h.html#HqPdiE">IsTrack</a>(TObject* o)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDAUtil:IsTrack@1" href="src/EdbEDAUtil.h.html#S_ryHC">IsTrack</a>(TEveElement* e)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDAUtil:IsSegment" href="src/EdbEDAUtil.h.html#L4jkAC">IsSegment</a>(TObject* o)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDAUtil:IsSegment@1" href="src/EdbEDAUtil.h.html#nKIpyC">IsSegment</a>(TEveElement* e)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDAUtil:IsIncludeCouples" href="src/EdbEDAUtil.h.html#k.0MR">IsIncludeCouples</a>(<a href="./EdbPattern.html">EdbPattern</a>* pat)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TEveCompound * <a class="funcname" name="EdbEDAUtil:GetTrackElement" href="src/EdbEDAUtil.h.html#WlZtYC">GetTrackElement</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TEvePointSet * <a class="funcname" name="EdbEDAUtil:GetVertexElement" href="src/EdbEDAUtil.h.html#FkBpxD">GetVertexElement</a>(<a href="./EdbVertex.html">EdbVertex</a>* v)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:CalcIP" href="src/EdbEDAUtil.h.html#WV1maD">CalcIP</a>(<a href="./EdbSegP.html">EdbSegP</a>* s, <span class="keyword">double</span> x, <span class="keyword">double</span> y, <span class="keyword">double</span> z)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:CalcIP@1" href="src/EdbEDAUtil.h.html#qyod6">CalcIP</a>(<a href="./EdbSegP.html">EdbSegP</a>* s, <a href="./EdbVertex.html">EdbVertex</a>* v)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:CalcDmin" href="src/EdbEDAUtil.h.html#m.sjQE">CalcDmin</a>(<a href="./EdbSegP.html">EdbSegP</a>* seg1, <a href="./EdbSegP.html">EdbSegP</a>* seg2, <span class="keyword">double</span>* dminz = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:CalcMinimumKinkAngle" href="src/EdbEDAUtil.h.html#syNlCB">CalcMinimumKinkAngle</a>(TVector3 vertex, TVector3 daupos, TVector3 daumom)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:CalcMinimumKinkAngle@1" href="src/EdbEDAUtil.h.html#VbwQuD">CalcMinimumKinkAngle</a>(<a href="./EdbVertex.html">EdbVertex</a>* v1ry, <a href="./EdbSegP.html">EdbSegP</a>* tdaughter, <span class="keyword">int</span> z_is_middle_of_base = 1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:CalcMinimumKinkAngle@2" href="src/EdbEDAUtil.h.html#Psp19D">CalcMinimumKinkAngle</a>(<a href="./EdbSegP.html">EdbSegP</a>* t1ry, <a href="./EdbSegP.html">EdbSegP</a>* tdaughter, <span class="keyword">int</span> z_is_middle_of_base = 1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:CalcPtmin" href="src/EdbEDAUtil.h.html#tcGRnE">CalcPtmin</a>(TVector3 vertex, TVector3 daupos, TVector3 daumom)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:CalcPtmin@1" href="src/EdbEDAUtil.h.html#j01VfC">CalcPtmin</a>(<a href="./EdbVertex.html">EdbVertex</a>* v1ry, <a href="./EdbSegP.html">EdbSegP</a>* tdaughter, <span class="keyword">int</span> z_is_middle_of_base = 1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:CalcPtmin@2" href="src/EdbEDAUtil.h.html#F2wJkD">CalcPtmin</a>(<a href="./EdbSegP.html">EdbSegP</a>* t1ry, <a href="./EdbSegP.html">EdbSegP</a>* tdaughter, <span class="keyword">int</span> z_is_middle_of_base = 1)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:CalcKinkAngle" href="src/EdbEDAUtil.h.html#z6wSyB">CalcKinkAngle</a>(<a href="./EdbSegP.html">EdbSegP</a>* tparent, <a href="./EdbSegP.html">EdbSegP</a>* tdaughter)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:CalcPt" href="src/EdbEDAUtil.h.html#Jc.YfD">CalcPt</a>(<a href="./EdbSegP.html">EdbSegP</a>* tparent, <a href="./EdbSegP.html">EdbSegP</a>* tdaughter)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:CalcEMCSelectron" href="src/EdbEDAUtil.h.html#pytkgE">CalcEMCSelectron</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbVertex.html">EdbVertex</a> * <a class="funcname" name="EdbEDAUtil:CalcVertex" href="src/EdbEDAUtil.h.html#bbDQ0">CalcVertex</a>(TObjArray* segments)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbMomentumEstimator.html">EdbMomentumEstimator</a> * <a class="funcname" name="EdbEDAUtil:CalcP" href="src/EdbEDAUtil.h.html#lnZf4">CalcP</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t, <span class="keyword">double</span>&amp; p, <span class="keyword">double</span>&amp; pmin, <span class="keyword">double</span>&amp; pmax, <span class="keyword">bool</span> print = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>)</span><br />
+<div class="funccomm"><pre>	<a href="./ListOfTypes.html#void">void</a>   CalcP2(<a href="./EdbTrackP.html">EdbTrackP</a> *t, <a href="./ListOfTypes.html#double">double</a>&amp; p, <a href="./ListOfTypes.html#double">double</a>&amp; pmin, <a href="./ListOfTypes.html#double">double</a>&amp; pmax);
+	<a href="./ListOfTypes.html#void">void</a>   CalcP3(<a href="./EdbTrackP.html">EdbTrackP</a> *t, <a href="./ListOfTypes.html#double">double</a>&amp; p, <a href="./ListOfTypes.html#double">double</a>&amp; pmin, <a href="./ListOfTypes.html#double">double</a>&amp; pmax);
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAUtil:CalcPPartial" href="src/EdbEDAUtil.h.html#ZXQcu">CalcPPartial</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t, <a href="./EdbSegP.html">EdbSegP</a>* s1st, <a href="./EdbSegP.html">EdbSegP</a>* slast, <span class="keyword">double</span>&amp; p, <span class="keyword">double</span>&amp; pmin, <span class="keyword">double</span>&amp; pmax, <span class="keyword">bool</span> print = <a href="./ListOfTypes.html#Bool_t">kTRUE</a>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:CalcDistance" href="src/EdbEDAUtil.h.html#QirJ_D">CalcDistance</a>(<a href="./EdbSegP.html">EdbSegP</a>* s1, <a href="./EdbSegP.html">EdbSegP</a>* s2, <span class="keyword">double</span> z)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAUtil:CalcDTTransLongi" href="src/EdbEDAUtil.h.html#eArA_D">CalcDTTransLongi</a>(<a href="./EdbSegP.html">EdbSegP</a>* s1, <a href="./EdbSegP.html">EdbSegP</a>* s2, <span class="keyword">double</span>* dtTransverse, <span class="keyword">double</span>* dtLongitudinal)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAUtil:CalcDTTransLongi@1" href="src/EdbEDAUtil.h.html#LDamyE">CalcDTTransLongi</a>(<span class="keyword">double</span> tx1, <span class="keyword">double</span> ty1, <span class="keyword">double</span> tx2, <span class="keyword">double</span> ty2, <span class="keyword">double</span>* dtTransverse, <span class="keyword">double</span>* dtLongitudinal)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAUtil:CalcDXTransLongi" href="src/EdbEDAUtil.h.html#jsitiC">CalcDXTransLongi</a>(<a href="./EdbSegP.html">EdbSegP</a>* s1, <a href="./EdbSegP.html">EdbSegP</a>* s2, <span class="keyword">double</span>* dxt, <span class="keyword">double</span>* dxl)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:DTRMS" href="src/EdbEDAUtil.h.html#jTI8H">DTRMS</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:DTRMSelectron" href="src/EdbEDAUtil.h.html#jGaHgB">DTRMSelectron</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:DTRMS1Kink" href="src/EdbEDAUtil.h.html#GSrGSC">DTRMS1Kink</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t, <span class="keyword">int</span>* NKinkAngleUsed = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:DTRMSTL" href="src/EdbEDAUtil.h.html#cXD8ZD">DTRMSTL</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t, <span class="keyword">double</span>* rmsspace, <span class="keyword">double</span>* rmstransverse, <span class="keyword">double</span>* rmslongitudinal, <span class="keyword">int</span>* ndata = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:DTRMSTL1Kink" href="src/EdbEDAUtil.h.html#iKcIeD">DTRMSTL1Kink</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t, <span class="keyword">double</span>* rmsspace, <span class="keyword">double</span>* rmstransverse, <span class="keyword">double</span>* rmslongitudinal, <span class="keyword">int</span>* NKinkAngleUsed = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:DTRMSTLGiven1Kink" href="src/EdbEDAUtil.h.html#XRFhTC">DTRMSTLGiven1Kink</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t, <span class="keyword">int</span> iKink, <span class="keyword">double</span>* rmsspace, <span class="keyword">double</span>* rmstransverse, <span class="keyword">double</span>* rmslongitudinal, <span class="keyword">int</span>* NKinkAngleUsed = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbTrackP.html">EdbTrackP</a> * <a class="funcname" name="EdbEDAUtil:CleanTrack" href="src/EdbEDAUtil.h.html#hnjg5">CleanTrack</a>(<a href="./EdbTrackP.html">EdbTrackP</a>* t)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAUtil:ErrorMessage" href="src/EdbEDAUtil.h.html#Wrkr_">ErrorMessage</a>(<span class="keyword">char</span>* title, <span class="keyword">char</span>* message)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAUtil:ErrorMessage@1" href="src/EdbEDAUtil.h.html#w9ozPE">ErrorMessage</a>(<span class="keyword">char</span>* message)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbEDAUtil:AskYesNo" href="src/EdbEDAUtil.h.html#H1RlCD">AskYesNo</a>(<span class="keyword">char</span>* message)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDAUtil:InputNumberInteger" href="src/EdbEDAUtil.h.html#iMJOY">InputNumberInteger</a>(<span class="keyword">char</span>* message, <span class="keyword">int</span> idefault = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbEDAUtil:InputNumberReal" href="src/EdbEDAUtil.h.html#boTfBB">InputNumberReal</a>(<span class="keyword">char</span>* message, <span class="keyword">double</span> default_num = 0.0, TGNumberFormat::EStyle es = TGNumberFormat::kNESReal)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDAUtil:InputID" href="src/EdbEDAUtil.h.html#Fzkir">InputID</a>(<span class="keyword">char</span>* message, <a href="./EdbID.html">EdbID</a>&amp; id)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">char</span> * <a class="funcname" name="EdbEDAUtil:FindProcDirClient" href="src/EdbEDAUtil.h.html#jtu3eB">FindProcDirClient</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbEDAUtil:FindBrickIDFromPath" href="src/EdbEDAUtil.h.html#KC2yZC">FindBrickIDFromPath</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPVRec.html">EdbPVRec</a> * <a class="funcname" name="EdbEDAUtil:ReadFeedbackPVR" href="src/EdbEDAUtil.h.html#KNMUzB">ReadFeedbackPVR</a>(<span class="keyword">char</span>* filename = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><a href="./EdbPVRec.html">EdbPVRec</a> * <a class="funcname" name="EdbEDAUtil:ReadMxxPVR" href="src/EdbEDAUtil.h.html#ooh9rD">ReadMxxPVR</a>(<span class="keyword">char</span>* filename = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAUtil:WritePVRMxx" href="src/EdbEDAUtil.h.html#thnl.D">WritePVRMxx</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* pvr, <span class="keyword">char</span>* filename = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAUtil:WriteTracksMxx" href="src/EdbEDAUtil.h.html#KzBAbD">WriteTracksMxx</a>(TObjArray* pvr, <span class="keyword">char</span>* filename = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAUtil:MakePVRFromTracksArray" href="src/EdbEDAUtil.h.html#NaxlQD">MakePVRFromTracksArray</a>(TObjArray* tracks_or_segments, <a href="./EdbPVRec.html">EdbPVRec</a>&amp; pvr)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbEDAUtil:FillTracksFromPatterns" href="src/EdbEDAUtil.h.html#Q6Yrf">FillTracksFromPatterns</a>(<a href="./EdbPVRec.html">EdbPVRec</a>* pvr)</span><br />
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:25 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

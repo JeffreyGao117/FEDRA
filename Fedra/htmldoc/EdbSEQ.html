@@ -1,0 +1,377 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:30 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbSEQ</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbSEQ','','EdbSEQ.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbSEQ.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbSEQ.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbSEQ_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbSEQ:description">class description</a> 
+<a class="descrheadentry" href="#EdbSEQ:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbSEQ:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbSEQ:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbSEQ</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbSEQ:description"></a>class EdbSEQ: public <a href="./EdbSigma.html">EdbSigma</a></h1>
+<div class="classdescr">
+</div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbSEQ:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbSEQ:EdbSEQ">EdbSEQ</a>()</td></tr>
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbSEQ:_EdbSEQ">~EdbSEQ</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:AddExcludeThetaRange">AddExcludeThetaRange</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(TBrowser* b)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:CalculateDensityMT">CalculateDensityMT</a>(<a href="./EdbH1.html">EdbH1</a>&amp; hEq)</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbSEQ:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Clear"><span class="baseclass">TObject::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:Clone"><span class="baseclass">TObject::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Compare"><span class="baseclass">TObject::</span>Compare</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Copy"><span class="baseclass">TObject::</span>Copy</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp; object) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbSigma.html#EdbSigma:DAL"><span class="baseclass">EdbSigma::</span>DAL</a>(<span class="keyword">double</span> t, <span class="keyword">double</span> sxy, <span class="keyword">double</span> sz, <span class="keyword">double</span> dz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbSigma.html#EdbSigma:DALbt"><span class="baseclass">EdbSigma::</span>DALbt</a>(<span class="keyword">double</span> t)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbSigma.html#EdbSigma:DALmt"><span class="baseclass">EdbSigma::</span>DALmt</a>(<span class="keyword">double</span> t)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbSigma.html#EdbSigma:DAT"><span class="baseclass">EdbSigma::</span>DAT</a>(<span class="keyword">double</span> t, <span class="keyword">double</span> sxy, <span class="keyword">double</span> dz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbSigma.html#EdbSigma:DATbt"><span class="baseclass">EdbSigma::</span>DATbt</a>(<span class="keyword">double</span> t)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbSigma.html#EdbSigma:DATmt"><span class="baseclass">EdbSigma::</span>DATmt</a>(<span class="keyword">double</span> t)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:DNbt">DNbt</a>(<span class="keyword">double</span> t)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:DNmt">DNmt</a>(<span class="keyword">double</span> t)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbSigma.html#EdbSigma:DP"><span class="baseclass">EdbSigma::</span>DP</a>(<span class="keyword">double</span> t, <span class="keyword">double</span> sxy, <span class="keyword">double</span> da, <span class="keyword">double</span> dz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbSigma.html#EdbSigma:DPLbt"><span class="baseclass">EdbSigma::</span>DPLbt</a>(<span class="keyword">double</span> t)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbSigma.html#EdbSigma:DPLmt"><span class="baseclass">EdbSigma::</span>DPLmt</a>(<span class="keyword">double</span> t)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbSigma.html#EdbSigma:DPTbt"><span class="baseclass">EdbSigma::</span>DPTbt</a>(<span class="keyword">double</span> t)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbSigma.html#EdbSigma:DPTmt"><span class="baseclass">EdbSigma::</span>DPTmt</a>(<span class="keyword">double</span> t)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:Draw">Draw</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:EqualizeMT">EqualizeMT</a>(TObjArray&amp; mti, TObjArray&amp; mto, <a href="./ListOfTypes.html#Double_t">Double_t</a> area)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:ExcludeThetaRange">ExcludeThetaRange</a>(TObjArray&amp; mti, TObjArray&amp; mto)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(TMethod* method, TObjArray* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbSigma.html#EdbSigma:FDAL"><span class="baseclass">EdbSigma::</span>FDAL</a>(<span class="keyword">double</span>* x, <span class="keyword">double</span>* par)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbSigma.html#EdbSigma:FDALbt"><span class="baseclass">EdbSigma::</span>FDALbt</a>(<span class="keyword">double</span>* x, <span class="keyword">double</span>* par)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbSigma.html#EdbSigma:FDAT"><span class="baseclass">EdbSigma::</span>FDAT</a>(<span class="keyword">double</span>* x, <span class="keyword">double</span>* par)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:FDNbt">FDNbt</a>(<span class="keyword">double</span>* x, <span class="keyword">double</span>* par)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:FDNmt">FDNmt</a>(<span class="keyword">double</span>* x, <span class="keyword">double</span>* par)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbSigma.html#EdbSigma:FDPLmt"><span class="baseclass">EdbSigma::</span>FDPLmt</a>(<span class="keyword">double</span>* x, <span class="keyword">double</span>* par)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetName"><span class="baseclass">TObject::</span>GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetTitle"><span class="baseclass">TObject::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(TTimer* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Hash"><span class="baseclass">TObject::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> TClass* cl) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbSEQ:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:IsInsideThetaRange">IsInsideThetaRange</a>(<a href="./EdbSegP.html">EdbSegP</a>* s)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsSortable"><span class="baseclass">TObject::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ls"><span class="baseclass">TObject::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./EdbSigma.html">EdbSigma</a>&amp;</td><td class="funcname"><a class="funcname" href="./EdbSigma.html#EdbSigma:operator_"><span class="baseclass">EdbSigma::</span>operator=</a>(<span class="keyword">const</span> <a href="./EdbSigma.html">EdbSigma</a>&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:PreSelection">PreSelection</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pi, TObjArray&amp; po)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Print"><span class="baseclass">TObject::</span>Print</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:PrintLimits">PrintLimits</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:ResetExcludeThetaRange">ResetExcludeThetaRange</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:Set0">Set0</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:SetChiLimits">SetChiLimits</a>(<span class="keyword">float</span> cmin, <span class="keyword">float</span> cmax)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:SetThetaLimits">SetThetaLimits</a>(<span class="keyword">float</span> tmin, <span class="keyword">float</span> tmax)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:SetWLimits">SetWLimits</a>(<span class="keyword">float</span> wmin, <span class="keyword">float</span> wmax)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:SetXLimits">SetXLimits</a>(<span class="keyword">float</span> xmin, <span class="keyword">float</span> xmax)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:SetYLimits">SetYLimits</a>(<span class="keyword">float</span> ymin, <span class="keyword">float</span> ymax)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">double</span></td><td class="funcname"><a class="funcname" href="./EdbSigma.html#EdbSigma:SqSum"><span class="baseclass">EdbSigma::</span>SqSum</a>(<span class="keyword">double</span> a, <span class="keyword">double</span> b)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret">TH1F*</td><td class="funcname"><a class="funcname" href="#EdbSEQ:ThetaPlot">ThetaPlot</a>(TObjArray&amp; arr, <span class="keyword">const</span> <span class="keyword">char</span>* name = <span class="string">"theta"</span>, <span class="keyword">const</span> <span class="keyword">char</span>* title = <span class="string">"EdbSEQ theta distribution normalised to area"</span>)</td></tr>
+<tr class="func"><td class="funcret">TH1F*</td><td class="funcname"><a class="funcname" href="#EdbSEQ:ThetaPlot@1">ThetaPlot</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; p, <span class="keyword">const</span> <span class="keyword">char</span>* name = <span class="string">"theta"</span>, <span class="keyword">const</span> <span class="keyword">char</span>* title = <span class="string">"EdbSEQ theta distribution normalised to area"</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbSEQ:Wmt">Wmt</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, va_list va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbSEQ:Data_Members"></a>Data Members</h2>
+<div class="access" id="enumpubl"><b>public:</b>
+<table class="data" id="tabenumpubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span>EStatusBits { </td><td class="dataname"><a href="#TObject:kCanDelete">kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kMustCleanup">kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kObjInCanvas">kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kIsReferenced">kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kHasUUID">kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kCannotPick">kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNoContextMenu">kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kInvalidObject">kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span><i>[unnamed]</i> { </td><td class="dataname"><a href="#TObject:kIsOnHeap">kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNotDeleted">kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kZombie">kZombie</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kBitMask">kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kSingleKey">kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kOverwrite">kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kWriteDelete">kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="dataname"><a name="EdbSEQ:eArea"></a>eArea</td><td class="datadesc">effective area of the pattern to be equalized</td></tr>
+<tr class="datainh"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a href="./EdbSigma.html#EdbSigma:eDZbase"><span class="baseclass">EdbSigma::</span>eDZbase</a></td><td class="datadesc">= 210. emulsion base</td></tr>
+<tr class="datainh"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a href="./EdbSigma.html#EdbSigma:eDZcell"><span class="baseclass">EdbSigma::</span>eDZcell</a></td><td class="datadesc">=1300. plate-to plate distance</td></tr>
+<tr class="datainh"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a href="./EdbSigma.html#EdbSigma:eDZem"><span class="baseclass">EdbSigma::</span>eDZem</a></td><td class="datadesc">= 45.;  emulsion thickness</td></tr>
+<tr class="data"><td class="datatype">TObjArray</td><td class="dataname"><a name="EdbSEQ:eExcludeThetaRange"></a>eExcludeThetaRange</td><td class="datadesc">can be added EdbSegP with tx,ty, sigmaTX,sigmaTY to be excluded</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbH1.html">EdbH1</a></td><td class="dataname"><a name="EdbSEQ:eHEq"></a>eHEq</td><td></td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbSEQ:eNP"></a>eNP</td><td class="datadesc">number of points for the functions calculation</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="dataname"><a name="EdbSEQ:eNsigma"></a>eNsigma</td><td class="datadesc">=4</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Double_t">Double_t</a></td><td class="dataname"><a name="EdbSEQ:eS0mt"></a>eS0mt</td><td class="datadesc">= 270.*340.;     // area unit for Nseg calculation</td></tr>
+<tr class="datainh"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a href="./EdbSigma.html#EdbSigma:eSaPlate"><span class="baseclass">EdbSigma::</span>eSaPlate</a></td><td class="datadesc">"in-plate" basetrack angular tolrance (nonplanarity)</td></tr>
+<tr class="datainh"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a href="./EdbSigma.html#EdbSigma:eSaZone"><span class="baseclass">EdbSigma::</span>eSaZone</a></td><td class="datadesc">"in-zone" microtrack angular tolrance (incorrect shrinkage+offsets)</td></tr>
+<tr class="datainh"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a href="./EdbSigma.html#EdbSigma:eSxy"><span class="baseclass">EdbSigma::</span>eSxy</a></td><td class="datadesc">=  0.35 mean in-view grain accuracy xy</td></tr>
+<tr class="datainh"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a href="./EdbSigma.html#EdbSigma:eSxyPlate"><span class="baseclass">EdbSigma::</span>eSxyPlate</a></td><td class="datadesc">"in-plate" basetrack position tolerance (XY plate deformations)</td></tr>
+<tr class="datainh"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a href="./EdbSigma.html#EdbSigma:eSxyZone"><span class="baseclass">EdbSigma::</span>eSxyZone</a></td><td class="datadesc">"in-zone" microtrack position tolerance (local deformations)</td></tr>
+<tr class="datainh"><td class="datatype"><span class="keyword">double</span></td><td class="dataname"><a href="./EdbSigma.html#EdbSigma:eSz"><span class="baseclass">EdbSigma::</span>eSz</a></td><td class="datadesc">=  2.   grains z-uncertainty "field depth"</td></tr>
+
+</table></div>
+<div class="access" id="datapriv"><b>private:</b>
+<table class="data" id="tabdatapriv" cellspacing="0">
+<tr class="data"><td class="datatype">TVector2*</td><td class="dataname"><a name="EdbSEQ:eChiLimits"></a>eChiLimits</td><td class="datadesc">[min,max]</td></tr>
+<tr class="data"><td class="datatype">TVector2*</td><td class="dataname"><a name="EdbSEQ:eThetaLimits"></a>eThetaLimits</td><td class="datadesc">[min,max]</td></tr>
+<tr class="data"><td class="datatype">TVector2*</td><td class="dataname"><a name="EdbSEQ:eWLimits"></a>eWLimits</td><td class="datadesc">[min,max]</td></tr>
+<tr class="data"><td class="datatype">TVector2*</td><td class="dataname"><a name="EdbSEQ:eXLimits"></a>eXLimits</td><td class="datadesc">[min,max] area limits for the preselection procedure</td></tr>
+<tr class="data"><td class="datatype">TVector2*</td><td class="dataname"><a name="EdbSEQ:eYLimits"></a>eYLimits</td><td class="datadesc">[min,max]</td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbSEQ:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td><table><tr>
+<td bgcolor="#f7f7f7" align="right">
+<table><tr><td><table><tr>
+<td bgcolor="#efefef" align="right">
+<tt>TObject</tt></td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><tt><a name="EdbSigma" href="./EdbSigma.html">EdbSigma</a></tt></center>
+</td>
+</tr></table>
+</td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><big><b><tt><a name="EdbSEQ" href="./EdbSEQ.html">EdbSEQ</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbSEQ:_EdbSEQ" href="src/EdbSEQ.cxx.html#qJTIHE">~EdbSEQ</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbSEQ:Set0" href="src/EdbSEQ.cxx.html#mF.9HB">Set0</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbSEQ:PrintLimits" href="src/EdbSEQ.cxx.html#cnOw1E">PrintLimits</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TH1F * <a class="funcname" name="EdbSEQ:ThetaPlot@1" href="src/EdbSEQ.cxx.html#FaVxdE">ThetaPlot</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; p, <span class="keyword">const</span> <span class="keyword">char</span>* name = <span class="string">"theta"</span>, <span class="keyword">const</span> <span class="keyword">char</span>* title = <span class="string">"EdbSEQ theta distribution normalised to area"</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname">TH1F * <a class="funcname" name="EdbSEQ:ThetaPlot" href="src/EdbSEQ.cxx.html#kLjVfD">ThetaPlot</a>(TObjArray&amp; arr, <span class="keyword">const</span> <span class="keyword">char</span>* name = <span class="string">"theta"</span>, <span class="keyword">const</span> <span class="keyword">char</span>* title = <span class="string">"EdbSEQ theta distribution normalised to area"</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbSEQ:DNmt" href="src/EdbSEQ.cxx.html#fnSXK">DNmt</a>(<span class="keyword">double</span> t)</span><br />
+<div class="funccomm"><pre> return dN/dTheta : the critical number of microtracks for the given
+     theta range for a view*nviews area
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbSEQ:DNbt" href="src/EdbSEQ.cxx.html#T2DmT">DNbt</a>(<span class="keyword">double</span> t)</span><br />
+<div class="funccomm"><pre> return dN/dTheta : the critical number of microtracks for the given
+     theta range for a view area
+printf(<span class="string">"t=%f\n"</span>,t);
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbSEQ:Draw" href="src/EdbSEQ.cxx.html#AyyI8C">Draw</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbSEQ:CalculateDensityMT" href="src/EdbSEQ.cxx.html#LwLOMD">CalculateDensityMT</a>(<a href="./EdbH1.html">EdbH1</a>&amp; hEq)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbSEQ:PreSelection" href="src/EdbSEQ.cxx.html#BhclxD">PreSelection</a>(<a href="./EdbPattern.html">EdbPattern</a>&amp; pi, TObjArray&amp; po)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbSEQ:AddExcludeThetaRange" href="src/EdbSEQ.cxx.html#M.mcaC">AddExcludeThetaRange</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbSEQ:ExcludeThetaRange" href="src/EdbSEQ.cxx.html#GoAbOB">ExcludeThetaRange</a>(TObjArray&amp; mti, TObjArray&amp; mto)</span><br />
+<div class="funccomm"><pre> exclude 1 sigma in theta around all requested segments
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbSEQ:IsInsideThetaRange" href="src/EdbSEQ.cxx.html#aNWGhB">IsInsideThetaRange</a>(<a href="./EdbSegP.html">EdbSegP</a>* s)</span><br />
+<div class="funccomm"><pre> exclude 1 sigma in theta around all requested segments
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbSEQ:EqualizeMT" href="src/EdbSEQ.cxx.html#edWIq">EqualizeMT</a>(TObjArray&amp; mti, TObjArray&amp; mto, <a href="./ListOfTypes.html#Double_t">Double_t</a> area)</span><br />
+<div class="funccomm"><pre> Input:  mti  - microtracks array
+ Output: mto  - selected microtracks array
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbSEQ:EdbSEQ" href="src/EdbSEQ.h.html#g.nB9C">EdbSEQ</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{ ((<a href="./EdbSigma.html">EdbSigma</a>*)<span class="keyword">this</span>)-><a href="./EdbSEQ.html#EdbSEQ:Set0" title="void EdbSEQ::Set0()">Set0</a>(); <a href="./EdbSEQ.html#EdbSEQ:Set0" title="void EdbSEQ::Set0()">Set0</a>();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbSEQ:SetXLimits" href="src/EdbSEQ.h.html#FQoclE">SetXLimits</a>(<span class="keyword">float</span> xmin, <span class="keyword">float</span> xmax)</span><br />
+
+<div class="code"><code class="inlinecode">{SafeDelete(<a href="./EdbSEQ.html#EdbSEQ:eXLimits" title="TVector2* EdbSEQ::eXLimits">eXLimits</a>); <a href="./EdbSEQ.html#EdbSEQ:eXLimits" title="TVector2* EdbSEQ::eXLimits">eXLimits</a>=<span class="keyword">new</span> TVector2(xmin,xmax);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbSEQ:SetYLimits" href="src/EdbSEQ.h.html#VEP.SD">SetYLimits</a>(<span class="keyword">float</span> ymin, <span class="keyword">float</span> ymax)</span><br />
+
+<div class="code"><code class="inlinecode">{SafeDelete(<a href="./EdbSEQ.html#EdbSEQ:eYLimits" title="TVector2* EdbSEQ::eYLimits">eYLimits</a>); <a href="./EdbSEQ.html#EdbSEQ:eYLimits" title="TVector2* EdbSEQ::eYLimits">eYLimits</a>=<span class="keyword">new</span> TVector2(ymin,ymax);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbSEQ:SetWLimits" href="src/EdbSEQ.h.html#q7NNk">SetWLimits</a>(<span class="keyword">float</span> wmin, <span class="keyword">float</span> wmax)</span><br />
+
+<div class="code"><code class="inlinecode">{SafeDelete(<a href="./EdbSEQ.html#EdbSEQ:eWLimits" title="TVector2* EdbSEQ::eWLimits">eWLimits</a>); <a href="./EdbSEQ.html#EdbSEQ:eWLimits" title="TVector2* EdbSEQ::eWLimits">eWLimits</a>=<span class="keyword">new</span> TVector2(wmin,wmax);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbSEQ:SetThetaLimits" href="src/EdbSEQ.h.html#Joke.D">SetThetaLimits</a>(<span class="keyword">float</span> tmin, <span class="keyword">float</span> tmax)</span><br />
+
+<div class="code"><code class="inlinecode">{SafeDelete(<a href="./EdbSEQ.html#EdbSEQ:eThetaLimits" title="TVector2* EdbSEQ::eThetaLimits">eThetaLimits</a>); <a href="./EdbSEQ.html#EdbSEQ:eThetaLimits" title="TVector2* EdbSEQ::eThetaLimits">eThetaLimits</a>=<span class="keyword">new</span> TVector2(tmin,tmax);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbSEQ:SetChiLimits" href="src/EdbSEQ.h.html#isHdy">SetChiLimits</a>(<span class="keyword">float</span> cmin, <span class="keyword">float</span> cmax)</span><br />
+
+<div class="code"><code class="inlinecode">{SafeDelete(<a href="./EdbSEQ.html#EdbSEQ:eChiLimits" title="TVector2* EdbSEQ::eChiLimits">eChiLimits</a>); <a href="./EdbSEQ.html#EdbSEQ:eChiLimits" title="TVector2* EdbSEQ::eChiLimits">eChiLimits</a>=<span class="keyword">new</span> TVector2(cmin,cmax);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbSEQ:FDNmt" href="src/EdbSEQ.h.html#PbZfbC">FDNmt</a>(<span class="keyword">double</span>* x, <span class="keyword">double</span>* par)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbSEQ.html#EdbSEQ:DNmt" title="double EdbSEQ::DNmt(double t)">DNmt</a>(*x);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">double</span> <a class="funcname" name="EdbSEQ:FDNbt" href="src/EdbSEQ.h.html#XoZfbC">FDNbt</a>(<span class="keyword">double</span>* x, <span class="keyword">double</span>* par)</span><br />
+
+<div class="code"><code class="inlinecode">{<span class="keyword">return</span> <a href="./EdbSEQ.html#EdbSEQ:DNbt" title="double EdbSEQ::DNbt(double t)">DNbt</a>(*x);}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbSEQ:ResetExcludeThetaRange" href="src/EdbSEQ.h.html#x5jcIE">ResetExcludeThetaRange</a>()</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbSEQ.html#EdbSEQ:eExcludeThetaRange" title="TObjArray EdbSEQ::eExcludeThetaRange">eExcludeThetaRange</a>.<a href="./#TObject:Delete" title="void TObject::Delete(Option_t* option=&quot;&quot;)">Delete</a>();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbSEQ:Wmt" href="src/EdbSEQ.h.html#qXpAIB">Wmt</a>(<a href="./EdbSegP.html">EdbSegP</a>&amp; s)</span><br />
+
+<div class="code"><code class="inlinecode">{ <span class="keyword">return</span> s.W()*50. + s.DZ(); }</code></div>
+<div style="clear:both;"></div>
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:30 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>

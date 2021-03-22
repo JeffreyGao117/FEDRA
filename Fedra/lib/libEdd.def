@@ -1,0 +1,1321 @@
+LIBRARY    C:\Users\User\Downloads\Fedra/lib/libEdd
+EXPORTS 
+	?strstr@@YAPADPADPBD@Z
+	hypot
+	??2@YAPAXIPAX@Z
+	??3@YAXPAX0@Z
+	?length@?$char_traits@D@std@@SAIPBD@Z
+	?copy@?$char_traits@D@std@@SAPADPADPBDI@Z
+	?move@?$char_traits@D@std@@SAPADPADPBDI@Z
+	?assign@?$char_traits@D@std@@SAXAADABD@Z
+	??0?$allocator@D@std@@QAE@XZ
+	?deallocate@?$allocator@D@std@@QAEXPADI@Z
+	?allocate@?$allocator@D@std@@QAEPADI@Z
+	?max_size@?$allocator@D@std@@QBEIXZ
+	?max_size@?$allocator_traits@V?$allocator@D@std@@@std@@SAIABV?$allocator@D@2@@Z
+	??0?$_Wrap_alloc@V?$allocator@D@std@@@std@@QAE@XZ
+	?allocate@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QAEPADI@Z
+	?deallocate@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QAEXPADI@Z
+	?max_size@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QBEIXZ
+	??0?$_String_val@U?$_Simple_types@D@std@@@std@@QAE@XZ
+	?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QAEPADXZ
+	?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QBEPBDXZ
+	??0?$_String_alloc@$0A@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QAE@ABV?$allocator@D@1@@Z
+	?_Getal@?$_String_alloc@$0A@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QBE?AU?$_Wrap_alloc@V?$allocator@D@std@@@2@XZ
+	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@PBD@Z
+	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ
+	?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z
+	?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z
+	?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBD@Z
+	?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@I@Z
+	?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z
+	?size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ
+	?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ
+	?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXII@Z
+	?_Eos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXI@Z
+	?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE_NI_N@Z
+	?_Inside@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE_NPBD@Z
+	?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEX_NI@Z
+	?_Xlen@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEXXZ
+	?_Xran@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEXXZ
+	?generic_category@std@@YAABVerror_category@1@XZ
+	?system_category@std@@YAABVerror_category@1@XZ
+	??0error_category@std@@QAE@XZ
+	??1error_category@std@@UAE@XZ
+	?default_error_condition@error_category@std@@UBE?AVerror_condition@2@H@Z
+	?equivalent@error_category@std@@UBE_NHABVerror_condition@2@@Z
+	?equivalent@error_category@std@@UBE_NABVerror_code@2@H@Z
+	??8error_category@std@@QBE_NABV01@@Z
+	?value@error_code@std@@QBEHXZ
+	?category@error_code@std@@QBEABVerror_category@2@XZ
+	??0error_condition@std@@QAE@HABVerror_category@1@@Z
+	?value@error_condition@std@@QBEHXZ
+	?category@error_condition@std@@QBEABVerror_category@2@XZ
+	??8error_condition@std@@QBE_NABV01@@Z
+	??0_Generic_error_category@std@@QAE@XZ
+	?name@_Generic_error_category@std@@UBEPBDXZ
+	?message@_Generic_error_category@std@@UBE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@H@Z
+	??1_Generic_error_category@std@@UAE@XZ
+	??0_Iostream_error_category@std@@QAE@XZ
+	?name@_Iostream_error_category@std@@UBEPBDXZ
+	?message@_Iostream_error_category@std@@UBE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@H@Z
+	??1_Iostream_error_category@std@@UAE@XZ
+	??0_System_error_category@std@@QAE@XZ
+	?name@_System_error_category@std@@UBEPBDXZ
+	?message@_System_error_category@std@@UBE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@H@Z
+	?default_error_condition@_System_error_category@std@@UBE?AVerror_condition@2@H@Z
+	??1_System_error_category@std@@UAE@XZ
+	?Clear@TObject@@UAEXPBD@Z
+	?GetOption@TObject@@UBEPBDXZ
+	?IsSortable@TObject@@UBE_NXZ
+	??2TObject@@SAPAXI@Z
+	?SetBit@TObject@@QAEXI@Z
+	?ResetBit@TObject@@QAEXI@Z
+	?TestBit@TObject@@QBE_NI@Z
+	?IsLong@TString@@ABE_NXZ
+	?GetLongPointer@TString@@ABEPBDXZ
+	?GetShortPointer@TString@@ABEPBDXZ
+	?GetPointer@TString@@ABEPBDXZ
+	??BTString@@QBEPBDXZ
+	??0TNamed@@QAE@XZ
+	??1TNamed@@UAE@XZ
+	?GetName@TNamed@@UBEPBDXZ
+	?GetTitle@TNamed@@UBEPBDXZ
+	?Hash@TNamed@@UBEKXZ
+	?IsSortable@TNamed@@UBE_NXZ
+	?IsA@TNamed@@UBEPAVTClass@@XZ
+	?GetListOfCanvases@TROOT@@QBEPAVTSeqCollection@@XZ
+	?GetListOfSpecials@TROOT@@QBEPAVTSeqCollection@@XZ
+	?GetLineColor@TAttLine@@UBEFXZ
+	?GetLineStyle@TAttLine@@UBEFXZ
+	?GetLineWidth@TAttLine@@UBEFXZ
+	?SetLineColor@TAttLine@@UAEXF@Z
+	?SetLineStyle@TAttLine@@UAEXF@Z
+	?SetLineWidth@TAttLine@@UAEXF@Z
+	??0_Ignore@std@@QAE@XZ
+	?GetDview@TView3D@@UBENXZ
+	?GetDproj@TView3D@@UBENXZ
+	?GetAutoRange@TView3D@@UAE_NXZ
+	?GetLatitude@TView3D@@UAENXZ
+	?GetLongitude@TView3D@@UAENXZ
+	?GetPsi@TView3D@@UAENXZ
+	?GetRmax@TView3D@@UAEPANXZ
+	?GetRmin@TView3D@@UAEPANXZ
+	?GetOutline@TView3D@@UAEPAVTSeqCollection@@XZ
+	?GetTback@TView3D@@UAEPANXZ
+	?GetTN@TView3D@@UAEPANXZ
+	?GetTnorm@TView3D@@UAEPANXZ
+	?GetSystem@TView3D@@UAEHXZ
+	?GetWindowWidth@TView3D@@UBENXZ
+	?GetWindowHeight@TView3D@@UBENXZ
+	?IsPerspective@TView3D@@UBE_NXZ
+	?IsViewChanged@TView3D@@UBE_NXZ
+	?SetAutoRange@TView3D@@UAEX_N@Z
+	?SetDview@TView3D@@UAEXN@Z
+	?SetDproj@TView3D@@UAEXN@Z
+	?SetLatitude@TView3D@@UAEXN@Z
+	?SetLongitude@TView3D@@UAEXN@Z
+	?SetPsi@TView3D@@UAEXN@Z
+	?SetSystem@TView3D@@UAEXH@Z
+	?SetViewChanged@TView3D@@UAEX_N@Z
+	??0Edb3DView@@QAE@XZ
+	??1Edb3DView@@UAE@XZ
+	?GetTitle@Edb3DView@@UBEPBDXZ
+	?GetName@Edb3DView@@UBEPBDXZ
+	?GetObjectInfo@Edb3DView@@UBEPADHH@Z
+	?ExecuteRotateView@Edb3DView@@UAEXHHH@Z
+	?SetRotateMode@Edb3DView@@UAEX_N@Z
+	?IsA@Edb3DView@@UBEPAVTClass@@XZ
+	??0EdbDisplayBase@@QAE@XZ
+	??0EdbDisplayBase@@QAE@PBDMMMMMMPAVTCanvas@@@Z
+	??1EdbDisplayBase@@UAE@XZ
+	?Set0@EdbDisplayBase@@UAEXXZ
+	?Clear@EdbDisplayBase@@UAEXXZ
+	?Refresh@EdbDisplayBase@@UAEXXZ
+	?ExecuteEvent@EdbDisplayBase@@UAEXHHH@Z
+	?DisplayButtons@EdbDisplayBase@@UAEXXZ
+	?SetView@EdbDisplayBase@@UAEXMMM@Z
+	?DrawAllViews@EdbDisplayBase@@UAEXXZ
+	?DrawViewGL@EdbDisplayBase@@UAEXXZ
+	?DrawViewX3D@EdbDisplayBase@@UAEXXZ
+	?DrawTitle@EdbDisplayBase@@UAEXPBD@Z
+	?DrawPreVTX@EdbDisplayBase@@UAEXPAD@Z
+	?DrawOldVTX@EdbDisplayBase@@UAEXPAD@Z
+	?DrawNewVTX@EdbDisplayBase@@UAEXPAD@Z
+	?DrawPreBut@EdbDisplayBase@@UAEXPAD@Z
+	?DrawOldBut@EdbDisplayBase@@UAEXPAD@Z
+	?DrawNewBut@EdbDisplayBase@@UAEXPAD@Z
+	?ClearPreVTX@EdbDisplayBase@@UAEXXZ
+	?ClearNewVTX@EdbDisplayBase@@UAEXXZ
+	?CreateCanvasVTX@EdbDisplayBase@@UAEXXZ
+	?DrawUnd@EdbDisplayBase@@UAEXXZ
+	?DrawAcc@EdbDisplayBase@@UAEXXZ
+	?DrawCan@EdbDisplayBase@@UAEXXZ
+	?DrawEnv@EdbDisplayBase@@UAEXXZ
+	?DrawView@EdbDisplayBase@@UAEXMMM@Z
+	?SetPickMode@EdbDisplayBase@@UAEXXZ
+	?SetRange@EdbDisplayBase@@UAEXMMMMMM@Z
+	?SetZoomMode@EdbDisplayBase@@UAEXXZ
+	?UnZoom@EdbDisplayBase@@UAEXXZ
+	?Draw@EdbDisplayBase@@UAEXPBD@Z
+	?DistancetoPrimitive@EdbDisplayBase@@UAEHHH@Z
+	?GetObjectInfo@EdbDisplayBase@@UBEPADHH@Z
+	?SetRotate@EdbDisplayBase@@UAEXXZ
+	?SetStyle@EdbDisplayBase@@UAEXH@Z
+	?SetLineWidth@EdbDisplayBase@@UAEXH@Z
+	?SetColorBG@EdbDisplayBase@@UAEXH@Z
+	?SetDrawDet@EdbDisplayBase@@UAEX_N@Z
+	?SwDrawDet@EdbDisplayBase@@UAEXXZ
+	?DrawDetector@EdbDisplayBase@@UAEXXZ
+	?SetDetector@EdbDisplayBase@@UAEXPAVTGeoVolume@@@Z
+	?IsA@EdbDisplayBase@@UBEPAVTClass@@XZ
+	??$construct@PADAAPAD@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QAEXPAPADAAPAD@Z
+	??$destroy@PAD@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QAEXPAPAD@Z
+	??$addressof@D@std@@YAPADAAD@Z
+	??$_Allocate@D@std@@YAPADIPAD@Z
+	??$forward@AAPAD@std@@YAAAPADAAPAD@Z
+	??$construct@PADAAPAD@?$allocator_traits@V?$allocator@D@std@@@std@@SAXAAV?$allocator@D@1@PAPADAAPAD@Z
+	??$destroy@PAD@?$allocator_traits@V?$allocator@D@std@@@std@@SAXAAV?$allocator@D@1@PAPAD@Z
+	??$construct@PADAAPAD@?$allocator@D@std@@QAEXPAPADAAPAD@Z
+	??$destroy@PAD@?$allocator@D@std@@QAEXPAPAD@Z
+	?IsA@Edb3DView@@WM@BEPAVTClass@@XZ
+	?ShowMembers@Edb3DView@@WM@AEXAAVTMemberInspector@@@Z
+	?Streamer@Edb3DView@@WM@AEXAAVTBuffer@@@Z
+	?_Generic_object@?$_Error_objects@H@std@@2V_Generic_error_category@2@A 	 DATA
+	?_Iostream_object@?$_Error_objects@H@std@@2V_Iostream_error_category@2@A 	 DATA
+	?_System_object@?$_Error_objects@H@std@@2V_System_error_category@2@A 	 DATA
+	?id@?$num_put@DV?$back_insert_iterator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@2V0locale@2@A 	 DATA
+	?id@?$num_put@_WV?$back_insert_iterator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@std@@@std@@2V0locale@2@A 	 DATA
+	??_R0?AVTObject@@@8 	 DATA
+	??_R0?AVTNamed@@@8 	 DATA
+	??_R0?AVerror_category@std@@@8 	 DATA
+	??_R0?AV_Generic_error_category@std@@@8 	 DATA
+	??_R0?AV_Iostream_error_category@std@@@8 	 DATA
+	??_R0?AV_System_error_category@std@@@8 	 DATA
+	??_R0?AVTAttLine@@@8 	 DATA
+	??_R0?AVTView@@@8 	 DATA
+	??_R0?AVEdb3DView@@@8 	 DATA
+	??_R0?AVTView3D@@@8 	 DATA
+	??_R0?AVEdbDisplayBase@@@8 	 DATA
+	hypot
+	fabsf
+	?abs@@YANN@Z
+	?abs@@YAMM@Z
+	??2@YAPAXIPAX@Z
+	??3@YAXPAX0@Z
+	?length@?$char_traits@D@std@@SAIPBD@Z
+	?copy@?$char_traits@D@std@@SAPADPADPBDI@Z
+	?move@?$char_traits@D@std@@SAPADPADPBDI@Z
+	?assign@?$char_traits@D@std@@SAXAADABD@Z
+	??0?$allocator@D@std@@QAE@XZ
+	?deallocate@?$allocator@D@std@@QAEXPADI@Z
+	?allocate@?$allocator@D@std@@QAEPADI@Z
+	?max_size@?$allocator@D@std@@QBEIXZ
+	?max_size@?$allocator_traits@V?$allocator@D@std@@@std@@SAIABV?$allocator@D@2@@Z
+	??0?$_Wrap_alloc@V?$allocator@D@std@@@std@@QAE@XZ
+	?allocate@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QAEPADI@Z
+	?deallocate@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QAEXPADI@Z
+	?max_size@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QBEIXZ
+	??0?$_String_val@U?$_Simple_types@D@std@@@std@@QAE@XZ
+	?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QAEPADXZ
+	?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QBEPBDXZ
+	??0?$_String_alloc@$0A@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QAE@ABV?$allocator@D@1@@Z
+	?_Getal@?$_String_alloc@$0A@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QBE?AU?$_Wrap_alloc@V?$allocator@D@std@@@2@XZ
+	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@PBD@Z
+	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ
+	?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z
+	?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z
+	?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBD@Z
+	?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@I@Z
+	?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z
+	?size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ
+	?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ
+	?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXII@Z
+	?_Eos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXI@Z
+	?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE_NI_N@Z
+	?_Inside@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE_NPBD@Z
+	?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEX_NI@Z
+	?_Xlen@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEXXZ
+	?_Xran@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEXXZ
+	?generic_category@std@@YAABVerror_category@1@XZ
+	?system_category@std@@YAABVerror_category@1@XZ
+	??0error_category@std@@QAE@XZ
+	??1error_category@std@@UAE@XZ
+	?default_error_condition@error_category@std@@UBE?AVerror_condition@2@H@Z
+	?equivalent@error_category@std@@UBE_NHABVerror_condition@2@@Z
+	?equivalent@error_category@std@@UBE_NABVerror_code@2@H@Z
+	??8error_category@std@@QBE_NABV01@@Z
+	?value@error_code@std@@QBEHXZ
+	?category@error_code@std@@QBEABVerror_category@2@XZ
+	??0error_condition@std@@QAE@HABVerror_category@1@@Z
+	?value@error_condition@std@@QBEHXZ
+	?category@error_condition@std@@QBEABVerror_category@2@XZ
+	??8error_condition@std@@QBE_NABV01@@Z
+	??0_Generic_error_category@std@@QAE@XZ
+	?name@_Generic_error_category@std@@UBEPBDXZ
+	?message@_Generic_error_category@std@@UBE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@H@Z
+	??1_Generic_error_category@std@@UAE@XZ
+	??0_Iostream_error_category@std@@QAE@XZ
+	?name@_Iostream_error_category@std@@UBEPBDXZ
+	?message@_Iostream_error_category@std@@UBE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@H@Z
+	??1_Iostream_error_category@std@@UAE@XZ
+	??0_System_error_category@std@@QAE@XZ
+	?name@_System_error_category@std@@UBEPBDXZ
+	?message@_System_error_category@std@@UBE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@H@Z
+	?default_error_condition@_System_error_category@std@@UBE?AVerror_condition@2@H@Z
+	??1_System_error_category@std@@UAE@XZ
+	?Clear@TObject@@UAEXPBD@Z
+	?GetOption@TObject@@UBEPBDXZ
+	?IsSortable@TObject@@UBE_NXZ
+	??2TObject@@SAPAXI@Z
+	?SetBit@TObject@@QAEXI@Z
+	?ResetBit@TObject@@QAEXI@Z
+	?Abs@TMath@@YAHH@Z
+	?Abs@TMath@@YAMM@Z
+	?Abs@TMath@@YANN@Z
+	?IsLong@TString@@ABE_NXZ
+	?GetLongPointer@TString@@ABEPBDXZ
+	?GetShortPointer@TString@@ABEPBDXZ
+	?GetPointer@TString@@ABEPBDXZ
+	??BTString@@QBEPBDXZ
+	?Data@TString@@QBEPBDXZ
+	?GetName@TNamed@@UBEPBDXZ
+	?GetTitle@TNamed@@UBEPBDXZ
+	?Hash@TNamed@@UBEKXZ
+	?IsSortable@TNamed@@UBE_NXZ
+	??0TCollection@@IAE@XZ
+	??1TCollection@@UAE@XZ
+	?GetEntries@TCollection@@UBEHXZ
+	?GetSize@TCollection@@UBEHXZ
+	?Hash@TCollection@@UBEKXZ
+	?IsEmpty@TCollection@@UBE_NXZ
+	?IsFolder@TCollection@@UBE_NXZ
+	?IsSortable@TCollection@@UBE_NXZ
+	?MakeReverseIterator@TCollection@@UBEPAVTIterator@@XZ
+	?IsA@TCollection@@UBEPAVTClass@@XZ
+	??0TSeqCollection@@IAE@XZ
+	?Changed@TSeqCollection@@MAEXXZ
+	??1TSeqCollection@@UAE@XZ
+	?Add@TSeqCollection@@UAEXPAVTObject@@@Z
+	?RemoveFirst@TSeqCollection@@UAEXXZ
+	?RemoveLast@TSeqCollection@@UAEXXZ
+	?RemoveAt@TSeqCollection@@UAEPAVTObject@@H@Z
+	?RemoveAfter@TSeqCollection@@UAEXPAVTObject@@@Z
+	?RemoveBefore@TSeqCollection@@UAEXPAVTObject@@@Z
+	?IsSorted@TSeqCollection@@UBE_NXZ
+	?IsA@TSeqCollection@@UBEPAVTClass@@XZ
+	??0TList@@QAE@XZ
+	?Add@TList@@UAEXPAVTObject@@@Z
+	?Add@TList@@UAEXPAVTObject@@PBD@Z
+	?FirstLink@TList@@UBEPAVTObjLink@@XZ
+	?LastLink@TList@@UBEPAVTObjLink@@XZ
+	?IsA@TList@@UBEPAVTClass@@XZ
+	?GetListOfCanvases@TROOT@@QBEPAVTSeqCollection@@XZ
+	?GetListOfSpecials@TROOT@@QBEPAVTSeqCollection@@XZ
+	?GetLineColor@TAttLine@@UBEFXZ
+	?GetLineStyle@TAttLine@@UBEFXZ
+	?GetLineWidth@TAttLine@@UBEFXZ
+	?SetLineColor@TAttLine@@UAEXF@Z
+	?SetLineStyle@TAttLine@@UAEXF@Z
+	?SetLineWidth@TAttLine@@UAEXF@Z
+	?GetMarkerColor@TAttMarker@@UBEFXZ
+	?GetMarkerStyle@TAttMarker@@UBEFXZ
+	?GetMarkerSize@TAttMarker@@UBEMXZ
+	?SetMarkerColor@TAttMarker@@UAEXF@Z
+	?SetMarkerStyle@TAttMarker@@UAEXF@Z
+	?SetMarkerSize@TAttMarker@@UAEXM@Z
+	?GetSenderClassName@TQObject@@MBEPBDXZ
+	?Connected@TQObject@@UAEXPBD@Z
+	?Disconnected@TQObject@@UAEXPBD@Z
+	?Destroyed@TQObject@@UAEXXZ
+	?ChangedBy@TQObject@@UAEXPBD@Z
+	?Message@TQObject@@UAEXPBD@Z
+	?Hash@TGObject@@UBEKXZ
+	?GetResourcePool@TGClient@@QBEPBVTGResourcePool@@XZ
+	?MapWindow@TGWindow@@UAEXXZ
+	?MapRaised@TGWindow@@UAEXXZ
+	?UnmapWindow@TGWindow@@UAEXXZ
+	?DestroyWindow@TGWindow@@UAEXXZ
+	?DestroySubwindows@TGWindow@@UAEXXZ
+	?RaiseWindow@TGWindow@@UAEXXZ
+	?LowerWindow@TGWindow@@UAEXXZ
+	?IconifyWindow@TGWindow@@UAEXXZ
+	?RequestFocus@TGWindow@@UAEXXZ
+	?SetBackgroundPixmap@TGWindow@@UAEXK@Z
+	?HandleExpose@TGWindow@@UAE_NPAUEvent_t@@@Z
+	?HandleTimer@TGWindow@@UAE_NPAVTTimer@@@Z
+	?HandleIdleEvent@TGWindow@@UAE_NPAVTGIdleHandler@@@Z
+	?GetEditDisabled@TGWindow@@UBEIXZ
+	?SetName@TGWindow@@UAEXPBD@Z
+	??0TGDimension@@QAE@II@Z
+	??0TGDimension@@QAE@ABV0@@Z
+	??1TGDimension@@UAE@XZ
+	?IsA@TGDimension@@UBEPAVTClass@@XZ
+	??0TRefCnt@@QAE@H@Z
+	??1TRefCnt@@UAE@XZ
+	?SetRefCount@TRefCnt@@QAEXI@Z
+	?GetFontHandle@TGFont@@QBEKXZ
+	?GetFontStruct@TGFont@@QBEKXZ
+	??0TGLayoutHints@@QAE@KHHHH@Z
+	?SetLayoutHints@TGLayoutHints@@UAEXK@Z
+	?SetPadTop@TGLayoutHints@@UAEXH@Z
+	?SetPadBottom@TGLayoutHints@@UAEXH@Z
+	?SetPadLeft@TGLayoutHints@@UAEXH@Z
+	?SetPadRight@TGLayoutHints@@UAEXH@Z
+	?ls@TGLayoutHints@@UBEXPBD@Z
+	?IsA@TGLayoutHints@@UBEPAVTClass@@XZ
+	?GetSender@TGFrame@@MAEPAXXZ
+	?ReallyDelete@TGFrame@@UAEXXZ
+	?HandleSelectionRequest@TGFrame@@UAE_NPAUEvent_t@@@Z
+	?HandleSelectionClear@TGFrame@@UAE_NPAUEvent_t@@@Z
+	?HandleColormapChange@TGFrame@@UAE_NPAUEvent_t@@@Z
+	?ProcessedConfigure@TGFrame@@UAEXPAUEvent_t@@@Z
+	?ProcessedEvent@TGFrame@@UAEXPAUEvent_t@@@Z
+	?GetBackground@TGFrame@@UBEKXZ
+	?SetForegroundColor@TGFrame@@UAEXK@Z
+	?GetOptions@TGFrame@@UBEIXZ
+	?ReparentWindow@TGFrame@@UAEXPBVTGWindow@@HH@Z
+	?MapWindow@TGFrame@@UAEXXZ
+	?MapRaised@TGFrame@@UAEXXZ
+	?UnmapWindow@TGFrame@@UAEXXZ
+	?DrawCopy@TGFrame@@UAEXKHH@Z
+	?Activate@TGFrame@@UAEX_N@Z
+	?IsActive@TGFrame@@UBE_NXZ
+	?SetX@TGFrame@@UAEXH@Z
+	?SetY@TGFrame@@UAEXH@Z
+	?SetWidth@TGFrame@@UAEXI@Z
+	?SetHeight@TGFrame@@UAEXI@Z
+	?SetMinWidth@TGFrame@@UAEXI@Z
+	?SetMinHeight@TGFrame@@UAEXI@Z
+	?SetMaxWidth@TGFrame@@UAEXI@Z
+	?SetMaxHeight@TGFrame@@UAEXI@Z
+	?SetSize@TGFrame@@UAEXABVTGDimension@@@Z
+	?Delete@TGFrame@@UAEXPBD@Z
+	?DrawClone@TGFrame@@UBEPAVTObject@@PBD@Z
+	?DrawClass@TGFrame@@UBEXXZ
+	?Dump@TGFrame@@UBEXXZ
+	?Inspect@TGFrame@@UBEXXZ
+	?SetDrawOption@TGFrame@@UAEXPBD@Z
+	?GetDNDData@TGFrame@@UAEPAVTDNDData@@K@Z
+	?HandleDNDDrop@TGFrame@@UAE_NPAVTDNDData@@@Z
+	?HandleDNDPosition@TGFrame@@UAEKHHKHH@Z
+	?HandleDNDEnter@TGFrame@@UAEKPAK@Z
+	?HandleDNDLeave@TGFrame@@UAE_NXZ
+	?HandleDNDFinished@TGFrame@@UAE_NXZ
+	?GetList@TGCompositeFrame@@UBEPAVTList@@XZ
+	?GetDefaultWidth@TGCompositeFrame@@UBEIXZ
+	?GetDefaultHeight@TGCompositeFrame@@UBEIXZ
+	?GetDefaultSize@TGCompositeFrame@@UBE?AVTGDimension@@XZ
+	?HandleButton@TGCompositeFrame@@UAE_NPAUEvent_t@@@Z
+	?HandleDoubleClick@TGCompositeFrame@@UAE_NPAUEvent_t@@@Z
+	?HandleCrossing@TGCompositeFrame@@UAE_NPAUEvent_t@@@Z
+	?HandleMotion@TGCompositeFrame@@UAE_NPAUEvent_t@@@Z
+	?HandleKey@TGCompositeFrame@@UAE_NPAUEvent_t@@@Z
+	?HandleFocusChange@TGCompositeFrame@@UAE_NPAUEvent_t@@@Z
+	?HandleSelection@TGCompositeFrame@@UAE_NPAUEvent_t@@@Z
+	?ProcessMessage@TGCompositeFrame@@UAE_NJJJ@Z
+	?GetLayoutManager@TGCompositeFrame@@UBEPAVTGLayoutManager@@XZ
+	?IsComposite@TGCompositeFrame@@UBE_NXZ
+	?IsLayoutBroken@TGCompositeFrame@@UBE_NXZ
+	?MustCleanup@TGCompositeFrame@@UBEHXZ
+	?SetMapSubwindows@TGCompositeFrame@@UAEX_N@Z
+	?IsMapSubwindows@TGCompositeFrame@@UBE_NXZ
+	??0TGVerticalFrame@@QAE@PBVTGWindow@@IIIK@Z
+	?IsA@TGVerticalFrame@@UBEPAVTClass@@XZ
+	??1TGVerticalFrame@@UAE@XZ
+	??0TGHorizontalFrame@@QAE@PBVTGWindow@@IIIK@Z
+	?IsA@TGHorizontalFrame@@UBEPAVTClass@@XZ
+	??1TGHorizontalFrame@@UAE@XZ
+	?GetFrameGC@TGResourcePool@@QBEPBVTGGC@@XZ
+	?GetEntriesFast@TObjArray@@QBEHXZ
+	??0_Ignore@std@@QAE@XZ
+	?Sqrt@TMath@@YANN@Z
+	??0TSortedList@@QAE@_N@Z
+	?IsSorted@TSortedList@@UBE_NXZ
+	?AddFirst@TSortedList@@UAEXPAVTObject@@@Z
+	?AddFirst@TSortedList@@UAEXPAVTObject@@PBD@Z
+	?AddLast@TSortedList@@UAEXPAVTObject@@@Z
+	?AddLast@TSortedList@@UAEXPAVTObject@@PBD@Z
+	?AddAt@TSortedList@@UAEXPAVTObject@@H@Z
+	?AddAfter@TSortedList@@UAEXPBVTObject@@PAV2@@Z
+	?AddAfter@TSortedList@@UAEXPAVTObjLink@@PAVTObject@@@Z
+	?AddBefore@TSortedList@@UAEXPBVTObject@@PAV2@@Z
+	?AddBefore@TSortedList@@UAEXPAVTObjLink@@PAVTObject@@@Z
+	?Sort@TSortedList@@UAEX_N@Z
+	?IsA@TSortedList@@UBEPAVTClass@@XZ
+	??1TSortedList@@UAE@XZ
+	??1EdbPoint@@UAE@XZ
+	?Transform@EdbPoint@@UAEXPBVEdbAffine2D@@@Z
+	?Transform@EdbPoint@@UAEXPBVEdbAffine3D@@@Z
+	?Test@EdbPoint@@UBEXXZ
+	?IsA@EdbPoint@@UBEPAVTClass@@XZ
+	??0EdbPoint@@QAE@XZ
+	??1EdbAngle2D@@UAE@XZ
+	?Test@EdbAngle2D@@UBEXXZ
+	?IsA@EdbAngle2D@@UBEPAVTClass@@XZ
+	??0EdbAngle2D@@QAE@XZ
+	??1EdbPoint2D@@UAE@XZ
+	?Z@EdbPoint2D@@UBEMXZ
+	?SetZ@EdbPoint2D@@UAEXM@Z
+	?Test@EdbPoint2D@@UBEXXZ
+	?TestPoint2D@EdbPoint2D@@UBEXXZ
+	?IsA@EdbPoint2D@@UBEPAVTClass@@XZ
+	??0EdbPoint2D@@QAE@XZ
+	??1EdbTrack2D@@UAE@XZ
+	?Test@EdbTrack2D@@UBEXXZ
+	?IsA@EdbTrack2D@@UBEPAVTClass@@XZ
+	??0EdbTrack2D@@QAE@XZ
+	??0EdbID@@QAE@HHHH@Z
+	??1EdbID@@UAE@XZ
+	?Set@EdbID@@QAEXHHHH@Z
+	?IsA@EdbID@@UBEPAVTClass@@XZ
+	??0EdbSegP@@QAE@ABV0@@Z
+	??1EdbSegP@@UAE@XZ
+	?SetZ@EdbSegP@@UAEXM@Z
+	?SetID@EdbSegP@@QAEXH@Z
+	?SetFlag@EdbSegP@@QAEXH@Z
+	?SetTrack@EdbSegP@@QAEXH@Z
+	?SetP@EdbSegP@@QAEXM@Z
+	?ID@EdbSegP@@QBEHXZ
+	?PID@EdbSegP@@QBEHXZ
+	?Flag@EdbSegP@@QBEHXZ
+	?Track@EdbSegP@@QBEHXZ
+	?W@EdbSegP@@QBEMXZ
+	?P@EdbSegP@@QBEMXZ
+	?Z@EdbSegP@@UBEMXZ
+	?DZ@EdbSegP@@QBEMXZ
+	?Prob@EdbSegP@@QBEMXZ
+	?Chi2@EdbSegP@@QBEMXZ
+	?X@EdbSegP@@UBEMXZ
+	?Y@EdbSegP@@UBEMXZ
+	?TX@EdbSegP@@UBEMXZ
+	?TY@EdbSegP@@UBEMXZ
+	?SetX@EdbSegP@@UAEXM@Z
+	?SetY@EdbSegP@@UAEXM@Z
+	?SetTX@EdbSegP@@UAEXM@Z
+	?SetTY@EdbSegP@@UAEXM@Z
+	?IsSortable@EdbSegP@@UBE_NXZ
+	?IsA@EdbSegP@@UBEPAVTClass@@XZ
+	?VTAS@EdbTrackP@@QBEPAVEdbVTA@@XZ
+	?VTAE@EdbTrackP@@QBEPAVEdbVTA@@XZ
+	?SetM@EdbTrackP@@QAEXM@Z
+	?M@EdbTrackP@@QBEMXZ
+	?SetCounters@EdbTrackP@@QAEXXZ
+	?SetN0@EdbTrackP@@QAEXXZ
+	?SetNpl@EdbTrackP@@QAEXXZ
+	?N@EdbTrackP@@QBEHXZ
+	?NF@EdbTrackP@@QBEHXZ
+	?GetSegmentFirst@EdbTrackP@@QBEPAVEdbSegP@@XZ
+	?GetSegmentLast@EdbTrackP@@QBEPAVEdbSegP@@XZ
+	?GetSegmentFFirst@EdbTrackP@@QBEPAVEdbSegP@@XZ
+	?GetSegmentFLast@EdbTrackP@@QBEPAVEdbSegP@@XZ
+	?GetSegment@EdbTrackP@@QBEPAVEdbSegP@@H@Z
+	?GetSegmentF@EdbTrackP@@QBEPAVEdbSegP@@H@Z
+	?TrackZmin@EdbTrackP@@QBEPAVEdbSegP@@_N@Z
+	?TrackZmax@EdbTrackP@@QBEPAVEdbSegP@@_N@Z
+	?TrackExtremity@EdbTrackP@@QBEPAVEdbSegP@@_N0@Z
+	?AddSegment@EdbTrackP@@QAEXPAVEdbSegP@@@Z
+	?RemoveSegment@EdbTrackP@@QAEXPAVEdbSegP@@@Z
+	?SetSegmentsTrack@EdbTrackP@@QAEHH@Z
+	?SetSegmentsTrack@EdbTrackP@@QAEHXZ
+	?GetP@TPolyLine3D@@QBEPAMXZ
+	?GetOption@TPolyLine3D@@UBEPBDXZ
+	?SetOption@TPolyLine3D@@UAEXPBD@Z
+	?Size@TPolyLine3D@@UBEHXZ
+	?GetLastPoint@TPolyMarker3D@@UBEHXZ
+	?GetN@TPolyMarker3D@@UBEHXZ
+	?GetP@TPolyMarker3D@@UBEPAMXZ
+	?GetOption@TPolyMarker3D@@UBEPBDXZ
+	?Size@TPolyMarker3D@@UBEHXZ
+	?Clear@EdbDisplayBase@@UAEXXZ
+	?SetLineWidth@EdbDisplayBase@@UAEXH@Z
+	?SetColorBG@EdbDisplayBase@@UAEXH@Z
+	?SwDrawDet@EdbDisplayBase@@UAEXXZ
+	?SetDetector@EdbDisplayBase@@UAEXPAVTGeoVolume@@@Z
+	?RadX0@EdbScanCond@@QBEMXZ
+	?GetScanCond@EdbPVRec@@QAEPBVEdbScanCond@@XZ
+	?dist@Vertex@VERTEX@@QBENXZ
+	?valid@Vertex@VERTEX@@QBE_NXZ
+	?Zpos@EdbVTA@@QBEHXZ
+	?Flag@EdbVTA@@QBEHXZ
+	?Imp@EdbVTA@@QBEMXZ
+	?GetTrack@EdbVTA@@QBEPAVEdbTrackP@@XZ
+	?SetZpos@EdbVTA@@QAEXH@Z
+	?N@EdbVertex@@QBEHXZ
+	?Nn@EdbVertex@@QBEHXZ
+	?Flag@EdbVertex@@QBEHXZ
+	?ID@EdbVertex@@QBEHXZ
+	?Zpos@EdbVertex@@QAEHH@Z
+	?X@EdbVertex@@QBEMXZ
+	?Y@EdbVertex@@QBEMXZ
+	?Z@EdbVertex@@QBEMXZ
+	?VX@EdbVertex@@QBEMXZ
+	?VY@EdbVertex@@QBEMXZ
+	?VZ@EdbVertex@@QBEMXZ
+	?GetVTa@EdbVertex@@QAEPAVEdbVTA@@H@Z
+	?GetVTn@EdbVertex@@QAEPAVEdbVTA@@H@Z
+	?GetTrack@EdbVertex@@QAEPAVEdbTrackP@@H@Z
+	?GetTrackN@EdbVertex@@QAEPAVEdbTrackP@@H@Z
+	?Impact@EdbVertex@@QAEMH@Z
+	?V@EdbVertex@@QBEPAVVertex@VERTEX@@XZ
+	?SetID@EdbVertex@@QAEXH@Z
+	?SetXYZ@EdbVertex@@QAEXMMM@Z
+	?SetFlag@EdbVertex@@QAEXH@Z
+	?SetQuality@EdbVertex@@QAEXM@Z
+	?AddVTA@EdbVertexRec@@QAEXPAVEdbVTA@@@Z
+	??1EdbDisplay@@UAE@XZ
+	?EdbDisplayExist@EdbDisplay@@SAPAV1@PBD@Z
+	?Delete@EdbDisplay@@QAEXXZ
+	?Set0@EdbDisplay@@UAEXXZ
+	?GuessRange@EdbDisplay@@QAEXMMM@Z
+	?Refresh@EdbDisplay@@UAEXXZ
+	?SetArrSegP@EdbDisplay@@QAEXPAVTObjArray@@@Z
+	?SetArrTr@EdbDisplay@@QAEXPAVTObjArray@@@Z
+	?TrackDraw@EdbDisplay@@QAEXPAVEdbTrackP@@@Z
+	?SegLine@EdbDisplay@@QAEPAVEdbSegG@@PBVEdbSegP@@@Z
+	?DrawRef@EdbDisplay@@QAEXQAM0@Z
+	?SelectVertexTracks@EdbDisplay@@QAEXPAVTObjArray@@@Z
+	?SetArrV@EdbDisplay@@QAEXPAVTObjArray@@@Z
+	?VertexDraw@EdbDisplay@@QAEXPAVEdbVertex@@@Z
+	?CancelModifiedVTX@EdbDisplay@@QAEXXZ
+	?DeleteModifiedVTX@EdbDisplay@@QAEXXZ
+	?AcceptModifiedVTX@EdbDisplay@@QAEXXZ
+	?DialogModifiedVTX@EdbDisplay@@QAEXXZ
+	?CloseDialogModifiedVTX@EdbDisplay@@QAEXXZ
+	?UndoModifiedVTX@EdbDisplay@@QAEXXZ
+	?DrawVertexEnvironment@EdbDisplay@@QAEXXZ
+	?DrawAllObjects@EdbDisplay@@QAEXXZ
+	?DrawVTXTracks@EdbDisplay@@QAEXPADPAVEdbVertex@@@Z
+	?RemoveTrackFromTable@EdbDisplay@@QAEXH@Z
+	?DialogNeighborParameters@EdbDisplay@@QAEXXZ
+	?AcceptModifiedParams@EdbDisplay@@QAEXXZ
+	?CloseDialogModifiedParams@EdbDisplay@@QAEXXZ
+	?CancelDialogModifiedParams@EdbDisplay@@QAEXXZ
+	?DialogTrackParameters@EdbDisplay@@QAEXXZ
+	?AcceptModifiedTrackParams@EdbDisplay@@QAEXXZ
+	?CloseDialogModifiedTrackParams@EdbDisplay@@QAEXXZ
+	?CancelDialogModifiedTrackParams@EdbDisplay@@QAEXXZ
+	?ClearSegmentEnv@EdbDisplay@@QAEXXZ
+	?DrawSegmentExtrapolationLine@EdbDisplay@@QAEXABVEdbSegP@@MM@Z
+	?IsA@EdbDisplay@@UBEPAVTClass@@XZ
+	??0EdbVertexG@@QAE@PAVEdbDisplay@@@Z
+	??1EdbVertexG@@UAE@XZ
+	?SetVertex@EdbVertexG@@QAEXPAVEdbVertex@@@Z
+	?DumpVertex@EdbVertexG@@UAEXXZ
+	?InspectVertex@EdbVertexG@@UAEXXZ
+	?SetAsWorking@EdbVertexG@@UAEXXZ
+	?DeleteVertex@EdbVertexG@@UAEXXZ
+	?RemoveKink@EdbVertexG@@UAEXXZ
+	?TestVertex@EdbVertexG@@UAEXXZ
+	?GetTitle@EdbVertexG@@UBEPBDXZ
+	?GetName@EdbVertexG@@UBEPBDXZ
+	?GetObjectInfo@EdbVertexG@@UBEPADHH@Z
+	?IsA@EdbVertexG@@UBEPAVTClass@@XZ
+	??0EdbTrackG@@QAE@HPAVEdbDisplay@@@Z
+	??1EdbTrackG@@UAE@XZ
+	?SetTrack@EdbTrackG@@QAEXPAVEdbTrackP@@@Z
+	?DumpTrack@EdbTrackG@@UAEXXZ
+	?InspectTrack@EdbTrackG@@UAEXXZ
+	?SetAsWorkingVertex@EdbTrackG@@UAEXXZ
+	?RemoveTrackFromVertex@EdbTrackG@@UAEXXZ
+	?AddTrackToVertex@EdbTrackG@@UAEXXZ
+	?FixNewTrack@EdbTrackG@@UAEXXZ
+	?DeleteTrack@EdbTrackG@@UAEXXZ
+	?UndoNewTrack@EdbTrackG@@UAEXXZ
+	?UndoSplit@EdbTrackG@@UAEXXZ
+	?UndoRemoveKink@EdbTrackG@@UAEXXZ
+	?AddToNewTrack@EdbTrackG@@UAEXXZ
+	?AddToNewTrackAndFit@EdbTrackG@@UAEXXZ
+	?InfoTrackVert@EdbTrackG@@UAEXXZ
+	?EstimateMomentum@EdbTrackG@@UAEXXZ
+	?GetTitle@EdbTrackG@@UBEPBDXZ
+	?GetName@EdbTrackG@@UBEPBDXZ
+	?GetObjectInfo@EdbTrackG@@UBEPADHH@Z
+	?IsA@EdbTrackG@@UBEPAVTClass@@XZ
+	??0EdbSegG@@QAE@AAVEdbSegP@@@Z
+	??0EdbSegG@@QAE@HPAVEdbDisplay@@@Z
+	??1EdbSegG@@UAE@XZ
+	?SetSeg@EdbSegG@@QAEXPBVEdbSegP@@@Z
+	?X@EdbSegG@@QAEMXZ
+	?Y@EdbSegG@@QAEMXZ
+	?Z@EdbSegG@@QAEMXZ
+	?DumpSegment@EdbSegG@@UAEXXZ
+	?InspectSegment@EdbSegG@@UAEXXZ
+	?AddAsTrackToVertex@EdbSegG@@UAEXXZ
+	?AddToNewTrack@EdbSegG@@UAEXXZ
+	?AddToNewTrackAndFit@EdbSegG@@UAEXXZ
+	?RemoveFromTrack@EdbSegG@@UAEXXZ
+	?SplitTrack@EdbSegG@@UAEXXZ
+	?SetAsWorking@EdbSegG@@UAEXXZ
+	?InfoSegVert@EdbSegG@@UAEXXZ
+	?InfoSegSeg@EdbSegG@@UAEXXZ
+	?GetTitle@EdbSegG@@UBEPBDXZ
+	?GetName@EdbSegG@@UBEPBDXZ
+	?GetObjectInfo@EdbSegG@@UBEPADHH@Z
+	?IsA@EdbSegG@@UBEPAVTClass@@XZ
+	??$construct@PADAAPAD@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QAEXPAPADAAPAD@Z
+	??$destroy@PAD@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QAEXPAPAD@Z
+	??$addressof@D@std@@YAPADAAD@Z
+	??$_Allocate@D@std@@YAPADIPAD@Z
+	??$forward@AAPAD@std@@YAAAPADAAPAD@Z
+	??$construct@PADAAPAD@?$allocator_traits@V?$allocator@D@std@@@std@@SAXAAV?$allocator@D@1@PAPADAAPAD@Z
+	??$destroy@PAD@?$allocator_traits@V?$allocator@D@std@@@std@@SAXAAV?$allocator@D@1@PAPAD@Z
+	??$construct@PADAAPAD@?$allocator@D@std@@QAEXPAPADAAPAD@Z
+	??$destroy@PAD@?$allocator@D@std@@QAEXPAPAD@Z
+	?IsA@TGVerticalFrame@@WDA@BEPAVTClass@@XZ
+	?ShowMembers@TGVerticalFrame@@WDA@AEXAAVTMemberInspector@@@Z
+	?Streamer@TGVerticalFrame@@WDA@AEXAAVTBuffer@@@Z
+	?IsA@TGHorizontalFrame@@WDA@BEPAVTClass@@XZ
+	?ShowMembers@TGHorizontalFrame@@WDA@AEXAAVTMemberInspector@@@Z
+	?Streamer@TGHorizontalFrame@@WDA@AEXAAVTBuffer@@@Z
+	?Transform@EdbTrack2D@@W3AEXPBVEdbAffine2D@@@Z
+	?Test@EdbTrack2D@@W3BEXXZ
+	?Print@EdbTrack2D@@W3BEXPBD@Z
+	?IsA@EdbTrack2D@@W3BEPAVTClass@@XZ
+	?ShowMembers@EdbTrack2D@@W3AEXAAVTMemberInspector@@@Z
+	?Streamer@EdbTrack2D@@W3AEXAAVTBuffer@@@Z
+	?IsA@EdbSegP@@WM@BEPAVTClass@@XZ
+	?ShowMembers@EdbSegP@@WM@AEXAAVTMemberInspector@@@Z
+	?Streamer@EdbSegP@@WM@AEXAAVTBuffer@@@Z
+	?Print@EdbSegP@@WM@BEXPBD@Z
+	?Print@EdbSegP@@WBA@BEXPBD@Z
+	?IsA@EdbSegP@@WBA@BEPAVTClass@@XZ
+	?ShowMembers@EdbSegP@@WBA@AEXAAVTMemberInspector@@@Z
+	?Streamer@EdbSegP@@WBA@AEXAAVTBuffer@@@Z
+	?IsA@EdbSegG@@WM@BEPAVTClass@@XZ
+	?ShowMembers@EdbSegG@@WM@AEXAAVTMemberInspector@@@Z
+	?Streamer@EdbSegG@@WM@AEXAAVTBuffer@@@Z
+	?IsA@EdbSegG@@WBI@BEPAVTClass@@XZ
+	?ShowMembers@EdbSegG@@WBI@AEXAAVTMemberInspector@@@Z
+	?Streamer@EdbSegG@@WBI@AEXAAVTBuffer@@@Z
+	?IsA@EdbVertexG@@WM@BEPAVTClass@@XZ
+	?ShowMembers@EdbVertexG@@WM@AEXAAVTMemberInspector@@@Z
+	?Streamer@EdbVertexG@@WM@AEXAAVTBuffer@@@Z
+	?IsA@EdbVertexG@@WBI@BEPAVTClass@@XZ
+	?ShowMembers@EdbVertexG@@WBI@AEXAAVTMemberInspector@@@Z
+	?Streamer@EdbVertexG@@WBI@AEXAAVTBuffer@@@Z
+	?IsA@EdbTrackG@@WM@BEPAVTClass@@XZ
+	?ShowMembers@EdbTrackG@@WM@AEXAAVTMemberInspector@@@Z
+	?Streamer@EdbTrackG@@WM@AEXAAVTBuffer@@@Z
+	?IsA@EdbTrackG@@WBI@BEPAVTClass@@XZ
+	?ShowMembers@EdbTrackG@@WBI@AEXAAVTMemberInspector@@@Z
+	?Streamer@EdbTrackG@@WBI@AEXAAVTBuffer@@@Z
+	?_Generic_object@?$_Error_objects@H@std@@2V_Generic_error_category@2@A 	 DATA
+	?_Iostream_object@?$_Error_objects@H@std@@2V_Iostream_error_category@2@A 	 DATA
+	?_System_object@?$_Error_objects@H@std@@2V_System_error_category@2@A 	 DATA
+	?id@?$num_put@DV?$back_insert_iterator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@2V0locale@2@A 	 DATA
+	?id@?$num_put@_WV?$back_insert_iterator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@std@@@std@@2V0locale@2@A 	 DATA
+	??_R0?AVTObject@@@8 	 DATA
+	??_R0?AVTNamed@@@8 	 DATA
+	??_R0?AVTCollection@@@8 	 DATA
+	??_R0?AVerror_category@std@@@8 	 DATA
+	??_R0?AV_Generic_error_category@std@@@8 	 DATA
+	??_R0?AV_Iostream_error_category@std@@@8 	 DATA
+	??_R0?AV_System_error_category@std@@@8 	 DATA
+	??_R0?AVTList@@@8 	 DATA
+	??_R0?AVTSeqCollection@@@8 	 DATA
+	??_R0?AVTQObject@@@8 	 DATA
+	??_R0?AVTGObject@@@8 	 DATA
+	??_R0?AVTGWindow@@@8 	 DATA
+	??_R0?AVTRefCnt@@@8 	 DATA
+	??_R0?AVTAttLine@@@8 	 DATA
+	??_R0?AVTAttMarker@@@8 	 DATA
+	??_R0?AVTGDimension@@@8 	 DATA
+	??_R0?AVTGLayoutHints@@@8 	 DATA
+	??_R0?AVTGVerticalFrame@@@8 	 DATA
+	??_R0?AVTGCompositeFrame@@@8 	 DATA
+	??_R0?AVTGFrame@@@8 	 DATA
+	??_R0?AVTGHorizontalFrame@@@8 	 DATA
+	??_R0?AVTSortedList@@@8 	 DATA
+	??_R0?AVEdbPoint@@@8 	 DATA
+	??_R0?AVEdbPoint2D@@@8 	 DATA
+	??_R0?AVEdbAngle2D@@@8 	 DATA
+	??_R0?AVEdbTrack2D@@@8 	 DATA
+	??_R0?AVEdbID@@@8 	 DATA
+	??_R0?AVEdbSegP@@@8 	 DATA
+	??_R0?AVTAtt3D@@@8 	 DATA
+	??_R0?AVEdbSegG@@@8 	 DATA
+	??_R0?AVTPolyLine3D@@@8 	 DATA
+	??_R0?AVEdbDisplay@@@8 	 DATA
+	??_R0?AVEdbDisplayBase@@@8 	 DATA
+	??_R0?AVEdbVertexG@@@8 	 DATA
+	??_R0?AVTPolyMarker3D@@@8 	 DATA
+	??_R0?AVEdbTrackG@@@8 	 DATA
+	?G__EddDictLN_TMatrixTFlatlEdoublegR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTSublEdoublegR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTSparseRowlEdoublegR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTSparseDiaglEdoublegR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_EdbSegP@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_EdbVertex@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_EdbTrackP@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_EdbLayer@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTlEfloatgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTRow_constlEfloatgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTRowlEfloatgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTDiag_constlEfloatgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTColumn_constlEfloatgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTFlat_constlEfloatgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTSub_constlEfloatgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTSparseRow_constlEfloatgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTSparseDiag_constlEfloatgR@@3UG__linked_taginfo@@A 	 DATA
+	?fgIsA@Edb3DView@@0PAVTClass@@A 	 DATA
+	?G__EddDictLN_TMatrixTColumnlEfloatgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTDiaglEfloatgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTFlatlEfloatgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTSublEfloatgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTSparseRowlEfloatgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTSparseDiaglEfloatgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_listlEVERTEXcLcLRelationmUcOallocatorlEVERTEXcLcLRelationmUgRsPgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_listlEVERTEXcLcLMassCmUcOallocatorlEVERTEXcLcLMassCmUgRsPgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_vectorlEVERTEXcLcLTrackmUcOallocatorlEVERTEXcLcLTrackmUgRsPgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_reverse_iteratorlEvectorlEVERTEXcLcLTrackmUcOallocatorlEVERTEXcLcLTrackmUgRsPgRcLcLiteratorgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_iteratorlErandom_access_iterator_tagcOVERTEXcLcLTrackmUcOlongcOVERTEXcLcLTrackmUmUcOVERTEXcLcLTrackmUaNgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_reverse_iteratorlEvectorlEVERTEXcLcLTrackmUcOallocatorlEVERTEXcLcLTrackmUgRsPgRcLcLconst_iteratorgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_EdbVertexRec@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_EdbSegG@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_EdbDisplay@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_EdbVertexG@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_EdbTrackG@@3UG__linked_taginfo@@A 	 DATA
+	?fgIsA@EdbDisplayBase@@0PAVTClass@@A 	 DATA
+	?fgIsA@EdbDisplay@@0PAVTClass@@A 	 DATA
+	?fgIsA@EdbVertexG@@0PAVTClass@@A 	 DATA
+	?fgIsA@EdbTrackG@@0PAVTClass@@A 	 DATA
+	?fgIsA@EdbSegG@@0PAVTClass@@A 	 DATA
+	?G__EddDictLN_TClass@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TBuffer@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMemberInspector@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TObject@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TNamed@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_iteratorlErandom_access_iterator_tagcOcharcOlongcOcharmUcOcharaNgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_vectorlEROOTcLcLTSchemaHelpercOallocatorlEROOTcLcLTSchemaHelpergRsPgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_reverse_iteratorlEvectorlEROOTcLcLTSchemaHelpercOallocatorlEROOTcLcLTSchemaHelpergRsPgRcLcLiteratorgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_iteratorlErandom_access_iterator_tagcOROOTcLcLTSchemaHelpercOlongcOROOTcLcLTSchemaHelpermUcOROOTcLcLTSchemaHelperaNgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_reverse_iteratorlEvectorlEROOTcLcLTSchemaHelpercOallocatorlEROOTcLcLTSchemaHelpergRsPgRcLcLconst_iteratorgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TList@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TObjArray@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_vectorlETVirtualArraymUcOallocatorlETVirtualArraymUgRsPgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_reverse_iteratorlEvectorlETVirtualArraymUcOallocatorlETVirtualArraymUgRsPgRcLcLiteratorgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_iteratorlErandom_access_iterator_tagcOTVirtualArraymUcOlongcOTVirtualArraymUmUcOTVirtualArraymUaNgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_reverse_iteratorlEvectorlETVirtualArraymUcOallocatorlETVirtualArraymUgRsPgRcLcLconst_iteratorgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TAttLine@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TAttMarker@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_pairlEunsignedsPintcOintgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_vectorlEpairlEunsignedsPintcOintgRcOallocatorlEpairlEunsignedsPintcOintgRsPgRsPgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_reverse_iteratorlEvectorlEpairlEunsignedsPintcOintgRcOallocatorlEpairlEunsignedsPintcOintgRsPgRsPgRcLcLiteratorgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_iteratorlErandom_access_iterator_tagcOpairlEunsignedsPintcOintgRcOlongcOpairlEunsignedsPintcOintgRmUcOpairlEunsignedsPintcOintgRaNgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_reverse_iteratorlEvectorlEpairlEunsignedsPintcOintgRcOallocatorlEpairlEunsignedsPintcOintgRsPgRsPgRcLcLconst_iteratorgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TView@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TCanvas@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TPad@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_iteratorlEbidirectional_iterator_tagcOTObjectmUcOlongcOconstsPTObjectmUmUcOconstsPTObjectmUaNgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TAtt3D@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TPolyLine3D@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TPolyMarker3D@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TArrayF@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TArrayI@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TButton@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TGMainFrame@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TText@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TPaveText@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TArc@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_maplEintcOTGeoElementRNmUcOlesslEintgRcOallocatorlEpairlEconstsPintcOTGeoElementRNmUgRsPgRsPgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TGeoVolume@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_vectorlETGeoVolumeAssemblycLcLThreadData_tmUcOallocatorlETGeoVolumeAssemblycLcLThreadData_tmUgRsPgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_reverse_iteratorlEvectorlETGeoVolumeAssemblycLcLThreadData_tmUcOallocatorlETGeoVolumeAssemblycLcLThreadData_tmUgRsPgRcLcLiteratorgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_iteratorlErandom_access_iterator_tagcOTGeoVolumeAssemblycLcLThreadData_tmUcOlongcOTGeoVolumeAssemblycLcLThreadData_tmUmUcOTGeoVolumeAssemblycLcLThreadData_tmUaNgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_reverse_iteratorlEvectorlETGeoVolumeAssemblycLcLThreadData_tmUcOallocatorlETGeoVolumeAssemblycLcLThreadData_tmUgRsPgRcLcLconst_iteratorgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TView3D@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_Edb3DView@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_EdbDisplayBase@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TGNumberEntry@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_maplEstringcOTObjArraymUcOlesslEstringgRcOallocatorlEpairlEconstsPstringcOTObjArraymUgRsPgRsPgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTBaselEfloatgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTBaselEdoublegR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TVectorTlEfloatgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TVectorTlEdoublegR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TElementActionTlEfloatgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TElementPosActionTlEfloatgR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TElementActionTlEdoublegR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TElementPosActionTlEdoublegR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTlEdoublegR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTRow_constlEdoublegR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTRowlEdoublegR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTDiag_constlEdoublegR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTColumn_constlEdoublegR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTFlat_constlEdoublegR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTSub_constlEdoublegR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTSparseRow_constlEdoublegR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTSparseDiag_constlEdoublegR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTColumnlEdoublegR@@3UG__linked_taginfo@@A 	 DATA
+	?G__EddDictLN_TMatrixTDiaglEdoublegR@@3UG__linked_taginfo@@A 	 DATA
+	hypot
+	??0funcptr_and_voidptr@G__func2void@@QAE@PAX@Z
+	??BG__func2void@@QBEPAXXZ
+	G__cpp_dllrevEddDict
+	G__set_cpp_environmentEddDict
+	G__cpp_setup_tagtableEddDict
+	G__cpp_setup_inheritanceEddDict
+	G__cpp_setup_typetableEddDict
+	G__cpp_setup_memvarEddDict
+	G__cpp_setup_globalEddDict
+	G__cpp_setup_memfuncEddDict
+	G__cpp_setup_funcEddDict
+	G__cpp_setupEddDict
+	??2@YAPAXIPAX@Z
+	??3@YAXPAX0@Z
+	?length@?$char_traits@D@std@@SAIPBD@Z
+	?copy@?$char_traits@D@std@@SAPADPADPBDI@Z
+	?move@?$char_traits@D@std@@SAPADPADPBDI@Z
+	?assign@?$char_traits@D@std@@SAXAADABD@Z
+	??0?$allocator@D@std@@QAE@XZ
+	?deallocate@?$allocator@D@std@@QAEXPADI@Z
+	?allocate@?$allocator@D@std@@QAEPADI@Z
+	?max_size@?$allocator@D@std@@QBEIXZ
+	?max_size@?$allocator_traits@V?$allocator@D@std@@@std@@SAIABV?$allocator@D@2@@Z
+	??0?$_Wrap_alloc@V?$allocator@D@std@@@std@@QAE@XZ
+	?allocate@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QAEPADI@Z
+	?deallocate@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QAEXPADI@Z
+	?max_size@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QBEIXZ
+	??0?$_String_val@U?$_Simple_types@D@std@@@std@@QAE@XZ
+	?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QAEPADXZ
+	?_Myptr@?$_String_val@U?$_Simple_types@D@std@@@std@@QBEPBDXZ
+	??0?$_String_alloc@$0A@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QAE@ABV?$allocator@D@1@@Z
+	?_Getal@?$_String_alloc@$0A@U?$_String_base_types@DV?$allocator@D@std@@@std@@@std@@QBE?AU?$_Wrap_alloc@V?$allocator@D@std@@@2@XZ
+	??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@PBD@Z
+	??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE@XZ
+	?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z
+	?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z
+	?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBD@Z
+	?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@I@Z
+	?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@II@Z
+	?size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ
+	?max_size@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEIXZ
+	?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXII@Z
+	?_Eos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEXI@Z
+	?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE_NI_N@Z
+	?_Inside@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAE_NPBD@Z
+	?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEX_NI@Z
+	?_Xlen@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEXXZ
+	?_Xran@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QBEXXZ
+	?generic_category@std@@YAABVerror_category@1@XZ
+	?system_category@std@@YAABVerror_category@1@XZ
+	??0error_category@std@@QAE@XZ
+	??1error_category@std@@UAE@XZ
+	?default_error_condition@error_category@std@@UBE?AVerror_condition@2@H@Z
+	?equivalent@error_category@std@@UBE_NHABVerror_condition@2@@Z
+	?equivalent@error_category@std@@UBE_NABVerror_code@2@H@Z
+	??8error_category@std@@QBE_NABV01@@Z
+	?value@error_code@std@@QBEHXZ
+	?category@error_code@std@@QBEABVerror_category@2@XZ
+	??0error_condition@std@@QAE@HABVerror_category@1@@Z
+	?value@error_condition@std@@QBEHXZ
+	?category@error_condition@std@@QBEABVerror_category@2@XZ
+	??8error_condition@std@@QBE_NABV01@@Z
+	??0_Generic_error_category@std@@QAE@XZ
+	?name@_Generic_error_category@std@@UBEPBDXZ
+	?message@_Generic_error_category@std@@UBE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@H@Z
+	??1_Generic_error_category@std@@UAE@XZ
+	??0_Iostream_error_category@std@@QAE@XZ
+	?name@_Iostream_error_category@std@@UBEPBDXZ
+	?message@_Iostream_error_category@std@@UBE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@H@Z
+	??1_Iostream_error_category@std@@UAE@XZ
+	??0_System_error_category@std@@QAE@XZ
+	?name@_System_error_category@std@@UBEPBDXZ
+	?message@_System_error_category@std@@UBE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@H@Z
+	?default_error_condition@_System_error_category@std@@UBE?AVerror_condition@2@H@Z
+	??1_System_error_category@std@@UAE@XZ
+	?Clear@TObject@@UAEXPBD@Z
+	?GetOption@TObject@@UBEPBDXZ
+	?IsSortable@TObject@@UBE_NXZ
+	??2TObject@@SAPAXI@Z
+	??_UTObject@@SAPAXI@Z
+	??2TObject@@SAPAXIPAX@Z
+	??_UTObject@@SAPAXIPAX@Z
+	?TestBit@TObject@@QBE_NI@Z
+	?IsReading@TBuffer@@QBE_NXZ
+	??5@YAAAVTBuffer@@AAV0@AA_N@Z
+	??5@YAAAVTBuffer@@AAV0@AAF@Z
+	??5@YAAAVTBuffer@@AAV0@AAH@Z
+	??5@YAAAVTBuffer@@AAV0@AAM@Z
+	??5@YAAAVTBuffer@@AAV0@AAN@Z
+	??6@YAAAVTBuffer@@AAV0@_N@Z
+	??6@YAAAVTBuffer@@AAV0@F@Z
+	??6@YAAAVTBuffer@@AAV0@H@Z
+	??6@YAAAVTBuffer@@AAV0@M@Z
+	??6@YAAAVTBuffer@@AAV0@N@Z
+	?IsLong@TString@@ABE_NXZ
+	?GetLongPointer@TString@@ABEPBDXZ
+	?GetShortPointer@TString@@ABEPBDXZ
+	?GetPointer@TString@@ABEPBDXZ
+	??BTString@@QBEPBDXZ
+	?Data@TString@@QBEPBDXZ
+	??1TNamed@@UAE@XZ
+	?GetName@TNamed@@UBEPBDXZ
+	?GetTitle@TNamed@@UBEPBDXZ
+	?Hash@TNamed@@UBEKXZ
+	?IsSortable@TNamed@@UBE_NXZ
+	?IsA@TNamed@@UBEPAVTClass@@XZ
+	?GetLineColor@TAttLine@@UBEFXZ
+	?GetLineStyle@TAttLine@@UBEFXZ
+	?GetLineWidth@TAttLine@@UBEFXZ
+	?SetLineColor@TAttLine@@UAEXF@Z
+	?SetLineStyle@TAttLine@@UAEXF@Z
+	?SetLineWidth@TAttLine@@UAEXF@Z
+	?GetMarkerColor@TAttMarker@@UBEFXZ
+	?GetMarkerStyle@TAttMarker@@UBEFXZ
+	?GetMarkerSize@TAttMarker@@UBEMXZ
+	?SetMarkerColor@TAttMarker@@UAEXF@Z
+	?SetMarkerStyle@TAttMarker@@UAEXF@Z
+	?SetMarkerSize@TAttMarker@@UAEXM@Z
+	??0TCollection@@IAE@XZ
+	??1TCollection@@UAE@XZ
+	?GetEntries@TCollection@@UBEHXZ
+	?GetSize@TCollection@@UBEHXZ
+	?Hash@TCollection@@UBEKXZ
+	?IsEmpty@TCollection@@UBE_NXZ
+	?IsFolder@TCollection@@UBE_NXZ
+	?IsSortable@TCollection@@UBE_NXZ
+	?MakeReverseIterator@TCollection@@UBEPAVTIterator@@XZ
+	?IsA@TCollection@@UBEPAVTClass@@XZ
+	??0TSeqCollection@@IAE@XZ
+	?Changed@TSeqCollection@@MAEXXZ
+	??1TSeqCollection@@UAE@XZ
+	?Add@TSeqCollection@@UAEXPAVTObject@@@Z
+	?RemoveFirst@TSeqCollection@@UAEXXZ
+	?RemoveLast@TSeqCollection@@UAEXXZ
+	?RemoveAt@TSeqCollection@@UAEPAVTObject@@H@Z
+	?RemoveAfter@TSeqCollection@@UAEXPAVTObject@@@Z
+	?RemoveBefore@TSeqCollection@@UAEXPAVTObject@@@Z
+	?IsSorted@TSeqCollection@@UBE_NXZ
+	?IsA@TSeqCollection@@UBEPAVTClass@@XZ
+	??0_Ignore@std@@QAE@XZ
+	??0TList@@QAE@XZ
+	?Add@TList@@UAEXPAVTObject@@@Z
+	?Add@TList@@UAEXPAVTObject@@PBD@Z
+	?FirstLink@TList@@UBEPAVTObjLink@@XZ
+	?LastLink@TList@@UBEPAVTObjLink@@XZ
+	?IsA@TList@@UBEPAVTClass@@XZ
+	?GetP@TPolyLine3D@@QBEPAMXZ
+	?GetOption@TPolyLine3D@@UBEPBDXZ
+	?SetOption@TPolyLine3D@@UAEXPBD@Z
+	?Size@TPolyLine3D@@UBEHXZ
+	?GetLastPoint@TPolyMarker3D@@UBEHXZ
+	?GetN@TPolyMarker3D@@UBEHXZ
+	?GetP@TPolyMarker3D@@UBEPAMXZ
+	?GetOption@TPolyMarker3D@@UBEPBDXZ
+	?Size@TPolyMarker3D@@UBEHXZ
+	??5@YAAAVTBuffer@@AAV0@AAPAVTArrayF@@@Z
+	??6@YAAAVTBuffer@@AAV0@PBVTArrayF@@@Z
+	??5@YAAAVTBuffer@@AAV0@AAPAVTArrayI@@@Z
+	??6@YAAAVTBuffer@@AAV0@PBVTArrayI@@@Z
+	?GetDview@TView3D@@UBENXZ
+	?GetDproj@TView3D@@UBENXZ
+	?GetAutoRange@TView3D@@UAE_NXZ
+	?GetLatitude@TView3D@@UAENXZ
+	?GetLongitude@TView3D@@UAENXZ
+	?GetPsi@TView3D@@UAENXZ
+	?GetRmax@TView3D@@UAEPANXZ
+	?GetRmin@TView3D@@UAEPANXZ
+	?GetOutline@TView3D@@UAEPAVTSeqCollection@@XZ
+	?GetTback@TView3D@@UAEPANXZ
+	?GetTN@TView3D@@UAEPANXZ
+	?GetTnorm@TView3D@@UAEPANXZ
+	?GetSystem@TView3D@@UAEHXZ
+	?GetWindowWidth@TView3D@@UBENXZ
+	?GetWindowHeight@TView3D@@UBENXZ
+	?IsPerspective@TView3D@@UBE_NXZ
+	?IsViewChanged@TView3D@@UBE_NXZ
+	?SetAutoRange@TView3D@@UAEX_N@Z
+	?SetDview@TView3D@@UAEXN@Z
+	?SetDproj@TView3D@@UAEXN@Z
+	?SetLatitude@TView3D@@UAEXN@Z
+	?SetLongitude@TView3D@@UAEXN@Z
+	?SetPsi@TView3D@@UAEXN@Z
+	?SetSystem@TView3D@@UAEXH@Z
+	?SetViewChanged@TView3D@@UAEX_N@Z
+	??0Edb3DView@@QAE@XZ
+	??1Edb3DView@@UAE@XZ
+	?Class@Edb3DView@@SAPAVTClass@@XZ
+	?Class_Name@Edb3DView@@SAPBDXZ
+	?Class_Version@Edb3DView@@SAFXZ
+	?Dictionary@Edb3DView@@SAXXZ
+	?IsA@Edb3DView@@UBEPAVTClass@@XZ
+	?ShowMembers@Edb3DView@@UAEXAAVTMemberInspector@@@Z
+	?Streamer@Edb3DView@@UAEXAAVTBuffer@@@Z
+	?StreamerNVirtual@Edb3DView@@QAEXAAVTBuffer@@@Z
+	?DeclFileName@Edb3DView@@SAPBDXZ
+	?ImplFileLine@Edb3DView@@SAHXZ
+	?ImplFileName@Edb3DView@@SAPBDXZ
+	?DeclFileLine@Edb3DView@@SAHXZ
+	??0Edb3DView@@QAE@ABV0@@Z
+	?Clear@EdbDisplayBase@@UAEXXZ
+	?Refresh@EdbDisplayBase@@UAEXXZ
+	?SetLineWidth@EdbDisplayBase@@UAEXH@Z
+	?SetColorBG@EdbDisplayBase@@UAEXH@Z
+	?SwDrawDet@EdbDisplayBase@@UAEXXZ
+	?GetDrawDet@EdbDisplayBase@@QBE_NXZ
+	?SetDetector@EdbDisplayBase@@UAEXPAVTGeoVolume@@@Z
+	?Class@EdbDisplayBase@@SAPAVTClass@@XZ
+	?Class_Name@EdbDisplayBase@@SAPBDXZ
+	?Class_Version@EdbDisplayBase@@SAFXZ
+	?Dictionary@EdbDisplayBase@@SAXXZ
+	?IsA@EdbDisplayBase@@UBEPAVTClass@@XZ
+	?ShowMembers@EdbDisplayBase@@UAEXAAVTMemberInspector@@@Z
+	?Streamer@EdbDisplayBase@@UAEXAAVTBuffer@@@Z
+	?StreamerNVirtual@EdbDisplayBase@@QAEXAAVTBuffer@@@Z
+	?DeclFileName@EdbDisplayBase@@SAPBDXZ
+	?ImplFileLine@EdbDisplayBase@@SAHXZ
+	?ImplFileName@EdbDisplayBase@@SAPBDXZ
+	?DeclFileLine@EdbDisplayBase@@SAHXZ
+	??0EdbDisplayBase@@QAE@ABV0@@Z
+	??4EdbDisplayBase@@QAEAAV0@ABV0@@Z
+	?X@EdbLayer@@QBEMXZ
+	?Y@EdbLayer@@QBEMXZ
+	?Zmin@EdbLayer@@QBEMXZ
+	?Zmax@EdbLayer@@QBEMXZ
+	?DX@EdbLayer@@QBEMXZ
+	?DY@EdbLayer@@QBEMXZ
+	?Xmin@EdbLayer@@QBEMXZ
+	?Xmax@EdbLayer@@QBEMXZ
+	?Ymin@EdbLayer@@QBEMXZ
+	?Ymax@EdbLayer@@QBEMXZ
+	??0EdbDisplay@@QAE@XZ
+	??0EdbDisplay@@QAE@PBDMMMMMMPAVTCanvas@@@Z
+	??0EdbDisplay@@QAE@PBDAAVEdbLayer@@PAVTCanvas@@@Z
+	?SetVerRec@EdbDisplay@@QAEXPAVEdbVertexRec@@@Z
+	?SetArrSegG@EdbDisplay@@QAEXPAVTObjArray@@@Z
+	?SetDrawTracks@EdbDisplay@@QAEXH@Z
+	?VerRec@EdbDisplay@@QBEPAVEdbVertexRec@@XZ
+	?SetDrawVertex@EdbDisplay@@QAEXH@Z
+	?Class@EdbDisplay@@SAPAVTClass@@XZ
+	?Class_Name@EdbDisplay@@SAPBDXZ
+	?Class_Version@EdbDisplay@@SAFXZ
+	?Dictionary@EdbDisplay@@SAXXZ
+	?IsA@EdbDisplay@@UBEPAVTClass@@XZ
+	?ShowMembers@EdbDisplay@@UAEXAAVTMemberInspector@@@Z
+	?Streamer@EdbDisplay@@UAEXAAVTBuffer@@@Z
+	?StreamerNVirtual@EdbDisplay@@QAEXAAVTBuffer@@@Z
+	?DeclFileName@EdbDisplay@@SAPBDXZ
+	?ImplFileLine@EdbDisplay@@SAHXZ
+	?ImplFileName@EdbDisplay@@SAPBDXZ
+	?DeclFileLine@EdbDisplay@@SAHXZ
+	??0EdbVertexG@@QAE@XZ
+	??0EdbVertexG@@QAE@PAVEdbDisplay@@@Z
+	??1EdbVertexG@@UAE@XZ
+	?SetVertex@EdbVertexG@@QAEXPAVEdbVertex@@@Z
+	?Class@EdbVertexG@@SAPAVTClass@@XZ
+	?Class_Name@EdbVertexG@@SAPBDXZ
+	?Class_Version@EdbVertexG@@SAFXZ
+	?Dictionary@EdbVertexG@@SAXXZ
+	?IsA@EdbVertexG@@UBEPAVTClass@@XZ
+	?ShowMembers@EdbVertexG@@UAEXAAVTMemberInspector@@@Z
+	?Streamer@EdbVertexG@@UAEXAAVTBuffer@@@Z
+	?StreamerNVirtual@EdbVertexG@@QAEXAAVTBuffer@@@Z
+	?DeclFileName@EdbVertexG@@SAPBDXZ
+	?ImplFileLine@EdbVertexG@@SAHXZ
+	?ImplFileName@EdbVertexG@@SAPBDXZ
+	?DeclFileLine@EdbVertexG@@SAHXZ
+	??0EdbVertexG@@QAE@ABV0@@Z
+	??0EdbTrackG@@QAE@XZ
+	??0EdbTrackG@@QAE@PAVEdbDisplay@@@Z
+	??0EdbTrackG@@QAE@HPAVEdbDisplay@@@Z
+	??1EdbTrackG@@UAE@XZ
+	?SetTrack@EdbTrackG@@QAEXPAVEdbTrackP@@@Z
+	?Class@EdbTrackG@@SAPAVTClass@@XZ
+	?Class_Name@EdbTrackG@@SAPBDXZ
+	?Class_Version@EdbTrackG@@SAFXZ
+	?Dictionary@EdbTrackG@@SAXXZ
+	?IsA@EdbTrackG@@UBEPAVTClass@@XZ
+	?ShowMembers@EdbTrackG@@UAEXAAVTMemberInspector@@@Z
+	?Streamer@EdbTrackG@@UAEXAAVTBuffer@@@Z
+	?StreamerNVirtual@EdbTrackG@@QAEXAAVTBuffer@@@Z
+	?DeclFileName@EdbTrackG@@SAPBDXZ
+	?ImplFileLine@EdbTrackG@@SAHXZ
+	?ImplFileName@EdbTrackG@@SAPBDXZ
+	?DeclFileLine@EdbTrackG@@SAHXZ
+	??0EdbTrackG@@QAE@ABV0@@Z
+	??0EdbSegG@@QAE@XZ
+	??0EdbSegG@@QAE@PAVEdbDisplay@@@Z
+	??0EdbSegG@@QAE@H@Z
+	??0EdbSegG@@QAE@HPAVEdbDisplay@@@Z
+	??1EdbSegG@@UAE@XZ
+	?SetSeg@EdbSegG@@QAEXPBVEdbSegP@@@Z
+	?X@EdbSegG@@QAEMXZ
+	?Y@EdbSegG@@QAEMXZ
+	?Z@EdbSegG@@QAEMXZ
+	?Class@EdbSegG@@SAPAVTClass@@XZ
+	?Class_Name@EdbSegG@@SAPBDXZ
+	?Class_Version@EdbSegG@@SAFXZ
+	?Dictionary@EdbSegG@@SAXXZ
+	?IsA@EdbSegG@@UBEPAVTClass@@XZ
+	?ShowMembers@EdbSegG@@UAEXAAVTMemberInspector@@@Z
+	?Streamer@EdbSegG@@UAEXAAVTBuffer@@@Z
+	?StreamerNVirtual@EdbSegG@@QAEXAAVTBuffer@@@Z
+	?DeclFileName@EdbSegG@@SAPBDXZ
+	?ImplFileLine@EdbSegG@@SAHXZ
+	?ImplFileName@EdbSegG@@SAPBDXZ
+	?DeclFileLine@EdbSegG@@SAHXZ
+	??0EdbSegG@@QAE@ABV0@@Z
+	??0TLockGuard@@QAE@PAVTVirtualMutex@@@Z
+	??1TLockGuard@@UAE@XZ
+	?IsA@TLockGuard@@UBEPAVTClass@@XZ
+	??1TVirtualIsAProxy@@UAE@XZ
+	??0TVirtualIsAProxy@@QAE@XZ
+	??0DictInit@?A0xe8e65485@@QAE@XZ
+	??0?$TInstrumentedIsAProxy@VEdb3DView@@@@QAE@PAVTClass@@@Z
+	??1?$TInstrumentedIsAProxy@VEdb3DView@@@@UAE@XZ
+	?SetClass@?$TInstrumentedIsAProxy@VEdb3DView@@@@UAEXPAVTClass@@@Z
+	??R?$TInstrumentedIsAProxy@VEdb3DView@@@@UAEPAVTClass@@PBX@Z
+	?GenerateInitInstance@ROOTDict@@YAPAVTGenericClassInfo@ROOT@@PBVEdb3DView@@@Z
+	??0?$TInstrumentedIsAProxy@VEdbDisplayBase@@@@QAE@PAVTClass@@@Z
+	??1?$TInstrumentedIsAProxy@VEdbDisplayBase@@@@UAE@XZ
+	?SetClass@?$TInstrumentedIsAProxy@VEdbDisplayBase@@@@UAEXPAVTClass@@@Z
+	??R?$TInstrumentedIsAProxy@VEdbDisplayBase@@@@UAEPAVTClass@@PBX@Z
+	?GenerateInitInstance@ROOTDict@@YAPAVTGenericClassInfo@ROOT@@PBVEdbDisplayBase@@@Z
+	??0?$TInstrumentedIsAProxy@VEdbSegG@@@@QAE@PAVTClass@@@Z
+	??1?$TInstrumentedIsAProxy@VEdbSegG@@@@UAE@XZ
+	?SetClass@?$TInstrumentedIsAProxy@VEdbSegG@@@@UAEXPAVTClass@@@Z
+	??R?$TInstrumentedIsAProxy@VEdbSegG@@@@UAEPAVTClass@@PBX@Z
+	?GenerateInitInstance@ROOTDict@@YAPAVTGenericClassInfo@ROOT@@PBVEdbSegG@@@Z
+	??0?$TInstrumentedIsAProxy@VEdbDisplay@@@@QAE@PAVTClass@@@Z
+	??1?$TInstrumentedIsAProxy@VEdbDisplay@@@@UAE@XZ
+	?SetClass@?$TInstrumentedIsAProxy@VEdbDisplay@@@@UAEXPAVTClass@@@Z
+	??R?$TInstrumentedIsAProxy@VEdbDisplay@@@@UAEPAVTClass@@PBX@Z
+	?GenerateInitInstance@ROOTDict@@YAPAVTGenericClassInfo@ROOT@@PBVEdbDisplay@@@Z
+	??0?$TInstrumentedIsAProxy@VEdbVertexG@@@@QAE@PAVTClass@@@Z
+	??1?$TInstrumentedIsAProxy@VEdbVertexG@@@@UAE@XZ
+	?SetClass@?$TInstrumentedIsAProxy@VEdbVertexG@@@@UAEXPAVTClass@@@Z
+	??R?$TInstrumentedIsAProxy@VEdbVertexG@@@@UAEPAVTClass@@PBX@Z
+	?GenerateInitInstance@ROOTDict@@YAPAVTGenericClassInfo@ROOT@@PBVEdbVertexG@@@Z
+	??0?$TInstrumentedIsAProxy@VEdbTrackG@@@@QAE@PAVTClass@@@Z
+	??1?$TInstrumentedIsAProxy@VEdbTrackG@@@@UAE@XZ
+	?SetClass@?$TInstrumentedIsAProxy@VEdbTrackG@@@@UAEXPAVTClass@@@Z
+	??R?$TInstrumentedIsAProxy@VEdbTrackG@@@@UAEPAVTClass@@PBX@Z
+	?GenerateInitInstance@ROOTDict@@YAPAVTGenericClassInfo@ROOT@@PBVEdbTrackG@@@Z
+	??$?5VEdb3DView@@@@YAAAVTBuffer@@AAV0@AAPAVEdb3DView@@@Z
+	??$?5VTPad@@@@YAAAVTBuffer@@AAV0@AAPAVTPad@@@Z
+	??$?5VTButton@@@@YAAAVTBuffer@@AAV0@AAPAVTButton@@@Z
+	??$?5VTArc@@@@YAAAVTBuffer@@AAV0@AAPAVTArc@@@Z
+	??$?5VTGMainFrame@@@@YAAAVTBuffer@@AAV0@AAPAVTGMainFrame@@@Z
+	??$?5VTText@@@@YAAAVTBuffer@@AAV0@AAPAVTText@@@Z
+	??$?5VTPaveText@@@@YAAAVTBuffer@@AAV0@AAPAVTPaveText@@@Z
+	??$?5VTGeoVolume@@@@YAAAVTBuffer@@AAV0@AAPAVTGeoVolume@@@Z
+	??$?5VTCanvas@@@@YAAAVTBuffer@@AAV0@AAPAVTCanvas@@@Z
+	??$?6VEdb3DView@@@@YAAAVTBuffer@@AAV0@PBVEdb3DView@@@Z
+	??$?6VTPad@@@@YAAAVTBuffer@@AAV0@PBVTPad@@@Z
+	??$?6VTButton@@@@YAAAVTBuffer@@AAV0@PBVTButton@@@Z
+	??$?6VTArc@@@@YAAAVTBuffer@@AAV0@PBVTArc@@@Z
+	??$?6VTGMainFrame@@@@YAAAVTBuffer@@AAV0@PBVTGMainFrame@@@Z
+	??$?6VTText@@@@YAAAVTBuffer@@AAV0@PBVTText@@@Z
+	??$?6VTPaveText@@@@YAAAVTBuffer@@AAV0@PBVTPaveText@@@Z
+	??$?6VTGeoVolume@@@@YAAAVTBuffer@@AAV0@PBVTGeoVolume@@@Z
+	??$?6VTCanvas@@@@YAAAVTBuffer@@AAV0@PBVTCanvas@@@Z
+	??$?5VTGNumberEntry@@@@YAAAVTBuffer@@AAV0@AAPAVTGNumberEntry@@@Z
+	??$?5VEdbVertexRec@@@@YAAAVTBuffer@@AAV0@AAPAVEdbVertexRec@@@Z
+	??$?5VTObjArray@@@@YAAAVTBuffer@@AAV0@AAPAVTObjArray@@@Z
+	??$?5VEdbVertex@@@@YAAAVTBuffer@@AAV0@AAPAVEdbVertex@@@Z
+	??$?5VEdbSegP@@@@YAAAVTBuffer@@AAV0@AAPAVEdbSegP@@@Z
+	??$?5VEdbTrackP@@@@YAAAVTBuffer@@AAV0@AAPAVEdbTrackP@@@Z
+	??$?5VTPolyMarker3D@@@@YAAAVTBuffer@@AAV0@AAPAVTPolyMarker3D@@@Z
+	??$?6VTGNumberEntry@@@@YAAAVTBuffer@@AAV0@PBVTGNumberEntry@@@Z
+	??$?6VEdbVertexRec@@@@YAAAVTBuffer@@AAV0@PBVEdbVertexRec@@@Z
+	??$?6VTObjArray@@@@YAAAVTBuffer@@AAV0@PBVTObjArray@@@Z
+	??$?6VEdbVertex@@@@YAAAVTBuffer@@AAV0@PBVEdbVertex@@@Z
+	??$?6VEdbSegP@@@@YAAAVTBuffer@@AAV0@PBVEdbSegP@@@Z
+	??$?6VEdbTrackP@@@@YAAAVTBuffer@@AAV0@PBVEdbTrackP@@@Z
+	??$?6VTPolyMarker3D@@@@YAAAVTBuffer@@AAV0@PBVTPolyMarker3D@@@Z
+	??$InspectMember@VTList@@@TMemberInspector@@QAEXAAVTList@@PBD@Z
+	??$?5VEdbDisplay@@@@YAAAVTBuffer@@AAV0@AAPAVEdbDisplay@@@Z
+	??$?6VEdbDisplay@@@@YAAAVTBuffer@@AAV0@PBVEdbDisplay@@@Z
+	G__cpp_reset_tagtableEddDict
+	??0G__Sizep2memfuncEddDict@@QAE@XZ
+	?sizep2memfunc@G__Sizep2memfuncEddDict@@QAEIXZ
+	?G__get_sizep2memfuncEddDict@@YAIXZ
+	??$?0P6APAVTClass@@XZ@G__func2void@@QAE@P6APAVTClass@@XZ@Z
+	??$?0P6APBDXZ@G__func2void@@QAE@P6APBDXZ@Z
+	??$?0P6AFXZ@G__func2void@@QAE@P6AFXZ@Z
+	??$?0P6AXXZ@G__func2void@@QAE@P6AXXZ@Z
+	??$?0P6AHXZ@G__func2void@@QAE@P6AHXZ@Z
+	??$?0P6APAVEdbDisplay@@PBD@Z@G__func2void@@QAE@P6APAVEdbDisplay@@PBD@Z@Z
+	??0G__cpp_setup_initEddDict@@QAE@XZ
+	??1G__cpp_setup_initEddDict@@QAE@XZ
+	??$construct@PADAAPAD@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QAEXPAPADAAPAD@Z
+	??$destroy@PAD@?$_Wrap_alloc@V?$allocator@D@std@@@std@@QAEXPAPAD@Z
+	??$addressof@D@std@@YAPADAAD@Z
+	??$_Allocate@D@std@@YAPADIPAD@Z
+	??$forward@AAPAD@std@@YAAAPADAAPAD@Z
+	??$construct@PADAAPAD@?$allocator_traits@V?$allocator@D@std@@@std@@SAXAAV?$allocator@D@1@PAPADAAPAD@Z
+	??$destroy@PAD@?$allocator_traits@V?$allocator@D@std@@@std@@SAXAAV?$allocator@D@1@PAPAD@Z
+	??$construct@PADAAPAD@?$allocator@D@std@@QAEXPAPADAAPAD@Z
+	??$destroy@PAD@?$allocator@D@std@@QAEXPAPAD@Z
+	?IsA@Edb3DView@@WM@BEPAVTClass@@XZ
+	?ShowMembers@Edb3DView@@WM@AEXAAVTMemberInspector@@@Z
+	?Streamer@Edb3DView@@WM@AEXAAVTBuffer@@@Z
+	?IsA@EdbSegG@@WM@BEPAVTClass@@XZ
+	?ShowMembers@EdbSegG@@WM@AEXAAVTMemberInspector@@@Z
+	?Streamer@EdbSegG@@WM@AEXAAVTBuffer@@@Z
+	?IsA@EdbSegG@@WBI@BEPAVTClass@@XZ
+	?ShowMembers@EdbSegG@@WBI@AEXAAVTMemberInspector@@@Z
+	?Streamer@EdbSegG@@WBI@AEXAAVTBuffer@@@Z
+	?IsA@EdbVertexG@@WM@BEPAVTClass@@XZ
+	?ShowMembers@EdbVertexG@@WM@AEXAAVTMemberInspector@@@Z
+	?Streamer@EdbVertexG@@WM@AEXAAVTBuffer@@@Z
+	?IsA@EdbVertexG@@WBI@BEPAVTClass@@XZ
+	?ShowMembers@EdbVertexG@@WBI@AEXAAVTMemberInspector@@@Z
+	?Streamer@EdbVertexG@@WBI@AEXAAVTBuffer@@@Z
+	?IsA@EdbTrackG@@WM@BEPAVTClass@@XZ
+	?ShowMembers@EdbTrackG@@WM@AEXAAVTMemberInspector@@@Z
+	?Streamer@EdbTrackG@@WM@AEXAAVTBuffer@@@Z
+	?IsA@EdbTrackG@@WBI@BEPAVTClass@@XZ
+	?ShowMembers@EdbTrackG@@WBI@AEXAAVTMemberInspector@@@Z
+	?Streamer@EdbTrackG@@WBI@AEXAAVTBuffer@@@Z
+	?_Generic_object@?$_Error_objects@H@std@@2V_Generic_error_category@2@A 	 DATA
+	?_Iostream_object@?$_Error_objects@H@std@@2V_Iostream_error_category@2@A 	 DATA
+	?_System_object@?$_Error_objects@H@std@@2V_System_error_category@2@A 	 DATA
+	?id@?$num_put@DV?$back_insert_iterator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@@std@@2V0locale@2@A 	 DATA
+	?id@?$num_put@_WV?$back_insert_iterator@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@std@@@std@@2V0locale@2@A 	 DATA
+	??_R0?AVEdb3DView@@@8 	 DATA
+	??_R0?AVEdbDisplayBase@@@8 	 DATA
+	??_R0?AVEdbSegG@@@8 	 DATA
+	??_R0?AVEdbDisplay@@@8 	 DATA
+	??_R0?AVEdbVertexG@@@8 	 DATA
+	??_R0?AVEdbTrackG@@@8 	 DATA
+	?G__cpp_setup_initializerEddDict@@3VG__cpp_setup_initEddDict@@A 	 DATA
+	??_R0?AVTPad@@@8 	 DATA
+	??_R0?AVTButton@@@8 	 DATA
+	??_R0?AVTArc@@@8 	 DATA
+	??_R0?AVTGMainFrame@@@8 	 DATA
+	??_R0?AVTText@@@8 	 DATA
+	??_R0?AVTPaveText@@@8 	 DATA
+	??_R0?AVTGeoVolume@@@8 	 DATA
+	??_R0?AVTCanvas@@@8 	 DATA
+	??_R0?AVTGNumberEntry@@@8 	 DATA
+	??_R0?AVEdbVertexRec@@@8 	 DATA
+	??_R0?AVTObjArray@@@8 	 DATA
+	??_R0?AVEdbVertex@@@8 	 DATA
+	??_R0?AVEdbSegP@@@8 	 DATA
+	??_R0?AVEdbTrackP@@@8 	 DATA
+	??_R0?AVTPolyMarker3D@@@8 	 DATA
+	??_R0?AVTObject@@@8 	 DATA
+	??_R0?AVTNamed@@@8 	 DATA
+	??_R0?AVTCollection@@@8 	 DATA
+	??_R0?AVTVirtualIsAProxy@@@8 	 DATA
+	??_R0?AVerror_category@std@@@8 	 DATA
+	??_R0?AV_Generic_error_category@std@@@8 	 DATA
+	??_R0?AV_Iostream_error_category@std@@@8 	 DATA
+	??_R0?AV_System_error_category@std@@@8 	 DATA
+	??_R0?AVTList@@@8 	 DATA
+	??_R0?AVTSeqCollection@@@8 	 DATA
+	??_R0?AVTAttLine@@@8 	 DATA
+	??_R0?AVTAttMarker@@@8 	 DATA
+	??_R0?AVTView@@@8 	 DATA
+	??_R0?AVTAtt3D@@@8 	 DATA
+	??_R0?AVTView3D@@@8 	 DATA
+	??_R0?AVTPolyLine3D@@@8 	 DATA
+	??_R0?AVTLockGuard@@@8 	 DATA
+	??_R0?AV?$TInstrumentedIsAProxy@VEdb3DView@@@@@8 	 DATA
+	??_R0?AV?$TInstrumentedIsAProxy@VEdbDisplayBase@@@@@8 	 DATA
+	??_R0?AV?$TInstrumentedIsAProxy@VEdbSegG@@@@@8 	 DATA
+	??_R0?AV?$TInstrumentedIsAProxy@VEdbDisplay@@@@@8 	 DATA
+	??_R0?AV?$TInstrumentedIsAProxy@VEdbVertexG@@@@@8 	 DATA
+	??_R0?AV?$TInstrumentedIsAProxy@VEdbTrackG@@@@@8 	 DATA

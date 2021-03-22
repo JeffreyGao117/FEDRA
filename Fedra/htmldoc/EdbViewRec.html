@@ -1,0 +1,534 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--                                             -->
+<!-- Author: ROOT team (rootdev@cern.ch)         -->
+<!--                                             -->
+<!--   Date: Mon Jul 03 09:59:37 2017            -->
+<!--                                             -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>EdbViewRec</title>
+<meta name="rating" content="General" />
+<meta name="objecttype" content="Manual" />
+<meta name="keywords" content="software development, oo, object oriented, unix, x11, windows, c++, html, rene brun, fons rademakers, cern" />
+<meta name="description" content="ROOT - An Object Oriented Framework For Large Scale Data Analysis." />
+<link rel="stylesheet" type="text/css" href="ROOT.css" id="ROOTstyle" />
+<script type="text/javascript" src="ROOT.js"></script>
+</head>
+<body  onload="javascript:SetValuesFromCookie();"><div id="body_content">
+<div id="root_header"><img src="http://root.cern.ch/drupal/sites/default/files/rootdrawing-logo.png" alt="ROOT logo"/></div>
+<a name="TopOfPage"></a>
+<script type="text/javascript">WriteFollowPageBox('class EdbViewRec','','EdbViewRec.h');</script>
+<div id="toplinks">
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Quick Links:</span>
+<a class="descrheadentry" href="http://root.cern.ch">ROOT Homepage</a>
+<a class="descrheadentry" href="./ClassIndex.html">Class Index</a>
+<a class="descrheadentry" href="./ClassHierarchy.html">Class Hierarchy</a></div>
+<script type="text/javascript">
+function onSearch() {
+var s='http://www.google.com/search?q=%s+site%3A%u+-site%3A%u%2Fsrc%2F+-site%3A%u%2Fexamples%2F';
+var ref=String(document.location.href).replace(/https?:\/\//,'').replace(/\/[^\/]*$/,'').replace(/\//g,'%2F');
+window.location.href=s.replace(/%u/ig,ref).replace(/%s/ig,escape(document.searchform.t.value));
+return false;}
+</script>
+<form id="searchform" name="searchform" onsubmit="return onSearch()" action="javascript:onSearch();" method="post">
+<input name="t" size="30" value="Search documentation..." onfocus="if (document.searchform.t.value=='Search documentation...') document.searchform.t.value='';"></input>
+<a id="searchlink"  title="www.google.com"  href="javascript:onSearch();" onclick="return onSearch()">Search</a></form>
+</div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Source:</span>
+<a class="descrheadentry" href="src/EdbViewRec.h.html">header file</a>
+<a class="descrheadentry" href="src/EdbViewRec.cxx.html">source file</a>
+<a class="descrheadentry" href="EdbViewRec_Tree.pdf">inheritance tree (.pdf)</a> 
+</div></div>
+<div class="descrhead"><div class="descrheadcontent">
+<span class="descrtitle">Sections:</span>
+<a class="descrheadentry" href="#EdbViewRec:description">class description</a> 
+<a class="descrheadentry" href="#EdbViewRec:Function_Members">function members</a>
+<a class="descrheadentry" href="#EdbViewRec:Data_Members">data members</a>
+<a class="descrheadentry" href="#EdbViewRec:Class_Charts">class charts</a>
+</div></div>
+</div>
+<div class="location">
+<a class="locationlevel" href="index.html">FEDRA</a>
+ &#187; <a class="locationlevel" href="./._Index.html">.</a>
+ &#187; <a class="locationlevel" href="#TopOfPage">EdbViewRec</a>
+</div>
+<div class="dropshadow"><div class="withshadow"><h1><a name="EdbViewRec:description"></a>class EdbViewRec: public <a href="./EdbViewDef.html">EdbViewDef</a></h1>
+<div class="classdescr">
+<pre>
+
+<a href="./EdbViewRec.html">EdbViewRec</a> - one microscope view reconstruction
+<span class="string">"hedgehog"</span> tracking
+
+</pre></div>
+</div></div>
+
+<div id="functions">
+<h2><a id="EdbViewRec:Function_Members"></a>Function Members (Methods)</h2>
+<div class="access" id="funcpubl"><b>public:</b>
+<table class="func" id="tabfuncpubl" cellspacing="0">
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbViewRec:EdbViewRec">EdbViewRec</a>()</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbViewRec:EdbViewRec@1">EdbViewRec</a>(<a href="./EdbViewDef.html">EdbViewDef</a>&amp; vd)</td></tr>
+<tr class="func"><td class="funcret"></td><td class="funcname"><a class="funcname" href="#EdbViewRec:EdbViewRec@2">EdbViewRec</a>(<span class="keyword">const</span> <a href="./EdbViewRec.html">EdbViewRec</a>&amp;)</td></tr>
+<tr class="func"><td class="funcret"> virtual</td><td class="funcname"><a class="funcname" href="#EdbViewRec:_EdbViewRec">~EdbViewRec</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AbstractMethod"><span class="baseclass">TObject::</span>AbstractMethod</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:AppendPad"><span class="baseclass">TObject::</span>AppendPad</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Browse"><span class="baseclass">TObject::</span>Browse</a>(TBrowser* b)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:CalculateSegmentChi2">CalculateSegmentChi2</a>(<a href="./EdbSegment.html">EdbSegment</a>&amp; seg, <span class="keyword">float</span> sx, <span class="keyword">float</span> sy, <span class="keyword">float</span> sz)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:CheckFramesShift">CheckFramesShift</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:CheckSeedThres">CheckSeedThres</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:Chi2Seg">Chi2Seg</a>(<a href="./EdbSegment.html">EdbSegment</a>&amp; s1, <a href="./EdbSegment.html">EdbSegment</a>&amp; s2)</td></tr>
+<tr class="func"><td class="funcret">static TClass*</td><td class="funcname"><a class="funcname" href="#EdbViewRec:Class">Class</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:ClassName"><span class="baseclass">TObject::</span>ClassName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Clear"><span class="baseclass">TObject::</span>Clear</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:Clone"><span class="baseclass">TObject::</span>Clone</a>(<span class="keyword">const</span> <span class="keyword">char</span>* newname = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Compare"><span class="baseclass">TObject::</span>Compare</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Copy"><span class="baseclass">TObject::</span>Copy</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>&amp; object) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Delete"><span class="baseclass">TObject::</span>Delete</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:DistancetoPrimitive"><span class="baseclass">TObject::</span>DistancetoPrimitive</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Draw"><span class="baseclass">TObject::</span>Draw</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DrawClass"><span class="baseclass">TObject::</span>DrawClass</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:DrawClone"><span class="baseclass">TObject::</span>DrawClone</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Dump"><span class="baseclass">TObject::</span>Dump</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Error"><span class="baseclass">TObject::</span>Error</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute"><span class="baseclass">TObject::</span>Execute</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Execute@1"><span class="baseclass">TObject::</span>Execute</a>(TMethod* method, TObjArray* params, <a href="./ListOfTypes.html#Int_t">Int_t</a>* error = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ExecuteEvent"><span class="baseclass">TObject::</span>ExecuteEvent</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> event, <a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Fatal"><span class="baseclass">TObject::</span>Fatal</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:FillGrainsTree">FillGrainsTree</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:FindGrains">FindGrains</a>(<span class="keyword">int</span> option = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>*</td><td class="funcname"><a class="funcname" href="#TObject:FindObject@1"><span class="baseclass">TObject::</span>FindObject</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:FindSeeds">FindSeeds</a>()</td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:FitSegment">FitSegment</a>(<a href="./EdbSegment.html">EdbSegment</a>&amp; s, <span class="keyword">int</span> wkey = 0)</td></tr>
+<tr class="func"><td class="funcret">static <span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:FitSegmentToCl">FitSegmentToCl</a>(<a href="./EdbSegment.html">EdbSegment</a>&amp; s, <a href="./EdbCluster.html">EdbCluster</a>&amp; c, <span class="keyword">int</span> wkey = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetDrawOption"><span class="baseclass">TObject::</span>GetDrawOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Long_t">Long_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetDtorOnly"><span class="baseclass">TObject::</span>GetDtorOnly</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetIconName"><span class="baseclass">TObject::</span>GetIconName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetName"><span class="baseclass">TObject::</span>GetName</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetObjectInfo"><span class="baseclass">TObject::</span>GetObjectInfo</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> px, <a href="./ListOfTypes.html#Int_t">Int_t</a> py) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetObjectStat"><span class="baseclass">TObject::</span>GetObjectStat</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Option_t">Option_t</a>*</td><td class="funcname"><a class="funcname" href="#TObject:GetOption"><span class="baseclass">TObject::</span>GetOption</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">const</span> <span class="keyword">char</span>*</td><td class="funcname"><a class="funcname" href="#TObject:GetTitle"><span class="baseclass">TObject::</span>GetTitle</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#UInt_t">UInt_t</a></td><td class="funcname"><a class="funcname" href="#TObject:GetUniqueID"><span class="baseclass">TObject::</span>GetUniqueID</a>() <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:GoodSegment">GoodSegment</a>(<a href="./EdbSegment.html">EdbSegment</a>&amp; s, <span class="keyword">int</span> wkey = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:HandleTimer"><span class="baseclass">TObject::</span>HandleTimer</a>(TTimer* timer)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#ULong_t">ULong_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Hash"><span class="baseclass">TObject::</span>Hash</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Info"><span class="baseclass">TObject::</span>Info</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> <span class="keyword">char</span>* classname) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:InheritsFrom@1"><span class="baseclass">TObject::</span>InheritsFrom</a>(<span class="keyword">const</span> TClass* cl) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:Init">Init</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:InitGrainsTree">InitGrainsTree</a>(<span class="keyword">const</span> <span class="keyword">char</span>* file = <span class="string">"grains.root"</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:InitR">InitR</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Inspect"><span class="baseclass">TObject::</span>Inspect</a>() <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:InvertBit"><span class="baseclass">TObject::</span>InvertBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret">virtual TClass*</td><td class="funcname"><a class="funcname" href="#EdbViewRec:IsA">IsA</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsEqual"><span class="baseclass">TObject::</span>IsEqual</a>(<span class="keyword">const</span> <a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsFolder"><span class="baseclass">TObject::</span>IsFolder</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsOnHeap"><span class="baseclass">TObject::</span>IsOnHeap</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsSortable"><span class="baseclass">TObject::</span>IsSortable</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:IsZombie"><span class="baseclass">TObject::</span>IsZombie</a>() <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ls"><span class="baseclass">TObject::</span>ls</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MayNotUse"><span class="baseclass">TObject::</span>MayNotUse</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method) <span class="keyword">const</span></td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:MergeSegments">MergeSegments</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Notify"><span class="baseclass">TObject::</span>Notify</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Obsolete"><span class="baseclass">TObject::</span>Obsolete</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* asOfVers, <span class="keyword">const</span> <span class="keyword">char</span>* removedFromVers) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete@1"><span class="baseclass">TObject::</span>operator delete</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:operator_delete[]@1"><span class="baseclass">TObject::</span>operator delete[]</a>(<span class="keyword">void</span>* ptr, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new@1"><span class="baseclass">TObject::</span>operator new</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span>*</td><td class="funcname"><a class="funcname" href="#TObject:operator_new[]@1"><span class="baseclass">TObject::</span>operator new[]</a>(<a href="./ListOfTypes.html#size_t">size_t</a> sz, <span class="keyword">void</span>* vp)</td></tr>
+<tr class="func"><td class="funcret"><a href="./EdbViewRec.html">EdbViewRec</a>&amp;</td><td class="funcname"><a class="funcname" href="#EdbViewRec:operator_">operator=</a>(<span class="keyword">const</span> <a href="./EdbViewRec.html">EdbViewRec</a>&amp;)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Paint"><span class="baseclass">TObject::</span>Paint</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Pop"><span class="baseclass">TObject::</span>Pop</a>()</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbViewDef.html#EdbViewDef:Print"><span class="baseclass">EdbViewDef::</span>Print</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Read"><span class="baseclass">TObject::</span>Read</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:ReconstructGrains">ReconstructGrains</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:ReconstructSegments">ReconstructSegments</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:RecursiveRemove"><span class="baseclass">TObject::</span>RecursiveRemove</a>(<a href="./#TObject:TObject" title="TObject TObject::TObject() or overloads">TObject</a>* obj)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:RefillSegment">RefillSegment</a>(<a href="./EdbSegment.html">EdbSegment</a>&amp; s)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:RefitSegments">RefitSegments</a>(<span class="keyword">int</span> wkey = 0)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:ResetBit"><span class="baseclass">TObject::</span>ResetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:ResetClustersSeg">ResetClustersSeg</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SaveAs"><span class="baseclass">TObject::</span>SaveAs</a>(<span class="keyword">const</span> <span class="keyword">char</span>* filename = <span class="string">""</span>, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>) <span class="keyword">const</span><span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SavePrimitive"><span class="baseclass">TObject::</span>SavePrimitive</a>(<a href="./ListOfTypes.html#ostream">ostream</a>&amp; out, <a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SaveToOutputView">SaveToOutputView</a>(<a href="./EdbView.html">EdbView</a>&amp; vout, <span class="keyword">int</span> do_h = 1, <span class="keyword">int</span> do_c = 2, <span class="keyword">int</span> do_s = 2, <span class="keyword">int</span> do_tr = 0, <span class="keyword">int</span> do_f = 2)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SelectSegments">SelectSegments</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SetAddGrainsToView">SetAddGrainsToView</a>(<span class="keyword">bool</span> yesno)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit@1"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetBit"><span class="baseclass">TObject::</span>SetBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f, <a href="./ListOfTypes.html#Bool_t">Bool_t</a> set)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SetClThres">SetClThres</a>(<span class="keyword">int</span> mina, <span class="keyword">int</span> maxa)</td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="./EdbViewDef.html#EdbViewDef:SetDef"><span class="baseclass">EdbViewDef::</span>SetDef</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDrawOption"><span class="baseclass">TObject::</span>SetDrawOption</a>(<a href="./ListOfTypes.html#Option_t">Option_t</a>* option = <span class="string">""</span>)<span class="funcprop"><abbr title="has a popup menu entry">MENU</abbr> </span></td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetDtorOnly"><span class="baseclass">TObject::</span>SetDtorOnly</a>(<span class="keyword">void</span>* obj)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SetNclGrLim">SetNclGrLim</a>(<span class="keyword">int</span> mincl, <span class="keyword">int</span> maxcl)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SetNgrMax0">SetNgrMax0</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> ngr)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SetNSeedMax">SetNSeedMax</a>(<span class="keyword">int</span> nt, <span class="keyword">int</span>* th)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SetNSeedMax0">SetNSeedMax0</a>(<span class="keyword">int</span> n)</td></tr>
+<tr class="funcinh"><td class="funcret">static <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetObjectStat"><span class="baseclass">TObject::</span>SetObjectStat</a>(<a href="./ListOfTypes.html#Bool_t">Bool_t</a> stat)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SetPrimary">SetPrimary</a>()</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SetPulsThres">SetPulsThres</a>(<span class="keyword">int</span> minp, <span class="keyword">int</span> maxp = 500)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SetRmax">SetRmax</a>(<span class="keyword">float</span> rmax)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SetSeedsLim">SetSeedsLim</a>(<span class="keyword">int</span> nseedslim = 100000, <span class="keyword">int</span> seedlim = 48)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SetSeedThres">SetSeedThres</a>(<span class="keyword">int</span> nt, <span class="keyword">int</span>* th)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SetSeedThres0">SetSeedThres0</a>(<a href="./ListOfTypes.html#Short_t">Short_t</a> mins)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SetSigmaThres">SetSigmaThres</a>(<span class="keyword">float</span> smin, <span class="keyword">float</span> smax)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">int</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SetStep">SetStep</a>(<span class="keyword">int</span> sfrom, <span class="keyword">int</span> sto, <span class="keyword">int</span> step = 1)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SetThetaLim">SetThetaLim</a>(<span class="keyword">float</span> t)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SetUniqueID"><span class="baseclass">TObject::</span>SetUniqueID</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> uid)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">bool</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SetView">SetView</a>(<a href="./EdbView.html">EdbView</a>* v)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:ShowMembers">ShowMembers</a>(TMemberInspector&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SPhiGr">SPhiGr</a>(<span class="keyword">float</span> theta, <span class="keyword">float</span> phi, <span class="keyword">float</span> dz, <span class="keyword">float</span> sx, <span class="keyword">float</span> sy, <span class="keyword">float</span> sz)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">float</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:SThetaGr">SThetaGr</a>(<span class="keyword">float</span> theta, <span class="keyword">float</span> phi, <span class="keyword">float</span> dz, <span class="keyword">float</span> sx, <span class="keyword">float</span> sy, <span class="keyword">float</span> sz)</td></tr>
+<tr class="func"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:Streamer">Streamer</a>(TBuffer&amp;)</td></tr>
+<tr class="func"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#EdbViewRec:StreamerNVirtual">StreamerNVirtual</a>(TBuffer&amp; ClassDef_StreamerNVirtual_b)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:SysError"><span class="baseclass">TObject::</span>SysError</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Bool_t">Bool_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBit"><span class="baseclass">TObject::</span>TestBit</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:TestBits"><span class="baseclass">TObject::</span>TestBits</a>(<a href="./ListOfTypes.html#UInt_t">UInt_t</a> f) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:UseCurrentStyle"><span class="baseclass">TObject::</span>UseCurrentStyle</a>()</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:Warning"><span class="baseclass">TObject::</span>Warning</a>(<span class="keyword">const</span> <span class="keyword">char</span>* method, <span class="keyword">const</span> <span class="keyword">char</span>* msgfmt) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0)</td></tr>
+<tr class="funcinh"><td class="funcret">virtual <a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="funcname"><a class="funcname" href="#TObject:Write@1"><span class="baseclass">TObject::</span>Write</a>(<span class="keyword">const</span> <span class="keyword">char</span>* name = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> option = 0, <a href="./ListOfTypes.html#Int_t">Int_t</a> bufsize = 0) <span class="keyword">const</span></td></tr>
+
+</table></div>
+<div class="access" id="funcprot"><b>protected:</b>
+<table class="func" id="tabfuncprot" cellspacing="0">
+<tr class="funcinh"><td class="funcret">virtual <span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:DoError"><span class="baseclass">TObject::</span>DoError</a>(<span class="keyword">int</span> level, <span class="keyword">const</span> <span class="keyword">char</span>* location, <span class="keyword">const</span> <span class="keyword">char</span>* fmt, va_list va) <span class="keyword">const</span></td></tr>
+<tr class="funcinh"><td class="funcret"><span class="keyword">void</span></td><td class="funcname"><a class="funcname" href="#TObject:MakeZombie"><span class="baseclass">TObject::</span>MakeZombie</a>()</td></tr>
+
+</table></div>
+</div>
+
+<div id="datamembers">
+<h2><a name="EdbViewRec:Data_Members"></a>Data Members</h2>
+<div class="access" id="enumpubl"><b>public:</b>
+<table class="data" id="tabenumpubl" cellspacing="0">
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span>EStatusBits { </td><td class="dataname"><a href="#TObject:kCanDelete">kCanDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kMustCleanup">kMustCleanup</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kObjInCanvas">kObjInCanvas</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kIsReferenced">kIsReferenced</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kHasUUID">kHasUUID</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kCannotPick">kCannotPick</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNoContextMenu">kNoContextMenu</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kInvalidObject">kInvalidObject</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+<tr class="datainh"><td class="datatype">enum <span class="baseclass">TObject::</span><i>[unnamed]</i> { </td><td class="dataname"><a href="#TObject:kIsOnHeap">kIsOnHeap</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kNotDeleted">kNotDeleted</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kZombie">kZombie</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kBitMask">kBitMask</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kSingleKey">kSingleKey</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kOverwrite">kOverwrite</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"></td><td class="dataname"><a href="#TObject:kWriteDelete">kWriteDelete</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype">};</td><td></td><td></td></tr>
+
+</table></div>
+<div class="access" id="datapubl"><b>public:</b>
+<table class="data" id="tabdatapubl" cellspacing="0">
+<tr class="data"><td class="datatype"><span class="keyword">bool</span></td><td class="dataname"><a name="EdbViewRec:eAddGrainsToView"></a>eAddGrainsToView</td><td class="datadesc">if true: save grains to eView as a segments</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">bool</span></td><td class="dataname"><a name="EdbViewRec:eCheckSeedThres"></a>eCheckSeedThres</td><td class="datadesc">if true: use adaptive seeds threshold (based on eNseedMax)</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eClaSX"><span class="baseclass">EdbViewDef::</span>eClaSX</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eClaSY"><span class="baseclass">EdbViewDef::</span>eClaSY</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eClaSZ"><span class="baseclass">EdbViewDef::</span>eClaSZ</a></td><td class="datadesc">smearing for clusters position inside grain</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eClaSZvar"><span class="baseclass">EdbViewDef::</span>eClaSZvar</a></td><td class="datadesc">variation (sigma) of the vertical grain size</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eDZdead"><span class="baseclass">EdbViewDef::</span>eDZdead</a></td><td class="datadesc">the thickness of the dead layer</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">bool</span></td><td class="dataname"><a name="EdbViewRec:eDoGrainsProcessing"></a>eDoGrainsProcessing</td><td class="datadesc">if true: when reconstruct segments first find grains -&gt;(eGCla)</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eFogDens"><span class="baseclass">EdbViewDef::</span>eFogDens</a></td><td class="datadesc">per 10x10x10 microns**3</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eFogGrainArea"><span class="baseclass">EdbViewDef::</span>eFogGrainArea</a></td><td class="datadesc">mean area of the fog grain</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eGrainArea"><span class="baseclass">EdbViewDef::</span>eGrainArea</a></td><td class="datadesc">mean area of the signal grain</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbViewRec:eGrainNbin"></a>eGrainNbin</td><td class="datadesc">acceptance for grain preprocessing = eGrainNbin*eGrainSX(Y)</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eGrainSX"><span class="baseclass">EdbViewDef::</span>eGrainSX</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eGrainSY"><span class="baseclass">EdbViewDef::</span>eGrainSY</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eGrainSZ"><span class="baseclass">EdbViewDef::</span>eGrainSZ</a></td><td class="datadesc">smearing og CoG of the grain in z (relevant for tracking!)</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eNframes"><span class="baseclass">EdbViewDef::</span>eNframes</a></td><td class="datadesc">number of frames</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">bool</span></td><td class="dataname"><a name="EdbViewRec:ePropagateToBase"></a>ePropagateToBase</td><td class="datadesc">if true: segments are propagated to base position</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eTXopt"><span class="baseclass">EdbViewDef::</span>eTXopt</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eTYopt"><span class="baseclass">EdbViewDef::</span>eTYopt</a></td><td class="datadesc">koeff of the slopes: t(x) = tx*(x-X0opt), </td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eX0"><span class="baseclass">EdbViewDef::</span>eX0</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eX0opt"><span class="baseclass">EdbViewDef::</span>eX0opt</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eXmax"><span class="baseclass">EdbViewDef::</span>eXmax</a></td><td class="datadesc">limits of the view</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eXmin"><span class="baseclass">EdbViewDef::</span>eXmin</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eY0"><span class="baseclass">EdbViewDef::</span>eY0</a></td><td class="datadesc">geometrical center of the view</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eY0opt"><span class="baseclass">EdbViewDef::</span>eY0opt</a></td><td class="datadesc">optical center of the view (the point vhere the grains are vertical)</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eYmax"><span class="baseclass">EdbViewDef::</span>eYmax</a></td><td class="datadesc">limits of the view</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eYmin"><span class="baseclass">EdbViewDef::</span>eYmin</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eZdead"><span class="baseclass">EdbViewDef::</span>eZdead</a></td><td class="datadesc">the center of the dead layer</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eZmax"><span class="baseclass">EdbViewDef::</span>eZmax</a></td><td class="datadesc">limits in z</td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eZmin"><span class="baseclass">EdbViewDef::</span>eZmin</a></td><td></td></tr>
+<tr class="datainh"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a href="./EdbViewDef.html#EdbViewDef:eZxy"><span class="baseclass">EdbViewDef::</span>eZxy</a></td><td class="datadesc">intersect plane</td></tr>
+
+</table></div>
+<div class="access" id="datapriv"><b>private:</b>
+<table class="data" id="tabdatapriv" cellspacing="0">
+<tr class="data"><td class="datatype">TClonesArray*</td><td class="dataname"><a name="EdbViewRec:eCL"></a>eCL</td><td class="datadesc">! pointer to eView-&gt;GetClusters() or to eGCla as the input for tracking</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbViewRec:eClMaxA"></a>eClMaxA</td><td class="datadesc">rejected cl-&gt;eArea &gt; eClMaxA (blobs)</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbViewRec:eClMinA"></a>eClMinA</td><td class="datadesc">rejected cl-&gt;eArea &lt; eClMinA (image noise)</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbViewRec:eDZmin"></a>eDZmin</td><td class="datadesc">minimal dz - should be in agreement with eStepFrom</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbViewRec:eDmax"></a>eDmax</td><td class="datadesc">max distance inside the view (diameter)</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbViewRec:eFact"></a>eFact</td><td class="datadesc">occupancy correction factor </td></tr>
+<tr class="data"><td class="datatype">TClonesArray*</td><td class="dataname"><a name="EdbViewRec:eG"></a>eG</td><td class="datadesc">! pointer to eView-&gt;GetSegments() or to eGSeg as the output for grain search</td></tr>
+<tr class="data"><td class="datatype">TClonesArray*</td><td class="dataname"><a name="EdbViewRec:eGCla"></a>eGCla</td><td class="datadesc">! [eNgrMax] array of grains represented as clusters</td></tr>
+<tr class="data"><td class="datatype">TTree*</td><td class="dataname"><a name="EdbViewRec:eGrainsTree"></a>eGrainsTree</td><td class="datadesc">! debug tree</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbViewRec:eNclGrMax"></a>eNclGrMax</td><td class="datadesc">max number of clusters/grain for consider it a single grain</td></tr>
+<tr class="data"><td class="datatype"><span class="keyword">int</span></td><td class="dataname"><a name="EdbViewRec:eNclGrMin"></a>eNclGrMin</td><td class="datadesc">min number of clusters/grain for saving it</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbViewRec:eNgr"></a>eNgr</td><td class="datadesc">grains counter</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbViewRec:eNgrMax"></a>eNgrMax</td><td class="datadesc">grains limit (for mem alloc)</td></tr>
+<tr class="data"><td class="datatype">TArrayI</td><td class="dataname"><a name="EdbViewRec:eNseedMax"></a>eNseedMax</td><td class="datadesc">[enT] limit for the good seeds (segments) to be processed</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbViewRec:eNseedMax0"></a>eNseedMax0</td><td class="datadesc">starting limit for the good seeds (segments) to be processed</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbViewRec:eNsegMax"></a>eNsegMax</td><td class="datadesc">segments limit (for mem alloc)</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbViewRec:ePulsMax"></a>ePulsMax</td><td class="datadesc">max threshold for the segment puls</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbViewRec:ePulsMin"></a>ePulsMin</td><td class="datadesc">min threshold for the segment puls</td></tr>
+<tr class="data"><td class="datatype">TArrayF</td><td class="dataname"><a name="EdbViewRec:eR"></a>eR</td><td class="datadesc">R(it) limits definition (may be setted manually?)</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbViewRec:eRmax"></a>eRmax</td><td class="datadesc">limit for coupling (3-dim)</td></tr>
+<tr class="data"><td class="datatype">TClonesArray*</td><td class="dataname"><a name="EdbViewRec:eSA"></a>eSA</td><td class="datadesc">! pointer to array of segments (output of tracking)</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Short_t">Short_t</a></td><td class="dataname"><a name="EdbViewRec:eSeedLim"></a>eSeedLim</td><td class="datadesc">limit for the number of clusters/seed</td></tr>
+<tr class="data"><td class="datatype">TArrayI</td><td class="dataname"><a name="EdbViewRec:eSeedThres"></a>eSeedThres</td><td class="datadesc">thresholds[enT] for the seed puls</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbViewRec:eSeedThres0"></a>eSeedThres0</td><td class="datadesc">default threshold for the seed puls</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbViewRec:eSigmaMax"></a>eSigmaMax</td><td></td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbViewRec:eSigmaMin"></a>eSigmaMin</td><td class="datadesc">min and max values for segment acceptance</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbViewRec:eStep"></a>eStep</td><td class="datadesc">frame step size for seed search: default=1</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbViewRec:eStepFrom"></a>eStepFrom</td><td class="datadesc">low   limit (ifr) for seed search</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbViewRec:eStepTo"></a>eStepTo</td><td class="datadesc">upper limit (ifr) for seed search</td></tr>
+<tr class="data"><td class="datatype">TArrayF</td><td class="dataname"><a name="EdbViewRec:eTheta"></a>eTheta</td><td class="datadesc">theta(it) mean value</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbViewRec:eThetaLim"></a>eThetaLim</td><td class="datadesc">absolute theta limit</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbViewCell.html">EdbViewCell</a>*</td><td class="dataname"><a name="EdbViewRec:eVC"></a>eVC</td><td class="datadesc">! pointer to eVCC or eVCG</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbViewCell.html">EdbViewCell</a></td><td class="dataname"><a name="EdbViewRec:eVCC"></a>eVCC</td><td class="datadesc">! cells with raw clusters</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbViewCell.html">EdbViewCell</a></td><td class="dataname"><a name="EdbViewRec:eVCG"></a>eVCG</td><td class="datadesc">! cells with grains</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbView.html">EdbView</a>*</td><td class="dataname"><a name="EdbViewRec:eView"></a>eView</td><td class="datadesc">! pointer to the input  view currently in processing</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Float_t">Float_t</a></td><td class="dataname"><a name="EdbViewRec:eZcenter"></a>eZcenter</td><td class="datadesc">estimated center of the emulsion layer (for segments rec)</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Short_t">Short_t</a>*</td><td class="dataname"><a name="EdbViewRec:ehX"></a>ehX</td><td class="datadesc">! [enXtot] - phase histogram</td></tr>
+<tr class="data"><td class="datatype">TArrayI</td><td class="dataname"><a name="EdbViewRec:enP"></a>enP</td><td class="datadesc">number of Phi divisions [enT]</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbViewRec:enPtot"></a>enPtot</td><td class="datadesc">total number of phi divisions</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbViewRec:enSeedsLim"></a>enSeedsLim</td><td class="datadesc">limit for the number of seeds</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbViewRec:enT"></a>enT</td><td class="datadesc">number of Theta divisions</td></tr>
+<tr class="data"><td class="datatype">TArrayI</td><td class="dataname"><a name="EdbViewRec:enX"></a>enX</td><td class="datadesc">number of X divisions [enYtot]</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbViewRec:enXtot"></a>enXtot</td><td class="datadesc">total number of X divisions</td></tr>
+<tr class="data"><td class="datatype">TArrayI</td><td class="dataname"><a name="EdbViewRec:enY"></a>enY</td><td class="datadesc">number of Y divisions [enPtot]</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Int_t">Int_t</a></td><td class="dataname"><a name="EdbViewRec:enYtot"></a>enYtot</td><td class="datadesc">total number of Y divisions</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbCluster.html">EdbCluster</a>**</td><td class="dataname"><a name="EdbViewRec:epC"></a>epC</td><td class="datadesc">! pointers to clusters</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Short_t">Short_t</a>***</td><td class="dataname"><a name="EdbViewRec:epP"></a>epP</td><td class="datadesc">! [enPtot] - pointers to the first y[ip]</td></tr>
+<tr class="data"><td class="datatype"><a href="./EdbCluster.html">EdbCluster</a>***</td><td class="dataname"><a name="EdbViewRec:epS"></a>epS</td><td class="datadesc">! pointers to seeds list</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Short_t">Short_t</a>****</td><td class="dataname"><a name="EdbViewRec:epT"></a>epT</td><td class="datadesc">! [enT]    - pointers to the first phi[it]</td></tr>
+<tr class="data"><td class="datatype"><a href="./ListOfTypes.html#Short_t">Short_t</a>**</td><td class="dataname"><a name="EdbViewRec:epY"></a>epY</td><td class="datadesc">! [enYtot] - pointers to the first x[iy]</td></tr>
+<tr class="data"><td class="datatype">TArrayF</td><td class="dataname"><a name="EdbViewRec:esP"></a>esP</td><td class="datadesc">step of Phi   divisions [enT]</td></tr>
+<tr class="data"><td class="datatype">TArrayF</td><td class="dataname"><a name="EdbViewRec:esX"></a>esX</td><td class="datadesc">step of X     divisions [enYtot]</td></tr>
+<tr class="data"><td class="datatype">TArrayF</td><td class="dataname"><a name="EdbViewRec:esY"></a>esY</td><td class="datadesc">step of Y     divisions [enPtot]</td></tr>
+
+</table></div>
+</div>
+<h2><a id="EdbViewRec:Class_Charts"></a>Class Charts</h2>
+<!--INHERITANCE TREE-->
+<table><tr><td width="10%"></td><td width="70%"><a href="ClassHierarchy.html">Inheritance Chart</a>:</td></tr><tr class="inhtree"><td width="10%"></td><td width="70%"><table class="inhtree"><tr><td>
+<table width="100%" border="0" cellpadding ="0" cellspacing="2"><tr>
+<td><table><tr>
+<td bgcolor="#f7f7f7" align="right">
+<table><tr><td><table><tr>
+<td bgcolor="#efefef" align="right">
+<tt>TObject</tt></td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><tt><a name="EdbViewDef" href="./EdbViewDef.html">EdbViewDef</a></tt></center>
+</td>
+</tr></table>
+</td>
+</tr></table></td>
+<td>&larr;</td><td>
+<center><big><b><tt><a name="EdbViewRec" href="./EdbViewRec.html">EdbViewRec</a></tt></b></big></center>
+</td>
+<td><table><tr>
+<td></td>
+</tr></table></td>
+</tr></table>
+</td></tr></table></td></tr></table>
+<h2>Function documentation</h2>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbViewRec:EdbViewRec" href="src/EdbViewRec.cxx.html#TI0wE">EdbViewRec</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbViewRec:_EdbViewRec" href="src/EdbViewRec.cxx.html#mUabM">~EdbViewRec</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbViewRec:SetPrimary" href="src/EdbViewRec.cxx.html#A5lBuD">SetPrimary</a>()</span><br />
+<div class="funccomm"><pre> define default primary values used later for the calculations in <a href="./EdbViewRec.html#EdbViewRec:Init" title="bool EdbViewRec::Init()">Init</a>() function
+ before <a href="./EdbViewRec.html#EdbViewRec:Init" title="bool EdbViewRec::Init()">Init</a> them can be modified by correspondent setters
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbViewRec:Init" href="src/EdbViewRec.cxx.html#Q0irRB">Init</a>()</span><br />
+<div class="funccomm"><pre> allocate memory here, return <a href="./ListOfTypes.html#bool">true</a> if ok
+ all settings must be done before!
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbViewRec:InitR" href="src/EdbViewRec.cxx.html#OsSUhC">InitR</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbViewRec:SThetaGr" href="src/EdbViewRec.cxx.html#ZDlP7B">SThetaGr</a>(<span class="keyword">float</span> theta, <span class="keyword">float</span> phi, <span class="keyword">float</span> dz, <span class="keyword">float</span> sx, <span class="keyword">float</span> sy, <span class="keyword">float</span> sz)</span><br />
+<div class="funccomm"><pre> cone aperture theta angle for grain of size sx,sy,sz  visible at theta,phi,dz
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbViewRec:SPhiGr" href="src/EdbViewRec.cxx.html#Kcg3ED">SPhiGr</a>(<span class="keyword">float</span> theta, <span class="keyword">float</span> phi, <span class="keyword">float</span> dz, <span class="keyword">float</span> sx, <span class="keyword">float</span> sy, <span class="keyword">float</span> sz)</span><br />
+<div class="funccomm"><pre> cone aperture phi angle for grain of size sx,sy,sz  visible at theta,phi,dz
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbViewRec:SetView" href="src/EdbViewRec.cxx.html#Gsj2nD">SetView</a>(<a href="./EdbView.html">EdbView</a>* v)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbViewRec:ReconstructGrains" href="src/EdbViewRec.cxx.html#zcpez">ReconstructGrains</a>()</span><br />
+<div class="funccomm"><pre> stearing function for grains reconstruction
+ options: - save grains as the segments into <a href="./EdbViewRec.html#EdbViewRec:eView" title="EdbView* EdbViewRec::eView">eView</a>
+          - keep them as an independent array and then save to separate grains tree
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbViewRec:ReconstructSegments" href="src/EdbViewRec.cxx.html#pzYR0">ReconstructSegments</a>()</span><br />
+<div class="funccomm"><pre> stearing function for segments reconstruction
+ options: - with    grains preprocessing
+          - without grains preprocessing
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbViewRec:SaveToOutputView" href="src/EdbViewRec.cxx.html#cWQf_B">SaveToOutputView</a>(<a href="./EdbView.html">EdbView</a>&amp; vout, <span class="keyword">int</span> do_h = 1, <span class="keyword">int</span> do_c = 2, <span class="keyword">int</span> do_s = 2, <span class="keyword">int</span> do_tr = 0, <span class="keyword">int</span> do_f = 2)</span><br />
+<div class="funccomm"><pre> Put the result into the output view;  return <a href="./ListOfTypes.html#bool">true</a> if successful
+
+ do_h : 0/1   (1) - header info:   1-save; 0 - do not save;
+ do_c : 0/1/2 (2) - cluster  info: 1-save all; 2-save attached to segments; 0- do not save;
+ do_s : 0/1/2 (2) - segments info: 1-save all; 2-save selected; 0- do not save;
+ do_tr:       (0) - track info:
+ do_f : 0/1/2 (2) - frames info:   1-save all; 2-do not save images(if any); 0-do not save;
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbViewRec:ResetClustersSeg" href="src/EdbViewRec.cxx.html#UCwBHD">ResetClustersSeg</a>()</span><br />
+<div class="funccomm"><pre> set sl.eSegment to the default value (-1) - important only for simulation
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbViewRec:FindGrains" href="src/EdbViewRec.cxx.html#uJ.7.D">FindGrains</a>(<span class="keyword">int</span> option = 0)</span><br />
+<div class="funccomm"><pre> if option = 0 (default) grains reconstructed as segments and added to eGSeg  array
+ if option = 1           grains reconstructed as clusters and added to <a href="./EdbViewRec.html#EdbViewRec:eGCla" title="TClonesArray* EdbViewRec::eGCla">eGCla</a> array
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbViewRec:CheckFramesShift" href="src/EdbViewRec.cxx.html#jsjDsD">CheckFramesShift</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbViewRec:FitSegment" href="src/EdbViewRec.cxx.html#n8iq6B">FitSegment</a>(<a href="./EdbSegment.html">EdbSegment</a>&amp; s, <span class="keyword">int</span> wkey = 0)</span><br />
+<div class="funccomm"><pre> if wkey = 0 - equal weights (default)
+         = 1 - weighted with cluster area
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbViewRec:FitSegmentToCl" href="src/EdbViewRec.cxx.html#OjWscC">FitSegmentToCl</a>(<a href="./EdbSegment.html">EdbSegment</a>&amp; s, <a href="./EdbCluster.html">EdbCluster</a>&amp; c, <span class="keyword">int</span> wkey = 0)</span><br />
+<div class="funccomm"><pre> Special function to calculate the grain parameters and fill the output cluster c
+ if wkey = 0 - equal weights (default)
+         = 1 - weighted with cluster area
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbViewRec:CalculateSegmentChi2" href="src/EdbViewRec.cxx.html#jzD4sD">CalculateSegmentChi2</a>(<a href="./EdbSegment.html">EdbSegment</a>&amp; seg, <span class="keyword">float</span> sx, <span class="keyword">float</span> sy, <span class="keyword">float</span> sz)</span><br />
+<div class="funccomm"><pre>assumed that clusters are attached to segments
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbViewRec:InitGrainsTree" href="src/EdbViewRec.cxx.html#apslGD">InitGrainsTree</a>(<span class="keyword">const</span> <span class="keyword">char</span>* file = <span class="string">"grains.root"</span>)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbViewRec:FillGrainsTree" href="src/EdbViewRec.cxx.html#YxCK2B">FillGrainsTree</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbViewRec:SelectSegments" href="src/EdbViewRec.cxx.html#iH_dx">SelectSegments</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">bool</span> <a class="funcname" name="EdbViewRec:GoodSegment" href="src/EdbViewRec.cxx.html#VlZ_lB">GoodSegment</a>(<a href="./EdbSegment.html">EdbSegment</a>&amp; s, <span class="keyword">int</span> wkey = 0)</span><br />
+<div class="funccomm"><pre> TODO:
+ - probability  to be a straight line  (chi2)
+ - probability  to be a grain (big&amp;<a href="./ListOfTypes.html#long">long</a>)
+ - probability  to be a casual coincidence of more grains
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbViewRec:RefillSegment" href="src/EdbViewRec.cxx.html#teeU4C">RefillSegment</a>(<a href="./EdbSegment.html">EdbSegment</a>&amp; s)</span><br />
+<div class="funccomm"><pre> attach to the segment all clusters(grains) close to him
+ assumed the segment is fitted
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbViewRec:RefitSegments" href="src/EdbViewRec.cxx.html#a9MjtB">RefitSegments</a>(<span class="keyword">int</span> wkey = 0)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbViewRec:MergeSegments" href="src/EdbViewRec.cxx.html#bbuz7C">MergeSegments</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">float</span> <a class="funcname" name="EdbViewRec:Chi2Seg" href="src/EdbViewRec.cxx.html#D96rOB">Chi2Seg</a>(<a href="./EdbSegment.html">EdbSegment</a>&amp; s1, <a href="./EdbSegment.html">EdbSegment</a>&amp; s2)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbViewRec:CheckSeedThres" href="src/EdbViewRec.cxx.html#ExHowE">CheckSeedThres</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbViewRec:FindSeeds" href="src/EdbViewRec.cxx.html#tKsXyC">FindSeeds</a>()</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbViewRec:EdbViewRec" href="src/EdbViewRec.h.html#KTbI5D">EdbViewRec</a>()</span><br />
+<div class="funccomm"><pre>
+</pre></div>
+</div>
+<div class="funcdoc"><span class="funcname"> <a class="funcname" name="EdbViewRec:EdbViewRec@1" href="src/EdbViewRec.h.html#EarV8B">EdbViewRec</a>(<a href="./EdbViewDef.html">EdbViewDef</a>&amp; vd)</span><br />
+
+<div class="code"><code class="inlinecode">{SetPrimary();}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbViewRec:SetNclGrLim" href="src/EdbViewRec.h.html#OAp51E">SetNclGrLim</a>(<span class="keyword">int</span> mincl, <span class="keyword">int</span> maxcl)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbViewRec.html#EdbViewRec:eNclGrMin" title="int EdbViewRec::eNclGrMin">eNclGrMin</a>=mincl; <a href="./EdbViewRec.html#EdbViewRec:eNclGrMax" title="int EdbViewRec::eNclGrMax">eNclGrMax</a>=maxcl; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbViewRec:SetPulsThres" href="src/EdbViewRec.h.html#tw3DGD">SetPulsThres</a>(<span class="keyword">int</span> minp, <span class="keyword">int</span> maxp = 500)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbViewRec.html#EdbViewRec:ePulsMin" title="Int_t EdbViewRec::ePulsMin">ePulsMin</a>=minp; <a href="./EdbViewRec.html#EdbViewRec:ePulsMax" title="Int_t EdbViewRec::ePulsMax">ePulsMax</a>=maxp;  }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbViewRec:SetSigmaThres" href="src/EdbViewRec.h.html#nZqNhB">SetSigmaThres</a>(<span class="keyword">float</span> smin, <span class="keyword">float</span> smax)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbViewRec.html#EdbViewRec:eSigmaMin" title="Float_t EdbViewRec::eSigmaMin">eSigmaMin</a>=smin; <a href="./EdbViewRec.html#EdbViewRec:eSigmaMax" title="Float_t EdbViewRec::eSigmaMax">eSigmaMax</a>=smax;  }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbViewRec:SetNgrMax0" href="src/EdbViewRec.h.html#JtkJy">SetNgrMax0</a>(<a href="./ListOfTypes.html#Int_t">Int_t</a> ngr)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbViewRec.html#EdbViewRec:eNgrMax" title="Int_t EdbViewRec::eNgrMax">eNgrMax</a>=ngr;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbViewRec:SetAddGrainsToView" href="src/EdbViewRec.h.html#pqXsJC">SetAddGrainsToView</a>(<span class="keyword">bool</span> yesno)</span><br />
+
+<div class="code"><code class="inlinecode">{<a href="./EdbViewRec.html#EdbViewRec:eAddGrainsToView" title="bool EdbViewRec::eAddGrainsToView">eAddGrainsToView</a>=yesno;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbViewRec:SetClThres" href="src/EdbViewRec.h.html#WXV1o">SetClThres</a>(<span class="keyword">int</span> mina, <span class="keyword">int</span> maxa)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbViewRec.html#EdbViewRec:eClMinA" title="Int_t EdbViewRec::eClMinA">eClMinA</a>=mina; <a href="./EdbViewRec.html#EdbViewRec:eClMaxA" title="Int_t EdbViewRec::eClMaxA">eClMaxA</a>=maxa; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbViewRec:SetSeedsLim" href="src/EdbViewRec.h.html#CEScmC">SetSeedsLim</a>(<span class="keyword">int</span> nseedslim = 100000, <span class="keyword">int</span> seedlim = 48)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbViewRec.html#EdbViewRec:enSeedsLim" title="Int_t EdbViewRec::enSeedsLim">enSeedsLim</a>=nseedslim; <a href="./EdbViewRec.html#EdbViewRec:eSeedLim" title="Short_t EdbViewRec::eSeedLim">eSeedLim</a>=seedlim; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">int</span> <a class="funcname" name="EdbViewRec:SetStep" href="src/EdbViewRec.h.html#lw1tn">SetStep</a>(<span class="keyword">int</span> sfrom, <span class="keyword">int</span> sto, <span class="keyword">int</span> step = 1)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbViewRec.html#EdbViewRec:eStepFrom" title="Int_t EdbViewRec::eStepFrom">eStepFrom</a>=sfrom; <a href="./EdbViewRec.html#EdbViewRec:eStepTo" title="Int_t EdbViewRec::eStepTo">eStepTo</a>=sto; <a href="./EdbViewRec.html#EdbViewRec:eStep" title="Int_t EdbViewRec::eStep">eStep</a>=step; <span class="keyword">return</span> (sto-sfrom)/step; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbViewRec:SetRmax" href="src/EdbViewRec.h.html#MzEjXD">SetRmax</a>(<span class="keyword">float</span> rmax)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbViewRec.html#EdbViewRec:eRmax" title="Float_t EdbViewRec::eRmax">eRmax</a>=rmax; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbViewRec:SetThetaLim" href="src/EdbViewRec.h.html#d3BL5E">SetThetaLim</a>(<span class="keyword">float</span> t)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbViewRec.html#EdbViewRec:eThetaLim" title="Float_t EdbViewRec::eThetaLim">eThetaLim</a>=t; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbViewRec:SetNSeedMax0" href="src/EdbViewRec.h.html#E5ZFfE">SetNSeedMax0</a>(<span class="keyword">int</span> n)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbViewRec.html#EdbViewRec:eNseedMax0" title="Int_t EdbViewRec::eNseedMax0">eNseedMax0</a>=n; }</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbViewRec:SetNSeedMax" href="src/EdbViewRec.h.html#lW6qED">SetNSeedMax</a>(<span class="keyword">int</span> nt, <span class="keyword">int</span>* th)</span><br />
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbViewRec:SetSeedThres0" href="src/EdbViewRec.h.html#Kxwe7C">SetSeedThres0</a>(<a href="./ListOfTypes.html#Short_t">Short_t</a> mins)</span><br />
+
+<div class="code"><code class="inlinecode">{ <a href="./EdbViewRec.html#EdbViewRec:eSeedThres0" title="Int_t EdbViewRec::eSeedThres0">eSeedThres0</a>=mins;}</code></div>
+<div style="clear:both;"></div>
+</div>
+<div class="funcdoc"><span class="funcname"><span class="keyword">void</span> <a class="funcname" name="EdbViewRec:SetSeedThres" href="src/EdbViewRec.h.html#hPk5VC">SetSeedThres</a>(<span class="keyword">int</span> nt, <span class="keyword">int</span>* th)</span><br />
+</div>
+
+<br />
+<!--SIGNATURE-->
+<div id="footer">
+
+<em>&raquo; Last changed: Mon Jul 03 09:59:37 2017 </em><em>&raquo; Last generated: 2017-07-03 09:59</em><br />
+<em>This page has been automatically generated. For comments or suggestions regarding the documentation or ROOT in general please send a mail to <a href="mailto:rootdev@cern.ch">ROOT support</a>.</em>
+</div>
+</div>
+</body>
+</html>
